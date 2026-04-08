@@ -64,6 +64,44 @@
     return 0;
   }
 
+  // Logical component: split category questions by interaction model for usability.
+  $: fixedPointCheckboxQuestions = (category?.questions ?? []).filter(
+    (q) => q.answerType === 'boolean' && typeof q.pointValue === 'number'
+  );
+  $: variablePointCheckboxQuestions = (category?.questions ?? []).filter(
+    (q) => q.answerType === 'boolean' && typeof q.pointValue !== 'number'
+  );
+  $: standardQuestions = (category?.questions ?? []).filter((q) => q.answerType !== 'boolean');
+
+  // Logical component: group fixed-point checkbox items into multi-select lists by point value.
+  $: fixedPointGroups = fixedPointCheckboxQuestions.reduce<Record<string, RuleQuestion[]>>((acc, q) => {
+    const key = String(q.pointValue);
+    if (!acc[key]) acc[key] = [];
+    acc[key].push(q);
+    return acc;
+  }, {});
+  $: sortedFixedPointGroupKeys = Object.keys(fixedPointGroups).sort((a, b) => Number(b) - Number(a));
+
+  function getSelectedFixedPointIds(groupQuestions: RuleQuestion[]): string[] {
+    return groupQuestions
+      .filter((q) => $sessionStore.answers[q.id] === true)
+      .map((q) => q.id);
+  }
+
+  function handleFixedPointGroupSelection(groupQuestions: RuleQuestion[], selectedIds: string[]) {
+    const selected = new Set(selectedIds);
+    for (const question of groupQuestions) {
+      handleQuestionChange(question.id, selected.has(question.id));
+    }
+  }
+
+  function handleFixedPointGroupChange(event: Event, groupQuestions: RuleQuestion[]) {
+    const selectedIds = Array.from((event.currentTarget as HTMLSelectElement).selectedOptions).map(
+      (opt) => opt.value
+    );
+    handleFixedPointGroupSelection(groupQuestions, selectedIds);
+  }
+
   // Logical component: per-category running total from selected items and manual points.
   function getCategoryTotal(categoryId: string): number {
     const target = rules.categories.find((item) => item.id === categoryId);
@@ -133,18 +171,48 @@
     {#if category?.questions?.length}
       <section class="question-stack">
         <p class="running-total"><strong>Running category total:</strong> {currentCategoryTotal.toFixed(1)} points</p>
-        {#each category.questions as question (question.id)}
+
+        {#if sortedFixedPointGroupKeys.length > 0}
+          <section class="fixed-groups">
+            <h2>Select items by assessed points</h2>
+            {#each sortedFixedPointGroupKeys as key (key)}
+              {@const groupQuestions = fixedPointGroups[key]}
+              <label class="multi-group">
+                <span>{Number(key) >= 0 ? '+' : ''}{key} points items</span>
+                <select
+                  multiple
+                  on:change={(event) => handleFixedPointGroupChange(event, groupQuestions)}
+                >
+                  {#each groupQuestions as question (question.id)}
+                    <option value={question.id} selected={getSelectedFixedPointIds(groupQuestions).includes(question.id)}>
+                      {question.prompt}
+                    </option>
+                  {/each}
+                </select>
+              </label>
+            {/each}
+          </section>
+        {/if}
+
+        {#each variablePointCheckboxQuestions as question (question.id)}
           <QuestionRenderer
             {question}
             value={getRenderedValue(question.id)}
             manualValue={$sessionStore.answers[`${question.id}__manual`] ?? null}
             answers={$sessionStore.answers}
             onChange={(value) => handleQuestionChange(question.id, value)}
-            onManualChange={
-              question.answerType === 'boolean' && question.needsManualPoints
-                ? (value) => handleQuestionChange(`${question.id}__manual`, value)
-                : undefined
-            }
+            onManualChange={(value) => handleQuestionChange(`${question.id}__manual`, value)}
+          />
+        {/each}
+
+        {#each standardQuestions as question (question.id)}
+          <QuestionRenderer
+            {question}
+            value={getRenderedValue(question.id)}
+            manualValue={$sessionStore.answers[`${question.id}__manual`] ?? null}
+            answers={$sessionStore.answers}
+            onChange={(value) => handleQuestionChange(question.id, value)}
+            onManualChange={undefined}
           />
         {/each}
       </section>
@@ -168,6 +236,11 @@
   .actions { margin-top: 1rem; display: flex; gap: 0.5rem; }
   .question-stack { display: grid; gap: 0.75rem; min-width: 0; }
   .running-total { margin: 0; padding: 0.5rem 0.75rem; border: 1px solid #ddd; border-radius: 8px; background: #f8f8f8; }
+  .fixed-groups { border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem; display: grid; gap: 0.75rem; }
+  .fixed-groups h2 { margin: 0; font-size: 1rem; }
+  .multi-group { display: grid; gap: 0.35rem; }
+  .multi-group span { font-size: 0.9rem; color: #444; }
+  .multi-group select { min-height: 8.5rem; border: 1px solid #bbb; border-radius: 6px; padding: 0.35rem; }
   button { border: 1px solid #bbb; background: #fff; border-radius: 6px; padding: 0.6rem 0.9rem; cursor: pointer; }
   button:disabled { opacity: 0.5; cursor: not-allowed; }
   @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
