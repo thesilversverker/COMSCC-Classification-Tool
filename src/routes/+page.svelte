@@ -5,7 +5,7 @@
   import SessionSummary from '$components/SessionSummary.svelte';
   import { calculateCompletion, sessionStore } from '$stores/session';
   import { navigationStore } from '$stores/navigation';
-  import type { RuleAnswer, RulesDocument } from '$types/rules';
+  import type { RuleAnswer, RuleOption, RuleQuestion, RulesDocument } from '$types/rules';
 
   const rules = rulesJson as RulesDocument;
   const showroomWeightByModel: Record<string, number> = {
@@ -36,6 +36,56 @@
     }
     return $sessionStore.answers[questionId] ?? null;
   }
+
+  // Logical component: lookup selected option metadata (including points).
+  function getSelectedOption(question: RuleQuestion): RuleOption | undefined {
+    const selectedValue = $sessionStore.answers[question.id];
+    if (typeof selectedValue !== 'string' || selectedValue === '') {
+      return undefined;
+    }
+
+    if (question.dependsOn && question.optionsByParent) {
+      const parent = $sessionStore.answers[question.dependsOn];
+      if (typeof parent !== 'string') {
+        return undefined;
+      }
+      return (question.optionsByParent[parent] ?? []).find((opt) => opt.id === selectedValue);
+    }
+
+    return (question.options ?? []).find((opt) => opt.id === selectedValue);
+  }
+
+  function toNumeric(value: RuleAnswer): number {
+    if (typeof value === 'number') return Number.isFinite(value) ? value : 0;
+    if (typeof value === 'string') {
+      const parsed = Number(value);
+      return Number.isFinite(parsed) ? parsed : 0;
+    }
+    return 0;
+  }
+
+  // Logical component: per-category running total from selected items and manual points.
+  function getCategoryTotal(categoryId: string): number {
+    const target = rules.categories.find((item) => item.id === categoryId);
+    if (!target) return 0;
+
+    let total = 0;
+    for (const q of target.questions) {
+      if (q.answerType === 'select') {
+        const selectedOption = getSelectedOption(q);
+        if (typeof selectedOption?.points === 'number') {
+          total += selectedOption.points;
+        }
+      }
+
+      if (q.id.endsWith('_points')) {
+        total += toNumeric($sessionStore.answers[q.id] ?? 0);
+      }
+    }
+    return total;
+  }
+
+  $: currentCategoryTotal = category ? getCategoryTotal(category.id) : 0;
 
   // Logical component: category-only navigation for footer controls.
   function goToNextCategory() {
@@ -74,6 +124,7 @@
 
     {#if category?.questions?.length}
       <section class="question-stack">
+        <p class="running-total"><strong>Running category total:</strong> {currentCategoryTotal.toFixed(1)} points</p>
         {#each category.questions as question (question.id)}
           <QuestionRenderer
             {question}
@@ -102,6 +153,7 @@
   .layout { display: grid; gap: 1rem; grid-template-columns: minmax(14rem, 1fr) minmax(0, 2fr) minmax(14rem, 1fr); align-items: start; }
   .actions { margin-top: 1rem; display: flex; gap: 0.5rem; }
   .question-stack { display: grid; gap: 0.75rem; min-width: 0; }
+  .running-total { margin: 0; padding: 0.5rem 0.75rem; border: 1px solid #ddd; border-radius: 8px; background: #f8f8f8; }
   button { border: 1px solid #bbb; background: #fff; border-radius: 6px; padding: 0.6rem 0.9rem; cursor: pointer; }
   button:disabled { opacity: 0.5; cursor: not-allowed; }
   @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }

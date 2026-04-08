@@ -62,33 +62,51 @@
       "id": "engine",
       "label": "Engine",
       "sheetName": "Engine",
-      "description": "Three MVP starter entries for engine modifications.",
+      "description": "Guided engine flow with category, specific modification, and points.",
       "questions": [
         {
-          "id": "engine_ecu_tune",
-          "prompt": "ECU has non-factory tune",
-          "answerType": "boolean",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A6"
-        },
-        {
-          "id": "engine_boost_increase",
-          "prompt": "Turbo/supercharger boost increase percentage",
-          "answerType": "number",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A10"
-        },
-        {
-          "id": "engine_intake_type",
-          "prompt": "Intake modification level",
+          "id": "engine_mod_group",
+          "prompt": "Engine modification group",
           "answerType": "select",
           "sheetName": "Engine",
-          "sourceRef": "Engine!A12",
+          "sourceRef": "Engine!A",
           "options": [
-            { "id": "stock", "label": "Stock intake" },
-            { "id": "panel_filter", "label": "Panel filter only" },
-            { "id": "full_intake", "label": "Full non-factory intake" }
+            { "id": "ecu", "label": "ECU / tuning" },
+            { "id": "induction", "label": "Induction / boost" },
+            { "id": "intake", "label": "Air intake / fueling" }
           ]
+        },
+        {
+          "id": "engine_mod_detail",
+          "prompt": "Specific engine modification",
+          "answerType": "select",
+          "sheetName": "Engine",
+          "sourceRef": "Engine!B",
+          "dependsOn": "engine_mod_group",
+          "optionsByParent": {
+            "ecu": [
+              { "id": "factory_trim_reflash", "label": "Factory trim ECU reflash", "points": 1 },
+              { "id": "non_factory_ecu", "label": "Non-factory ECU tune", "points": 2 },
+              { "id": "piggyback_ecu", "label": "Piggyback ECU controller" }
+            ],
+            "induction": [
+              { "id": "boost_under_50", "label": "Boost increase under 50%", "points": 2 },
+              { "id": "boost_over_50", "label": "Boost increase over 50%", "points": 4 },
+              { "id": "wastegate_controller", "label": "Wastegate / boost controller change", "points": 1 }
+            ],
+            "intake": [
+              { "id": "intake_before_tb", "label": "Intake before throttle body modified", "points": 1 },
+              { "id": "throttle_body", "label": "Throttle body modified", "points": 1 },
+              { "id": "fuel_delivery", "label": "Fuel delivery system modified", "points": 1 }
+            ]
+          }
+        },
+        {
+          "id": "engine_points",
+          "prompt": "Manual engine points (if assessment unclear)",
+          "answerType": "number",
+          "sheetName": "Engine",
+          "sourceRef": "Engine!C"
         }
       ]
     },
@@ -96,33 +114,51 @@
       "id": "drivetrain",
       "label": "Drivetrain",
       "sheetName": "Drivetrain",
-      "description": "Three MVP starter entries for drivetrain modifications.",
+      "description": "Guided drivetrain flow with category, specific modification, and points.",
       "questions": [
         {
-          "id": "drivetrain_transmission_type",
-          "prompt": "Transmission type",
+          "id": "drivetrain_mod_group",
+          "prompt": "Drivetrain modification group",
           "answerType": "select",
           "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A8",
+          "sourceRef": "Drivetrain!A",
           "options": [
-            { "id": "manual", "label": "Manual" },
-            { "id": "automatic", "label": "Automatic" },
-            { "id": "dct", "label": "Dual-clutch" }
+            { "id": "transmission", "label": "Transmission" },
+            { "id": "differential", "label": "Differential / final drive" },
+            { "id": "mounts", "label": "Mounts / shafts" }
           ]
         },
         {
-          "id": "drivetrain_lsd_modified",
-          "prompt": "LSD is modified or non-factory",
-          "answerType": "boolean",
+          "id": "drivetrain_mod_detail",
+          "prompt": "Specific drivetrain modification",
+          "answerType": "select",
           "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A17"
+          "sourceRef": "Drivetrain!B",
+          "dependsOn": "drivetrain_mod_group",
+          "optionsByParent": {
+            "transmission": [
+              { "id": "sequential_gearbox", "label": "Sequential gearbox", "points": 6 },
+              { "id": "dogbox", "label": "Dogbox gearbox", "points": 4 },
+              { "id": "dct", "label": "Dual-clutch transmission", "points": 3 }
+            ],
+            "differential": [
+              { "id": "final_drive", "label": "Final drive ratio changed", "points": 1 },
+              { "id": "lsd_with_oem", "label": "LSD modified (OEM option equipped)", "points": 0 },
+              { "id": "lsd_no_oem", "label": "LSD added (not OEM option)", "points": 1 }
+            ],
+            "mounts": [
+              { "id": "driveshaft", "label": "Half shafts / driveshaft modified", "points": 1 },
+              { "id": "mounts", "label": "Drivetrain mounts modified", "points": 0 },
+              { "id": "flywheel", "label": "Flywheel modified", "points": 0 }
+            ]
+          }
         },
         {
-          "id": "drivetrain_final_drive_ratio",
-          "prompt": "Final drive ratio changed",
-          "answerType": "boolean",
+          "id": "drivetrain_points",
+          "prompt": "Manual drivetrain points (if assessment unclear)",
+          "answerType": "number",
           "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A16"
+          "sourceRef": "Drivetrain!C"
         }
       ]
     },
@@ -130,33 +166,51 @@
       "id": "suspension",
       "label": "Suspension",
       "sheetName": "Suspension",
-      "description": "Three MVP starter entries for suspension modifications.",
+      "description": "Guided suspension flow with category, specific modification, and points.",
       "questions": [
         {
-          "id": "suspension_damper_level",
-          "prompt": "Damper/shock setup",
+          "id": "suspension_mod_group",
+          "prompt": "Suspension modification group",
           "answerType": "select",
           "sheetName": "Suspension",
-          "sourceRef": "Suspension!A6",
+          "sourceRef": "Suspension!A",
           "options": [
-            { "id": "stock", "label": "Stock / non-adjustable" },
-            { "id": "one_way", "label": "1-way adjustable" },
-            { "id": "multi_way", "label": "2-way or more adjustable" }
+            { "id": "dampers_springs", "label": "Dampers / springs" },
+            { "id": "bars_arms", "label": "Bars / arms / links" },
+            { "id": "alignment_bracing", "label": "Alignment / bracing" }
           ]
         },
         {
-          "id": "suspension_sway_bars",
-          "prompt": "Aftermarket sway bars installed",
-          "answerType": "boolean",
+          "id": "suspension_mod_detail",
+          "prompt": "Specific suspension modification",
+          "answerType": "select",
           "sheetName": "Suspension",
-          "sourceRef": "Suspension!A14"
+          "sourceRef": "Suspension!B",
+          "dependsOn": "suspension_mod_group",
+          "optionsByParent": {
+            "dampers_springs": [
+              { "id": "non_adjustable_dampers", "label": "Non-adjustable dampers", "points": 1 },
+              { "id": "one_way_dampers", "label": "1-way adjustable dampers", "points": 1 },
+              { "id": "multi_way_dampers", "label": "2-way or more dampers", "points": 2 }
+            ],
+            "bars_arms": [
+              { "id": "sway_bars", "label": "Sway bars modified", "points": 1 },
+              { "id": "control_arms", "label": "Control/camber arms modified", "points": 1 },
+              { "id": "bushings", "label": "Bushings or spherical bearings modified" }
+            ],
+            "alignment_bracing": [
+              { "id": "alignment_range", "label": "Alignment range extended", "points": 1 },
+              { "id": "strut_brace", "label": "Strut/chassis bracing added", "points": 0 },
+              { "id": "subframe", "label": "Subframe changed", "points": 1 }
+            ]
+          }
         },
         {
-          "id": "suspension_alignment_hardware",
-          "prompt": "Alignment hardware allows beyond-factory settings",
-          "answerType": "boolean",
+          "id": "suspension_points",
+          "prompt": "Manual suspension points (if assessment unclear)",
+          "answerType": "number",
           "sheetName": "Suspension",
-          "sourceRef": "Suspension!A24"
+          "sourceRef": "Suspension!C"
         }
       ]
     },
@@ -164,33 +218,51 @@
       "id": "brakes",
       "label": "Brakes",
       "sheetName": "Brakes",
-      "description": "Three MVP starter entries for brake modifications.",
+      "description": "Guided brake flow with category, specific modification, and points.",
       "questions": [
         {
-          "id": "brakes_caliper_rotor_size",
-          "prompt": "Brake calipers/rotors changed size",
-          "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A6"
-        },
-        {
-          "id": "brakes_abs_modification",
-          "prompt": "ABS modified or disabled",
+          "id": "brakes_mod_group",
+          "prompt": "Brake modification group",
           "answerType": "select",
           "sheetName": "Brakes",
-          "sourceRef": "Brakes!A7",
+          "sourceRef": "Brakes!A",
           "options": [
-            { "id": "factory", "label": "Factory ABS active" },
-            { "id": "modified", "label": "Modified aftermarket ABS" },
-            { "id": "disabled", "label": "ABS disabled / none" }
+            { "id": "hardware", "label": "Calipers / rotors / pads" },
+            { "id": "abs", "label": "ABS / controls" },
+            { "id": "lines_cooling", "label": "Lines / ducting" }
           ]
         },
         {
-          "id": "brakes_lines_upgraded",
-          "prompt": "Brake lines upgraded",
-          "answerType": "boolean",
+          "id": "brakes_mod_detail",
+          "prompt": "Specific brake modification",
+          "answerType": "select",
           "sheetName": "Brakes",
-          "sourceRef": "Brakes!A12"
+          "sourceRef": "Brakes!B",
+          "dependsOn": "brakes_mod_group",
+          "optionsByParent": {
+            "hardware": [
+              { "id": "caliper_rotor_size", "label": "Caliper/rotor size changed", "points": 1 },
+              { "id": "same_size_rotor", "label": "Rotor changed (same size)", "points": 0 },
+              { "id": "pad_compound", "label": "Pad/shoe compound changed", "points": 0 }
+            ],
+            "abs": [
+              { "id": "factory_abs", "label": "Factory ABS retained", "points": 0 },
+              { "id": "modified_abs", "label": "Aftermarket/modified ABS", "points": 2 },
+              { "id": "disabled_abs", "label": "ABS disabled or removed", "points": -1 }
+            ],
+            "lines_cooling": [
+              { "id": "lines", "label": "Brake lines modified", "points": 0 },
+              { "id": "ducting", "label": "Brake ducting modified", "points": 0 },
+              { "id": "brackets", "label": "Brake brackets relocated/modified", "points": 0 }
+            ]
+          }
+        },
+        {
+          "id": "brakes_points",
+          "prompt": "Manual brake points (if assessment unclear)",
+          "answerType": "number",
+          "sheetName": "Brakes",
+          "sourceRef": "Brakes!C"
         }
       ]
     },
@@ -198,38 +270,51 @@
       "id": "exterior",
       "label": "Exterior",
       "sheetName": "Exterior",
-      "description": "Three MVP starter entries for aero/exterior modifications.",
+      "description": "Guided exterior flow with category, specific modification, and points.",
       "questions": [
         {
-          "id": "exterior_front_aero",
-          "prompt": "Front aero setup",
+          "id": "exterior_mod_group",
+          "prompt": "Exterior modification group",
           "answerType": "select",
           "sheetName": "Exterior",
-          "sourceRef": "Exterior!A6",
+          "sourceRef": "Exterior!A",
           "options": [
-            { "id": "stock", "label": "Stock bumper/aero" },
-            { "id": "bumper_or_dam", "label": "Modified bumper/air dam" },
-            { "id": "splitter", "label": "Splitter added" }
+            { "id": "front_aero", "label": "Front aero" },
+            { "id": "rear_aero", "label": "Rear aero" },
+            { "id": "bodywork", "label": "Bodywork / panels" }
           ]
         },
         {
-          "id": "exterior_rear_wing",
-          "prompt": "Rear wing/spoiler modification level",
+          "id": "exterior_mod_detail",
+          "prompt": "Specific exterior modification",
           "answerType": "select",
           "sheetName": "Exterior",
-          "sourceRef": "Exterior!A10",
-          "options": [
-            { "id": "none", "label": "None / stock" },
-            { "id": "small", "label": "Within limited dimensions" },
-            { "id": "large", "label": "Any size/shape" }
-          ]
+          "sourceRef": "Exterior!B",
+          "dependsOn": "exterior_mod_group",
+          "optionsByParent": {
+            "front_aero": [
+              { "id": "bumper_airdam", "label": "Front bumper/air dam modified", "points": 1 },
+              { "id": "splitter_small", "label": "Splitter added (standard)", "points": 1 },
+              { "id": "splitter_large", "label": "Splitter extends beyond limit", "points": 2 }
+            ],
+            "rear_aero": [
+              { "id": "wing_limited", "label": "Wing/spoiler within limits", "points": 1 },
+              { "id": "wing_unlimited", "label": "Wing/spoiler any size", "points": 3 },
+              { "id": "diffuser", "label": "Rear diffuser modified", "points": 2 }
+            ],
+            "bodywork": [
+              { "id": "hood", "label": "Hood modified", "points": 0 },
+              { "id": "fenders", "label": "Fenders modified", "points": 0 },
+              { "id": "doors_trunk", "label": "Doors/trunk modified", "points": 0 }
+            ]
+          }
         },
         {
-          "id": "exterior_diffuser",
-          "prompt": "Rear diffuser installed",
-          "answerType": "boolean",
+          "id": "exterior_points",
+          "prompt": "Manual exterior points (if assessment unclear)",
+          "answerType": "number",
           "sheetName": "Exterior",
-          "sourceRef": "Exterior!A17"
+          "sourceRef": "Exterior!C"
         }
       ]
     },
@@ -269,11 +354,11 @@
       "id": "tires",
       "label": "Tires",
       "sheetName": "Tires",
-      "description": "Three MVP starter entries for tire classification.",
+      "description": "Guided tire flow with class, specific tire, and measured width.",
       "questions": [
         {
-          "id": "tires_compound_class",
-          "prompt": "Tire compound class",
+          "id": "tires_class",
+          "prompt": "Tire class",
           "answerType": "select",
           "sheetName": "Tires",
           "sourceRef": "Tires!A7",
@@ -284,18 +369,43 @@
           ]
         },
         {
-          "id": "tires_front_width",
-          "prompt": "Front tire width (mm)",
-          "answerType": "number",
+          "id": "tires_model",
+          "prompt": "Specific tire",
+          "answerType": "select",
           "sheetName": "Tires",
-          "sourceRef": "Tires!B"
+          "sourceRef": "Tires!B",
+          "dependsOn": "tires_class",
+          "optionsByParent": {
+            "non_dot_slick": [
+              { "id": "hoosier_a8", "label": "Hoosier A8", "points": 11 },
+              { "id": "bfg_r1s", "label": "BFGoodrich R1-S", "points": 10 },
+              { "id": "goodyear_rs", "label": "Goodyear RS AC", "points": 10 }
+            ],
+            "r_compound": [
+              { "id": "hoosier_r7", "label": "Hoosier R7", "points": 6 },
+              { "id": "kumho_v700", "label": "Kumho Ecsta V700", "points": 6 },
+              { "id": "hankook_z214", "label": "Hankook Z214", "points": 6 }
+            ],
+            "street_200tw": [
+              { "id": "falken_rt660", "label": "Falken RT660", "points": -2.5 },
+              { "id": "bridgestone_re71rs", "label": "Bridgestone RE-71RS", "points": -1.5 },
+              { "id": "yokohama_a052", "label": "Yokohama A052", "points": -1.5 }
+            ]
+          }
         },
         {
-          "id": "tires_rear_width",
-          "prompt": "Rear tire width (mm)",
+          "id": "tires_width_mm",
+          "prompt": "Primary tire width (mm)",
           "answerType": "number",
           "sheetName": "Tires",
           "sourceRef": "Tires!C"
+        },
+        {
+          "id": "tires_points",
+          "prompt": "Manual tire points (if assessment unclear)",
+          "answerType": "number",
+          "sheetName": "Tires",
+          "sourceRef": "Tires!Assessment"
         }
       ]
     }
