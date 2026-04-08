@@ -1,0 +1,35 @@
+{
+  "name": "comscc-classification-tool",
+  "version": "0.1.0",
+  "description": "Repo for webapp to handle COMSCC classification",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run --environment jsdom --globals",
+    "data:convert": "node scripts/convert-workbook.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-thesilversverker:thesilversverker/COMSCC-Classification-Tool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^2.0.3",
+    "@sveltejs/kit": "^1.30.4",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/node": "^20.12.12",
+    "jsdom": "^22.1.0",
+    "svelte": "^4.2.19",
+    "svelte-check": "^3.8.6",
+    "typescript": "^5.4.5",
+    "vite": "^4.5.14",
+    "vitest": "^1.6.1",
+    "xlsx": "^0.18.5"
+  }
+}

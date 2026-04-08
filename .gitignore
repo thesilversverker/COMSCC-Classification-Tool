@@ -1,0 +1,9 @@
+# Logical component: dependency and build artifacts.
+node_modules/
+build/
+.svelte-kit/
+
+# Logical component: local environment artifacts.
+.DS_Store
+*.log
+npm-debug.log*
