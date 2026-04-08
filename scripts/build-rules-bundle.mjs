@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { assignSubcategory } from './assign-subcategory.mjs';
 
 // Logical component: merge preset UI categories with checkbox rules-source categories.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -17,13 +18,24 @@ function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
+// Logical component: guarantee subcategory on every question (source files may predate the field).
+function withSubcategories(category) {
+  return {
+    ...category,
+    questions: category.questions.map((q) => ({
+      ...q,
+      subcategory: q.subcategory ?? assignSubcategory(category.id, q.prompt)
+    }))
+  };
+}
+
 function buildBundle() {
   const preset = readJson(PRESET_PATH);
   const presetMap = Object.fromEntries(preset.categories.map((c) => [c.id, c]));
 
   const categories = [];
 
-  const vehicles = presetMap.vehicles;
+  const vehicles = withSubcategories(presetMap.vehicles);
   if (!vehicles) throw new Error('Preset missing vehicles category');
   categories.push(vehicles);
 
@@ -33,14 +45,14 @@ function buildBundle() {
       throw new Error(`Missing rules-source file: ${filePath}`);
     }
     const doc = readJson(filePath);
-    categories.push(doc.category);
+    categories.push(withSubcategories(doc.category));
   }
 
   for (const id of PRESET_ORDER) {
     if (id === 'vehicles') continue;
     const cat = presetMap[id];
     if (!cat) throw new Error(`Preset missing category: ${id}`);
-    categories.push(cat);
+    categories.push(withSubcategories(cat));
   }
 
   const sourceWorkbook =

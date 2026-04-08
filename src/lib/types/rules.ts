@@ -10,6 +10,8 @@ export interface RuleOption {
 export interface RuleQuestion {
   id: string;
   prompt: string;
+  /** UI grouping within the category (e.g. Brakes → ABS). */
+  subcategory: string;
   answerType: AnswerType;
   helpText?: string;
   sheetName: string;

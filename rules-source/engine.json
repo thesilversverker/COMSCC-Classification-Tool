@@ -15,7 +15,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B6",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "ECU & electronics"
       },
       {
         "id": "engine_non_factory_trim_ecu_naturally_aspirated_engine_6",
@@ -24,7 +25,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B7",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "ECU & electronics"
       },
       {
         "id": "engine_reprogrammed_factory_trim_includes_rom_chips_ecu_forced_induction_engine_7",
@@ -33,7 +35,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B8",
         "pointValue": 3,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
       },
       {
         "id": "engine_non_factory_trim_ecu_forced_induction_engine_engine_air_fuel_change_only_8",
@@ -42,7 +45,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B9",
         "pointValue": 4,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
       },
       {
         "id": "engine_turbo_boost_increase_50_9",
@@ -51,7 +55,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B10",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
       },
       {
         "id": "engine_turbo_boost_increase_50_10",
@@ -60,7 +65,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B11",
         "pointValue": 4,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
       },
       {
         "id": "engine_non_factory_trim_modified_air_intake_before_the_throttle_body_11",
@@ -69,7 +75,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B12",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Intake & fuel"
       },
       {
         "id": "engine_non_factory_trim_modified_headlight_to_allow_increased_or_cooler_air_flo_12",
@@ -78,7 +85,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B13",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Intake & fuel"
       },
       {
         "id": "engine_non_factory_trim_modified_throttle_body_13",
@@ -87,7 +95,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B14",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Intake & fuel"
       },
       {
         "id": "engine_non_factory_trim_modified_fuel_delivery_system_except_fuel_pump_s_i_e_fu_14",
@@ -96,7 +105,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B15",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Intake & fuel"
       },
       {
         "id": "engine_non_factory_trim_modified_intake_manifold_1_6_cylinder_engines_including_15",
@@ -105,7 +115,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B16",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Intake & fuel"
       },
       {
         "id": "engine_non_factory_trim_modified_intake_manifold_7_12_cylinder_engines_includin_16",
@@ -114,7 +125,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B17",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Intake & fuel"
       },
       {
         "id": "engine_water_alcohol_injection_system_17",
@@ -123,7 +135,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B18",
         "pointValue": 3,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_modified_supercharger_or_turbocharger_any_location_18",
@@ -132,7 +145,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B19",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Forced induction"
       },
       {
         "id": "engine_non_factory_trim_modified_supercharger_pulley_19",
@@ -141,7 +155,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B20",
         "pointValue": 3,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
       },
       {
         "id": "engine_non_factory_trim_modified_boost_controller_or_vacuum_lines_that_control__20",
@@ -150,7 +165,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B21",
         "pointValue": 3,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
       },
       {
         "id": "engine_non_factory_trim_modified_wastegate_wastegate_actuator_21",
@@ -159,7 +175,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B22",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
       },
       {
         "id": "engine_non_factory_trim_modified_intercooler_22",
@@ -168,7 +185,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B23",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
       },
       {
         "id": "engine_non_factory_trim_modified_intercooler_pipes_only_23",
@@ -177,7 +195,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B24",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
       },
       {
         "id": "engine_non_factory_trim_modified_camshafts_rocker_arms_pushrods_or_cam_gears_th_24",
@@ -186,7 +205,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B25",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
       },
       {
         "id": "engine_ported_polished_factory_trim_cylinder_heads_25",
@@ -195,7 +215,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B26",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_cylinder_heads_26",
@@ -204,7 +225,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B27",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_modified_engine_intake_exhaust_valves_27",
@@ -213,7 +235,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B28",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Exhaust"
       },
       {
         "id": "engine_increased_displacement_by_more_than_1_28",
@@ -222,7 +245,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B29",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
       },
       {
         "id": "engine_increase_compression_ratio_by_50_or_less_29",
@@ -231,7 +255,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B30",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Engine internals"
       },
       {
         "id": "engine_increase_compression_ratio_greater_than_50_30",
@@ -240,7 +265,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B31",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
       },
       {
         "id": "engine_dry_sump_engine_oil_system_31",
@@ -249,7 +275,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B32",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Engine internals"
       },
       {
         "id": "engine_non_factory_trim_modified_header_1_6_cyl_pre_cat_exhaust_change_32",
@@ -258,7 +285,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B33",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
       },
       {
         "id": "engine_non_factory_trim_modified_header_7_12_cyl_pre_cat_exhaust_change_33",
@@ -267,7 +295,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B34",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
       },
       {
         "id": "engine_non_factory_trim_modified_exhaust_beyond_the_catalytic_converter_e_g_cat_34",
@@ -276,7 +305,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B35",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
       },
       {
         "id": "engine_non_factory_trim_modified_catalytic_converter_s_35",
@@ -285,7 +315,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B36",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
       },
       {
         "id": "engine_complete_removal_or_gutting_of_oem_catalytic_converter_s_i_e_test_pipe_i_36",
@@ -294,7 +325,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B37",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
       },
       {
         "id": "engine_non_factory_trim_modified_power_steering_crank_pulley_37",
@@ -303,7 +335,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B38",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Engine internals"
       },
       {
         "id": "engine_non_factory_trim_modified_deleted_engine_or_accessory_fan_and_or_other_e_38",
@@ -312,7 +345,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B39",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Cooling & accessories"
       },
       {
         "id": "engine_street_port_rotary_engines_39",
@@ -321,7 +355,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B40",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Other"
       },
       {
         "id": "engine_bridge_port_rotary_engines_40",
@@ -330,7 +365,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B41",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Other"
       },
       {
         "id": "engine_peripheral_port_rotary_engines_41",
@@ -339,7 +375,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B42",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_modified_pistons_rods_42",
@@ -348,7 +385,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B43",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
       },
       {
         "id": "engine_vehicles_tuned_and_running_ethanol_content_greater_than_15_e_g_a_vehicle_43",
@@ -357,7 +395,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B44",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Other"
       },
       {
         "id": "engine_any_type_of_commercially_available_gasoline_or_diesel_fuel_44",
@@ -366,7 +405,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B45",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_modified_fuses_relays_wiring_or_addition_of_power_distr_45",
@@ -375,7 +415,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B46",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_hoses_belts_clamps_46",
@@ -384,7 +425,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B47",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_air_or_fuel_filters_47",
@@ -393,7 +435,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B48",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_radiator_48",
@@ -402,7 +445,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B49",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Cooling & accessories"
       },
       {
         "id": "engine_non_factory_trim_battery_starter_motor_alternator_spark_plugs_spark_plug_49",
@@ -411,7 +455,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B50",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_modifications_to_oil_system_50",
@@ -420,7 +465,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B51",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_modifications_number_of_fuel_pumps_51",
@@ -429,7 +475,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B52",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_non_factory_trim_modified_muffler_tips_components_designed_strictly_for__52",
@@ -438,7 +485,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B53",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
       },
       {
         "id": "engine_factory_specification_engine_rebuild_and_head_shave_53",
@@ -447,7 +495,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B54",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_accessories_and_or_gauges_54",
@@ -456,7 +505,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B55",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_for_engine_swaps_or_elective_dyno_based_classing_competitor_must_provide_60",
@@ -465,7 +515,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B61",
         "pointValue": null,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Engine internals"
       },
       {
         "id": "engine_select_crank_hp_or_wheel_hp_dyno_measurements_62",
@@ -474,7 +525,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B63",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
       },
       {
         "id": "engine_select_2wd_or_awd_63",
@@ -483,7 +535,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B64",
         "pointValue": null,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "engine_starting_with_the_2018_season_dynojet_is_the_only_official_dyno_measurem_64",
@@ -492,7 +545,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B65",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Other"
       },
       {
         "id": "engine_scaled_result_using_2_3_hp_1_3_torque_drivetrain_loss_65",
@@ -501,7 +555,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B66",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Other"
       },
       {
         "id": "engine_number_of_points_above_base_car_assessment_66",
@@ -510,7 +565,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B67",
         "pointValue": null,
-        "needsManualPoints": true
+        "needsManualPoints": true,
+        "subcategory": "Other"
       },
       {
         "id": "engine_using_engine_points_total_67",
@@ -519,7 +575,8 @@
         "sheetName": "Engine",
         "sourceRef": "Engine!B68",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       }
     ]
   }

@@ -15,7 +15,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B6",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rotors/Pads/Shoes"
       },
       {
         "id": "brakes_non_factory_trim_modified_abs_e_g_bosch_motorsport_abs_6",
@@ -24,7 +25,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B7",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "ABS"
       },
       {
         "id": "brakes_disabling_any_and_all_factory_and_or_aftermarket_abs_or_competing_in_a_v_7",
@@ -33,7 +35,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B8",
         "pointValue": -1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "ABS"
       },
       {
         "id": "brakes_non_factory_trim_rotors_of_the_same_type_and_shape_as_oem_8",
@@ -42,7 +45,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B9",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rotors/Pads/Shoes"
       },
       {
         "id": "brakes_non_factory_trim_rotors_of_the_same_thickness_and_diameter_as_factory_tr_9",
@@ -51,7 +55,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B10",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rotors/Pads/Shoes"
       },
       {
         "id": "brakes_non_factory_trim_brake_pads_or_shoes_10",
@@ -60,7 +65,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B11",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rotors/Pads/Shoes"
       },
       {
         "id": "brakes_non_factory_trim_modified_brake_lines_11",
@@ -69,7 +75,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B12",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rotors/Pads/Shoes"
       },
       {
         "id": "brakes_non_factory_trim_modified_brake_ducting_12",
@@ -78,7 +85,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B13",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rotors/Pads/Shoes"
       },
       {
         "id": "brakes_enabling_or_use_of_factory_trim_abs_13",
@@ -87,7 +95,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B14",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "ABS"
       },
       {
         "id": "brakes_non_factory_trim_drilled_or_slotted_rotors_of_the_same_shape_and_size_as_14",
@@ -96,7 +105,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B15",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rotors/Pads/Shoes"
       },
       {
         "id": "brakes_modified_re_located_or_non_factory_trim_brake_brakets_15",
@@ -105,7 +115,8 @@
         "sheetName": "Brakes",
         "sourceRef": "Brakes!B16",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       }
     ]
   }

@@ -15,7 +15,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B6",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Front aero"
       },
       {
         "id": "exterior_non_factory_trim_modified_front_splitter_in_addition_to_bumper_air_dam_s_6",
@@ -24,7 +25,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B7",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Front aero"
       },
       {
         "id": "exterior_non_factory_trim_modified_front_splitter_that_extends_more_than_3_5_inch_7",
@@ -33,7 +35,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B8",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Front aero"
       },
       {
         "id": "exterior_non_factory_trim_modified_canards_each_set_assessed_points_front_or_rear_8",
@@ -42,7 +45,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B9",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Front aero"
       },
       {
         "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including_any_airfoil_that_in_no_w_9",
@@ -51,7 +55,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B10",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rear aero"
       },
       {
         "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including_any_airfoil_that_does_no_10",
@@ -60,7 +65,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B11",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rear aero"
       },
       {
         "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including_any_air_foil_of_any_size_11",
@@ -69,7 +75,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B12",
         "pointValue": 3,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rear aero"
       },
       {
         "id": "exterior_non_factory_trim_hardtop_of_different_shape_and_size_which_alters_airflo_12",
@@ -78,7 +85,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B13",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Body & panels"
       },
       {
         "id": "exterior_factory_trim_hardtop_or_non_factory_trim_hardtop_of_the_same_shape_and_s_13",
@@ -87,7 +95,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B14",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Body & panels"
       },
       {
         "id": "exterior_non_factory_trim_modified_vortex_generator_to_roof_hardtop_rear_glass_or_14",
@@ -96,7 +105,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B15",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Body & panels"
       },
       {
         "id": "exterior_non_factory_trim_modified_flat_bottom_15",
@@ -105,7 +115,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B16",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "exterior_non_factory_trim_modified_rear_diffuser_16",
@@ -114,7 +125,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B17",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rear aero"
       },
       {
         "id": "exterior_non_factory_trim_modified_side_skirts_17",
@@ -123,7 +135,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B18",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Body & panels"
       },
       {
         "id": "exterior_non_factory_trim_active_aero_i_e_moveable_aero_devices_points_assessed_f_18",
@@ -132,7 +145,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B19",
         "pointValue": 4,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Active aero & graphics"
       },
       {
         "id": "exterior_front_underbody_tray_that_does_not_extend_in_front_of_the_front_bumper_s_19",
@@ -141,7 +155,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B20",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Front aero"
       },
       {
         "id": "exterior_non_factory_trim_modified_fenders_20",
@@ -150,7 +165,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B21",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Body & panels"
       },
       {
         "id": "exterior_non_factory_trim_modified_doors_21",
@@ -159,7 +175,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B22",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Body & panels"
       },
       {
         "id": "exterior_non_factory_trim_modified_trunk_lid_22",
@@ -168,7 +185,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B23",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Body & panels"
       },
       {
         "id": "exterior_non_factory_trim_modified_rear_bumper_23",
@@ -177,7 +195,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B24",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Rear aero"
       },
       {
         "id": "exterior_non_factory_trim_modified_hood_24",
@@ -186,7 +205,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B25",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Body & panels"
       },
       {
         "id": "exterior_1_com_supplied_sticker_on_each_side_of_the_vehicle_that_is_easily_visibl_25",
@@ -195,7 +215,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B26",
         "pointValue": -1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Active aero & graphics"
       },
       {
         "id": "exterior_non_factory_trim_active_aero_i_e_moveable_aero_devices_4_points_assessed_29",
@@ -204,7 +225,8 @@
         "sheetName": "Exterior",
         "sourceRef": "Exterior!B30",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Active aero & graphics"
       }
     ]
   }

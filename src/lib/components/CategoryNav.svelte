@@ -1,6 +1,8 @@
 <script lang="ts">
+  // Logical component: sidebar category list with per-category point totals.
   export let categories: { id: string; label: string }[] = [];
-  export let completion: Record<string, number> = {};
+  /** Points currently counted for each category id (from session answers). */
+  export let categoryPoints: Record<string, number> = {};
   export let activeCategoryId = '';
   export let onSelect: (index: number) => void;
 </script>
@@ -17,7 +19,7 @@
           aria-current={category.id === activeCategoryId ? 'page' : undefined}
         >
           <span>{category.label}</span>
-          <small>{completion[category.id] ?? 0}%</small>
+          <small>{(categoryPoints[category.id] ?? 0).toFixed(1)} pts</small>
         </button>
       </li>
     {/each}

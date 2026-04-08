@@ -3,6 +3,7 @@ import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
 import xlsx from 'xlsx';
+import { assignSubcategory } from './assign-subcategory.mjs';
 
 // Logical component: paths and extraction targets.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -74,6 +75,8 @@ function buildCheckboxQuestion(sheetName, rowIndex, row) {
   const { pointValue, needsManualPoints } = parseAssessment(colB);
   const id = `${slugify(sheetName)}_${slugify(desc).slice(0, 72)}_${rowIndex}`;
 
+  const categorySlug = slugify(sheetName);
+
   return {
     id,
     prompt: desc,
@@ -81,7 +84,8 @@ function buildCheckboxQuestion(sheetName, rowIndex, row) {
     sheetName,
     sourceRef: `${sheetName}!B${rowIndex + 1}`,
     pointValue,
-    needsManualPoints
+    needsManualPoints,
+    subcategory: assignSubcategory(categorySlug, desc)
   };
 }
 
@@ -95,12 +99,15 @@ function buildLegacyQuestion(sheetName, rowIndex, row) {
   if (!prompt || prompt.length < 2) return null;
   if (/^(total|empty|steward use only)$/i.test(prompt)) return null;
 
+  const categorySlug = slugify(sheetName);
+
   return {
     id: `${slugify(sheetName)}_${slugify(prompt).slice(0, 64)}_${rowIndex}`,
     prompt,
     answerType: inferAnswerType(`${prompt} ${visibleCells.slice(1).join(' ')}`),
     sheetName,
-    sourceRef: `${sheetName}!A${rowIndex + 1}`
+    sourceRef: `${sheetName}!A${rowIndex + 1}`,
+    subcategory: assignSubcategory(categorySlug, prompt)
   };
 }
 

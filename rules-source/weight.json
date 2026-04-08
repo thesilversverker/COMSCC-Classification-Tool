@@ -13,189 +13,216 @@
         "prompt": "COMSCC 2027 V2 TEST",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A1"
+        "sourceRef": "Weight!A1",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_touring_class_summary_1",
         "prompt": "Touring Class Summary",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A2"
+        "sourceRef": "Weight!A2",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_full_7_8_3_4_2_3_1_2_2",
         "prompt": "Full,7/8,3/4,2/3,1/2",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A3"
+        "sourceRef": "Weight!A3",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_weight_reduction_worksheet_3",
         "prompt": "Weight Reduction Worksheet",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A4"
+        "sourceRef": "Weight!A4",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_enter_weight_in_the_yellow_cell_4",
         "prompt": "Enter weight in the yellow cell",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A5"
+        "sourceRef": "Weight!A5",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_2_3_5",
         "prompt": "2/3",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A6"
+        "sourceRef": "Weight!A6",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_weight_type_6",
         "prompt": "Weight Type",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A7"
+        "sourceRef": "Weight!A7",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_showroom_base_weight_7",
         "prompt": "Showroom Base Weight",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A8"
+        "sourceRef": "Weight!A8",
+        "subcategory": "Showroom"
       },
       {
         "id": "weight_competition_weight_8",
         "prompt": "Competition Weight",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A9"
+        "sourceRef": "Weight!A9",
+        "subcategory": "Competition"
       },
       {
         "id": "weight_weight_difference_9",
         "prompt": "Weight Difference",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A10"
+        "sourceRef": "Weight!A10",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_1_4_10",
         "prompt": "1/4",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A11"
+        "sourceRef": "Weight!A11",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_weight_reduction_assessment_11",
         "prompt": "Weight Reduction Assessment",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A12"
+        "sourceRef": "Weight!A12",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_ballast_record_13",
         "prompt": "Ballast Record",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A14"
+        "sourceRef": "Weight!A14",
+        "subcategory": "Ballast"
       },
       {
         "id": "weight_indicate_the_fuel_level_and_ballast_for_steward_inspection_purpo_14",
         "prompt": "Indicate the fuel level and ballast for steward inspection purposes as included in your competition weight",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A15"
+        "sourceRef": "Weight!A15",
+        "subcategory": "Competition"
       },
       {
         "id": "weight_item_15",
         "prompt": "Item",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A16"
+        "sourceRef": "Weight!A16",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_ballast_amount_lbs_16",
         "prompt": "Ballast Amount (lbs)",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A17"
+        "sourceRef": "Weight!A17",
+        "subcategory": "Ballast"
       },
       {
         "id": "weight_ballast_location_17",
         "prompt": "Ballast Location",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A18"
+        "sourceRef": "Weight!A18",
+        "subcategory": "Ballast"
       },
       {
         "id": "weight_fuel_type_18",
         "prompt": "Fuel Type",
         "answerType": "select",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A19"
+        "sourceRef": "Weight!A19",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_fuel_level_19",
         "prompt": "Fuel Level",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A20"
+        "sourceRef": "Weight!A20",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_fuel_capacity_gal_20",
         "prompt": "Fuel Capacity (Gal.)",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A21"
+        "sourceRef": "Weight!A21",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_approx_fuel_weight_21",
         "prompt": "Approx Fuel Weight",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A22"
+        "sourceRef": "Weight!A22",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_fuel_weight_difference_24",
         "prompt": "Fuel Weight Difference",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A25"
+        "sourceRef": "Weight!A25",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_note_weight_reduction_can_be_achieved_by_removing_or_replacing_a_25",
         "prompt": "Note – weight reduction can be achieved by removing or replacing any non-essential parts, unless otherwise mentioned",
         "answerType": "number",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A26"
+        "sourceRef": "Weight!A26",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_parts_include_interior_headliner_seats_carpets_insulation_air_co_26",
         "prompt": "Parts include: interior headliner, seats, carpets, insulation, air conditioner, radio, sunroof/moonroof, spare tire, jack, interior panels, console, etc.",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A27"
+        "sourceRef": "Weight!A27",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_ballast_is_allowed_up_to_150lbs_provided_it_is_secured_location__27",
         "prompt": "Ballast is allowed up to 150lbs provided it is secured – location and security of ballast must be verified by Tech Inspector or a Steward",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A28"
+        "sourceRef": "Weight!A28",
+        "subcategory": "Ballast"
       },
       {
         "id": "weight_a_comscc_steward_may_choose_to_have_a_competitor_s_car_weighed_a_28",
         "prompt": "A COMSCC Steward may choose to have a competitor’s car weighed at any time during an event where scales are available.  Further, the Steward may choose to weigh a single competitor, a group of competitors, an entire class or run group, or the entire Time Trial field.  Scale readouts may either be used for informational purposes or in the case of a protest or tech inspection.  COMSCC has it's own scales, and in case of a difference between your scales, scales at the track (NHMS), or your race shop's scales, ours win.  So leave yourself a reasonable margin of error if you're at the edge of your class limit- say 10 lbs or so.",
         "answerType": "select",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A29"
+        "sourceRef": "Weight!A29",
+        "subcategory": "Weight"
       },
       {
         "id": "weight_go_to_previous_sheet_exterior_29",
         "prompt": "Go to previous sheet (Exterior)",
         "answerType": "text",
         "sheetName": "Weight",
-        "sourceRef": "Weight!A30"
+        "sourceRef": "Weight!A30",
+        "subcategory": "Weight"
       }
     ]
   }

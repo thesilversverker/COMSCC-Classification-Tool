@@ -3,9 +3,40 @@
   import CategoryNav from '$components/CategoryNav.svelte';
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
   import SessionSummary from '$components/SessionSummary.svelte';
-  import { calculateCompletion, sessionStore } from '$stores/session';
+  import { computeAllCategoryPoints } from '$lib/scoring';
+  import { sessionStore } from '$stores/session';
   import { navigationStore } from '$stores/navigation';
-  import type { RuleAnswer, RuleOption, RuleQuestion, RulesDocument } from '$types/rules';
+  import type { RuleAnswer, RuleCategory, RuleQuestion, RulesDocument } from '$types/rules';
+
+  // Logical component: one UI block per subcategory (fixed multi-select, then variable booleans, then other types).
+  type SubcategoryBlock = {
+    key: string;
+    fixed: RuleQuestion[];
+    variable: RuleQuestion[];
+    standard: RuleQuestion[];
+  };
+
+  function sortSubcategoryKeys(keys: string[]): string[] {
+    const uniq = [...new Set(keys)];
+    return uniq.sort((a, b) => {
+      if (a === 'Other') return 1;
+      if (b === 'Other') return -1;
+      return a.localeCompare(b);
+    });
+  }
+
+  function buildSubcategoryBlocks(cat: RuleCategory): SubcategoryBlock[] {
+    const keys = sortSubcategoryKeys(cat.questions.map((q) => q.subcategory));
+    return keys.map((key) => {
+      const subQs = cat.questions.filter((q) => q.subcategory === key);
+      return {
+        key,
+        fixed: subQs.filter((q) => q.answerType === 'boolean' && typeof q.pointValue === 'number'),
+        variable: subQs.filter((q) => q.answerType === 'boolean' && typeof q.pointValue !== 'number'),
+        standard: subQs.filter((q) => q.answerType !== 'boolean')
+      };
+    });
+  }
 
   const rules = rulesJson as RulesDocument;
   const showroomWeightByModel: Record<string, number> = {
@@ -25,7 +56,9 @@
   }
 
   $: category = rules.categories[$navigationStore.categoryIndex];
-  $: completion = calculateCompletion(rules, $sessionStore.answers);
+  $: categoryPointsById = computeAllCategoryPoints(rules.categories, $sessionStore.answers);
+  $: currentCategoryTotal = category ? (categoryPointsById[category.id] ?? 0) : 0;
+  $: subcategoryBlocks = category ? buildSubcategoryBlocks(category) : [];
   $: selectedModel = typeof $sessionStore.answers.vehicles_model === 'string' ? $sessionStore.answers.vehicles_model : '';
   $: showroomWeightValue = selectedModel ? String(showroomWeightByModel[selectedModel] ?? '') : '';
 
@@ -36,51 +69,6 @@
     }
     return $sessionStore.answers[questionId] ?? null;
   }
-
-  // Logical component: lookup selected option metadata (including points).
-  function getSelectedOption(question: RuleQuestion): RuleOption | undefined {
-    const selectedValue = $sessionStore.answers[question.id];
-    if (typeof selectedValue !== 'string' || selectedValue === '') {
-      return undefined;
-    }
-
-    if (question.dependsOn && question.optionsByParent) {
-      const parent = $sessionStore.answers[question.dependsOn];
-      if (typeof parent !== 'string') {
-        return undefined;
-      }
-      return (question.optionsByParent[parent] ?? []).find((opt) => opt.id === selectedValue);
-    }
-
-    return (question.options ?? []).find((opt) => opt.id === selectedValue);
-  }
-
-  function toNumeric(value: RuleAnswer): number {
-    if (typeof value === 'number') return Number.isFinite(value) ? value : 0;
-    if (typeof value === 'string') {
-      const parsed = Number(value);
-      return Number.isFinite(parsed) ? parsed : 0;
-    }
-    return 0;
-  }
-
-  // Logical component: split category questions by interaction model for usability.
-  $: fixedPointCheckboxQuestions = (category?.questions ?? []).filter(
-    (q) => q.answerType === 'boolean' && typeof q.pointValue === 'number'
-  );
-  $: variablePointCheckboxQuestions = (category?.questions ?? []).filter(
-    (q) => q.answerType === 'boolean' && typeof q.pointValue !== 'number'
-  );
-  $: standardQuestions = (category?.questions ?? []).filter((q) => q.answerType !== 'boolean');
-
-  // Logical component: group fixed-point checkbox items into multi-select lists by point value.
-  $: fixedPointGroups = fixedPointCheckboxQuestions.reduce<Record<string, RuleQuestion[]>>((acc, q) => {
-    const key = String(q.pointValue);
-    if (!acc[key]) acc[key] = [];
-    acc[key].push(q);
-    return acc;
-  }, {});
-  $: sortedFixedPointGroupKeys = Object.keys(fixedPointGroups).sort((a, b) => Number(b) - Number(a));
 
   function getSelectedFixedPointIds(groupQuestions: RuleQuestion[]): string[] {
     return groupQuestions
@@ -101,37 +89,6 @@
     );
     handleFixedPointGroupSelection(groupQuestions, selectedIds);
   }
-
-  // Logical component: per-category running total from selected items and manual points.
-  function getCategoryTotal(categoryId: string): number {
-    const target = rules.categories.find((item) => item.id === categoryId);
-    if (!target) return 0;
-
-    let total = 0;
-    for (const q of target.questions) {
-      if (q.answerType === 'boolean' && $sessionStore.answers[q.id] === true) {
-        if (typeof q.pointValue === 'number') {
-          total += q.pointValue;
-        } else if (q.needsManualPoints) {
-          total += toNumeric($sessionStore.answers[`${q.id}__manual`] ?? 0);
-        }
-      }
-
-      if (q.answerType === 'select') {
-        const selectedOption = getSelectedOption(q);
-        if (typeof selectedOption?.points === 'number') {
-          total += selectedOption.points;
-        }
-      }
-
-      if (q.id.endsWith('_points')) {
-        total += toNumeric($sessionStore.answers[q.id] ?? 0);
-      }
-    }
-    return total;
-  }
-
-  $: currentCategoryTotal = category ? getCategoryTotal(category.id) : 0;
 
   // Logical component: category-only navigation for footer controls.
   function goToNextCategory() {
@@ -163,7 +120,7 @@
   <div class="layout">
     <CategoryNav
       categories={rules.categories}
-      completion={completion}
+      categoryPoints={categoryPointsById}
       activeCategoryId={category?.id ?? ''}
       onSelect={(index) => navigationStore.goToCategory(index)}
     />
@@ -172,48 +129,48 @@
       <section class="question-stack">
         <p class="running-total"><strong>Running category total:</strong> {currentCategoryTotal.toFixed(1)} points</p>
 
-        {#if sortedFixedPointGroupKeys.length > 0}
-          <section class="fixed-groups">
-            <h2>Select items by assessed points</h2>
-            {#each sortedFixedPointGroupKeys as key (key)}
-              {@const groupQuestions = fixedPointGroups[key]}
+        {#each subcategoryBlocks as block (block.key)}
+          <section class="subcategory-block">
+            <h3>{category.label} &gt; {block.key}</h3>
+            {#if block.fixed.length > 0}
               <label class="multi-group">
-                <span>{Number(key) >= 0 ? '+' : ''}{key} points items</span>
+                <span>Fixed-assessment items (select all that apply)</span>
                 <select
                   multiple
-                  on:change={(event) => handleFixedPointGroupChange(event, groupQuestions)}
+                  on:change={(event) => handleFixedPointGroupChange(event, block.fixed)}
                 >
-                  {#each groupQuestions as question (question.id)}
-                    <option value={question.id} selected={getSelectedFixedPointIds(groupQuestions).includes(question.id)}>
-                      {question.prompt}
+                  {#each block.fixed as question (question.id)}
+                    <option
+                      value={question.id}
+                      selected={getSelectedFixedPointIds(block.fixed).includes(question.id)}
+                    >
+                      {typeof question.pointValue === 'number' && question.pointValue >= 0 ? '+' : ''}{question.pointValue} — {question.prompt}
                     </option>
                   {/each}
                 </select>
               </label>
+            {/if}
+            {#each block.variable as question (question.id)}
+              <QuestionRenderer
+                {question}
+                value={getRenderedValue(question.id)}
+                manualValue={$sessionStore.answers[`${question.id}__manual`] ?? null}
+                answers={$sessionStore.answers}
+                onChange={(value) => handleQuestionChange(question.id, value)}
+                onManualChange={(value) => handleQuestionChange(`${question.id}__manual`, value)}
+              />
+            {/each}
+            {#each block.standard as question (question.id)}
+              <QuestionRenderer
+                {question}
+                value={getRenderedValue(question.id)}
+                manualValue={$sessionStore.answers[`${question.id}__manual`] ?? null}
+                answers={$sessionStore.answers}
+                onChange={(value) => handleQuestionChange(question.id, value)}
+                onManualChange={undefined}
+              />
             {/each}
           </section>
-        {/if}
-
-        {#each variablePointCheckboxQuestions as question (question.id)}
-          <QuestionRenderer
-            {question}
-            value={getRenderedValue(question.id)}
-            manualValue={$sessionStore.answers[`${question.id}__manual`] ?? null}
-            answers={$sessionStore.answers}
-            onChange={(value) => handleQuestionChange(question.id, value)}
-            onManualChange={(value) => handleQuestionChange(`${question.id}__manual`, value)}
-          />
-        {/each}
-
-        {#each standardQuestions as question (question.id)}
-          <QuestionRenderer
-            {question}
-            value={getRenderedValue(question.id)}
-            manualValue={$sessionStore.answers[`${question.id}__manual`] ?? null}
-            answers={$sessionStore.answers}
-            onChange={(value) => handleQuestionChange(question.id, value)}
-            onManualChange={undefined}
-          />
         {/each}
       </section>
     {:else}
@@ -236,8 +193,8 @@
   .actions { margin-top: 1rem; display: flex; gap: 0.5rem; }
   .question-stack { display: grid; gap: 0.75rem; min-width: 0; }
   .running-total { margin: 0; padding: 0.5rem 0.75rem; border: 1px solid #ddd; border-radius: 8px; background: #f8f8f8; }
-  .fixed-groups { border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem; display: grid; gap: 0.75rem; }
-  .fixed-groups h2 { margin: 0; font-size: 1rem; }
+  .subcategory-block { border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem; display: grid; gap: 0.75rem; }
+  .subcategory-block h3 { margin: 0; font-size: 1rem; font-weight: 600; }
   .multi-group { display: grid; gap: 0.35rem; }
   .multi-group span { font-size: 0.9rem; color: #444; }
   .multi-group select { min-height: 8.5rem; border: 1px solid #bbb; border-radius: 6px; padding: 0.35rem; }

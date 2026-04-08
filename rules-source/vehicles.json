@@ -13,378 +13,432 @@
         "prompt": "COMSCC 2027 V2 TEST",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A1"
+        "sourceRef": "Vehicles!A1",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_touring_class_summary_1",
         "prompt": "Touring Class Summary",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A2"
+        "sourceRef": "Vehicles!A2",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_showroom_assessment_car_list_2",
         "prompt": "Showroom Assessment Car List",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A3"
+        "sourceRef": "Vehicles!A3",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_click_select_next_to_your_vehicle_on_the_list_below_3",
         "prompt": "Click \"Select\" next to your vehicle on the list below",
         "answerType": "select",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A4"
+        "sourceRef": "Vehicles!A4",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_selected_vehicle_4",
         "prompt": "Selected Vehicle",
         "answerType": "select",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A5"
+        "sourceRef": "Vehicles!A5",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_false_5",
         "prompt": "false",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A6"
+        "sourceRef": "Vehicles!A6",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_click_select_to_choose_vehicle_6",
         "prompt": "Click \"Select\" to choose Vehicle",
         "answerType": "select",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A7"
+        "sourceRef": "Vehicles!A7",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_custom_7",
         "prompt": "Custom",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A8"
+        "sourceRef": "Vehicles!A8",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_acura_8",
         "prompt": "Acura",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A9"
+        "sourceRef": "Vehicles!A9",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_alfa_romeo_16",
         "prompt": "Alfa Romeo",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A17"
+        "sourceRef": "Vehicles!A17",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_ariel_19",
         "prompt": "Ariel",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A20"
+        "sourceRef": "Vehicles!A20",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_aston_martin_21",
         "prompt": "Aston Martin",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A22"
+        "sourceRef": "Vehicles!A22",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_audi_24",
         "prompt": "Audi",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A25"
+        "sourceRef": "Vehicles!A25",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_austin_healy_44",
         "prompt": "Austin Healy",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A45"
+        "sourceRef": "Vehicles!A45",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_bmw_45",
         "prompt": "BMW",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A46"
+        "sourceRef": "Vehicles!A46",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_bugatti_116",
         "prompt": "Bugatti",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A117"
+        "sourceRef": "Vehicles!A117",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_cadillac_117",
         "prompt": "Cadillac",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A118"
+        "sourceRef": "Vehicles!A118",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_chevrolet_121",
         "prompt": "Chevrolet",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A122"
+        "sourceRef": "Vehicles!A122",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_datsun_157",
         "prompt": "Datsun",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A158"
+        "sourceRef": "Vehicles!A158",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_dodge_159",
         "prompt": "Dodge",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A160"
+        "sourceRef": "Vehicles!A160",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_ferrari_172",
         "prompt": "Ferrari",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A173"
+        "sourceRef": "Vehicles!A173",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_fiat_181",
         "prompt": "Fiat",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A182"
+        "sourceRef": "Vehicles!A182",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_ford_182",
         "prompt": "Ford",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A183"
+        "sourceRef": "Vehicles!A183",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_honda_233",
         "prompt": "Honda",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A234"
+        "sourceRef": "Vehicles!A234",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_hyundai_255",
         "prompt": "Hyundai",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A256"
+        "sourceRef": "Vehicles!A256",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_infiniti_262",
         "prompt": "Infiniti",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A263"
+        "sourceRef": "Vehicles!A263",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_jaguar_263",
         "prompt": "Jaguar",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A264"
+        "sourceRef": "Vehicles!A264",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_lamborghini_267",
         "prompt": "Lamborghini",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A268"
+        "sourceRef": "Vehicles!A268",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_lexus_270",
         "prompt": "Lexus",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A271"
+        "sourceRef": "Vehicles!A271",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_lotus_272",
         "prompt": "Lotus",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A273"
+        "sourceRef": "Vehicles!A273",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_maserati_274",
         "prompt": "Maserati",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A275"
+        "sourceRef": "Vehicles!A275",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_mazda_275",
         "prompt": "Mazda",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A276"
+        "sourceRef": "Vehicles!A276",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_mercedes_296",
         "prompt": "Mercedes",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A297"
+        "sourceRef": "Vehicles!A297",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_mercedes_benz_299",
         "prompt": "Mercedes Benz",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A300"
+        "sourceRef": "Vehicles!A300",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_mercedes_benz_300",
         "prompt": "Mercedes-Benz",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A301"
+        "sourceRef": "Vehicles!A301",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_midget_302",
         "prompt": "Midget",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A303"
+        "sourceRef": "Vehicles!A303",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_mini_303",
         "prompt": "MINI",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A304"
+        "sourceRef": "Vehicles!A304",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_mini_307",
         "prompt": "Mini",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A308"
+        "sourceRef": "Vehicles!A308",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_mitsubishi_309",
         "prompt": "Mitsubishi",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A310"
+        "sourceRef": "Vehicles!A310",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_nissan_321",
         "prompt": "Nissan",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A322"
+        "sourceRef": "Vehicles!A322",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_pontiac_348",
         "prompt": "Pontiac",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A349"
+        "sourceRef": "Vehicles!A349",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_porsche_356",
         "prompt": "Porsche",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A357"
+        "sourceRef": "Vehicles!A357",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_saab_416",
         "prompt": "Saab",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A417"
+        "sourceRef": "Vehicles!A417",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_saleen_422",
         "prompt": "Saleen",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A423"
+        "sourceRef": "Vehicles!A423",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_scion_424",
         "prompt": "Scion",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A425"
+        "sourceRef": "Vehicles!A425",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_smart_426",
         "prompt": "Smart",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A427"
+        "sourceRef": "Vehicles!A427",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_subaru_427",
         "prompt": "Subaru",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A428"
+        "sourceRef": "Vehicles!A428",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_tesla_448",
         "prompt": "Tesla",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A449"
+        "sourceRef": "Vehicles!A449",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_toyota_451",
         "prompt": "Toyota",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A452"
+        "sourceRef": "Vehicles!A452",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_triumph_468",
         "prompt": "Triumph",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A469"
+        "sourceRef": "Vehicles!A469",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_ultima_472",
         "prompt": "Ultima",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A473"
+        "sourceRef": "Vehicles!A473",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_volkswagen_474",
         "prompt": "Volkswagen",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A475"
+        "sourceRef": "Vehicles!A475",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_volkswagon_490",
         "prompt": "Volkswagon",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A491"
+        "sourceRef": "Vehicles!A491",
+        "subcategory": "Vehicle"
       },
       {
         "id": "vehicles_volvo_495",
         "prompt": "Volvo",
         "answerType": "text",
         "sheetName": "Vehicles",
-        "sourceRef": "Vehicles!A496"
+        "sourceRef": "Vehicles!A496",
+        "subcategory": "Vehicle"
       }
     ]
   }

@@ -17,4 +17,15 @@ describe('rules schema', () => {
     const unique = new Set(ids);
     expect(unique.size).toBe(ids.length);
   });
+
+  // Logical component: subcategory required for UI grouping.
+  it('assigns a non-empty subcategory to every question', () => {
+    const doc = rules as RulesDocument;
+    for (const category of doc.categories) {
+      for (const question of category.questions) {
+        expect(typeof question.subcategory).toBe('string');
+        expect(question.subcategory.length).toBeGreaterThan(0);
+      }
+    }
+  });
 });

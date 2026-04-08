@@ -15,7 +15,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B6",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_non_factory_trim_1_way_adjustable_shocks_struts_dampers_6",
@@ -24,7 +25,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B7",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_non_factory_trim_2_way_adjustable_shocks_struts_dampers_7",
@@ -33,7 +35,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B8",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_non_factory_trim_3_way_or_more_adjustable_shocks_struts_dampers_8",
@@ -42,7 +45,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B9",
         "pointValue": 3,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_non_factory_trim_shocks_struts_dampers_with_piggyback_canister_or_extern_9",
@@ -51,7 +55,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B10",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_non_adjustable_non_factory_trim_coil_springs_leaf_springs_or_torsion_bar_10",
@@ -60,7 +65,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B11",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_height_adjustable_non_factory_trim_coil_springs_leaf_springs_or_torsion__11",
@@ -69,7 +75,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B12",
         "pointValue": 3,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_torsion_bar_to_coil_spring_conversion_12",
@@ -78,7 +85,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B13",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_non_factory_trim_sway_bars_13",
@@ -87,7 +95,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B14",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Arms, links & alignment"
       },
       {
         "id": "suspension_non_factory_trim_engine_bracing_not_including_motor_and_other_drivetrain_14",
@@ -96,7 +105,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B15",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "suspension_non_factory_trim_modified_control_arms_or_non_factory_trim_modified_trai_15",
@@ -105,7 +115,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B16",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Arms, links & alignment"
       },
       {
         "id": "suspension_modification_of_wishbone_suspension_upright_16",
@@ -114,7 +125,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B17",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Arms, links & alignment"
       },
       {
         "id": "suspension_non_factory_trim_subframe_that_does_not_alter_suspension_geometry_17",
@@ -123,7 +135,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B18",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Bracing & subframe"
       },
       {
         "id": "suspension_non_factory_trim_modified_watts_link_18",
@@ -132,7 +145,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B19",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Arms, links & alignment"
       },
       {
         "id": "suspension_non_factory_trim_modified_panhard_bar_19",
@@ -141,7 +155,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B20",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Arms, links & alignment"
       },
       {
         "id": "suspension_non_factory_trim_torque_bar_20",
@@ -150,7 +165,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B21",
         "pointValue": 2,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "suspension_modify_oem_torque_bar_21",
@@ -159,7 +175,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B22",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "suspension_non_factory_trim_suspension_bushings_or_spherical_bearings_except_rubber_22",
@@ -168,7 +185,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B23",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_non_factory_trim_modified_suspension_components_which_enable_alignment_s_23",
@@ -177,7 +195,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B24",
         "pointValue": 1,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_non_factory_trim_bracing_including_strut_shock_tower_brace_chassis_brace_24",
@@ -186,7 +205,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B25",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Dampers & springs"
       },
       {
         "id": "suspension_custom_alignment_settings_including_caster_camber_or_toe_regardless_of_f_25",
@@ -195,7 +215,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B26",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Arms, links & alignment"
       },
       {
         "id": "suspension_non_factory_trim_suspension_bushings_either_rubber_or_polyurethane_26",
@@ -204,7 +225,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B27",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Bushings & hardware"
       },
       {
         "id": "suspension_non_factory_trim_suspension_bushing_limiters_of_any_material_note_points_27",
@@ -213,7 +235,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B28",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Bushings & hardware"
       },
       {
         "id": "suspension_removal_of_swaybars_28",
@@ -222,7 +245,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B29",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Arms, links & alignment"
       },
       {
         "id": "suspension_non_factory_trim_sway_bar_endlinks_29",
@@ -231,7 +255,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B30",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Arms, links & alignment"
       },
       {
         "id": "suspension_non_factory_trim_eccentric_camber_bolts_30",
@@ -240,7 +265,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B31",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Arms, links & alignment"
       },
       {
         "id": "suspension_non_factory_trim_camber_adjusting_ball_joints_31",
@@ -249,7 +275,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B32",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Arms, links & alignment"
       },
       {
         "id": "suspension_modified_steering_rack_from_power_assist_to_manual_or_manual_to_power_as_32",
@@ -258,7 +285,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B33",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Steering"
       },
       {
         "id": "suspension_suspension_re_enforcement_provided_by_installation_of_roll_bar_or_roll_c_33",
@@ -267,7 +295,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B34",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       },
       {
         "id": "suspension_disabling_or_enabling_of_factory_trim_electronic_stability_control_syste_34",
@@ -276,7 +305,8 @@
         "sheetName": "Suspension",
         "sourceRef": "Suspension!B35",
         "pointValue": 0,
-        "needsManualPoints": false
+        "needsManualPoints": false,
+        "subcategory": "Other"
       }
     ]
   }

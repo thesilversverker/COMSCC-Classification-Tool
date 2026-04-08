@@ -11,8 +11,8 @@ const rulesFixture: RulesDocument = {
       label: 'Engine',
       sheetName: 'Engine',
       questions: [
-        { id: 'q1', prompt: 'Question 1', answerType: 'text', sheetName: 'Engine' },
-        { id: 'q2', prompt: 'Question 2', answerType: 'number', sheetName: 'Engine' }
+        { id: 'q1', prompt: 'Question 1', subcategory: 'Other', answerType: 'text', sheetName: 'Engine' },
+        { id: 'q2', prompt: 'Question 2', subcategory: 'Other', answerType: 'number', sheetName: 'Engine' }
       ]
     }
   ]
