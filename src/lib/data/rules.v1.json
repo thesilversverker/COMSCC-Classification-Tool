@@ -1,188 +1,44 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-04-08T14:25:50.270Z",
+  "generatedAt": "2026-04-08T15:00:00.000Z",
   "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
   "categories": [
     {
       "id": "vehicles",
       "label": "Vehicles",
       "sheetName": "Vehicles",
-      "description": "Auto-imported MVP category from Vehicles sheet.",
+      "description": "Three MVP starter entries based on showroom examples.",
       "questions": [
         {
-          "id": "vehicles_comscc_2027_v2_test_0",
-          "prompt": "COMSCC 2027 V2 TEST",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A1"
-        },
-        {
-          "id": "vehicles_touring_class_summary_1",
-          "prompt": "Touring Class Summary",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A2"
-        },
-        {
-          "id": "vehicles_showroom_assessment_car_list_2",
-          "prompt": "Showroom Assessment Car List",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A3"
-        },
-        {
-          "id": "vehicles_click_select_next_to_your_vehicle_on_the_list_be_3",
-          "prompt": "Click \"Select\" next to your vehicle on the list below",
+          "id": "vehicles_make",
+          "prompt": "Vehicle make",
           "answerType": "select",
           "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A4"
+          "sourceRef": "Vehicles!A",
+          "options": [
+            { "id": "acura", "label": "Acura" },
+            { "id": "bmw", "label": "BMW" },
+            { "id": "chevrolet", "label": "Chevrolet" }
+          ]
         },
         {
-          "id": "vehicles_selected_vehicle_4",
-          "prompt": "Selected Vehicle",
+          "id": "vehicles_model",
+          "prompt": "Vehicle model",
           "answerType": "select",
           "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A5"
+          "sourceRef": "Vehicles!B",
+          "options": [
+            { "id": "integra", "label": "Integra" },
+            { "id": "integra_type_r", "label": "Integra Type R" },
+            { "id": "nsx", "label": "NSX" }
+          ]
         },
         {
-          "id": "vehicles_false_5",
-          "prompt": "false",
-          "answerType": "text",
+          "id": "vehicles_model_year",
+          "prompt": "Model year",
+          "answerType": "number",
           "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A6"
-        },
-        {
-          "id": "vehicles_click_select_to_choose_vehicle_6",
-          "prompt": "Click \"Select\" to choose Vehicle",
-          "answerType": "select",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A7"
-        },
-        {
-          "id": "vehicles_custom_7",
-          "prompt": "Custom",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A8"
-        },
-        {
-          "id": "vehicles_acura_8",
-          "prompt": "Acura",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A9"
-        },
-        {
-          "id": "vehicles_alfa_romeo_16",
-          "prompt": "Alfa Romeo",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A17"
-        },
-        {
-          "id": "vehicles_ariel_19",
-          "prompt": "Ariel",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A20"
-        },
-        {
-          "id": "vehicles_aston_martin_21",
-          "prompt": "Aston Martin",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A22"
-        },
-        {
-          "id": "vehicles_audi_24",
-          "prompt": "Audi",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A25"
-        },
-        {
-          "id": "vehicles_austin_healy_44",
-          "prompt": "Austin Healy",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A45"
-        },
-        {
-          "id": "vehicles_bmw_45",
-          "prompt": "BMW",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A46"
-        },
-        {
-          "id": "vehicles_bugatti_116",
-          "prompt": "Bugatti",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A117"
-        },
-        {
-          "id": "vehicles_cadillac_117",
-          "prompt": "Cadillac",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A118"
-        },
-        {
-          "id": "vehicles_chevrolet_121",
-          "prompt": "Chevrolet",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A122"
-        },
-        {
-          "id": "vehicles_datsun_157",
-          "prompt": "Datsun",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A158"
-        },
-        {
-          "id": "vehicles_dodge_159",
-          "prompt": "Dodge",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A160"
-        },
-        {
-          "id": "vehicles_ferrari_172",
-          "prompt": "Ferrari",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A173"
-        },
-        {
-          "id": "vehicles_fiat_181",
-          "prompt": "Fiat",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A182"
-        },
-        {
-          "id": "vehicles_ford_182",
-          "prompt": "Ford",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A183"
-        },
-        {
-          "id": "vehicles_honda_233",
-          "prompt": "Honda",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A234"
-        },
-        {
-          "id": "vehicles_hyundai_255",
-          "prompt": "Hyundai",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A256"
+          "sourceRef": "Vehicles!C"
         }
       ]
     },
@@ -190,182 +46,33 @@
       "id": "engine",
       "label": "Engine",
       "sheetName": "Engine",
-      "description": "Auto-imported MVP category from Engine sheet.",
+      "description": "Three MVP starter entries for engine modifications.",
       "questions": [
         {
-          "id": "engine_comscc_2027_v2_test_0",
-          "prompt": "COMSCC 2027 V2 TEST",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A1"
-        },
-        {
-          "id": "engine_touring_class_summary_1",
-          "prompt": "Touring Class Summary",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A2"
-        },
-        {
-          "id": "engine_engine_modifications_worksheet_2",
-          "prompt": "Engine Modifications Worksheet",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A3"
-        },
-        {
-          "id": "engine_click_select_where_appropriate_and_enter_informa_3",
-          "prompt": "Click \"Select\" where appropriate and enter information in the yellow cells…",
-          "answerType": "select",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A4"
-        },
-        {
-          "id": "engine_select_or_true_4",
-          "prompt": "Select or TRUE",
-          "answerType": "select",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A5"
-        },
-        {
-          "id": "engine_reprogrammed_factory_trim_includes_rom_chips_ecu_5",
-          "prompt": "Reprogrammed Factory Trim (includes ROM chips) ECU, naturally aspirated engine",
-          "answerType": "text",
+          "id": "engine_ecu_tune",
+          "prompt": "ECU has non-factory tune",
+          "answerType": "boolean",
           "sheetName": "Engine",
           "sourceRef": "Engine!A6"
         },
         {
-          "id": "engine_non_factory_trim_ecu_naturally_aspirated_engine_6",
-          "prompt": "Non-Factory Trim ECU, naturally aspirated engine",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A7"
-        },
-        {
-          "id": "engine_reprogrammed_factory_trim_includes_rom_chips_ecu_7",
-          "prompt": "Reprogrammed Factory Trim (includes ROM chips) ECU, forced induction engine air/fuel change only. If applicable, additional points must be added for an increase in boost.",
+          "id": "engine_boost_increase",
+          "prompt": "Turbo/supercharger boost increase percentage",
           "answerType": "number",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A8"
-        },
-        {
-          "id": "engine_non_factory_trim_ecu_forced_induction_engine_eng_8",
-          "prompt": "Non-Factory Trim ECU, forced induction engine engine air/fuel change only. If applicable, additional points must be added for an increase in boost.",
-          "answerType": "number",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A9"
-        },
-        {
-          "id": "engine_turbo_boost_increase_50_9",
-          "prompt": "Turbo Boost increase <50%",
-          "answerType": "text",
           "sheetName": "Engine",
           "sourceRef": "Engine!A10"
         },
         {
-          "id": "engine_turbo_boost_increase_50_10",
-          "prompt": "Turbo Boost increase >50%",
-          "answerType": "text",
+          "id": "engine_intake_type",
+          "prompt": "Intake modification level",
+          "answerType": "select",
           "sheetName": "Engine",
-          "sourceRef": "Engine!A11"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_air_intake_before_the__11",
-          "prompt": "Non-Factory Trim/modified air intake before the throttle body",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A12"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_headlight_to_allow_inc_12",
-          "prompt": "Non-factory trim/modified headlight to allow increased or cooler air flow to engine air intake, unless already taking one point for cold air intake.",
-          "answerType": "number",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A13"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_throttle_body_13",
-          "prompt": "Non-Factory Trim/modified throttle body",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A14"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_fuel_delivery_system_e_14",
-          "prompt": "Non-Factory Trim/modified fuel delivery system, except fuel pump(s) (i.e. fuel injectors, fuel rails, fuel regulators)",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A15"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_intake_manifold_1_6_cy_15",
-          "prompt": "Non-Factory Trim/modified intake manifold 1-6 cylinder engines, including manifold porting",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A16"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_intake_manifold_7_12_c_16",
-          "prompt": "Non-Factory Trim/modified intake manifold 7-12 cylinder engines, including manifold porting",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A17"
-        },
-        {
-          "id": "engine_water_alcohol_injection_system_17",
-          "prompt": "Water-alcohol injection System",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A18"
-        },
-        {
-          "id": "engine_dyno_18",
-          "prompt": "Dyno",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A19"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_supercharger_pulley_19",
-          "prompt": "Non-Factory Trim/modified supercharger pulley",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A20"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_boost_controller_or_va_20",
-          "prompt": "Non-Factory Trim/modified boost controller or vacuum lines that control boost",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A21"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_wastegate_wastegate_ac_21",
-          "prompt": "Non-Factory Trim/modified wastegate, wastegate actuator",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A22"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_intercooler_22",
-          "prompt": "Non-Factory Trim/modified intercooler",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A23"
-        },
-        {
-          "id": "engine_non_factory_trim_modified_intercooler_pipes_only_23",
-          "prompt": "Non-Factory Trim/modified intercooler pipes only",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A24"
-        },
-        {
-          "id": "engine_increase_compression_ratio_by_50_or_less_29",
-          "prompt": "Increase compression ratio by .50 or less",
-          "answerType": "text",
-          "sheetName": "Engine",
-          "sourceRef": "Engine!A30"
+          "sourceRef": "Engine!A12",
+          "options": [
+            { "id": "stock", "label": "Stock intake" },
+            { "id": "panel_filter", "label": "Panel filter only" },
+            { "id": "full_intake", "label": "Full non-factory intake" }
+          ]
         }
       ]
     },
@@ -373,182 +80,33 @@
       "id": "drivetrain",
       "label": "Drivetrain",
       "sheetName": "Drivetrain",
-      "description": "Auto-imported MVP category from Drivetrain sheet.",
+      "description": "Three MVP starter entries for drivetrain modifications.",
       "questions": [
         {
-          "id": "drivetrain_comscc_2027_v2_test_0",
-          "prompt": "COMSCC 2027 V2 TEST",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A1"
-        },
-        {
-          "id": "drivetrain_touring_class_summary_1",
-          "prompt": "Touring Class Summary",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A2"
-        },
-        {
-          "id": "drivetrain_drivetrain_modifications_worksheet_2",
-          "prompt": "Drivetrain Modifications Worksheet",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A3"
-        },
-        {
-          "id": "drivetrain_click_select_where_appropriate_3",
-          "prompt": "Click \"Select\" where appropriate",
+          "id": "drivetrain_transmission_type",
+          "prompt": "Transmission type",
           "answerType": "select",
           "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A4"
+          "sourceRef": "Drivetrain!A8",
+          "options": [
+            { "id": "manual", "label": "Manual" },
+            { "id": "automatic", "label": "Automatic" },
+            { "id": "dct", "label": "Dual-clutch" }
+          ]
         },
         {
-          "id": "drivetrain_select_or_true_4",
-          "prompt": "Select or TRUE",
-          "answerType": "select",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A5"
-        },
-        {
-          "id": "drivetrain_non_factory_trim_sequential_gearbox_5",
-          "prompt": "Non-Factory Trim sequential gearbox",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A6"
-        },
-        {
-          "id": "drivetrain_non_factory_trim_non_sequential_h_pattern_dogbox_6",
-          "prompt": "Non-Factory Trim non-sequential (H pattern) Dogbox gearbox",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A7"
-        },
-        {
-          "id": "drivetrain_dual_clutch_transmission_dsg_dct_pdk_etc_7",
-          "prompt": "Dual clutch transmission - DSG, DCT, PDK, etc",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A8"
-        },
-        {
-          "id": "drivetrain_7_speed_or_more_automatic_transmission_gm_hydram_8",
-          "prompt": "7 speed or more automatic transmission - GM HydraMatic 10L90 and 10L80, Ford 10R80, ZF HP8, Mercedes 7G-Tronic etc",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A9"
-        },
-        {
-          "id": "drivetrain_automated_single_clutch_manual_transmission_smg__9",
-          "prompt": "Automated single clutch manual transmission - SMG, Ferrari F1, Lambo E-Gear etc",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A10"
-        },
-        {
-          "id": "drivetrain_manual_tranmission_with_factory_autoblip_nissan__10",
-          "prompt": "Manual tranmission with factory autoblip (Nissan 370Z, BMW M2, C7 Corvette, Porsche) or aftermarket add-on",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A11"
-        },
-        {
-          "id": "drivetrain_5_or_6_speed_manual_transmission_11",
-          "prompt": "5 or 6 speed manual transmission",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A12"
-        },
-        {
-          "id": "drivetrain_3_or_4_speed_manual_transmission_12",
-          "prompt": "3 or 4 speed manual transmission",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A13"
-        },
-        {
-          "id": "drivetrain_automatic_transmission_with_6_speeds_or_less_13",
-          "prompt": "Automatic transmission with 6 speeds or less",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A14"
-        },
-        {
-          "id": "drivetrain_cvt_transmission_14",
-          "prompt": "CVT Transmission",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A15"
-        },
-        {
-          "id": "drivetrain_non_factory_trim_modified_final_drive_ratio_15",
-          "prompt": "Non-Factory Trim/modified final drive ratio",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A16"
-        },
-        {
-          "id": "drivetrain_non_factory_trim_modified_lsd_if_vehicle_is_equi_16",
-          "prompt": "Non-Factory Trim/modified LSD if vehicle is equipped with LSD from the factory or was a factory option",
-          "answerType": "text",
+          "id": "drivetrain_lsd_modified",
+          "prompt": "LSD is modified or non-factory",
+          "answerType": "boolean",
           "sheetName": "Drivetrain",
           "sourceRef": "Drivetrain!A17"
         },
         {
-          "id": "drivetrain_non_factory_trim_modified_lsd_if_vehicle_is_not__17",
-          "prompt": "Non-Factory Trim/modified LSD if vehicle is not equipped with LSD from the factory or was not a factory option",
-          "answerType": "text",
+          "id": "drivetrain_final_drive_ratio",
+          "prompt": "Final drive ratio changed",
+          "answerType": "boolean",
           "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A18"
-        },
-        {
-          "id": "drivetrain_non_factory_trim_modified_traction_control_ie_vi_18",
-          "prompt": "Non-Factory Trim/modified traction control (ie via Non-Factory Trim ECU mapping)",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A19"
-        },
-        {
-          "id": "drivetrain_non_factory_trim_modified_electronically_control_19",
-          "prompt": "Non-Factory Trim/modified electronically controlled center differential mapping (ie GEMS center diff controller for Mitsubishi Evo, Subaru STi)",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A20"
-        },
-        {
-          "id": "drivetrain_non_factory_trim_modified_half_shafts_or_drivesh_20",
-          "prompt": "Non-Factory Trim/modified half shafts or driveshafts including carbon fiber and aluminium driveshafts",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A21"
-        },
-        {
-          "id": "drivetrain_relocation_of_transmission_location_via_altered__21",
-          "prompt": "Relocation of transmission location via altered mounts",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A22"
-        },
-        {
-          "id": "drivetrain_0_5_22",
-          "prompt": "0.5",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A23"
-        },
-        {
-          "id": "drivetrain_non_factory_trim_modified_flywheel_23",
-          "prompt": "Non-Factory Trim/modified flywheel",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A24"
-        },
-        {
-          "id": "drivetrain_non_factory_trim_modified_motor_transmission_dif_24",
-          "prompt": "Non-Factory Trim/modified motor, transmission, differential, and/or other drivetrain mounts, including metallic and non-metallic mounts",
-          "answerType": "text",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!A25"
+          "sourceRef": "Drivetrain!A16"
         }
       ]
     },
@@ -556,182 +114,33 @@
       "id": "suspension",
       "label": "Suspension",
       "sheetName": "Suspension",
-      "description": "Auto-imported MVP category from Suspension sheet.",
+      "description": "Three MVP starter entries for suspension modifications.",
       "questions": [
         {
-          "id": "suspension_comscc_2027_v2_test_0",
-          "prompt": "COMSCC 2027 V2 TEST",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A1"
-        },
-        {
-          "id": "suspension_touring_class_summary_1",
-          "prompt": "Touring Class Summary",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A2"
-        },
-        {
-          "id": "suspension_suspension_modifications_worksheet_2",
-          "prompt": "Suspension Modifications Worksheet",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A3"
-        },
-        {
-          "id": "suspension_click_select_where_appropriate_3",
-          "prompt": "Click \"Select\" where appropriate",
+          "id": "suspension_damper_level",
+          "prompt": "Damper/shock setup",
           "answerType": "select",
           "sheetName": "Suspension",
-          "sourceRef": "Suspension!A4"
+          "sourceRef": "Suspension!A6",
+          "options": [
+            { "id": "stock", "label": "Stock / non-adjustable" },
+            { "id": "one_way", "label": "1-way adjustable" },
+            { "id": "multi_way", "label": "2-way or more adjustable" }
+          ]
         },
         {
-          "id": "suspension_select_or_true_4",
-          "prompt": "Select or TRUE",
-          "answerType": "select",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A5"
-        },
-        {
-          "id": "suspension_non_factory_trim_non_adjustable_shocks_struts_da_5",
-          "prompt": "Non-Factory Trim non-adjustable shocks, struts, dampers",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A6"
-        },
-        {
-          "id": "suspension_non_factory_trim_1_way_adjustable_shocks_struts__6",
-          "prompt": "Non-Factory Trim 1-way adjustable shocks, struts, dampers",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A7"
-        },
-        {
-          "id": "suspension_non_factory_trim_2_way_adjustable_shocks_struts__7",
-          "prompt": "Non-Factory Trim 2-way adjustable shocks, struts, dampers",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A8"
-        },
-        {
-          "id": "suspension_non_factory_trim_3_way_or_more_adjustable_shocks_8",
-          "prompt": "Non-Factory Trim 3-way (or more) adjustable shocks, struts, dampers",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A9"
-        },
-        {
-          "id": "suspension_non_factory_trim_shocks_struts_dampers_with_pigg_9",
-          "prompt": "Non-Factory Trim shocks, struts, dampers with piggyback canister or external remote canister – note: must also take points for shocks/struts/dampers as listed above",
-          "answerType": "number",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A10"
-        },
-        {
-          "id": "suspension_non_adjustable_non_factory_trim_coil_springs_lea_10",
-          "prompt": "Non-adjustable non-Factory Trim coil springs, leaf springs, or torsion bars (or non-modified factory height adjustment)",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A11"
-        },
-        {
-          "id": "suspension_height_adjustable_non_factory_trim_coil_springs__11",
-          "prompt": "Height adjustable non-Factory Trim coil springs, leaf springs, or torsion bars (or springs with modified factory height adjustment)",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A12"
-        },
-        {
-          "id": "suspension_torsion_bar_to_coil_spring_conversion_12",
-          "prompt": "Torsion bar to coil spring conversion",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A13"
-        },
-        {
-          "id": "suspension_non_factory_trim_sway_bars_13",
-          "prompt": "Non-Factory Trim sway bars",
-          "answerType": "text",
+          "id": "suspension_sway_bars",
+          "prompt": "Aftermarket sway bars installed",
+          "answerType": "boolean",
           "sheetName": "Suspension",
           "sourceRef": "Suspension!A14"
         },
         {
-          "id": "suspension_non_factory_trim_engine_bracing_not_including_mo_14",
-          "prompt": "Non-Factory Trim engine bracing (not including motor and other drivetrain mounts)",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A15"
-        },
-        {
-          "id": "suspension_non_factory_trim_modified_control_arms_or_non_fa_15",
-          "prompt": "Non-Factory Trim/Modified Control Arms or Non-Factory Trim/Modified Trailing or Camber Arms of different dimensions than Factory Trim",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A16"
-        },
-        {
-          "id": "suspension_modification_of_wishbone_suspension_upright_16",
-          "prompt": "Modification of wishbone suspension upright",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A17"
-        },
-        {
-          "id": "suspension_non_factory_trim_subframe_that_does_not_alter_su_17",
-          "prompt": "Non-Factory Trim subframe that does not alter suspension geometry",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A18"
-        },
-        {
-          "id": "suspension_non_factory_trim_modified_watts_link_18",
-          "prompt": "Non-Factory Trim/modified Watts Link",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A19"
-        },
-        {
-          "id": "suspension_non_factory_trim_modified_panhard_bar_19",
-          "prompt": "Non-Factory Trim/modified panhard bar",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A20"
-        },
-        {
-          "id": "suspension_non_factory_trim_torque_bar_20",
-          "prompt": "Non-Factory Trim torque bar",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A21"
-        },
-        {
-          "id": "suspension_modify_oem_torque_bar_21",
-          "prompt": "Modify OEM torque bar",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A22"
-        },
-        {
-          "id": "suspension_non_factory_trim_suspension_bushings_or_spherica_22",
-          "prompt": "Non-Factory Trim suspension bushings or spherical bearings, except rubber or polyurethane , except for spherical bearings in strut or shock top mounts",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A23"
-        },
-        {
-          "id": "suspension_non_factory_trim_modified_suspension_components__23",
-          "prompt": "Non-Factory Trim/modified suspension components which enable alignment settings beyond Factory Trim capability (does not apply to coil springs, leaf springs, or torsion bars); note - additional points may need to be taken for specific non-Factory Trim suspension components if listed elsewhere in this section",
-          "answerType": "number",
+          "id": "suspension_alignment_hardware",
+          "prompt": "Alignment hardware allows beyond-factory settings",
+          "answerType": "boolean",
           "sheetName": "Suspension",
           "sourceRef": "Suspension!A24"
-        },
-        {
-          "id": "suspension_non_factory_trim_bracing_including_strut_shock_t_24",
-          "prompt": "Non-Factory Trim bracing, including strut/shock tower brace, chassis brace(s) (e.g. X-brace or cross-bar)",
-          "answerType": "text",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!A25"
         }
       ]
     },
@@ -739,140 +148,33 @@
       "id": "brakes",
       "label": "Brakes",
       "sheetName": "Brakes",
-      "description": "Auto-imported MVP category from Brakes sheet.",
+      "description": "Three MVP starter entries for brake modifications.",
       "questions": [
         {
-          "id": "brakes_comscc_2027_v2_test_0",
-          "prompt": "COMSCC 2027 V2 TEST",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A1"
-        },
-        {
-          "id": "brakes_touring_class_summary_1",
-          "prompt": "Touring Class Summary",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A2"
-        },
-        {
-          "id": "brakes_brakes_modifications_worksheet_2",
-          "prompt": "Brakes Modifications Worksheet",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A3"
-        },
-        {
-          "id": "brakes_click_select_where_appropriate_3",
-          "prompt": "Click \"Select\" where appropriate",
-          "answerType": "select",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A4"
-        },
-        {
-          "id": "brakes_select_or_true_4",
-          "prompt": "Select or TRUE",
-          "answerType": "select",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A5"
-        },
-        {
-          "id": "brakes_non_factory_trim_brake_calipers_drums_and_or_rot_5",
-          "prompt": "Non‐Factory Trim brake calipers, drums, and/or rotors of a different size ‐ front, rear or both",
-          "answerType": "text",
+          "id": "brakes_caliper_rotor_size",
+          "prompt": "Brake calipers/rotors changed size",
+          "answerType": "boolean",
           "sheetName": "Brakes",
           "sourceRef": "Brakes!A6"
         },
         {
-          "id": "brakes_non_factory_trim_modified_abs_e_g_bosch_motorspo_6",
-          "prompt": "Non-Factory Trim/modified ABS (e.g. Bosch Motorsport ABS)",
-          "answerType": "text",
+          "id": "brakes_abs_modification",
+          "prompt": "ABS modified or disabled",
+          "answerType": "select",
           "sheetName": "Brakes",
-          "sourceRef": "Brakes!A7"
+          "sourceRef": "Brakes!A7",
+          "options": [
+            { "id": "factory", "label": "Factory ABS active" },
+            { "id": "modified", "label": "Modified aftermarket ABS" },
+            { "id": "disabled", "label": "ABS disabled / none" }
+          ]
         },
         {
-          "id": "brakes_disabling_any_and_all_factory_and_or_aftermarket_7",
-          "prompt": "Disabling any and all factory and/or aftermarket ABS or competing in a vehicle not originally equipped with ABS",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A8"
-        },
-        {
-          "id": "brakes_non_factory_trim_rotors_of_the_same_type_and_sha_8",
-          "prompt": "Non-Factory Trim rotors of the same type and shape as OEM",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A9"
-        },
-        {
-          "id": "brakes_non_factory_trim_rotors_of_the_same_thickness_an_9",
-          "prompt": "Non-Factory Trim rotors of the same thickness and diameter as Factory Trim, including swap from one-piece to two-piece rotors",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A10"
-        },
-        {
-          "id": "brakes_non_factory_trim_brake_pads_or_shoes_10",
-          "prompt": "Non-Factory Trim brake pads or shoes",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A11"
-        },
-        {
-          "id": "brakes_non_factory_trim_modified_brake_lines_11",
-          "prompt": "Non-Factory Trim/modified brake lines",
-          "answerType": "text",
+          "id": "brakes_lines_upgraded",
+          "prompt": "Brake lines upgraded",
+          "answerType": "boolean",
           "sheetName": "Brakes",
           "sourceRef": "Brakes!A12"
-        },
-        {
-          "id": "brakes_non_factory_trim_modified_brake_ducting_12",
-          "prompt": "Non-Factory Trim/modified brake ducting",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A13"
-        },
-        {
-          "id": "brakes_enabling_or_use_of_factory_trim_abs_13",
-          "prompt": "Enabling or use of Factory Trim ABS",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A14"
-        },
-        {
-          "id": "brakes_non_factory_trim_drilled_or_slotted_rotors_of_th_14",
-          "prompt": "Non-Factory Trim drilled or slotted rotors of the same shape and size as OEM",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A15"
-        },
-        {
-          "id": "brakes_modified_re_located_or_non_factory_trim_brake_br_15",
-          "prompt": "Modified, re-located, or non-Factory Trim brake brakets",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A16"
-        },
-        {
-          "id": "brakes_total_16",
-          "prompt": "Total",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A17"
-        },
-        {
-          "id": "brakes_total_brakes_modifications_assessment_17",
-          "prompt": "Total Brakes Modifications Assessment",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A18"
-        },
-        {
-          "id": "brakes_go_to_previous_sheet_suspension_18",
-          "prompt": "Go to previous sheet (Suspension)",
-          "answerType": "text",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!A19"
         }
       ]
     },
@@ -880,182 +182,38 @@
       "id": "exterior",
       "label": "Exterior",
       "sheetName": "Exterior",
-      "description": "Auto-imported MVP category from Exterior sheet.",
+      "description": "Three MVP starter entries for aero/exterior modifications.",
       "questions": [
         {
-          "id": "exterior_comscc_2027_v2_test_0",
-          "prompt": "COMSCC 2027 V2 TEST",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A1"
-        },
-        {
-          "id": "exterior_touring_class_summary_1",
-          "prompt": "Touring Class Summary",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A2"
-        },
-        {
-          "id": "exterior_exterior_modifications_worksheet_2",
-          "prompt": "Exterior Modifications Worksheet",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A3"
-        },
-        {
-          "id": "exterior_click_select_where_appropriate_and_enter_informa_3",
-          "prompt": "Click \"Select\" where appropriate and enter information in the yellow cells…",
+          "id": "exterior_front_aero",
+          "prompt": "Front aero setup",
           "answerType": "select",
           "sheetName": "Exterior",
-          "sourceRef": "Exterior!A4"
+          "sourceRef": "Exterior!A6",
+          "options": [
+            { "id": "stock", "label": "Stock bumper/aero" },
+            { "id": "bumper_or_dam", "label": "Modified bumper/air dam" },
+            { "id": "splitter", "label": "Splitter added" }
+          ]
         },
         {
-          "id": "exterior_select_or_true_4",
-          "prompt": "Select or TRUE",
+          "id": "exterior_rear_wing",
+          "prompt": "Rear wing/spoiler modification level",
           "answerType": "select",
           "sheetName": "Exterior",
-          "sourceRef": "Exterior!A5"
+          "sourceRef": "Exterior!A10",
+          "options": [
+            { "id": "none", "label": "None / stock" },
+            { "id": "small", "label": "Within limited dimensions" },
+            { "id": "large", "label": "Any size/shape" }
+          ]
         },
         {
-          "id": "exterior_non_factory_trim_modified_front_bumper_air_dam_s_5",
-          "prompt": "Non-Factory Trim/modified front bumper/air dam/spoiler",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A6"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_front_splitter_in_addi_6",
-          "prompt": "Non-Factory Trim/modified front splitter, in addition to bumper/air dam/spoiler",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A7"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_front_splitter_that_ex_7",
-          "prompt": "Non-Factory Trim/modified front splitter that extends more than 3.5 inches from front bumper skin leading edge, in addition to bumper/air dam/spoiler",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A8"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_canards_each_set_asses_8",
-          "prompt": "Non-Factory Trim/modified canards (each set assessed points front or rear)",
-          "answerType": "number",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A9"
-        },
-        {
-          "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including__9",
-          "prompt": "Non-Factory Trim Rear spoiler or wing including any airfoil that in no way protrudes more than 6” from the mounting location of the spoiler or wing, does not exceed the height of the vehicle, and does not extend beyond the width of the rear quarter panels.",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A10"
-        },
-        {
-          "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including__10",
-          "prompt": "Non-Factory Trim Rear spoiler or wing including any airfoil that does not exceed the height of the vehicle, does not extend beyond the width of the rear quarter panels, and does not extend no more than 6\" beyond the skin of the rear bumper",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A11"
-        },
-        {
-          "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including__11",
-          "prompt": "Non-Factory Trim Rear spoiler or wing including any air foil of any size or shape",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A12"
-        },
-        {
-          "id": "exterior_non_factory_trim_hardtop_of_different_shape_and__12",
-          "prompt": "Non-Factory Trim hardtop of different shape and size which alters airflow aft of the OEM rear glass (eg CWest Honda S2000 aero hardtop)",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A13"
-        },
-        {
-          "id": "exterior_factory_trim_hardtop_or_non_factory_trim_hardtop_13",
-          "prompt": "Factory trim hardtop or Non-Factory Trim hardtop of the same shape and size of OEM hardtop",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A14"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_vortex_generator_to_ro_14",
-          "prompt": "Non-Factory Trim/modified vortex generator to roof, hardtop, rear glass or trunk",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A15"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_flat_bottom_15",
-          "prompt": "Non-Factory Trim/modified flat bottom",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A16"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_rear_diffuser_16",
-          "prompt": "Non-Factory Trim/modified rear diffuser",
-          "answerType": "text",
+          "id": "exterior_diffuser",
+          "prompt": "Rear diffuser installed",
+          "answerType": "boolean",
           "sheetName": "Exterior",
           "sourceRef": "Exterior!A17"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_side_skirts_17",
-          "prompt": "Non-Factory Trim/modified side skirts",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A18"
-        },
-        {
-          "id": "exterior_non_factory_trim_active_aero_i_e_moveable_aero_d_18",
-          "prompt": "Non-factory trim Active aero, i.e. moveable aero devices; points assessed for each piece, in addition to assessment points listed above (set number of pieces below)",
-          "answerType": "number",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A19"
-        },
-        {
-          "id": "exterior_front_underbody_tray_that_does_not_extend_in_fro_19",
-          "prompt": "Front Underbody Tray that does not extend in front of the front bumper skin, beyond the width of the front quarter panels, or more than 18\" behind the front axle; note – points for front splitter, bumper, spoiler, air dam, and flat bottom assessed separately",
-          "answerType": "number",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A20"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_fenders_20",
-          "prompt": "Non-Factory Trim/modified fenders",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A21"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_doors_21",
-          "prompt": "Non-Factory Trim/modified doors",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A22"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_trunk_lid_22",
-          "prompt": "Non-Factory Trim/modified trunk lid",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A23"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_rear_bumper_23",
-          "prompt": "Non-Factory Trim/modified rear bumper",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A24"
-        },
-        {
-          "id": "exterior_non_factory_trim_modified_hood_24",
-          "prompt": "Non-Factory Trim/modified hood",
-          "answerType": "text",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!A25"
         }
       ]
     },
@@ -1063,182 +221,28 @@
       "id": "weight",
       "label": "Weight",
       "sheetName": "Weight",
-      "description": "Auto-imported MVP category from Weight sheet.",
+      "description": "Three MVP starter entries for weight assessment.",
       "questions": [
         {
-          "id": "weight_comscc_2027_v2_test_0",
-          "prompt": "COMSCC 2027 V2 TEST",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A1"
-        },
-        {
-          "id": "weight_touring_class_summary_1",
-          "prompt": "Touring Class Summary",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A2"
-        },
-        {
-          "id": "weight_full_7_8_3_4_2_3_1_2_2",
-          "prompt": "Full,7/8,3/4,2/3,1/2",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A3"
-        },
-        {
-          "id": "weight_weight_reduction_worksheet_3",
-          "prompt": "Weight Reduction Worksheet",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A4"
-        },
-        {
-          "id": "weight_enter_weight_in_the_yellow_cell_4",
-          "prompt": "Enter weight in the yellow cell",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A5"
-        },
-        {
-          "id": "weight_2_3_5",
-          "prompt": "2/3",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A6"
-        },
-        {
-          "id": "weight_weight_type_6",
-          "prompt": "Weight Type",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A7"
-        },
-        {
-          "id": "weight_showroom_base_weight_7",
-          "prompt": "Showroom Base Weight",
-          "answerType": "text",
+          "id": "weight_showroom",
+          "prompt": "Showroom base weight (lbs)",
+          "answerType": "number",
           "sheetName": "Weight",
           "sourceRef": "Weight!A8"
         },
         {
-          "id": "weight_competition_weight_8",
-          "prompt": "Competition Weight",
-          "answerType": "text",
+          "id": "weight_competition",
+          "prompt": "Competition weight (lbs)",
+          "answerType": "number",
           "sheetName": "Weight",
           "sourceRef": "Weight!A9"
         },
         {
-          "id": "weight_weight_difference_9",
-          "prompt": "Weight Difference",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A10"
-        },
-        {
-          "id": "weight_1_4_10",
-          "prompt": "1/4",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A11"
-        },
-        {
-          "id": "weight_weight_reduction_assessment_11",
-          "prompt": "Weight Reduction Assessment",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A12"
-        },
-        {
-          "id": "weight_empty_12",
-          "prompt": "Empty",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A13"
-        },
-        {
-          "id": "weight_ballast_record_13",
-          "prompt": "Ballast Record",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A14"
-        },
-        {
-          "id": "weight_indicate_the_fuel_level_and_ballast_for_steward__14",
-          "prompt": "Indicate the fuel level and ballast for steward inspection purposes as included in your competition weight",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A15"
-        },
-        {
-          "id": "weight_item_15",
-          "prompt": "Item",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A16"
-        },
-        {
-          "id": "weight_ballast_amount_lbs_16",
-          "prompt": "Ballast Amount (lbs)",
-          "answerType": "text",
+          "id": "weight_ballast",
+          "prompt": "Ballast amount (lbs)",
+          "answerType": "number",
           "sheetName": "Weight",
           "sourceRef": "Weight!A17"
-        },
-        {
-          "id": "weight_ballast_location_17",
-          "prompt": "Ballast Location",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A18"
-        },
-        {
-          "id": "weight_fuel_type_18",
-          "prompt": "Fuel Type",
-          "answerType": "select",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A19"
-        },
-        {
-          "id": "weight_fuel_level_19",
-          "prompt": "Fuel Level",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A20"
-        },
-        {
-          "id": "weight_fuel_capacity_gal_20",
-          "prompt": "Fuel Capacity (Gal.)",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A21"
-        },
-        {
-          "id": "weight_approx_fuel_weight_21",
-          "prompt": "Approx Fuel Weight",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A22"
-        },
-        {
-          "id": "weight_steward_use_only_22",
-          "prompt": "Steward Use Only",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A23"
-        },
-        {
-          "id": "weight_fuel_weight_difference_24",
-          "prompt": "Fuel Weight Difference",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A25"
-        },
-        {
-          "id": "weight_note_weight_reduction_can_be_achieved_by_removin_25",
-          "prompt": "Note – weight reduction can be achieved by removing or replacing any non-essential parts, unless otherwise mentioned",
-          "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A26"
         }
       ]
     },
@@ -1246,182 +250,33 @@
       "id": "tires",
       "label": "Tires",
       "sheetName": "Tires",
-      "description": "Auto-imported MVP category from Tires sheet.",
+      "description": "Three MVP starter entries for tire classification.",
       "questions": [
         {
-          "id": "tires_comscc_2027_v2_test_0",
-          "prompt": "COMSCC 2027 V2 TEST",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A1"
-        },
-        {
-          "id": "tires_touring_class_summary_1",
-          "prompt": "Touring Class Summary",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A2"
-        },
-        {
-          "id": "tires_tires_reduction_worksheet_2",
-          "prompt": "Tires Reduction Worksheet",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A3"
-        },
-        {
-          "id": "tires_select_a_tire_and_enter_tire_width_information_i_3",
-          "prompt": "Select a tire and enter tire width information in the yellow cells…",
+          "id": "tires_compound_class",
+          "prompt": "Tire compound class",
           "answerType": "select",
           "sheetName": "Tires",
-          "sourceRef": "Tires!A4"
+          "sourceRef": "Tires!A7",
+          "options": [
+            { "id": "non_dot_slick", "label": "Non-DOT slick" },
+            { "id": "r_compound", "label": "R-compound" },
+            { "id": "street_200tw", "label": "200TW street tire" }
+          ]
         },
         {
-          "id": "tires_note_tire_softening_compounds_are_illegal_in_all_4",
-          "prompt": "Note: Tire softening compounds are illegal in all Touring classes",
-          "answerType": "text",
+          "id": "tires_front_width",
+          "prompt": "Front tire width (mm)",
+          "answerType": "number",
           "sheetName": "Tires",
-          "sourceRef": "Tires!A5"
+          "sourceRef": "Tires!B"
         },
         {
-          "id": "tires_select_or_true_5",
-          "prompt": "Select or TRUE",
-          "answerType": "select",
+          "id": "tires_rear_width",
+          "prompt": "Rear tire width (mm)",
+          "answerType": "number",
           "sheetName": "Tires",
-          "sourceRef": "Tires!A6"
-        },
-        {
-          "id": "tires_non_dot_slicks_except_where_noted_6",
-          "prompt": "Non-DOT Slicks (except where noted)",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A7"
-        },
-        {
-          "id": "tires_hoosier_a8_7",
-          "prompt": "Hoosier A8",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A8"
-        },
-        {
-          "id": "tires_bfgoodrich_r1_s_g_force_slick_8",
-          "prompt": "BFGoodrich R1-S, g-force slick",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A9"
-        },
-        {
-          "id": "tires_continental_challenge_wets_9",
-          "prompt": "Continental Challenge Wets",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A10"
-        },
-        {
-          "id": "tires_goodyear_rs_ac_dot_radial_10",
-          "prompt": "Goodyear RS AC - \"dot radial\"",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A11"
-        },
-        {
-          "id": "tires_hankook_c90_c91_c9_wets_11",
-          "prompt": "Hankook c90, c91,C9, Wets",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A12"
-        },
-        {
-          "id": "tires_hoosier_radial_wets_h2o_smw_12",
-          "prompt": "Hoosier Radial Wets, H2O,SMW",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A13"
-        },
-        {
-          "id": "tires_hoosier_a_compound_all_13",
-          "prompt": "Hoosier A Compound (All)",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A14"
-        },
-        {
-          "id": "tires_pirelli_p_zero_slick_dh_compound_only_14",
-          "prompt": "Pirelli P-Zero Slick ( DH Compound ONLY)",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A15"
-        },
-        {
-          "id": "tires_hoosier_r8_15",
-          "prompt": "Hoosier R8",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A16"
-        },
-        {
-          "id": "tires_hoosier_smx_16",
-          "prompt": "Hoosier SMX",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A17"
-        },
-        {
-          "id": "tires_hankook_c70_c71_c7_17",
-          "prompt": "Hankook c70, c71, C7",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A18"
-        },
-        {
-          "id": "tires_yoko_a055_18",
-          "prompt": "Yoko A055",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A19"
-        },
-        {
-          "id": "tires_goodyear_eagle_rs_19",
-          "prompt": "Goodyear eagle RS",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A20"
-        },
-        {
-          "id": "tires_hoosier_r7_sm7_sm7_5_compound_all_20",
-          "prompt": "Hoosier R7, SM7, SM7.5 compound (All)",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A21"
-        },
-        {
-          "id": "tires_kumho_ecsta_v700_21",
-          "prompt": "Kumho Ecsta V700",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A22"
-        },
-        {
-          "id": "tires_bfgoodrich_r1_22",
-          "prompt": "BFGoodrich R1",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A23"
-        },
-        {
-          "id": "tires_hankook_z214_c50_c51_c5_23",
-          "prompt": "Hankook Z214 c50, c51, C5",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A24"
-        },
-        {
-          "id": "tires_dot_utqg_rating_41_120_unclassified_24",
-          "prompt": "DOT UTQG rating 41-120 (unclassified)",
-          "answerType": "text",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A25"
+          "sourceRef": "Tires!C"
         }
       ]
     }
