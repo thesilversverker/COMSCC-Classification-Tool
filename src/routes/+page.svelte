@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { get } from 'svelte/store';
   import rulesJson from '$data/rules.v1.json';
   import CategoryNav from '$components/CategoryNav.svelte';
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
@@ -23,27 +22,31 @@
     if (questionId === 'vehicles_make') {
       sessionStore.setAnswer('vehicles_model', null);
     }
-
-    // Logical component: auto-advance from each category's first prompt.
-    const nav = get(navigationStore);
-    const currentCategory = rules.categories[nav.categoryIndex];
-    const currentQuestion = currentCategory?.questions[nav.questionIndex];
-    const hasAnswer = value !== null && value !== '';
-
-    if (nav.questionIndex === 0 && currentQuestion?.id === questionId && hasAnswer) {
-      navigationStore.nextQuestion(rules);
-    }
   }
 
   $: category = rules.categories[$navigationStore.categoryIndex];
-  $: question = category?.questions[$navigationStore.questionIndex];
   $: completion = calculateCompletion(rules, $sessionStore.answers);
   $: selectedModel = typeof $sessionStore.answers.vehicles_model === 'string' ? $sessionStore.answers.vehicles_model : '';
   $: showroomWeightValue = selectedModel ? String(showroomWeightByModel[selectedModel] ?? '') : '';
-  $: renderedValue =
-    question?.id === 'weight_showroom'
-      ? showroomWeightValue
-      : ($sessionStore.answers[question?.id ?? ''] ?? null);
+
+  // Logical component: compute display value per question, including derived values.
+  function getRenderedValue(questionId: string): RuleAnswer {
+    if (questionId === 'weight_showroom') {
+      return showroomWeightValue;
+    }
+    return $sessionStore.answers[questionId] ?? null;
+  }
+
+  // Logical component: category-only navigation for footer controls.
+  function goToNextCategory() {
+    const nextIndex = Math.min($navigationStore.categoryIndex + 1, rules.categories.length - 1);
+    navigationStore.goToCategory(nextIndex);
+  }
+
+  function goToPreviousCategory() {
+    const prevIndex = Math.max($navigationStore.categoryIndex - 1, 0);
+    navigationStore.goToCategory(prevIndex);
+  }
 
   // Logical component: defensive hydration for SSR/browser transitions.
   if (typeof window !== 'undefined') {
@@ -69,13 +72,17 @@
       onSelect={(index) => navigationStore.goToCategory(index)}
     />
 
-    {#if question}
-      <QuestionRenderer
-        {question}
-        value={renderedValue}
-        answers={$sessionStore.answers}
-        onChange={(value) => handleQuestionChange(question.id, value)}
-      />
+    {#if category?.questions?.length}
+      <section class="question-stack">
+        {#each category.questions as question (question.id)}
+          <QuestionRenderer
+            {question}
+            value={getRenderedValue(question.id)}
+            answers={$sessionStore.answers}
+            onChange={(value) => handleQuestionChange(question.id, value)}
+          />
+        {/each}
+      </section>
     {:else}
       <section><p>No question available in this category yet.</p></section>
     {/if}
@@ -84,8 +91,8 @@
   </div>
 
   <footer class="actions">
-    <button type="button" on:click={() => navigationStore.previousQuestion(rules)}>Previous</button>
-    <button type="button" on:click={() => navigationStore.nextQuestion(rules)}>Next</button>
+    <button type="button" on:click={goToPreviousCategory} disabled={$navigationStore.categoryIndex === 0}>Previous Category</button>
+    <button type="button" on:click={goToNextCategory} disabled={$navigationStore.categoryIndex === rules.categories.length - 1}>Next Category</button>
     <button type="button" on:click={() => sessionStore.reset()}>Reset session</button>
   </footer>
 </main>
@@ -94,6 +101,8 @@
   main { max-width: 1080px; margin: 0 auto; padding: 1rem; font-family: system-ui, sans-serif; }
   .layout { display: grid; gap: 1rem; grid-template-columns: minmax(14rem, 1fr) minmax(0, 2fr) minmax(14rem, 1fr); align-items: start; }
   .actions { margin-top: 1rem; display: flex; gap: 0.5rem; }
+  .question-stack { display: grid; gap: 0.75rem; min-width: 0; }
   button { border: 1px solid #bbb; background: #fff; border-radius: 6px; padding: 0.6rem 0.9rem; cursor: pointer; }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
   @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
 </style>
