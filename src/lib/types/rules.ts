@@ -16,6 +16,12 @@ export interface RuleQuestion {
   sourceRef?: string;
   defaultValue?: boolean | number | string;
   options?: RuleOption[];
+  optionsByParent?: Record<string, RuleOption[]>;
+  dependsOn?: string;
+  placeholder?: string;
+  numericOnly?: boolean;
+  digits?: number;
+  readOnly?: boolean;
 }
 
 export interface RuleCategory {

@@ -27,18 +27,34 @@
           "answerType": "select",
           "sheetName": "Vehicles",
           "sourceRef": "Vehicles!B",
-          "options": [
-            { "id": "integra", "label": "Integra" },
-            { "id": "integra_type_r", "label": "Integra Type R" },
-            { "id": "nsx", "label": "NSX" }
-          ]
+          "dependsOn": "vehicles_make",
+          "optionsByParent": {
+            "acura": [
+              { "id": "integra", "label": "Integra" },
+              { "id": "integra_type_r", "label": "Integra Type R" },
+              { "id": "nsx", "label": "NSX" }
+            ],
+            "bmw": [
+              { "id": "e36_m3", "label": "E36 M3" },
+              { "id": "e46_m3", "label": "E46 M3" },
+              { "id": "f87_m2", "label": "F87 M2" }
+            ],
+            "chevrolet": [
+              { "id": "c5_corvette", "label": "C5 Corvette" },
+              { "id": "c6_corvette", "label": "C6 Corvette" },
+              { "id": "camaro_ss_1le", "label": "Camaro SS 1LE" }
+            ]
+          }
         },
         {
           "id": "vehicles_model_year",
-          "prompt": "Model year",
-          "answerType": "number",
+          "prompt": "Model year (4-digit year)",
+          "answerType": "text",
           "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!C"
+          "sourceRef": "Vehicles!C",
+          "placeholder": "e.g. 1993",
+          "numericOnly": true,
+          "digits": 4
         }
       ]
     },
@@ -226,16 +242,19 @@
         {
           "id": "weight_showroom",
           "prompt": "Showroom base weight (lbs)",
-          "answerType": "number",
+          "answerType": "text",
           "sheetName": "Weight",
-          "sourceRef": "Weight!A8"
+          "sourceRef": "Weight!A8",
+          "helpText": "Auto-populated from selected model.",
+          "readOnly": true
         },
         {
           "id": "weight_competition",
           "prompt": "Competition weight (lbs)",
-          "answerType": "number",
+          "answerType": "text",
           "sheetName": "Weight",
-          "sourceRef": "Weight!A9"
+          "sourceRef": "Weight!A9",
+          "numericOnly": true
         },
         {
           "id": "weight_ballast",
