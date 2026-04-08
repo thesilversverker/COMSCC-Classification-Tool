@@ -30,12 +30,35 @@ export interface RuleQuestion {
   needsManualPoints?: boolean;
 }
 
+/** One showroom row from the Vehicles worksheet (column N = Showroom Assessment). */
+export interface VehicleCatalogRow {
+  id: string;
+  make: string;
+  model: string;
+  startYear: number | null;
+  endYear: number | null;
+  showroomBaseWeightLbs: number | null;
+  factoryRatedHp: number | null;
+  factoryRatedTorqueLbFt: number | null;
+  powerBlend: number | null;
+  weightPerPower: number | null;
+  scaledWeightPerPower: number | null;
+  suspIndex: number | null;
+  performanceAdjustment: number | null;
+  /** Workbook column N — Showroom Assessment (base points toward Total Assessment). */
+  showroomAssessment: number | null;
+  baseClassification: string | null;
+  sourceRef: string;
+}
+
 export interface RuleCategory {
   id: string;
   label: string;
   sheetName: string;
   description?: string;
   questions: RuleQuestion[];
+  /** Present on Vehicles rules-source when extracted from the showroom table. */
+  vehicleCatalog?: VehicleCatalogRow[];
 }
 
 export interface RulesDocument {

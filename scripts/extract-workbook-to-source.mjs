@@ -89,6 +89,122 @@ function buildCheckboxQuestion(sheetName, rowIndex, row) {
   };
 }
 
+// Logical component: 0-based column index → Excel column letters (e.g. 13 → N).
+function excelColumnLetterFromZero(zeroBasedIndex) {
+  let n = zeroBasedIndex + 1;
+  let s = '';
+  while (n > 0) {
+    const rem = (n - 1) % 26;
+    s = String.fromCharCode(65 + rem) + s;
+    n = Math.floor((n - 1) / 26);
+  }
+  return s;
+}
+
+function vehiclesHeaderColumnIndex(headerRow, exactLabel) {
+  const h = headerRow.map((x) => String(x ?? '').trim());
+  return h.indexOf(exactLabel);
+}
+
+function findVehiclesTableHeaderRowIndex(rows) {
+  for (let i = 0; i < rows.length; i++) {
+    const labels = (rows[i] || []).map((x) => String(x ?? '').trim());
+    if (
+      labels.includes('Make') &&
+      labels.includes('Model') &&
+      labels.includes('Showroom Assessment')
+    ) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+function parseSheetNumber(cell) {
+  if (cell === null || cell === undefined || cell === '') return null;
+  if (typeof cell === 'number') return Number.isFinite(cell) ? cell : null;
+  const n = Number(String(cell).replace(/,/g, '').trim());
+  return Number.isFinite(n) ? n : null;
+}
+
+function parseSheetYear(cell) {
+  const n = parseSheetNumber(cell);
+  if (n === null) return null;
+  return Math.trunc(n);
+}
+
+// Logical component: showroom table rows from Vehicles sheet (Showroom Assessment = column N when headers match workbook).
+function buildVehicleCatalogRows(sheetName, rows) {
+  const headerIdx = findVehiclesTableHeaderRowIndex(rows);
+  if (headerIdx < 0) {
+    console.warn('[warn] Vehicles: no table header row (Make / Model / Showroom Assessment).');
+    return [];
+  }
+
+  const header = rows[headerIdx] || [];
+  const col = {
+    make: vehiclesHeaderColumnIndex(header, 'Make'),
+    model: vehiclesHeaderColumnIndex(header, 'Model'),
+    startYear: vehiclesHeaderColumnIndex(header, 'Start Year'),
+    endYear: vehiclesHeaderColumnIndex(header, 'End Year'),
+    weight: vehiclesHeaderColumnIndex(header, 'Showroom Base Weight (lbs)'),
+    hp: vehiclesHeaderColumnIndex(header, 'Factory Rated HP'),
+    torque: vehiclesHeaderColumnIndex(header, 'Factory Rated Torque'),
+    powerBlend: vehiclesHeaderColumnIndex(header, 'Power (2/3HP + 1/3Torque)'),
+    weightPerPower: vehiclesHeaderColumnIndex(header, 'Weight/ Power'),
+    scaledWeightPerPower: vehiclesHeaderColumnIndex(header, 'Scaled Weight/ Power'),
+    suspIndex: vehiclesHeaderColumnIndex(header, 'SUSP Index'),
+    performanceAdjustment: vehiclesHeaderColumnIndex(header, 'Performance Adjustment'),
+    showroomAssessment: vehiclesHeaderColumnIndex(header, 'Showroom Assessment'),
+    baseClassification: vehiclesHeaderColumnIndex(header, 'Base Classification')
+  };
+
+  if (col.make < 0 || col.model < 0 || col.showroomAssessment < 0) {
+    console.warn('[warn] Vehicles: missing required columns in header row.');
+    return [];
+  }
+
+  const assessmentColLetter = excelColumnLetterFromZero(col.showroomAssessment);
+  const catalog = [];
+
+  for (let i = headerIdx + 1; i < rows.length; i++) {
+    const r = rows[i] || [];
+    const make = String(r[col.make] ?? '').trim();
+    const model = String(r[col.model] ?? '').trim();
+    if (!make || !model) continue;
+
+    const excelRowNum = i + 1;
+    const showroomAssessment = parseSheetNumber(r[col.showroomAssessment]);
+    const baseRaw = col.baseClassification >= 0 ? String(r[col.baseClassification] ?? '').trim() : '';
+    const baseClassification = baseRaw || null;
+
+    const sy = parseSheetYear(r[col.startYear]);
+    const ey = parseSheetYear(r[col.endYear]);
+    const id = `vehicles_${slugify(make)}_${slugify(model)}_${slugify(String(sy ?? 'na'))}_${slugify(String(ey ?? 'na'))}_r${excelRowNum}`;
+
+    catalog.push({
+      id,
+      make,
+      model,
+      startYear: sy,
+      endYear: ey,
+      showroomBaseWeightLbs: col.weight >= 0 ? parseSheetNumber(r[col.weight]) : null,
+      factoryRatedHp: col.hp >= 0 ? parseSheetNumber(r[col.hp]) : null,
+      factoryRatedTorqueLbFt: col.torque >= 0 ? parseSheetNumber(r[col.torque]) : null,
+      powerBlend: col.powerBlend >= 0 ? parseSheetNumber(r[col.powerBlend]) : null,
+      weightPerPower: col.weightPerPower >= 0 ? parseSheetNumber(r[col.weightPerPower]) : null,
+      scaledWeightPerPower: col.scaledWeightPerPower >= 0 ? parseSheetNumber(r[col.scaledWeightPerPower]) : null,
+      suspIndex: col.suspIndex >= 0 ? parseSheetNumber(r[col.suspIndex]) : null,
+      performanceAdjustment: col.performanceAdjustment >= 0 ? parseSheetNumber(r[col.performanceAdjustment]) : null,
+      showroomAssessment,
+      baseClassification,
+      sourceRef: `${sheetName}!${assessmentColLetter}${excelRowNum}`
+    });
+  }
+
+  return catalog;
+}
+
 function buildLegacyQuestion(sheetName, rowIndex, row) {
   const visibleCells = row.filter((cell) => cell !== null && cell !== undefined && String(cell).trim() !== '');
   if (visibleCells.length === 0) return null;
@@ -131,16 +247,30 @@ function extractWorkbookToSource() {
       continue;
     }
 
-    const rows = xlsx.utils.sheet_to_json(sheet, { header: 1, blankrows: false, defval: null });
+    // Logical component: Vehicles needs real Excel row numbers for sourceRef (e.g. column N); keep blank rows for that sheet only.
+    const rows = xlsx.utils.sheet_to_json(sheet, {
+      header: 1,
+      blankrows: sheetName === 'Vehicles',
+      defval: null
+    });
     const isCheckbox = CHECKBOX_SHEET_NAMES.includes(sheetName);
+    const isVehicles = sheetName === 'Vehicles';
 
-    const questions = rows
-      .slice(0, 800)
-      .map((row, idx) =>
-        isCheckbox ? buildCheckboxQuestion(sheetName, idx, row) : buildLegacyQuestion(sheetName, idx, row)
-      )
-      .filter(Boolean)
-      .filter((question, idx, arr) => arr.findIndex((q) => q.prompt === question.prompt) === idx);
+    let questions;
+    let vehicleCatalog;
+
+    if (isVehicles) {
+      vehicleCatalog = buildVehicleCatalogRows(sheetName, rows);
+      questions = [];
+    } else {
+      questions = rows
+        .slice(0, 800)
+        .map((row, idx) =>
+          isCheckbox ? buildCheckboxQuestion(sheetName, idx, row) : buildLegacyQuestion(sheetName, idx, row)
+        )
+        .filter(Boolean)
+        .filter((question, idx, arr) => arr.findIndex((q) => q.prompt === question.prompt) === idx);
+    }
 
     const categoryDocument = {
       schemaVersion: '1.0.0',
@@ -150,10 +280,13 @@ function extractWorkbookToSource() {
         id: slugify(sheetName),
         label: sheetName,
         sheetName,
-        description: isCheckbox
-          ? `Worksheet rows with Assessment → pointValue and Description → checkbox prompt (${sheetName}).`
-          : `Reference extraction for ${sheetName} (non-table layout).`,
-        questions
+        description: isVehicles
+          ? `Showroom vehicle catalog from ${sheetName}; Showroom Assessment (column N) is showroomAssessment on each row.`
+          : isCheckbox
+            ? `Worksheet rows with Assessment → pointValue and Description → checkbox prompt (${sheetName}).`
+            : `Reference extraction for ${sheetName} (non-table layout).`,
+        questions,
+        ...(vehicleCatalog && vehicleCatalog.length ? { vehicleCatalog } : {})
       }
     };
 
@@ -164,7 +297,8 @@ function extractWorkbookToSource() {
       id: slugify(sheetName),
       label: sheetName,
       file: `rules-source/${fileName}`,
-      questionCount: questions.length
+      questionCount: questions.length,
+      ...(vehicleCatalog && vehicleCatalog.length ? { vehicleCatalogCount: vehicleCatalog.length } : {})
     });
   }
 

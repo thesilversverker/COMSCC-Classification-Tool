@@ -37,7 +37,8 @@
       "id": "vehicles",
       "label": "Vehicles",
       "file": "rules-source/vehicles.json",
-      "questionCount": 54
+      "questionCount": 0,
+      "vehicleCatalogCount": 490
     },
     {
       "id": "tires",
