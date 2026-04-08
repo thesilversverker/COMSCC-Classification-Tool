@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
+  "generatedAt": "2026-04-08T15:59:52.148Z",
+  "categories": [
+    {
+      "id": "vehicles",
+      "label": "Vehicles",
+      "file": "rules-source/vehicles.json",
+      "questionCount": 54
+    },
+    {
+      "id": "engine",
+      "label": "Engine",
+      "file": "rules-source/engine.json",
+      "questionCount": 57
+    },
+    {
+      "id": "drivetrain",
+      "label": "Drivetrain",
+      "file": "rules-source/drivetrain.json",
+      "questionCount": 29
+    },
+    {
+      "id": "suspension",
+      "label": "Suspension",
+      "file": "rules-source/suspension.json",
+      "questionCount": 37
+    },
+    {
+      "id": "brakes",
+      "label": "Brakes",
+      "file": "rules-source/brakes.json",
+      "questionCount": 18
+    },
+    {
+      "id": "exterior",
+      "label": "Exterior",
+      "file": "rules-source/exterior.json",
+      "questionCount": 30
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "file": "rules-source/weight.json",
+      "questionCount": 27
+    },
+    {
+      "id": "tires",
+      "label": "Tires",
+      "file": "rules-source/tires.json",
+      "questionCount": 59
+    }
+  ]
+}

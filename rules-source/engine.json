@@ -1,0 +1,412 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
+  "generatedAt": "2026-04-08T15:59:52.144Z",
+  "category": {
+    "id": "engine",
+    "label": "Engine",
+    "sheetName": "Engine",
+    "description": "Initial workbook extraction for Engine.",
+    "questions": [
+      {
+        "id": "engine_comscc_2027_v2_test_0",
+        "prompt": "COMSCC 2027 V2 TEST",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A1"
+      },
+      {
+        "id": "engine_touring_class_summary_1",
+        "prompt": "Touring Class Summary",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A2"
+      },
+      {
+        "id": "engine_engine_modifications_worksheet_2",
+        "prompt": "Engine Modifications Worksheet",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A3"
+      },
+      {
+        "id": "engine_click_select_where_appropriate_and_enter_information_in_the_yell_3",
+        "prompt": "Click \"Select\" where appropriate and enter information in the yellow cells…",
+        "answerType": "select",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A4"
+      },
+      {
+        "id": "engine_select_or_true_4",
+        "prompt": "Select or TRUE",
+        "answerType": "boolean",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A5"
+      },
+      {
+        "id": "engine_reprogrammed_factory_trim_includes_rom_chips_ecu_naturally_aspir_5",
+        "prompt": "Reprogrammed Factory Trim (includes ROM chips) ECU, naturally aspirated engine",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A6"
+      },
+      {
+        "id": "engine_non_factory_trim_ecu_naturally_aspirated_engine_6",
+        "prompt": "Non-Factory Trim ECU, naturally aspirated engine",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A7"
+      },
+      {
+        "id": "engine_reprogrammed_factory_trim_includes_rom_chips_ecu_forced_inductio_7",
+        "prompt": "Reprogrammed Factory Trim (includes ROM chips) ECU, forced induction engine air/fuel change only. If applicable, additional points must be added for an increase in boost.",
+        "answerType": "number",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A8"
+      },
+      {
+        "id": "engine_non_factory_trim_ecu_forced_induction_engine_engine_air_fuel_cha_8",
+        "prompt": "Non-Factory Trim ECU, forced induction engine engine air/fuel change only. If applicable, additional points must be added for an increase in boost.",
+        "answerType": "number",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A9"
+      },
+      {
+        "id": "engine_turbo_boost_increase_50_9",
+        "prompt": "Turbo Boost increase <50%",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A10"
+      },
+      {
+        "id": "engine_turbo_boost_increase_50_10",
+        "prompt": "Turbo Boost increase >50%",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A11"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_air_intake_before_the_throttle_body_11",
+        "prompt": "Non-Factory Trim/modified air intake before the throttle body",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A12"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_headlight_to_allow_increased_or_cooler_12",
+        "prompt": "Non-factory trim/modified headlight to allow increased or cooler air flow to engine air intake, unless already taking one point for cold air intake.",
+        "answerType": "number",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A13"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_throttle_body_13",
+        "prompt": "Non-Factory Trim/modified throttle body",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A14"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_fuel_delivery_system_except_fuel_pump__14",
+        "prompt": "Non-Factory Trim/modified fuel delivery system, except fuel pump(s) (i.e. fuel injectors, fuel rails, fuel regulators)",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A15"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_intake_manifold_1_6_cylinder_engines_i_15",
+        "prompt": "Non-Factory Trim/modified intake manifold 1-6 cylinder engines, including manifold porting",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A16"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_intake_manifold_7_12_cylinder_engines__16",
+        "prompt": "Non-Factory Trim/modified intake manifold 7-12 cylinder engines, including manifold porting",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A17"
+      },
+      {
+        "id": "engine_water_alcohol_injection_system_17",
+        "prompt": "Water-alcohol injection System",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A18"
+      },
+      {
+        "id": "engine_dyno_18",
+        "prompt": "Dyno",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A19"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_supercharger_pulley_19",
+        "prompt": "Non-Factory Trim/modified supercharger pulley",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A20"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_boost_controller_or_vacuum_lines_that__20",
+        "prompt": "Non-Factory Trim/modified boost controller or vacuum lines that control boost",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A21"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_wastegate_wastegate_actuator_21",
+        "prompt": "Non-Factory Trim/modified wastegate, wastegate actuator",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A22"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_intercooler_22",
+        "prompt": "Non-Factory Trim/modified intercooler",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A23"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_intercooler_pipes_only_23",
+        "prompt": "Non-Factory Trim/modified intercooler pipes only",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A24"
+      },
+      {
+        "id": "engine_increase_compression_ratio_by_50_or_less_29",
+        "prompt": "Increase compression ratio by .50 or less",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A30"
+      },
+      {
+        "id": "engine_dry_sump_engine_oil_system_31",
+        "prompt": "Dry sump engine oil system",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A32"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_header_1_6_cyl_pre_cat_exhaust_change_32",
+        "prompt": "Non-Factory Trim/modified header 1-6 cyl (pre-cat exhaust change)",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A33"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_header_7_12_cyl_pre_cat_exhaust_change_33",
+        "prompt": "Non-Factory Trim/modified header 7-12 cyl (pre-cat exhaust change)",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A34"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_exhaust_beyond_the_catalytic_converter_34",
+        "prompt": "Non-Factory Trim/modified exhaust beyond the catalytic converter (e.g. cat back exhaust)",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A35"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_catalytic_converter_s_35",
+        "prompt": "Non-Factory Trim/modified catalytic converter(s)",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A36"
+      },
+      {
+        "id": "engine_complete_removal_or_gutting_of_oem_catalytic_converter_s_i_e_tes_36",
+        "prompt": "Complete removal or “gutting” of OEM catalytic converter(s) (i.e. “test pipe” in place of catalytic converter)",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A37"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_power_steering_crank_pulley_37",
+        "prompt": "Non-Factory Trim/modified power steering, crank pulley",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A38"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_deleted_engine_or_accessory_fan_and_or_38",
+        "prompt": "Non-Factory Trim/modified/deleted engine or accessory fan and/or other engine accessories not otherwise listed",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A39"
+      },
+      {
+        "id": "engine_any_type_of_commercially_available_gasoline_or_diesel_fuel_44",
+        "prompt": "Any type of commercially available gasoline or diesel fuel",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A45"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_fuses_relays_wiring_or_addition_of_pow_45",
+        "prompt": "Non-Factory Trim/modified fuses, relays, wiring, or addition of Power Distribution Modules",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A46"
+      },
+      {
+        "id": "engine_non_factory_trim_hoses_belts_clamps_46",
+        "prompt": "Non-Factory Trim hoses, belts, clamps",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A47"
+      },
+      {
+        "id": "engine_non_factory_trim_air_or_fuel_filters_47",
+        "prompt": "Non-Factory Trim air or fuel filters",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A48"
+      },
+      {
+        "id": "engine_non_factory_trim_radiator_48",
+        "prompt": "Non-Factory Trim radiator",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A49"
+      },
+      {
+        "id": "engine_non_factory_trim_battery_starter_motor_alternator_spark_plugs_sp_49",
+        "prompt": "Non-Factory Trim battery, starter motor, alternator, spark plugs, spark plug wires, ignition coils",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A50"
+      },
+      {
+        "id": "engine_non_factory_trim_modifications_to_oil_system_50",
+        "prompt": "Non-Factory Trim/modifications to oil system",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A51"
+      },
+      {
+        "id": "engine_non_factory_trim_modifications_number_of_fuel_pumps_51",
+        "prompt": "Non-Factory Trim/modifications/number of fuel pumps",
+        "answerType": "number",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A52"
+      },
+      {
+        "id": "engine_non_factory_trim_modified_muffler_tips_components_designed_stric_52",
+        "prompt": "Non-Factory Trim/modified muffler tips/components designed strictly for the purposes of reducing sound with no measurable or theoretical performance advantage (e.g. exhaust tip turn-down or second muffler)",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A53"
+      },
+      {
+        "id": "engine_factory_specification_engine_rebuild_and_head_shave_53",
+        "prompt": "Factory specification engine rebuild and head shave",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A54"
+      },
+      {
+        "id": "engine_accessories_and_or_gauges_54",
+        "prompt": "Accessories and/or gauges",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A55"
+      },
+      {
+        "id": "engine_note_mazda_rotary_engines_are_to_be_considered_4_cylinder_engine_56",
+        "prompt": "Note – Mazda Rotary Engines  are to be considered 4 cylinder engines for the purposes of Engine Modification point Assessments outlined in the table above",
+        "answerType": "number",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A57"
+      },
+      {
+        "id": "engine_engine_reclass_option_57",
+        "prompt": "Engine Reclass Option",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A58"
+      },
+      {
+        "id": "engine_dyno_reclass_option_58",
+        "prompt": "Dyno reclass option",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A59"
+      },
+      {
+        "id": "engine_description_59",
+        "prompt": "Description",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A60"
+      },
+      {
+        "id": "engine_horsepower_60",
+        "prompt": "Horsepower",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A61"
+      },
+      {
+        "id": "engine_torque_61",
+        "prompt": "Torque",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A62"
+      },
+      {
+        "id": "engine_type_62",
+        "prompt": "Type",
+        "answerType": "select",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A63"
+      },
+      {
+        "id": "engine_drivetrain_type_63",
+        "prompt": "Drivetrain type",
+        "answerType": "select",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A64"
+      },
+      {
+        "id": "engine_dyno_type_64",
+        "prompt": "Dyno type",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A65"
+      },
+      {
+        "id": "engine_scaled_power_65",
+        "prompt": "Scaled Power",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A66"
+      },
+      {
+        "id": "engine_points_66",
+        "prompt": "Points",
+        "answerType": "number",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A67"
+      },
+      {
+        "id": "engine_total_engine_modifications_assessment_67",
+        "prompt": "Total Engine Modifications Assessment",
+        "answerType": "number",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A68"
+      },
+      {
+        "id": "engine_go_to_next_sheet_drivetrain_68",
+        "prompt": "Go to next sheet (Drivetrain",
+        "answerType": "text",
+        "sheetName": "Engine",
+        "sourceRef": "Engine!A69"
+      }
+    ]
+  }
+}

@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run --environment jsdom --globals",
-    "data:convert": "node scripts/convert-workbook.mjs"
+    "data:convert": "node scripts/convert-workbook.mjs",
+    "data:extract-source": "node scripts/extract-workbook-to-source.mjs"
   },
   "repository": {
     "type": "git",
