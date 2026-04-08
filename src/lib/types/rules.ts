@@ -30,9 +30,19 @@ export interface RuleQuestion {
   needsManualPoints?: boolean;
 }
 
-/** One showroom row from the Vehicles worksheet (column N = Showroom Assessment). */
+/** Merged open-vehicle-db row + optional COMSCC workbook enrichment. */
 export interface VehicleCatalogRow {
   id: string;
+  makeSlug: string;
+  makeName: string;
+  modelKey: string;
+  modelName: string;
+  year: number;
+  trimKey: string | null;
+  trimLabel: string | null;
+  comsccMatched: boolean;
+  comsccCatalogId: string | null;
+  /** Display aliases (usually same as makeName / modelName). */
   make: string;
   model: string;
   startYear: number | null;
@@ -45,10 +55,10 @@ export interface VehicleCatalogRow {
   scaledWeightPerPower: number | null;
   suspIndex: number | null;
   performanceAdjustment: number | null;
-  /** Workbook column N — Showroom Assessment (base points toward Total Assessment). */
+  /** COMSCC Showroom Assessment when matched; otherwise null → manual entry. */
   showroomAssessment: number | null;
   baseClassification: string | null;
-  sourceRef: string;
+  sourceRef: string | null;
 }
 
 export interface RuleCategory {

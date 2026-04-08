@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-04-08T20:36:46.526Z",
+  "generatedAt": "2026-04-08T23:28:26.605Z",
   "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
   "categories": [
     {
       "id": "vehicles",
       "label": "Vehicles",
       "sheetName": "Vehicles",
-      "description": "Vehicle selection uses open-vehicle-db (Make → Model → Trim → Year); showroom points from COMSCC catalog or manual entry.",
+      "description": "Make/model/year comes from committed open-vehicle-db (data/makes_and_models.json). COMSCC showroom numbers are merged at build time from rules-source/vehicles-comscc-catalog.json; vehicles without a seed match use null showroom fields until the workbook seed is updated.",
       "questions": []
     },
     {

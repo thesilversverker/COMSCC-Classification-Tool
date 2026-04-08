@@ -1,15 +1,18 @@
-// Logical component: match session vehicle picks to COMSCC showroom catalog rows (from workbook / rules-source).
+// Logical component: match session vehicle picks to merged vehicle catalog lookup rows.
 import type { RuleAnswersByQuestionId } from '$types/rules';
 
 export type ShowroomLookupRow = {
   makeNorm: string;
   modelNorm: string;
-  startYear: number | null;
-  endYear: number | null;
+  year: number | null;
+  /** Present when open-vehicle-db row used a model_styles entry; otherwise null. */
+  trimKey: string | null;
   showroomAssessment: number | null;
   showroomBaseWeightLbs: number | null;
   baseClassification: string | null;
   catalogId: string;
+  /** True when a COMSCC seed row matched this open-db make/model/year (narrowest year span). */
+  comsccEnriched?: boolean;
 };
 
 export function normVehicleToken(s: string): string {
@@ -19,13 +22,13 @@ export function normVehicleToken(s: string): string {
     .replace(/\s+/g, ' ');
 }
 
-function yearSpanWidth(r: ShowroomLookupRow): number {
-  const sy = r.startYear ?? 1900;
-  const ey = r.endYear ?? 2100;
-  return Math.max(0, ey - sy);
+function trimFromAnswers(answers: RuleAnswersByQuestionId): string | null {
+  const t = answers.vehicles_trim_key;
+  if (typeof t !== 'string' || t === '') return null;
+  return t;
 }
 
-/** Pick the tightest year-range row among ties (same make/model/year). */
+/** Exact match on make, model, year, and trim (both sides null or same string). */
 export function findShowroomCatalogMatch(
   answers: RuleAnswersByQuestionId,
   rows: ShowroomLookupRow[]
@@ -41,16 +44,16 @@ export function findShowroomCatalogMatch(
 
   const mMake = normVehicleToken(makeLabel);
   const mModel = normVehicleToken(modelLabel);
+  const sessionTrim = trimFromAnswers(answers);
 
   const candidates = rows.filter((r) => {
     if (r.makeNorm !== mMake || r.modelNorm !== mModel) return false;
-    const sy = r.startYear;
-    const ey = r.endYear;
-    if (sy !== null && year < sy) return false;
-    if (ey !== null && year > ey) return false;
-    return true;
+    if (r.year !== year) return false;
+    const rowTrim = r.trimKey;
+    if (sessionTrim === null && rowTrim === null) return true;
+    if (sessionTrim !== null && rowTrim !== null && sessionTrim === rowTrim) return true;
+    return false;
   });
 
-  if (candidates.length === 0) return null;
-  return candidates.reduce((best, r) => (yearSpanWidth(r) < yearSpanWidth(best) ? r : best));
+  return candidates.length > 0 ? candidates[0] : null;
 }

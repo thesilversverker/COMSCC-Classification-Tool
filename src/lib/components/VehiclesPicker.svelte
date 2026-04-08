@@ -40,20 +40,12 @@
       'Enter the Showroom Assessment from the COMSCC workbook when your selection is not in the catalog or the catalog row has no numeric assessment.'
   };
 
-  function trimOptionsForModel(model: OpenDbModel | undefined): TrimOption[] {
+  // Logical component: trim dropdown only when open-vehicle-db exposes model_styles entries.
+  function trimOptionsFromStyles(model: OpenDbModel | undefined): TrimOption[] {
     if (!model) return [];
     const styles = model.model_styles ?? {};
     const keys = Object.keys(styles);
-    if (keys.length === 0) {
-      const years = [...model.years].sort((a, b) => b - a);
-      return [
-        {
-          id: '__base__',
-          label: 'Standard (trim not split in open-vehicle-db)',
-          years
-        }
-      ];
-    }
+    if (keys.length === 0) return [];
     return keys.map((k) => {
       const st = styles[k] as { years?: number[] };
       const ys = Array.isArray(st.years) && st.years.length > 0 ? st.years : model.years;
@@ -111,11 +103,6 @@
     setVehicleField('vehicles_trim_key', null);
     setVehicleField('vehicles_trim_label', null);
     setVehicleField('vehicles_year', null);
-    const trims = trimOptionsForModel(model);
-    if (model && trims.length === 1) {
-      setVehicleField('vehicles_trim_key', trims[0].id);
-      setVehicleField('vehicles_trim_label', trims[0].label);
-    }
   }
 
   function handleTrimChange(event: Event) {
@@ -147,11 +134,15 @@
     : [];
   $: modelKey = typeof answers.vehicles_model_key === 'string' ? answers.vehicles_model_key : '';
   $: selectedModel = selectedMake?.models[modelKey];
-  $: trimOptions = trimOptionsForModel(selectedModel);
+  $: modelHasStyles =
+    Boolean(selectedModel) && Object.keys(selectedModel?.model_styles ?? {}).length > 0;
+  $: trimOptions = modelHasStyles ? trimOptionsFromStyles(selectedModel) : [];
   $: trimKey = typeof answers.vehicles_trim_key === 'string' ? answers.vehicles_trim_key : '';
-  $: yearOptions =
-    trimOptions.find((t) => t.id === trimKey)?.years ??
-    (selectedModel ? [...selectedModel.years].sort((a, b) => b - a) : []);
+  $: yearOptions = modelHasStyles
+    ? trimOptions.find((t) => t.id === trimKey)?.years ?? []
+    : selectedModel
+      ? [...selectedModel.years].sort((a, b) => b - a)
+      : [];
 
   $: catalogHit = findShowroomCatalogMatch(answers, showroomRows);
   $: hasNumericAssessment =
@@ -159,7 +150,8 @@
     typeof catalogHit.showroomAssessment === 'number' &&
     Number.isFinite(catalogHit.showroomAssessment);
   $: selectionComplete =
-    Boolean(makeSlug && modelKey && trimKey) &&
+    Boolean(makeSlug && modelKey) &&
+    (!modelHasStyles || Boolean(trimKey)) &&
     typeof answers.vehicles_year === 'string' &&
     answers.vehicles_year.length === 4;
   $: showManualShowroom =
@@ -168,7 +160,8 @@
 </script>
 
 <section class="vehicles-picker" aria-label="Vehicle selection">
-  <h3 class="picker-title">Vehicle (Make → Model → Trim → Year)</h3>
+  <h3 class="picker-title">Vehicle selection</h3>
+  <p class="picker-flow">Make → Model → Year; <strong>Trim</strong> appears only when the database lists styles for that model.</p>
   <p class="picker-source">
     Make / model / year data from
     <a href="https://github.com/plowman/open-vehicle-db" rel="noreferrer" target="_blank">open-vehicle-db</a>
@@ -196,22 +189,24 @@
       </select>
     </label>
 
-    <label class="field">
-      <span>Trim</span>
-      <select value={trimKey} on:change={handleTrimChange} disabled={!selectedModel}>
-        <option value="">Select trim</option>
-        {#each trimOptions as t (t.id)}
-          <option value={t.id}>{t.label}</option>
-        {/each}
-      </select>
-    </label>
+    {#if modelHasStyles}
+      <label class="field">
+        <span>Trim</span>
+        <select value={trimKey} on:change={handleTrimChange} disabled={!selectedModel}>
+          <option value="">Select trim</option>
+          {#each trimOptions as t (t.id)}
+            <option value={t.id}>{t.label}</option>
+          {/each}
+        </select>
+      </label>
+    {/if}
 
     <label class="field">
       <span>Year</span>
       <select
         value={typeof answers.vehicles_year === 'string' ? answers.vehicles_year : ''}
         on:change={handleYearChange}
-        disabled={!trimKey || yearOptions.length === 0}
+        disabled={!selectedModel || (modelHasStyles && !trimKey) || yearOptions.length === 0}
       >
         <option value="">Select year</option>
         {#each yearOptions as y (y)}
@@ -233,12 +228,17 @@
         </p>
       {:else}
         <p>
-          <strong>COMSCC catalog match</strong>
-          (row {catalogHit.catalogId}) has no numeric Showroom Assessment — enter points manually below.
+          {#if catalogHit.comsccEnriched === false}
+            <strong>Vehicle in open-vehicle-db.</strong> COMSCC workbook seed has no matching showroom row — enter
+            Showroom Assessment manually below.
+          {:else}
+            <strong>COMSCC seed row</strong>
+            (row {catalogHit.catalogId}) has no numeric Showroom Assessment — enter points manually below.
+          {/if}
         </p>
       {/if}
     </div>
-  {:else if makeSlug && modelKey && trimKey && answers.vehicles_year}
+  {:else if makeSlug && modelKey && (!modelHasStyles || trimKey) && answers.vehicles_year}
     <p class="catalog-miss">No COMSCC showroom row for this make, model, and year — use manual Showroom Assessment below.</p>
   {/if}
 
@@ -269,6 +269,13 @@
   .picker-title {
     margin: 0;
     font-size: 1rem;
+  }
+  .picker-flow {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #444;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
   }
   .picker-source {
     margin: 0;

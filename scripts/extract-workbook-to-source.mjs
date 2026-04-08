@@ -256,21 +256,34 @@ function extractWorkbookToSource() {
     const isCheckbox = CHECKBOX_SHEET_NAMES.includes(sheetName);
     const isVehicles = sheetName === 'Vehicles';
 
-    let questions;
-    let vehicleCatalog;
-
+    // Logical component: Vehicles sheet → COMSCC-only seed; npm run data:build merges with src/lib/data/open-vehicle-makes-models.json into vehicle-showroom-lookup.json.
     if (isVehicles) {
-      vehicleCatalog = buildVehicleCatalogRows(sheetName, rows);
-      questions = [];
-    } else {
-      questions = rows
-        .slice(0, 800)
-        .map((row, idx) =>
-          isCheckbox ? buildCheckboxQuestion(sheetName, idx, row) : buildLegacyQuestion(sheetName, idx, row)
-        )
-        .filter(Boolean)
-        .filter((question, idx, arr) => arr.findIndex((q) => q.prompt === question.prompt) === idx);
+      const vehicleCatalog = buildVehicleCatalogRows(sheetName, rows);
+      writeJson(path.join(sourceOutputDir, 'vehicles-comscc-catalog.json'), {
+        schemaVersion: '1.0.0',
+        sourceWorkbook: path.basename(workbookPath),
+        generatedAt: new Date().toISOString(),
+        vehicleCatalog
+      });
+      categorySummaries.push({
+        id: slugify(sheetName),
+        label: sheetName,
+        file: 'rules-source/vehicles-comscc-catalog.json',
+        questionCount: 0,
+        comsccSeedRowCount: vehicleCatalog.length,
+        vehiclesCategoryFile: 'rules-source/vehicles.json',
+        showroomLookupOutput: 'src/lib/data/vehicle-showroom-lookup.json'
+      });
+      continue;
     }
+
+    const questions = rows
+      .slice(0, 800)
+      .map((row, idx) =>
+        isCheckbox ? buildCheckboxQuestion(sheetName, idx, row) : buildLegacyQuestion(sheetName, idx, row)
+      )
+      .filter(Boolean)
+      .filter((question, idx, arr) => arr.findIndex((q) => q.prompt === question.prompt) === idx);
 
     const categoryDocument = {
       schemaVersion: '1.0.0',
@@ -280,13 +293,10 @@ function extractWorkbookToSource() {
         id: slugify(sheetName),
         label: sheetName,
         sheetName,
-        description: isVehicles
-          ? `Showroom vehicle catalog from ${sheetName}; Showroom Assessment (column N) is showroomAssessment on each row.`
-          : isCheckbox
-            ? `Worksheet rows with Assessment → pointValue and Description → checkbox prompt (${sheetName}).`
-            : `Reference extraction for ${sheetName} (non-table layout).`,
-        questions,
-        ...(vehicleCatalog && vehicleCatalog.length ? { vehicleCatalog } : {})
+        description: isCheckbox
+          ? `Worksheet rows with Assessment → pointValue and Description → checkbox prompt (${sheetName}).`
+          : `Reference extraction for ${sheetName} (non-table layout).`,
+        questions
       }
     };
 
@@ -297,8 +307,7 @@ function extractWorkbookToSource() {
       id: slugify(sheetName),
       label: sheetName,
       file: `rules-source/${fileName}`,
-      questionCount: questions.length,
-      ...(vehicleCatalog && vehicleCatalog.length ? { vehicleCatalogCount: vehicleCatalog.length } : {})
+      questionCount: questions.length
     });
   }
 

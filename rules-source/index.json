@@ -38,7 +38,9 @@
       "label": "Vehicles",
       "file": "rules-source/vehicles.json",
       "questionCount": 0,
-      "vehicleCatalogCount": 490
+      "vehicleCatalogCount": 19027,
+      "comsccSeedFile": "rules-source/vehicles-comscc-catalog.json",
+      "comsccSeedRowCount": 490
     },
     {
       "id": "tires",

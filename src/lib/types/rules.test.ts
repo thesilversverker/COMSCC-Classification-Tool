@@ -1,4 +1,5 @@
 import rules from '$data/rules.v1.json';
+import comsccSeed from '../../../rules-source/vehicles-comscc-catalog.json';
 import vehiclesSource from '../../../rules-source/vehicles.json';
 import type { RulesDocument } from './rules';
 
@@ -30,15 +31,25 @@ describe('rules schema', () => {
     }
   });
 
-  // Logical component: Vehicles rules-source mirrors workbook showroom table including column N.
-  it('vehicles source catalog includes showroom assessment from column N', () => {
-    const cat = vehiclesSource.category as {
-      vehicleCatalog?: { showroomAssessment: number | null; sourceRef: string; make: string; model: string }[];
-    };
-    expect(cat.vehicleCatalog?.length).toBeGreaterThan(400);
-    const integra = cat.vehicleCatalog?.find(
-      (v) => v.make === 'Acura' && v.model === 'Integra' && v.sourceRef === 'Vehicles!N13'
+  // Logical component: slim vehicles.json (no embedded catalog); COMSCC seed is rules-source/vehicles-comscc-catalog.json; lookup built at data:build.
+  it('vehicles rules-source has category metadata only (no vehicleCatalog)', () => {
+    const cat = vehiclesSource.category as { id: string; vehicleCatalog?: unknown[] };
+    expect(cat.id).toBe('vehicles');
+    expect(cat.vehicleCatalog).toBeUndefined();
+  });
+
+  it('COMSCC seed has showroom assessment for a representative workbook row', () => {
+    const catalog = (comsccSeed as { vehicleCatalog: Array<Record<string, unknown>> }).vehicleCatalog;
+    const integra = catalog.find(
+      (r) =>
+        r.make === 'Acura' &&
+        r.model === 'Integra' &&
+        typeof r.startYear === 'number' &&
+        typeof r.endYear === 'number' &&
+        1993 >= r.startYear &&
+        1993 <= r.endYear
     );
-    expect(integra?.showroomAssessment).toBeCloseTo(24.62746305418719, 5);
+    expect(typeof integra?.showroomAssessment).toBe('number');
+    expect(integra?.showroomAssessment as number).toBeCloseTo(24.62746305418719, 5);
   });
 });

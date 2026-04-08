@@ -2,13 +2,6 @@
   "schemaVersion": "1.0.0",
   "categories": [
     {
-      "id": "vehicles",
-      "label": "Vehicles",
-      "sheetName": "Vehicles",
-      "description": "Vehicle selection uses open-vehicle-db (Make → Model → Trim → Year); showroom points from COMSCC catalog or manual entry.",
-      "questions": []
-    },
-    {
       "id": "weight",
       "label": "Weight",
       "sheetName": "Weight",
