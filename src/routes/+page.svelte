@@ -1,13 +1,38 @@
 <script lang="ts">
   import rulesJson from '$data/rules.v1.json';
+  import openVehicleMakesModels from '$data/open-vehicle-makes-models.json';
+  import showroomLookup from '$data/vehicle-showroom-lookup.json';
   import CategoryNav from '$components/CategoryNav.svelte';
   import ClassificationBanner from '$components/ClassificationBanner.svelte';
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
   import SessionSummary from '$components/SessionSummary.svelte';
+  import VehiclesPicker from '$components/VehiclesPicker.svelte';
   import { computeAllCategoryPoints } from '$lib/scoring';
+  import { findShowroomCatalogMatch } from '$lib/vehicles-showroom-match';
+  import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
   import { sessionStore } from '$stores/session';
   import { navigationStore } from '$stores/navigation';
   import type { RuleAnswer, RuleCategory, RuleQuestion, RulesDocument } from '$types/rules';
+
+  // Logical component: COMSCC showroom rows + open-vehicle-db make/model tree for the Vehicles picker.
+  const SHOWROOM_ROWS = (showroomLookup as { rows: ShowroomLookupRow[] }).rows;
+  type OpenDbMake = {
+    make_slug: string;
+    make_name: string;
+    models: Record<
+      string,
+      {
+        model_id: number;
+        model_name: string;
+        model_styles: Record<string, { years?: number[] } & Record<string, unknown>>;
+        vehicle_type: string;
+        years: number[];
+      }
+    >;
+    first_year: number;
+    last_year: number;
+  };
+  const openVehicleData = openVehicleMakesModels as unknown as OpenDbMake[];
 
   // Logical component: one UI block per subcategory (fixed multi-select, then variable booleans, then other types).
   type SubcategoryBlock = {
@@ -40,28 +65,23 @@
   }
 
   const rules = rulesJson as RulesDocument;
-  const showroomWeightByModel: Record<string, number> = {
-    integra: 2623,
-    integra_type_r: 2639,
-    nsx: 2976
-  };
 
   // Logical component: typed bridge for answer updates from renderer component.
   function handleQuestionChange(questionId: string, value: RuleAnswer) {
     sessionStore.setAnswer(questionId, value);
-
-    // Logical component: cascade-reset dependent model when make changes.
-    if (questionId === 'vehicles_make') {
-      sessionStore.setAnswer('vehicles_model', null);
-    }
   }
 
   $: category = rules.categories[$navigationStore.categoryIndex];
   $: categoryPointsById = computeAllCategoryPoints(rules.categories, $sessionStore.answers);
   $: currentCategoryTotal = category ? (categoryPointsById[category.id] ?? 0) : 0;
   $: subcategoryBlocks = category ? buildSubcategoryBlocks(category) : [];
-  $: selectedModel = typeof $sessionStore.answers.vehicles_model === 'string' ? $sessionStore.answers.vehicles_model : '';
-  $: showroomWeightValue = selectedModel ? String(showroomWeightByModel[selectedModel] ?? '') : '';
+  $: vehicleCatalogMatch = findShowroomCatalogMatch($sessionStore.answers, SHOWROOM_ROWS);
+  $: showroomWeightValue =
+    vehicleCatalogMatch?.showroomBaseWeightLbs != null
+      ? String(vehicleCatalogMatch.showroomBaseWeightLbs)
+      : '';
+  $: showQuestionStack =
+    category?.id === 'vehicles' || (category?.questions?.length ?? 0) > 0;
 
   // Logical component: optional primary tire width (mm) for spec comparison in the classification banner.
   function parseOptionalTireWidthMm(answer: RuleAnswer): number | null {
@@ -131,9 +151,18 @@
       onSelect={(index) => navigationStore.goToCategory(index)}
     />
 
-    {#if category?.questions?.length}
+    {#if showQuestionStack}
       <section class="question-stack">
         <p class="running-total"><strong>Running category total:</strong> {currentCategoryTotal.toFixed(1)} points</p>
+
+        {#if category?.id === 'vehicles'}
+          <VehiclesPicker
+            openMakesModels={openVehicleData}
+            showroomRows={SHOWROOM_ROWS}
+            answers={$sessionStore.answers}
+            onAnswer={handleQuestionChange}
+          />
+        {/if}
 
         {#each subcategoryBlocks as block (block.key)}
           <section class="subcategory-block">

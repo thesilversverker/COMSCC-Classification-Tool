@@ -1,5 +1,9 @@
 // Logical component: category point totals from session answers (shared by nav and main view).
+import showroomLookup from '$data/vehicle-showroom-lookup.json';
+import { findShowroomCatalogMatch, type ShowroomLookupRow } from '$lib/vehicles-showroom-match';
 import type { RuleAnswer, RuleAnswersByQuestionId, RuleCategory, RuleQuestion } from '$types/rules';
+
+const SHOWROOM_LOOKUP_ROWS = (showroomLookup as { rows: ShowroomLookupRow[] }).rows;
 
 function toNumeric(value: RuleAnswer): number {
   if (typeof value === 'number') return Number.isFinite(value) ? value : 0;
@@ -27,7 +31,20 @@ function resolveSelectedOption(question: RuleQuestion, answers: RuleAnswersByQue
   return (question.options ?? []).find((opt) => opt.id === selectedValue);
 }
 
+// Logical component: Vehicles category points = COMSCC catalog Showroom Assessment when matched, else manual entry.
+function computeVehiclesCategoryPoints(answers: RuleAnswersByQuestionId): number {
+  const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS);
+  if (match && typeof match.showroomAssessment === 'number' && Number.isFinite(match.showroomAssessment)) {
+    return match.showroomAssessment;
+  }
+  return toNumeric(answers.vehicles_showroom_manual_points);
+}
+
 export function computeCategoryPoints(category: RuleCategory, answers: RuleAnswersByQuestionId): number {
+  if (category.id === 'vehicles') {
+    return computeVehiclesCategoryPoints(answers);
+  }
+
   let total = 0;
   for (const q of category.questions) {
     if (q.answerType === 'boolean' && answers[q.id] === true) {

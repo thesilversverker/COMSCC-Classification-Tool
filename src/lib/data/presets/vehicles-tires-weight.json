@@ -5,59 +5,8 @@
       "id": "vehicles",
       "label": "Vehicles",
       "sheetName": "Vehicles",
-      "description": "Vehicle selection flow (dropdowns + model year).",
-      "questions": [
-        {
-          "id": "vehicles_make",
-          "prompt": "Vehicle make",
-          "subcategory": "Vehicle",
-          "answerType": "select",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!A",
-          "options": [
-            { "id": "acura", "label": "Acura" },
-            { "id": "bmw", "label": "BMW" },
-            { "id": "chevrolet", "label": "Chevrolet" }
-          ]
-        },
-        {
-          "id": "vehicles_model",
-          "prompt": "Vehicle model",
-          "subcategory": "Vehicle",
-          "answerType": "select",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!B",
-          "dependsOn": "vehicles_make",
-          "optionsByParent": {
-            "acura": [
-              { "id": "integra", "label": "Integra" },
-              { "id": "integra_type_r", "label": "Integra Type R" },
-              { "id": "nsx", "label": "NSX" }
-            ],
-            "bmw": [
-              { "id": "e36_m3", "label": "E36 M3" },
-              { "id": "e46_m3", "label": "E46 M3" },
-              { "id": "f87_m2", "label": "F87 M2" }
-            ],
-            "chevrolet": [
-              { "id": "c5_corvette", "label": "C5 Corvette" },
-              { "id": "c6_corvette", "label": "C6 Corvette" },
-              { "id": "camaro_ss_1le", "label": "Camaro SS 1LE" }
-            ]
-          }
-        },
-        {
-          "id": "vehicles_model_year",
-          "prompt": "Model year (4-digit year)",
-          "subcategory": "Vehicle",
-          "answerType": "text",
-          "sheetName": "Vehicles",
-          "sourceRef": "Vehicles!C",
-          "placeholder": "e.g. 1993",
-          "numericOnly": true,
-          "digits": 4
-        }
-      ]
+      "description": "Vehicle selection uses open-vehicle-db (Make → Model → Trim → Year); showroom points from COMSCC catalog or manual entry.",
+      "questions": []
     },
     {
       "id": "weight",
@@ -72,7 +21,7 @@
           "answerType": "text",
           "sheetName": "Weight",
           "sourceRef": "Weight!A8",
-          "helpText": "Auto-populated from selected model.",
+          "helpText": "Auto-populated from COMSCC showroom catalog when your vehicle matches.",
           "readOnly": true
         },
         {

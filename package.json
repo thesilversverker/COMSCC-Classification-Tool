@@ -12,7 +12,7 @@
     "test": "vitest run --environment jsdom --globals",
     "data:convert": "node scripts/convert-workbook.mjs",
     "data:extract-source": "node scripts/extract-workbook-to-source.mjs",
-    "data:build": "node scripts/build-rules-bundle.mjs",
+    "data:build": "node scripts/build-vehicle-showroom-lookup.mjs && node scripts/build-rules-bundle.mjs",
     "data:backfill-subcats": "node scripts/backfill-rules-source-subcategories.mjs",
     "data:sync": "npm run data:extract-source && npm run data:build"
   },

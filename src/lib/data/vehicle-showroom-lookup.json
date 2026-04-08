@@ -1,0 +1,4907 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-04-08T20:36:46.412Z",
+  "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
+  "rows": [
+    {
+      "makeNorm": "custom",
+      "modelNorm": "custom",
+      "startYear": 1900,
+      "endYear": 2099,
+      "showroomAssessment": null,
+      "showroomBaseWeightLbs": null,
+      "baseClassification": null,
+      "catalogId": "vehicles_custom_custom_1900_2099_r12"
+    },
+    {
+      "makeNorm": "acura",
+      "modelNorm": "integra",
+      "startYear": 1993,
+      "endYear": 1993,
+      "showroomAssessment": 24.62746305418719,
+      "showroomBaseWeightLbs": 2623,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_acura_integra_1993_1993_r13"
+    },
+    {
+      "makeNorm": "acura",
+      "modelNorm": "integra type r",
+      "startYear": 1995,
+      "endYear": 2001,
+      "showroomAssessment": 52.29374999999999,
+      "showroomBaseWeightLbs": 2639,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_acura_integra_type_r_1995_2001_r14"
+    },
+    {
+      "makeNorm": "acura",
+      "modelNorm": "nsx",
+      "startYear": 1991,
+      "endYear": 1992,
+      "showroomAssessment": 71.408,
+      "showroomBaseWeightLbs": 2976,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_acura_nsx_1991_1992_r15"
+    },
+    {
+      "makeNorm": "acura",
+      "modelNorm": "nsx",
+      "startYear": 1993,
+      "endYear": 1997,
+      "showroomAssessment": 69.419,
+      "showroomBaseWeightLbs": 3093,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_acura_nsx_1993_1997_r16"
+    },
+    {
+      "makeNorm": "acura",
+      "modelNorm": "nsx",
+      "startYear": 1998,
+      "endYear": 2001,
+      "showroomAssessment": 71.88805970149254,
+      "showroomBaseWeightLbs": 3160,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_acura_nsx_1998_2001_r17"
+    },
+    {
+      "makeNorm": "acura",
+      "modelNorm": "nsx",
+      "startYear": 2002,
+      "endYear": 2005,
+      "showroomAssessment": 75.15485074626866,
+      "showroomBaseWeightLbs": 2954,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_acura_nsx_2002_2005_r18"
+    },
+    {
+      "makeNorm": "acura",
+      "modelNorm": "nsx",
+      "startYear": 2017,
+      "endYear": 2022,
+      "showroomAssessment": 104.20499383477188,
+      "showroomBaseWeightLbs": 3854,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_acura_nsx_2017_2022_r19"
+    },
+    {
+      "makeNorm": "acura",
+      "modelNorm": "rsx type s",
+      "startYear": 2002,
+      "endYear": null,
+      "showroomAssessment": 46.9091328413284,
+      "showroomBaseWeightLbs": 2767,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_acura_rsx_type_s_2002_na_r20"
+    },
+    {
+      "makeNorm": "alfa romeo",
+      "modelNorm": "2000 spider veloce",
+      "startYear": 1974,
+      "endYear": 1976,
+      "showroomAssessment": 14.863636363636374,
+      "showroomBaseWeightLbs": 2320,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_alfa_romeo_2000_spider_veloce_1974_1976_r21"
+    },
+    {
+      "makeNorm": "alfa romeo",
+      "modelNorm": "giulia 2.0t awd",
+      "startYear": 2017,
+      "endYear": null,
+      "showroomAssessment": 58.997690531177824,
+      "showroomBaseWeightLbs": 3600,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_alfa_romeo_giulia_2_0t_awd_2017_na_r22"
+    },
+    {
+      "makeNorm": "alfa romeo",
+      "modelNorm": "giulia q4 ti",
+      "startYear": 2018,
+      "endYear": 2018,
+      "showroomAssessment": 58.52655889145496,
+      "showroomBaseWeightLbs": 3632,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_alfa_romeo_giulia_q4_ti_2018_2018_r23"
+    },
+    {
+      "makeNorm": "ariel",
+      "modelNorm": "atom",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 103.491796875,
+      "showroomBaseWeightLbs": 1431,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_ariel_atom_2006_2006_r24"
+    },
+    {
+      "makeNorm": "ariel",
+      "modelNorm": "atom 500",
+      "startYear": 2008,
+      "endYear": null,
+      "showroomAssessment": 119.95502336448598,
+      "showroomBaseWeightLbs": 1213,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_ariel_atom_500_2008_na_r25"
+    },
+    {
+      "makeNorm": "aston martin",
+      "modelNorm": "db5",
+      "startYear": 1963,
+      "endYear": 1965,
+      "showroomAssessment": 52.46654929577465,
+      "showroomBaseWeightLbs": 3310,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_aston_martin_db5_1963_1965_r26"
+    },
+    {
+      "makeNorm": "aston martin",
+      "modelNorm": "dbs v12",
+      "startYear": 2007,
+      "endYear": 2012,
+      "showroomAssessment": 88.88541666666666,
+      "showroomBaseWeightLbs": 3740,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_aston_martin_dbs_v12_2007_2012_r27"
+    },
+    {
+      "makeNorm": "aston martin",
+      "modelNorm": "vantage",
+      "startYear": 2012,
+      "endYear": null,
+      "showroomAssessment": 83.35223440134908,
+      "showroomBaseWeightLbs": 3595,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_aston_martin_vantage_2012_na_r28"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "a4 1.8t quattro",
+      "startYear": 1996,
+      "endYear": 2001,
+      "showroomAssessment": 21.180769230769215,
+      "showroomBaseWeightLbs": 3241,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_audi_a4_1_8t_quattro_1996_2001_r29"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "a4 2.0 t quattro",
+      "startYear": 2005,
+      "endYear": 2005,
+      "showroomAssessment": 38.125617792421735,
+      "showroomBaseWeightLbs": 3517,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_audi_a4_2_0_t_quattro_2005_2005_r30"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "a4 2.0 t quattro",
+      "startYear": 2006,
+      "endYear": 2008,
+      "showroomAssessment": 37.453459637561764,
+      "showroomBaseWeightLbs": 3549,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_audi_a4_2_0_t_quattro_2006_2008_r31"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "a4 2.8 quattro",
+      "startYear": 1996,
+      "endYear": 2001,
+      "showroomAssessment": 38.49744463373082,
+      "showroomBaseWeightLbs": 3384,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_audi_a4_2_8_quattro_1996_2001_r32"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "a4 3.0 quattro",
+      "startYear": 2002,
+      "endYear": 2005,
+      "showroomAssessment": 42.887670196671706,
+      "showroomBaseWeightLbs": 3583,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_audi_a4_3_0_quattro_2002_2005_r33"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "a4 3.2 quattro",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 50.21414342629482,
+      "showroomBaseWeightLbs": 3649,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_audi_a4_3_2_quattro_2006_2006_r34"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "a4 tt fwd",
+      "startYear": 1998,
+      "endYear": 2006,
+      "showroomAssessment": 42.38930581613508,
+      "showroomBaseWeightLbs": 2910,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_audi_a4_tt_fwd_1998_2006_r35"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "coupe gt",
+      "startYear": 1987,
+      "endYear": 1987,
+      "showroomAssessment": 18.07592592592593,
+      "showroomBaseWeightLbs": 2507,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_audi_coupe_gt_1987_1987_r36"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "r8 v10",
+      "startYear": 2006,
+      "endYear": null,
+      "showroomAssessment": 94.98651016117729,
+      "showroomBaseWeightLbs": 3583,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_audi_r8_v10_2006_na_r37"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "r8 v8",
+      "startYear": 2006,
+      "endYear": null,
+      "showroomAssessment": 88.5829694323144,
+      "showroomBaseWeightLbs": 3450,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_audi_r8_v8_2006_na_r38"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "s4",
+      "startYear": 1991,
+      "endYear": 1994,
+      "showroomAssessment": 41.201544943820224,
+      "showroomBaseWeightLbs": 3814,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_audi_s4_1991_1994_r39"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "s4",
+      "startYear": 1998,
+      "endYear": 2001,
+      "showroomAssessment": 54.046833773087066,
+      "showroomBaseWeightLbs": 3594,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_audi_s4_1998_2001_r40"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "s4",
+      "startYear": 2003,
+      "endYear": 2005,
+      "showroomAssessment": 66.979633401222,
+      "showroomBaseWeightLbs": 3660,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_audi_s4_2003_2005_r41"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "s4",
+      "startYear": 2006,
+      "endYear": 2008,
+      "showroomAssessment": 64.26603869653768,
+      "showroomBaseWeightLbs": 3869,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_audi_s4_2006_2008_r42"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "s4",
+      "startYear": 2009,
+      "endYear": null,
+      "showroomAssessment": 70.20711402623613,
+      "showroomBaseWeightLbs": 3637,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_audi_s4_2009_na_r43"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "s6",
+      "startYear": 1999,
+      "endYear": 2003,
+      "showroomAssessment": 60.17575757575758,
+      "showroomBaseWeightLbs": 4024,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_audi_s6_1999_2003_r44"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "s6",
+      "startYear": 2006,
+      "endYear": 2011,
+      "showroomAssessment": 73.65127388535032,
+      "showroomBaseWeightLbs": 4024,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_audi_s6_2006_2011_r45"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "s6 quattro",
+      "startYear": 1994,
+      "endYear": 1997,
+      "showroomAssessment": 39.22802593659942,
+      "showroomBaseWeightLbs": 3825,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_audi_s6_quattro_1994_1997_r46"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "tt rs",
+      "startYear": 2012,
+      "endYear": 2013,
+      "showroomAssessment": 82.33466603951081,
+      "showroomBaseWeightLbs": 3307,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_audi_tt_rs_2012_2013_r47"
+    },
+    {
+      "makeNorm": "audi",
+      "modelNorm": "tts",
+      "startYear": 2009,
+      "endYear": 2015,
+      "showroomAssessment": 62.723350253807105,
+      "showroomBaseWeightLbs": 3200,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_audi_tts_2009_2015_r48"
+    },
+    {
+      "makeNorm": "austin healy",
+      "modelNorm": "3000 mk iii",
+      "startYear": 1959,
+      "endYear": 1967,
+      "showroomAssessment": 22.08064516129032,
+      "showroomBaseWeightLbs": 2550,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_austin_healy_3000_mk_iii_1959_1967_r49"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "2002",
+      "startYear": 1974,
+      "endYear": null,
+      "showroomAssessment": 0.4583333333333144,
+      "showroomBaseWeightLbs": 2317,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_2002_1974_na_r50"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "128i",
+      "startYear": 2008,
+      "endYear": 2013,
+      "showroomAssessment": 53.17727272727272,
+      "showroomBaseWeightLbs": 3252,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_128i_2008_2013_r51"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "135i coupe inc'l m-sport",
+      "startYear": 2004,
+      "endYear": 2013,
+      "showroomAssessment": 69.21583333333334,
+      "showroomBaseWeightLbs": 3373,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_135i_coupe_inc_l_m_sport_2004_2013_r52"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "135is",
+      "startYear": 2013,
+      "endYear": null,
+      "showroomAssessment": 74.56191222570533,
+      "showroomBaseWeightLbs": 3373,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_135is_2013_na_r53"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "318i",
+      "startYear": 1990,
+      "endYear": 1991,
+      "showroomAssessment": 26.236075949367077,
+      "showroomBaseWeightLbs": 2657,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_318i_1990_1991_r54"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "318is",
+      "startYear": 1990,
+      "endYear": 1991,
+      "showroomAssessment": 28.011392405063276,
+      "showroomBaseWeightLbs": 2602,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_318is_1990_1991_r55"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "318ti",
+      "startYear": 1993,
+      "endYear": 2000,
+      "showroomAssessment": 26.42848410757945,
+      "showroomBaseWeightLbs": 2745,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_318ti_1993_2000_r56"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "318ti with s52 swap",
+      "startYear": 1991,
+      "endYear": 1991,
+      "showroomAssessment": 65.6655027932961,
+      "showroomBaseWeightLbs": 2602,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_318ti_with_s52_swap_1991_1991_r57"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "320i",
+      "startYear": 2013,
+      "endYear": null,
+      "showroomAssessment": 39.7734375,
+      "showroomBaseWeightLbs": 3295,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_320i_2013_na_r58"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "323ci",
+      "startYear": 2000,
+      "endYear": null,
+      "showroomAssessment": 34.83925143953935,
+      "showroomBaseWeightLbs": 3153,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_323ci_2000_na_r59"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "325i",
+      "startYear": 1987,
+      "endYear": 1991,
+      "showroomAssessment": 36.722999999999985,
+      "showroomBaseWeightLbs": 2854,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_325i_1987_1991_r60"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "325i",
+      "startYear": 1992,
+      "endYear": 1995,
+      "showroomAssessment": 41.58989266547405,
+      "showroomBaseWeightLbs": 3087,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_325i_1992_1995_r61"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "325i",
+      "startYear": 2001,
+      "endYear": 2005,
+      "showroomAssessment": 35.89917127071824,
+      "showroomBaseWeightLbs": 3241,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_325i_2001_2005_r62"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "325is",
+      "startYear": 1992,
+      "endYear": 1995,
+      "showroomAssessment": 44.08989266547405,
+      "showroomBaseWeightLbs": 3087,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_325is_1992_1995_r63"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "328is",
+      "startYear": 1996,
+      "endYear": 1999,
+      "showroomAssessment": 46.61604095563139,
+      "showroomBaseWeightLbs": 3120,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_328is_1996_1999_r64"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "328ix",
+      "startYear": 2012,
+      "endYear": 2019,
+      "showroomAssessment": 56.320408163265306,
+      "showroomBaseWeightLbs": 3498,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_328ix_2012_2019_r65"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "328xi",
+      "startYear": 2010,
+      "endYear": 2010,
+      "showroomAssessment": 47.35795454545453,
+      "showroomBaseWeightLbs": 3605,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_328xi_2010_2010_r66"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "330ci",
+      "startYear": 2003,
+      "endYear": 2003,
+      "showroomAssessment": 52.63330871491876,
+      "showroomBaseWeightLbs": 3285,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_330ci_2003_2003_r67"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "330ci zhp",
+      "startYear": 2003,
+      "endYear": 2005,
+      "showroomAssessment": 56.47434971098266,
+      "showroomBaseWeightLbs": 3285,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_330ci_zhp_2003_2005_r68"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "330i",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 57.401162790697676,
+      "showroomBaseWeightLbs": 3417,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_330i_2006_2006_r69"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "330i sports package",
+      "startYear": 2001,
+      "endYear": 2005,
+      "showroomAssessment": 53.47972972972973,
+      "showroomBaseWeightLbs": 3318,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_330i_sports_package_2001_2005_r70"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "335d rwd sedan",
+      "startYear": 2007,
+      "endYear": 2011,
+      "showroomAssessment": 66.52068062827225,
+      "showroomBaseWeightLbs": 3781,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_335d_rwd_sedan_2007_2011_r71"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "335i rwd coupe",
+      "startYear": 2007,
+      "endYear": null,
+      "showroomAssessment": 66.41083333333333,
+      "showroomBaseWeightLbs": 3571,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_335i_rwd_coupe_2007_na_r72"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "335i rwd sedan",
+      "startYear": 2006,
+      "endYear": 2009,
+      "showroomAssessment": 66.08500000000001,
+      "showroomBaseWeightLbs": 3594,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_335i_rwd_sedan_2006_2009_r73"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "335xi",
+      "startYear": 2008,
+      "endYear": 2008,
+      "showroomAssessment": 62.666480446927366,
+      "showroomBaseWeightLbs": 3814,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_335xi_2008_2008_r74"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "340xi",
+      "startYear": 2017,
+      "endYear": null,
+      "showroomAssessment": 67.12808641975309,
+      "showroomBaseWeightLbs": 3802,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_340xi_2017_na_r75"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "528i",
+      "startYear": 1995,
+      "endYear": 2000,
+      "showroomAssessment": 44.22372881355932,
+      "showroomBaseWeightLbs": 3252,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_528i_1995_2000_r76"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "530i",
+      "startYear": 2000,
+      "endYear": 2003,
+      "showroomAssessment": 49.01479289940828,
+      "showroomBaseWeightLbs": 3472,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_530i_2000_2003_r77"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "535i",
+      "startYear": 1985,
+      "endYear": 1988,
+      "showroomAssessment": 30.330882352941174,
+      "showroomBaseWeightLbs": 3249,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_535i_1985_1988_r78"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "540i",
+      "startYear": 1996,
+      "endYear": 2003,
+      "showroomAssessment": 59.64903846153845,
+      "showroomBaseWeightLbs": 3803,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_540i_1996_2003_r79"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "e30 m3",
+      "startYear": 1987,
+      "endYear": 1991,
+      "showroomAssessment": 51.04061371841155,
+      "showroomBaseWeightLbs": 2866,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_e30_m3_1987_1991_r80"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "e36 m3 (3.0)",
+      "startYear": 1995,
+      "endYear": 1995,
+      "showroomAssessment": 65.07978723404256,
+      "showroomBaseWeightLbs": 3175,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_e36_m3_3_0_1995_1995_r81"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "e36 m3 (3.2)",
+      "startYear": 1997,
+      "endYear": 1999,
+      "showroomAssessment": 65.96194134078212,
+      "showroomBaseWeightLbs": 3175,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_e36_m3_3_2_1997_1999_r82"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "e46 m3",
+      "startYear": 2001,
+      "endYear": 2006,
+      "showroomAssessment": 75.43181818181817,
+      "showroomBaseWeightLbs": 3415,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_e46_m3_2001_2006_r83"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "e90 m3",
+      "startYear": 2007,
+      "endYear": 2008,
+      "showroomAssessment": 79.94657168299199,
+      "showroomBaseWeightLbs": 3704,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_e90_m3_2007_2008_r84"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "f80 m3",
+      "startYear": 2015,
+      "endYear": 2018,
+      "showroomAssessment": 91.06449044585986,
+      "showroomBaseWeightLbs": 3540,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_f80_m3_2015_2018_r85"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "f82 m4 gts coupe",
+      "startYear": 2016,
+      "endYear": 2020,
+      "showroomAssessment": 95.8254023792862,
+      "showroomBaseWeightLbs": 3494,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_bmw_f82_m4_gts_coupe_2016_2020_r86"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "f82/83 m4",
+      "startYear": 2015,
+      "endYear": 2020,
+      "showroomAssessment": 91.16600318471336,
+      "showroomBaseWeightLbs": 3530,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_f82_83_m4_2015_2020_r87"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "f82/83 m4 competition",
+      "startYear": 2015,
+      "endYear": 2020,
+      "showroomAssessment": 98.3621076233184,
+      "showroomBaseWeightLbs": 3530,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_bmw_f82_83_m4_competition_2015_2020_r88"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "g82/83 m4",
+      "startYear": 2021,
+      "endYear": null,
+      "showroomAssessment": 92.20155325443787,
+      "showroomBaseWeightLbs": 3690,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_g82_83_m4_2021_na_r89"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "g82/83 m4 competition",
+      "startYear": 2021,
+      "endYear": null,
+      "showroomAssessment": 99.83737373737374,
+      "showroomBaseWeightLbs": 3746,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_bmw_g82_83_m4_competition_2021_na_r90"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m coupe",
+      "startYear": 1998,
+      "endYear": 2000,
+      "showroomAssessment": 61.24546089385475,
+      "showroomBaseWeightLbs": 3131,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_m_coupe_1998_2000_r91"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m coupe",
+      "startYear": 2001,
+      "endYear": 2002,
+      "showroomAssessment": 72.19612794612794,
+      "showroomBaseWeightLbs": 3131,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_m_coupe_2001_2002_r92"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m roadster",
+      "startYear": 1998,
+      "endYear": 2000,
+      "showroomAssessment": 59.58240223463687,
+      "showroomBaseWeightLbs": 3084,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_m_roadster_1998_2000_r93"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m roadster",
+      "startYear": 2001,
+      "endYear": 2002,
+      "showroomAssessment": 70.36868686868686,
+      "showroomBaseWeightLbs": 3084,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_m_roadster_2001_2002_r94"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m2",
+      "startYear": 2016,
+      "endYear": null,
+      "showroomAssessment": 83.44571295433363,
+      "showroomBaseWeightLbs": 3455,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_m2_2016_na_r95"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m2 competition",
+      "startYear": 2019,
+      "endYear": 2020,
+      "showroomAssessment": 88.09539473684211,
+      "showroomBaseWeightLbs": 3472,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_m2_competition_2019_2020_r96"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m2 cs",
+      "startYear": 2020,
+      "endYear": 2020,
+      "showroomAssessment": 92.9573029366306,
+      "showroomBaseWeightLbs": 3455,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_m2_cs_2020_2020_r97"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m235i",
+      "startYear": 2016,
+      "endYear": null,
+      "showroomAssessment": 74.02319587628865,
+      "showroomBaseWeightLbs": 3650,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_m235i_2016_na_r98"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m240i",
+      "startYear": 2022,
+      "endYear": 2023,
+      "showroomAssessment": 83.43843777581642,
+      "showroomBaseWeightLbs": 3871,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_m240i_2022_2023_r99"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m3 csl",
+      "startYear": 1995,
+      "endYear": 1995,
+      "showroomAssessment": 69.14893617021278,
+      "showroomBaseWeightLbs": 2950,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_m3_csl_1995_1995_r100"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m5",
+      "startYear": 1985,
+      "endYear": 1988,
+      "showroomAssessment": 51.795695364238405,
+      "showroomBaseWeightLbs": 3417,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_m5_1985_1988_r101"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m5",
+      "startYear": 1989,
+      "endYear": 1995,
+      "showroomAssessment": 56.60641891891892,
+      "showroomBaseWeightLbs": 3858,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_m5_1989_1995_r102"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m5",
+      "startYear": 1998,
+      "endYear": 2003,
+      "showroomAssessment": 70.09558823529412,
+      "showroomBaseWeightLbs": 4026,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_m5_1998_2003_r103"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m5",
+      "startYear": 2005,
+      "endYear": 2010,
+      "showroomAssessment": 79.21195652173913,
+      "showroomBaseWeightLbs": 4090,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_m5_2005_2010_r104"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m5",
+      "startYear": 2011,
+      "endYear": null,
+      "showroomAssessment": 81.07884362680683,
+      "showroomBaseWeightLbs": 4288,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_m5_2011_na_r105"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m6",
+      "startYear": 1983,
+      "endYear": 1989,
+      "showroomAssessment": 51.79635761589404,
+      "showroomBaseWeightLbs": 3565,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_m6_1983_1989_r106"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m6",
+      "startYear": 2005,
+      "endYear": 2010,
+      "showroomAssessment": 82.16847826086956,
+      "showroomBaseWeightLbs": 3770,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_m6_2005_2010_r107"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m6",
+      "startYear": 2012,
+      "endYear": null,
+      "showroomAssessment": 81.46419185282522,
+      "showroomBaseWeightLbs": 4242,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_m6_2012_na_r108"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m8",
+      "startYear": 2020,
+      "endYear": 2020,
+      "showroomAssessment": 93.78701626472237,
+      "showroomBaseWeightLbs": 4295,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_m8_2020_2020_r109"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "m8 competition grand coupe",
+      "startYear": 2020,
+      "endYear": 2023,
+      "showroomAssessment": 90.03581421376609,
+      "showroomBaseWeightLbs": 4480,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_m8_competition_grand_coupe_2020_2023_r110"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "x1",
+      "startYear": 2025,
+      "endYear": 2025,
+      "showroomAssessment": 55.465250965250966,
+      "showroomBaseWeightLbs": 3750,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_x1_2025_2025_r111"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "x3m competition",
+      "startYear": 2020,
+      "endYear": 2020,
+      "showroomAssessment": 78.76348547717842,
+      "showroomBaseWeightLbs": 4620,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_x3m_competition_2020_2020_r112"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "z3 1.9l",
+      "startYear": 1996,
+      "endYear": 1996,
+      "showroomAssessment": 28.14303178484107,
+      "showroomBaseWeightLbs": 2690,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_z3_1_9l_1996_1996_r113"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "z3 2.3l",
+      "startYear": 2000,
+      "endYear": 2000,
+      "showroomAssessment": 41.055182341650664,
+      "showroomBaseWeightLbs": 2899,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_bmw_z3_2_3l_2000_2000_r114"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "z3 2.8",
+      "startYear": 2000,
+      "endYear": 2000,
+      "showroomAssessment": 49.326858108108105,
+      "showroomBaseWeightLbs": 2910,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_bmw_z3_2_8_2000_2000_r115"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "z4 3.0si",
+      "startYear": 2006,
+      "endYear": 2008,
+      "showroomAssessment": 63.10068493150685,
+      "showroomBaseWeightLbs": 3086,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_z4_3_0si_2006_2008_r116"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "z4 m roadster",
+      "startYear": 2006,
+      "endYear": 2008,
+      "showroomAssessment": 75.2898590021692,
+      "showroomBaseWeightLbs": 3197,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_z4_m_roadster_2006_2008_r117"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "z4 sdrive 30i 4 cyl turbo",
+      "startYear": 2020,
+      "endYear": null,
+      "showroomAssessment": 72.4388198757764,
+      "showroomBaseWeightLbs": 3287,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_bmw_z4_sdrive_30i_4_cyl_turbo_2020_na_r118"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "z4 sdrive m40i 6 cyl",
+      "startYear": 2021,
+      "endYear": null,
+      "showroomAssessment": 85.59730803177405,
+      "showroomBaseWeightLbs": 3457,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_z4_sdrive_m40i_6_cyl_2021_na_r119"
+    },
+    {
+      "makeNorm": "bmw",
+      "modelNorm": "z8",
+      "startYear": 1999,
+      "endYear": 2003,
+      "showroomAssessment": 81.42435897435897,
+      "showroomBaseWeightLbs": 3494,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_bmw_z8_1999_2003_r120"
+    },
+    {
+      "makeNorm": "bugatti",
+      "modelNorm": "veyron",
+      "startYear": 2005,
+      "endYear": 2011,
+      "showroomAssessment": 111.17627762430939,
+      "showroomBaseWeightLbs": 4162,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_bugatti_veyron_2005_2011_r121"
+    },
+    {
+      "makeNorm": "cadillac",
+      "modelNorm": "ats-v coupe",
+      "startYear": 2016,
+      "endYear": 2017,
+      "showroomAssessment": 92.08375819373634,
+      "showroomBaseWeightLbs": 3760,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_cadillac_ats_v_coupe_2016_2017_r122"
+    },
+    {
+      "makeNorm": "cadillac",
+      "modelNorm": "ats-v sedan v6",
+      "startYear": 2016,
+      "endYear": 2019,
+      "showroomAssessment": 76.22696335078534,
+      "showroomBaseWeightLbs": 3803,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_cadillac_ats_v_sedan_v6_2016_2019_r123"
+    },
+    {
+      "makeNorm": "cadillac",
+      "modelNorm": "cts-v",
+      "startYear": 2004,
+      "endYear": 2007,
+      "showroomAssessment": 68.42259414225941,
+      "showroomBaseWeightLbs": 3850,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_cadillac_cts_v_2004_2007_r124"
+    },
+    {
+      "makeNorm": "cadillac",
+      "modelNorm": "cts-v",
+      "startYear": 2009,
+      "endYear": null,
+      "showroomAssessment": 79.41581479254359,
+      "showroomBaseWeightLbs": 4250,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_cadillac_cts_v_2009_na_r125"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro ls",
+      "startYear": 2010,
+      "endYear": null,
+      "showroomAssessment": 61.49279379157427,
+      "showroomBaseWeightLbs": 3750,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_chevrolet_camaro_ls_2010_na_r126"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro rs",
+      "startYear": 1994,
+      "endYear": 1997,
+      "showroomAssessment": 41.150800000000004,
+      "showroomBaseWeightLbs": 3473,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_chevrolet_camaro_rs_1994_1997_r127"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro rs",
+      "startYear": 1998,
+      "endYear": 2001,
+      "showroomAssessment": 43.921900826446276,
+      "showroomBaseWeightLbs": 3349,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_chevrolet_camaro_rs_1998_2001_r128"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro ss",
+      "startYear": 2010,
+      "endYear": null,
+      "showroomAssessment": 75.80896226415095,
+      "showroomBaseWeightLbs": 3860,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_camaro_ss_2010_na_r129"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro ss",
+      "startYear": 2018,
+      "endYear": null,
+      "showroomAssessment": 85.07967032967034,
+      "showroomBaseWeightLbs": 3685,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_camaro_ss_2018_na_r130"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro ss 1le",
+      "startYear": 2017,
+      "endYear": null,
+      "showroomAssessment": 89.53791208791209,
+      "showroomBaseWeightLbs": 3743,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_camaro_ss_1le_2017_na_r131"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro ss l99 automatic",
+      "startYear": 2010,
+      "endYear": 2013,
+      "showroomAssessment": 73.26797520661157,
+      "showroomBaseWeightLbs": 3913,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_chevrolet_camaro_ss_l99_automatic_2010_2013_r132"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro z28",
+      "startYear": 1994,
+      "endYear": 1997,
+      "showroomAssessment": 61.393428571428565,
+      "showroomBaseWeightLbs": 3473,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_chevrolet_camaro_z28_1994_1997_r133"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro z28",
+      "startYear": 1998,
+      "endYear": 2001,
+      "showroomAssessment": 64.94691011235955,
+      "showroomBaseWeightLbs": 3459,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_chevrolet_camaro_z28_1998_2001_r134"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro z28",
+      "startYear": 2014,
+      "endYear": 2015,
+      "showroomAssessment": 86.5261569416499,
+      "showroomBaseWeightLbs": 3856,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_camaro_z28_2014_2015_r135"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro zl1",
+      "startYear": 2012,
+      "endYear": 2015,
+      "showroomAssessment": 88.90297202797203,
+      "showroomBaseWeightLbs": 4118,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_camaro_zl1_2012_2015_r136"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro zl1",
+      "startYear": 2017,
+      "endYear": null,
+      "showroomAssessment": 99.09153846153846,
+      "showroomBaseWeightLbs": 3886,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_camaro_zl1_2017_na_r137"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "camaro zl1 1le",
+      "startYear": 2019,
+      "endYear": null,
+      "showroomAssessment": 101.59153846153846,
+      "showroomBaseWeightLbs": 3886,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_camaro_zl1_1le_2019_na_r138"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvet",
+      "startYear": 1994,
+      "endYear": 1994,
+      "showroomAssessment": 72.36382978723404,
+      "showroomBaseWeightLbs": 3512,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_chevrolet_corvet_1994_1994_r139"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette",
+      "startYear": 1986,
+      "endYear": 1986,
+      "showroomAssessment": 65.35443037974683,
+      "showroomBaseWeightLbs": 3200,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_chevrolet_corvette_1986_1986_r140"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c5) coupe/convertible",
+      "startYear": 1997,
+      "endYear": 2000,
+      "showroomAssessment": 82.4014423076923,
+      "showroomBaseWeightLbs": 3230,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_corvette_c5_coupe_convertible_1997_2000_r141"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c5) coupe/convertible",
+      "startYear": 2001,
+      "endYear": 2004,
+      "showroomAssessment": 83.14858490566039,
+      "showroomBaseWeightLbs": 3230,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_corvette_c5_coupe_convertible_2001_2004_r142"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c5) z06",
+      "startYear": 2001,
+      "endYear": 2001,
+      "showroomAssessment": 87.44805194805194,
+      "showroomBaseWeightLbs": 3130,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_corvette_c5_z06_2001_2001_r143"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c5) z06",
+      "startYear": 2002,
+      "endYear": 2004,
+      "showroomAssessment": 89.16611570247935,
+      "showroomBaseWeightLbs": 3116,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_corvette_c5_z06_2002_2004_r144"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c6) coupe z06",
+      "startYear": 2006,
+      "endYear": 2007,
+      "showroomAssessment": 100.00962837837838,
+      "showroomBaseWeightLbs": 3133,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c6_coupe_z06_2006_2007_r145"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c6) coupe z06",
+      "startYear": 2008,
+      "endYear": 2008,
+      "showroomAssessment": 99.80516194331983,
+      "showroomBaseWeightLbs": 3161,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c6_coupe_z06_2008_2008_r146"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c6) coupe z06",
+      "startYear": 2009,
+      "endYear": 2013,
+      "showroomAssessment": 99.47823886639677,
+      "showroomBaseWeightLbs": 3199,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c6_coupe_z06_2009_2013_r147"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c6) coupe z51",
+      "startYear": 2005,
+      "endYear": 2007,
+      "showroomAssessment": 91.723125,
+      "showroomBaseWeightLbs": 3179,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_corvette_c6_coupe_z51_2005_2007_r148"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c6) coupe z51",
+      "startYear": 2008,
+      "endYear": 2009,
+      "showroomAssessment": 93.56542056074765,
+      "showroomBaseWeightLbs": 3216,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_corvette_c6_coupe_z51_2008_2009_r149"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c6) coupe/convertible",
+      "startYear": 2005,
+      "endYear": 2007,
+      "showroomAssessment": 90.723125,
+      "showroomBaseWeightLbs": 3179,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_corvette_c6_coupe_convertible_2005_2007_r150"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c6) coupe/convertible",
+      "startYear": 2008,
+      "endYear": 2013,
+      "showroomAssessment": 92.64485981308411,
+      "showroomBaseWeightLbs": 3208,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_corvette_c6_coupe_convertible_2008_2013_r151"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c6) grand sport coupe",
+      "startYear": 2010,
+      "endYear": 2013,
+      "showroomAssessment": 94.34053738317756,
+      "showroomBaseWeightLbs": 3289,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_chevrolet_corvette_c6_grand_sport_coupe_2010_2013_r152"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c7) coupe z06",
+      "startYear": 2014,
+      "endYear": 2019,
+      "showroomAssessment": 107.98806366047745,
+      "showroomBaseWeightLbs": 3550,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c7_coupe_z06_2014_2019_r153"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c7) coupe z06 aero pack",
+      "startYear": 2014,
+      "endYear": 2019,
+      "showroomAssessment": 110.48806366047745,
+      "showroomBaseWeightLbs": 3550,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c7_coupe_z06_aero_pack_2014_2019_r154"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c7) coupe z51",
+      "startYear": 2014,
+      "endYear": 2019,
+      "showroomAssessment": 97.6804347826087,
+      "showroomBaseWeightLbs": 3444,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c7_coupe_z51_2014_2019_r155"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c7) coupe/convertible",
+      "startYear": 2014,
+      "endYear": 2019,
+      "showroomAssessment": 95.85091240875911,
+      "showroomBaseWeightLbs": 3347,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c7_coupe_convertible_2014_2019_r156"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c7) grand sport",
+      "startYear": 2017,
+      "endYear": 2019,
+      "showroomAssessment": 100.28610108303249,
+      "showroomBaseWeightLbs": 3445,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c7_grand_sport_2017_2019_r157"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c8)",
+      "startYear": 2020,
+      "endYear": null,
+      "showroomAssessment": 102.38235294117646,
+      "showroomBaseWeightLbs": 3640,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c8_2020_na_r158"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c8) z06",
+      "startYear": 2023,
+      "endYear": null,
+      "showroomAssessment": 113.0842541436464,
+      "showroomBaseWeightLbs": 3750,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c8_z06_2023_na_r159"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "corvette (c8) z51",
+      "startYear": 2020,
+      "endYear": null,
+      "showroomAssessment": 104.88235294117646,
+      "showroomBaseWeightLbs": 3640,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_chevrolet_corvette_c8_z51_2020_na_r160"
+    },
+    {
+      "makeNorm": "chevrolet",
+      "modelNorm": "ss sedan",
+      "startYear": 2016,
+      "endYear": null,
+      "showroomAssessment": 74.08915662650602,
+      "showroomBaseWeightLbs": 3946,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_chevrolet_ss_sedan_2016_na_r161"
+    },
+    {
+      "makeNorm": "datsun",
+      "modelNorm": "240z",
+      "startYear": 1973,
+      "endYear": 1973,
+      "showroomAssessment": 42.17656950672645,
+      "showroomBaseWeightLbs": 2355,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_datsun_240z_1973_1973_r162"
+    },
+    {
+      "makeNorm": "datsun",
+      "modelNorm": "280z",
+      "startYear": 1975,
+      "endYear": 1978,
+      "showroomAssessment": 43.11121856866538,
+      "showroomBaseWeightLbs": 2692,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_datsun_280z_1975_1978_r163"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "challenger hellcat",
+      "startYear": 2015,
+      "endYear": null,
+      "showroomAssessment": 89.39353197674419,
+      "showroomBaseWeightLbs": 4469,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_dodge_challenger_hellcat_2015_na_r164"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "challenger srt8",
+      "startYear": 2011,
+      "endYear": null,
+      "showroomAssessment": 74.29255319148936,
+      "showroomBaseWeightLbs": 4170,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_dodge_challenger_srt8_2011_na_r165"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "neon acr",
+      "startYear": 1995,
+      "endYear": 1999,
+      "showroomAssessment": 39.47517321016164,
+      "showroomBaseWeightLbs": 2463,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_dodge_neon_acr_1995_1999_r166"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "neon sport",
+      "startYear": 2000,
+      "endYear": 2005,
+      "showroomAssessment": 26.430837563451774,
+      "showroomBaseWeightLbs": 2567,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_dodge_neon_sport_2000_2005_r167"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "neon sport (sohc)",
+      "startYear": 1997,
+      "endYear": 1997,
+      "showroomAssessment": 28.89022842639592,
+      "showroomBaseWeightLbs": 2491,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_dodge_neon_sport_sohc_1997_1997_r168"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "neon srt-4",
+      "startYear": 2000,
+      "endYear": 2005,
+      "showroomAssessment": 55.9,
+      "showroomBaseWeightLbs": 2970,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_dodge_neon_srt_4_2000_2005_r169"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "shelby charger turbo",
+      "startYear": 1987,
+      "endYear": 1987,
+      "showroomAssessment": 36.285714285714285,
+      "showroomBaseWeightLbs": 2500,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_dodge_shelby_charger_turbo_1987_1987_r170"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "viper gts",
+      "startYear": 1996,
+      "endYear": 2002,
+      "showroomAssessment": 90.96888489208632,
+      "showroomBaseWeightLbs": 3383,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_dodge_viper_gts_1996_2002_r171"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "viper gts",
+      "startYear": 2013,
+      "endYear": null,
+      "showroomAssessment": 103.22540760869565,
+      "showroomBaseWeightLbs": 3431,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_dodge_viper_gts_2013_na_r172"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "viper rt/10",
+      "startYear": 1992,
+      "endYear": 1995,
+      "showroomAssessment": 88.900395256917,
+      "showroomBaseWeightLbs": 3284,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_dodge_viper_rt_10_1992_1995_r173"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "viper srt-10",
+      "startYear": 2003,
+      "endYear": 2006,
+      "showroomAssessment": 96.43327868852458,
+      "showroomBaseWeightLbs": 3357,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_dodge_viper_srt_10_2003_2006_r174"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "viper srt-10",
+      "startYear": 2008,
+      "endYear": 2010,
+      "showroomAssessment": 99.81136363636364,
+      "showroomBaseWeightLbs": 3408,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_dodge_viper_srt_10_2008_2010_r175"
+    },
+    {
+      "makeNorm": "dodge",
+      "modelNorm": "challenger hellcat redeye",
+      "startYear": 2019,
+      "endYear": null,
+      "showroomAssessment": 92.38102998696219,
+      "showroomBaseWeightLbs": 4443,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_dodge_challenger_hellcat_redeye_2019_na_r176"
+    },
+    {
+      "makeNorm": "ferrari",
+      "modelNorm": "250 gto",
+      "startYear": 1962,
+      "endYear": 1964,
+      "showroomAssessment": 70.625,
+      "showroomBaseWeightLbs": 2425,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ferrari_250_gto_1962_1964_r177"
+    },
+    {
+      "makeNorm": "ferrari",
+      "modelNorm": "308 gtb/gts",
+      "startYear": 1977,
+      "endYear": 1985,
+      "showroomAssessment": 63.09288824383164,
+      "showroomBaseWeightLbs": 2778,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ferrari_308_gtb_gts_1977_1985_r178"
+    },
+    {
+      "makeNorm": "ferrari",
+      "modelNorm": "328 gtb/gts",
+      "startYear": 1985,
+      "endYear": 1990,
+      "showroomAssessment": 70.23333333333333,
+      "showroomBaseWeightLbs": 2806,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ferrari_328_gtb_gts_1985_1990_r179"
+    },
+    {
+      "makeNorm": "ferrari",
+      "modelNorm": "enzo",
+      "startYear": 2002,
+      "endYear": 2004,
+      "showroomAssessment": 113.02406267487409,
+      "showroomBaseWeightLbs": 3010,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_ferrari_enzo_2002_2004_r180"
+    },
+    {
+      "makeNorm": "ferrari",
+      "modelNorm": "f355 berlinetta",
+      "startYear": 1994,
+      "endYear": 1999,
+      "showroomAssessment": 88.22466539196941,
+      "showroomBaseWeightLbs": 2976,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ferrari_f355_berlinetta_1994_1999_r181"
+    },
+    {
+      "makeNorm": "ferrari",
+      "modelNorm": "f360 modena",
+      "startYear": 1999,
+      "endYear": 2005,
+      "showroomAssessment": 89.08209302325581,
+      "showroomBaseWeightLbs": 3197,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ferrari_f360_modena_1999_2005_r182"
+    },
+    {
+      "makeNorm": "ferrari",
+      "modelNorm": "f40",
+      "startYear": 1987,
+      "endYear": 1992,
+      "showroomAssessment": 102.3421433743664,
+      "showroomBaseWeightLbs": 2400,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_ferrari_f40_1987_1992_r183"
+    },
+    {
+      "makeNorm": "ferrari",
+      "modelNorm": "f430",
+      "startYear": 2004,
+      "endYear": 2009,
+      "showroomAssessment": 98.3603896103896,
+      "showroomBaseWeightLbs": 3197,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_ferrari_f430_2004_2009_r184"
+    },
+    {
+      "makeNorm": "ferrari",
+      "modelNorm": "f458 italia",
+      "startYear": 2010,
+      "endYear": null,
+      "showroomAssessment": 102.07325886990802,
+      "showroomBaseWeightLbs": 3274,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_ferrari_f458_italia_2010_na_r185"
+    },
+    {
+      "makeNorm": "fiat",
+      "modelNorm": "500 abarth",
+      "startYear": 2008,
+      "endYear": null,
+      "showroomAssessment": 29.007575757575765,
+      "showroomBaseWeightLbs": 2500,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_fiat_500_abarth_2008_na_r186"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "escort zx2",
+      "startYear": 1998,
+      "endYear": 1998,
+      "showroomAssessment": 26.11434108527132,
+      "showroomBaseWeightLbs": 2531,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_escort_zx2_1998_1998_r187"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "fiesta st",
+      "startYear": 2015,
+      "endYear": null,
+      "showroomAssessment": 53.34144295302013,
+      "showroomBaseWeightLbs": 2742,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_fiesta_st_2015_na_r188"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "focus coupe",
+      "startYear": 2008,
+      "endYear": 2011,
+      "showroomAssessment": 30.180288461538453,
+      "showroomBaseWeightLbs": 2588,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_focus_coupe_2008_2011_r189"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "focus rs",
+      "startYear": 2016,
+      "endYear": null,
+      "showroomAssessment": 82.49785714285714,
+      "showroomBaseWeightLbs": 3459,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_focus_rs_2016_na_r190"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "focus se",
+      "startYear": 2000,
+      "endYear": 2004,
+      "showroomAssessment": 9.618461538461517,
+      "showroomBaseWeightLbs": 2546,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_focus_se_2000_2004_r191"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "focus sedan",
+      "startYear": 2008,
+      "endYear": 2011,
+      "showroomAssessment": 29.107572115384613,
+      "showroomBaseWeightLbs": 2623,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_focus_sedan_2008_2011_r192"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "focus st",
+      "startYear": 2012,
+      "endYear": null,
+      "showroomAssessment": 63.90794573643411,
+      "showroomBaseWeightLbs": 3223,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ford_focus_st_2012_na_r193"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "focus svt",
+      "startYear": 2002,
+      "endYear": 2004,
+      "showroomAssessment": 36.70670103092783,
+      "showroomBaseWeightLbs": 2769,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_focus_svt_2002_2004_r194"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "focus zx3",
+      "startYear": 2000,
+      "endYear": 2004,
+      "showroomAssessment": 27.157594936708847,
+      "showroomBaseWeightLbs": 2551,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_focus_zx3_2000_2004_r195"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "focus zx4 s/se/ses",
+      "startYear": 2005,
+      "endYear": 2007,
+      "showroomAssessment": 25.224074074074082,
+      "showroomBaseWeightLbs": 2677,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_focus_zx4_s_se_ses_2005_2007_r196"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "focus zx4 st",
+      "startYear": 2005,
+      "endYear": 2007,
+      "showroomAssessment": 37.149671052631575,
+      "showroomBaseWeightLbs": 2677,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_focus_zx4_st_2005_2007_r197"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "gt",
+      "startYear": 2005,
+      "endYear": 2006,
+      "showroomAssessment": 97.79671875,
+      "showroomBaseWeightLbs": 3351,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_ford_gt_2005_2006_r198"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang",
+      "startYear": 1964,
+      "endYear": 1965,
+      "showroomAssessment": 48.75,
+      "showroomBaseWeightLbs": 2562,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_mustang_1964_1965_r199"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang boss",
+      "startYear": 2012,
+      "endYear": 2013,
+      "showroomAssessment": 80.47949526813879,
+      "showroomBaseWeightLbs": 3632,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_mustang_boss_2012_2013_r200"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang boss 302",
+      "startYear": 1969,
+      "endYear": 1970,
+      "showroomAssessment": 39.90689655172414,
+      "showroomBaseWeightLbs": 3384,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_mustang_boss_302_1969_1970_r201"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang bullet",
+      "startYear": 2019,
+      "endYear": 2019,
+      "showroomAssessment": 89.12336956521739,
+      "showroomBaseWeightLbs": 3829,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_mustang_bullet_2019_2019_r202"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang cobra",
+      "startYear": 1996,
+      "endYear": 1998,
+      "showroomAssessment": 59.30659340659341,
+      "showroomBaseWeightLbs": 3404,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_mustang_cobra_1996_1998_r203"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang cobra",
+      "startYear": 1999,
+      "endYear": 2001,
+      "showroomAssessment": 66.3025078369906,
+      "showroomBaseWeightLbs": 3430,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ford_mustang_cobra_1999_2001_r204"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang cobra",
+      "startYear": 2003,
+      "endYear": 2004,
+      "showroomAssessment": 72.06089743589743,
+      "showroomBaseWeightLbs": 3665,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ford_mustang_cobra_2003_2004_r205"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang cobra gt-40",
+      "startYear": 1994,
+      "endYear": 1995,
+      "showroomAssessment": 48.266666666666666,
+      "showroomBaseWeightLbs": 3524,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_mustang_cobra_gt_40_1994_1995_r206"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang cobra r",
+      "startYear": 1995,
+      "endYear": 1995,
+      "showroomAssessment": 59.64285714285714,
+      "showroomBaseWeightLbs": 3354,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_mustang_cobra_r_1995_1995_r207"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang cobra r",
+      "startYear": 2000,
+      "endYear": 2000,
+      "showroomAssessment": 72.38116883116882,
+      "showroomBaseWeightLbs": 3589,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ford_mustang_cobra_r_2000_2000_r208"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt",
+      "startYear": 1994,
+      "endYear": 1995,
+      "showroomAssessment": 46.08181818181818,
+      "showroomBaseWeightLbs": 3276,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_mustang_gt_1994_1995_r209"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt",
+      "startYear": 1996,
+      "endYear": 1997,
+      "showroomAssessment": 46.06398601398601,
+      "showroomBaseWeightLbs": 3277,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_mustang_gt_1996_1997_r210"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt",
+      "startYear": 1998,
+      "endYear": 2004,
+      "showroomAssessment": 55.441605839416056,
+      "showroomBaseWeightLbs": 3324,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_mustang_gt_1998_2004_r211"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt",
+      "startYear": 2005,
+      "endYear": 2009,
+      "showroomAssessment": 62.732336956521735,
+      "showroomBaseWeightLbs": 3555,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ford_mustang_gt_2005_2009_r212"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt",
+      "startYear": 2010,
+      "endYear": 2010,
+      "showroomAssessment": 64.83167539267015,
+      "showroomBaseWeightLbs": 3533,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ford_mustang_gt_2010_2010_r213"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt",
+      "startYear": 2011,
+      "endYear": 2014,
+      "showroomAssessment": 74.789744645799,
+      "showroomBaseWeightLbs": 3543,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ford_mustang_gt_2011_2014_r214"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt",
+      "startYear": 2015,
+      "endYear": 2017,
+      "showroomAssessment": 82.30413385826772,
+      "showroomBaseWeightLbs": 3705,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_mustang_gt_2015_2017_r215"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt",
+      "startYear": 2018,
+      "endYear": null,
+      "showroomAssessment": 84.2472014925373,
+      "showroomBaseWeightLbs": 3705,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_mustang_gt_2018_na_r216"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt (roush stage 3)",
+      "startYear": 2000,
+      "endYear": 2001,
+      "showroomAssessment": 71.17671232876712,
+      "showroomBaseWeightLbs": 3506,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ford_mustang_gt_roush_stage_3_2000_2001_r217"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt performance package 1",
+      "startYear": 2018,
+      "endYear": null,
+      "showroomAssessment": 86.7472014925373,
+      "showroomBaseWeightLbs": 3705,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_mustang_gt_performance_package_1_2018_na_r218"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang gt performance package 2",
+      "startYear": 2018,
+      "endYear": null,
+      "showroomAssessment": 89.2472014925373,
+      "showroomBaseWeightLbs": 3705,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_mustang_gt_performance_package_2_2018_na_r219"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang lx",
+      "startYear": 1987,
+      "endYear": 1993,
+      "showroomAssessment": 49.25,
+      "showroomBaseWeightLbs": 3250,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_mustang_lx_1987_1993_r220"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang mach-1",
+      "startYear": 2021,
+      "endYear": null,
+      "showroomAssessment": 89.12336956521739,
+      "showroomBaseWeightLbs": 3829,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_mustang_mach_1_2021_na_r221"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang svo",
+      "startYear": 1984,
+      "endYear": 1986,
+      "showroomAssessment": 45.439209726443764,
+      "showroomBaseWeightLbs": 3048,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_mustang_svo_1984_1986_r222"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang svt cobra",
+      "startYear": 1993,
+      "endYear": 1993,
+      "showroomAssessment": 49.165,
+      "showroomBaseWeightLbs": 3255,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_mustang_svt_cobra_1993_1993_r223"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang v6",
+      "startYear": 2005,
+      "endYear": 2009,
+      "showroomAssessment": 44.78409090909091,
+      "showroomBaseWeightLbs": 3350,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_mustang_v6_2005_2009_r224"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang v6",
+      "startYear": 2010,
+      "endYear": 2010,
+      "showroomAssessment": 43.798863636363635,
+      "showroomBaseWeightLbs": 3401,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_mustang_v6_2010_2010_r225"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "mustang v6",
+      "startYear": 2011,
+      "endYear": null,
+      "showroomAssessment": 63.277808988764036,
+      "showroomBaseWeightLbs": 3401,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ford_mustang_v6_2011_na_r226"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby gt",
+      "startYear": 2007,
+      "endYear": 2008,
+      "showroomAssessment": 66.78954081632654,
+      "showroomBaseWeightLbs": 3475,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_ford_shelby_gt_2007_2008_r227"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby gt350 base (non-track pack)",
+      "startYear": 2016,
+      "endYear": 2020,
+      "showroomAssessment": 89.3200540175557,
+      "showroomBaseWeightLbs": 3796,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_shelby_gt350_base_non_track_pack_2016_2020_r228"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby gt350 base (with track pack)",
+      "startYear": 2016,
+      "endYear": 2020,
+      "showroomAssessment": 91.8200540175557,
+      "showroomBaseWeightLbs": 3796,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_shelby_gt350_base_with_track_pack_2016_2020_r229"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby gt350 r",
+      "startYear": 2016,
+      "endYear": null,
+      "showroomAssessment": 94.99155975692099,
+      "showroomBaseWeightLbs": 3718,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_ford_shelby_gt350_r_2016_na_r230"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby gt500",
+      "startYear": 2005,
+      "endYear": 2009,
+      "showroomAssessment": 83.22972972972973,
+      "showroomBaseWeightLbs": 3920,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_shelby_gt500_2005_2009_r231"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby gt500",
+      "startYear": 2010,
+      "endYear": 2010,
+      "showroomAssessment": 82.90566037735849,
+      "showroomBaseWeightLbs": 3940,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_shelby_gt500_2010_2010_r232"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby gt500",
+      "startYear": 2011,
+      "endYear": 2012,
+      "showroomAssessment": 86.3445652173913,
+      "showroomBaseWeightLbs": 3871,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_shelby_gt500_2011_2012_r233"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby gt500",
+      "startYear": 2013,
+      "endYear": 2014,
+      "showroomAssessment": 91.74142784032753,
+      "showroomBaseWeightLbs": 3871,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_ford_shelby_gt500_2013_2014_r234"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby gt500",
+      "startYear": 2020,
+      "endYear": null,
+      "showroomAssessment": 95.37307692307692,
+      "showroomBaseWeightLbs": 4059,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_ford_shelby_gt500_2020_na_r235"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby mustang gt350 convertible",
+      "startYear": 1969,
+      "endYear": 1970,
+      "showroomAssessment": 41.93523316062175,
+      "showroomBaseWeightLbs": 3600,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_ford_shelby_mustang_gt350_convertible_1969_1970_r236"
+    },
+    {
+      "makeNorm": "ford",
+      "modelNorm": "shelby mustang gt500",
+      "startYear": 1967,
+      "endYear": 1967,
+      "showroomAssessment": 51.475663716814154,
+      "showroomBaseWeightLbs": 3370,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_ford_shelby_mustang_gt500_1967_1967_r237"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "accord",
+      "startYear": 1994,
+      "endYear": 1994,
+      "showroomAssessment": 8.706766917293223,
+      "showroomBaseWeightLbs": 3076,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_accord_1994_1994_r238"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic 3dr non-si",
+      "startYear": 1992,
+      "endYear": 1992,
+      "showroomAssessment": 15.048013245033104,
+      "showroomBaseWeightLbs": 2178,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_3dr_non_si_1992_1992_r239"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic cx",
+      "startYear": 1991,
+      "endYear": 1995,
+      "showroomAssessment": -8.577922077922082,
+      "showroomBaseWeightLbs": 2094,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_cx_1991_1995_r240"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic cx w/ k24a swap",
+      "startYear": 1991,
+      "endYear": 1995,
+      "showroomAssessment": 59.74601769911504,
+      "showroomBaseWeightLbs": 2094,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_honda_civic_cx_w_k24a_swap_1991_1995_r241"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic dx",
+      "startYear": 1995,
+      "endYear": 1995,
+      "showroomAssessment": 12.810430463576154,
+      "showroomBaseWeightLbs": 2231,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_dx_1995_1995_r242"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic dx",
+      "startYear": 1996,
+      "endYear": 1996,
+      "showroomAssessment": 27.10941828254846,
+      "showroomBaseWeightLbs": 2262,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_dx_1996_1996_r243"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic dx",
+      "startYear": 1998,
+      "endYear": 1998,
+      "showroomAssessment": 12.326190476190462,
+      "showroomBaseWeightLbs": 2339,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_dx_1998_1998_r244"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic dx",
+      "startYear": 2003,
+      "endYear": 2003,
+      "showroomAssessment": 16.39999999999999,
+      "showroomBaseWeightLbs": 2416,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_dx_2003_2003_r245"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic dx coupe",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 28.46875,
+      "showroomBaseWeightLbs": 2593,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_dx_coupe_2006_2006_r246"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic hatchback",
+      "startYear": 1988,
+      "endYear": 1991,
+      "showroomAssessment": -11.42467248908298,
+      "showroomBaseWeightLbs": 2127,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_hatchback_1988_1991_r247"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic hatchback dx",
+      "startYear": 1990,
+      "endYear": 1991,
+      "showroomAssessment": 7.662087912087912,
+      "showroomBaseWeightLbs": 2127,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_hatchback_dx_1990_1991_r248"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic si",
+      "startYear": 1992,
+      "endYear": null,
+      "showroomAssessment": 26.19522471910112,
+      "showroomBaseWeightLbs": 2326,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_si_1992_na_r249"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic si",
+      "startYear": 2004,
+      "endYear": 2004,
+      "showroomAssessment": 33.5254424778761,
+      "showroomBaseWeightLbs": 2782,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_si_2004_2004_r250"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic si",
+      "startYear": 2006,
+      "endYear": 2011,
+      "showroomAssessment": 43.82648183556404,
+      "showroomBaseWeightLbs": 2899,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_civic_si_2006_2011_r251"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic si",
+      "startYear": 2012,
+      "endYear": 0,
+      "showroomAssessment": 49.96984265734265,
+      "showroomBaseWeightLbs": 2895,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_honda_civic_si_2012_0_r252"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "civic type r",
+      "startYear": 2017,
+      "endYear": null,
+      "showroomAssessment": 80.2194046306505,
+      "showroomBaseWeightLbs": 3150,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_honda_civic_type_r_2017_na_r253"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "crs si",
+      "startYear": 1987,
+      "endYear": 1987,
+      "showroomAssessment": 18.95181818181817,
+      "showroomBaseWeightLbs": 1953,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_crs_si_1987_1987_r254"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "crx si",
+      "startYear": 1985,
+      "endYear": 1986,
+      "showroomAssessment": 33.524525316455694,
+      "showroomBaseWeightLbs": 1883,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_crx_si_1985_1986_r255"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "crx si",
+      "startYear": 1988,
+      "endYear": 1988,
+      "showroomAssessment": 28.35996835443038,
+      "showroomBaseWeightLbs": 2011,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_honda_crx_si_1988_1988_r256"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "s2000",
+      "startYear": 1999,
+      "endYear": 2003,
+      "showroomAssessment": 61.691943127962084,
+      "showroomBaseWeightLbs": 2870,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_honda_s2000_1999_2003_r257"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "s2000 2.2l",
+      "startYear": 2004,
+      "endYear": 2009,
+      "showroomAssessment": 64.46462264150944,
+      "showroomBaseWeightLbs": 2870,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_honda_s2000_2_2l_2004_2009_r258"
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "s2000 cr",
+      "startYear": 2008,
+      "endYear": 2009,
+      "showroomAssessment": 69.06957547169812,
+      "showroomBaseWeightLbs": 2765,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_honda_s2000_cr_2008_2009_r259"
+    },
+    {
+      "makeNorm": "hyundai",
+      "modelNorm": "genesis coupe",
+      "startYear": 2010,
+      "endYear": 2011,
+      "showroomAssessment": 53.147959183673464,
+      "showroomBaseWeightLbs": 3315,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_hyundai_genesis_coupe_2010_2011_r260"
+    },
+    {
+      "makeNorm": "hyundai",
+      "modelNorm": "genesis coupe r spec 2.0t",
+      "startYear": 2010,
+      "endYear": 2012,
+      "showroomAssessment": 52.76335877862596,
+      "showroomBaseWeightLbs": 3300,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_hyundai_genesis_coupe_r_spec_2_0t_2010_2012_r261"
+    },
+    {
+      "makeNorm": "hyundai",
+      "modelNorm": "genesis coupe r spec 2.0t",
+      "startYear": 2013,
+      "endYear": 2015,
+      "showroomAssessment": 66,
+      "showroomBaseWeightLbs": 3300,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_hyundai_genesis_coupe_r_spec_2_0t_2013_2015_r262"
+    },
+    {
+      "makeNorm": "hyundai",
+      "modelNorm": "genesis coupe r spec 3.8",
+      "startYear": 2011,
+      "endYear": 2012,
+      "showroomAssessment": 72.78616173120729,
+      "showroomBaseWeightLbs": 3389,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_hyundai_genesis_coupe_r_spec_3_8_2011_2012_r263"
+    },
+    {
+      "makeNorm": "hyundai",
+      "modelNorm": "genesis coupe r spec 3.8",
+      "startYear": 2013,
+      "endYear": 2016,
+      "showroomAssessment": 73.3978304742684,
+      "showroomBaseWeightLbs": 3389,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_hyundai_genesis_coupe_r_spec_3_8_2013_2016_r264"
+    },
+    {
+      "makeNorm": "hyundai",
+      "modelNorm": "veloster n",
+      "startYear": 2019,
+      "endYear": null,
+      "showroomAssessment": 66.06710526315788,
+      "showroomBaseWeightLbs": 3036,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_hyundai_veloster_n_2019_na_r265"
+    },
+    {
+      "makeNorm": "hyundai",
+      "modelNorm": "veloster n w/pref package",
+      "startYear": 2019,
+      "endYear": null,
+      "showroomAssessment": 71.71111111111111,
+      "showroomBaseWeightLbs": 3036,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_hyundai_veloster_n_w_pref_package_2019_na_r266"
+    },
+    {
+      "makeNorm": "infiniti",
+      "modelNorm": "g35 coupe",
+      "startYear": 2003,
+      "endYear": 2006,
+      "showroomAssessment": 61.90048250904704,
+      "showroomBaseWeightLbs": 3420,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_infiniti_g35_coupe_2003_2006_r267"
+    },
+    {
+      "makeNorm": "jaguar",
+      "modelNorm": "f type s coupe",
+      "startYear": 2015,
+      "endYear": 2016,
+      "showroomAssessment": 78.73248407643312,
+      "showroomBaseWeightLbs": 3514,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_jaguar_f_type_s_coupe_2015_2016_r268"
+    },
+    {
+      "makeNorm": "jaguar",
+      "modelNorm": "x type sportwagon",
+      "startYear": 2005,
+      "endYear": 2005,
+      "showroomAssessment": 39.61477272727271,
+      "showroomBaseWeightLbs": 3747,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_jaguar_x_type_sportwagon_2005_2005_r269"
+    },
+    {
+      "makeNorm": "jaguar",
+      "modelNorm": "xkr",
+      "startYear": 2003,
+      "endYear": 2006,
+      "showroomAssessment": 73.56806615776081,
+      "showroomBaseWeightLbs": 3785,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_jaguar_xkr_2003_2006_r270"
+    },
+    {
+      "makeNorm": "jaguar",
+      "modelNorm": "xkr-s",
+      "startYear": 2006,
+      "endYear": null,
+      "showroomAssessment": 85.41947565543072,
+      "showroomBaseWeightLbs": 3968,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_jaguar_xkr_s_2006_na_r271"
+    },
+    {
+      "makeNorm": "lamborghini",
+      "modelNorm": "aventador",
+      "startYear": 2011,
+      "endYear": null,
+      "showroomAssessment": 103.59126984126985,
+      "showroomBaseWeightLbs": 3470,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_lamborghini_aventador_2011_na_r272"
+    },
+    {
+      "makeNorm": "lamborghini",
+      "modelNorm": "gallardo lp 560-4",
+      "startYear": 2012,
+      "endYear": null,
+      "showroomAssessment": 100.60868841544607,
+      "showroomBaseWeightLbs": 3109,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_lamborghini_gallardo_lp_560_4_2012_na_r273"
+    },
+    {
+      "makeNorm": "lamborghini",
+      "modelNorm": "murcielago lp 670-4",
+      "startYear": 2009,
+      "endYear": 2010,
+      "showroomAssessment": 101.16928807947019,
+      "showroomBaseWeightLbs": 3671,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_lamborghini_murcielago_lp_670_4_2009_2010_r274"
+    },
+    {
+      "makeNorm": "lexus",
+      "modelNorm": "is300",
+      "startYear": 2001,
+      "endYear": 2005,
+      "showroomAssessment": 47.9548611111111,
+      "showroomBaseWeightLbs": 3255,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_lexus_is300_2001_2005_r275"
+    },
+    {
+      "makeNorm": "lexus",
+      "modelNorm": "lfa",
+      "startYear": 2011,
+      "endYear": 2012,
+      "showroomAssessment": 95.96553497942386,
+      "showroomBaseWeightLbs": 3263,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_lexus_lfa_2011_2012_r276"
+    },
+    {
+      "makeNorm": "lotus",
+      "modelNorm": "elise",
+      "startYear": 2005,
+      "endYear": 2007,
+      "showroomAssessment": 70.12451737451738,
+      "showroomBaseWeightLbs": 2006,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_lotus_elise_2005_2007_r277"
+    },
+    {
+      "makeNorm": "lotus",
+      "modelNorm": "esprit",
+      "startYear": 1996,
+      "endYear": 1998,
+      "showroomAssessment": 78.00678391959798,
+      "showroomBaseWeightLbs": 3043,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_lotus_esprit_1996_1998_r278"
+    },
+    {
+      "makeNorm": "maserati",
+      "modelNorm": "gran turismo s",
+      "startYear": 2008,
+      "endYear": 2012,
+      "showroomAssessment": 79.43078175895765,
+      "showroomBaseWeightLbs": 4100,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_maserati_gran_turismo_s_2008_2012_r279"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "3",
+      "startYear": 2012,
+      "endYear": null,
+      "showroomAssessment": 24.71693735498839,
+      "showroomBaseWeightLbs": 2866,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mazda_3_2012_na_r280"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "mazdaspeed mx5",
+      "startYear": 2004,
+      "endYear": 2005,
+      "showroomAssessment": 55.228448275862064,
+      "showroomBaseWeightLbs": 2529,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mazda_mazdaspeed_mx5_2004_2005_r281"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "mazdaspeed protege",
+      "startYear": 2003,
+      "endYear": 2003,
+      "showroomAssessment": 39.5035,
+      "showroomBaseWeightLbs": 2843,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mazda_mazdaspeed_protege_2003_2003_r282"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "mazdaspeed3",
+      "startYear": 2007,
+      "endYear": 2007,
+      "showroomAssessment": 62.12313895781637,
+      "showroomBaseWeightLbs": 3153,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_mazda_mazdaspeed3_2007_2007_r283"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "mazdaspeed6",
+      "startYear": 2006,
+      "endYear": 2007,
+      "showroomAssessment": 56.73460144927536,
+      "showroomBaseWeightLbs": 3589,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mazda_mazdaspeed6_2006_2007_r284"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "miata na 1.6",
+      "startYear": 1989,
+      "endYear": 1993,
+      "showroomAssessment": 29.1671686746988,
+      "showroomBaseWeightLbs": 2222,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mazda_miata_na_1_6_1989_1993_r285"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "miata na 1.8",
+      "startYear": 1994,
+      "endYear": 1997,
+      "showroomAssessment": 35.484459459459444,
+      "showroomBaseWeightLbs": 2293,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mazda_miata_na_1_8_1994_1997_r286"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "miata nb",
+      "startYear": 1999,
+      "endYear": 2005,
+      "showroomAssessment": 37.464814814814815,
+      "showroomBaseWeightLbs": 2447,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mazda_miata_nb_1999_2005_r287"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "mx-5 nc",
+      "startYear": 2006,
+      "endYear": 2015,
+      "showroomAssessment": 49.9296875,
+      "showroomBaseWeightLbs": 2525,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mazda_mx_5_nc_2006_2015_r288"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "mx-5 nc sv",
+      "startYear": 2008,
+      "endYear": 2008,
+      "showroomAssessment": 50.953919491525426,
+      "showroomBaseWeightLbs": 2445,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mazda_mx_5_nc_sv_2008_2008_r289"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "mx-5 nd",
+      "startYear": 2016,
+      "endYear": 2018,
+      "showroomAssessment": 54.58078602620087,
+      "showroomBaseWeightLbs": 2332,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mazda_mx_5_nd_2016_2018_r290"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "mx-5 nd",
+      "startYear": 2019,
+      "endYear": null,
+      "showroomAssessment": 61.88888888888889,
+      "showroomBaseWeightLbs": 2318,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_mazda_mx_5_nd_2019_na_r291"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "rx7",
+      "startYear": 1981,
+      "endYear": 1983,
+      "showroomAssessment": 10.033980582524265,
+      "showroomBaseWeightLbs": 2350,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mazda_rx7_1981_1983_r292"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "rx-7",
+      "startYear": 1986,
+      "endYear": 1988,
+      "showroomAssessment": 31.941860465116278,
+      "showroomBaseWeightLbs": 2700,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mazda_rx_7_1986_1988_r293"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "rx-7 (non-turbo)",
+      "startYear": 1989,
+      "endYear": 1991,
+      "showroomAssessment": 34.75163043478261,
+      "showroomBaseWeightLbs": 2787,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mazda_rx_7_non_turbo_1989_1991_r294"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "rx-7 turbo",
+      "startYear": 1986,
+      "endYear": 1988,
+      "showroomAssessment": 45.56946983546618,
+      "showroomBaseWeightLbs": 2850,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mazda_rx_7_turbo_1986_1988_r295"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "rx-7 turbo",
+      "startYear": 1993,
+      "endYear": 1995,
+      "showroomAssessment": 69.37689133425033,
+      "showroomBaseWeightLbs": 2858,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_mazda_rx_7_turbo_1993_1995_r296"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "rx8",
+      "startYear": 2008,
+      "endYear": 2011,
+      "showroomAssessment": 53.884430176565004,
+      "showroomBaseWeightLbs": 3084,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mazda_rx8_2008_2011_r297"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "rx-8",
+      "startYear": 2003,
+      "endYear": 2008,
+      "showroomAssessment": 55.73976377952755,
+      "showroomBaseWeightLbs": 3051,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mazda_rx_8_2003_2008_r298"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "rx-8",
+      "startYear": 2009,
+      "endYear": 2011,
+      "showroomAssessment": 54.273274478330656,
+      "showroomBaseWeightLbs": 3065,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mazda_rx_8_2009_2011_r299"
+    },
+    {
+      "makeNorm": "mazda",
+      "modelNorm": "mx-5 nc (factory automatic)",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 48.738877118644055,
+      "showroomBaseWeightLbs": 2527,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mazda_mx_5_nc_factory_automatic_2006_2006_r300"
+    },
+    {
+      "makeNorm": "mercedes",
+      "modelNorm": "190e",
+      "startYear": 1990,
+      "endYear": 1993,
+      "showroomAssessment": 18.19642857142857,
+      "showroomBaseWeightLbs": 2987,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mercedes_190e_1990_1993_r301"
+    },
+    {
+      "makeNorm": "mercedes",
+      "modelNorm": "cla45s amg",
+      "startYear": 2024,
+      "endYear": 2024,
+      "showroomAssessment": 85.64487926727728,
+      "showroomBaseWeightLbs": 3660,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_mercedes_cla45s_amg_2024_2024_r302"
+    },
+    {
+      "makeNorm": "mercedes",
+      "modelNorm": "gtr pro",
+      "startYear": 2020,
+      "endYear": null,
+      "showroomAssessment": 111.63323353293413,
+      "showroomBaseWeightLbs": 3650,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_mercedes_gtr_pro_2020_na_r303"
+    },
+    {
+      "makeNorm": "mercedes benz",
+      "modelNorm": "e500 wagon",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 54.79400848356309,
+      "showroomBaseWeightLbs": 4231,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mercedes_benz_e500_wagon_2006_2006_r304"
+    },
+    {
+      "makeNorm": "mercedes-benz",
+      "modelNorm": "clk 55 amg",
+      "startYear": 2002,
+      "endYear": 2002,
+      "showroomAssessment": 75.13789868667916,
+      "showroomBaseWeightLbs": 3500,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_mercedes_benz_clk_55_amg_2002_2002_r305"
+    },
+    {
+      "makeNorm": "mercedes-benz",
+      "modelNorm": "sls amg",
+      "startYear": 2011,
+      "endYear": null,
+      "showroomAssessment": 86.4402985074627,
+      "showroomBaseWeightLbs": 3600,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_mercedes_benz_sls_amg_2011_na_r306"
+    },
+    {
+      "makeNorm": "mg",
+      "modelNorm": "midget",
+      "startYear": 1971,
+      "endYear": 1971,
+      "showroomAssessment": -19.43000000000002,
+      "showroomBaseWeightLbs": 1701,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mg_midget_1971_1971_r307"
+    },
+    {
+      "makeNorm": "mini",
+      "modelNorm": "cooper",
+      "startYear": 2001,
+      "endYear": 2006,
+      "showroomAssessment": 20.314516129032242,
+      "showroomBaseWeightLbs": 2519,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mini_cooper_2001_2006_r308"
+    },
+    {
+      "makeNorm": "mini",
+      "modelNorm": "cooper",
+      "startYear": 2006,
+      "endYear": null,
+      "showroomAssessment": 20.951428571428565,
+      "showroomBaseWeightLbs": 2568,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_mini_cooper_2006_na_r309"
+    },
+    {
+      "makeNorm": "mini",
+      "modelNorm": "cooper s",
+      "startYear": 2005,
+      "endYear": 2005,
+      "showroomAssessment": 48.43674698795181,
+      "showroomBaseWeightLbs": 2678,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mini_cooper_s_2005_2005_r310"
+    },
+    {
+      "makeNorm": "mini",
+      "modelNorm": "cooper s",
+      "startYear": 2006,
+      "endYear": null,
+      "showroomAssessment": 51.43905950095969,
+      "showroomBaseWeightLbs": 2679,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mini_cooper_s_2006_na_r311"
+    },
+    {
+      "makeNorm": "mini",
+      "modelNorm": "cooper s jcw",
+      "startYear": 2004,
+      "endYear": null,
+      "showroomAssessment": 57.824090121317155,
+      "showroomBaseWeightLbs": 2678,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mini_cooper_s_jcw_2004_na_r312"
+    },
+    {
+      "makeNorm": "mini",
+      "modelNorm": "jcw gp",
+      "startYear": 2013,
+      "endYear": 2013,
+      "showroomAssessment": 68.8108108108108,
+      "showroomBaseWeightLbs": 2624,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_mini_jcw_gp_2013_2013_r313"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "eclipse gst",
+      "startYear": 1995,
+      "endYear": 1999,
+      "showroomAssessment": 51.35449526813879,
+      "showroomBaseWeightLbs": 2767,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mitsubishi_eclipse_gst_1995_1999_r314"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "eclipse gsx",
+      "startYear": 1995,
+      "endYear": 1999,
+      "showroomAssessment": 51.011435331230274,
+      "showroomBaseWeightLbs": 3157,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mitsubishi_eclipse_gsx_1995_1999_r315"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "eclipse gt",
+      "startYear": 2000,
+      "endYear": 2005,
+      "showroomAssessment": 45.15991735537189,
+      "showroomBaseWeightLbs": 3053,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mitsubishi_eclipse_gt_2000_2005_r316"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "eclipse gt-6",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 53.1793893129771,
+      "showroomBaseWeightLbs": 3472,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mitsubishi_eclipse_gt_6_2006_2006_r317"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "galant vr4",
+      "startYear": 1992,
+      "endYear": 1996,
+      "showroomAssessment": 48.88034188034188,
+      "showroomBaseWeightLbs": 3200,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mitsubishi_galant_vr4_1992_1996_r318"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "galant vr4",
+      "startYear": 1996,
+      "endYear": 2003,
+      "showroomAssessment": 56.82685297691373,
+      "showroomBaseWeightLbs": 3400,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_mitsubishi_galant_vr4_1996_2003_r319"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "lancer evo i",
+      "startYear": 1992,
+      "endYear": 1993,
+      "showroomAssessment": 65.88617318435755,
+      "showroomBaseWeightLbs": 2730,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_mitsubishi_lancer_evo_i_1992_1993_r320"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "lancer evo ii",
+      "startYear": 1994,
+      "endYear": 1995,
+      "showroomAssessment": 70.02272727272727,
+      "showroomBaseWeightLbs": 2756,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_mitsubishi_lancer_evo_ii_1994_1995_r321"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "lancer evo ix",
+      "startYear": 2005,
+      "endYear": 2007,
+      "showroomAssessment": 73.35452961672473,
+      "showroomBaseWeightLbs": 3285,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_mitsubishi_lancer_evo_ix_2005_2007_r322"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "lancer evo vii",
+      "startYear": 2001,
+      "endYear": 2003,
+      "showroomAssessment": 72.82562277580071,
+      "showroomBaseWeightLbs": 3086,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_mitsubishi_lancer_evo_vii_2001_2003_r323"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "lancer evo viii",
+      "startYear": 2003,
+      "endYear": 2005,
+      "showroomAssessment": 71.29723926380368,
+      "showroomBaseWeightLbs": 3241,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_mitsubishi_lancer_evo_viii_2003_2005_r324"
+    },
+    {
+      "makeNorm": "mitsubishi",
+      "modelNorm": "lander evo x",
+      "startYear": 2008,
+      "endYear": null,
+      "showroomAssessment": 74.58962264150944,
+      "showroomBaseWeightLbs": 3527,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_mitsubishi_lander_evo_x_2008_na_r325"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "200sx se",
+      "startYear": 1995,
+      "endYear": 1995,
+      "showroomAssessment": 15.25,
+      "showroomBaseWeightLbs": 2366,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_200sx_se_1995_1995_r326"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "200sx se",
+      "startYear": 1996,
+      "endYear": 1997,
+      "showroomAssessment": 15.928994082840234,
+      "showroomBaseWeightLbs": 2348,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_200sx_se_1996_1997_r327"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "200sx se",
+      "startYear": 1998,
+      "endYear": 1998,
+      "showroomAssessment": 13.288461538461533,
+      "showroomBaseWeightLbs": 2418,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_200sx_se_1998_1998_r328"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "200sx se-r",
+      "startYear": 1995,
+      "endYear": 1995,
+      "showroomAssessment": 28.550364077669897,
+      "showroomBaseWeightLbs": 2535,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_200sx_se_r_1995_1995_r329"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "200sx se-r",
+      "startYear": 1996,
+      "endYear": 1997,
+      "showroomAssessment": 29.91201456310678,
+      "showroomBaseWeightLbs": 2491,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_200sx_se_r_1996_1997_r330"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "200sx se-r",
+      "startYear": 1998,
+      "endYear": 1998,
+      "showroomAssessment": 26.972087378640765,
+      "showroomBaseWeightLbs": 2586,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_200sx_se_r_1998_1998_r331"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "240sx",
+      "startYear": 1989,
+      "endYear": 1994,
+      "showroomAssessment": 36.30957446808509,
+      "showroomBaseWeightLbs": 2698,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_240sx_1989_1994_r332"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "240sx",
+      "startYear": 1995,
+      "endYear": 1999,
+      "showroomAssessment": 37.07340425531915,
+      "showroomBaseWeightLbs": 2762,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_240sx_1995_1999_r333"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "350z",
+      "startYear": 2003,
+      "endYear": 2005,
+      "showroomAssessment": 70.68012971698113,
+      "showroomBaseWeightLbs": 3247,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_nissan_350z_2003_2005_r334"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "350z",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 69.99738372093023,
+      "showroomBaseWeightLbs": 3339,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_nissan_350z_2006_2006_r335"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "350z nismo",
+      "startYear": 2007,
+      "endYear": 2008,
+      "showroomAssessment": 70.91960227272727,
+      "showroomBaseWeightLbs": 3353,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_nissan_350z_nismo_2007_2008_r336"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "370z coupe",
+      "startYear": 2009,
+      "endYear": 2011,
+      "showroomAssessment": 74.8340471092077,
+      "showroomBaseWeightLbs": 3272,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_nissan_370z_coupe_2009_2011_r337"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "370z nismo",
+      "startYear": 2009,
+      "endYear": 2014,
+      "showroomAssessment": 75.86782786885246,
+      "showroomBaseWeightLbs": 3340,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_nissan_370z_nismo_2009_2014_r338"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "400z",
+      "startYear": 2023,
+      "endYear": null,
+      "showroomAssessment": 84.30434782608694,
+      "showroomBaseWeightLbs": 3400,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_nissan_400z_2023_na_r339"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "gt-r",
+      "startYear": 2007,
+      "endYear": 2010,
+      "showroomAssessment": 102.71895190236899,
+      "showroomBaseWeightLbs": 3800,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_nissan_gt_r_2007_2010_r340"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "gt-r",
+      "startYear": 2007,
+      "endYear": 2010,
+      "showroomAssessment": 99.64388489208633,
+      "showroomBaseWeightLbs": 3800,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_nissan_gt_r_2007_2010_r341"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "gt-r",
+      "startYear": 2011,
+      "endYear": 2012,
+      "showroomAssessment": 105.12616047745357,
+      "showroomBaseWeightLbs": 3829,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_nissan_gt_r_2011_2012_r342"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "gt-r",
+      "startYear": 2013,
+      "endYear": 2019,
+      "showroomAssessment": 106.06423052157115,
+      "showroomBaseWeightLbs": 3829,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_nissan_gt_r_2013_2019_r343"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "gt-r nismo",
+      "startYear": 2015,
+      "endYear": 2019,
+      "showroomAssessment": 111.11624775583483,
+      "showroomBaseWeightLbs": 3851,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_nissan_gt_r_nismo_2015_2019_r344"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "juke",
+      "startYear": 2011,
+      "endYear": null,
+      "showroomAssessment": 39.86075949367087,
+      "showroomBaseWeightLbs": 2912,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_juke_2011_na_r345"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "sentra se",
+      "startYear": 2000,
+      "endYear": 2006,
+      "showroomAssessment": 28.359154929577457,
+      "showroomBaseWeightLbs": 2544,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_sentra_se_2000_2006_r346"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "sentra se-r",
+      "startYear": 1991,
+      "endYear": 1994,
+      "showroomAssessment": 29.84375,
+      "showroomBaseWeightLbs": 2469,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_sentra_se_r_1991_1994_r347"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "sentra se-r",
+      "startYear": 2000,
+      "endYear": 2006,
+      "showroomAssessment": 42.670297029702965,
+      "showroomBaseWeightLbs": 2746,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_sentra_se_r_2000_2006_r348"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "sentra xe",
+      "startYear": 1991,
+      "endYear": 1994,
+      "showroomAssessment": 14.495562130177518,
+      "showroomBaseWeightLbs": 2386,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_nissan_sentra_xe_1991_1994_r349"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "skyline gt-r (r32)",
+      "startYear": 1989,
+      "endYear": 1991,
+      "showroomAssessment": 67.87041564792176,
+      "showroomBaseWeightLbs": 3152,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_nissan_skyline_gt_r_r32_1989_1991_r350"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "skyline gt-r (r33)",
+      "startYear": 1993,
+      "endYear": 1998,
+      "showroomAssessment": 66.92573349633251,
+      "showroomBaseWeightLbs": 3373,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_nissan_skyline_gt_r_r33_1993_1998_r351"
+    },
+    {
+      "makeNorm": "nissan",
+      "modelNorm": "skyline gt-r (r34)",
+      "startYear": 1999,
+      "endYear": 2002,
+      "showroomAssessment": 71.72310513447431,
+      "showroomBaseWeightLbs": 3386,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_nissan_skyline_gt_r_r34_1999_2002_r352"
+    },
+    {
+      "makeNorm": "pontiac",
+      "modelNorm": "fiero gt",
+      "startYear": 1988,
+      "endYear": 1988,
+      "showroomAssessment": 24.273255813953483,
+      "showroomBaseWeightLbs": 2790,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_pontiac_fiero_gt_1988_1988_r353"
+    },
+    {
+      "makeNorm": "pontiac",
+      "modelNorm": "firebird transam",
+      "startYear": 1996,
+      "endYear": 1996,
+      "showroomAssessment": 65.08809523809524,
+      "showroomBaseWeightLbs": 3477,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_pontiac_firebird_transam_1996_1996_r354"
+    },
+    {
+      "makeNorm": "pontiac",
+      "modelNorm": "firebird transam",
+      "startYear": 2002,
+      "endYear": 2002,
+      "showroomAssessment": 69.396875,
+      "showroomBaseWeightLbs": 3396,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_pontiac_firebird_transam_2002_2002_r355"
+    },
+    {
+      "makeNorm": "pontiac",
+      "modelNorm": "firebird transam tta",
+      "startYear": 1989,
+      "endYear": 1989,
+      "showroomAssessment": 55.392857142857146,
+      "showroomBaseWeightLbs": 3400,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_pontiac_firebird_transam_tta_1989_1989_r356"
+    },
+    {
+      "makeNorm": "pontiac",
+      "modelNorm": "gto",
+      "startYear": 2004,
+      "endYear": 2004,
+      "showroomAssessment": 67.40492957746478,
+      "showroomBaseWeightLbs": 3725,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_pontiac_gto_2004_2004_r357"
+    },
+    {
+      "makeNorm": "pontiac",
+      "modelNorm": "gto",
+      "startYear": 2005,
+      "endYear": 2006,
+      "showroomAssessment": 72.421875,
+      "showroomBaseWeightLbs": 3725,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_pontiac_gto_2005_2006_r358"
+    },
+    {
+      "makeNorm": "pontiac",
+      "modelNorm": "solstice (also saturn sky)",
+      "startYear": 2006,
+      "endYear": 2010,
+      "showroomAssessment": 46.458173076923075,
+      "showroomBaseWeightLbs": 2877,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_pontiac_solstice_also_saturn_sky_2006_2010_r359"
+    },
+    {
+      "makeNorm": "pontiac",
+      "modelNorm": "solstice gxp (saturn redline)",
+      "startYear": 2007,
+      "endYear": 2010,
+      "showroomAssessment": 67.4548076923077,
+      "showroomBaseWeightLbs": 3031,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_pontiac_solstice_gxp_saturn_redline_2007_2010_r360"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "912",
+      "startYear": 1967,
+      "endYear": 1967,
+      "showroomAssessment": -7.319444444444443,
+      "showroomBaseWeightLbs": 2315,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_porsche_912_1967_1967_r361"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "930",
+      "startYear": 1983,
+      "endYear": 1983,
+      "showroomAssessment": 79.37057522123894,
+      "showroomBaseWeightLbs": 2668,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_930_1983_1983_r362"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "944",
+      "startYear": 1982,
+      "endYear": 1987,
+      "showroomAssessment": 30.404255319148945,
+      "showroomBaseWeightLbs": 2790,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_porsche_944_1982_1987_r363"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "718 cayman /t (982)",
+      "startYear": 2017,
+      "endYear": null,
+      "showroomAssessment": 79.35994318181818,
+      "showroomBaseWeightLbs": 2943,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_718_cayman_t_982_2017_na_r364"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "718 cayman s/gts (982)",
+      "startYear": 2017,
+      "endYear": null,
+      "showroomAssessment": 84.25545094152626,
+      "showroomBaseWeightLbs": 2987,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_718_cayman_s_gts_982_2017_na_r365"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "718 gt4 rs",
+      "startYear": 2025,
+      "endYear": 2025,
+      "showroomAssessment": 98.25911161731207,
+      "showroomBaseWeightLbs": 3227,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_porsche_718_gt4_rs_2025_2025_r366"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 (964)",
+      "startYear": 1989,
+      "endYear": 1994,
+      "showroomAssessment": 63.474722991689745,
+      "showroomBaseWeightLbs": 3031,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_911_964_1989_1994_r367"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 (993)",
+      "startYear": 1995,
+      "endYear": 1998,
+      "showroomAssessment": 70.57369758576874,
+      "showroomBaseWeightLbs": 3020,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_911_993_1995_1998_r368"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 3.2l",
+      "startYear": 1986,
+      "endYear": 1989,
+      "showroomAssessment": 58.097110754414125,
+      "showroomBaseWeightLbs": 2756,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_porsche_911_3_2l_1986_1989_r369"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 carrera (996)",
+      "startYear": 1999,
+      "endYear": 1999,
+      "showroomAssessment": 78.35,
+      "showroomBaseWeightLbs": 2910,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_carrera_996_1999_1999_r370"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 carrera 2 (996)",
+      "startYear": 2002,
+      "endYear": 2002,
+      "showroomAssessment": 78.73658269441401,
+      "showroomBaseWeightLbs": 3098,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_carrera_2_996_2002_2002_r371"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 carrera 3.6l (996)",
+      "startYear": 2005,
+      "endYear": 2005,
+      "showroomAssessment": 79.52302275189598,
+      "showroomBaseWeightLbs": 3075,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_carrera_3_6l_996_2005_2005_r372"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 carrera c4s",
+      "startYear": 2020,
+      "endYear": null,
+      "showroomAssessment": 105.796434169279,
+      "showroomBaseWeightLbs": 3373,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_porsche_911_carrera_c4s_2020_na_r373"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 carrera s",
+      "startYear": 2012,
+      "endYear": null,
+      "showroomAssessment": 89.65,
+      "showroomBaseWeightLbs": 3075,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_carrera_s_2012_na_r374"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 carrera s (997)",
+      "startYear": 2009,
+      "endYear": 2009,
+      "showroomAssessment": 84.8125,
+      "showroomBaseWeightLbs": 3150,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_carrera_s_997_2009_2009_r375"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 carrera s 3.8l (996)",
+      "startYear": 2005,
+      "endYear": 2005,
+      "showroomAssessment": 82.27835820895523,
+      "showroomBaseWeightLbs": 3131,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_carrera_s_3_8l_996_2005_2005_r376"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 gt2 (996)",
+      "startYear": 2002,
+      "endYear": 2004,
+      "showroomAssessment": 94.93005843681519,
+      "showroomBaseWeightLbs": 3175,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_porsche_911_gt2_996_2002_2004_r377"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 gt2 (997)",
+      "startYear": 2008,
+      "endYear": 2009,
+      "showroomAssessment": 98.63338658146965,
+      "showroomBaseWeightLbs": 3175,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_porsche_911_gt2_997_2008_2009_r378"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 gt2 (997)",
+      "startYear": 2011,
+      "endYear": 2011,
+      "showroomAssessment": 104.67297835990888,
+      "showroomBaseWeightLbs": 3075,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_porsche_911_gt2_997_2011_2011_r379"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 gt3",
+      "startYear": 2015,
+      "endYear": null,
+      "showroomAssessment": 102.94525117739403,
+      "showroomBaseWeightLbs": 3153,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_porsche_911_gt3_2015_na_r380"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 gt3 (996)",
+      "startYear": 2004,
+      "endYear": 2004,
+      "showroomAssessment": 87.33692528735632,
+      "showroomBaseWeightLbs": 3043,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_gt3_996_2004_2004_r381"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 gt3 (997)",
+      "startYear": 2007,
+      "endYear": 2007,
+      "showroomAssessment": 92.2929203539823,
+      "showroomBaseWeightLbs": 3076,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_gt3_997_2007_2007_r382"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 gt3rs (997)",
+      "startYear": 2010,
+      "endYear": 2011,
+      "showroomAssessment": 97.8607230895645,
+      "showroomBaseWeightLbs": 3020,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_porsche_911_gt3rs_997_2010_2011_r383"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 gts",
+      "startYear": 2012,
+      "endYear": 2012,
+      "showroomAssessment": 88.16119005328596,
+      "showroomBaseWeightLbs": 3430,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_gts_2012_2012_r384"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 turbo (930)",
+      "startYear": 1986,
+      "endYear": 1989,
+      "showroomAssessment": 72.51699882766705,
+      "showroomBaseWeightLbs": 2976,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_911_turbo_930_1986_1989_r385"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 turbo (965)",
+      "startYear": 1989,
+      "endYear": 1994,
+      "showroomAssessment": 76.10758835758836,
+      "showroomBaseWeightLbs": 3274,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_turbo_965_1989_1994_r386"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 turbo (993)",
+      "startYear": 1996,
+      "endYear": 1997,
+      "showroomAssessment": 87.26832784184514,
+      "showroomBaseWeightLbs": 3307,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_turbo_993_1996_1997_r387"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 turbo (996)",
+      "startYear": 2002,
+      "endYear": 2002,
+      "showroomAssessment": 89.80361445783132,
+      "showroomBaseWeightLbs": 3388,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_turbo_996_2002_2002_r388"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "911 turbo (997)",
+      "startYear": 2007,
+      "endYear": 2007,
+      "showroomAssessment": 93.11883802816901,
+      "showroomBaseWeightLbs": 3495,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_911_turbo_997_2007_2007_r389"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "914-6 gt",
+      "startYear": 1973,
+      "endYear": 1973,
+      "showroomAssessment": 45.26086956521738,
+      "showroomBaseWeightLbs": 2200,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_porsche_914_6_gt_1973_1973_r390"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "924 s",
+      "startYear": 1988,
+      "endYear": 1988,
+      "showroomAssessment": 36.1136842105263,
+      "showroomBaseWeightLbs": 2734,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_porsche_924_s_1988_1988_r391"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "928 gt",
+      "startYear": 1990,
+      "endYear": 1991,
+      "showroomAssessment": 66.25921187308086,
+      "showroomBaseWeightLbs": 3505,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_928_gt_1990_1991_r392"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "928 gts",
+      "startYear": 1993,
+      "endYear": 1995,
+      "showroomAssessment": 69.14616463985033,
+      "showroomBaseWeightLbs": 3593,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_928_gts_1993_1995_r393"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "944 s2",
+      "startYear": 1989,
+      "endYear": 1991,
+      "showroomAssessment": 53.14446227929374,
+      "showroomBaseWeightLbs": 2998,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_porsche_944_s2_1989_1991_r394"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "944 turbo",
+      "startYear": 1986,
+      "endYear": 1988,
+      "showroomAssessment": 58.534407027818446,
+      "showroomBaseWeightLbs": 2998,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_porsche_944_turbo_1986_1988_r395"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "944 turbo",
+      "startYear": 1989,
+      "endYear": 1989,
+      "showroomAssessment": 64.07189973614776,
+      "showroomBaseWeightLbs": 2998,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_944_turbo_1989_1989_r396"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster",
+      "startYear": 1997,
+      "endYear": 1999,
+      "showroomAssessment": 55.28387650085762,
+      "showroomBaseWeightLbs": 2822,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_porsche_boxster_1997_1999_r397"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster",
+      "startYear": 2000,
+      "endYear": 2002,
+      "showroomAssessment": 60.41932907348242,
+      "showroomBaseWeightLbs": 2778,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_boxster_2000_2002_r398"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster",
+      "startYear": 2003,
+      "endYear": 2004,
+      "showroomAssessment": 64.84027777777777,
+      "showroomBaseWeightLbs": 2778,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_boxster_2003_2004_r399"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster",
+      "startYear": 2005,
+      "endYear": 2006,
+      "showroomAssessment": 65.889911634757,
+      "showroomBaseWeightLbs": 2855,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_boxster_2005_2006_r400"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster",
+      "startYear": 2007,
+      "endYear": 2008,
+      "showroomAssessment": 66.82091172214182,
+      "showroomBaseWeightLbs": 2855,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_boxster_2007_2008_r401"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster",
+      "startYear": 2009,
+      "endYear": 2011,
+      "showroomAssessment": 67.67230662983425,
+      "showroomBaseWeightLbs": 2943,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_boxster_2009_2011_r402"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster s",
+      "startYear": 2000,
+      "endYear": 2002,
+      "showroomAssessment": 69.29137931034482,
+      "showroomBaseWeightLbs": 2855,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_boxster_s_2000_2002_r403"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster s",
+      "startYear": 2003,
+      "endYear": 2004,
+      "showroomAssessment": 70.6748322147651,
+      "showroomBaseWeightLbs": 2999,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_boxster_s_2003_2004_r404"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster s",
+      "startYear": 2005,
+      "endYear": 2006,
+      "showroomAssessment": 74.50785175879396,
+      "showroomBaseWeightLbs": 2965,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_boxster_s_2005_2006_r405"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster s",
+      "startYear": 2007,
+      "endYear": 2008,
+      "showroomAssessment": 77.04904875148631,
+      "showroomBaseWeightLbs": 2965,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_boxster_s_2007_2008_r406"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "boxster s",
+      "startYear": 2009,
+      "endYear": 2011,
+      "showroomAssessment": 78.96694915254238,
+      "showroomBaseWeightLbs": 2987,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_boxster_s_2009_2011_r407"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "carrera (997)",
+      "startYear": 2005,
+      "endYear": 2008,
+      "showroomAssessment": 79.52302275189598,
+      "showroomBaseWeightLbs": 3075,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_carrera_997_2005_2008_r408"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "carrera gt",
+      "startYear": 2004,
+      "endYear": 2007,
+      "showroomAssessment": 103.94394213381555,
+      "showroomBaseWeightLbs": 3000,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_porsche_carrera_gt_2004_2007_r409"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "cayenne gts",
+      "startYear": 2013,
+      "endYear": 2014,
+      "showroomAssessment": 61.457581967213116,
+      "showroomBaseWeightLbs": 4597,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_cayenne_gts_2013_2014_r410"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "cayenne turbo",
+      "startYear": 2003,
+      "endYear": 2006,
+      "showroomAssessment": 58.25,
+      "showroomBaseWeightLbs": 5200,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_porsche_cayenne_turbo_2003_2006_r411"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "cayman (981)",
+      "startYear": 2014,
+      "endYear": 2016,
+      "showroomAssessment": 73.74049803407601,
+      "showroomBaseWeightLbs": 2888,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_cayman_981_2014_2016_r412"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "cayman (987.1)",
+      "startYear": 2006,
+      "endYear": 2008,
+      "showroomAssessment": 69.11794500723589,
+      "showroomBaseWeightLbs": 2866,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_cayman_987_1_2006_2008_r413"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "cayman (987.2)",
+      "startYear": 2009,
+      "endYear": 2012,
+      "showroomAssessment": 72.22237017310252,
+      "showroomBaseWeightLbs": 2932,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_porsche_cayman_987_2_2009_2012_r414"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "cayman gt4 (918)",
+      "startYear": 2015,
+      "endYear": 2016,
+      "showroomAssessment": 92.08225208526413,
+      "showroomBaseWeightLbs": 2955,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_cayman_gt4_918_2015_2016_r415"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "cayman gts",
+      "startYear": 2018,
+      "endYear": null,
+      "showroomAssessment": 84.80534167468718,
+      "showroomBaseWeightLbs": 3031,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_cayman_gts_2018_na_r416"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "cayman s (987.1)",
+      "startYear": 2006,
+      "endYear": 2008,
+      "showroomAssessment": 77.21581450653983,
+      "showroomBaseWeightLbs": 2954,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_cayman_s_987_1_2006_2008_r417"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "cayman s/gts (981)",
+      "startYear": 2014,
+      "endYear": 2016,
+      "showroomAssessment": 81.80227518959913,
+      "showroomBaseWeightLbs": 2910,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_cayman_s_gts_981_2014_2016_r418"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "cayman s/r (987.2)",
+      "startYear": 2009,
+      "endYear": 2012,
+      "showroomAssessment": 80.44030668127053,
+      "showroomBaseWeightLbs": 2976,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_cayman_s_r_987_2_2009_2012_r419"
+    },
+    {
+      "makeNorm": "porsche",
+      "modelNorm": "panamera turbo",
+      "startYear": 2010,
+      "endYear": 2016,
+      "showroomAssessment": 82.97410949868075,
+      "showroomBaseWeightLbs": 4343,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_porsche_panamera_turbo_2010_2016_r420"
+    },
+    {
+      "makeNorm": "saab",
+      "modelNorm": "900 turbo",
+      "startYear": 1990,
+      "endYear": 1993,
+      "showroomAssessment": 40.088532110091734,
+      "showroomBaseWeightLbs": 2967,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_saab_900_turbo_1990_1993_r421"
+    },
+    {
+      "makeNorm": "saab",
+      "modelNorm": "9000 aero",
+      "startYear": 1993,
+      "endYear": 1997,
+      "showroomAssessment": 50.972457627118644,
+      "showroomBaseWeightLbs": 3250,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_saab_9000_aero_1993_1997_r422"
+    },
+    {
+      "makeNorm": "saab",
+      "modelNorm": "9-3 vector",
+      "startYear": 2002,
+      "endYear": 2003,
+      "showroomAssessment": 41.658736349453974,
+      "showroomBaseWeightLbs": 3285,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_saab_9_3_vector_2002_2003_r423"
+    },
+    {
+      "makeNorm": "saab",
+      "modelNorm": "9-3 viggen",
+      "startYear": 1999,
+      "endYear": 2002,
+      "showroomAssessment": 58.957869080779936,
+      "showroomBaseWeightLbs": 2987,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_saab_9_3_viggen_1999_2002_r424"
+    },
+    {
+      "makeNorm": "saab",
+      "modelNorm": "9-5 aero",
+      "startYear": 2000,
+      "endYear": 2002,
+      "showroomAssessment": 51.132585751978894,
+      "showroomBaseWeightLbs": 3470,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_saab_9_5_aero_2000_2002_r425"
+    },
+    {
+      "makeNorm": "saab",
+      "modelNorm": "9-5 se",
+      "startYear": 1999,
+      "endYear": 2003,
+      "showroomAssessment": 30.546617915904932,
+      "showroomBaseWeightLbs": 3280,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_saab_9_5_se_1999_2003_r426"
+    },
+    {
+      "makeNorm": "saleen",
+      "modelNorm": "s7",
+      "startYear": 2000,
+      "endYear": 2004,
+      "showroomAssessment": 106.50819672131148,
+      "showroomBaseWeightLbs": 2750,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_saleen_s7_2000_2004_r427"
+    },
+    {
+      "makeNorm": "saleen",
+      "modelNorm": "s7 twin turbo",
+      "startYear": 2005,
+      "endYear": 2009,
+      "showroomAssessment": 112.4034090909091,
+      "showroomBaseWeightLbs": 2950,
+      "baseClassification": "T1",
+      "catalogId": "vehicles_saleen_s7_twin_turbo_2005_2009_r428"
+    },
+    {
+      "makeNorm": "scion",
+      "modelNorm": "fr-s",
+      "startYear": 2013,
+      "endYear": 2016,
+      "showroomAssessment": 55.1,
+      "showroomBaseWeightLbs": 2758,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_scion_fr_s_2013_2016_r429"
+    },
+    {
+      "makeNorm": "scion",
+      "modelNorm": "tc",
+      "startYear": 2005,
+      "endYear": 2010,
+      "showroomAssessment": 33.599378881987576,
+      "showroomBaseWeightLbs": 2970,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_scion_tc_2005_2010_r430"
+    },
+    {
+      "makeNorm": "smart",
+      "modelNorm": "fortwo",
+      "startYear": 2007,
+      "endYear": null,
+      "showroomAssessment": -8.826923076923094,
+      "showroomBaseWeightLbs": 1808,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_smart_fortwo_2007_na_r431"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "brz",
+      "startYear": 2013,
+      "endYear": 2017,
+      "showroomAssessment": 55.63430127041741,
+      "showroomBaseWeightLbs": 2760,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_subaru_brz_2013_2017_r432"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "brz",
+      "startYear": 2017,
+      "endYear": 2020,
+      "showroomAssessment": 56.94390459363957,
+      "showroomBaseWeightLbs": 2777,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_subaru_brz_2017_2020_r433"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "brz",
+      "startYear": 2022,
+      "endYear": null,
+      "showroomAssessment": 64.919921875,
+      "showroomBaseWeightLbs": 2815,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_subaru_brz_2022_na_r434"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "brz performance pack",
+      "startYear": 2017,
+      "endYear": 2020,
+      "showroomAssessment": 58.44390459363957,
+      "showroomBaseWeightLbs": 2777,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_subaru_brz_performance_pack_2017_2020_r435"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "forester",
+      "startYear": 1998,
+      "endYear": 1998,
+      "showroomAssessment": 20.71951219512195,
+      "showroomBaseWeightLbs": 3040,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_subaru_forester_1998_1998_r436"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "forester 2.5 xt",
+      "startYear": 2004,
+      "endYear": 2005,
+      "showroomAssessment": 43.347328244274806,
+      "showroomBaseWeightLbs": 3270,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_subaru_forester_2_5_xt_2004_2005_r437"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza 2.5 rs",
+      "startYear": 2000,
+      "endYear": 2001,
+      "showroomAssessment": 38.27286585365853,
+      "showroomBaseWeightLbs": 2845,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_subaru_impreza_2_5_rs_2000_2001_r438"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza l",
+      "startYear": 1998,
+      "endYear": null,
+      "showroomAssessment": 21.94928400954653,
+      "showroomBaseWeightLbs": 2795,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_subaru_impreza_l_1998_na_r439"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza sport",
+      "startYear": 2017,
+      "endYear": null,
+      "showroomAssessment": 26.38474387527839,
+      "showroomBaseWeightLbs": 3015,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_subaru_impreza_sport_2017_na_r440"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza wrx",
+      "startYear": 2002,
+      "endYear": 2005,
+      "showroomAssessment": 53.380402384500734,
+      "showroomBaseWeightLbs": 3085,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_subaru_impreza_wrx_2002_2005_r441"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza wrx",
+      "startYear": 2008,
+      "endYear": 2008,
+      "showroomAssessment": 52.56305637982195,
+      "showroomBaseWeightLbs": 3142,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_subaru_impreza_wrx_2008_2008_r442"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza wrx",
+      "startYear": 2011,
+      "endYear": 2014,
+      "showroomAssessment": 61.655038759689916,
+      "showroomBaseWeightLbs": 3208,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_subaru_impreza_wrx_2011_2014_r443"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza wrx",
+      "startYear": 2015,
+      "endYear": 2021,
+      "showroomAssessment": 62.981108312342556,
+      "showroomBaseWeightLbs": 3364,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_subaru_impreza_wrx_2015_2021_r444"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza wrx",
+      "startYear": 2022,
+      "endYear": null,
+      "showroomAssessment": 62.07031249999999,
+      "showroomBaseWeightLbs": 3525,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_subaru_impreza_wrx_2022_na_r445"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza wrx sti",
+      "startYear": 2004,
+      "endYear": 2004,
+      "showroomAssessment": 75.77416666666667,
+      "showroomBaseWeightLbs": 3263,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_subaru_impreza_wrx_sti_2004_2004_r446"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza wrx sti",
+      "startYear": 2005,
+      "endYear": 2005,
+      "showroomAssessment": 75.27833333333334,
+      "showroomBaseWeightLbs": 3298,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_subaru_impreza_wrx_sti_2005_2005_r447"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza wrx sti",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 74.5275,
+      "showroomBaseWeightLbs": 3351,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_subaru_impreza_wrx_sti_2006_2006_r448"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza wrx sti",
+      "startYear": 2008,
+      "endYear": 2014,
+      "showroomAssessment": 74.06,
+      "showroomBaseWeightLbs": 3384,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_subaru_impreza_wrx_sti_2008_2014_r449"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "impreza wrx sti",
+      "startYear": 2015,
+      "endYear": 2018,
+      "showroomAssessment": 74.03166666666667,
+      "showroomBaseWeightLbs": 3386,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_subaru_impreza_wrx_sti_2015_2018_r450"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "legacy 2.5 gt",
+      "startYear": 1994,
+      "endYear": 1999,
+      "showroomAssessment": 25.887195121951223,
+      "showroomBaseWeightLbs": 3130,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_subaru_legacy_2_5_gt_1994_1999_r451"
+    },
+    {
+      "makeNorm": "subaru",
+      "modelNorm": "legacy 2.5 gt spec b",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 51.7,
+      "showroomBaseWeightLbs": 3400,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_subaru_legacy_2_5_gt_spec_b_2006_2006_r452"
+    },
+    {
+      "makeNorm": "tesla",
+      "modelNorm": "model 3 long range awd",
+      "startYear": 2018,
+      "endYear": 2018,
+      "showroomAssessment": 68.38764044943821,
+      "showroomBaseWeightLbs": 4072,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_tesla_model_3_long_range_awd_2018_2018_r453"
+    },
+    {
+      "makeNorm": "tesla",
+      "modelNorm": "model 3 long range rwd",
+      "startYear": 2018,
+      "endYear": null,
+      "showroomAssessment": 56.86219081272085,
+      "showroomBaseWeightLbs": 3838,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_tesla_model_3_long_range_rwd_2018_na_r454"
+    },
+    {
+      "makeNorm": "tesla",
+      "modelNorm": "roadster sport 2.5",
+      "startYear": 2008,
+      "endYear": 2012,
+      "showroomAssessment": 79.6397818599311,
+      "showroomBaseWeightLbs": 2723,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_tesla_roadster_sport_2_5_2008_2012_r455"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "86",
+      "startYear": 2017,
+      "endYear": 2020,
+      "showroomAssessment": 56.94390459363957,
+      "showroomBaseWeightLbs": 2777,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_toyota_86_2017_2020_r456"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "86",
+      "startYear": 2022,
+      "endYear": null,
+      "showroomAssessment": 64.919921875,
+      "showroomBaseWeightLbs": 2815,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_toyota_86_2022_na_r457"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "corolla hybrid xle",
+      "startYear": 2023,
+      "endYear": 2023,
+      "showroomAssessment": 23.798349056603755,
+      "showroomBaseWeightLbs": 2850,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_toyota_corolla_hybrid_xle_2023_2023_r458"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "86 spec ed ( perf pack)",
+      "startYear": 2017,
+      "endYear": 2020,
+      "showroomAssessment": 58.44390459363957,
+      "showroomBaseWeightLbs": 2777,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_toyota_86_spec_ed_perf_pack_2017_2020_r459"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "celica gt-s",
+      "startYear": 1985,
+      "endYear": 1989,
+      "showroomAssessment": 19.751265822784802,
+      "showroomBaseWeightLbs": 2703,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_toyota_celica_gt_s_1985_1989_r460"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "corolla gt-s (ae86)",
+      "startYear": 1987,
+      "endYear": 1987,
+      "showroomAssessment": 14.616822429906534,
+      "showroomBaseWeightLbs": 2200,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_toyota_corolla_gt_s_ae86_1987_1987_r461"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "matrix",
+      "startYear": 2010,
+      "endYear": null,
+      "showroomAssessment": 13.814413265306115,
+      "showroomBaseWeightLbs": 2865,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_toyota_matrix_2010_na_r462"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "matrix s",
+      "startYear": 2010,
+      "endYear": null,
+      "showroomAssessment": 17.376569037656893,
+      "showroomBaseWeightLbs": 3360,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_toyota_matrix_s_2010_na_r463"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "matrix xrs",
+      "startYear": 2010,
+      "endYear": null,
+      "showroomAssessment": 21.110878661087867,
+      "showroomBaseWeightLbs": 3220,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_toyota_matrix_xrs_2010_na_r464"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "mr2",
+      "startYear": 1990,
+      "endYear": 1999,
+      "showroomAssessment": 32.1512048192771,
+      "showroomBaseWeightLbs": 2599,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_toyota_mr2_1990_1999_r465"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "mr2 n/a",
+      "startYear": 1987,
+      "endYear": 1989,
+      "showroomAssessment": 21.374999999999986,
+      "showroomBaseWeightLbs": 2350,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_toyota_mr2_n_a_1987_1989_r466"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "mr2 supercharged",
+      "startYear": 1988,
+      "endYear": 1988,
+      "showroomAssessment": 35.55,
+      "showroomBaseWeightLbs": 2494,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_toyota_mr2_supercharged_1988_1988_r467"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "mr2 sypder",
+      "startYear": 2000,
+      "endYear": 2007,
+      "showroomAssessment": 47.20885286783043,
+      "showroomBaseWeightLbs": 2195,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_toyota_mr2_sypder_2000_2007_r468"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "mr2 turbo",
+      "startYear": 1990,
+      "endYear": 1999,
+      "showroomAssessment": 52.88249999999999,
+      "showroomBaseWeightLbs": 2782,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_toyota_mr2_turbo_1990_1999_r469"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "supra 2.0",
+      "startYear": 2021,
+      "endYear": null,
+      "showroomAssessment": 74.11770186335403,
+      "showroomBaseWeightLbs": 3181,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_toyota_supra_2_0_2021_na_r470"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "supra 3.0",
+      "startYear": 2020,
+      "endYear": null,
+      "showroomAssessment": 82.65289855072464,
+      "showroomBaseWeightLbs": 3397,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_toyota_supra_3_0_2020_na_r471"
+    },
+    {
+      "makeNorm": "toyota",
+      "modelNorm": "supra 3.0",
+      "startYear": 2021,
+      "endYear": null,
+      "showroomAssessment": 86.20494699646643,
+      "showroomBaseWeightLbs": 3400,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_toyota_supra_3_0_2021_na_r472"
+    },
+    {
+      "makeNorm": "triumph",
+      "modelNorm": "tr4",
+      "startYear": 1961,
+      "endYear": 1965,
+      "showroomAssessment": 13.94954128440365,
+      "showroomBaseWeightLbs": 2130,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_triumph_tr4_1961_1965_r473"
+    },
+    {
+      "makeNorm": "triumph",
+      "modelNorm": "tr6",
+      "startYear": 1969,
+      "endYear": 1976,
+      "showroomAssessment": 2.441304347826076,
+      "showroomBaseWeightLbs": 2491,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_triumph_tr6_1969_1976_r474"
+    },
+    {
+      "makeNorm": "triumph",
+      "modelNorm": "tr7 convertible",
+      "startYear": 1979,
+      "endYear": 1979,
+      "showroomAssessment": -14.161439114391158,
+      "showroomBaseWeightLbs": 2469,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_triumph_tr7_convertible_1979_1979_r475"
+    },
+    {
+      "makeNorm": "triumph",
+      "modelNorm": "tr7/8 convertible",
+      "startYear": 1979,
+      "endYear": 1980,
+      "showroomAssessment": 27.419134396355332,
+      "showroomBaseWeightLbs": 2654,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_triumph_tr7_8_convertible_1979_1980_r476"
+    },
+    {
+      "makeNorm": "ultima",
+      "modelNorm": "gtr",
+      "startYear": 2006,
+      "endYear": null,
+      "showroomAssessment": 122.06062030075188,
+      "showroomBaseWeightLbs": 2183,
+      "baseClassification": null,
+      "catalogId": "vehicles_ultima_gtr_2006_na_r477"
+    },
+    {
+      "makeNorm": "ultima",
+      "modelNorm": "gtr720",
+      "startYear": 2006,
+      "endYear": null,
+      "showroomAssessment": 125.72116336633663,
+      "showroomBaseWeightLbs": 2183,
+      "baseClassification": null,
+      "catalogId": "vehicles_ultima_gtr720_2006_na_r478"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "golf gti",
+      "startYear": 1998,
+      "endYear": 1998,
+      "showroomAssessment": 14.091619318181813,
+      "showroomBaseWeightLbs": 2565,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_golf_gti_1998_1998_r479"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "golf gti 1.8t",
+      "startYear": 2000,
+      "endYear": 2000,
+      "showroomAssessment": 28.06813186813187,
+      "showroomBaseWeightLbs": 2906,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_golf_gti_1_8t_2000_2000_r480"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "golf gti 1.8t",
+      "startYear": 2002,
+      "endYear": 2002,
+      "showroomAssessment": 39.42275280898876,
+      "showroomBaseWeightLbs": 2935,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_golf_gti_1_8t_2002_2002_r481"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "golf r",
+      "startYear": 2015,
+      "endYear": null,
+      "showroomAssessment": 70.21180555555556,
+      "showroomBaseWeightLbs": 3340,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_volkswagen_golf_r_2015_na_r482"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "golf r32",
+      "startYear": 2004,
+      "endYear": 2004,
+      "showroomAssessment": 59.18105849582172,
+      "showroomBaseWeightLbs": 3256,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_volkswagen_golf_r32_2004_2004_r483"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "golf r32",
+      "startYear": 2008,
+      "endYear": 2008,
+      "showroomAssessment": 58.05400815217391,
+      "showroomBaseWeightLbs": 3547,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_volkswagen_golf_r32_2008_2008_r484"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "gti coupe",
+      "startYear": 2007,
+      "endYear": 2009,
+      "showroomAssessment": 45.603377265238876,
+      "showroomBaseWeightLbs": 3161,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_volkswagen_gti_coupe_2007_2009_r485"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "jetta 2.0t",
+      "startYear": 2006,
+      "endYear": 2006,
+      "showroomAssessment": 41.04489291598023,
+      "showroomBaseWeightLbs": 3259,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_jetta_2_0t_2006_2006_r486"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "jetta 2.5l",
+      "startYear": 2005,
+      "endYear": 2005,
+      "showroomAssessment": 21.877659574468083,
+      "showroomBaseWeightLbs": 3230,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_jetta_2_5l_2005_2005_r487"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "jetta se",
+      "startYear": 2011,
+      "endYear": null,
+      "showroomAssessment": 35.07156673114119,
+      "showroomBaseWeightLbs": 3018,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_jetta_se_2011_na_r488"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "jetta vr6 gls",
+      "startYear": 2002,
+      "endYear": 2002,
+      "showroomAssessment": 31.97022684310018,
+      "showroomBaseWeightLbs": 3113,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_jetta_vr6_gls_2002_2002_r489"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "new beetle gls 1.8t",
+      "startYear": 2000,
+      "endYear": 2000,
+      "showroomAssessment": 30.157467532467535,
+      "showroomBaseWeightLbs": 2875,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_new_beetle_gls_1_8t_2000_2000_r490"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "rabbit 2.5l coupe",
+      "startYear": 2007,
+      "endYear": 2007,
+      "showroomAssessment": 26.16382978723405,
+      "showroomBaseWeightLbs": 3072,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_rabbit_2_5l_coupe_2007_2007_r491"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "rabbit gti",
+      "startYear": 1984,
+      "endYear": 1984,
+      "showroomAssessment": 11.38392857142857,
+      "showroomBaseWeightLbs": 1990,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_rabbit_gti_1984_1984_r492"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "scirocco 16v",
+      "startYear": 1984,
+      "endYear": 1984,
+      "showroomAssessment": 13.864754098360663,
+      "showroomBaseWeightLbs": 2530,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagen_scirocco_16v_1984_1984_r493"
+    },
+    {
+      "makeNorm": "volkswagen",
+      "modelNorm": "mk7 gti",
+      "startYear": 2015,
+      "endYear": 2021,
+      "showroomAssessment": 60.08166189111748,
+      "showroomBaseWeightLbs": 3116,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_volkswagen_mk7_gti_2015_2021_r494"
+    },
+    {
+      "makeNorm": "volkswagon",
+      "modelNorm": "golf tdi",
+      "startYear": 1991,
+      "endYear": 1999,
+      "showroomAssessment": 26.697943444730072,
+      "showroomBaseWeightLbs": 2450,
+      "baseClassification": "T5",
+      "catalogId": "vehicles_volkswagon_golf_tdi_1991_1999_r495"
+    },
+    {
+      "makeNorm": "volkswagon",
+      "modelNorm": "jetta gli-s",
+      "startYear": 2019,
+      "endYear": null,
+      "showroomAssessment": 59.55357142857143,
+      "showroomBaseWeightLbs": 3217,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_volkswagon_jetta_gli_s_2019_na_r496"
+    },
+    {
+      "makeNorm": "volkswagon",
+      "modelNorm": "mk6 golf gti",
+      "startYear": 2010,
+      "endYear": 2014,
+      "showroomAssessment": 49.38467874794068,
+      "showroomBaseWeightLbs": 3100,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_volkswagon_mk6_golf_gti_2010_2014_r497"
+    },
+    {
+      "makeNorm": "volkswagon",
+      "modelNorm": "mk7 gti-s",
+      "startYear": 2015,
+      "endYear": null,
+      "showroomAssessment": 60.08166189111748,
+      "showroomBaseWeightLbs": 3116,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_volkswagon_mk7_gti_s_2015_na_r498"
+    },
+    {
+      "makeNorm": "volkswagon",
+      "modelNorm": "mk8 golf r",
+      "startYear": 2022,
+      "endYear": 2024,
+      "showroomAssessment": 76.42553191489361,
+      "showroomBaseWeightLbs": 3360,
+      "baseClassification": "T2",
+      "catalogId": "vehicles_volkswagon_mk8_golf_r_2022_2024_r499"
+    },
+    {
+      "makeNorm": "volvo",
+      "modelNorm": "v60 polestar",
+      "startYear": 2017,
+      "endYear": null,
+      "showroomAssessment": 72.28571428571428,
+      "showroomBaseWeightLbs": 3966,
+      "baseClassification": "T3",
+      "catalogId": "vehicles_volvo_v60_polestar_2017_na_r500"
+    },
+    {
+      "makeNorm": "volvo",
+      "modelNorm": "v70r",
+      "startYear": 2007,
+      "endYear": 2007,
+      "showroomAssessment": 54.44720670391061,
+      "showroomBaseWeightLbs": 3689,
+      "baseClassification": "T4",
+      "catalogId": "vehicles_volvo_v70r_2007_2007_r501"
+    }
+  ]
+}

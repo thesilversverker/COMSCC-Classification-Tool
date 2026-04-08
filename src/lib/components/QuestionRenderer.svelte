@@ -91,6 +91,9 @@
     {/if}
 
     {#if question.answerType === 'number'}
+      {#if question.needsManualPoints}
+        <p class="manual-assessment-tag">Manual assessed points — use when the workbook catalog does not supply a value.</p>
+      {/if}
       <input
         type="number"
         value={typeof value === 'number' ? value : ''}
@@ -192,6 +195,13 @@
     line-height: 1.4;
     overflow-wrap: anywhere;
     word-break: break-word;
+  }
+  .manual-assessment-tag {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    color: #5a5a7a;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
   }
   .block-item input,
   .block-item select {
