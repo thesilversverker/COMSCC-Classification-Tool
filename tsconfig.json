@@ -1,6 +1,7 @@
 {
-  "extends": "./.svelte-kit/tsconfig.json",
+  "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "allowJs": true,
     "checkJs": false,
     "esModuleInterop": true,
@@ -10,6 +11,26 @@
     "sourceMap": true,
     "strict": true,
     "moduleResolution": "bundler",
-    "types": ["vitest/globals"]
-  }
+    "types": ["svelte", "vite/client", "vitest/globals"],
+    "paths": {
+      "$components": ["src/lib/components"],
+      "$components/*": ["src/lib/components/*"],
+      "$stores": ["src/lib/stores"],
+      "$stores/*": ["src/lib/stores/*"],
+      "$types": ["src/lib/types"],
+      "$types/*": ["src/lib/types/*"],
+      "$data": ["src/lib/data"],
+      "$data/*": ["src/lib/data/*"],
+      "$lib": ["src/lib"],
+      "$lib/*": ["src/lib/*"]
+    }
+  },
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.svelte",
+    "vite.config.ts",
+    ".svelte-kit/types/**/*.d.ts"
+  ],
+  "exclude": ["node_modules", "build", ".svelte-kit/generated"]
 }
