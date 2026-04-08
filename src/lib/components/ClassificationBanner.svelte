@@ -19,9 +19,10 @@
   $: currentTier = touringTierFromModificationPoints(grandModificationTotal);
   $: specTireWidthMm = specTireWidthMmForTier(currentTier);
 
+  // Logical component: use tier-active (not "current") so global/.current styles cannot light only the first cell.
   function tierCellClass(tier: TouringDisplayTier): string {
     const base = 'tier-cell';
-    return tier === currentTier ? `${base} current` : base;
+    return tier === currentTier ? `${base} tier-active` : base;
   }
 </script>
 
@@ -137,7 +138,7 @@
     text-align: center;
     min-width: 0;
   }
-  .tier-cell.current {
+  .tier-cell.tier-active {
     border-color: #4a6ee0;
     box-shadow: 0 0 0 2px rgba(74, 110, 224, 0.2);
   }
