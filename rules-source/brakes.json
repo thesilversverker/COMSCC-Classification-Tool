@@ -1,138 +1,111 @@
 {
   "schemaVersion": "1.0.0",
   "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
-  "generatedAt": "2026-04-08T15:59:52.145Z",
+  "generatedAt": "2026-04-08T17:25:39.487Z",
   "category": {
     "id": "brakes",
     "label": "Brakes",
     "sheetName": "Brakes",
-    "description": "Initial workbook extraction for Brakes.",
+    "description": "Worksheet rows with Assessment → pointValue and Description → checkbox prompt (Brakes).",
     "questions": [
       {
-        "id": "brakes_comscc_2027_v2_test_0",
-        "prompt": "COMSCC 2027 V2 TEST",
-        "answerType": "text",
-        "sheetName": "Brakes",
-        "sourceRef": "Brakes!A1"
-      },
-      {
-        "id": "brakes_touring_class_summary_1",
-        "prompt": "Touring Class Summary",
-        "answerType": "text",
-        "sheetName": "Brakes",
-        "sourceRef": "Brakes!A2"
-      },
-      {
-        "id": "brakes_brakes_modifications_worksheet_2",
-        "prompt": "Brakes Modifications Worksheet",
-        "answerType": "text",
-        "sheetName": "Brakes",
-        "sourceRef": "Brakes!A3"
-      },
-      {
-        "id": "brakes_click_select_where_appropriate_3",
-        "prompt": "Click \"Select\" where appropriate",
-        "answerType": "select",
-        "sheetName": "Brakes",
-        "sourceRef": "Brakes!A4"
-      },
-      {
-        "id": "brakes_select_or_true_4",
-        "prompt": "Select or TRUE",
+        "id": "brakes_non_factory_trim_brake_calipers_drums_and_or_rotors_of_a_different_size__5",
+        "prompt": "Non‐Factory Trim brake calipers, drums, and/or rotors of a different size ‐ front, rear or both",
         "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A5"
-      },
-      {
-        "id": "brakes_non_factory_trim_brake_calipers_drums_and_or_rotors_of_a_differe_5",
-        "prompt": "Non‐Factory Trim brake calipers, drums, and/or rotors of a different size ‐ front, rear or both",
-        "answerType": "text",
-        "sheetName": "Brakes",
-        "sourceRef": "Brakes!A6"
+        "sourceRef": "Brakes!B6",
+        "pointValue": 1,
+        "needsManualPoints": false
       },
       {
         "id": "brakes_non_factory_trim_modified_abs_e_g_bosch_motorsport_abs_6",
         "prompt": "Non-Factory Trim/modified ABS (e.g. Bosch Motorsport ABS)",
-        "answerType": "text",
+        "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A7"
+        "sourceRef": "Brakes!B7",
+        "pointValue": 2,
+        "needsManualPoints": false
       },
       {
-        "id": "brakes_disabling_any_and_all_factory_and_or_aftermarket_abs_or_competin_7",
+        "id": "brakes_disabling_any_and_all_factory_and_or_aftermarket_abs_or_competing_in_a_v_7",
         "prompt": "Disabling any and all factory and/or aftermarket ABS or competing in a vehicle not originally equipped with ABS",
-        "answerType": "text",
+        "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A8"
+        "sourceRef": "Brakes!B8",
+        "pointValue": -1,
+        "needsManualPoints": false
       },
       {
         "id": "brakes_non_factory_trim_rotors_of_the_same_type_and_shape_as_oem_8",
         "prompt": "Non-Factory Trim rotors of the same type and shape as OEM",
-        "answerType": "text",
+        "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A9"
+        "sourceRef": "Brakes!B9",
+        "pointValue": 0,
+        "needsManualPoints": false
       },
       {
-        "id": "brakes_non_factory_trim_rotors_of_the_same_thickness_and_diameter_as_fa_9",
+        "id": "brakes_non_factory_trim_rotors_of_the_same_thickness_and_diameter_as_factory_tr_9",
         "prompt": "Non-Factory Trim rotors of the same thickness and diameter as Factory Trim, including swap from one-piece to two-piece rotors",
-        "answerType": "text",
+        "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A10"
+        "sourceRef": "Brakes!B10",
+        "pointValue": 0,
+        "needsManualPoints": false
       },
       {
         "id": "brakes_non_factory_trim_brake_pads_or_shoes_10",
         "prompt": "Non-Factory Trim brake pads or shoes",
-        "answerType": "text",
+        "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A11"
+        "sourceRef": "Brakes!B11",
+        "pointValue": 0,
+        "needsManualPoints": false
       },
       {
         "id": "brakes_non_factory_trim_modified_brake_lines_11",
         "prompt": "Non-Factory Trim/modified brake lines",
-        "answerType": "text",
+        "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A12"
+        "sourceRef": "Brakes!B12",
+        "pointValue": 0,
+        "needsManualPoints": false
       },
       {
         "id": "brakes_non_factory_trim_modified_brake_ducting_12",
         "prompt": "Non-Factory Trim/modified brake ducting",
-        "answerType": "text",
+        "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A13"
+        "sourceRef": "Brakes!B13",
+        "pointValue": 0,
+        "needsManualPoints": false
       },
       {
         "id": "brakes_enabling_or_use_of_factory_trim_abs_13",
         "prompt": "Enabling or use of Factory Trim ABS",
-        "answerType": "text",
+        "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A14"
+        "sourceRef": "Brakes!B14",
+        "pointValue": 0,
+        "needsManualPoints": false
       },
       {
-        "id": "brakes_non_factory_trim_drilled_or_slotted_rotors_of_the_same_shape_and_14",
+        "id": "brakes_non_factory_trim_drilled_or_slotted_rotors_of_the_same_shape_and_size_as_14",
         "prompt": "Non-Factory Trim drilled or slotted rotors of the same shape and size as OEM",
-        "answerType": "text",
+        "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A15"
+        "sourceRef": "Brakes!B15",
+        "pointValue": 0,
+        "needsManualPoints": false
       },
       {
         "id": "brakes_modified_re_located_or_non_factory_trim_brake_brakets_15",
         "prompt": "Modified, re-located, or non-Factory Trim brake brakets",
-        "answerType": "text",
+        "answerType": "boolean",
         "sheetName": "Brakes",
-        "sourceRef": "Brakes!A16"
-      },
-      {
-        "id": "brakes_total_brakes_modifications_assessment_17",
-        "prompt": "Total Brakes Modifications Assessment",
-        "answerType": "text",
-        "sheetName": "Brakes",
-        "sourceRef": "Brakes!A18"
-      },
-      {
-        "id": "brakes_go_to_previous_sheet_suspension_18",
-        "prompt": "Go to previous sheet (Suspension)",
-        "answerType": "text",
-        "sheetName": "Brakes",
-        "sourceRef": "Brakes!A19"
+        "sourceRef": "Brakes!B16",
+        "pointValue": 0,
+        "needsManualPoints": false
       }
     ]
   }

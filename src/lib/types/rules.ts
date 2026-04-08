@@ -22,6 +22,10 @@ export interface RuleQuestion {
   numericOnly?: boolean;
   digits?: number;
   readOnly?: boolean;
+  /** Assessed points when this checkbox is selected (null if user must enter manually). */
+  pointValue?: number | null;
+  /** When true, show a numeric field for points if workbook assessment is non-numeric (e.g. Dyno). */
+  needsManualPoints?: boolean;
 }
 
 export interface RuleCategory {

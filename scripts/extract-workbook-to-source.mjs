@@ -11,7 +11,14 @@ const workbookPath =
   process.argv[2] ??
   path.resolve('/home/sysadmin/Downloads/COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx');
 const sourceOutputDir = path.join(repoRoot, 'rules-source');
-const targetSheets = ['Vehicles', 'Engine', 'Drivetrain', 'Suspension', 'Brakes', 'Exterior', 'Weight', 'Tires'];
+
+/** Sheets that use Assessment (col B) + Description (col C) worksheet rows. */
+const CHECKBOX_SHEET_NAMES = ['Engine', 'Drivetrain', 'Suspension', 'Brakes', 'Exterior'];
+
+/** Legacy text extraction for reference (Vehicles / Tires differ from modification tables). */
+const LEGACY_SHEET_NAMES = ['Vehicles', 'Tires', 'Weight'];
+
+const ALL_SHEETS = [...CHECKBOX_SHEET_NAMES, ...LEGACY_SHEET_NAMES];
 
 function slugify(value) {
   return String(value)
@@ -28,8 +35,57 @@ function inferAnswerType(text) {
   return 'text';
 }
 
-function buildQuestion(sheetName, rowIndex, row) {
-  // Logical component: normalize each row into a question-like source item.
+function parseAssessment(cell) {
+  if (cell === null || cell === undefined) return { pointValue: null, needsManualPoints: false };
+  const raw = String(cell).trim();
+  if (raw === '') return { pointValue: null, needsManualPoints: false };
+  if (/^dyno$/i.test(raw)) return { pointValue: null, needsManualPoints: true };
+  const n = Number(raw);
+  if (Number.isFinite(n)) return { pointValue: n, needsManualPoints: false };
+  return { pointValue: null, needsManualPoints: true };
+}
+
+function shouldSkipDescription(desc) {
+  const d = desc.trim();
+  if (d.length < 8) return true;
+  if (/^total\b/i.test(d)) return true;
+  if (/^go to previous|^go to next/i.test(d)) return true;
+  if (/^select or true$/i.test(d)) return true;
+  if (/^assessment$/i.test(d)) return true;
+  if (/^description$/i.test(d)) return true;
+  if (/^touring class summary$/i.test(d)) return true;
+  if (/^comscc 2027/i.test(d)) return true;
+  if (/modifications worksheet$/i.test(d)) return true;
+  if (/click "select"/i.test(d) && d.length < 80) return true;
+  if (/enter information in the yellow/i.test(d)) return true;
+  if (/^note:/i.test(d) && d.length < 60) return true;
+  return false;
+}
+
+function buildCheckboxQuestion(sheetName, rowIndex, row) {
+  const colB = row[1];
+  const colC = row[2];
+  const desc =
+    colC !== null && colC !== undefined && String(colC).trim() !== ''
+      ? String(colC).trim()
+      : '';
+  if (shouldSkipDescription(desc)) return null;
+
+  const { pointValue, needsManualPoints } = parseAssessment(colB);
+  const id = `${slugify(sheetName)}_${slugify(desc).slice(0, 72)}_${rowIndex}`;
+
+  return {
+    id,
+    prompt: desc,
+    answerType: 'boolean',
+    sheetName,
+    sourceRef: `${sheetName}!B${rowIndex + 1}`,
+    pointValue,
+    needsManualPoints
+  };
+}
+
+function buildLegacyQuestion(sheetName, rowIndex, row) {
   const visibleCells = row.filter((cell) => cell !== null && cell !== undefined && String(cell).trim() !== '');
   if (visibleCells.length === 0) return null;
 
@@ -61,7 +117,7 @@ function extractWorkbookToSource() {
   const workbook = xlsx.readFile(workbookPath, { cellDates: false });
   const categorySummaries = [];
 
-  for (const sheetName of targetSheets) {
+  for (const sheetName of ALL_SHEETS) {
     const sheet = workbook.Sheets[sheetName];
     if (!sheet) {
       console.warn(`[warn] Missing sheet: ${sheetName}`);
@@ -69,9 +125,13 @@ function extractWorkbookToSource() {
     }
 
     const rows = xlsx.utils.sheet_to_json(sheet, { header: 1, blankrows: false, defval: null });
+    const isCheckbox = CHECKBOX_SHEET_NAMES.includes(sheetName);
+
     const questions = rows
-      .slice(0, 700)
-      .map((row, idx) => buildQuestion(sheetName, idx, row))
+      .slice(0, 800)
+      .map((row, idx) =>
+        isCheckbox ? buildCheckboxQuestion(sheetName, idx, row) : buildLegacyQuestion(sheetName, idx, row)
+      )
       .filter(Boolean)
       .filter((question, idx, arr) => arr.findIndex((q) => q.prompt === question.prompt) === idx);
 
@@ -83,7 +143,9 @@ function extractWorkbookToSource() {
         id: slugify(sheetName),
         label: sheetName,
         sheetName,
-        description: `Initial workbook extraction for ${sheetName}.`,
+        description: isCheckbox
+          ? `Worksheet rows with Assessment → pointValue and Description → checkbox prompt (${sheetName}).`
+          : `Reference extraction for ${sheetName} (non-table layout).`,
         questions
       }
     };

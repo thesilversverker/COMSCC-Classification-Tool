@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0.0",
+  "categories": [
+    {
+      "id": "vehicles",
+      "label": "Vehicles",
+      "sheetName": "Vehicles",
+      "description": "Vehicle selection flow (dropdowns + model year).",
+      "questions": [
+        {
+          "id": "vehicles_make",
+          "prompt": "Vehicle make",
+          "answerType": "select",
+          "sheetName": "Vehicles",
+          "sourceRef": "Vehicles!A",
+          "options": [
+            { "id": "acura", "label": "Acura" },
+            { "id": "bmw", "label": "BMW" },
+            { "id": "chevrolet", "label": "Chevrolet" }
+          ]
+        },
+        {
+          "id": "vehicles_model",
+          "prompt": "Vehicle model",
+          "answerType": "select",
+          "sheetName": "Vehicles",
+          "sourceRef": "Vehicles!B",
+          "dependsOn": "vehicles_make",
+          "optionsByParent": {
+            "acura": [
+              { "id": "integra", "label": "Integra" },
+              { "id": "integra_type_r", "label": "Integra Type R" },
+              { "id": "nsx", "label": "NSX" }
+            ],
+            "bmw": [
+              { "id": "e36_m3", "label": "E36 M3" },
+              { "id": "e46_m3", "label": "E46 M3" },
+              { "id": "f87_m2", "label": "F87 M2" }
+            ],
+            "chevrolet": [
+              { "id": "c5_corvette", "label": "C5 Corvette" },
+              { "id": "c6_corvette", "label": "C6 Corvette" },
+              { "id": "camaro_ss_1le", "label": "Camaro SS 1LE" }
+            ]
+          }
+        },
+        {
+          "id": "vehicles_model_year",
+          "prompt": "Model year (4-digit year)",
+          "answerType": "text",
+          "sheetName": "Vehicles",
+          "sourceRef": "Vehicles!C",
+          "placeholder": "e.g. 1993",
+          "numericOnly": true,
+          "digits": 4
+        }
+      ]
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "sheetName": "Weight",
+      "description": "Weight worksheet uses a different layout than modification tables; keep structured weight fields.",
+      "questions": [
+        {
+          "id": "weight_showroom",
+          "prompt": "Showroom base weight (lbs)",
+          "answerType": "text",
+          "sheetName": "Weight",
+          "sourceRef": "Weight!A8",
+          "helpText": "Auto-populated from selected model.",
+          "readOnly": true
+        },
+        {
+          "id": "weight_competition",
+          "prompt": "Competition weight (lbs)",
+          "answerType": "text",
+          "sheetName": "Weight",
+          "sourceRef": "Weight!A9",
+          "numericOnly": true
+        },
+        {
+          "id": "weight_ballast",
+          "prompt": "Ballast amount (lbs)",
+          "answerType": "number",
+          "sheetName": "Weight",
+          "sourceRef": "Weight!A17"
+        }
+      ]
+    },
+    {
+      "id": "tires",
+      "label": "Tires",
+      "sheetName": "Tires",
+      "description": "Tire class and model flow with assessment points on tire options.",
+      "questions": [
+        {
+          "id": "tires_class",
+          "prompt": "Tire class",
+          "answerType": "select",
+          "sheetName": "Tires",
+          "sourceRef": "Tires!A7",
+          "options": [
+            { "id": "non_dot_slick", "label": "Non-DOT slick" },
+            { "id": "r_compound", "label": "R-compound" },
+            { "id": "street_200tw", "label": "200TW street tire" }
+          ]
+        },
+        {
+          "id": "tires_model",
+          "prompt": "Specific tire",
+          "answerType": "select",
+          "sheetName": "Tires",
+          "sourceRef": "Tires!B",
+          "dependsOn": "tires_class",
+          "optionsByParent": {
+            "non_dot_slick": [
+              { "id": "hoosier_a8", "label": "Hoosier A8", "points": 11 },
+              { "id": "bfg_r1s", "label": "BFGoodrich R1-S", "points": 10 },
+              { "id": "goodyear_rs", "label": "Goodyear RS AC", "points": 10 }
+            ],
+            "r_compound": [
+              { "id": "hoosier_r7", "label": "Hoosier R7", "points": 6 },
+              { "id": "kumho_v700", "label": "Kumho Ecsta V700", "points": 6 },
+              { "id": "hankook_z214", "label": "Hankook Z214", "points": 6 }
+            ],
+            "street_200tw": [
+              { "id": "falken_rt660", "label": "Falken RT660", "points": -2.5 },
+              { "id": "bridgestone_re71rs", "label": "Bridgestone RE-71RS", "points": -1.5 },
+              { "id": "yokohama_a052", "label": "Yokohama A052", "points": -1.5 }
+            ]
+          }
+        },
+        {
+          "id": "tires_width_mm",
+          "prompt": "Primary tire width (mm)",
+          "answerType": "number",
+          "sheetName": "Tires",
+          "sourceRef": "Tires!C"
+        },
+        {
+          "id": "tires_points",
+          "prompt": "Manual tire points (if assessment unclear)",
+          "answerType": "number",
+          "sheetName": "Tires",
+          "sourceRef": "Tires!Assessment"
+        }
+      ]
+    }
+  ]
+}

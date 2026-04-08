@@ -32,8 +32,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate workbook JSON
-        run: npm run data:convert || echo "Converter skipped if workbook path unavailable in CI"
+      - name: Build rules bundle from rules-source
+        run: npm run data:build
 
       - name: Build site
         run: npm run build

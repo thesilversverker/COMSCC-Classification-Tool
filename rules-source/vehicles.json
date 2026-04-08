@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0.0",
   "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
-  "generatedAt": "2026-04-08T15:59:52.142Z",
+  "generatedAt": "2026-04-08T17:25:39.502Z",
   "category": {
     "id": "vehicles",
     "label": "Vehicles",
     "sheetName": "Vehicles",
-    "description": "Initial workbook extraction for Vehicles.",
+    "description": "Reference extraction for Vehicles (non-table layout).",
     "questions": [
       {
         "id": "vehicles_comscc_2027_v2_test_0",

@@ -71,6 +71,14 @@
 
     let total = 0;
     for (const q of target.questions) {
+      if (q.answerType === 'boolean' && $sessionStore.answers[q.id] === true) {
+        if (typeof q.pointValue === 'number') {
+          total += q.pointValue;
+        } else if (q.needsManualPoints) {
+          total += toNumeric($sessionStore.answers[`${q.id}__manual`] ?? 0);
+        }
+      }
+
       if (q.answerType === 'select') {
         const selectedOption = getSelectedOption(q);
         if (typeof selectedOption?.points === 'number') {
@@ -129,8 +137,14 @@
           <QuestionRenderer
             {question}
             value={getRenderedValue(question.id)}
+            manualValue={$sessionStore.answers[`${question.id}__manual`] ?? null}
             answers={$sessionStore.answers}
             onChange={(value) => handleQuestionChange(question.id, value)}
+            onManualChange={
+              question.answerType === 'boolean' && question.needsManualPoints
+                ? (value) => handleQuestionChange(`${question.id}__manual`, value)
+                : undefined
+            }
           />
         {/each}
       </section>
