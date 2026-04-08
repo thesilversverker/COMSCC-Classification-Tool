@@ -147,12 +147,16 @@
   .prompt {
     flex: 1;
     min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
   .pts {
-    flex-shrink: 0;
     color: #555;
     font-size: 0.85rem;
-    white-space: nowrap;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    min-width: 0;
   }
   .help {
     margin: 0.35rem 0 0 1.5rem;
@@ -181,6 +185,13 @@
     border-radius: 8px;
     padding: 1rem;
     min-width: 0;
+  }
+  .block-item h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
   .block-item input,
   .block-item select {

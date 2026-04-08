@@ -27,8 +27,30 @@
 </nav>
 
 <style>
-  nav { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; }
+  nav { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; min-width: 0; }
   ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
-  button { width: 100%; display: flex; justify-content: space-between; padding: 0.6rem 0.8rem; border: 1px solid #ddd; border-radius: 6px; background: white; cursor: pointer; }
+  button {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.35rem 0.75rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    min-width: 0;
+  }
+  button span,
+  button small {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    line-height: 1.35;
+  }
+  button small { font-variant-numeric: tabular-nums; }
   button.active { border-color: #4a6ee0; background: #eef2ff; }
 </style>

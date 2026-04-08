@@ -1,6 +1,7 @@
 <script lang="ts">
   import rulesJson from '$data/rules.v1.json';
   import CategoryNav from '$components/CategoryNav.svelte';
+  import ClassificationBanner from '$components/ClassificationBanner.svelte';
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
   import SessionSummary from '$components/SessionSummary.svelte';
   import { computeAllCategoryPoints } from '$lib/scoring';
@@ -62,6 +63,17 @@
   $: selectedModel = typeof $sessionStore.answers.vehicles_model === 'string' ? $sessionStore.answers.vehicles_model : '';
   $: showroomWeightValue = selectedModel ? String(showroomWeightByModel[selectedModel] ?? '') : '';
 
+  // Logical component: optional primary tire width (mm) for spec comparison in the classification banner.
+  function parseOptionalTireWidthMm(answer: RuleAnswer): number | null {
+    if (typeof answer === 'number' && Number.isFinite(answer)) return answer;
+    if (typeof answer === 'string' && answer.trim() !== '') {
+      const n = Number(answer);
+      if (Number.isFinite(n)) return n;
+    }
+    return null;
+  }
+  $: declaredTireWidthMm = parseOptionalTireWidthMm($sessionStore.answers.tires_width_mm);
+
   // Logical component: compute display value per question, including derived values.
   function getRenderedValue(questionId: string): RuleAnswer {
     if (questionId === 'weight_showroom') {
@@ -70,24 +82,12 @@
     return $sessionStore.answers[questionId] ?? null;
   }
 
-  function getSelectedFixedPointIds(groupQuestions: RuleQuestion[]): string[] {
-    return groupQuestions
-      .filter((q) => $sessionStore.answers[q.id] === true)
-      .map((q) => q.id);
+  function handleFixedPointToggle(question: RuleQuestion, checked: boolean) {
+    handleQuestionChange(question.id, checked);
   }
 
-  function handleFixedPointGroupSelection(groupQuestions: RuleQuestion[], selectedIds: string[]) {
-    const selected = new Set(selectedIds);
-    for (const question of groupQuestions) {
-      handleQuestionChange(question.id, selected.has(question.id));
-    }
-  }
-
-  function handleFixedPointGroupChange(event: Event, groupQuestions: RuleQuestion[]) {
-    const selectedIds = Array.from((event.currentTarget as HTMLSelectElement).selectedOptions).map(
-      (opt) => opt.value
-    );
-    handleFixedPointGroupSelection(groupQuestions, selectedIds);
+  function handleFixedPointInputChange(event: Event, question: RuleQuestion) {
+    handleFixedPointToggle(question, (event.currentTarget as HTMLInputElement).checked);
   }
 
   // Logical component: category-only navigation for footer controls.
@@ -117,6 +117,12 @@
     <p>Static MVP scaffold with browser-only session storage.</p>
   </header>
 
+  <ClassificationBanner
+    categories={rules.categories}
+    categoryPoints={categoryPointsById}
+    declaredTireWidthMm={declaredTireWidthMm}
+  />
+
   <div class="layout">
     <CategoryNav
       categories={rules.categories}
@@ -133,22 +139,23 @@
           <section class="subcategory-block">
             <h3>{category.label} &gt; {block.key}</h3>
             {#if block.fixed.length > 0}
-              <label class="multi-group">
-                <span>Fixed-assessment items (select all that apply)</span>
-                <select
-                  multiple
-                  on:change={(event) => handleFixedPointGroupChange(event, block.fixed)}
-                >
-                  {#each block.fixed as question (question.id)}
-                    <option
-                      value={question.id}
-                      selected={getSelectedFixedPointIds(block.fixed).includes(question.id)}
-                    >
-                      {typeof question.pointValue === 'number' && question.pointValue >= 0 ? '+' : ''}{question.pointValue} — {question.prompt}
-                    </option>
-                  {/each}
-                </select>
-              </label>
+              <div class="fixed-list" role="group" aria-label="Fixed-assessment items">
+                <span class="fixed-list-label">Fixed-assessment items (select all that apply)</span>
+                {#each block.fixed as question (question.id)}
+                  <label class="fixed-item">
+                    <input
+                      type="checkbox"
+                      checked={$sessionStore.answers[question.id] === true}
+                      on:change={(event) => handleFixedPointInputChange(event, question)}
+                    />
+                    <span class="fixed-item-text">
+                      {typeof question.pointValue === 'number' && question.pointValue >= 0 ? '+' : ''}{question.pointValue}
+                      —
+                      {question.prompt}
+                    </span>
+                  </label>
+                {/each}
+              </div>
             {/if}
             {#each block.variable as question (question.id)}
               <QuestionRenderer
@@ -188,16 +195,36 @@
 </main>
 
 <style>
-  main { max-width: 1080px; margin: 0 auto; padding: 1rem; font-family: system-ui, sans-serif; }
+  main { max-width: 1080px; margin: 0 auto; padding: 1rem; font-family: system-ui, sans-serif; min-width: 0; }
+  header h1 { line-height: 1.25; overflow-wrap: anywhere; word-break: break-word; }
+  header p { overflow-wrap: anywhere; }
   .layout { display: grid; gap: 1rem; grid-template-columns: minmax(14rem, 1fr) minmax(0, 2fr) minmax(14rem, 1fr); align-items: start; }
   .actions { margin-top: 1rem; display: flex; gap: 0.5rem; }
   .question-stack { display: grid; gap: 0.75rem; min-width: 0; }
   .running-total { margin: 0; padding: 0.5rem 0.75rem; border: 1px solid #ddd; border-radius: 8px; background: #f8f8f8; }
   .subcategory-block { border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem; display: grid; gap: 0.75rem; }
   .subcategory-block h3 { margin: 0; font-size: 1rem; font-weight: 600; }
-  .multi-group { display: grid; gap: 0.35rem; }
-  .multi-group span { font-size: 0.9rem; color: #444; }
-  .multi-group select { min-height: 8.5rem; border: 1px solid #bbb; border-radius: 6px; padding: 0.35rem; }
+  .fixed-list { display: grid; gap: 0.45rem; min-width: 0; }
+  .fixed-list-label { font-size: 0.9rem; color: #444; line-height: 1.4; overflow-wrap: anywhere; }
+  .fixed-item {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    padding: 0.45rem 0.5rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    background: #fafafa;
+    cursor: pointer;
+    min-width: 0;
+  }
+  .fixed-item input { margin-top: 0.2rem; flex-shrink: 0; }
+  .fixed-item-text {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    min-width: 0;
+  }
   button { border: 1px solid #bbb; background: #fff; border-radius: 6px; padding: 0.6rem 0.9rem; cursor: pointer; }
   button:disabled { opacity: 0.5; cursor: not-allowed; }
   @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }

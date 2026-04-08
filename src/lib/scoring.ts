@@ -58,3 +58,12 @@ export function computeAllCategoryPoints(
 ): Record<string, number> {
   return Object.fromEntries(categories.map((c) => [c.id, computeCategoryPoints(c, answers)]));
 }
+
+// Logical component: grand total of all category modification points shown in the classifier.
+export function sumCategoryPoints(categoryPoints: Record<string, number>): number {
+  let sum = 0;
+  for (const v of Object.values(categoryPoints)) {
+    if (typeof v === 'number' && Number.isFinite(v)) sum += v;
+  }
+  return sum;
+}
