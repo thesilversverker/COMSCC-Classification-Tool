@@ -44,6 +44,7 @@
 
   // Logical component: Weight uses fixed subsection order (not alphabetical: Ballast before Competition).
   const WEIGHT_SUBCATEGORY_ORDER = ['Competition', 'Ballast'];
+  const ENGINE_DYNO_TOGGLE_ID = 'dyno_reclass_selected';
 
   function sortSubcategoryKeys(keys: string[], categoryId: string): string[] {
     const uniq = [...new Set(keys)];
@@ -69,7 +70,36 @@
     if (cat.id === 'weight') {
       return cat.questions.filter((q) => q.id !== 'weight_showroom');
     }
+    if (cat.id === 'engine') {
+      return cat.questions.filter((q) => q.id !== ENGINE_DYNO_TOGGLE_ID);
+    }
     return cat.questions;
+  }
+
+  // Logical component: engine dyno reclass options are source-only extras in rules-source/engine.json.
+  function engineDynoQuestions(cat: RuleCategory | undefined): RuleQuestion[] {
+    if (!cat || cat.id !== 'engine') return [];
+    const dynoRaw = (cat as unknown as { dynoReclassOption?: unknown[] }).dynoReclassOption;
+    if (!Array.isArray(dynoRaw)) return [];
+    return dynoRaw as RuleQuestion[];
+  }
+
+  function isQuestionUsedForAutoTrigger(question: RuleQuestion, answers: Record<string, RuleAnswer>): boolean {
+    const value = answers[question.id];
+    const manual = answers[`${question.id}__manual`];
+    if (question.answerType === 'boolean') {
+      return value === true || (typeof manual === 'number' && Number.isFinite(manual));
+    }
+    if (question.answerType === 'number') {
+      return typeof value === 'number' && Number.isFinite(value);
+    }
+    if (question.answerType === 'select') {
+      return typeof value === 'string' && value.length > 0;
+    }
+    if (question.answerType === 'text') {
+      return typeof value === 'string' && value.trim().length > 0;
+    }
+    return false;
   }
 
   function buildSubcategoryBlocks(cat: RuleCategory): SubcategoryBlock[] {
@@ -107,6 +137,25 @@
       : '';
   $: showQuestionStack =
     category?.id === 'vehicles' || (category?.questions?.length ?? 0) > 0;
+  $: engineDynoToggleQuestion =
+    category?.id === 'engine'
+      ? category.questions.find((q) => q.id === ENGINE_DYNO_TOGGLE_ID) ?? null
+      : null;
+  $: dynoQuestions = engineDynoQuestions(category);
+  $: engineManualTrigger =
+    category?.id === 'engine'
+      ? category.questions.some((q) => q.needsManualPoints && isQuestionUsedForAutoTrigger(q, $sessionStore.answers))
+      : false;
+  $: dynoToggleAnswer =
+    typeof $sessionStore.answers[ENGINE_DYNO_TOGGLE_ID] === 'string'
+      ? ($sessionStore.answers[ENGINE_DYNO_TOGGLE_ID] as string)
+      : '';
+  $: showDynoReclassSection =
+    category?.id === 'engine' && (dynoToggleAnswer === 'yes' || engineManualTrigger);
+  // Logical component: selecting any manual-point engine item auto-enables Dyno Reclass.
+  $: if (category?.id === 'engine' && engineManualTrigger && dynoToggleAnswer !== 'yes') {
+    handleQuestionChange(ENGINE_DYNO_TOGGLE_ID, 'yes');
+  }
 
   // Logical component: optional primary tire width (mm) for spec comparison in the classification banner.
   function parseOptionalTireWidthMm(answer: RuleAnswer): number | null {
@@ -205,6 +254,35 @@
           />
         {/if}
 
+        {#if category?.id === 'engine' && engineDynoToggleQuestion}
+          <section class="dyno-toggle-wrap">
+            <QuestionRenderer
+              question={engineDynoToggleQuestion}
+              value={getRenderedValue(engineDynoToggleQuestion.id)}
+              manualValue={null}
+              answers={$sessionStore.answers}
+              onChange={(value) => handleQuestionChange(engineDynoToggleQuestion.id, value)}
+              onManualChange={undefined}
+            />
+          </section>
+        {/if}
+
+        {#if showDynoReclassSection && dynoQuestions.length > 0}
+          <section class="subcategory-block dyno-reclass-block">
+            <h3>Engine &gt; Dyno reclass options</h3>
+            {#each dynoQuestions as question (question.id)}
+              <QuestionRenderer
+                {question}
+                value={getRenderedValue(question.id)}
+                manualValue={$sessionStore.answers[`${question.id}__manual`] ?? null}
+                answers={$sessionStore.answers}
+                onChange={(value) => handleQuestionChange(question.id, value)}
+                onManualChange={(value) => handleQuestionChange(`${question.id}__manual`, value)}
+              />
+            {/each}
+          </section>
+        {/if}
+
         {#each subcategoryBlocks as block (block.key)}
           <section class="subcategory-block">
             <h3>{category.label} &gt; {block.key}</h3>
@@ -301,6 +379,11 @@
     flex-basis: 100%;
   }
   .subcategory-block { border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem; display: grid; gap: 0.75rem; }
+  .dyno-toggle-wrap { margin: 0; }
+  .dyno-reclass-block {
+    border-color: #c5cce8;
+    background: linear-gradient(180deg, #f4f6ff 0%, #fafbff 100%);
+  }
   .subcategory-block h3 { margin: 0; font-size: 1rem; font-weight: 600; }
   .fixed-list { display: grid; gap: 0.45rem; min-width: 0; }
   .fixed-list-label { font-size: 0.9rem; color: #444; line-height: 1.4; overflow-wrap: anywhere; }

@@ -114,6 +114,8 @@
           <option value={option.id}>{option.label}</option>
         {/each}
       </select>
+    {:else if question.answerType === 'formula'}
+      <p class="manual-assessment-tag formula-readonly">{question.prompt}</p>
     {:else}
       <input
         type="text"
@@ -202,6 +204,13 @@
     color: #5a5a7a;
     line-height: 1.35;
     overflow-wrap: anywhere;
+  }
+  .formula-readonly {
+    margin: 0;
+    padding: 0.5rem 0.65rem;
+    border: 1px dashed #c7cae0;
+    border-radius: 6px;
+    background: #f8f9ff;
   }
   .block-item input,
   .block-item select {

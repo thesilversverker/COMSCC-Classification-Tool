@@ -1,5 +1,5 @@
 // Logical component: shared typed data model for workbook-derived rules.
-export type AnswerType = 'boolean' | 'select' | 'number' | 'text';
+export type AnswerType = 'boolean' | 'select' | 'number' | 'text' | 'formula';
 
 export interface RuleOption {
   id: string;
