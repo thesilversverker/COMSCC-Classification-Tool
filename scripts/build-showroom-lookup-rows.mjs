@@ -14,9 +14,25 @@ export function normToken(s) {
     .replace(/\s+/g, ' ');
 }
 
+// Logical component: support both workbook extract shape (make, model, startYear, endYear) and manual catalog (vehicleMake, vehicleModel, vehicleYearBegin, vehicleYearEnd).
+function catalogMake(c) {
+  return c.make ?? c.vehicleMake;
+}
+function catalogModel(c) {
+  return c.model ?? c.vehicleModel;
+}
+function catalogStartYear(c) {
+  const v = c.startYear ?? c.vehicleYearBegin;
+  return typeof v === 'number' ? v : null;
+}
+function catalogEndYear(c) {
+  const v = c.endYear ?? c.vehicleYearEnd;
+  return typeof v === 'number' ? v : null;
+}
+
 function yearSpanWidth(c) {
-  const sy = c.startYear ?? 1900;
-  const ey = c.endYear ?? 2100;
+  const sy = catalogStartYear(c) ?? 1900;
+  const ey = catalogEndYear(c) ?? 2100;
   return Math.max(0, ey - sy);
 }
 
@@ -25,9 +41,11 @@ export function pickComsccRow(makeName, modelName, year, comsccRows) {
   const mMake = normToken(makeName);
   const mModel = normToken(modelName);
   const candidates = comsccRows.filter((c) => {
-    if (normToken(c.make) !== mMake || normToken(c.model) !== mModel) return false;
-    if (c.startYear !== null && year < c.startYear) return false;
-    if (c.endYear !== null && year > c.endYear) return false;
+    if (normToken(catalogMake(c)) !== mMake || normToken(catalogModel(c)) !== mModel) return false;
+    const sy = catalogStartYear(c);
+    const ey = catalogEndYear(c);
+    if (sy !== null && year < sy) return false;
+    if (ey !== null && year > ey) return false;
     return true;
   });
   if (candidates.length === 0) return null;

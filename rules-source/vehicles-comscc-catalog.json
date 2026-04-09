@@ -8,5 +8,18 @@
     "suspIndex": 80,
     "sourceRef": null
   },
-  "vehicleCatalog": []
+  "vehicleCatalog": [
+    {
+      "vehicleMake": "Acura",
+      "vehicleModel": "Integra",
+      "vehicleTrim": null,
+      "vehicleYearBegin": 1990,
+      "vehicleYearEnd": 1993,
+      "showroomBaseWeightLbs": 2623,
+      "factoryRatedHp": 140,
+      "factoryRatedTorqueLbFt": 126,
+      "suspIndex": 50,
+      "sourceRef": null
+    }
+  ]
 }
