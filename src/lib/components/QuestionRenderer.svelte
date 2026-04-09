@@ -54,6 +54,48 @@
       : question.needsManualPoints
         ? '(enter points if applicable)'
         : '';
+
+  function toNumberOrNull(v: RuleAnswer): number | null {
+    if (typeof v === 'number' && Number.isFinite(v)) return v;
+    if (typeof v === 'string' && v.trim() !== '') {
+      const n = Number(v);
+      return Number.isFinite(n) ? n : null;
+    }
+    return null;
+  }
+
+  // Logical component: drivetrain-based dyno loss fraction used by dyno formulas.
+  function dynoLossFraction(localAnswers: Record<string, RuleAnswer>): number | null {
+    const d = localAnswers.dyno_drivetrain_type;
+    if (d === '2wd') return 0.13;
+    if (d === 'awd') return 0.16;
+    return null;
+  }
+
+  function computeScaledPower(localAnswers: Record<string, RuleAnswer>): number | null {
+    const hp = toNumberOrNull(localAnswers.dyno_peak_horsepower ?? null);
+    const tq = toNumberOrNull(localAnswers.dyno_peak_torque_lbft ?? null);
+    const loss = dynoLossFraction(localAnswers);
+    if (hp === null || tq === null || loss === null || loss >= 1) return null;
+    const denominator = 1 - loss;
+    return hp * (2 / 3) * (1 / denominator) + tq * (1 / 3) * (1 / denominator);
+  }
+
+  // Logical component: formula display text for dyno-specific computed/info-only questions.
+  $: formulaDisplay =
+    question.id === 'dyno_loss_percent'
+      ? (() => {
+          const loss = dynoLossFraction(answers);
+          return loss === null ? 'Select drivetrain type to determine loss %.' : `${(loss * 100).toFixed(0)}%`;
+        })()
+      : question.id === 'scaled_power_formula'
+        ? (() => {
+            const scaled = computeScaledPower(answers);
+            return scaled === null
+              ? 'Enter Wheel HP, Peak Torque, and drivetrain type to calculate scaled power.'
+              : `${scaled.toFixed(2)}`;
+          })()
+        : question.prompt;
 </script>
 
 {#if question.answerType === 'boolean'}
@@ -115,7 +157,7 @@
         {/each}
       </select>
     {:else if question.answerType === 'formula'}
-      <p class="manual-assessment-tag formula-readonly">{question.prompt}</p>
+      <p class="manual-assessment-tag formula-readonly">{formulaDisplay}</p>
     {:else}
       <input
         type="text"

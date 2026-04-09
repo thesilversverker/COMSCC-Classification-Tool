@@ -476,29 +476,36 @@
       "dynoReclassOption": [
         {
           "id": "dyno_reclass_documentation_required",
-          "prompt": "For engine swaps or elective dyno based classing, competitor must provide peak horsepower figure to the Steward for evaluation; Scrutineer may request supporting documentation at the Steward's discretion",
-          "answerType": "boolean",
+          "prompt": "For engine swaps or elective dyno-based classing, competitor must provide peak horsepower figure to the Steward for evaluation; Scrutineer may request supporting documentation at the Steward's discretion.",
+          "answerType": "formula",
           "category": "Dyno Reclass Option",
           "pointValue": null,
-          "needsManualPoints": true,
+          "needsManualPoints": false,
           "subcategory": "Documentation"
         },
         {
-          "id": "dyno_measurement_type",
-          "prompt": "Select Crank HP or Wheel HP Dyno measurements",
-          "answerType": "select",
+          "id": "dyno_peak_horsepower",
+          "prompt": "Peak Horsepower (Wheel HP)",
+          "answerType": "number",
           "category": "Dyno Reclass Option",
           "pointValue": null,
           "needsManualPoints": true,
           "subcategory": "Measurement",
-          "options": [
-            { "id": "crank_hp", "label": "Crank HP" },
-            { "id": "wheel_hp", "label": "Wheel HP" }
-          ]
+          "numericOnly": true
+        },
+        {
+          "id": "dyno_peak_torque_lbft",
+          "prompt": "Peak Torque (ft-lb)",
+          "answerType": "number",
+          "category": "Dyno Reclass Option",
+          "pointValue": null,
+          "needsManualPoints": true,
+          "subcategory": "Measurement",
+          "numericOnly": true
         },
         {
           "id": "dyno_drivetrain_type",
-          "prompt": "Select 2WD or AWD",
+          "prompt": "Select drivetrain type",
           "answerType": "select",
           "category": "Dyno Reclass Option",
           "pointValue": null,
@@ -508,6 +515,15 @@
             { "id": "2wd", "label": "2WD" },
             { "id": "awd", "label": "AWD" }
           ]
+        },
+        {
+          "id": "dyno_loss_percent",
+          "prompt": "Dyno drivetrain loss %",
+          "answerType": "formula",
+          "category": "Dyno Reclass Option",
+          "pointValue": null,
+          "needsManualPoints": false,
+          "subcategory": "Measurement"
         },
         {
           "id": "dynojet_official_measurement",
