@@ -481,7 +481,8 @@
           "category": "Dyno Reclass Option",
           "pointValue": null,
           "needsManualPoints": false,
-          "subcategory": "Documentation"
+          "subcategory": "Documentation",
+          "helpText": "Starting with the 2018 season Dynojet is the only official dyno measurement."
         },
         {
           "id": "dyno_peak_horsepower",
@@ -523,15 +524,6 @@
           "category": "Dyno Reclass Option",
           "pointValue": null,
           "needsManualPoints": false,
-          "subcategory": "Measurement"
-        },
-        {
-          "id": "dynojet_official_measurement",
-          "prompt": "Starting with the 2018 season Dynojet is the only official dyno measurement",
-          "answerType": "boolean",
-          "category": "Dyno Reclass Option",
-          "pointValue": null,
-          "needsManualPoints": true,
           "subcategory": "Measurement"
         },
         {

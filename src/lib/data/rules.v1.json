@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-04-09T14:47:30.167Z",
+  "generatedAt": "2026-04-09T15:09:10.918Z",
   "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
   "categories": [
     {
@@ -495,7 +495,8 @@
           "category": "Dyno Reclass Option",
           "pointValue": null,
           "needsManualPoints": false,
-          "subcategory": "Documentation"
+          "subcategory": "Documentation",
+          "helpText": "Starting with the 2018 season Dynojet is the only official dyno measurement."
         },
         {
           "id": "dyno_peak_horsepower",
@@ -543,15 +544,6 @@
           "category": "Dyno Reclass Option",
           "pointValue": null,
           "needsManualPoints": false,
-          "subcategory": "Measurement"
-        },
-        {
-          "id": "dynojet_official_measurement",
-          "prompt": "Starting with the 2018 season Dynojet is the only official dyno measurement",
-          "answerType": "boolean",
-          "category": "Dyno Reclass Option",
-          "pointValue": null,
-          "needsManualPoints": true,
           "subcategory": "Measurement"
         },
         {

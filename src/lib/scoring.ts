@@ -44,6 +44,10 @@ export function computeCategoryPoints(category: RuleCategory, answers: RuleAnswe
   if (category.id === 'vehicles') {
     return computeVehiclesCategoryPoints(answers);
   }
+  // Logical component: when Dyno Reclass is selected, Engine points come only from dyno_points_above_base_assessment.
+  if (category.id === 'engine' && answers.dyno_reclass_selected === 'yes') {
+    return toNumeric(answers.dyno_points_above_base_assessment);
+  }
 
   let total = 0;
   for (const q of category.questions) {

@@ -96,6 +96,8 @@
               : `${scaled.toFixed(2)}`;
           })()
         : question.prompt;
+
+  $: hideFormulaBodyForHeadingOnly = question.id === 'dyno_reclass_documentation_required';
 </script>
 
 {#if question.answerType === 'boolean'}
@@ -157,7 +159,9 @@
         {/each}
       </select>
     {:else if question.answerType === 'formula'}
-      <p class="manual-assessment-tag formula-readonly">{formulaDisplay}</p>
+      {#if !hideFormulaBodyForHeadingOnly}
+        <p class="manual-assessment-tag formula-readonly">{formulaDisplay}</p>
+      {/if}
     {:else}
       <input
         type="text"
