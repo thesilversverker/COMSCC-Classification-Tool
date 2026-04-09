@@ -1483,7 +1483,7 @@
           "answerType": "text",
           "sheetName": "Weight",
           "sourceRef": "Weight!A8",
-          "helpText": "Auto-populated from COMSCC showroom catalog when your vehicle matches.",
+          "helpText": "Read-only summary at the top of this category; filled from your vehicle showroom catalog match.",
           "readOnly": true
         },
         {

@@ -42,8 +42,21 @@
     standard: RuleQuestion[];
   };
 
-  function sortSubcategoryKeys(keys: string[]): string[] {
+  // Logical component: Weight uses fixed subsection order (not alphabetical: Ballast before Competition).
+  const WEIGHT_SUBCATEGORY_ORDER = ['Competition', 'Ballast'];
+
+  function sortSubcategoryKeys(keys: string[], categoryId: string): string[] {
     const uniq = [...new Set(keys)];
+    if (categoryId === 'weight') {
+      return uniq.sort((a, b) => {
+        const ia = WEIGHT_SUBCATEGORY_ORDER.indexOf(a);
+        const ib = WEIGHT_SUBCATEGORY_ORDER.indexOf(b);
+        if (ia !== -1 && ib !== -1) return ia - ib;
+        if (ia !== -1) return -1;
+        if (ib !== -1) return 1;
+        return a.localeCompare(b);
+      });
+    }
     return uniq.sort((a, b) => {
       if (a === 'Other') return 1;
       if (b === 'Other') return -1;
@@ -51,10 +64,22 @@
     });
   }
 
+  /** Logical component: Showroom weight is a read-only banner; omit from subcategory stack. */
+  function questionsForCategoryUI(cat: RuleCategory): RuleQuestion[] {
+    if (cat.id === 'weight') {
+      return cat.questions.filter((q) => q.id !== 'weight_showroom');
+    }
+    return cat.questions;
+  }
+
   function buildSubcategoryBlocks(cat: RuleCategory): SubcategoryBlock[] {
-    const keys = sortSubcategoryKeys(cat.questions.map((q) => q.subcategory));
+    const qs = questionsForCategoryUI(cat);
+    const keys = sortSubcategoryKeys(
+      qs.map((q) => q.subcategory),
+      cat.id
+    );
     return keys.map((key) => {
-      const subQs = cat.questions.filter((q) => q.subcategory === key);
+      const subQs = qs.filter((q) => q.subcategory === key);
       return {
         key,
         fixed: subQs.filter((q) => q.answerType === 'boolean' && typeof q.pointValue === 'number'),
@@ -155,6 +180,22 @@
       <section class="question-stack">
         <p class="running-total"><strong>Running category total:</strong> {currentCategoryTotal.toFixed(1)} points</p>
 
+        {#if category?.id === 'weight'}
+          <div class="weight-showroom-banner" role="status" aria-live="polite">
+            <p class="weight-showroom-line">
+              <strong>Showroom base weight (lbs):</strong>
+              {#if showroomWeightValue}
+                <span class="weight-showroom-value">{showroomWeightValue}</span>
+              {:else}
+                <span class="weight-showroom-empty">—</span>
+                <span class="weight-showroom-hint">
+                  Choose a vehicle in Vehicles (with catalog weight) to fill this automatically.
+                </span>
+              {/if}
+            </p>
+          </div>
+        {/if}
+
         {#if category?.id === 'vehicles'}
           <VehiclesPicker
             openMakesModels={openVehicleData}
@@ -231,6 +272,34 @@
   .actions { margin-top: 1rem; display: flex; gap: 0.5rem; }
   .question-stack { display: grid; gap: 0.75rem; min-width: 0; }
   .running-total { margin: 0; padding: 0.5rem 0.75rem; border: 1px solid #ddd; border-radius: 8px; background: #f8f8f8; }
+  .weight-showroom-banner {
+    margin: 0;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid #c5cce8;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #f4f6ff 0%, #fafbff 100%);
+  }
+  .weight-showroom-line {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 0.6rem;
+  }
+  .weight-showroom-value {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+  }
+  .weight-showroom-empty {
+    color: #888;
+  }
+  .weight-showroom-hint {
+    font-size: 0.85rem;
+    color: #555;
+    flex-basis: 100%;
+  }
   .subcategory-block { border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem; display: grid; gap: 0.75rem; }
   .subcategory-block h3 { margin: 0; font-size: 1rem; font-weight: 600; }
   .fixed-list { display: grid; gap: 0.45rem; min-width: 0; }
