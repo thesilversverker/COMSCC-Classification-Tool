@@ -256,13 +256,28 @@ function extractWorkbookToSource() {
     const isCheckbox = CHECKBOX_SHEET_NAMES.includes(sheetName);
     const isVehicles = sheetName === 'Vehicles';
 
-    // Logical component: Vehicles sheet → COMSCC-only seed; npm run data:build merges with src/lib/data/open-vehicle-makes-models.json into vehicle-showroom-lookup.json.
+    // Logical component: Vehicles sheet → vehicleCatalog overrides; comsccTemplate preserved; npm run data:compose-vehicles merges into rules-source/vehicles.json.
     if (isVehicles) {
       const vehicleCatalog = buildVehicleCatalogRows(sheetName, rows);
-      writeJson(path.join(sourceOutputDir, 'vehicles-comscc-catalog.json'), {
+      const catalogPath = path.join(sourceOutputDir, 'vehicles-comscc-catalog.json');
+      /** @type {Record<string, unknown>} */
+      let preserved = {};
+      if (fs.existsSync(catalogPath)) {
+        try {
+          const prev = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
+          if (prev.comsccTemplate && typeof prev.comsccTemplate === 'object') {
+            preserved.comsccTemplate = prev.comsccTemplate;
+          }
+        } catch {
+          /* keep defaults */
+        }
+      }
+      // Logical component: preserve comsccTemplate placeholder; replace vehicleCatalog with workbook extract.
+      writeJson(catalogPath, {
         schemaVersion: '1.0.0',
         sourceWorkbook: path.basename(workbookPath),
         generatedAt: new Date().toISOString(),
+        ...preserved,
         vehicleCatalog
       });
       categorySummaries.push({

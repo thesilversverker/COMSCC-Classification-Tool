@@ -57,6 +57,7 @@ export interface VehicleCatalogRow {
   performanceAdjustment: number | null;
   /** COMSCC Showroom Assessment when matched; otherwise null → manual entry. */
   showroomAssessment: number | null;
+  /** T5–T1 from showroom assessment using the same point bands as the modification tier strip (set at compose time). */
   baseClassification: string | null;
   sourceRef: string | null;
 }

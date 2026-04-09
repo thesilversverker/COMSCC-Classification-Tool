@@ -1,6 +1,7 @@
 import rules from '$data/rules.v1.json';
 import comsccSeed from '../../../rules-source/vehicles-comscc-catalog.json';
 import vehiclesSource from '../../../rules-source/vehicles.json';
+import { computeComsccDerivedFields } from '../../../scripts/comscc-derived-fields.mjs';
 import type { RulesDocument } from './rules';
 
 describe('rules schema', () => {
@@ -31,25 +32,19 @@ describe('rules schema', () => {
     }
   });
 
-  // Logical component: slim vehicles.json (no embedded catalog); COMSCC seed is rules-source/vehicles-comscc-catalog.json; lookup built at data:build.
-  it('vehicles rules-source has category metadata only (no vehicleCatalog)', () => {
+  // Logical component: vehicles.json is composed (open-vehicle + styles + COMSCC template/overrides).
+  it('vehicles rules-source includes composed vehicleCatalog', () => {
     const cat = vehiclesSource.category as { id: string; vehicleCatalog?: unknown[] };
     expect(cat.id).toBe('vehicles');
-    expect(cat.vehicleCatalog).toBeUndefined();
+    expect(Array.isArray(cat.vehicleCatalog)).toBe(true);
+    expect((cat.vehicleCatalog ?? []).length).toBeGreaterThan(5000);
   });
 
-  it('COMSCC seed has showroom assessment for a representative workbook row', () => {
-    const catalog = (comsccSeed as { vehicleCatalog: Array<Record<string, unknown>> }).vehicleCatalog;
-    const integra = catalog.find(
-      (r) =>
-        r.make === 'Acura' &&
-        r.model === 'Integra' &&
-        typeof r.startYear === 'number' &&
-        typeof r.endYear === 'number' &&
-        1993 >= r.startYear &&
-        1993 <= r.endYear
-    );
-    expect(typeof integra?.showroomAssessment).toBe('number');
-    expect(integra?.showroomAssessment as number).toBeCloseTo(24.62746305418719, 5);
+  it('COMSCC catalog defines comsccTemplate with scalars (derived fields computed in JS)', () => {
+    const seed = comsccSeed as { comsccTemplate: Record<string, unknown> };
+    expect(seed.comsccTemplate).toBeDefined();
+    const d = computeComsccDerivedFields(seed.comsccTemplate);
+    expect(typeof d.showroomAssessment).toBe('number');
+    expect(Number.isFinite(d.showroomAssessment as number)).toBe(true);
   });
 });

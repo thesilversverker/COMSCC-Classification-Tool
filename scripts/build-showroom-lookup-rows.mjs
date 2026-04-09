@@ -1,6 +1,6 @@
 // Logical component: flatten plowman/open-vehicle-db makes_and_models.json and overlay COMSCC seed rows (template nulls when no match).
 
-function slugify(value) {
+export function slugify(value) {
   return String(value)
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '_')
@@ -83,56 +83,45 @@ export function flattenOpenDb(openDb) {
 }
 
 /**
- * @param {unknown} openDb - top-level array from open-vehicle-db data/makes_and_models.json
- * @param {{ vehicleCatalog: unknown[], sourceWorkbook?: string }} comsccDoc - vehicles-comscc-catalog.json
+ * @param {unknown[]} vehicleCatalog - rules-source/vehicles.json category.vehicleCatalog (composed rows)
+ * @param {{ overrideRowCount?: number }} meta
  * @returns {{ rows: object[], mergedCount: number, flatCount: number, comsccSeedCount: number }}
  */
-export function buildShowroomLookupRows(openDb, comsccDoc) {
-  const comsccRows = comsccDoc?.vehicleCatalog;
-  if (!Array.isArray(comsccRows)) {
-    throw new Error('vehicles-comscc-catalog.json must contain vehicleCatalog array');
-  }
-  if (!Array.isArray(openDb)) {
-    throw new Error('open-vehicle-db JSON must be a top-level array (makes_and_models.json)');
+export function buildShowroomLookupRowsFromVehicleCatalog(vehicleCatalog, meta = {}) {
+  if (!Array.isArray(vehicleCatalog)) {
+    throw new Error('vehicleCatalog must be an array (run npm run data:compose-vehicles)');
   }
 
-  const flat = flattenOpenDb(openDb);
-  let mergedCount = 0;
-  const rows = [];
-
-  for (const row of flat) {
-    const comscc = pickComsccRow(row.makeName, row.modelName, row.year, comsccRows);
-    if (comscc) mergedCount += 1;
-
-    const trimPart = row.trimKey ? `_${slugify(row.trimKey)}` : '';
-    const id = `ov_${slugify(row.makeSlug)}_${slugify(row.modelKey)}_${row.year}${trimPart}`;
-
-    rows.push({
-      makeNorm: normToken(row.makeName),
-      modelNorm: normToken(row.modelName),
-      year: row.year,
-      trimKey: row.trimKey,
+  const rows = vehicleCatalog.map((r) => {
+    const trimKey = typeof r.trimKey === 'string' && r.trimKey.length > 0 ? r.trimKey : null;
+    return {
+      makeNorm: normToken(r.makeName),
+      modelNorm: normToken(r.modelName),
+      year: typeof r.year === 'number' ? r.year : null,
+      trimKey,
       showroomAssessment:
-        typeof comscc?.showroomAssessment === 'number' && Number.isFinite(comscc.showroomAssessment)
-          ? comscc.showroomAssessment
+        typeof r.showroomAssessment === 'number' && Number.isFinite(r.showroomAssessment)
+          ? r.showroomAssessment
           : null,
       showroomBaseWeightLbs:
-        typeof comscc?.showroomBaseWeightLbs === 'number' && Number.isFinite(comscc.showroomBaseWeightLbs)
-          ? comscc.showroomBaseWeightLbs
+        typeof r.showroomBaseWeightLbs === 'number' && Number.isFinite(r.showroomBaseWeightLbs)
+          ? r.showroomBaseWeightLbs
           : null,
       baseClassification:
-        typeof comscc?.baseClassification === 'string' && comscc.baseClassification.trim()
-          ? comscc.baseClassification.trim()
+        typeof r.baseClassification === 'string' && r.baseClassification.trim()
+          ? r.baseClassification.trim()
           : null,
-      catalogId: id,
-      comsccEnriched: Boolean(comscc)
-    });
-  }
+      catalogId: typeof r.id === 'string' ? r.id : '',
+      comsccEnriched: Boolean(r.comsccMatched)
+    };
+  });
+
+  const mergedCount = vehicleCatalog.filter((r) => r.comsccMatched).length;
 
   return {
     rows,
     mergedCount,
-    flatCount: flat.length,
-    comsccSeedCount: comsccRows.length
+    flatCount: vehicleCatalog.length,
+    comsccSeedCount: typeof meta.overrideRowCount === 'number' ? meta.overrideRowCount : 0
   };
 }

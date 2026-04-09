@@ -2,15 +2,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { assignSubcategory } from './assign-subcategory.mjs';
-import { buildShowroomLookupRows } from './build-showroom-lookup-rows.mjs';
+import { buildShowroomLookupRowsFromVehicleCatalog } from './build-showroom-lookup-rows.mjs';
 
-// Logical component: production data build — open-vehicle-db JSON + rules-source COMSCC seed + category JSON → src/lib/data only (never writes rules-source).
+// Logical component: rules-source (vehicles.json with composed catalog) + preset + categories → src/lib/data (never writes rules-source except via compose script).
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '..');
 
 const PRESET_PATH = path.join(repoRoot, 'src/lib/data/presets/vehicles-tires-weight.json');
 const SOURCE_DIR = path.join(repoRoot, 'rules-source');
-const OPEN_VEHICLE_DB_PATH = path.join(repoRoot, 'src', 'lib', 'data', 'open-vehicle-makes-models.json');
 const COMSCC_CATALOG_PATH = path.join(SOURCE_DIR, 'vehicles-comscc-catalog.json');
 const OUTPUT_RULES = path.join(repoRoot, 'src', 'lib', 'data', 'rules.v1.json');
 const OUTPUT_SHOWROOM_LOOKUP = path.join(repoRoot, 'src', 'lib', 'data', 'vehicle-showroom-lookup.json');
@@ -37,31 +36,28 @@ function withSubcategories(category) {
   };
 }
 
-function writeVehicleShowroomLookup() {
-  if (!fs.existsSync(OPEN_VEHICLE_DB_PATH)) {
-    throw new Error(`Missing open-vehicle-db snapshot: ${OPEN_VEHICLE_DB_PATH}`);
-  }
-  if (!fs.existsSync(COMSCC_CATALOG_PATH)) {
-    throw new Error(`Missing COMSCC seed (run data:extract-source or commit vehicles-comscc-catalog.json): ${COMSCC_CATALOG_PATH}`);
-  }
+function writeVehicleShowroomLookup(vehicleCatalog) {
+  const comsccDoc = fs.existsSync(COMSCC_CATALOG_PATH) ? readJson(COMSCC_CATALOG_PATH) : {};
+  const overrideRowCount = Array.isArray(comsccDoc.vehicleCatalog) ? comsccDoc.vehicleCatalog.length : 0;
 
-  const openDb = readJson(OPEN_VEHICLE_DB_PATH);
-  const comsccDoc = readJson(COMSCC_CATALOG_PATH);
-  const { rows, mergedCount, flatCount, comsccSeedCount } = buildShowroomLookupRows(openDb, comsccDoc);
+  const { rows, mergedCount, flatCount, comsccSeedCount } = buildShowroomLookupRowsFromVehicleCatalog(
+    vehicleCatalog,
+    { overrideRowCount }
+  );
 
   writeJson(OUTPUT_SHOWROOM_LOOKUP, {
-    schemaVersion: '1.1.0',
+    schemaVersion: '1.2.0',
     generatedAt: new Date().toISOString(),
-    openVehicleDbPath: 'src/lib/data/open-vehicle-makes-models.json',
-    comsccSeedPath: 'rules-source/vehicles-comscc-catalog.json',
+    vehiclesSourcePath: 'rules-source/vehicles.json',
+    comsccCatalogPath: 'rules-source/vehicles-comscc-catalog.json',
     sourceWorkbook: comsccDoc.sourceWorkbook ?? 'unknown.xlsx',
-    comsccSeedRowCount: comsccSeedCount,
+    comsccOverrideRowCount: comsccSeedCount,
     openDbRowCount: flatCount,
-    comsccEnrichedRowCount: mergedCount,
+    comsccWorkbookMatchRowCount: mergedCount,
     rows
   });
   console.log(
-    `Wrote ${OUTPUT_SHOWROOM_LOOKUP} (${rows.length} rows; ${mergedCount}/${flatCount} COMSCC-enriched, ${comsccSeedCount} seed rows)`
+    `Wrote ${OUTPUT_SHOWROOM_LOOKUP} (${rows.length} rows; ${mergedCount} workbook-matched, ${comsccSeedCount} catalog overrides)`
   );
 }
 
@@ -78,14 +74,16 @@ function buildBundle() {
   if (!vc || vc.id !== 'vehicles') {
     throw new Error('rules-source/vehicles.json must contain category.id "vehicles"');
   }
-  if (vc.vehicleCatalog) {
+  const vehicleCatalog = vc.vehicleCatalog;
+  if (!Array.isArray(vehicleCatalog) || vehicleCatalog.length === 0) {
     throw new Error(
-      'rules-source/vehicles.json must not embed vehicleCatalog; showroom rows are built from open-vehicle-db + vehicles-comscc-catalog.json at data:build.'
+      'rules-source/vehicles.json must include category.vehicleCatalog (run npm run data:compose-vehicles first)'
     );
   }
 
-  writeVehicleShowroomLookup();
+  writeVehicleShowroomLookup(vehicleCatalog);
 
+  // Logical component: rules bundle carries UI metadata only — full catalog stays in rules-source/vehicles.json + lookup JSON.
   const vehiclesForBundle = withSubcategories({
     id: vc.id,
     label: vc.label,
