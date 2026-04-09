@@ -538,11 +538,12 @@
         {
           "id": "dyno_points_above_base_assessment",
           "prompt": "Number of points above base car assessment",
-          "answerType": "number",
+          "answerType": "formula",
           "category": "Dyno Reclass Option",
           "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Calculation"
+          "needsManualPoints": false,
+          "subcategory": "Calculation",
+          "helpText": "Computed from showroom weight, factory rated HP/torque (catalog), and scaled dyno power. Minimum −2."
         }
       ]
     }

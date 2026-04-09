@@ -9,6 +9,8 @@ const sampleRows: ShowroomLookupRow[] = [
     trimKey: null,
     showroomAssessment: 24.5,
     showroomBaseWeightLbs: 2623,
+    factoryRatedHp: 142,
+    factoryRatedTorqueLbFt: 136,
     baseClassification: 'T5',
     catalogId: 'ov_acura_integra_1993_base'
   },
@@ -19,6 +21,8 @@ const sampleRows: ShowroomLookupRow[] = [
     trimKey: 'GS-R',
     showroomAssessment: 30,
     showroomBaseWeightLbs: 2600,
+    factoryRatedHp: 170,
+    factoryRatedTorqueLbFt: 128,
     baseClassification: 'T4',
     catalogId: 'ov_acura_integra_1993_gs_r'
   }

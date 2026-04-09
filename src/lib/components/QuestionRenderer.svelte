@@ -1,9 +1,17 @@
 <script lang="ts">
+  import {
+    dynoLossFraction,
+    dynoPointsAboveBaseFromSession,
+    scaledPowerFromDynoAnswers
+  } from '$lib/dyno-reclass-math';
+  import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
   import type { RuleAnswer, RuleQuestion } from '$types/rules';
 
   export let question: RuleQuestion;
   export let value: RuleAnswer;
   export let answers: Record<string, RuleAnswer> = {};
+  /** Logical component: vehicle row for dyno baseline (weight + factory HP/torque). */
+  export let vehicleCatalogMatch: ShowroomLookupRow | null = null;
   /** Logical component: optional manual points when workbook assessment is unclear (e.g. Dyno). */
   export let manualValue: RuleAnswer = null;
   export let onChange: (value: RuleAnswer) => void;
@@ -55,47 +63,35 @@
         ? '(enter points if applicable)'
         : '';
 
-  function toNumberOrNull(v: RuleAnswer): number | null {
-    if (typeof v === 'number' && Number.isFinite(v)) return v;
-    if (typeof v === 'string' && v.trim() !== '') {
-      const n = Number(v);
-      return Number.isFinite(n) ? n : null;
-    }
-    return null;
-  }
-
-  // Logical component: drivetrain-based dyno loss fraction used by dyno formulas.
-  function dynoLossFraction(localAnswers: Record<string, RuleAnswer>): number | null {
-    const d = localAnswers.dyno_drivetrain_type;
-    if (d === '2wd') return 0.13;
-    if (d === 'awd') return 0.16;
-    return null;
-  }
-
-  function computeScaledPower(localAnswers: Record<string, RuleAnswer>): number | null {
-    const hp = toNumberOrNull(localAnswers.dyno_peak_horsepower ?? null);
-    const tq = toNumberOrNull(localAnswers.dyno_peak_torque_lbft ?? null);
-    const loss = dynoLossFraction(localAnswers);
-    if (hp === null || tq === null || loss === null || loss >= 1) return null;
-    const denominator = 1 - loss;
-    return hp * (2 / 3) * (1 / denominator) + tq * (1 / 3) * (1 / denominator);
-  }
-
   // Logical component: formula display text for dyno-specific computed/info-only questions.
   $: formulaDisplay =
     question.id === 'dyno_loss_percent'
       ? (() => {
-          const loss = dynoLossFraction(answers);
+          const d = answers.dyno_drivetrain_type;
+          const loss = dynoLossFraction(typeof d === 'string' ? d : null);
           return loss === null ? 'Select drivetrain type to determine loss %.' : `${(loss * 100).toFixed(0)}%`;
         })()
       : question.id === 'scaled_power_formula'
         ? (() => {
-            const scaled = computeScaledPower(answers);
+            const scaled = scaledPowerFromDynoAnswers(answers);
             return scaled === null
               ? 'Enter Wheel HP, Peak Torque, and drivetrain type to calculate scaled power.'
               : `${scaled.toFixed(2)}`;
           })()
-        : question.prompt;
+        : question.id === 'dyno_points_above_base_assessment'
+          ? (() => {
+              const pts = dynoPointsAboveBaseFromSession({
+                answers,
+                showroomBaseWeightLbs: vehicleCatalogMatch?.showroomBaseWeightLbs ?? null,
+                factoryRatedHp: vehicleCatalogMatch?.factoryRatedHp ?? null,
+                factoryRatedTorqueLbFt: vehicleCatalogMatch?.factoryRatedTorqueLbFt ?? null
+              });
+              if (pts === null) {
+                return 'Complete vehicle match (catalog weight + factory HP/torque) and dyno fields to compute points.';
+              }
+              return `${pts.toFixed(2)} (minimum −2)`;
+            })()
+          : question.prompt;
 
   $: hideFormulaBodyForHeadingOnly = question.id === 'dyno_reclass_documentation_required';
 </script>

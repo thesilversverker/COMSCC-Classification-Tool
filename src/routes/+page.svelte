@@ -273,6 +273,7 @@
             {#each dynoQuestions as question (question.id)}
               <QuestionRenderer
                 {question}
+                vehicleCatalogMatch={vehicleCatalogMatch}
                 value={getRenderedValue(question.id)}
                 manualValue={$sessionStore.answers[`${question.id}__manual`] ?? null}
                 answers={$sessionStore.answers}

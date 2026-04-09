@@ -9,6 +9,8 @@ export type ShowroomLookupRow = {
   trimKey: string | null;
   showroomAssessment: number | null;
   showroomBaseWeightLbs: number | null;
+  factoryRatedHp: number | null;
+  factoryRatedTorqueLbFt: number | null;
   baseClassification: string | null;
   catalogId: string;
   /** True when a COMSCC seed row matched this open-db make/model/year (narrowest year span). */

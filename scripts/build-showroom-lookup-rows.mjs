@@ -125,6 +125,14 @@ export function buildShowroomLookupRowsFromVehicleCatalog(vehicleCatalog, meta =
         typeof r.showroomBaseWeightLbs === 'number' && Number.isFinite(r.showroomBaseWeightLbs)
           ? r.showroomBaseWeightLbs
           : null,
+      factoryRatedHp:
+        typeof r.factoryRatedHp === 'number' && Number.isFinite(r.factoryRatedHp)
+          ? r.factoryRatedHp
+          : null,
+      factoryRatedTorqueLbFt:
+        typeof r.factoryRatedTorqueLbFt === 'number' && Number.isFinite(r.factoryRatedTorqueLbFt)
+          ? r.factoryRatedTorqueLbFt
+          : null,
       baseClassification:
         typeof r.baseClassification === 'string' && r.baseClassification.trim()
           ? r.baseClassification.trim()

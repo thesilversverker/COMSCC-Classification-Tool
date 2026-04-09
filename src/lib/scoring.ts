@@ -1,5 +1,6 @@
 // Logical component: category point totals from session answers (shared by nav and main view).
 import showroomLookup from '$data/vehicle-showroom-lookup.json';
+import { dynoPointsAboveBaseFromSession } from '$lib/dyno-reclass-math';
 import { findShowroomCatalogMatch, type ShowroomLookupRow } from '$lib/vehicles-showroom-match';
 import type { RuleAnswer, RuleAnswersByQuestionId, RuleCategory, RuleQuestion } from '$types/rules';
 
@@ -44,9 +45,16 @@ export function computeCategoryPoints(category: RuleCategory, answers: RuleAnswe
   if (category.id === 'vehicles') {
     return computeVehiclesCategoryPoints(answers);
   }
-  // Logical component: when Dyno Reclass is selected, Engine points come only from dyno_points_above_base_assessment.
+  // Logical component: when Dyno Reclass is selected, Engine points = computed dyno vs showroom baseline (floor −2).
   if (category.id === 'engine' && answers.dyno_reclass_selected === 'yes') {
-    return toNumeric(answers.dyno_points_above_base_assessment);
+    const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS);
+    const computed = dynoPointsAboveBaseFromSession({
+      answers,
+      showroomBaseWeightLbs: match?.showroomBaseWeightLbs ?? null,
+      factoryRatedHp: match?.factoryRatedHp ?? null,
+      factoryRatedTorqueLbFt: match?.factoryRatedTorqueLbFt ?? null
+    });
+    return computed === null ? 0 : computed;
   }
 
   let total = 0;
