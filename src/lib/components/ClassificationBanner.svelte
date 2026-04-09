@@ -4,8 +4,7 @@
     modificationPointsRangeLabel,
     specTireWidthMmForTier,
     TIER_DISPLAY_ORDER,
-    touringTierFromModificationPoints,
-    type TouringDisplayTier
+    touringTierFromModificationPoints
   } from '$lib/touring-tiers';
   import type { RuleCategory } from '$types/rules';
 
@@ -18,12 +17,6 @@
   $: grandModificationTotal = sumCategoryPoints(categoryPoints);
   $: currentTier = touringTierFromModificationPoints(grandModificationTotal);
   $: specTireWidthMm = specTireWidthMmForTier(currentTier);
-
-  // Logical component: use tier-active (not "current") so global/.current styles cannot light only the first cell.
-  function tierCellClass(tier: TouringDisplayTier): string {
-    const base = 'tier-cell';
-    return tier === currentTier ? `${base} tier-active` : base;
-  }
 </script>
 
 <section class="classification-banner" aria-label="Touring classification summary">
@@ -56,7 +49,8 @@
 
   <div class="tier-strip" role="list">
     {#each TIER_DISPLAY_ORDER as tier (tier)}
-      <div class={tierCellClass(tier)} role="listitem">
+      <!-- Logical component: class:tier-active must reference currentTier here — not inside a helper — or {#each} may not re-run when currentTier changes (stale T5 highlight). -->
+      <div class="tier-cell" class:tier-active={tier === currentTier} role="listitem">
         <span class="tier-name">{tier}</span>
         <span class="tier-range">{modificationPointsRangeLabel(tier)} pts</span>
       </div>
