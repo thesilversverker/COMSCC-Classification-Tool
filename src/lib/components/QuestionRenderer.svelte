@@ -60,7 +60,7 @@
     typeof question.pointValue === 'number'
       ? `(${question.pointValue >= 0 ? '+' : ''}${question.pointValue} pts)`
       : question.needsManualPoints
-        ? '(enter points if applicable)'
+        ? 'Dyno reclass required'
         : '';
 
   // Logical component: formula display text for dyno-specific computed/info-only questions.

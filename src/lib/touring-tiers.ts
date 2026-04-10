@@ -15,10 +15,10 @@ const tierUpper = TIER_UPPER_EXCLUSIVE as Record<'T5' | 'T4' | 'T3' | 'T2', numb
 
 // Logical component: reference standard tire widths (mm) by tier for future width-delta rules — approximate mapping from COMSCC tire-width chart (T30–T100 style progression).
 const SPEC_TIRE_WIDTH_MM: Record<TouringDisplayTier, number> = {
-  T5: 185,
-  T4: 205,
-  T3: 225,
-  T2: 275,
+  T5: 205,
+  T4: 225,
+  T3: 255,
+  T2: 285,
   T1: 315
 };
 

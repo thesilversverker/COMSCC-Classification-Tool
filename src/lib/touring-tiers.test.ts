@@ -21,7 +21,10 @@ describe('touring tiers', () => {
   });
 
   it('exposes spec tire width per tier', () => {
-    expect(specTireWidthMmForTier('T5')).toBe(185);
+    expect(specTireWidthMmForTier('T5')).toBe(205);
+    expect(specTireWidthMmForTier('T4')).toBe(225);
+    expect(specTireWidthMmForTier('T3')).toBe(255);
+    expect(specTireWidthMmForTier('T2')).toBe(285);
     expect(specTireWidthMmForTier('T1')).toBe(315);
   });
 
