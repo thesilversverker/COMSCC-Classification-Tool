@@ -12,7 +12,7 @@ describe('computeComsccDerivedFields', () => {
     expect(d.powerBlend).toBeCloseTo((2 / 3) * 250 + (1 / 3) * 210, 5);
     expect(d.weightPerPower).toBeCloseTo(3000 / d.powerBlend!, 5);
     expect(d.scaledWeightPerPower).toBeCloseTo(112 - 4.25 * d.weightPerPower!, 5);
-    expect(d.performanceAdjustment).toBeCloseTo(((80 - 70) / 3) * 1.5, 5);
+    expect(d.performanceAdjustment).toBeCloseTo(((80 - 60) / 3) * 1.5, 5);
     expect(d.showroomAssessment).toBeCloseTo(d.scaledWeightPerPower! + d.performanceAdjustment!, 5);
   });
 

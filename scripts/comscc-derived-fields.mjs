@@ -56,8 +56,8 @@ export function computeComsccDerivedFields(scalars) {
 }
 
 function performanceAdjFromSusp(suspIndex) {
-  // Logical component: ((suspIndex - 70) / 3) * 1.5 — template placeholder; workbook rows may differ.
-  return ((suspIndex - 70) / 3) * 1.5;
+  // Logical component: ((suspIndex - 60) / 3) * 1.5 — template placeholder; workbook rows may differ.
+  return ((suspIndex - 60) / 3) * 1.5;
 }
 
 function num(v) {
