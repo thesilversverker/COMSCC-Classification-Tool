@@ -121,6 +121,14 @@ export function buildShowroomLookupRowsFromVehicleCatalog(vehicleCatalog, meta =
         typeof r.showroomAssessment === 'number' && Number.isFinite(r.showroomAssessment)
           ? r.showroomAssessment
           : null,
+      scaledWeightPerPower:
+        typeof r.scaledWeightPerPower === 'number' && Number.isFinite(r.scaledWeightPerPower)
+          ? r.scaledWeightPerPower
+          : null,
+      performanceAdjustment:
+        typeof r.performanceAdjustment === 'number' && Number.isFinite(r.performanceAdjustment)
+          ? r.performanceAdjustment
+          : null,
       showroomBaseWeightLbs:
         typeof r.showroomBaseWeightLbs === 'number' && Number.isFinite(r.showroomBaseWeightLbs)
           ? r.showroomBaseWeightLbs

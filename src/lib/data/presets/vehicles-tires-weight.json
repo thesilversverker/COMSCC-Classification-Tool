@@ -27,6 +27,15 @@
           "numericOnly": true
         },
         {
+          "id": "weight_ballast_applies",
+          "prompt": "Ballast",
+          "subcategory": "Ballast",
+          "answerType": "boolean",
+          "sheetName": "Weight",
+          "sourceRef": "Weight!Ballast",
+          "helpText": "Check if you use ballast; then enter the amount below."
+        },
+        {
           "id": "weight_ballast",
           "prompt": "Ballast amount (lbs)",
           "subcategory": "Ballast",

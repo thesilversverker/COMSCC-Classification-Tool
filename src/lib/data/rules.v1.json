@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-04-10T00:55:35.991Z",
+  "generatedAt": "2026-04-12T23:37:15.595Z",
   "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
   "categories": [
     {
@@ -1473,6 +1473,15 @@
           "sheetName": "Weight",
           "sourceRef": "Weight!A9",
           "numericOnly": true
+        },
+        {
+          "id": "weight_ballast_applies",
+          "prompt": "Ballast",
+          "subcategory": "Ballast",
+          "answerType": "boolean",
+          "sheetName": "Weight",
+          "sourceRef": "Weight!Ballast",
+          "helpText": "Check if you use ballast; then enter the amount below."
         },
         {
           "id": "weight_ballast",

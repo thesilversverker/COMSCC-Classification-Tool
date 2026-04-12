@@ -42,7 +42,7 @@
     standard: RuleQuestion[];
   };
 
-  // Logical component: Weight uses fixed subsection order (not alphabetical: Ballast before Competition).
+  // Logical component: Weight subsection order (Competition before Ballast).
   const WEIGHT_SUBCATEGORY_ORDER = ['Competition', 'Ballast'];
   const ENGINE_DYNO_TOGGLE_ID = 'dyno_reclass_selected';
 
@@ -66,9 +66,13 @@
   }
 
   /** Logical component: Showroom weight is a read-only banner; omit from subcategory stack. */
-  function questionsForCategoryUI(cat: RuleCategory): RuleQuestion[] {
+  function questionsForCategoryUI(cat: RuleCategory, answers: Record<string, RuleAnswer>): RuleQuestion[] {
     if (cat.id === 'weight') {
-      return cat.questions.filter((q) => q.id !== 'weight_showroom');
+      let qs = cat.questions.filter((q) => q.id !== 'weight_showroom');
+      if (answers.weight_ballast_applies !== true) {
+        qs = qs.filter((q) => q.id !== 'weight_ballast');
+      }
+      return qs;
     }
     if (cat.id === 'engine') {
       return cat.questions.filter((q) => q.id !== ENGINE_DYNO_TOGGLE_ID);
@@ -102,8 +106,8 @@
     return false;
   }
 
-  function buildSubcategoryBlocks(cat: RuleCategory): SubcategoryBlock[] {
-    const qs = questionsForCategoryUI(cat);
+  function buildSubcategoryBlocks(cat: RuleCategory, answers: Record<string, RuleAnswer>): SubcategoryBlock[] {
+    const qs = questionsForCategoryUI(cat, answers);
     const keys = sortSubcategoryKeys(
       qs.map((q) => q.subcategory),
       cat.id
@@ -129,7 +133,7 @@
   $: category = rules.categories[$navigationStore.categoryIndex];
   $: categoryPointsById = computeAllCategoryPoints(rules.categories, $sessionStore.answers);
   $: currentCategoryTotal = category ? (categoryPointsById[category.id] ?? 0) : 0;
-  $: subcategoryBlocks = category ? buildSubcategoryBlocks(category) : [];
+  $: subcategoryBlocks = category ? buildSubcategoryBlocks(category, $sessionStore.answers) : [];
   $: vehicleCatalogMatch = findShowroomCatalogMatch($sessionStore.answers, SHOWROOM_ROWS);
   $: showroomWeightValue =
     vehicleCatalogMatch?.showroomBaseWeightLbs != null
@@ -155,6 +159,16 @@
   // Logical component: selecting any manual-point engine item auto-enables Dyno Reclass.
   $: if (category?.id === 'engine' && engineManualTrigger && dynoToggleAnswer !== 'yes') {
     handleQuestionChange(ENGINE_DYNO_TOGGLE_ID, 'yes');
+  }
+
+  // Logical component: hide ballast amount when the Ballast checkbox is off; clear stored amount.
+  $: if (category?.id === 'weight' && $sessionStore.answers.weight_ballast_applies !== true) {
+    const b = $sessionStore.answers.weight_ballast;
+    if (typeof b === 'number' && Number.isFinite(b)) {
+      handleQuestionChange('weight_ballast', null);
+    } else if (typeof b === 'string' && b.trim() !== '') {
+      handleQuestionChange('weight_ballast', null);
+    }
   }
 
   // Logical component: optional primary tire width (mm) for spec comparison in the classification banner.
@@ -227,7 +241,10 @@
 
     {#if showQuestionStack}
       <section class="question-stack">
-        <p class="running-total"><strong>Running category total:</strong> {currentCategoryTotal.toFixed(1)} points</p>
+        <p class="running-total">
+          <strong>Running category total:</strong>
+          {category?.id === 'weight' ? currentCategoryTotal.toFixed(3) : currentCategoryTotal.toFixed(1)} points
+        </p>
 
         {#if category?.id === 'weight'}
           <div class="weight-showroom-banner" role="status" aria-live="polite">

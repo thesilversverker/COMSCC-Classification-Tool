@@ -8,6 +8,9 @@ export type ShowroomLookupRow = {
   /** Present when open-vehicle-db row used a model_styles entry; otherwise null. */
   trimKey: string | null;
   showroomAssessment: number | null;
+  /** From composed vehicle row; used by Weight worksheet points formula. */
+  scaledWeightPerPower: number | null;
+  performanceAdjustment: number | null;
   showroomBaseWeightLbs: number | null;
   factoryRatedHp: number | null;
   factoryRatedTorqueLbFt: number | null;

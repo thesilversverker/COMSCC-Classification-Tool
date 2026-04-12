@@ -1,6 +1,7 @@
 // Logical component: category point totals from session answers (shared by nav and main view).
 import showroomLookup from '$data/vehicle-showroom-lookup.json';
 import { dynoPointsAboveBaseFromSession } from '$lib/dyno-reclass-math';
+import { computeWeightSheetPoints } from '$lib/weight-worksheet-points';
 import { findShowroomCatalogMatch, type ShowroomLookupRow } from '$lib/vehicles-showroom-match';
 import type { RuleAnswer, RuleAnswersByQuestionId, RuleCategory, RuleQuestion } from '$types/rules';
 
@@ -44,6 +45,30 @@ function computeVehiclesCategoryPoints(answers: RuleAnswersByQuestionId): number
 export function computeCategoryPoints(category: RuleCategory, answers: RuleAnswersByQuestionId): number {
   if (category.id === 'vehicles') {
     return computeVehiclesCategoryPoints(answers);
+  }
+  // Logical component: Weight = worksheet formula (competition lbs vs catalog swp/perf/showroom) + any checkbox/select points.
+  if (category.id === 'weight') {
+    const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS);
+    let total = computeWeightSheetPoints(toNumeric(answers.weight_competition), match);
+    for (const q of category.questions) {
+      if (q.answerType === 'boolean' && answers[q.id] === true) {
+        if (typeof q.pointValue === 'number') {
+          total += q.pointValue;
+        } else if (q.needsManualPoints) {
+          total += toNumeric(answers[`${q.id}__manual`] ?? 0);
+        }
+      }
+      if (q.answerType === 'select') {
+        const selectedOption = resolveSelectedOption(q, answers);
+        if (typeof selectedOption?.points === 'number') {
+          total += selectedOption.points;
+        }
+      }
+      if (q.id.endsWith('_points')) {
+        total += toNumeric(answers[q.id] ?? 0);
+      }
+    }
+    return total;
   }
   // Logical component: when Dyno Reclass is selected, Engine points = computed dyno vs showroom baseline (floor −2).
   if (category.id === 'engine' && answers.dyno_reclass_selected === 'yes') {
