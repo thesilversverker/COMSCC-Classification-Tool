@@ -1,18 +1,38 @@
 import { computeWeightSheetPoints } from './weight-worksheet-points';
 
+const integraLikeCatalog = {
+  factoryRatedHp: 140,
+  factoryRatedTorqueLbFt: 126,
+  performanceAdjustment: -5,
+  showroomAssessment: 24.62746305418719
+};
+
 describe('computeWeightSheetPoints', () => {
   it('returns 0 without positive competition weight', () => {
-    expect(computeWeightSheetPoints(0, { scaledWeightPerPower: 30, performanceAdjustment: -5, showroomAssessment: 20 })).toBe(0);
-    expect(computeWeightSheetPoints(-1, { scaledWeightPerPower: 30, performanceAdjustment: -5, showroomAssessment: 20 })).toBe(0);
+    expect(computeWeightSheetPoints(0, integraLikeCatalog)).toBe(0);
+    expect(computeWeightSheetPoints(-1, integraLikeCatalog)).toBe(0);
   });
 
   it('returns 0 when catalog scalars are missing', () => {
     expect(computeWeightSheetPoints(2623, null)).toBe(0);
-    expect(computeWeightSheetPoints(2623, { scaledWeightPerPower: null, performanceAdjustment: -5, showroomAssessment: 20 })).toBe(0);
+    expect(
+      computeWeightSheetPoints(2623, {
+        factoryRatedHp: null,
+        factoryRatedTorqueLbFt: 126,
+        performanceAdjustment: -5,
+        showroomAssessment: 24.62746305418719
+      })
+    ).toBe(0);
   });
 
-  it('applies sheet-style division chain', () => {
-    // bracket = 30 + (-5) - 20 = 5; denom = 500; 2623/500/100 = 0.05246
-    expect(computeWeightSheetPoints(2623, { scaledWeightPerPower: 30, performanceAdjustment: -5, showroomAssessment: 20 })).toBeCloseTo(0.05246, 5);
+  it('is 0 at showroom curb weight (bracket cancels for derived showroom rows)', () => {
+    expect(computeWeightSheetPoints(2623, integraLikeCatalog)).toBe(0);
+  });
+
+  it('changes when competition weight differs from showroom curb weight', () => {
+    const lighter = computeWeightSheetPoints(2500, integraLikeCatalog);
+    const heavier = computeWeightSheetPoints(2800, integraLikeCatalog);
+    expect(lighter).toBeGreaterThan(0);
+    expect(heavier).toBeLessThan(0);
   });
 });
