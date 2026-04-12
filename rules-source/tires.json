@@ -1,483 +1,362 @@
 {
   "schemaVersion": "1.0.0",
-  "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
-  "generatedAt": "2026-04-08T17:25:39.503Z",
   "category": {
     "id": "tires",
     "label": "Tires",
-    "sheetName": "Tires",
     "description": "Reference extraction for Tires (non-table layout).",
     "questions": [
       {
         "id": "tires_comscc_2027_v2_test_0",
         "prompt": "COMSCC 2027 V2 TEST",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A1",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_touring_class_summary_1",
         "prompt": "Touring Class Summary",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A2",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_tires_reduction_worksheet_2",
         "prompt": "Tires Reduction Worksheet",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A3",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_select_a_tire_and_enter_tire_width_information_in_the_yellow_cel_3",
         "prompt": "Select a tire and enter tire width information in the yellow cells…",
         "answerType": "select",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A4",
         "subcategory": "Sizing"
       },
       {
         "id": "tires_note_tire_softening_compounds_are_illegal_in_all_touring_classes_4",
         "prompt": "Note: Tire softening compounds are illegal in all Touring classes",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A5",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_select_or_true_5",
         "prompt": "Select or TRUE",
         "answerType": "boolean",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A6",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_non_dot_slicks_except_where_noted_6",
         "prompt": "Non-DOT Slicks (except where noted)",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A7",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hoosier_a8_7",
         "prompt": "Hoosier A8",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A8",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_bfgoodrich_r1_s_g_force_slick_8",
         "prompt": "BFGoodrich R1-S, g-force slick",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A9",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_continental_challenge_wets_9",
         "prompt": "Continental Challenge Wets",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A10",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_goodyear_rs_ac_dot_radial_10",
         "prompt": "Goodyear RS AC - \"dot radial\"",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A11",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hankook_c90_c91_c9_wets_11",
         "prompt": "Hankook c90, c91,C9, Wets",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A12",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hoosier_radial_wets_h2o_smw_12",
         "prompt": "Hoosier Radial Wets, H2O,SMW",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A13",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hoosier_a_compound_all_13",
         "prompt": "Hoosier A Compound (All)",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A14",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_pirelli_p_zero_slick_dh_compound_only_14",
         "prompt": "Pirelli P-Zero Slick ( DH Compound ONLY)",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A15",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hoosier_r8_15",
         "prompt": "Hoosier R8",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A16",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hoosier_smx_16",
         "prompt": "Hoosier SMX",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A17",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hankook_c70_c71_c7_17",
         "prompt": "Hankook c70, c71, C7",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A18",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_yoko_a055_18",
         "prompt": "Yoko A055",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A19",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_goodyear_eagle_rs_19",
         "prompt": "Goodyear eagle RS",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A20",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hoosier_r7_sm7_sm7_5_compound_all_20",
         "prompt": "Hoosier R7, SM7, SM7.5 compound (All)",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A21",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_kumho_ecsta_v700_21",
         "prompt": "Kumho Ecsta V700",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A22",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_bfgoodrich_r1_22",
         "prompt": "BFGoodrich R1",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A23",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hankook_z214_c50_c51_c5_23",
         "prompt": "Hankook Z214 c50, c51, C5",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A24",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_dot_utqg_rating_41_120_unclassified_24",
         "prompt": "DOT UTQG rating 41-120 (unclassified)",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A25",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_2_5_25",
         "prompt": "2.5",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A26",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_goodyear_supercar_3r_27",
         "prompt": "Goodyear Supercar 3R",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A28",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_federal_fz_201_soft_28",
         "prompt": "Federal FZ-201 Soft",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A29",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hankook_z221_td_hard_c3_29",
         "prompt": "Hankook z221 TD Hard/ C3",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A30",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_maxxis_victra_rc_1_r2_30",
         "prompt": "Maxxis Victra RC-1 (R2)",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A31",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_pirelli_trofeo_r_31",
         "prompt": "Pirelli Trofeo R",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A32",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_dot_utqg_rating_121_200_unclassified_32",
         "prompt": "DOT UTQG rating 121-200 (unclassified)",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A33",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_vitour_tempesta_sonic_33",
         "prompt": "VITOUR Tempesta Sonic",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A34",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_1_5_34",
         "prompt": "-1.5",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A35",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_2_5_42",
         "prompt": "-2.5",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A43",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_3_5_58",
         "prompt": "-3.5",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A59",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_michelin_pilot_4s_68",
         "prompt": "Michelin Pilot 4S",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A69",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_bf_goodrich_g_force_rival_69",
         "prompt": "BF Goodrich g-Force Rival",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A70",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_continental_extremecontact_force_70",
         "prompt": "Continental ExtremeContact Force",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A71",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_falken_azenis_rt615k_71",
         "prompt": "Falken Azenis RT615K+",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A72",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_hankook_ventus_rs_4_72",
         "prompt": "Hankook Ventus RS-4",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A73",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_maxxis_victra_vr_1_73",
         "prompt": "Maxxis Victra VR-1",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A74",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_cooper_rs3_r_74",
         "prompt": "Cooper RS3-R",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A75",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_cooper_rs3_rs_75",
         "prompt": "Cooper RS3-RS",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A76",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_federal_595rs_r_76",
         "prompt": "Federal 595RS-R",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A77",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_michelin_pilot_super_sport_pilot_spt_4s_77",
         "prompt": "Michelin Pilot Super Sport, Pilot Spt 4S",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A78",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_pick_one_above_78",
         "prompt": "Pick one above",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A79",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_proposed_class_80",
         "prompt": "Proposed Class",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A81",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_intended_competition_class_81",
         "prompt": "Intended Competition Class",
         "answerType": "select",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A82",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_tire_width_front_82",
         "prompt": "Tire Width Front",
         "answerType": "number",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A83",
         "subcategory": "Sizing"
       },
       {
         "id": "tires_brand_83",
         "prompt": "Brand",
         "answerType": "number",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A84",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_difference_84",
         "prompt": "Difference",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A85",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_tire_width_rear_85",
         "prompt": "Tire Width Rear",
         "answerType": "number",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A86",
         "subcategory": "Sizing"
       },
       {
         "id": "tires_average_width_86",
         "prompt": "Average Width",
         "answerType": "number",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A87",
         "subcategory": "Sizing"
       },
       {
         "id": "tires_assessment_87",
         "prompt": "Assessment",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A88",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_total_tire_assessment_88",
         "prompt": "Total Tire Assessment",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A89",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_go_to_previous_sheet_weight_reduction_89",
         "prompt": "Go to previous sheet (Weight Reduction)",
         "answerType": "number",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A90",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_t2_90",
         "prompt": "T2",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A91",
         "subcategory": "Class & model"
       },
       {
         "id": "tires_315_91",
         "prompt": "315",
         "answerType": "text",
-        "sheetName": "Tires",
-        "sourceRef": "Tires!A92",
         "subcategory": "Class & model"
       }
     ]

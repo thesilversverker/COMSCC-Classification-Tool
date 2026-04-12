@@ -14,7 +14,8 @@ export interface RuleQuestion {
   subcategory: string;
   answerType: AnswerType;
   helpText?: string;
-  sheetName: string;
+  /** Legacy workbook column; optional in rules-source. */
+  sheetName?: string;
   sourceRef?: string;
   defaultValue?: boolean | number | string;
   options?: RuleOption[];
@@ -59,13 +60,13 @@ export interface VehicleCatalogRow {
   showroomAssessment: number | null;
   /** T5–T1 from showroom assessment using the same point bands as the modification tier strip (set at compose time). */
   baseClassification: string | null;
-  sourceRef: string | null;
+  sourceRef?: string | null;
 }
 
 export interface RuleCategory {
   id: string;
   label: string;
-  sheetName: string;
+  sheetName?: string;
   description?: string;
   questions: RuleQuestion[];
   /** Present on Vehicles rules-source when extracted from the showroom table. */
@@ -74,8 +75,8 @@ export interface RuleCategory {
 
 export interface RulesDocument {
   schemaVersion: '1.0.0';
-  generatedAt: string;
-  sourceWorkbook: string;
+  generatedAt?: string;
+  sourceWorkbook?: string;
   categories: RuleCategory[];
 }
 

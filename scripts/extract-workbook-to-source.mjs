@@ -81,24 +81,10 @@ function buildCheckboxQuestion(sheetName, rowIndex, row) {
     id,
     prompt: desc,
     answerType: 'boolean',
-    sheetName,
-    sourceRef: `${sheetName}!B${rowIndex + 1}`,
     pointValue,
     needsManualPoints,
     subcategory: assignSubcategory(categorySlug, desc)
   };
-}
-
-// Logical component: 0-based column index → Excel column letters (e.g. 13 → N).
-function excelColumnLetterFromZero(zeroBasedIndex) {
-  let n = zeroBasedIndex + 1;
-  let s = '';
-  while (n > 0) {
-    const rem = (n - 1) % 26;
-    s = String.fromCharCode(65 + rem) + s;
-    n = Math.floor((n - 1) / 26);
-  }
-  return s;
 }
 
 function vehiclesHeaderColumnIndex(headerRow, exactLabel) {
@@ -164,7 +150,6 @@ function buildVehicleCatalogRows(sheetName, rows) {
     return [];
   }
 
-  const assessmentColLetter = excelColumnLetterFromZero(col.showroomAssessment);
   const catalog = [];
 
   for (let i = headerIdx + 1; i < rows.length; i++) {
@@ -197,8 +182,7 @@ function buildVehicleCatalogRows(sheetName, rows) {
       suspIndex: col.suspIndex >= 0 ? parseSheetNumber(r[col.suspIndex]) : null,
       performanceAdjustment: col.performanceAdjustment >= 0 ? parseSheetNumber(r[col.performanceAdjustment]) : null,
       showroomAssessment,
-      baseClassification,
-      sourceRef: `${sheetName}!${assessmentColLetter}${excelRowNum}`
+      baseClassification
     });
   }
 
@@ -221,8 +205,6 @@ function buildLegacyQuestion(sheetName, rowIndex, row) {
     id: `${slugify(sheetName)}_${slugify(prompt).slice(0, 64)}_${rowIndex}`,
     prompt,
     answerType: inferAnswerType(`${prompt} ${visibleCells.slice(1).join(' ')}`),
-    sheetName,
-    sourceRef: `${sheetName}!A${rowIndex + 1}`,
     subcategory: assignSubcategory(categorySlug, prompt)
   };
 }
@@ -275,8 +257,6 @@ function extractWorkbookToSource() {
       // Logical component: preserve comsccTemplate placeholder; replace vehicleCatalog with workbook extract.
       writeJson(catalogPath, {
         schemaVersion: '1.0.0',
-        sourceWorkbook: path.basename(workbookPath),
-        generatedAt: new Date().toISOString(),
         ...preserved,
         vehicleCatalog
       });
@@ -302,12 +282,9 @@ function extractWorkbookToSource() {
 
     const categoryDocument = {
       schemaVersion: '1.0.0',
-      sourceWorkbook: path.basename(workbookPath),
-      generatedAt: new Date().toISOString(),
       category: {
         id: slugify(sheetName),
         label: sheetName,
-        sheetName,
         description: isCheckbox
           ? `Worksheet rows with Assessment → pointValue and Description → checkbox prompt (${sheetName}).`
           : `Reference extraction for ${sheetName} (non-table layout).`,
@@ -328,8 +305,6 @@ function extractWorkbookToSource() {
 
   writeJson(path.join(sourceOutputDir, 'index.json'), {
     schemaVersion: '1.0.0',
-    sourceWorkbook: path.basename(workbookPath),
-    generatedAt: new Date().toISOString(),
     categories: categorySummaries
   });
 

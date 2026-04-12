@@ -1,19 +1,14 @@
 {
   "schemaVersion": "1.0.0",
-  "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
-  "generatedAt": "2026-04-08T17:25:39.487Z",
   "category": {
     "id": "exterior",
     "label": "Exterior",
-    "sheetName": "Exterior",
     "description": "Worksheet rows with Assessment → pointValue and Description → checkbox prompt (Exterior).",
     "questions": [
       {
         "id": "exterior_non_factory_trim_modified_front_bumper_air_dam_spoiler_5",
         "prompt": "Non-Factory Trim/modified front bumper/air dam/spoiler",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B6",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Front aero"
@@ -22,8 +17,6 @@
         "id": "exterior_non_factory_trim_modified_front_splitter_in_addition_to_bumper_air_dam_s_6",
         "prompt": "Non-Factory Trim/modified front splitter, in addition to bumper/air dam/spoiler",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B7",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Front aero"
@@ -32,8 +25,6 @@
         "id": "exterior_non_factory_trim_modified_front_splitter_that_extends_more_than_3_5_inch_7",
         "prompt": "Non-Factory Trim/modified front splitter that extends more than 3.5 inches from front bumper skin leading edge, in addition to bumper/air dam/spoiler",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B8",
         "pointValue": 2,
         "needsManualPoints": false,
         "subcategory": "Front aero"
@@ -42,8 +33,6 @@
         "id": "exterior_non_factory_trim_modified_canards_each_set_assessed_points_front_or_rear_8",
         "prompt": "Non-Factory Trim/modified canards (each set assessed points front or rear)",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B9",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Front aero"
@@ -52,8 +41,6 @@
         "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including_any_airfoil_that_in_no_w_9",
         "prompt": "Non-Factory Trim Rear spoiler or wing including any airfoil that in no way protrudes more than 6” from the mounting location of the spoiler or wing, does not exceed the height of the vehicle, and does not extend beyond the width of the rear quarter panels.",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B10",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Rear aero"
@@ -62,8 +49,6 @@
         "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including_any_airfoil_that_does_no_10",
         "prompt": "Non-Factory Trim Rear spoiler or wing including any airfoil that does not exceed the height of the vehicle, does not extend beyond the width of the rear quarter panels, and does not extend no more than 6\" beyond the skin of the rear bumper",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B11",
         "pointValue": 2,
         "needsManualPoints": false,
         "subcategory": "Rear aero"
@@ -72,8 +57,6 @@
         "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including_any_air_foil_of_any_size_11",
         "prompt": "Non-Factory Trim Rear spoiler or wing including any air foil of any size or shape",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B12",
         "pointValue": 3,
         "needsManualPoints": false,
         "subcategory": "Rear aero"
@@ -82,8 +65,6 @@
         "id": "exterior_non_factory_trim_hardtop_of_different_shape_and_size_which_alters_airflo_12",
         "prompt": "Non-Factory Trim hardtop of different shape and size which alters airflow aft of the OEM rear glass (eg CWest Honda S2000 aero hardtop)",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B13",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Body & panels"
@@ -92,8 +73,6 @@
         "id": "exterior_factory_trim_hardtop_or_non_factory_trim_hardtop_of_the_same_shape_and_s_13",
         "prompt": "Factory trim hardtop or Non-Factory Trim hardtop of the same shape and size of OEM hardtop",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B14",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Body & panels"
@@ -102,8 +81,6 @@
         "id": "exterior_non_factory_trim_modified_vortex_generator_to_roof_hardtop_rear_glass_or_14",
         "prompt": "Non-Factory Trim/modified vortex generator to roof, hardtop, rear glass or trunk",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B15",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Body & panels"
@@ -112,8 +89,6 @@
         "id": "exterior_non_factory_trim_modified_flat_bottom_15",
         "prompt": "Non-Factory Trim/modified flat bottom",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B16",
         "pointValue": 2,
         "needsManualPoints": false,
         "subcategory": "Other"
@@ -122,8 +97,6 @@
         "id": "exterior_non_factory_trim_modified_rear_diffuser_16",
         "prompt": "Non-Factory Trim/modified rear diffuser",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B17",
         "pointValue": 2,
         "needsManualPoints": false,
         "subcategory": "Rear aero"
@@ -132,8 +105,6 @@
         "id": "exterior_non_factory_trim_modified_side_skirts_17",
         "prompt": "Non-Factory Trim/modified side skirts",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B18",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Body & panels"
@@ -142,8 +113,6 @@
         "id": "exterior_non_factory_trim_active_aero_i_e_moveable_aero_devices_points_assessed_f_18",
         "prompt": "Non-factory trim Active aero, i.e. moveable aero devices; points assessed for each piece, in addition to assessment points listed above (set number of pieces below)",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B19",
         "pointValue": 4,
         "needsManualPoints": false,
         "subcategory": "Active aero & graphics"
@@ -152,8 +121,6 @@
         "id": "exterior_front_underbody_tray_that_does_not_extend_in_front_of_the_front_bumper_s_19",
         "prompt": "Front Underbody Tray that does not extend in front of the front bumper skin, beyond the width of the front quarter panels, or more than 18\" behind the front axle; note – points for front splitter, bumper, spoiler, air dam, and flat bottom assessed separately",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B20",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Front aero"
@@ -162,8 +129,6 @@
         "id": "exterior_non_factory_trim_modified_fenders_20",
         "prompt": "Non-Factory Trim/modified fenders",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B21",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Body & panels"
@@ -172,8 +137,6 @@
         "id": "exterior_non_factory_trim_modified_doors_21",
         "prompt": "Non-Factory Trim/modified doors",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B22",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Body & panels"
@@ -182,8 +145,6 @@
         "id": "exterior_non_factory_trim_modified_trunk_lid_22",
         "prompt": "Non-Factory Trim/modified trunk lid",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B23",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Body & panels"
@@ -192,8 +153,6 @@
         "id": "exterior_non_factory_trim_modified_rear_bumper_23",
         "prompt": "Non-Factory Trim/modified rear bumper",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B24",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Rear aero"
@@ -202,8 +161,6 @@
         "id": "exterior_non_factory_trim_modified_hood_24",
         "prompt": "Non-Factory Trim/modified hood",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B25",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Body & panels"
@@ -212,8 +169,6 @@
         "id": "exterior_1_com_supplied_sticker_on_each_side_of_the_vehicle_that_is_easily_visibl_25",
         "prompt": "1 COM supplied sticker on each side of the vehicle that is easily visible from the outside (2 stickers minimum)",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B26",
         "pointValue": -1,
         "needsManualPoints": false,
         "subcategory": "Active aero & graphics"
@@ -222,8 +177,6 @@
         "id": "exterior_non_factory_trim_active_aero_i_e_moveable_aero_devices_4_points_assessed_29",
         "prompt": "Non-factory trim Active aero, i.e. moveable aero devices; 4 points assessed for each piece, in addition to assessment points listed above",
         "answerType": "boolean",
-        "sheetName": "Exterior",
-        "sourceRef": "Exterior!B30",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Active aero & graphics"

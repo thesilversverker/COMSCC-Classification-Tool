@@ -1,550 +1,559 @@
 {
   "schemaVersion": "1.0.0",
-  "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
-  "generatedAt": "2026-04-08T17:25:39.484Z",
   "category": {
     "id": "engine",
     "label": "Engine",
-    "sheetName": "Engine",
     "description": "Point values for Engine modifications.",
-      "questions": [
-        {
-          "id": "dyno_reclass_selected",
-          "prompt": "Dyno Reclass selected",
-          "answerType": "select",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": false,
-          "subcategory": "Dyno reclass",
-          "helpText": "Enable this when using dyno-based classing. It is auto-enabled when any manual-points engine item is selected.",
-          "options": [
-            { "id": "yes", "label": "Yes" },
-            { "id": "no", "label": "No" }
-          ]
-        },
-        {
-          "id": "reprogrammed_factory_ecu_na",
-          "prompt": "Reprogrammed Factory Trim (includes ROM chips) ECU, naturally aspirated engine",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "ECU & electronics"
-        },
-        {
-          "id": "non_factory_ecu_na",
-          "prompt": "Non-Factory Trim ECU, naturally aspirated engine",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 2,
-          "needsManualPoints": false,
-          "subcategory": "ECU & electronics"
-        },
-        {
-          "id": "reprogrammed_factory_ecu_forced_induction_air_fuel_only",
-          "prompt": "Reprogrammed Factory Trim (includes ROM chips) ECU, forced induction engine air/fuel change only. If applicable, additional points must be added for an increase in boost.",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 3,
-          "needsManualPoints": false,
-          "subcategory": "ECU & electronics"
-        },
-        {
-          "id": "non_factory_ecu_forced_induction_air_fuel_only",
-          "prompt": "Non-Factory Trim ECU, forced induction engine air/fuel change only. If applicable, additional points must be added for an increase in boost.",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 4,
-          "needsManualPoints": false,
-          "subcategory": "ECU & electronics"
-        },
-        {
-          "id": "turbo_boost_increase_under_50_percent",
-          "prompt": "Turbo Boost increase <50%",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 2,
-          "needsManualPoints": false,
-          "subcategory": "Forced induction"
-        },
-        {
-          "id": "turbo_boost_increase_over_50_percent",
-          "prompt": "Turbo Boost increase >50%",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 4,
-          "needsManualPoints": false,
-          "subcategory": "Forced induction"
-        },
-        {
-          "id": "modified_air_intake_before_throttle_body",
-          "prompt": "Non-Factory Trim/modified air intake before the throttle body",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Intake"
-        },
-        {
-          "id": "modified_headlight_for_intake_airflow",
-          "prompt": "Non-factory trim/modified headlight to allow increased or cooler air flow to engine air intake, unless already taking one point for cold air intake.",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Intake"
-        },
-        {
-          "id": "modified_throttle_body",
-          "prompt": "Non-Factory Trim/modified throttle body",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Intake"
-        },
-        {
-          "id": "modified_fuel_delivery_system_except_pumps",
-          "prompt": "Non-Factory Trim/modified fuel delivery system, except fuel pump(s) (i.e. fuel injectors, fuel rails, fuel regulators)",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Fuel system"
-        },
-        {
-          "id": "modified_intake_manifold_1_to_6_cylinder",
-          "prompt": "Non-Factory Trim/modified intake manifold 1-6 cylinder engines, including manifold porting",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Intake"
-        },
-        {
-          "id": "modified_intake_manifold_7_to_12_cylinder",
-          "prompt": "Non-Factory Trim/modified intake manifold 7-12 cylinder engines, including manifold porting",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 2,
-          "needsManualPoints": false,
-          "subcategory": "Intake"
-        },
-        {
-          "id": "water_alcohol_injection_system",
-          "prompt": "Water-alcohol injection system",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 3,
-          "needsManualPoints": false,
-          "subcategory": "Fuel system"
-        },
-        {
-          "id": "modified_supercharger_or_turbocharger",
-          "prompt": "Non-Factory Trim/modified supercharger or turbocharger, any location",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Forced induction"
-        },
-        {
-          "id": "modified_supercharger_pulley",
-          "prompt": "Non-Factory Trim/modified supercharger pulley",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 3,
-          "needsManualPoints": false,
-          "subcategory": "Forced induction"
-        },
-        {
-          "id": "modified_boost_controller_or_vacuum_lines",
-          "prompt": "Non-Factory Trim/modified boost controller or vacuum lines that control boost",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 3,
-          "needsManualPoints": false,
-          "subcategory": "Forced induction"
-        },
-        {
-          "id": "modified_wastegate_or_wastegate_actuator",
-          "prompt": "Non-Factory Trim/modified wastegate, wastegate actuator",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Forced induction"
-        },
-        {
-          "id": "modified_intercooler",
-          "prompt": "Non-Factory Trim/modified intercooler",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 2,
-          "needsManualPoints": false,
-          "subcategory": "Forced induction"
-        },
-        {
-          "id": "modified_intercooler_pipes_only",
-          "prompt": "Non-Factory Trim/modified intercooler pipes only",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Forced induction"
-        },
-        {
-          "id": "modified_camshafts_rocker_arms_pushrods_cam_gears",
-          "prompt": "Non-Factory Trim/modified camshafts, rocker arms, pushrods, or cam gears that adjust cam timing or lift",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Engine internals"
-        },
-        {
-          "id": "ported_or_polished_factory_cylinder_heads",
-          "prompt": "Ported/polished Factory Trim cylinder heads",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Engine internals"
-        },
-        {
-          "id": "non_factory_cylinder_heads",
-          "prompt": "Non-Factory Trim cylinder heads",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Engine internals"
-        },
-        {
-          "id": "modified_engine_intake_exhaust_valves",
-          "prompt": "Non-Factory Trim/modified engine intake/exhaust valves",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Engine internals"
-        },
-        {
-          "id": "increased_displacement_more_than_1_percent",
-          "prompt": "Increased displacement by more than 1%",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Engine internals"
-        },
-        {
-          "id": "increase_compression_ratio_half_point_or_less",
-          "prompt": "Increase compression ratio by .50 or less",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "Engine internals"
-        },
-        {
-          "id": "increase_compression_ratio_greater_than_half_point",
-          "prompt": "Increase compression ratio greater than .50",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Engine internals"
-        },
-        {
-          "id": "dry_sump_engine_oil_system",
-          "prompt": "Dry sump engine oil system",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Oil system"
-        },
-        {
-          "id": "modified_header_1_to_6_cylinder_pre_cat",
-          "prompt": "Non-Factory Trim/modified header 1-6 cyl (pre-cat exhaust change)",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Exhaust"
-        },
-        {
-          "id": "modified_header_7_to_12_cylinder_pre_cat",
-          "prompt": "Non-Factory Trim/modified header 7-12 cyl (pre-cat exhaust change)",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 2,
-          "needsManualPoints": false,
-          "subcategory": "Exhaust"
-        },
-        {
-          "id": "modified_exhaust_beyond_catalytic_converter",
-          "prompt": "Non-Factory Trim/modified exhaust beyond the catalytic converter (e.g. cat back exhaust)",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Exhaust"
-        },
-        {
-          "id": "modified_catalytic_converter",
-          "prompt": "Non-Factory Trim/modified catalytic converter(s)",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Exhaust"
-        },
-        {
-          "id": "removed_or_gutted_oem_catalytic_converter",
-          "prompt": "Complete removal or \"gutting\" of OEM catalytic converter(s) (i.e. \"test pipe\" in place of catalytic converter)",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Exhaust"
-        },
-        {
-          "id": "modified_power_steering_or_crank_pulley",
-          "prompt": "Non-Factory Trim/modified power steering, crank pulley",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Accessory drive"
-        },
-        {
-          "id": "modified_deleted_engine_fan_or_accessories",
-          "prompt": "Non-Factory Trim/modified/deleted engine or accessory fan and/or other engine accessories not otherwise listed",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 1,
-          "needsManualPoints": false,
-          "subcategory": "Accessory drive"
-        },
-        {
-          "id": "street_port_rotary_engines",
-          "prompt": "Street Port, rotary engines",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Rotary-specific"
-        },
-        {
-          "id": "bridge_port_rotary_engines",
-          "prompt": "Bridge Port, rotary engines",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Rotary-specific"
-        },
-        {
-          "id": "peripheral_port_rotary_engines",
-          "prompt": "Peripheral Port, rotary engines",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Rotary-specific"
-        },
-        {
-          "id": "modified_pistons_and_rods",
-          "prompt": "Non-Factory Trim/modified pistons, rods",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Engine internals"
-        },
-        {
-          "id": "tuned_for_ethanol_greater_than_15_percent",
-          "prompt": "Vehicles tuned and running ethanol content greater than 15%. (E.g. a vehicle tuned to run on e85)",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Fuel system"
-        },
-        {
-          "id": "commercially_available_gasoline_or_diesel_fuel",
-          "prompt": "Any type of commercially available gasoline or diesel fuel",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "Fuel system"
-        },
-        {
-          "id": "modified_fuses_relays_wiring_or_pdm",
-          "prompt": "Non-Factory Trim/modified fuses, relays, wiring, or addition of Power Distribution Modules",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "ECU & electronics"
-        },
-        {
-          "id": "modified_hoses_belts_clamps",
-          "prompt": "Non-Factory Trim hoses, belts, clamps",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "Ancillary components"
-        },
-        {
-          "id": "non_factory_air_or_fuel_filters",
-          "prompt": "Non-Factory Trim air or fuel filters",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "Ancillary components"
-        },
-        {
-          "id": "non_factory_radiator",
-          "prompt": "Non-Factory Trim radiator",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "Cooling"
-        },
-        {
-          "id": "non_factory_battery_starter_alternator_ignition_components",
-          "prompt": "Non-Factory Trim battery, starter motor, alternator, spark plugs, spark plug wires, ignition coils",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "ECU & electronics"
-        },
-        {
-          "id": "modifications_to_oil_system",
-          "prompt": "Non-Factory Trim/modifications to oil system",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "Oil system"
-        },
-        {
-          "id": "modifications_number_of_fuel_pumps",
-          "prompt": "Non-Factory Trim/modifications/number of fuel pumps",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "Fuel system"
-        },
-        {
-          "id": "modified_muffler_tips_or_sound_reduction_components_only",
-          "prompt": "Non-Factory Trim/modified muffler tips/components designed strictly for the purposes of reducing sound with no measurable or theoretical performance advantage (e.g. exhaust tip turn-down or second muffler)",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "Exhaust"
-        },
-        {
-          "id": "factory_spec_engine_rebuild_and_head_shave",
-          "prompt": "Factory specification engine rebuild and head shave",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "Engine internals"
-        },
-        {
-          "id": "accessories_and_or_gauges",
-          "prompt": "Accessories and/or gauges",
-          "answerType": "boolean",
-          "category": "Engine",
-          "pointValue": 0,
-          "needsManualPoints": false,
-          "subcategory": "Ancillary components"
-        }
-      ],
-      "dynoReclassOption": [
-        {
-          "id": "dyno_reclass_documentation_required",
-          "prompt": "For engine swaps or elective dyno-based classing, competitor must provide peak horsepower figure to the Steward for evaluation; Scrutineer may request supporting documentation at the Steward's discretion.",
-          "answerType": "formula",
-          "category": "Dyno Reclass Option",
-          "pointValue": null,
-          "needsManualPoints": false,
-          "subcategory": "Documentation",
-          "helpText": "Starting with the 2018 season Dynojet is the only official dyno measurement."
-        },
-        {
-          "id": "dyno_peak_horsepower",
-          "prompt": "Peak Horsepower (Wheel HP)",
-          "answerType": "number",
-          "category": "Dyno Reclass Option",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Measurement",
-          "numericOnly": true
-        },
-        {
-          "id": "dyno_peak_torque_lbft",
-          "prompt": "Peak Torque (ft-lb)",
-          "answerType": "number",
-          "category": "Dyno Reclass Option",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Measurement",
-          "numericOnly": true
-        },
-        {
-          "id": "dyno_drivetrain_type",
-          "prompt": "Select drivetrain type",
-          "answerType": "select",
-          "category": "Dyno Reclass Option",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Measurement",
-          "options": [
-            { "id": "2wd", "label": "2WD" },
-            { "id": "awd", "label": "AWD" }
-          ]
-        },
-        {
-          "id": "dyno_loss_percent",
-          "prompt": "Dyno drivetrain loss %",
-          "answerType": "formula",
-          "category": "Dyno Reclass Option",
-          "pointValue": null,
-          "needsManualPoints": false,
-          "subcategory": "Measurement"
-        },
-        {
-          "id": "scaled_power_formula",
-          "prompt": "Scaled result using 2/3 HP + 1/3 Torque + Drivetrain loss",
-          "answerType": "formula",
-          "category": "Dyno Reclass Option",
-          "pointValue": null,
-          "needsManualPoints": true,
-          "subcategory": "Calculation"
-        },
-        {
-          "id": "dyno_points_above_base_assessment",
-          "prompt": "Number of points above base car assessment",
-          "answerType": "formula",
-          "category": "Dyno Reclass Option",
-          "pointValue": null,
-          "needsManualPoints": false,
-          "subcategory": "Calculation",
-          "helpText": "Computed from showroom weight, factory rated HP/torque (catalog), and scaled dyno power. Minimum −2."
-        }
-      ]
-    }
+    "questions": [
+      {
+        "id": "dyno_reclass_selected",
+        "prompt": "Dyno Reclass selected",
+        "answerType": "select",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": false,
+        "subcategory": "Dyno reclass",
+        "helpText": "Enable this when using dyno-based classing. It is auto-enabled when any manual-points engine item is selected.",
+        "options": [
+          {
+            "id": "yes",
+            "label": "Yes"
+          },
+          {
+            "id": "no",
+            "label": "No"
+          }
+        ]
+      },
+      {
+        "id": "reprogrammed_factory_ecu_na",
+        "prompt": "Reprogrammed Factory Trim (includes ROM chips) ECU, naturally aspirated engine",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "ECU & electronics"
+      },
+      {
+        "id": "non_factory_ecu_na",
+        "prompt": "Non-Factory Trim ECU, naturally aspirated engine",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 2,
+        "needsManualPoints": false,
+        "subcategory": "ECU & electronics"
+      },
+      {
+        "id": "reprogrammed_factory_ecu_forced_induction_air_fuel_only",
+        "prompt": "Reprogrammed Factory Trim (includes ROM chips) ECU, forced induction engine air/fuel change only. If applicable, additional points must be added for an increase in boost.",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 3,
+        "needsManualPoints": false,
+        "subcategory": "ECU & electronics"
+      },
+      {
+        "id": "non_factory_ecu_forced_induction_air_fuel_only",
+        "prompt": "Non-Factory Trim ECU, forced induction engine air/fuel change only. If applicable, additional points must be added for an increase in boost.",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 4,
+        "needsManualPoints": false,
+        "subcategory": "ECU & electronics"
+      },
+      {
+        "id": "turbo_boost_increase_under_50_percent",
+        "prompt": "Turbo Boost increase <50%",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 2,
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
+      },
+      {
+        "id": "turbo_boost_increase_over_50_percent",
+        "prompt": "Turbo Boost increase >50%",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 4,
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
+      },
+      {
+        "id": "modified_air_intake_before_throttle_body",
+        "prompt": "Non-Factory Trim/modified air intake before the throttle body",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Intake"
+      },
+      {
+        "id": "modified_headlight_for_intake_airflow",
+        "prompt": "Non-factory trim/modified headlight to allow increased or cooler air flow to engine air intake, unless already taking one point for cold air intake.",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Intake"
+      },
+      {
+        "id": "modified_throttle_body",
+        "prompt": "Non-Factory Trim/modified throttle body",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Intake"
+      },
+      {
+        "id": "modified_fuel_delivery_system_except_pumps",
+        "prompt": "Non-Factory Trim/modified fuel delivery system, except fuel pump(s) (i.e. fuel injectors, fuel rails, fuel regulators)",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Fuel system"
+      },
+      {
+        "id": "modified_intake_manifold_1_to_6_cylinder",
+        "prompt": "Non-Factory Trim/modified intake manifold 1-6 cylinder engines, including manifold porting",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Intake"
+      },
+      {
+        "id": "modified_intake_manifold_7_to_12_cylinder",
+        "prompt": "Non-Factory Trim/modified intake manifold 7-12 cylinder engines, including manifold porting",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 2,
+        "needsManualPoints": false,
+        "subcategory": "Intake"
+      },
+      {
+        "id": "water_alcohol_injection_system",
+        "prompt": "Water-alcohol injection system",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 3,
+        "needsManualPoints": false,
+        "subcategory": "Fuel system"
+      },
+      {
+        "id": "modified_supercharger_or_turbocharger",
+        "prompt": "Non-Factory Trim/modified supercharger or turbocharger, any location",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Forced induction"
+      },
+      {
+        "id": "modified_supercharger_pulley",
+        "prompt": "Non-Factory Trim/modified supercharger pulley",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 3,
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
+      },
+      {
+        "id": "modified_boost_controller_or_vacuum_lines",
+        "prompt": "Non-Factory Trim/modified boost controller or vacuum lines that control boost",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 3,
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
+      },
+      {
+        "id": "modified_wastegate_or_wastegate_actuator",
+        "prompt": "Non-Factory Trim/modified wastegate, wastegate actuator",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
+      },
+      {
+        "id": "modified_intercooler",
+        "prompt": "Non-Factory Trim/modified intercooler",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 2,
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
+      },
+      {
+        "id": "modified_intercooler_pipes_only",
+        "prompt": "Non-Factory Trim/modified intercooler pipes only",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Forced induction"
+      },
+      {
+        "id": "modified_camshafts_rocker_arms_pushrods_cam_gears",
+        "prompt": "Non-Factory Trim/modified camshafts, rocker arms, pushrods, or cam gears that adjust cam timing or lift",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
+      },
+      {
+        "id": "ported_or_polished_factory_cylinder_heads",
+        "prompt": "Ported/polished Factory Trim cylinder heads",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
+      },
+      {
+        "id": "non_factory_cylinder_heads",
+        "prompt": "Non-Factory Trim cylinder heads",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
+      },
+      {
+        "id": "modified_engine_intake_exhaust_valves",
+        "prompt": "Non-Factory Trim/modified engine intake/exhaust valves",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
+      },
+      {
+        "id": "increased_displacement_more_than_1_percent",
+        "prompt": "Increased displacement by more than 1%",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
+      },
+      {
+        "id": "increase_compression_ratio_half_point_or_less",
+        "prompt": "Increase compression ratio by .50 or less",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "Engine internals"
+      },
+      {
+        "id": "increase_compression_ratio_greater_than_half_point",
+        "prompt": "Increase compression ratio greater than .50",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
+      },
+      {
+        "id": "dry_sump_engine_oil_system",
+        "prompt": "Dry sump engine oil system",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Oil system"
+      },
+      {
+        "id": "modified_header_1_to_6_cylinder_pre_cat",
+        "prompt": "Non-Factory Trim/modified header 1-6 cyl (pre-cat exhaust change)",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
+      },
+      {
+        "id": "modified_header_7_to_12_cylinder_pre_cat",
+        "prompt": "Non-Factory Trim/modified header 7-12 cyl (pre-cat exhaust change)",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 2,
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
+      },
+      {
+        "id": "modified_exhaust_beyond_catalytic_converter",
+        "prompt": "Non-Factory Trim/modified exhaust beyond the catalytic converter (e.g. cat back exhaust)",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
+      },
+      {
+        "id": "modified_catalytic_converter",
+        "prompt": "Non-Factory Trim/modified catalytic converter(s)",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
+      },
+      {
+        "id": "removed_or_gutted_oem_catalytic_converter",
+        "prompt": "Complete removal or \"gutting\" of OEM catalytic converter(s) (i.e. \"test pipe\" in place of catalytic converter)",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
+      },
+      {
+        "id": "modified_power_steering_or_crank_pulley",
+        "prompt": "Non-Factory Trim/modified power steering, crank pulley",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Accessory drive"
+      },
+      {
+        "id": "modified_deleted_engine_fan_or_accessories",
+        "prompt": "Non-Factory Trim/modified/deleted engine or accessory fan and/or other engine accessories not otherwise listed",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 1,
+        "needsManualPoints": false,
+        "subcategory": "Accessory drive"
+      },
+      {
+        "id": "street_port_rotary_engines",
+        "prompt": "Street Port, rotary engines",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Rotary-specific"
+      },
+      {
+        "id": "bridge_port_rotary_engines",
+        "prompt": "Bridge Port, rotary engines",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Rotary-specific"
+      },
+      {
+        "id": "peripheral_port_rotary_engines",
+        "prompt": "Peripheral Port, rotary engines",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Rotary-specific"
+      },
+      {
+        "id": "modified_pistons_and_rods",
+        "prompt": "Non-Factory Trim/modified pistons, rods",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Engine internals"
+      },
+      {
+        "id": "tuned_for_ethanol_greater_than_15_percent",
+        "prompt": "Vehicles tuned and running ethanol content greater than 15%. (E.g. a vehicle tuned to run on e85)",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Fuel system"
+      },
+      {
+        "id": "commercially_available_gasoline_or_diesel_fuel",
+        "prompt": "Any type of commercially available gasoline or diesel fuel",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "Fuel system"
+      },
+      {
+        "id": "modified_fuses_relays_wiring_or_pdm",
+        "prompt": "Non-Factory Trim/modified fuses, relays, wiring, or addition of Power Distribution Modules",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "ECU & electronics"
+      },
+      {
+        "id": "modified_hoses_belts_clamps",
+        "prompt": "Non-Factory Trim hoses, belts, clamps",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "Ancillary components"
+      },
+      {
+        "id": "non_factory_air_or_fuel_filters",
+        "prompt": "Non-Factory Trim air or fuel filters",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "Ancillary components"
+      },
+      {
+        "id": "non_factory_radiator",
+        "prompt": "Non-Factory Trim radiator",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "Cooling"
+      },
+      {
+        "id": "non_factory_battery_starter_alternator_ignition_components",
+        "prompt": "Non-Factory Trim battery, starter motor, alternator, spark plugs, spark plug wires, ignition coils",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "ECU & electronics"
+      },
+      {
+        "id": "modifications_to_oil_system",
+        "prompt": "Non-Factory Trim/modifications to oil system",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "Oil system"
+      },
+      {
+        "id": "modifications_number_of_fuel_pumps",
+        "prompt": "Non-Factory Trim/modifications/number of fuel pumps",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "Fuel system"
+      },
+      {
+        "id": "modified_muffler_tips_or_sound_reduction_components_only",
+        "prompt": "Non-Factory Trim/modified muffler tips/components designed strictly for the purposes of reducing sound with no measurable or theoretical performance advantage (e.g. exhaust tip turn-down or second muffler)",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "Exhaust"
+      },
+      {
+        "id": "factory_spec_engine_rebuild_and_head_shave",
+        "prompt": "Factory specification engine rebuild and head shave",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "Engine internals"
+      },
+      {
+        "id": "accessories_and_or_gauges",
+        "prompt": "Accessories and/or gauges",
+        "answerType": "boolean",
+        "category": "Engine",
+        "pointValue": 0,
+        "needsManualPoints": false,
+        "subcategory": "Ancillary components"
+      }
+    ],
+    "dynoReclassOption": [
+      {
+        "id": "dyno_reclass_documentation_required",
+        "prompt": "For engine swaps or elective dyno-based classing, competitor must provide peak horsepower figure to the Steward for evaluation; Scrutineer may request supporting documentation at the Steward's discretion.",
+        "answerType": "formula",
+        "category": "Dyno Reclass Option",
+        "pointValue": null,
+        "needsManualPoints": false,
+        "subcategory": "Documentation",
+        "helpText": "Starting with the 2018 season Dynojet is the only official dyno measurement."
+      },
+      {
+        "id": "dyno_peak_horsepower",
+        "prompt": "Peak Horsepower (Wheel HP)",
+        "answerType": "number",
+        "category": "Dyno Reclass Option",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Measurement",
+        "numericOnly": true
+      },
+      {
+        "id": "dyno_peak_torque_lbft",
+        "prompt": "Peak Torque (ft-lb)",
+        "answerType": "number",
+        "category": "Dyno Reclass Option",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Measurement",
+        "numericOnly": true
+      },
+      {
+        "id": "dyno_drivetrain_type",
+        "prompt": "Select drivetrain type",
+        "answerType": "select",
+        "category": "Dyno Reclass Option",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Measurement",
+        "options": [
+          {
+            "id": "2wd",
+            "label": "2WD"
+          },
+          {
+            "id": "awd",
+            "label": "AWD"
+          }
+        ]
+      },
+      {
+        "id": "dyno_loss_percent",
+        "prompt": "Dyno drivetrain loss %",
+        "answerType": "formula",
+        "category": "Dyno Reclass Option",
+        "pointValue": null,
+        "needsManualPoints": false,
+        "subcategory": "Measurement"
+      },
+      {
+        "id": "scaled_power_formula",
+        "prompt": "Scaled result using 2/3 HP + 1/3 Torque + Drivetrain loss",
+        "answerType": "formula",
+        "category": "Dyno Reclass Option",
+        "pointValue": null,
+        "needsManualPoints": true,
+        "subcategory": "Calculation"
+      },
+      {
+        "id": "dyno_points_above_base_assessment",
+        "prompt": "Number of points above base car assessment",
+        "answerType": "formula",
+        "category": "Dyno Reclass Option",
+        "pointValue": null,
+        "needsManualPoints": false,
+        "subcategory": "Calculation",
+        "helpText": "Computed from showroom weight, factory rated HP/torque (catalog), and scaled dyno power. Minimum −2."
+      }
+    ]
+  }
 }

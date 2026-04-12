@@ -1,19 +1,14 @@
 {
   "schemaVersion": "1.0.0",
-  "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
-  "generatedAt": "2026-04-08T17:25:39.485Z",
   "category": {
     "id": "drivetrain",
     "label": "Drivetrain",
-    "sheetName": "Drivetrain",
     "description": "Worksheet rows with Assessment → pointValue and Description → checkbox prompt (Drivetrain).",
     "questions": [
       {
         "id": "drivetrain_non_factory_trim_sequential_gearbox_5",
         "prompt": "Non-Factory Trim sequential gearbox",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B6",
         "pointValue": 6,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -22,8 +17,6 @@
         "id": "drivetrain_non_factory_trim_non_sequential_h_pattern_dogbox_gearbox_6",
         "prompt": "Non-Factory Trim non-sequential (H pattern) Dogbox gearbox",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B7",
         "pointValue": 4,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -32,8 +25,6 @@
         "id": "drivetrain_dual_clutch_transmission_dsg_dct_pdk_etc_7",
         "prompt": "Dual clutch transmission - DSG, DCT, PDK, etc",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B8",
         "pointValue": 3,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -42,8 +33,6 @@
         "id": "drivetrain_7_speed_or_more_automatic_transmission_gm_hydramatic_10l90_and_10l80_for_8",
         "prompt": "7 speed or more automatic transmission - GM HydraMatic 10L90 and 10L80, Ford 10R80, ZF HP8, Mercedes 7G-Tronic etc",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B9",
         "pointValue": 3,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -52,8 +41,6 @@
         "id": "drivetrain_automated_single_clutch_manual_transmission_smg_ferrari_f1_lambo_e_gear__9",
         "prompt": "Automated single clutch manual transmission - SMG, Ferrari F1, Lambo E-Gear etc",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B10",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -62,8 +49,6 @@
         "id": "drivetrain_manual_tranmission_with_factory_autoblip_nissan_370z_bmw_m2_c7_corvette__10",
         "prompt": "Manual tranmission with factory autoblip (Nissan 370Z, BMW M2, C7 Corvette, Porsche) or aftermarket add-on",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B11",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -72,8 +57,6 @@
         "id": "drivetrain_5_or_6_speed_manual_transmission_11",
         "prompt": "5 or 6 speed manual transmission",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B12",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -82,8 +65,6 @@
         "id": "drivetrain_3_or_4_speed_manual_transmission_12",
         "prompt": "3 or 4 speed manual transmission",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B13",
         "pointValue": -1,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -92,8 +73,6 @@
         "id": "drivetrain_automatic_transmission_with_6_speeds_or_less_13",
         "prompt": "Automatic transmission with 6 speeds or less",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B14",
         "pointValue": -2,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -102,8 +81,6 @@
         "id": "drivetrain_cvt_transmission_14",
         "prompt": "CVT Transmission",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B15",
         "pointValue": -2,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -112,8 +89,6 @@
         "id": "drivetrain_non_factory_trim_modified_final_drive_ratio_15",
         "prompt": "Non-Factory Trim/modified final drive ratio",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B16",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Differential & driveline"
@@ -122,8 +97,6 @@
         "id": "drivetrain_non_factory_trim_modified_lsd_if_vehicle_is_equipped_with_lsd_from_the_f_16",
         "prompt": "Non-Factory Trim/modified LSD if vehicle is equipped with LSD from the factory or was a factory option",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B17",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Differential & driveline"
@@ -132,8 +105,6 @@
         "id": "drivetrain_non_factory_trim_modified_lsd_if_vehicle_is_not_equipped_with_lsd_from_t_17",
         "prompt": "Non-Factory Trim/modified LSD if vehicle is not equipped with LSD from the factory or was not a factory option",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B18",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Differential & driveline"
@@ -142,8 +113,6 @@
         "id": "drivetrain_non_factory_trim_modified_traction_control_ie_via_non_factory_trim_ecu_m_18",
         "prompt": "Non-Factory Trim/modified traction control (ie via Non-Factory Trim ECU mapping)",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B19",
         "pointValue": 2,
         "needsManualPoints": false,
         "subcategory": "Traction & control"
@@ -152,8 +121,6 @@
         "id": "drivetrain_non_factory_trim_modified_electronically_controlled_center_differential__19",
         "prompt": "Non-Factory Trim/modified electronically controlled center differential mapping (ie GEMS center diff controller for Mitsubishi Evo, Subaru STi)",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B20",
         "pointValue": 2,
         "needsManualPoints": false,
         "subcategory": "Differential & driveline"
@@ -162,8 +129,6 @@
         "id": "drivetrain_non_factory_trim_modified_half_shafts_or_driveshafts_including_carbon_fi_20",
         "prompt": "Non-Factory Trim/modified half shafts or driveshafts including carbon fiber and aluminium driveshafts",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B21",
         "pointValue": 1,
         "needsManualPoints": false,
         "subcategory": "Shafts & mounts"
@@ -172,8 +137,6 @@
         "id": "drivetrain_relocation_of_transmission_location_via_altered_mounts_21",
         "prompt": "Relocation of transmission location via altered mounts",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B22",
         "pointValue": 2,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -182,8 +145,6 @@
         "id": "drivetrain_non_factory_trim_modified_clutch_pressure_plate_and_or_clutch_assembly_22",
         "prompt": "Non-Factory Trim/modified clutch, pressure plate, and/or clutch assembly",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B23",
         "pointValue": 0.5,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -192,8 +153,6 @@
         "id": "drivetrain_non_factory_trim_modified_flywheel_23",
         "prompt": "Non-Factory Trim/modified flywheel",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B24",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Shafts & mounts"
@@ -202,8 +161,6 @@
         "id": "drivetrain_non_factory_trim_modified_motor_transmission_differential_and_or_other_d_24",
         "prompt": "Non-Factory Trim/modified motor, transmission, differential, and/or other drivetrain mounts, including metallic and non-metallic mounts",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B25",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -212,8 +169,6 @@
         "id": "drivetrain_non_factory_trim_modified_shifter_including_bushings_lever_etc_25",
         "prompt": "Non-Factory Trim/modified shifter, including bushings, lever, etc.",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B26",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Transmission & clutch"
@@ -222,8 +177,6 @@
         "id": "drivetrain_enabling_or_disabling_of_factory_trim_traction_control_26",
         "prompt": "Enabling or disabling of Factory Trim traction control",
         "answerType": "boolean",
-        "sheetName": "Drivetrain",
-        "sourceRef": "Drivetrain!B27",
         "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Traction & control"

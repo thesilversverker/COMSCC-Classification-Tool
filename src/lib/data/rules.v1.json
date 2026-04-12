@@ -1,19 +1,17 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-04-12T23:37:15.595Z",
-  "sourceWorkbook": "COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx",
+  "generatedAt": "2026-04-12T23:49:08.451Z",
+  "sourceWorkbook": "unknown.xlsx",
   "categories": [
     {
       "id": "vehicles",
       "label": "Vehicles",
-      "sheetName": "Vehicles",
       "description": "Make/model/year comes from committed open-vehicle-db (data/makes_and_models.json). COMSCC showroom numbers are merged at build time from rules-source/vehicles-comscc-catalog.json; vehicles without a seed match use null showroom fields until the workbook seed is updated.",
       "questions": []
     },
     {
       "id": "engine",
       "label": "Engine",
-      "sheetName": "Engine",
       "description": "Point values for Engine modifications.",
       "questions": [
         {
@@ -570,15 +568,12 @@
     {
       "id": "drivetrain",
       "label": "Drivetrain",
-      "sheetName": "Drivetrain",
       "description": "Worksheet rows with Assessment → pointValue and Description → checkbox prompt (Drivetrain).",
       "questions": [
         {
           "id": "drivetrain_non_factory_trim_sequential_gearbox_5",
           "prompt": "Non-Factory Trim sequential gearbox",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B6",
           "pointValue": 6,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -587,8 +582,6 @@
           "id": "drivetrain_non_factory_trim_non_sequential_h_pattern_dogbox_gearbox_6",
           "prompt": "Non-Factory Trim non-sequential (H pattern) Dogbox gearbox",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B7",
           "pointValue": 4,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -597,8 +590,6 @@
           "id": "drivetrain_dual_clutch_transmission_dsg_dct_pdk_etc_7",
           "prompt": "Dual clutch transmission - DSG, DCT, PDK, etc",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B8",
           "pointValue": 3,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -607,8 +598,6 @@
           "id": "drivetrain_7_speed_or_more_automatic_transmission_gm_hydramatic_10l90_and_10l80_for_8",
           "prompt": "7 speed or more automatic transmission - GM HydraMatic 10L90 and 10L80, Ford 10R80, ZF HP8, Mercedes 7G-Tronic etc",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B9",
           "pointValue": 3,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -617,8 +606,6 @@
           "id": "drivetrain_automated_single_clutch_manual_transmission_smg_ferrari_f1_lambo_e_gear__9",
           "prompt": "Automated single clutch manual transmission - SMG, Ferrari F1, Lambo E-Gear etc",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B10",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -627,8 +614,6 @@
           "id": "drivetrain_manual_tranmission_with_factory_autoblip_nissan_370z_bmw_m2_c7_corvette__10",
           "prompt": "Manual tranmission with factory autoblip (Nissan 370Z, BMW M2, C7 Corvette, Porsche) or aftermarket add-on",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B11",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -637,8 +622,6 @@
           "id": "drivetrain_5_or_6_speed_manual_transmission_11",
           "prompt": "5 or 6 speed manual transmission",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B12",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -647,8 +630,6 @@
           "id": "drivetrain_3_or_4_speed_manual_transmission_12",
           "prompt": "3 or 4 speed manual transmission",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B13",
           "pointValue": -1,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -657,8 +638,6 @@
           "id": "drivetrain_automatic_transmission_with_6_speeds_or_less_13",
           "prompt": "Automatic transmission with 6 speeds or less",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B14",
           "pointValue": -2,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -667,8 +646,6 @@
           "id": "drivetrain_cvt_transmission_14",
           "prompt": "CVT Transmission",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B15",
           "pointValue": -2,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -677,8 +654,6 @@
           "id": "drivetrain_non_factory_trim_modified_final_drive_ratio_15",
           "prompt": "Non-Factory Trim/modified final drive ratio",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B16",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Differential & driveline"
@@ -687,8 +662,6 @@
           "id": "drivetrain_non_factory_trim_modified_lsd_if_vehicle_is_equipped_with_lsd_from_the_f_16",
           "prompt": "Non-Factory Trim/modified LSD if vehicle is equipped with LSD from the factory or was a factory option",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B17",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Differential & driveline"
@@ -697,8 +670,6 @@
           "id": "drivetrain_non_factory_trim_modified_lsd_if_vehicle_is_not_equipped_with_lsd_from_t_17",
           "prompt": "Non-Factory Trim/modified LSD if vehicle is not equipped with LSD from the factory or was not a factory option",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B18",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Differential & driveline"
@@ -707,8 +678,6 @@
           "id": "drivetrain_non_factory_trim_modified_traction_control_ie_via_non_factory_trim_ecu_m_18",
           "prompt": "Non-Factory Trim/modified traction control (ie via Non-Factory Trim ECU mapping)",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B19",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Traction & control"
@@ -717,8 +686,6 @@
           "id": "drivetrain_non_factory_trim_modified_electronically_controlled_center_differential__19",
           "prompt": "Non-Factory Trim/modified electronically controlled center differential mapping (ie GEMS center diff controller for Mitsubishi Evo, Subaru STi)",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B20",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Differential & driveline"
@@ -727,8 +694,6 @@
           "id": "drivetrain_non_factory_trim_modified_half_shafts_or_driveshafts_including_carbon_fi_20",
           "prompt": "Non-Factory Trim/modified half shafts or driveshafts including carbon fiber and aluminium driveshafts",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B21",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Shafts & mounts"
@@ -737,8 +702,6 @@
           "id": "drivetrain_relocation_of_transmission_location_via_altered_mounts_21",
           "prompt": "Relocation of transmission location via altered mounts",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B22",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -747,8 +710,6 @@
           "id": "drivetrain_non_factory_trim_modified_clutch_pressure_plate_and_or_clutch_assembly_22",
           "prompt": "Non-Factory Trim/modified clutch, pressure plate, and/or clutch assembly",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B23",
           "pointValue": 0.5,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -757,8 +718,6 @@
           "id": "drivetrain_non_factory_trim_modified_flywheel_23",
           "prompt": "Non-Factory Trim/modified flywheel",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B24",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Shafts & mounts"
@@ -767,8 +726,6 @@
           "id": "drivetrain_non_factory_trim_modified_motor_transmission_differential_and_or_other_d_24",
           "prompt": "Non-Factory Trim/modified motor, transmission, differential, and/or other drivetrain mounts, including metallic and non-metallic mounts",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B25",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -777,8 +734,6 @@
           "id": "drivetrain_non_factory_trim_modified_shifter_including_bushings_lever_etc_25",
           "prompt": "Non-Factory Trim/modified shifter, including bushings, lever, etc.",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B26",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Transmission & clutch"
@@ -787,8 +742,6 @@
           "id": "drivetrain_enabling_or_disabling_of_factory_trim_traction_control_26",
           "prompt": "Enabling or disabling of Factory Trim traction control",
           "answerType": "boolean",
-          "sheetName": "Drivetrain",
-          "sourceRef": "Drivetrain!B27",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Traction & control"
@@ -798,15 +751,12 @@
     {
       "id": "suspension",
       "label": "Suspension",
-      "sheetName": "Suspension",
       "description": "Worksheet rows with Assessment → pointValue and Description → checkbox prompt (Suspension).",
       "questions": [
         {
           "id": "suspension_non_factory_trim_non_adjustable_shocks_struts_dampers_5",
           "prompt": "Non-Factory Trim non-adjustable shocks, struts, dampers",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B6",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -815,8 +765,6 @@
           "id": "suspension_non_factory_trim_1_way_adjustable_shocks_struts_dampers_6",
           "prompt": "Non-Factory Trim 1-way adjustable shocks, struts, dampers",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B7",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -825,8 +773,6 @@
           "id": "suspension_non_factory_trim_2_way_adjustable_shocks_struts_dampers_7",
           "prompt": "Non-Factory Trim 2-way adjustable shocks, struts, dampers",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B8",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -835,8 +781,6 @@
           "id": "suspension_non_factory_trim_3_way_or_more_adjustable_shocks_struts_dampers_8",
           "prompt": "Non-Factory Trim 3-way (or more) adjustable shocks, struts, dampers",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B9",
           "pointValue": 3,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -845,8 +789,6 @@
           "id": "suspension_non_factory_trim_shocks_struts_dampers_with_piggyback_canister_or_extern_9",
           "prompt": "Non-Factory Trim shocks, struts, dampers with piggyback canister or external remote canister – note: must also take points for shocks/struts/dampers as listed above",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B10",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -855,8 +797,6 @@
           "id": "suspension_non_adjustable_non_factory_trim_coil_springs_leaf_springs_or_torsion_bar_10",
           "prompt": "Non-adjustable non-Factory Trim coil springs, leaf springs, or torsion bars (or non-modified factory height adjustment)",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B11",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -865,8 +805,6 @@
           "id": "suspension_height_adjustable_non_factory_trim_coil_springs_leaf_springs_or_torsion__11",
           "prompt": "Height adjustable non-Factory Trim coil springs, leaf springs, or torsion bars (or springs with modified factory height adjustment)",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B12",
           "pointValue": 3,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -875,8 +813,6 @@
           "id": "suspension_torsion_bar_to_coil_spring_conversion_12",
           "prompt": "Torsion bar to coil spring conversion",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B13",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -885,8 +821,6 @@
           "id": "suspension_non_factory_trim_sway_bars_13",
           "prompt": "Non-Factory Trim sway bars",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B14",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Arms, links & alignment"
@@ -895,8 +829,6 @@
           "id": "suspension_non_factory_trim_engine_bracing_not_including_motor_and_other_drivetrain_14",
           "prompt": "Non-Factory Trim engine bracing (not including motor and other drivetrain mounts)",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B15",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Other"
@@ -905,8 +837,6 @@
           "id": "suspension_non_factory_trim_modified_control_arms_or_non_factory_trim_modified_trai_15",
           "prompt": "Non-Factory Trim/Modified Control Arms or Non-Factory Trim/Modified Trailing or Camber Arms of different dimensions than Factory Trim",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B16",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Arms, links & alignment"
@@ -915,8 +845,6 @@
           "id": "suspension_modification_of_wishbone_suspension_upright_16",
           "prompt": "Modification of wishbone suspension upright",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B17",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Arms, links & alignment"
@@ -925,8 +853,6 @@
           "id": "suspension_non_factory_trim_subframe_that_does_not_alter_suspension_geometry_17",
           "prompt": "Non-Factory Trim subframe that does not alter suspension geometry",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B18",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Bracing & subframe"
@@ -935,8 +861,6 @@
           "id": "suspension_non_factory_trim_modified_watts_link_18",
           "prompt": "Non-Factory Trim/modified Watts Link",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B19",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Arms, links & alignment"
@@ -945,8 +869,6 @@
           "id": "suspension_non_factory_trim_modified_panhard_bar_19",
           "prompt": "Non-Factory Trim/modified panhard bar",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B20",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Arms, links & alignment"
@@ -955,8 +877,6 @@
           "id": "suspension_non_factory_trim_torque_bar_20",
           "prompt": "Non-Factory Trim torque bar",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B21",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Other"
@@ -965,8 +885,6 @@
           "id": "suspension_modify_oem_torque_bar_21",
           "prompt": "Modify OEM torque bar",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B22",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Other"
@@ -975,8 +893,6 @@
           "id": "suspension_non_factory_trim_suspension_bushings_or_spherical_bearings_except_rubber_22",
           "prompt": "Non-Factory Trim suspension bushings or spherical bearings, except rubber or polyurethane , except for spherical bearings in strut or shock top mounts",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B23",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -985,8 +901,6 @@
           "id": "suspension_non_factory_trim_modified_suspension_components_which_enable_alignment_s_23",
           "prompt": "Non-Factory Trim/modified suspension components which enable alignment settings beyond Factory Trim capability (does not apply to coil springs, leaf springs, or torsion bars); note - additional points may need to be taken for specific non-Factory Trim suspension components if listed elsewhere in this section",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B24",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -995,8 +909,6 @@
           "id": "suspension_non_factory_trim_bracing_including_strut_shock_tower_brace_chassis_brace_24",
           "prompt": "Non-Factory Trim bracing, including strut/shock tower brace, chassis brace(s) (e.g. X-brace or cross-bar)",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B25",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Dampers & springs"
@@ -1005,8 +917,6 @@
           "id": "suspension_custom_alignment_settings_including_caster_camber_or_toe_regardless_of_f_25",
           "prompt": "Custom Alignment settings, including caster, camber, or toe, regardless of factory recommendations; note: modifications to Factory-trim suspension components for the purposes of alignment adjustment must be assessed separately",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B26",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Arms, links & alignment"
@@ -1015,8 +925,6 @@
           "id": "suspension_non_factory_trim_suspension_bushings_either_rubber_or_polyurethane_26",
           "prompt": "Non-Factory Trim suspension bushings, either rubber or polyurethane",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B27",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Bushings & hardware"
@@ -1025,8 +933,6 @@
           "id": "suspension_non_factory_trim_suspension_bushing_limiters_of_any_material_note_points_27",
           "prompt": "Non-Factory Trim suspension bushing limiters of any material; note - points must also be taken for bushing material, if applicable",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B28",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Bushings & hardware"
@@ -1035,8 +941,6 @@
           "id": "suspension_removal_of_swaybars_28",
           "prompt": "Removal of swaybars",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B29",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Arms, links & alignment"
@@ -1045,8 +949,6 @@
           "id": "suspension_non_factory_trim_sway_bar_endlinks_29",
           "prompt": "Non-Factory Trim sway bar endlinks",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B30",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Arms, links & alignment"
@@ -1055,8 +957,6 @@
           "id": "suspension_non_factory_trim_eccentric_camber_bolts_30",
           "prompt": "Non-Factory Trim eccentric camber bolts",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B31",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Arms, links & alignment"
@@ -1065,8 +965,6 @@
           "id": "suspension_non_factory_trim_camber_adjusting_ball_joints_31",
           "prompt": "Non-Factory Trim camber adjusting ball joints",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B32",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Arms, links & alignment"
@@ -1075,8 +973,6 @@
           "id": "suspension_modified_steering_rack_from_power_assist_to_manual_or_manual_to_power_as_32",
           "prompt": "Modified steering rack from power assist to manual or manual to power assist",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B33",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Steering"
@@ -1085,8 +981,6 @@
           "id": "suspension_suspension_re_enforcement_provided_by_installation_of_roll_bar_or_roll_c_33",
           "prompt": "Suspension re-enforcement provided by installation of roll bar or roll cage that adheres to requirements listed in the Car Requirements section of the rules",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B34",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Other"
@@ -1095,8 +989,6 @@
           "id": "suspension_disabling_or_enabling_of_factory_trim_electronic_stability_control_syste_34",
           "prompt": "Disabling or enabling of Factory Trim Electronic Stability Control systems",
           "answerType": "boolean",
-          "sheetName": "Suspension",
-          "sourceRef": "Suspension!B35",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Other"
@@ -1106,15 +998,12 @@
     {
       "id": "brakes",
       "label": "Brakes",
-      "sheetName": "Brakes",
       "description": "Worksheet rows with Assessment → pointValue and Description → checkbox prompt (Brakes).",
       "questions": [
         {
           "id": "brakes_non_factory_trim_brake_calipers_drums_and_or_rotors_of_a_different_size__5",
           "prompt": "Non‐Factory Trim brake calipers, drums, and/or rotors of a different size ‐ front, rear or both",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B6",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Rotors/Pads/Shoes"
@@ -1123,8 +1012,6 @@
           "id": "brakes_non_factory_trim_modified_abs_e_g_bosch_motorsport_abs_6",
           "prompt": "Non-Factory Trim/modified ABS (e.g. Bosch Motorsport ABS)",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B7",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "ABS"
@@ -1133,8 +1020,6 @@
           "id": "brakes_disabling_any_and_all_factory_and_or_aftermarket_abs_or_competing_in_a_v_7",
           "prompt": "Disabling any and all factory and/or aftermarket ABS or competing in a vehicle not originally equipped with ABS",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B8",
           "pointValue": -1,
           "needsManualPoints": false,
           "subcategory": "ABS"
@@ -1143,8 +1028,6 @@
           "id": "brakes_non_factory_trim_rotors_of_the_same_type_and_shape_as_oem_8",
           "prompt": "Non-Factory Trim rotors of the same type and shape as OEM",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B9",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Rotors/Pads/Shoes"
@@ -1153,8 +1036,6 @@
           "id": "brakes_non_factory_trim_rotors_of_the_same_thickness_and_diameter_as_factory_tr_9",
           "prompt": "Non-Factory Trim rotors of the same thickness and diameter as Factory Trim, including swap from one-piece to two-piece rotors",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B10",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Rotors/Pads/Shoes"
@@ -1163,8 +1044,6 @@
           "id": "brakes_non_factory_trim_brake_pads_or_shoes_10",
           "prompt": "Non-Factory Trim brake pads or shoes",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B11",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Rotors/Pads/Shoes"
@@ -1173,8 +1052,6 @@
           "id": "brakes_non_factory_trim_modified_brake_lines_11",
           "prompt": "Non-Factory Trim/modified brake lines",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B12",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Rotors/Pads/Shoes"
@@ -1183,8 +1060,6 @@
           "id": "brakes_non_factory_trim_modified_brake_ducting_12",
           "prompt": "Non-Factory Trim/modified brake ducting",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B13",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Rotors/Pads/Shoes"
@@ -1193,8 +1068,6 @@
           "id": "brakes_enabling_or_use_of_factory_trim_abs_13",
           "prompt": "Enabling or use of Factory Trim ABS",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B14",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "ABS"
@@ -1203,8 +1076,6 @@
           "id": "brakes_non_factory_trim_drilled_or_slotted_rotors_of_the_same_shape_and_size_as_14",
           "prompt": "Non-Factory Trim drilled or slotted rotors of the same shape and size as OEM",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B15",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Rotors/Pads/Shoes"
@@ -1213,8 +1084,6 @@
           "id": "brakes_modified_re_located_or_non_factory_trim_brake_brakets_15",
           "prompt": "Modified, re-located, or non-Factory Trim brake brakets",
           "answerType": "boolean",
-          "sheetName": "Brakes",
-          "sourceRef": "Brakes!B16",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Other"
@@ -1224,15 +1093,12 @@
     {
       "id": "exterior",
       "label": "Exterior",
-      "sheetName": "Exterior",
       "description": "Worksheet rows with Assessment → pointValue and Description → checkbox prompt (Exterior).",
       "questions": [
         {
           "id": "exterior_non_factory_trim_modified_front_bumper_air_dam_spoiler_5",
           "prompt": "Non-Factory Trim/modified front bumper/air dam/spoiler",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B6",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Front aero"
@@ -1241,8 +1107,6 @@
           "id": "exterior_non_factory_trim_modified_front_splitter_in_addition_to_bumper_air_dam_s_6",
           "prompt": "Non-Factory Trim/modified front splitter, in addition to bumper/air dam/spoiler",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B7",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Front aero"
@@ -1251,8 +1115,6 @@
           "id": "exterior_non_factory_trim_modified_front_splitter_that_extends_more_than_3_5_inch_7",
           "prompt": "Non-Factory Trim/modified front splitter that extends more than 3.5 inches from front bumper skin leading edge, in addition to bumper/air dam/spoiler",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B8",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Front aero"
@@ -1261,8 +1123,6 @@
           "id": "exterior_non_factory_trim_modified_canards_each_set_assessed_points_front_or_rear_8",
           "prompt": "Non-Factory Trim/modified canards (each set assessed points front or rear)",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B9",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Front aero"
@@ -1271,8 +1131,6 @@
           "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including_any_airfoil_that_in_no_w_9",
           "prompt": "Non-Factory Trim Rear spoiler or wing including any airfoil that in no way protrudes more than 6” from the mounting location of the spoiler or wing, does not exceed the height of the vehicle, and does not extend beyond the width of the rear quarter panels.",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B10",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Rear aero"
@@ -1281,8 +1139,6 @@
           "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including_any_airfoil_that_does_no_10",
           "prompt": "Non-Factory Trim Rear spoiler or wing including any airfoil that does not exceed the height of the vehicle, does not extend beyond the width of the rear quarter panels, and does not extend no more than 6\" beyond the skin of the rear bumper",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B11",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Rear aero"
@@ -1291,8 +1147,6 @@
           "id": "exterior_non_factory_trim_rear_spoiler_or_wing_including_any_air_foil_of_any_size_11",
           "prompt": "Non-Factory Trim Rear spoiler or wing including any air foil of any size or shape",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B12",
           "pointValue": 3,
           "needsManualPoints": false,
           "subcategory": "Rear aero"
@@ -1301,8 +1155,6 @@
           "id": "exterior_non_factory_trim_hardtop_of_different_shape_and_size_which_alters_airflo_12",
           "prompt": "Non-Factory Trim hardtop of different shape and size which alters airflow aft of the OEM rear glass (eg CWest Honda S2000 aero hardtop)",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B13",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Body & panels"
@@ -1311,8 +1163,6 @@
           "id": "exterior_factory_trim_hardtop_or_non_factory_trim_hardtop_of_the_same_shape_and_s_13",
           "prompt": "Factory trim hardtop or Non-Factory Trim hardtop of the same shape and size of OEM hardtop",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B14",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Body & panels"
@@ -1321,8 +1171,6 @@
           "id": "exterior_non_factory_trim_modified_vortex_generator_to_roof_hardtop_rear_glass_or_14",
           "prompt": "Non-Factory Trim/modified vortex generator to roof, hardtop, rear glass or trunk",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B15",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Body & panels"
@@ -1331,8 +1179,6 @@
           "id": "exterior_non_factory_trim_modified_flat_bottom_15",
           "prompt": "Non-Factory Trim/modified flat bottom",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B16",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Other"
@@ -1341,8 +1187,6 @@
           "id": "exterior_non_factory_trim_modified_rear_diffuser_16",
           "prompt": "Non-Factory Trim/modified rear diffuser",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B17",
           "pointValue": 2,
           "needsManualPoints": false,
           "subcategory": "Rear aero"
@@ -1351,8 +1195,6 @@
           "id": "exterior_non_factory_trim_modified_side_skirts_17",
           "prompt": "Non-Factory Trim/modified side skirts",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B18",
           "pointValue": 1,
           "needsManualPoints": false,
           "subcategory": "Body & panels"
@@ -1361,8 +1203,6 @@
           "id": "exterior_non_factory_trim_active_aero_i_e_moveable_aero_devices_points_assessed_f_18",
           "prompt": "Non-factory trim Active aero, i.e. moveable aero devices; points assessed for each piece, in addition to assessment points listed above (set number of pieces below)",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B19",
           "pointValue": 4,
           "needsManualPoints": false,
           "subcategory": "Active aero & graphics"
@@ -1371,8 +1211,6 @@
           "id": "exterior_front_underbody_tray_that_does_not_extend_in_front_of_the_front_bumper_s_19",
           "prompt": "Front Underbody Tray that does not extend in front of the front bumper skin, beyond the width of the front quarter panels, or more than 18\" behind the front axle; note – points for front splitter, bumper, spoiler, air dam, and flat bottom assessed separately",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B20",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Front aero"
@@ -1381,8 +1219,6 @@
           "id": "exterior_non_factory_trim_modified_fenders_20",
           "prompt": "Non-Factory Trim/modified fenders",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B21",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Body & panels"
@@ -1391,8 +1227,6 @@
           "id": "exterior_non_factory_trim_modified_doors_21",
           "prompt": "Non-Factory Trim/modified doors",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B22",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Body & panels"
@@ -1401,8 +1235,6 @@
           "id": "exterior_non_factory_trim_modified_trunk_lid_22",
           "prompt": "Non-Factory Trim/modified trunk lid",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B23",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Body & panels"
@@ -1411,8 +1243,6 @@
           "id": "exterior_non_factory_trim_modified_rear_bumper_23",
           "prompt": "Non-Factory Trim/modified rear bumper",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B24",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Rear aero"
@@ -1421,8 +1251,6 @@
           "id": "exterior_non_factory_trim_modified_hood_24",
           "prompt": "Non-Factory Trim/modified hood",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B25",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Body & panels"
@@ -1431,8 +1259,6 @@
           "id": "exterior_1_com_supplied_sticker_on_each_side_of_the_vehicle_that_is_easily_visibl_25",
           "prompt": "1 COM supplied sticker on each side of the vehicle that is easily visible from the outside (2 stickers minimum)",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B26",
           "pointValue": -1,
           "needsManualPoints": false,
           "subcategory": "Active aero & graphics"
@@ -1441,8 +1267,6 @@
           "id": "exterior_non_factory_trim_active_aero_i_e_moveable_aero_devices_4_points_assessed_29",
           "prompt": "Non-factory trim Active aero, i.e. moveable aero devices; 4 points assessed for each piece, in addition to assessment points listed above",
           "answerType": "boolean",
-          "sheetName": "Exterior",
-          "sourceRef": "Exterior!B30",
           "pointValue": 0,
           "needsManualPoints": false,
           "subcategory": "Active aero & graphics"
@@ -1452,7 +1276,6 @@
     {
       "id": "weight",
       "label": "Weight",
-      "sheetName": "Weight",
       "description": "Weight worksheet uses a different layout than modification tables; keep structured weight fields.",
       "questions": [
         {
@@ -1460,8 +1283,6 @@
           "prompt": "Showroom base weight (lbs)",
           "subcategory": "Showroom",
           "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A8",
           "helpText": "Read-only summary at the top of this category; filled from your vehicle showroom catalog match.",
           "readOnly": true
         },
@@ -1470,8 +1291,6 @@
           "prompt": "Competition weight (lbs)",
           "subcategory": "Competition",
           "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A9",
           "numericOnly": true
         },
         {
@@ -1479,24 +1298,19 @@
           "prompt": "Ballast",
           "subcategory": "Ballast",
           "answerType": "boolean",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!Ballast",
           "helpText": "Check if you use ballast; then enter the amount below."
         },
         {
           "id": "weight_ballast",
           "prompt": "Ballast amount (lbs)",
           "subcategory": "Ballast",
-          "answerType": "number",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A17"
+          "answerType": "number"
         }
       ]
     },
     {
       "id": "tires",
       "label": "Tires",
-      "sheetName": "Tires",
       "description": "Tire class and model flow with assessment points on tire options.",
       "questions": [
         {
@@ -1504,8 +1318,6 @@
           "prompt": "Tire class",
           "subcategory": "Class & model",
           "answerType": "select",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A7",
           "options": [
             {
               "id": "non_dot_slick",
@@ -1526,8 +1338,6 @@
           "prompt": "Specific tire",
           "subcategory": "Class & model",
           "answerType": "select",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!B",
           "dependsOn": "tires_class",
           "optionsByParent": {
             "non_dot_slick": [
@@ -1587,17 +1397,13 @@
           "id": "tires_width_mm",
           "prompt": "Primary tire width (mm)",
           "subcategory": "Sizing",
-          "answerType": "number",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!C"
+          "answerType": "number"
         },
         {
           "id": "tires_points",
           "prompt": "Manual tire points (if assessment unclear)",
           "subcategory": "Manual points",
-          "answerType": "number",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!Assessment"
+          "answerType": "number"
         }
       ]
     }

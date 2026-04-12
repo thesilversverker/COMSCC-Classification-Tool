@@ -47,9 +47,7 @@ function buildQuestion(sheetName, rowIndex, row) {
   return {
     id,
     prompt,
-    answerType,
-    sheetName,
-    sourceRef: `${sheetName}!A${rowIndex + 1}`
+    answerType
   };
 }
 
@@ -80,7 +78,6 @@ function convertWorkbook() {
     categories.push({
       id: slugify(sheetName),
       label: sheetName,
-      sheetName,
       description: `Auto-imported MVP category from ${sheetName} sheet.`,
       questions
     });
@@ -88,8 +85,6 @@ function convertWorkbook() {
 
   const document = {
     schemaVersion: '1.0.0',
-    generatedAt: new Date().toISOString(),
-    sourceWorkbook: path.basename(workbookPath),
     categories
   };
 

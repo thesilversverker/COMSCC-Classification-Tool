@@ -34,7 +34,6 @@
     prompt: 'Showroom Assessment points (manual)',
     subcategory: 'Vehicle',
     answerType: 'number',
-    sheetName: 'Vehicles',
     needsManualPoints: true,
     helpText:
       'Enter the Showroom Assessment from the COMSCC workbook when your selection is not in the catalog or the catalog row has no numeric assessment.'

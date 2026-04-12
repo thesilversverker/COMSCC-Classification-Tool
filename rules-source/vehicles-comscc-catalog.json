@@ -1,12 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "sourceWorkbook": "COMSCC-template-placeholder",
   "comsccTemplate": {
-    "showroomBaseWeightLbs": 3000,
-    "factoryRatedHp": 250,
-    "factoryRatedTorqueLbFt": 210,
-    "suspIndex": 80,
-    "sourceRef": null
+    "showroomBaseWeightLbs": 8000,
+    "factoryRatedHp": 500,
+    "factoryRatedTorqueLbFt": 500,
+    "suspIndex": 100
   },
   "vehicleCatalog": [
     {
@@ -18,8 +16,18 @@
       "showroomBaseWeightLbs": 2623,
       "factoryRatedHp": 140,
       "factoryRatedTorqueLbFt": 126,
-      "suspIndex": 50,
-      "sourceRef": null
+      "suspIndex": 50
+    },
+    {
+      "vehicleMake": "Acura",
+      "vehicleModel": "Integra",
+      "vehicleTrim": "Type-R",
+      "vehicleYearBegin": 1995,
+      "vehicleYearEnd": 2001,
+      "showroomBaseWeightLbs": 2639,
+      "factoryRatedHp": 195,
+      "factoryRatedTorqueLbFt": 130,
+      "suspIndex": 70
     }
   ]
 }

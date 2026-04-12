@@ -41,8 +41,7 @@ function workbookRowToCatalogFields(o) {
     scaledWeightPerPower: numOrNull(o.scaledWeightPerPower),
     suspIndex: numOrNull(o.suspIndex),
     performanceAdjustment: numOrNull(o.performanceAdjustment),
-    showroomAssessment: numOrNull(o.showroomAssessment),
-    sourceRef: typeof o.sourceRef === 'string' ? o.sourceRef.trim() || null : null
+    showroomAssessment: numOrNull(o.showroomAssessment)
   };
 }
 
@@ -54,13 +53,11 @@ function workbookRowToCatalogFields(o) {
 function mergeScalarsForTemplate(template, override) {
   const t = template ?? {};
   const o = override ?? {};
-  const keys = ['showroomBaseWeightLbs', 'factoryRatedHp', 'factoryRatedTorqueLbFt', 'suspIndex', 'sourceRef'];
+  const keys = ['showroomBaseWeightLbs', 'factoryRatedHp', 'factoryRatedTorqueLbFt', 'suspIndex'];
   /** @type {Record<string, unknown>} */
   const out = { ...t };
   for (const k of keys) {
-    if (k === 'sourceRef') {
-      if (o[k] != null && o[k] !== '') out[k] = o[k];
-    } else if (typeof o[k] === 'number' && Number.isFinite(o[k])) {
+    if (typeof o[k] === 'number' && Number.isFinite(o[k])) {
       out[k] = o[k];
     }
   }
@@ -118,7 +115,6 @@ function buildCatalogRow(flatRow, comsccTemplate, overrideRows) {
     factoryRatedHp: numOrNull(mergedScalars.factoryRatedHp),
     factoryRatedTorqueLbFt: numOrNull(mergedScalars.factoryRatedTorqueLbFt),
     suspIndex: numOrNull(mergedScalars.suspIndex),
-    sourceRef: typeof mergedScalars.sourceRef === 'string' ? mergedScalars.sourceRef.trim() || null : null,
     powerBlend: derived.powerBlend,
     weightPerPower: derived.weightPerPower,
     scaledWeightPerPower: derived.scaledWeightPerPower,
@@ -160,12 +156,9 @@ function compose() {
 
   const outDoc = {
     schemaVersion: '1.0.0',
-    sourceWorkbook: comsccDoc.sourceWorkbook ?? vehiclesShell.sourceWorkbook ?? 'unknown',
-    generatedAt: new Date().toISOString(),
     category: {
       id: cat.id,
       label: cat.label,
-      sheetName: cat.sheetName,
       description: cat.description,
       questions: cat.questions ?? [],
       vehicleCatalog

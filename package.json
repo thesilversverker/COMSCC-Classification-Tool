@@ -14,6 +14,7 @@
     "data:extract-source": "node scripts/extract-workbook-to-source.mjs",
     "data:compose-vehicles": "node scripts/compose-vehicles-json.mjs",
     "data:build": "npm run data:compose-vehicles && node scripts/build-rules-bundle.mjs",
+    "data:strip-rules-metadata": "node scripts/strip-rules-source-metadata.mjs",
     "data:backfill-subcats": "node scripts/backfill-rules-source-subcategories.mjs",
     "data:sync": "npm run data:extract-source && npm run data:build"
   },

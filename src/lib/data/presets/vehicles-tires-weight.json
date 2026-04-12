@@ -4,7 +4,6 @@
     {
       "id": "weight",
       "label": "Weight",
-      "sheetName": "Weight",
       "description": "Weight worksheet uses a different layout than modification tables; keep structured weight fields.",
       "questions": [
         {
@@ -12,8 +11,6 @@
           "prompt": "Showroom base weight (lbs)",
           "subcategory": "Showroom",
           "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A8",
           "helpText": "Read-only summary at the top of this category; filled from your vehicle showroom catalog match.",
           "readOnly": true
         },
@@ -22,8 +19,6 @@
           "prompt": "Competition weight (lbs)",
           "subcategory": "Competition",
           "answerType": "text",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A9",
           "numericOnly": true
         },
         {
@@ -31,24 +26,19 @@
           "prompt": "Ballast",
           "subcategory": "Ballast",
           "answerType": "boolean",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!Ballast",
           "helpText": "Check if you use ballast; then enter the amount below."
         },
         {
           "id": "weight_ballast",
           "prompt": "Ballast amount (lbs)",
           "subcategory": "Ballast",
-          "answerType": "number",
-          "sheetName": "Weight",
-          "sourceRef": "Weight!A17"
+          "answerType": "number"
         }
       ]
     },
     {
       "id": "tires",
       "label": "Tires",
-      "sheetName": "Tires",
       "description": "Tire class and model flow with assessment points on tire options.",
       "questions": [
         {
@@ -56,12 +46,19 @@
           "prompt": "Tire class",
           "subcategory": "Class & model",
           "answerType": "select",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!A7",
           "options": [
-            { "id": "non_dot_slick", "label": "Non-DOT slick" },
-            { "id": "r_compound", "label": "R-compound" },
-            { "id": "street_200tw", "label": "200TW street tire" }
+            {
+              "id": "non_dot_slick",
+              "label": "Non-DOT slick"
+            },
+            {
+              "id": "r_compound",
+              "label": "R-compound"
+            },
+            {
+              "id": "street_200tw",
+              "label": "200TW street tire"
+            }
           ]
         },
         {
@@ -69,24 +66,58 @@
           "prompt": "Specific tire",
           "subcategory": "Class & model",
           "answerType": "select",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!B",
           "dependsOn": "tires_class",
           "optionsByParent": {
             "non_dot_slick": [
-              { "id": "hoosier_a8", "label": "Hoosier A8", "points": 11 },
-              { "id": "bfg_r1s", "label": "BFGoodrich R1-S", "points": 10 },
-              { "id": "goodyear_rs", "label": "Goodyear RS AC", "points": 10 }
+              {
+                "id": "hoosier_a8",
+                "label": "Hoosier A8",
+                "points": 11
+              },
+              {
+                "id": "bfg_r1s",
+                "label": "BFGoodrich R1-S",
+                "points": 10
+              },
+              {
+                "id": "goodyear_rs",
+                "label": "Goodyear RS AC",
+                "points": 10
+              }
             ],
             "r_compound": [
-              { "id": "hoosier_r7", "label": "Hoosier R7", "points": 6 },
-              { "id": "kumho_v700", "label": "Kumho Ecsta V700", "points": 6 },
-              { "id": "hankook_z214", "label": "Hankook Z214", "points": 6 }
+              {
+                "id": "hoosier_r7",
+                "label": "Hoosier R7",
+                "points": 6
+              },
+              {
+                "id": "kumho_v700",
+                "label": "Kumho Ecsta V700",
+                "points": 6
+              },
+              {
+                "id": "hankook_z214",
+                "label": "Hankook Z214",
+                "points": 6
+              }
             ],
             "street_200tw": [
-              { "id": "falken_rt660", "label": "Falken RT660", "points": -2.5 },
-              { "id": "bridgestone_re71rs", "label": "Bridgestone RE-71RS", "points": -1.5 },
-              { "id": "yokohama_a052", "label": "Yokohama A052", "points": -1.5 }
+              {
+                "id": "falken_rt660",
+                "label": "Falken RT660",
+                "points": -2.5
+              },
+              {
+                "id": "bridgestone_re71rs",
+                "label": "Bridgestone RE-71RS",
+                "points": -1.5
+              },
+              {
+                "id": "yokohama_a052",
+                "label": "Yokohama A052",
+                "points": -1.5
+              }
             ]
           }
         },
@@ -94,17 +125,13 @@
           "id": "tires_width_mm",
           "prompt": "Primary tire width (mm)",
           "subcategory": "Sizing",
-          "answerType": "number",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!C"
+          "answerType": "number"
         },
         {
           "id": "tires_points",
           "prompt": "Manual tire points (if assessment unclear)",
           "subcategory": "Manual points",
-          "answerType": "number",
-          "sheetName": "Tires",
-          "sourceRef": "Tires!Assessment"
+          "answerType": "number"
         }
       ]
     }
