@@ -24,6 +24,46 @@ function toNumeric(value: RuleAnswer): number {
   return 0;
 }
 
+const ENGINE_DYNO_TOGGLE_ID = 'dyno_reclass_selected';
+
+/** Mirrors +page engine manual trigger: any `needsManualPoints` engine line with a substantive answer forces dyno flow. */
+function engineManualSheetTrigger(questions: RuleQuestion[], answers: RuleAnswersByQuestionId): boolean {
+  for (const q of questions) {
+    if (q.id === ENGINE_DYNO_TOGGLE_ID) continue;
+    if (!q.needsManualPoints) continue;
+    if (questionHasSubstantiveAnswer(q, answers)) return true;
+  }
+  return false;
+}
+
+function questionHasSubstantiveAnswer(q: RuleQuestion, answers: RuleAnswersByQuestionId): boolean {
+  const value = answers[q.id];
+  const manual = answers[`${q.id}__manual`];
+  if (q.answerType === 'boolean') {
+    return value === true || (typeof manual === 'number' && Number.isFinite(manual));
+  }
+  if (q.answerType === 'number') {
+    return typeof value === 'number' && Number.isFinite(value);
+  }
+  if (q.answerType === 'select') {
+    return typeof value === 'string' && value.length > 0;
+  }
+  if (q.answerType === 'text') {
+    return typeof value === 'string' && value.trim().length > 0;
+  }
+  return false;
+}
+
+/** Dyno/custom power path: engine category total is dyno vs showroom only; sheet checkboxes are not summed. */
+function engineDynoSupersedesModificationPoints(
+  questions: RuleQuestion[],
+  answers: RuleAnswersByQuestionId
+): boolean {
+  const v = answers[ENGINE_DYNO_TOGGLE_ID];
+  if (v === 'yes' || v === true) return true;
+  return engineManualSheetTrigger(questions, answers);
+}
+
 function resolveSelectedOption(question: RuleQuestion, answers: RuleAnswersByQuestionId) {
   const selectedValue = answers[question.id];
   if (typeof selectedValue !== 'string' || selectedValue === '') {
@@ -39,6 +79,44 @@ function resolveSelectedOption(question: RuleQuestion, answers: RuleAnswersByQue
   }
 
   return (question.options ?? []).find((opt) => opt.id === selectedValue);
+}
+
+function addPointsFromQuestion(
+  total: number,
+  q: RuleQuestion,
+  answers: RuleAnswersByQuestionId
+): number {
+  let t = total;
+  if (q.answerType === 'boolean' && answers[q.id] === true) {
+    if (typeof q.pointValue === 'number') {
+      t += q.pointValue;
+    } else if (q.needsManualPoints) {
+      t += toNumeric(answers[`${q.id}__manual`] ?? 0);
+    }
+  }
+  if (q.answerType === 'select') {
+    const selectedOption = resolveSelectedOption(q, answers);
+    if (typeof selectedOption?.points === 'number') {
+      t += selectedOption.points;
+    }
+  }
+  if (q.id.endsWith('_points')) {
+    t += toNumeric(answers[q.id] ?? 0);
+  }
+  return t;
+}
+
+function sumPointsFromQuestions(
+  questions: RuleQuestion[],
+  answers: RuleAnswersByQuestionId,
+  skipQuestionIds?: ReadonlySet<string>
+): number {
+  let total = 0;
+  for (const q of questions) {
+    if (skipQuestionIds?.has(q.id)) continue;
+    total = addPointsFromQuestion(total, q, answers);
+  }
+  return total;
 }
 
 // Logical component: Vehicles category points = COMSCC catalog Showroom Assessment when matched, else manual entry.
@@ -57,61 +135,24 @@ export function computeCategoryPoints(category: RuleCategory, answers: RuleAnswe
   // Logical component: Weight = worksheet INT((scaledW/P+perf−showroom)×100)/100 from competition lbs + any checkbox/select points.
   if (category.id === 'weight') {
     const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_VEHICLE_CATALOG);
-    let total = computeWeightSheetPoints(toNumeric(answers.weight_competition), match);
-    for (const q of category.questions) {
-      if (q.answerType === 'boolean' && answers[q.id] === true) {
-        if (typeof q.pointValue === 'number') {
-          total += q.pointValue;
-        } else if (q.needsManualPoints) {
-          total += toNumeric(answers[`${q.id}__manual`] ?? 0);
-        }
-      }
-      if (q.answerType === 'select') {
-        const selectedOption = resolveSelectedOption(q, answers);
-        if (typeof selectedOption?.points === 'number') {
-          total += selectedOption.points;
-        }
-      }
-      if (q.id.endsWith('_points')) {
-        total += toNumeric(answers[q.id] ?? 0);
-      }
-    }
-    return total;
+    const base = computeWeightSheetPoints(toNumeric(answers.weight_competition), match);
+    return base + sumPointsFromQuestions(category.questions, answers);
   }
-  // Logical component: when Dyno Reclass is selected, Engine points = computed dyno vs showroom baseline (floor −2).
-  if (category.id === 'engine' && answers.dyno_reclass_selected === 'yes') {
-    const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_VEHICLE_CATALOG);
-    const computed = dynoPointsAboveBaseFromSession({
-      answers,
-      showroomBaseWeightLbs: match?.showroomBaseWeightLbs ?? null,
-      factoryRatedHp: match?.factoryRatedHp ?? null,
-      factoryRatedTorqueLbFt: match?.factoryRatedTorqueLbFt ?? null
-    });
-    return computed === null ? 0 : computed;
+  if (category.id === 'engine') {
+    if (engineDynoSupersedesModificationPoints(category.questions, answers)) {
+      const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_VEHICLE_CATALOG);
+      const computed = dynoPointsAboveBaseFromSession({
+        answers,
+        showroomBaseWeightLbs: match?.showroomBaseWeightLbs ?? null,
+        factoryRatedHp: match?.factoryRatedHp ?? null,
+        factoryRatedTorqueLbFt: match?.factoryRatedTorqueLbFt ?? null
+      });
+      return computed === null ? 0 : computed;
+    }
+    return sumPointsFromQuestions(category.questions, answers, new Set([ENGINE_DYNO_TOGGLE_ID]));
   }
 
-  let total = 0;
-  for (const q of category.questions) {
-    if (q.answerType === 'boolean' && answers[q.id] === true) {
-      if (typeof q.pointValue === 'number') {
-        total += q.pointValue;
-      } else if (q.needsManualPoints) {
-        total += toNumeric(answers[`${q.id}__manual`] ?? 0);
-      }
-    }
-
-    if (q.answerType === 'select') {
-      const selectedOption = resolveSelectedOption(q, answers);
-      if (typeof selectedOption?.points === 'number') {
-        total += selectedOption.points;
-      }
-    }
-
-    if (q.id.endsWith('_points')) {
-      total += toNumeric(answers[q.id] ?? 0);
-    }
-  }
-  return total;
+  return sumPointsFromQuestions(category.questions, answers);
 }
 
 export function computeAllCategoryPoints(

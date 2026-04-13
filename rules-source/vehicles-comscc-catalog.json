@@ -39,6 +39,39 @@
       "factoryRatedHp": 142,
       "factoryRatedTorqueLbFt": 127,
       "suspIndex": 70
+    },
+    {
+      "vehicleMake": "Audi",
+      "vehicleModel": "A4",
+      "vehicleTrim": "1.8T Quattro",
+      "vehicleYearBegin": 1996,
+      "vehicleYearEnd": 2001,
+      "showroomBaseWeightLbs": 3241,
+      "factoryRatedHp": 150,
+      "factoryRatedTorqueLbFt": 155,
+      "suspIndex": 60
+    },
+    {
+      "vehicleMake": "Audi",
+      "vehicleModel": "A4",
+      "vehicleTrim": "2.0T Quattro",
+      "vehicleYearBegin": 2005,
+      "vehicleYearEnd": 2005,
+      "showroomBaseWeightLbs": 3517,
+      "factoryRatedHp": 200,
+      "factoryRatedTorqueLbFt": 207,
+      "suspIndex": 60
+    },
+    {
+      "vehicleMake": "Audi",
+      "vehicleModel": "A4",
+      "vehicleTrim": "2.0T Quattro",
+      "vehicleYearBegin": 2006,
+      "vehicleYearEnd": 2008,
+      "showroomBaseWeightLbs": 3549,
+      "factoryRatedHp": 200,
+      "factoryRatedTorqueLbFt": 207,
+      "suspIndex": 60
     }
   ]
 }
