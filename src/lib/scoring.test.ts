@@ -61,11 +61,14 @@ describe('computeCategoryPoints engine', () => {
       dyno_drivetrain_type: '2wd',
       fake_ecu: true
     };
+    // Logical component: same showroom row fields as ACURA CL 1987 in vehicle-showroom-lookup.json.
     const expected = dynoPointsAboveBaseFromSession({
       answers,
-      showroomBaseWeightLbs: 8000,
+      showroomBaseWeightLbs: 1500,
       factoryRatedHp: 500,
-      factoryRatedTorqueLbFt: 500
+      factoryRatedTorqueLbFt: 500,
+      performanceAdjustment: 20,
+      showroomAssessment: 119.25
     });
     expect(expected).not.toBeNull();
     expect(computeCategoryPoints(engineCategoryFixture, answers)).toBe(expected);

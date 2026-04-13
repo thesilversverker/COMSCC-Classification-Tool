@@ -254,7 +254,7 @@
       <section class="question-stack">
         <p class="running-total">
           <strong>Running category total:</strong>
-          {category?.id === 'weight' ? currentCategoryTotal.toFixed(3) : currentCategoryTotal.toFixed(1)} points
+          {category?.id === 'weight' ? currentCategoryTotal.toFixed(2) : currentCategoryTotal.toFixed(1)} points
         </p>
 
         {#if category?.id === 'weight'}

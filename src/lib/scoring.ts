@@ -145,7 +145,9 @@ export function computeCategoryPoints(category: RuleCategory, answers: RuleAnswe
         answers,
         showroomBaseWeightLbs: match?.showroomBaseWeightLbs ?? null,
         factoryRatedHp: match?.factoryRatedHp ?? null,
-        factoryRatedTorqueLbFt: match?.factoryRatedTorqueLbFt ?? null
+        factoryRatedTorqueLbFt: match?.factoryRatedTorqueLbFt ?? null,
+        performanceAdjustment: match?.performanceAdjustment ?? null,
+        showroomAssessment: match?.showroomAssessment ?? null
       });
       return computed === null ? 0 : computed;
     }

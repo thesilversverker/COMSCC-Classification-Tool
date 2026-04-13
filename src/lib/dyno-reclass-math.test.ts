@@ -30,16 +30,18 @@ describe('dyno-reclass-math', () => {
     expect(v).toBeCloseTo(76.5, 5);
   });
 
-  it('matches workbook Audi A4 2.0T Quattro example (~44.3 pts)', () => {
+  it('matches workbook Audi A4 2.0T Quattro (DSC + PA − SA, INT, no floor)', () => {
     const sp = computeScaledPowerWheelHp(500, 255, dynoLossFraction('awd'));
     expect(sp).toBeCloseTo(498, 0);
     const pts = computeDynoPointsAboveBaseAssessment({
       showroomBaseWeightLbs: 3549,
       scaledPower: sp!,
       factoryRatedHp: 200,
-      factoryRatedTorqueLbFt: 207
+      factoryRatedTorqueLbFt: 207,
+      performanceAdjustment: 0,
+      showroomAssessment: 37.453459637561764
     });
-    expect(pts).toBeCloseTo(44.3, 1);
+    expect(pts).toBeCloseTo(44.25, 5);
   });
 
   it('returns null when scaled power or catalog fields are missing', () => {
@@ -63,7 +65,7 @@ describe('dyno-reclass-math', () => {
     expect(scaled).toBeCloseTo(200 / 0.87, 5);
   });
 
-  it('explainDynoPointsAboveBaseFromSession matches compute path and flags floor when raw < −2', () => {
+  it('explainDynoPointsAboveBaseFromSession matches compute path and flags floor when truncated < −2', () => {
     const answers = {
       dyno_peak_horsepower: 10,
       dyno_peak_torque_lbft: 10,
@@ -84,6 +86,6 @@ describe('dyno-reclass-math', () => {
     });
     expect(ex!.result).toBe(pts);
     expect(ex!.clampedToMinusTwo).toBe(true);
-    expect(formatDynoPointsAboveBaseExplanation(ex!)).toMatch(/result = max\(/);
+    expect(formatDynoPointsAboveBaseExplanation(ex!)).toMatch(/truncated = INT/);
   });
 });

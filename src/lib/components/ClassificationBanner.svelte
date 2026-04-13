@@ -62,7 +62,7 @@
       <li>
         <span class="cat-label">{cat.label}</span>
         <span class="cat-points">
-          {(categoryPoints[cat.id] ?? 0).toFixed(cat.id === 'weight' ? 3 : 1)} pts
+          {(categoryPoints[cat.id] ?? 0).toFixed(cat.id === 'weight' ? 2 : 1)} pts
         </span>
       </li>
     {/each}

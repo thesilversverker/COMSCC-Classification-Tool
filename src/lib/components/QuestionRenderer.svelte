@@ -90,7 +90,9 @@
           answers,
           showroomBaseWeightLbs: vehicleCatalogMatch?.showroomBaseWeightLbs ?? null,
           factoryRatedHp: vehicleCatalogMatch?.factoryRatedHp ?? null,
-          factoryRatedTorqueLbFt: vehicleCatalogMatch?.factoryRatedTorqueLbFt ?? null
+          factoryRatedTorqueLbFt: vehicleCatalogMatch?.factoryRatedTorqueLbFt ?? null,
+          performanceAdjustment: vehicleCatalogMatch?.performanceAdjustment ?? null,
+          showroomAssessment: vehicleCatalogMatch?.showroomAssessment ?? null
         })
       : null;
 

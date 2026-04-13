@@ -19,7 +19,7 @@
           aria-current={category.id === activeCategoryId ? 'page' : undefined}
         >
           <span>{category.label}</span>
-          <small>{(categoryPoints[category.id] ?? 0).toFixed(category.id === 'weight' ? 3 : 1)} pts</small>
+          <small>{(categoryPoints[category.id] ?? 0).toFixed(category.id === 'weight' ? 2 : 1)} pts</small>
         </button>
       </li>
     {/each}

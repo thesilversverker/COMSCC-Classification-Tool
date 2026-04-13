@@ -51,14 +51,18 @@ export function showroomCarScaledPowerFromCatalog(
 }
 
 /**
- * Excel: IF(ISNUMBER(A71), ((Car_Base_Weight/A71)*-4.25+112)-Car_Scaled_Power, "") with A71 = dyno scaled power,
- * Car_Scaled_Power = showroom 112−4.25×(W÷factory blend). Result clamped to ≥ −2.
+ * Dyno reclass engine points: same structure as the weight worksheet — dyno-based scaled W/P column
+ * plus performance adjustment minus showroom assessment, then hundredths truncated toward −∞ (Excel INT),
+ * then **only** if that value is below −2, pin to −2. When catalog has no showroom assessment, falls back
+ * to subtracting Car_Scaled_Power (112−4.25×W÷factory blend) only, matching the legacy single-line formula.
  */
 export function computeDynoPointsAboveBaseAssessment(input: {
   showroomBaseWeightLbs: number | null;
   scaledPower: number | null;
   factoryRatedHp: number | null;
   factoryRatedTorqueLbFt: number | null;
+  performanceAdjustment?: number | null;
+  showroomAssessment?: number | null;
 }): number | null {
   const w = input.showroomBaseWeightLbs;
   const sp = input.scaledPower;
@@ -77,10 +81,26 @@ export function computeDynoPointsAboveBaseAssessment(input: {
   ) {
     return null;
   }
+  // Logical component: scaled column using dyno scaled power (A71), same as (W÷SP)×(−4.25)+112.
+  const dynoScaledColumn = 112 - 4.25 * (w / sp);
+  if (!Number.isFinite(dynoScaledColumn)) return null;
+
+  const pa =
+    typeof input.performanceAdjustment === 'number' && Number.isFinite(input.performanceAdjustment)
+      ? input.performanceAdjustment
+      : 0;
+
   const carScaledPower = showroomCarScaledPowerFromCatalog(w, hp, tq);
   if (carScaledPower === null || !Number.isFinite(carScaledPower)) return null;
-  const raw = (w / sp) * -4.25 + 112 - carScaledPower;
-  return Math.max(-2, raw);
+
+  const bracket =
+    typeof input.showroomAssessment === 'number' && Number.isFinite(input.showroomAssessment)
+      ? dynoScaledColumn + pa - input.showroomAssessment
+      : dynoScaledColumn - carScaledPower;
+
+  if (!Number.isFinite(bracket)) return null;
+  const truncated = Math.floor(bracket * 100) / 100;
+  return truncated < -2 ? -2 : truncated;
 }
 
 /** Scaled wheel HP equivalent from session dyno measurement fields. */
@@ -97,29 +117,41 @@ export function dynoPointsAboveBaseFromSession(input: {
   showroomBaseWeightLbs: number | null;
   factoryRatedHp: number | null;
   factoryRatedTorqueLbFt: number | null;
+  performanceAdjustment?: number | null;
+  showroomAssessment?: number | null;
 }): number | null {
   const scaled = scaledPowerFromDynoAnswers(input.answers);
   return computeDynoPointsAboveBaseAssessment({
     showroomBaseWeightLbs: input.showroomBaseWeightLbs,
     scaledPower: scaled,
     factoryRatedHp: input.factoryRatedHp,
-    factoryRatedTorqueLbFt: input.factoryRatedTorqueLbFt
+    factoryRatedTorqueLbFt: input.factoryRatedTorqueLbFt,
+    performanceAdjustment: input.performanceAdjustment,
+    showroomAssessment: input.showroomAssessment
   });
 }
 
 /** Workbook-style breakdown for UI: same math as {@link computeDynoPointsAboveBaseAssessment}. */
 export type DynoPointsAboveBaseExplanation = {
   result: number;
-  raw: number;
+  /** Bracket before INT (dyno scaled column ± showroom path). */
+  bracket: number;
+  /** After INT(bracket×100)/100 (same convention as weight worksheet). */
+  truncatedBracket: number;
   scaledPower: number;
   showroomWeightLbs: number;
   factoryRatedHp: number;
   factoryRatedTorqueLbFt: number;
   factoryBlend: number;
-  /** Excel Car_Scaled_Power (showroom scaled W/P column). */
+  /** Car_Scaled_Power = 112−4.25×(W÷factory blend); used for fallback when no showroom assessment. */
   carScaledPower: number;
-  /** True when raw is below −2 so the published result is the −2 floor. */
+  dynoScaledColumn: number;
+  performanceAdjustment: number;
+  showroomAssessment: number | null;
+  /** True when truncated value is below −2 so the workbook floor of −2 pts applies. */
   clampedToMinusTwo: boolean;
+  /** When true, bracket used dynoScaledColumn − CSP (no catalog showroom row). */
+  usedCarScaledPowerFallback: boolean;
 };
 
 export function explainDynoPointsAboveBaseFromSession(input: {
@@ -127,6 +159,8 @@ export function explainDynoPointsAboveBaseFromSession(input: {
   showroomBaseWeightLbs: number | null;
   factoryRatedHp: number | null;
   factoryRatedTorqueLbFt: number | null;
+  performanceAdjustment?: number | null;
+  showroomAssessment?: number | null;
 }): DynoPointsAboveBaseExplanation | null {
   const scaled = scaledPowerFromDynoAnswers(input.answers);
   const w = input.showroomBaseWeightLbs;
@@ -150,42 +184,74 @@ export function explainDynoPointsAboveBaseFromSession(input: {
   if (carScaledPower === null || !Number.isFinite(carScaledPower)) {
     return null;
   }
-  const raw = (w / scaled) * -4.25 + 112 - carScaledPower;
-  const result = Math.max(-2, raw);
+  const dynoScaledColumn = 112 - 4.25 * (w / scaled);
+  if (!Number.isFinite(dynoScaledColumn)) return null;
+
+  const pa =
+    typeof input.performanceAdjustment === 'number' && Number.isFinite(input.performanceAdjustment)
+      ? input.performanceAdjustment
+      : 0;
+
+  const sa =
+    typeof input.showroomAssessment === 'number' && Number.isFinite(input.showroomAssessment)
+      ? input.showroomAssessment
+      : null;
+
+  const usedCarScaledPowerFallback = sa === null;
+  const bracket = usedCarScaledPowerFallback ? dynoScaledColumn - carScaledPower : dynoScaledColumn + pa - sa;
+  if (!Number.isFinite(bracket)) return null;
+  const truncatedBracket = Math.floor(bracket * 100) / 100;
+  const result = truncatedBracket < -2 ? -2 : truncatedBracket;
   return {
     result,
-    raw,
+    bracket,
+    truncatedBracket,
     scaledPower: scaled,
     showroomWeightLbs: w,
     factoryRatedHp: hp,
     factoryRatedTorqueLbFt: tq,
     factoryBlend,
     carScaledPower,
-    clampedToMinusTwo: raw < -2
+    dynoScaledColumn,
+    performanceAdjustment: pa,
+    showroomAssessment: sa,
+    clampedToMinusTwo: truncatedBracket < -2,
+    usedCarScaledPowerFallback
   };
 }
 
-/** Symbolic equation (matches {@link computeDynoPointsAboveBaseAssessment} / Excel). */
+/** Symbolic equation (matches {@link computeDynoPointsAboveBaseAssessment}). */
 export const DYNO_POINTS_ABOVE_BASE_SYMBOLIC =
-  'max(−2, ((W ÷ SP) × (−4.25) + 112) − CSP)  with  W = Car_Base_Weight (lbs),  SP = scaled dyno power (A71),  CSP = Car_Scaled_Power = 112 − 4.25×(W÷FB),  FB = (⅔)×catalog HP + (⅓)×catalog torque.';
+  'INT((DSC + PA − SA) × 100) / 100, then if that value < −2 use −2; else use that value.  DSC = 112 − 4.25×(W÷SP) with SP = dyno scaled power;  PA = catalog performance adjustment;  SA = catalog showroom assessment. If SA is missing, use DSC − CSP with CSP = 112 − 4.25×(W÷FB), FB = (⅔)×HP + (⅓)×torque.';
 
 export function formatDynoPointsAboveBaseExplanation(ex: DynoPointsAboveBaseExplanation): string {
   const sp = ex.scaledPower.toFixed(4);
   const fb = ex.factoryBlend.toFixed(4);
   const csp = ex.carScaledPower.toFixed(4);
-  const rawStr = ex.raw.toFixed(4);
+  const dsc = ex.dynoScaledColumn.toFixed(4);
+  const bracketStr = ex.bracket.toFixed(4);
+  const truncStr = ex.truncatedBracket.toFixed(2);
   const lines = [
     DYNO_POINTS_ABOVE_BASE_SYMBOLIC,
     '',
     'Substituted:',
-    `  SP = ${sp}   (from peak wheel HP / torque and drivetrain loss)`,
+    `  SP = ${sp}   (dyno scaled power)`,
+    `  DSC = 112 − 4.25×(${ex.showroomWeightLbs} ÷ ${sp}) = ${dsc}`,
     `  FB = ${fb}   (= (⅔)×${ex.factoryRatedHp} + (⅓)×${ex.factoryRatedTorqueLbFt})`,
-    `  CSP = 112 − 4.25×(${ex.showroomWeightLbs} ÷ ${fb}) = ${csp}`,
-    `  raw = ((${ex.showroomWeightLbs} ÷ ${sp}) × (−4.25) + 112) − ${csp} = ${rawStr}`,
-    `  result = max(−2, ${rawStr}) = ${ex.result.toFixed(2)}`
+    `  CSP = 112 − 4.25×(${ex.showroomWeightLbs} ÷ ${fb}) = ${csp}`
   ];
+  if (ex.usedCarScaledPowerFallback) {
+    lines.push(`  bracket = DSC − CSP = ${bracketStr}`);
+  } else {
+    lines.push(
+      `  PA = ${ex.performanceAdjustment}`,
+      `  SA = ${ex.showroomAssessment!.toFixed(4)}`,
+      `  bracket = DSC + PA − SA = ${bracketStr}`
+    );
+  }
+  lines.push(`  truncated = INT(bracket×100) / 100 = ${truncStr}`, `  result = ${ex.result.toFixed(2)} pts`);
   if (ex.clampedToMinusTwo) {
-    lines.push('', 'Raw is below −2, so the workbook floor of −2 pts applies.');
+    lines.push('', 'Truncated value is below −2, so the workbook floor of −2 pts applies.');
   }
   return lines.join('\n');
 }

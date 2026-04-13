@@ -561,7 +561,7 @@
           "pointValue": null,
           "needsManualPoints": false,
           "subcategory": "Calculation",
-          "helpText": "Excel: ((Car_Base_Weight ÷ dyno scaled power) × (−4.25) + 112) − Car_Scaled_Power, where Car_Scaled_Power = 112 − 4.25×(weight ÷ factory power blend). Minimum −2."
+          "helpText": "INT((dyno scaled column + performance adj − showroom assessment)×100)/100 with dyno column = 112−4.25×(weight÷dyno scaled power). If truncated value is below −2, use −2; otherwise use that value. Without showroom assessment, subtract Car_Scaled_Power (112−4.25×weight÷factory blend) instead."
         }
       ]
     },
