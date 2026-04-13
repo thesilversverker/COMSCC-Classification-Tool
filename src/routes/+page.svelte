@@ -123,8 +123,17 @@
       const subQs = qs.filter((q) => q.subcategory === key);
       return {
         key,
-        fixed: subQs.filter((q) => q.answerType === 'boolean' && typeof q.pointValue === 'number'),
-        variable: subQs.filter((q) => q.answerType === 'boolean' && typeof q.pointValue !== 'number'),
+        fixed: subQs.filter(
+          (q) =>
+            q.answerType === 'boolean' &&
+            typeof q.pointValue === 'number' &&
+            q.pointQuantityMultiplier !== true
+        ),
+        variable: subQs.filter(
+          (q) =>
+            q.answerType === 'boolean' &&
+            (typeof q.pointValue !== 'number' || q.pointQuantityMultiplier === true)
+        ),
         standard: subQs.filter((q) => q.answerType !== 'boolean')
       };
     });
@@ -157,9 +166,18 @@
       ? category.questions.find((q) => q.id === ENGINE_DYNO_TOGGLE_ID) ?? null
       : null;
   $: dynoQuestions = engineDynoQuestions(category);
+  // Logical component: dyno-only engine checkboxes (`dynoReclassTrigger`) or other manual-assessment lines enable the dyno block.
+  function engineQuestionTriggersDynoReclass(question: RuleQuestion, answers: Record<string, RuleAnswer>): boolean {
+    if (question.id === ENGINE_DYNO_TOGGLE_ID) return false;
+    if (question.answerType === 'boolean' && question.dynoReclassTrigger === true) {
+      return answers[question.id] === true;
+    }
+    return question.needsManualPoints === true && isQuestionUsedForAutoTrigger(question, answers);
+  }
+
   $: engineManualTrigger =
     category?.id === 'engine'
-      ? category.questions.some((q) => q.needsManualPoints && isQuestionUsedForAutoTrigger(q, $sessionStore.answers))
+      ? category.questions.some((q) => engineQuestionTriggersDynoReclass(q, $sessionStore.answers))
       : false;
   $: dynoToggleAnswer =
     typeof $sessionStore.answers[ENGINE_DYNO_TOGGLE_ID] === 'string'
@@ -339,10 +357,18 @@
               <QuestionRenderer
                 {question}
                 value={getRenderedValue(question.id)}
-                manualValue={$sessionStore.answers[`${question.id}__manual`] ?? null}
+                manualValue={
+                  question.pointQuantityMultiplier === true
+                    ? $sessionStore.answers[`${question.id}__quantity`] ?? null
+                    : $sessionStore.answers[`${question.id}__manual`] ?? null
+                }
                 answers={$sessionStore.answers}
                 onChange={(value) => handleQuestionChange(question.id, value)}
-                onManualChange={(value) => handleQuestionChange(`${question.id}__manual`, value)}
+                onManualChange={
+                  question.pointQuantityMultiplier === true
+                    ? (value) => handleQuestionChange(`${question.id}__quantity`, value)
+                    : (value) => handleQuestionChange(`${question.id}__manual`, value)
+                }
               />
             {/each}
             {#each block.standard as question (question.id)}

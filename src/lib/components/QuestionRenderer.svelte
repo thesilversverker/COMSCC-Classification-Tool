@@ -27,7 +27,16 @@
       : (question.options ?? []);
 
   function handleBooleanChange(event: Event) {
-    onChange((event.currentTarget as HTMLInputElement).checked);
+    const checked = (event.currentTarget as HTMLInputElement).checked;
+    onChange(checked);
+    // Logical component: per-piece exterior (etc.) defaults count to 1 on check, clears on uncheck.
+    if (question.pointQuantityMultiplier === true && onManualChange) {
+      if (!checked) onManualChange(null);
+      else {
+        const q = manualValue;
+        if (q === null || q === undefined || q === '') onManualChange(1);
+      }
+    }
   }
 
   function handleNumberChange(event: Event) {
@@ -57,13 +66,29 @@
     onManualChange(raw === '' ? null : Number(raw));
   }
 
+  function handlePieceCountChange(event: Event) {
+    if (!onManualChange) return;
+    const raw = (event.currentTarget as HTMLInputElement).value;
+    if (raw === '') {
+      onManualChange(null);
+      return;
+    }
+    const n = Number(raw);
+    if (!Number.isFinite(n)) return;
+    onManualChange(Math.max(0, Math.floor(n)));
+  }
+
   // Logical component: human-readable points suffix for checkbox items.
   $: pointsLabel =
-    typeof question.pointValue === 'number'
+    typeof question.pointValue === 'number' && question.pointQuantityMultiplier === true
+      ? `(+${question.pointValue} pts × piece count below)`
+      : typeof question.pointValue === 'number'
       ? `(${question.pointValue >= 0 ? '+' : ''}${question.pointValue} pts)`
-      : question.needsManualPoints
-        ? 'Dyno reclass required'
-        : '';
+      : question.dynoReclassTrigger === true
+        ? '(Dyno reclass required)'
+        : question.needsManualPoints
+          ? 'Dyno reclass required'
+          : '';
 
   // Logical component: formula display text for dyno-specific computed/info-only questions.
   $: formulaDisplay =
@@ -112,7 +137,20 @@
     {#if question.helpText}
       <p class="help">{question.helpText}</p>
     {/if}
-    {#if question.needsManualPoints && Boolean(value) && onManualChange}
+    {#if question.pointQuantityMultiplier === true && Boolean(value) && onManualChange}
+      <div class="piece-count-block">
+        <label>
+          Number of pieces (min 0; each counts +{typeof question.pointValue === 'number' ? question.pointValue : 0} pts)
+          <input
+            type="number"
+            min="0"
+            step="1"
+            value={typeof manualValue === 'number' && Number.isFinite(manualValue) ? Math.max(0, Math.floor(manualValue)) : 1}
+            on:input={handlePieceCountChange}
+          />
+        </label>
+      </div>
+    {:else if question.needsManualPoints && Boolean(value) && onManualChange}
       <div class="manual-points">
         <label>
           Points for this line
@@ -154,7 +192,9 @@
       >
         <option value="">Select an option</option>
         {#each resolvedOptions as option}
-          <option value={option.id}>{option.label}</option>
+          <option value={option.id}>
+            {option.label}{typeof option.utqg === 'number' ? ` — UTQG ${option.utqg}` : ''}
+          </option>
         {/each}
       </select>
     {:else if question.answerType === 'formula'}
@@ -232,16 +272,19 @@ Complete vehicle match (catalog weight + factory HP/torque) and dyno peak HP/tor
     font-size: 0.85rem;
     color: #666;
   }
-  .manual-points {
+  .manual-points,
+  .piece-count-block {
     margin: 0.5rem 0 0 1.5rem;
   }
-  .manual-points label {
+  .manual-points label,
+  .piece-count-block label {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
     font-size: 0.85rem;
   }
-  .manual-points input {
+  .manual-points input,
+  .piece-count-block input {
     max-width: 12rem;
     padding: 0.4rem 0.5rem;
     border: 1px solid #bbb;

@@ -13,7 +13,7 @@
         "pointValue": null,
         "needsManualPoints": false,
         "subcategory": "Dyno reclass",
-        "helpText": "Enable this when using dyno-based classing. It is auto-enabled when any manual-points engine item is selected.",
+        "helpText": "Enable this when using dyno-based classing. It is auto-enabled when any engine item marked “Dyno reclass required” is checked or another manual-assessment engine line is answered.",
         "options": [
           {
             "id": "yes",
@@ -148,8 +148,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Forced induction"
+        "needsManualPoints": false,
+        "subcategory": "Forced induction",
+        "dynoReclassTrigger": true
       },
       {
         "id": "modified_supercharger_pulley",
@@ -202,8 +203,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Engine internals"
+        "needsManualPoints": false,
+        "subcategory": "Engine internals",
+        "dynoReclassTrigger": true
       },
       {
         "id": "ported_or_polished_factory_cylinder_heads",
@@ -211,8 +213,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Engine internals"
+        "needsManualPoints": false,
+        "subcategory": "Engine internals",
+        "dynoReclassTrigger": true
       },
       {
         "id": "non_factory_cylinder_heads",
@@ -220,8 +223,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Engine internals"
+        "needsManualPoints": false,
+        "subcategory": "Engine internals",
+        "dynoReclassTrigger": true
       },
       {
         "id": "modified_engine_intake_exhaust_valves",
@@ -229,8 +233,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Engine internals"
+        "needsManualPoints": false,
+        "subcategory": "Engine internals",
+        "dynoReclassTrigger": true
       },
       {
         "id": "increased_displacement_more_than_1_percent",
@@ -238,8 +243,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Engine internals"
+        "needsManualPoints": false,
+        "subcategory": "Engine internals",
+        "dynoReclassTrigger": true
       },
       {
         "id": "increase_compression_ratio_half_point_or_less",
@@ -256,8 +262,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Engine internals"
+        "needsManualPoints": false,
+        "subcategory": "Engine internals",
+        "dynoReclassTrigger": true
       },
       {
         "id": "dry_sump_engine_oil_system",
@@ -337,8 +344,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Rotary-specific"
+        "needsManualPoints": false,
+        "subcategory": "Rotary-specific",
+        "dynoReclassTrigger": true
       },
       {
         "id": "bridge_port_rotary_engines",
@@ -346,8 +354,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Rotary-specific"
+        "needsManualPoints": false,
+        "subcategory": "Rotary-specific",
+        "dynoReclassTrigger": true
       },
       {
         "id": "peripheral_port_rotary_engines",
@@ -355,8 +364,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Rotary-specific"
+        "needsManualPoints": false,
+        "subcategory": "Rotary-specific",
+        "dynoReclassTrigger": true
       },
       {
         "id": "modified_pistons_and_rods",
@@ -364,8 +374,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Engine internals"
+        "needsManualPoints": false,
+        "subcategory": "Engine internals",
+        "dynoReclassTrigger": true
       },
       {
         "id": "tuned_for_ethanol_greater_than_15_percent",
@@ -373,8 +384,9 @@
         "answerType": "boolean",
         "category": "Engine",
         "pointValue": null,
-        "needsManualPoints": true,
-        "subcategory": "Fuel system"
+        "needsManualPoints": false,
+        "subcategory": "Fuel system",
+        "dynoReclassTrigger": true
       },
       {
         "id": "commercially_available_gasoline_or_diesel_fuel",

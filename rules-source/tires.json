@@ -1,363 +1,529 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
+  "tireCategories": [
+    {
+      "id": "non_dot_slick",
+      "label": "Non-DOT slick"
+    },
+    {
+      "id": "race_11",
+      "label": "Open competition (+11)"
+    },
+    {
+      "id": "race_10",
+      "label": "Sprint / wet / challenge (+10)"
+    },
+    {
+      "id": "race_7",
+      "label": "R-compound (+7)"
+    },
+    {
+      "id": "race_6",
+      "label": "R-compound & DOT-R (+6)"
+    },
+    {
+      "id": "race_2_5",
+      "label": "Track day (+2.5)"
+    },
+    {
+      "id": "race_0",
+      "label": "Street-legal max / trofeo (0)"
+    },
+    {
+      "id": "street_15",
+      "label": "200TW street (−1.5)"
+    },
+    {
+      "id": "street_25",
+      "label": "200TW street (−2.5)"
+    },
+    {
+      "id": "street_35",
+      "label": "200TW street (−3.5)"
+    },
+    {
+      "id": "street_5",
+      "label": "200TW street (−5)"
+    },
+    {
+      "id": "street_7",
+      "label": "200TW street (−7)"
+    }
+  ],
+  "tires": [
+    {
+      "tireName": "Non-DOT Slicks",
+      "score": 15,
+      "utqg": null,
+      "category": "non_dot_slick"
+    },
+    {
+      "tireName": "Hoosier A8",
+      "score": 11,
+      "utqg": null,
+      "category": "race_11"
+    },
+    {
+      "tireName": "BFGoodrich R1-S",
+      "score": 10,
+      "utqg": null,
+      "category": "race_10"
+    },
+    {
+      "tireName": "Continental Challenge Wets",
+      "score": 10,
+      "utqg": null,
+      "category": "race_10"
+    },
+    {
+      "tireName": "Goodyear RS AC",
+      "score": 10,
+      "utqg": null,
+      "category": "race_10"
+    },
+    {
+      "tireName": "Hankook C90",
+      "score": 10,
+      "utqg": null,
+      "category": "race_10"
+    },
+    {
+      "tireName": "Hankook C91",
+      "score": 10,
+      "utqg": null,
+      "category": "race_10"
+    },
+    {
+      "tireName": "Hankook C9",
+      "score": 10,
+      "utqg": null,
+      "category": "race_10"
+    },
+    {
+      "tireName": "Hoosier Radial Wet",
+      "score": 10,
+      "utqg": null,
+      "category": "race_10"
+    },
+    {
+      "tireName": "Hoosier A Compound",
+      "score": 10,
+      "utqg": null,
+      "category": "race_10"
+    },
+    {
+      "tireName": "Pirelli P-Zero Slick DH",
+      "score": 10,
+      "utqg": null,
+      "category": "race_10"
+    },
+    {
+      "tireName": "Hoosier R8",
+      "score": 7,
+      "utqg": null,
+      "category": "race_7"
+    },
+    {
+      "tireName": "Hoosier SMX",
+      "score": 7,
+      "utqg": null,
+      "category": "race_7"
+    },
+    {
+      "tireName": "Hankook C70",
+      "score": 6,
+      "utqg": null,
+      "category": "race_6"
+    },
+    {
+      "tireName": "Hankook C71",
+      "score": 6,
+      "utqg": null,
+      "category": "race_6"
+    },
+    {
+      "tireName": "Hankook C7",
+      "score": 6,
+      "utqg": null,
+      "category": "race_6"
+    },
+    {
+      "tireName": "Yokohama A055",
+      "score": 6,
+      "utqg": null,
+      "category": "race_6"
+    },
+    {
+      "tireName": "Goodyear Eagle RS",
+      "score": 6,
+      "utqg": null,
+      "category": "race_6"
+    },
+    {
+      "tireName": "Hoosier R7",
+      "score": 6,
+      "utqg": null,
+      "category": "race_6"
+    },
+    {
+      "tireName": "Hoosier SM7",
+      "score": 6,
+      "utqg": null,
+      "category": "race_6"
+    },
+    {
+      "tireName": "Hoosier SM7.5",
+      "score": 6,
+      "utqg": null,
+      "category": "race_6"
+    },
+    {
+      "tireName": "Kumho Ecsta V700",
+      "score": 6,
+      "utqg": 50,
+      "category": "race_6"
+    },
+    {
+      "tireName": "BFGoodrich R1",
+      "score": 6,
+      "utqg": null,
+      "category": "race_6"
+    },
+    {
+      "tireName": "Hankook Z214",
+      "score": 6,
+      "utqg": null,
+      "category": "race_6"
+    },
+    {
+      "tireName": "Continental Challenge Dry",
+      "score": 2.5,
+      "utqg": null,
+      "category": "race_2_5"
+    },
+    {
+      "tireName": "Hankook Z221 TD Soft",
+      "score": 2.5,
+      "utqg": null,
+      "category": "race_2_5"
+    },
+    {
+      "tireName": "Goodyear Supercar 3R",
+      "score": 0,
+      "utqg": 100,
+      "category": "race_0"
+    },
+    {
+      "tireName": "Federal FZ-201 Soft",
+      "score": 0,
+      "utqg": null,
+      "category": "race_0"
+    },
+    {
+      "tireName": "Hankook Z221 TD Hard",
+      "score": 0,
+      "utqg": null,
+      "category": "race_0"
+    },
+    {
+      "tireName": "Maxxis RC-1",
+      "score": 0,
+      "utqg": 100,
+      "category": "race_0"
+    },
+    {
+      "tireName": "Pirelli Trofeo R",
+      "score": 0,
+      "utqg": 60,
+      "category": "race_0"
+    },
+    {
+      "tireName": "Vitour Tempesta Sonic",
+      "score": 0,
+      "utqg": 200,
+      "category": "race_0"
+    },
+    {
+      "tireName": "Vitour Tempesta P1",
+      "score": -1.5,
+      "utqg": 200,
+      "category": "street_15"
+    },
+    {
+      "tireName": "Toyo R",
+      "score": -1.5,
+      "utqg": null,
+      "category": "street_15"
+    },
+    {
+      "tireName": "Hoosier Track Attack",
+      "score": -1.5,
+      "utqg": null,
+      "category": "street_15"
+    },
+    {
+      "tireName": "Falken RT660+",
+      "score": -1.5,
+      "utqg": 200,
+      "category": "street_15"
+    },
+    {
+      "tireName": "Bridgestone RE71RS",
+      "score": -1.5,
+      "utqg": 200,
+      "category": "street_15"
+    },
+    {
+      "tireName": "Bridgestone RE71RZ",
+      "score": -1.5,
+      "utqg": 200,
+      "category": "street_15"
+    },
+    {
+      "tireName": "Yokohama A052",
+      "score": -1.5,
+      "utqg": 200,
+      "category": "street_15"
+    },
+    {
+      "tireName": "Nankang CRS",
+      "score": -1.5,
+      "utqg": 200,
+      "category": "street_15"
+    },
+    {
+      "tireName": "Falken RT660",
+      "score": -2.5,
+      "utqg": 200,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Federal FZ-201 Medium",
+      "score": -2.5,
+      "utqg": null,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Yokohama Advan Apex",
+      "score": -2.5,
+      "utqg": 300,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Kumho V720",
+      "score": -2.5,
+      "utqg": 200,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Kumho V730",
+      "score": -2.5,
+      "utqg": 200,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Michelin Pilot Sport Cup 2",
+      "score": -2.5,
+      "utqg": 180,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Michelin Pilot Sport Cup 2R",
+      "score": -2.5,
+      "utqg": 180,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Nankang AR-1",
+      "score": -2.5,
+      "utqg": 80,
+      "category": "street_25"
+    },
+    {
+      "tireName": "BFGoodrich Rival S 1.5",
+      "score": -2.5,
+      "utqg": 200,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Toyo R888",
+      "score": -2.5,
+      "utqg": 100,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Toyo RA1",
+      "score": -2.5,
+      "utqg": 100,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Toyo RR",
+      "score": -2.5,
+      "utqg": null,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Maxxis VR2",
+      "score": -2.5,
+      "utqg": 200,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Yokohama A048",
+      "score": -2.5,
+      "utqg": 60,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Vitour Tempesta Enzo V01R",
+      "score": -2.5,
+      "utqg": 200,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Nexen Nfera Sport R",
+      "score": -2.5,
+      "utqg": 200,
+      "category": "street_25"
+    },
+    {
+      "tireName": "Toyo R888R",
+      "score": -3.5,
+      "utqg": 100,
+      "category": "street_35"
+    },
+    {
+      "tireName": "Dunlop Direzza ZIII",
+      "score": -3.5,
+      "utqg": 200,
+      "category": "street_35"
+    },
+    {
+      "tireName": "Nitto NT01",
+      "score": -3.5,
+      "utqg": 100,
+      "category": "street_35"
+    },
+    {
+      "tireName": "Federal 595RS-RR",
+      "score": -3.5,
+      "utqg": 200,
+      "category": "street_35"
+    },
+    {
+      "tireName": "Goodyear Supercar 3",
+      "score": -3.5,
+      "utqg": 220,
+      "category": "street_35"
+    },
+    {
+      "tireName": "Goodyear Supercar G2",
+      "score": -3.5,
+      "utqg": 220,
+      "category": "street_35"
+    },
+    {
+      "tireName": "Continental ECS 02",
+      "score": -3.5,
+      "utqg": 340,
+      "category": "street_35"
+    },
+    {
+      "tireName": "Toyo R1R",
+      "score": -3.5,
+      "utqg": 200,
+      "category": "street_35"
+    },
+    {
+      "tireName": "BFGoodrich Rival Plus",
+      "score": -3.5,
+      "utqg": 340,
+      "category": "street_35"
+    },
+    {
+      "tireName": "Bridgestone Potenza Race",
+      "score": -3.5,
+      "utqg": 200,
+      "category": "street_35"
+    },
+    {
+      "tireName": "Michelin Pilot Sport 4S",
+      "score": -5,
+      "utqg": 300,
+      "category": "street_5"
+    },
+    {
+      "tireName": "BFGoodrich Rival",
+      "score": -5,
+      "utqg": 340,
+      "category": "street_5"
+    },
+    {
+      "tireName": "Continental ExtremeContact Force",
+      "score": -5,
+      "utqg": 200,
+      "category": "street_5"
+    },
+    {
+      "tireName": "Falken RT615K+",
+      "score": -5,
+      "utqg": 200,
+      "category": "street_5"
+    },
+    {
+      "tireName": "Hankook RS4",
+      "score": -5,
+      "utqg": 200,
+      "category": "street_5"
+    },
+    {
+      "tireName": "Maxxis VR1",
+      "score": -5,
+      "utqg": 200,
+      "category": "street_5"
+    },
+    {
+      "tireName": "Cooper RS3-R",
+      "score": -7,
+      "utqg": 200,
+      "category": "street_7"
+    },
+    {
+      "tireName": "Cooper RS3-RS",
+      "score": -7,
+      "utqg": 200,
+      "category": "street_7"
+    },
+    {
+      "tireName": "Federal 595RS-R",
+      "score": -7,
+      "utqg": 240,
+      "category": "street_7"
+    },
+    {
+      "tireName": "Michelin Pilot Super Sport",
+      "score": -7,
+      "utqg": 300,
+      "category": "street_7"
+    }
+  ],
   "category": {
     "id": "tires",
     "label": "Tires",
-    "description": "Reference extraction for Tires (non-table layout).",
+    "description": "Tire class and model from COMSCC catalog (tireCategories + tires in rules-source/tires.json).",
     "questions": [
       {
-        "id": "tires_comscc_2027_v2_test_0",
-        "prompt": "COMSCC 2027 V2 TEST",
-        "answerType": "text",
-        "subcategory": "Class & model"
+        "id": "tires_width_mm",
+        "prompt": "Primary tire width (mm)",
+        "subcategory": "Sizing",
+        "answerType": "number"
       },
       {
-        "id": "tires_touring_class_summary_1",
-        "prompt": "Touring Class Summary",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_tires_reduction_worksheet_2",
-        "prompt": "Tires Reduction Worksheet",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_select_a_tire_and_enter_tire_width_information_in_the_yellow_cel_3",
-        "prompt": "Select a tire and enter tire width information in the yellow cells…",
-        "answerType": "select",
-        "subcategory": "Sizing"
-      },
-      {
-        "id": "tires_note_tire_softening_compounds_are_illegal_in_all_touring_classes_4",
-        "prompt": "Note: Tire softening compounds are illegal in all Touring classes",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_select_or_true_5",
-        "prompt": "Select or TRUE",
-        "answerType": "boolean",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_non_dot_slicks_except_where_noted_6",
-        "prompt": "Non-DOT Slicks (except where noted)",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hoosier_a8_7",
-        "prompt": "Hoosier A8",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_bfgoodrich_r1_s_g_force_slick_8",
-        "prompt": "BFGoodrich R1-S, g-force slick",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_continental_challenge_wets_9",
-        "prompt": "Continental Challenge Wets",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_goodyear_rs_ac_dot_radial_10",
-        "prompt": "Goodyear RS AC - \"dot radial\"",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hankook_c90_c91_c9_wets_11",
-        "prompt": "Hankook c90, c91,C9, Wets",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hoosier_radial_wets_h2o_smw_12",
-        "prompt": "Hoosier Radial Wets, H2O,SMW",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hoosier_a_compound_all_13",
-        "prompt": "Hoosier A Compound (All)",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_pirelli_p_zero_slick_dh_compound_only_14",
-        "prompt": "Pirelli P-Zero Slick ( DH Compound ONLY)",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hoosier_r8_15",
-        "prompt": "Hoosier R8",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hoosier_smx_16",
-        "prompt": "Hoosier SMX",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hankook_c70_c71_c7_17",
-        "prompt": "Hankook c70, c71, C7",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_yoko_a055_18",
-        "prompt": "Yoko A055",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_goodyear_eagle_rs_19",
-        "prompt": "Goodyear eagle RS",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hoosier_r7_sm7_sm7_5_compound_all_20",
-        "prompt": "Hoosier R7, SM7, SM7.5 compound (All)",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_kumho_ecsta_v700_21",
-        "prompt": "Kumho Ecsta V700",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_bfgoodrich_r1_22",
-        "prompt": "BFGoodrich R1",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hankook_z214_c50_c51_c5_23",
-        "prompt": "Hankook Z214 c50, c51, C5",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_dot_utqg_rating_41_120_unclassified_24",
-        "prompt": "DOT UTQG rating 41-120 (unclassified)",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_2_5_25",
-        "prompt": "2.5",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_goodyear_supercar_3r_27",
-        "prompt": "Goodyear Supercar 3R",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_federal_fz_201_soft_28",
-        "prompt": "Federal FZ-201 Soft",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hankook_z221_td_hard_c3_29",
-        "prompt": "Hankook z221 TD Hard/ C3",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_maxxis_victra_rc_1_r2_30",
-        "prompt": "Maxxis Victra RC-1 (R2)",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_pirelli_trofeo_r_31",
-        "prompt": "Pirelli Trofeo R",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_dot_utqg_rating_121_200_unclassified_32",
-        "prompt": "DOT UTQG rating 121-200 (unclassified)",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_vitour_tempesta_sonic_33",
-        "prompt": "VITOUR Tempesta Sonic",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_1_5_34",
-        "prompt": "-1.5",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_2_5_42",
-        "prompt": "-2.5",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_3_5_58",
-        "prompt": "-3.5",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_michelin_pilot_4s_68",
-        "prompt": "Michelin Pilot 4S",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_bf_goodrich_g_force_rival_69",
-        "prompt": "BF Goodrich g-Force Rival",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_continental_extremecontact_force_70",
-        "prompt": "Continental ExtremeContact Force",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_falken_azenis_rt615k_71",
-        "prompt": "Falken Azenis RT615K+",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_hankook_ventus_rs_4_72",
-        "prompt": "Hankook Ventus RS-4",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_maxxis_victra_vr_1_73",
-        "prompt": "Maxxis Victra VR-1",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_cooper_rs3_r_74",
-        "prompt": "Cooper RS3-R",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_cooper_rs3_rs_75",
-        "prompt": "Cooper RS3-RS",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_federal_595rs_r_76",
-        "prompt": "Federal 595RS-R",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_michelin_pilot_super_sport_pilot_spt_4s_77",
-        "prompt": "Michelin Pilot Super Sport, Pilot Spt 4S",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_pick_one_above_78",
-        "prompt": "Pick one above",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_proposed_class_80",
-        "prompt": "Proposed Class",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_intended_competition_class_81",
-        "prompt": "Intended Competition Class",
-        "answerType": "select",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_tire_width_front_82",
-        "prompt": "Tire Width Front",
-        "answerType": "number",
-        "subcategory": "Sizing"
-      },
-      {
-        "id": "tires_brand_83",
-        "prompt": "Brand",
-        "answerType": "number",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_difference_84",
-        "prompt": "Difference",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_tire_width_rear_85",
-        "prompt": "Tire Width Rear",
-        "answerType": "number",
-        "subcategory": "Sizing"
-      },
-      {
-        "id": "tires_average_width_86",
-        "prompt": "Average Width",
-        "answerType": "number",
-        "subcategory": "Sizing"
-      },
-      {
-        "id": "tires_assessment_87",
-        "prompt": "Assessment",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_total_tire_assessment_88",
-        "prompt": "Total Tire Assessment",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_go_to_previous_sheet_weight_reduction_89",
-        "prompt": "Go to previous sheet (Weight Reduction)",
-        "answerType": "number",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_t2_90",
-        "prompt": "T2",
-        "answerType": "text",
-        "subcategory": "Class & model"
-      },
-      {
-        "id": "tires_315_91",
-        "prompt": "315",
-        "answerType": "text",
-        "subcategory": "Class & model"
+        "id": "tires_points",
+        "prompt": "Manual tire points (if assessment unclear)",
+        "subcategory": "Manual points",
+        "answerType": "number"
       }
     ]
   }

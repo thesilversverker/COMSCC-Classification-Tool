@@ -36,11 +36,17 @@ function inferAnswerType(text) {
   return 'text';
 }
 
-function parseAssessment(cell) {
+function parseAssessment(cell, sheetName) {
   if (cell === null || cell === undefined) return { pointValue: null, needsManualPoints: false };
   const raw = String(cell).trim();
   if (raw === '') return { pointValue: null, needsManualPoints: false };
-  if (/^dyno$/i.test(raw)) return { pointValue: null, needsManualPoints: true };
+  if (/^dyno$/i.test(raw)) {
+    // Logical component: Engine workbook "Dyno" rows are checkbox-only dyno reclass triggers (no manual points field).
+    if (sheetName === 'Engine') {
+      return { pointValue: null, needsManualPoints: false, dynoReclassTrigger: true };
+    }
+    return { pointValue: null, needsManualPoints: true };
+  }
   const n = Number(raw);
   if (Number.isFinite(n)) return { pointValue: n, needsManualPoints: false };
   return { pointValue: null, needsManualPoints: true };
@@ -72,7 +78,7 @@ function buildCheckboxQuestion(sheetName, rowIndex, row) {
       : '';
   if (shouldSkipDescription(desc)) return null;
 
-  const { pointValue, needsManualPoints } = parseAssessment(colB);
+  const { pointValue, needsManualPoints, dynoReclassTrigger } = parseAssessment(colB, sheetName);
   const id = `${slugify(sheetName)}_${slugify(desc).slice(0, 72)}_${rowIndex}`;
 
   const categorySlug = slugify(sheetName);
@@ -83,6 +89,7 @@ function buildCheckboxQuestion(sheetName, rowIndex, row) {
     answerType: 'boolean',
     pointValue,
     needsManualPoints,
+    ...(dynoReclassTrigger ? { dynoReclassTrigger: true } : {}),
     subcategory: assignSubcategory(categorySlug, desc)
   };
 }

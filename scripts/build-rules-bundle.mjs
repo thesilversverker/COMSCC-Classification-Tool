@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { assignSubcategory } from './assign-subcategory.mjs';
 import { buildShowroomLookupRowsFromVehicleCatalog } from './build-showroom-lookup-rows.mjs';
 import { mergeStylesDirectoryIntoMakes } from './open-vehicle-merge.mjs';
+import { buildTiresCategoryFromDoc } from './build-tires-category.mjs';
 
 // Logical component: rules-source (vehicles.json with composed catalog) + preset + categories → src/lib/data (never writes rules-source except via compose script).
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -19,7 +20,7 @@ const OPEN_VEHICLE_STYLES_DIR = path.join(SOURCE_DIR, 'open-vehicle', 'styles');
 const OUTPUT_OPEN_VEHICLE_UI = path.join(repoRoot, 'src', 'lib', 'data', 'open-vehicle-makes-models.json');
 
 const CHECKBOX_CATEGORY_FILES = ['engine', 'drivetrain', 'suspension', 'brakes', 'exterior'];
-const PRESET_CATEGORY_ORDER = ['weight', 'tires'];
+const PRESET_CATEGORY_ORDER = ['weight'];
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -120,6 +121,14 @@ function buildBundle() {
     if (!cat) throw new Error(`Preset missing category: ${id}`);
     categories.push(withSubcategories(cat));
   }
+
+  // Logical component: tires category from rules-source/tires.json (tireCategories + tires[]).
+  const tiresPath = path.join(SOURCE_DIR, 'tires.json');
+  if (!fs.existsSync(tiresPath)) {
+    throw new Error(`Missing rules-source file: ${tiresPath}`);
+  }
+  const tiresDoc = readJson(tiresPath);
+  categories.push(withSubcategories(buildTiresCategoryFromDoc(tiresDoc)));
 
   const sourceWorkbook =
     readJson(path.join(SOURCE_DIR, 'index.json')).sourceWorkbook ?? 'unknown.xlsx';

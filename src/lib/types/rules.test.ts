@@ -32,6 +32,18 @@ describe('rules schema', () => {
     }
   });
 
+  it('builds tires from rules-source catalog (class → model options)', () => {
+    const doc = rules as RulesDocument;
+    const tires = doc.categories.find((c) => c.id === 'tires');
+    expect(tires).toBeDefined();
+    const model = tires?.questions.find((q) => q.id === 'tires_model');
+    expect(model?.optionsByParent?.race_10?.length).toBeGreaterThan(0);
+    const hoosier = model?.optionsByParent?.race_10?.find((o) => o.label === 'Hoosier A Compound');
+    expect(hoosier?.points).toBe(10);
+    expect(hoosier?.utqg).toBeNull();
+    expect(model?.optionsByParent?.race_6?.find((o) => o.label === 'Kumho Ecsta V700')?.utqg).toBe(50);
+  });
+
   // Logical component: vehicles.json is composed (open-vehicle + styles + COMSCC template/overrides).
   it('vehicles rules-source includes composed vehicleCatalog', () => {
     const cat = vehiclesSource.category as { id: string; vehicleCatalog?: unknown[] };

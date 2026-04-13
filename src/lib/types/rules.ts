@@ -5,6 +5,8 @@ export interface RuleOption {
   id: string;
   label: string;
   points?: number;
+  /** Tires catalog: UTQG treadwear when applicable (null = not listed / N/A). */
+  utqg?: number | null;
 }
 
 export interface RuleQuestion {
@@ -27,8 +29,12 @@ export interface RuleQuestion {
   readOnly?: boolean;
   /** Assessed points when this checkbox is selected (null if user must enter manually). */
   pointValue?: number | null;
+  /** When true with a numeric pointValue, points = pointValue × piece count (`{id}__quantity`, default 1, min 0). */
+  pointQuantityMultiplier?: boolean;
   /** When true, show a numeric field for points if workbook assessment is non-numeric (e.g. Dyno). */
   needsManualPoints?: boolean;
+  /** Engine-only: checking this boolean enables dyno reclass (no manual points); points come from the dyno worksheet. */
+  dynoReclassTrigger?: boolean;
 }
 
 /** Merged open-vehicle-db row + optional COMSCC workbook enrichment. */

@@ -91,4 +91,69 @@ describe('computeCategoryPoints engine', () => {
       })
     ).toBe(0);
   });
+
+  it('uses dyno-only path when a dynoReclassTrigger checkbox is checked (checkbox mods not summed)', () => {
+    const dynoCheckboxOnly: RuleCategory = {
+      id: 'engine',
+      label: 'Engine',
+      questions: [
+        dynoToggleQuestion,
+        fixedEngineMod,
+        {
+          id: 'fake_big_turbo',
+          prompt: 'Big turbo',
+          subcategory: 'Forced induction',
+          answerType: 'boolean',
+          pointValue: null,
+          needsManualPoints: false,
+          dynoReclassTrigger: true
+        }
+      ]
+    };
+    expect(
+      computeCategoryPoints(dynoCheckboxOnly, {
+        dyno_reclass_selected: 'no',
+        fake_ecu: true,
+        fake_big_turbo: true
+      })
+    ).toBe(0);
+  });
+});
+
+describe('computeCategoryPoints exterior', () => {
+  const activeAeroQuestion: RuleQuestion = {
+    id: 'exterior_active_aero_test',
+    prompt: 'Active aero test',
+    subcategory: 'Active aero & graphics',
+    answerType: 'boolean',
+    pointValue: 4,
+    needsManualPoints: false,
+    pointQuantityMultiplier: true
+  };
+
+  const exteriorFixture: RuleCategory = {
+    id: 'exterior',
+    label: 'Exterior',
+    questions: [activeAeroQuestion]
+  };
+
+  it('multiplies pointValue by piece count when checked (default 1 if quantity unset)', () => {
+    expect(
+      computeCategoryPoints(exteriorFixture, {
+        exterior_active_aero_test: true
+      })
+    ).toBe(4);
+    expect(
+      computeCategoryPoints(exteriorFixture, {
+        exterior_active_aero_test: true,
+        exterior_active_aero_test__quantity: 3
+      })
+    ).toBe(12);
+    expect(
+      computeCategoryPoints(exteriorFixture, {
+        exterior_active_aero_test: true,
+        exterior_active_aero_test__quantity: 0
+      })
+    ).toBe(0);
+  });
 });

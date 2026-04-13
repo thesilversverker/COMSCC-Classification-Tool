@@ -26,10 +26,11 @@ function toNumeric(value: RuleAnswer): number {
 
 const ENGINE_DYNO_TOGGLE_ID = 'dyno_reclass_selected';
 
-/** Mirrors +page engine manual trigger: any `needsManualPoints` engine line with a substantive answer forces dyno flow. */
+/** Mirrors +page engine dyno trigger: dyno-only checkboxes, or any `needsManualPoints` line with a substantive answer. */
 function engineManualSheetTrigger(questions: RuleQuestion[], answers: RuleAnswersByQuestionId): boolean {
   for (const q of questions) {
     if (q.id === ENGINE_DYNO_TOGGLE_ID) continue;
+    if (q.answerType === 'boolean' && q.dynoReclassTrigger === true && answers[q.id] === true) return true;
     if (!q.needsManualPoints) continue;
     if (questionHasSubstantiveAnswer(q, answers)) return true;
   }
@@ -88,7 +89,14 @@ function addPointsFromQuestion(
 ): number {
   let t = total;
   if (q.answerType === 'boolean' && answers[q.id] === true) {
-    if (typeof q.pointValue === 'number') {
+    if (q.pointQuantityMultiplier === true && typeof q.pointValue === 'number') {
+      const qtyRaw = answers[`${q.id}__quantity`];
+      const qty =
+        typeof qtyRaw === 'number' && Number.isFinite(qtyRaw)
+          ? Math.max(0, Math.floor(qtyRaw))
+          : 1;
+      t += q.pointValue * qty;
+    } else if (typeof q.pointValue === 'number') {
       t += q.pointValue;
     } else if (q.needsManualPoints) {
       t += toNumeric(answers[`${q.id}__manual`] ?? 0);

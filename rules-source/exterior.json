@@ -115,6 +115,7 @@
         "answerType": "boolean",
         "pointValue": 4,
         "needsManualPoints": false,
+        "pointQuantityMultiplier": true,
         "subcategory": "Active aero & graphics"
       },
       {
@@ -170,14 +171,6 @@
         "prompt": "1 COM supplied sticker on each side of the vehicle that is easily visible from the outside (2 stickers minimum)",
         "answerType": "boolean",
         "pointValue": -1,
-        "needsManualPoints": false,
-        "subcategory": "Active aero & graphics"
-      },
-      {
-        "id": "exterior_non_factory_trim_active_aero_i_e_moveable_aero_devices_4_points_assessed_29",
-        "prompt": "Non-factory trim Active aero, i.e. moveable aero devices; 4 points assessed for each piece, in addition to assessment points listed above",
-        "answerType": "boolean",
-        "pointValue": 0,
         "needsManualPoints": false,
         "subcategory": "Active aero & graphics"
       }
