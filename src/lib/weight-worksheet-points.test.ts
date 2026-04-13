@@ -40,4 +40,13 @@ describe('computeWeightSheetPoints', () => {
   it('matches sheet at ~39 lb under showroom (Integra-like catalog)', () => {
     expect(computeWeightSheetPoints(2584, integraLikeCatalog)).toBe(1.22);
   });
+
+  it('floors competition weight to hundredths before computing points', () => {
+    const w = 2584.999;
+    const floored = Math.floor(w * 100) / 100;
+    expect(floored).toBe(2584.99);
+    expect(computeWeightSheetPoints(w, integraLikeCatalog)).toBe(
+      computeWeightSheetPoints(floored, integraLikeCatalog)
+    );
+  });
 });

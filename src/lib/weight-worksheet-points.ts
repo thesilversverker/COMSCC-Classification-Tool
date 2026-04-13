@@ -17,15 +17,19 @@ function powerBlendFromCatalog(catalog: WeightCatalogInput): number | null {
 }
 
 /**
- * Workbook: INT(((Competition/(2/3*HP+1/3*Tq))*-4.25+112+PerfAdj−ShowroomPoints)*100)/100
- * — i.e. `scaledWeightPerPower` from **competition** weight, plus performance adjustment, minus showroom
- * assessment, truncated to hundredths (Excel INT toward −∞ on the ×100 product).
+ * Workbook: competition lbs truncated to hundredths (⌊lbs×100⌋/100), then
+ * INT(((Competition/(2/3*HP+1/3*Tq))*-4.25+112+PerfAdj−ShowroomPoints)*100)/100
+ * — i.e. `scaledWeightPerPower` from that weight, plus performance adjustment, minus showroom assessment,
+ * truncated to hundredths (Excel INT toward −∞ on the ×100 product).
  */
 export function computeWeightSheetPoints(
   competitionWeightLbs: number,
   catalog: WeightCatalogInput | null | undefined
 ): number {
   if (!Number.isFinite(competitionWeightLbs) || competitionWeightLbs <= 0) return 0;
+  // Logical component: competition weight (lbs) truncated toward −∞ to hundredths before W/P math.
+  const competitionLbsFloored = Math.floor(competitionWeightLbs * 100) / 100;
+  if (competitionLbsFloored <= 0) return 0;
   if (!catalog) return 0;
   const pa = catalog.performanceAdjustment;
   const sa = catalog.showroomAssessment;
@@ -35,7 +39,7 @@ export function computeWeightSheetPoints(
   const powerBlend = powerBlendFromCatalog(catalog);
   if (powerBlend === null) return 0;
 
-  const weightPerPowerComp = competitionWeightLbs / powerBlend;
+  const weightPerPowerComp = competitionLbsFloored / powerBlend;
   const scaledWeightPerPowerComp = 112 - 4.25 * weightPerPowerComp;
   if (!Number.isFinite(scaledWeightPerPowerComp)) return 0;
 
