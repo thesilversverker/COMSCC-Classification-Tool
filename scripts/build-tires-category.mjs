@@ -58,6 +58,12 @@ export function buildTiresCategoryFromDoc(doc) {
     optionsByParent[category].push(opt);
   }
 
+  // Logical component: stable A–Z order for the specific-tire dropdown per class.
+  const collator = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
+  for (const arr of Object.values(optionsByParent)) {
+    arr.sort((a, b) => collator.compare(a.label, b.label));
+  }
+
   const tail = Array.isArray(catBlock.questions) ? catBlock.questions : [];
 
   return {

@@ -38,16 +38,18 @@ describe('rules schema', () => {
     expect(tires).toBeDefined();
     const model = tires?.questions.find((q) => q.id === 'tires_model');
     expect(model?.optionsByParent?.budget_unclassed?.length).toBeGreaterThan(0);
-    const hoosier = model?.optionsByParent?.budget_unclassed?.find((o) => o.label === 'Hoosier A Compound');
-    expect(hoosier?.points).toBe(10);
-    expect(hoosier?.utqg).toBeNull();
-    expect(model?.optionsByParent?.budget_unclassed?.find((o) => o.label === 'Kumho Ecsta V700')?.utqg).toBe(50);
+    const hoosierA = model?.optionsByParent?.r_comps?.find((o) => o.label === 'Hoosier A Compound (All)');
+    expect(hoosierA?.points).toBe(10);
+    expect(hoosierA?.utqg).toBeNull();
+    expect(
+      model?.optionsByParent?.street_legal_track?.find((o) => o.label === 'Kumho Ecsta V700')?.utqg
+    ).toBe(50);
     expect(model?.optionsByParent?.r_comps?.find((o) => o.label === 'Hoosier R7')?.points).toBe(6);
   });
 
   // Logical component: vehicles.json is composed (open-vehicle + styles + COMSCC template/overrides).
   it('vehicles rules-source includes composed vehicleCatalog', () => {
-    const cat = vehiclesSource.category as { id: string; vehicleCatalog?: unknown[] };
+    const cat = (vehiclesSource as { category: { id: string; vehicleCatalog?: unknown[] } }).category;
     expect(cat.id).toBe('vehicles');
     expect(Array.isArray(cat.vehicleCatalog)).toBe(true);
     expect((cat.vehicleCatalog ?? []).length).toBeGreaterThan(5000);
