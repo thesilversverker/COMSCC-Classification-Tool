@@ -2,6 +2,8 @@
   import rulesJson from '$data/rules.v1.json';
   import openVehicleMakesModels from '$data/open-vehicle-makes-models.json';
   import showroomLookup from '$data/vehicle-showroom-lookup.json';
+  import comsccCatalogJson from '../../rules-source/vehicles-comscc-catalog.json';
+  import type { ComsccCatalogSeedRow } from '$lib/comscc-catalog-trims';
   import CategoryNav from '$components/CategoryNav.svelte';
   import ClassificationBanner from '$components/ClassificationBanner.svelte';
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
@@ -16,6 +18,11 @@
 
   // Logical component: COMSCC showroom rows + open-vehicle-db make/model tree for the Vehicles picker.
   const SHOWROOM_ROWS = (showroomLookup as { rows: ShowroomLookupRow[] }).rows;
+  const COMSCC_VEHICLE_CATALOG: ComsccCatalogSeedRow[] = Array.isArray(
+    (comsccCatalogJson as { vehicleCatalog?: unknown }).vehicleCatalog
+  )
+    ? (comsccCatalogJson as { vehicleCatalog: ComsccCatalogSeedRow[] }).vehicleCatalog
+    : [];
   type OpenDbMake = {
     make_slug: string;
     make_name: string;
@@ -134,7 +141,11 @@
   $: categoryPointsById = computeAllCategoryPoints(rules.categories, $sessionStore.answers);
   $: currentCategoryTotal = category ? (categoryPointsById[category.id] ?? 0) : 0;
   $: subcategoryBlocks = category ? buildSubcategoryBlocks(category, $sessionStore.answers) : [];
-  $: vehicleCatalogMatch = findShowroomCatalogMatch($sessionStore.answers, SHOWROOM_ROWS);
+  $: vehicleCatalogMatch = findShowroomCatalogMatch(
+    $sessionStore.answers,
+    SHOWROOM_ROWS,
+    COMSCC_VEHICLE_CATALOG
+  );
   $: showroomWeightValue =
     vehicleCatalogMatch?.showroomBaseWeightLbs != null
       ? String(vehicleCatalogMatch.showroomBaseWeightLbs)
@@ -265,6 +276,7 @@
         {#if category?.id === 'vehicles'}
           <VehiclesPicker
             openMakesModels={openVehicleData}
+            comsccVehicleCatalog={COMSCC_VEHICLE_CATALOG}
             showroomRows={SHOWROOM_ROWS}
             answers={$sessionStore.answers}
             onAnswer={handleQuestionChange}

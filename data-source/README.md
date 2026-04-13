@@ -1,23 +1,3 @@
-# Workbook Data Source
-
-## Source file
-
-- Default workbook path used by scripts:
-  - `/home/sysadmin/Downloads/COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx`
-
-## Commands
-
-### Legacy full-sheet converter (optional)
-
-- Run `npm run data:convert`
-- Optional explicit workbook path:
-  - `npm run data:convert -- "/absolute/path/to/workbook.xlsx"`
-
-### Extract `rules-source/` from the workbook
-
-- Run `npm run data:extract-source`
-- Optional explicit workbook path:
-  - `npm run data:extract-source -- "/absolute/path/to/workbook.xlsx"`
 
 ### Build the app bundle (`rules.v1.json`)
 
@@ -39,4 +19,5 @@
 
 - Modification worksheets use **column B = Assessment**, **column C = Description**; each row becomes a checkbox question with `pointValue` when the assessment is numeric, or `needsManualPoints` when it is non-numeric (for example **Dyno**).
 - Vehicles, Weight, and Tires use different table layouts; their UI is maintained in the preset JSON file above.
+- **Vehicle trims / styles:** `npm run data:compose-vehicles` runs `scripts/generate-open-vehicle-styles-from-comscc-catalog.mjs`, which builds `rules-source/open-vehicle/styles/{make_slug}.json` from **named** `vehicleTrim` rows in `rules-source/vehicles-comscc-catalog.json` (year ranges merged per trim). The app picker uses Make → Model → Year first; a trim control appears only when that catalog lists named trims for the selected year (or Base + named when a null-trim row also applies).
 - GitHub Actions runs `npm run data:build` only; commit updated `rules-source/` and/or the preset when rule data changes.

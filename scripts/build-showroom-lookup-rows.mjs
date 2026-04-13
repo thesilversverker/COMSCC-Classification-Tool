@@ -109,15 +109,13 @@ export function flattenOpenDb(openDb) {
           });
         }
       } else {
-        // Logical component: years covered by at least one style — also emit base (`trimKey` null) rows for other model years so trims do not erase the rest of the year list.
-        const yearsFromStyles = new Set();
+        // Logical component: named style rows plus one base (`trimKey` null) row per model year for catalog rows without a named trim.
         for (const sk of styleKeys) {
           const st = styles[sk];
           const ys =
             Array.isArray(st?.years) && st.years.length > 0 ? st.years : model.years ?? [];
           for (const year of ys) {
             if (typeof year !== 'number') continue;
-            yearsFromStyles.add(year);
             out.push({
               makeSlug,
               makeName,
@@ -129,9 +127,9 @@ export function flattenOpenDb(openDb) {
             });
           }
         }
+        // Logical component: one base (`trimKey` null) row per model year whenever styles exist — overlaps named trims so Base vs Type-R both resolve in lookup.
         for (const year of model.years ?? []) {
           if (typeof year !== 'number') continue;
-          if (yearsFromStyles.has(year)) continue;
           out.push({
             makeSlug,
             makeName,

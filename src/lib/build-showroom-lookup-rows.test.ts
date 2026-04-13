@@ -80,6 +80,12 @@ describe('flattenOpenDb', () => {
       }
     ]);
     const keys = flat.map((r) => `${r.year}:${r.trimKey ?? 'base'}`).sort();
-    expect(keys).toEqual(['1994:base', '1995:Type-R', '1996:Type-R']);
+    expect(keys).toEqual([
+      '1994:base',
+      '1995:Type-R',
+      '1995:base',
+      '1996:Type-R',
+      '1996:base'
+    ]);
   });
 });

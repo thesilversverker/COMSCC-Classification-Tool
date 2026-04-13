@@ -28,6 +28,17 @@
       "factoryRatedHp": 195,
       "factoryRatedTorqueLbFt": 130,
       "suspIndex": 70
+    },
+    {
+      "vehicleMake": "Acura",
+      "vehicleModel": "Integra",
+      "vehicleTrim": null,
+      "vehicleYearBegin": 1994,
+      "vehicleYearEnd": 2001,
+      "showroomBaseWeightLbs": 2643,
+      "factoryRatedHp": 142,
+      "factoryRatedTorqueLbFt": 127,
+      "suspIndex": 70
     }
   ]
 }

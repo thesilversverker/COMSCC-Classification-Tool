@@ -1,4 +1,9 @@
 // Logical component: match session vehicle picks to merged vehicle catalog lookup rows.
+import {
+  comsccTrimChoicesForYear,
+  COMSCC_TRIM_BASE_SENTINEL,
+  type ComsccCatalogSeedRow
+} from '$lib/comscc-catalog-trims';
 import type { RuleAnswersByQuestionId } from '$types/rules';
 
 export type ShowroomLookupRow = {
@@ -29,14 +34,19 @@ export function normVehicleToken(s: string): string {
 
 function trimFromAnswers(answers: RuleAnswersByQuestionId): string | null {
   const t = answers.vehicles_trim_key;
+  if (t === COMSCC_TRIM_BASE_SENTINEL) return null;
   if (typeof t !== 'string' || t === '') return null;
   return t;
 }
 
-/** Exact match on make, model, year, and trim (both sides null or same string). */
+/**
+ * Exact match on make, model, year, and trim (both sides null or same string).
+ * @param comsccVehicleCatalog optional `vehicles-comscc-catalog.json` `vehicleCatalog` — when set, suppresses a match until a trim choice is made for years that require one.
+ */
 export function findShowroomCatalogMatch(
   answers: RuleAnswersByQuestionId,
-  rows: ShowroomLookupRow[]
+  rows: ShowroomLookupRow[],
+  comsccVehicleCatalog?: readonly ComsccCatalogSeedRow[] | null
 ): ShowroomLookupRow | null {
   const makeLabel = typeof answers.vehicles_make_label === 'string' ? answers.vehicles_make_label : '';
   const modelLabel = typeof answers.vehicles_model_label === 'string' ? answers.vehicles_model_label : '';
@@ -46,6 +56,15 @@ export function findShowroomCatalogMatch(
 
   const year = Number(yearStr);
   if (!Number.isInteger(year)) return null;
+
+  const trimChoices =
+    comsccVehicleCatalog != null
+      ? comsccTrimChoicesForYear(comsccVehicleCatalog, makeLabel, modelLabel, year)
+      : [];
+  if (trimChoices.length > 0) {
+    const raw = answers.vehicles_trim_key;
+    if (raw === '' || raw === undefined || raw === null) return null;
+  }
 
   const mMake = normVehicleToken(makeLabel);
   const mModel = normVehicleToken(modelLabel);

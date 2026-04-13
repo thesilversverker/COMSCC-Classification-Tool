@@ -1,5 +1,6 @@
 <script lang="ts">
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
+  import { comsccTrimChoicesForYear, type ComsccCatalogSeedRow } from '$lib/comscc-catalog-trims';
   import { findShowroomCatalogMatch } from '$lib/vehicles-showroom-match';
   import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
   import type { RuleAnswer, RuleQuestion } from '$types/rules';
@@ -21,9 +22,8 @@
     last_year: number;
   };
 
-  type TrimOption = { id: string; label: string; years: number[] };
-
   export let openMakesModels: OpenDbMake[] = [];
+  export let comsccVehicleCatalog: ComsccCatalogSeedRow[] = [];
   export let showroomRows: ShowroomLookupRow[] = [];
   export let answers: Record<string, RuleAnswer> = {};
   export let onAnswer: (questionId: string, value: RuleAnswer) => void;
@@ -38,19 +38,6 @@
     helpText:
       'Enter the Showroom Assessment from the COMSCC workbook when your selection is not in the catalog or the catalog row has no numeric assessment.'
   };
-
-  // Logical component: trim dropdown only when open-vehicle-db exposes model_styles entries.
-  function trimOptionsFromStyles(model: OpenDbModel | undefined): TrimOption[] {
-    if (!model) return [];
-    const styles = model.model_styles ?? {};
-    const keys = Object.keys(styles);
-    if (keys.length === 0) return [];
-    return keys.map((k) => {
-      const st = styles[k] as { years?: number[] };
-      const ys = Array.isArray(st.years) && st.years.length > 0 ? st.years : model.years;
-      return { id: k, label: k, years: [...ys].sort((a, b) => b - a) };
-    });
-  }
 
   function setVehicleField(id: string, value: RuleAnswer) {
     onAnswer(id, value);
@@ -67,10 +54,6 @@
   function clearDownstreamFromModel() {
     setVehicleField('vehicles_trim_key', null);
     setVehicleField('vehicles_trim_label', null);
-    setVehicleField('vehicles_year', null);
-  }
-
-  function clearDownstreamFromTrim() {
     setVehicleField('vehicles_year', null);
   }
 
@@ -99,28 +82,41 @@
     const model = selectedMake?.models[key];
     setVehicleField('vehicles_model_key', key);
     setVehicleField('vehicles_model_label', model?.model_name ?? key);
-    setVehicleField('vehicles_trim_key', null);
-    setVehicleField('vehicles_trim_label', null);
-    setVehicleField('vehicles_year', null);
-  }
-
-  function handleTrimChange(event: Event) {
-    const trimId = (event.currentTarget as HTMLSelectElement).value;
-    if (!trimId) {
-      setVehicleField('vehicles_trim_key', null);
-      setVehicleField('vehicles_trim_label', null);
-      clearDownstreamFromTrim();
-      return;
-    }
-    const opt = trimOptions.find((t) => t.id === trimId);
-    setVehicleField('vehicles_trim_key', trimId);
-    setVehicleField('vehicles_trim_label', opt?.label ?? trimId);
-    clearDownstreamFromTrim();
+    clearDownstreamFromModel();
   }
 
   function handleYearChange(event: Event) {
     const y = (event.currentTarget as HTMLSelectElement).value;
-    setVehicleField('vehicles_year', y === '' ? null : y);
+    const yearStr = y === '' ? null : y;
+    setVehicleField('vehicles_year', yearStr);
+    const makeL = typeof answers.vehicles_make_label === 'string' ? answers.vehicles_make_label : '';
+    const modelL = typeof answers.vehicles_model_label === 'string' ? answers.vehicles_model_label : '';
+    if (yearStr && yearStr.length === 4 && makeL && modelL) {
+      const yr = Number(yearStr);
+      const nextChoices = comsccTrimChoicesForYear(comsccVehicleCatalog, makeL, modelL, yr);
+      if (nextChoices.length > 0) {
+        setVehicleField('vehicles_trim_key', '');
+        setVehicleField('vehicles_trim_label', null);
+      } else {
+        setVehicleField('vehicles_trim_key', null);
+        setVehicleField('vehicles_trim_label', null);
+      }
+    } else {
+      setVehicleField('vehicles_trim_key', null);
+      setVehicleField('vehicles_trim_label', null);
+    }
+  }
+
+  function handleTrimChange(event: Event) {
+    const trimId = (event.currentTarget as HTMLSelectElement).value;
+    if (trimId === '') {
+      setVehicleField('vehicles_trim_key', '');
+      setVehicleField('vehicles_trim_label', null);
+      return;
+    }
+    const opt = comsccTrimChoices.find((t) => t.id === trimId);
+    setVehicleField('vehicles_trim_key', trimId);
+    setVehicleField('vehicles_trim_label', opt?.label ?? trimId);
   }
 
   $: sortedMakes = [...openMakesModels].sort((a, b) => a.make_name.localeCompare(b.make_name));
@@ -133,26 +129,29 @@
     : [];
   $: modelKey = typeof answers.vehicles_model_key === 'string' ? answers.vehicles_model_key : '';
   $: selectedModel = selectedMake?.models[modelKey];
-  $: modelHasStyles =
-    Boolean(selectedModel) && Object.keys(selectedModel?.model_styles ?? {}).length > 0;
-  $: trimOptions = modelHasStyles ? trimOptionsFromStyles(selectedModel) : [];
-  $: trimKey = typeof answers.vehicles_trim_key === 'string' ? answers.vehicles_trim_key : '';
-  $: yearOptions = modelHasStyles
-    ? trimOptions.find((t) => t.id === trimKey)?.years ?? []
-    : selectedModel
-      ? [...selectedModel.years].sort((a, b) => b - a)
+  $: yearStr = typeof answers.vehicles_year === 'string' ? answers.vehicles_year.trim() : '';
+  $: selectedYear = yearStr.length === 4 ? Number(yearStr) : NaN;
+  $: makeLabelUi = typeof answers.vehicles_make_label === 'string' ? answers.vehicles_make_label : '';
+  $: modelLabelUi = typeof answers.vehicles_model_label === 'string' ? answers.vehicles_model_label : '';
+  $: comsccTrimChoices =
+    makeLabelUi && modelLabelUi && Number.isInteger(selectedYear)
+      ? comsccTrimChoicesForYear(comsccVehicleCatalog, makeLabelUi, modelLabelUi, selectedYear)
       : [];
+  $: showTrimStep = comsccTrimChoices.length > 0;
+  $: yearOptions = selectedModel ? [...selectedModel.years].sort((a, b) => b - a) : [];
+  $: trimSelectValue =
+    typeof answers.vehicles_trim_key === 'string' ? answers.vehicles_trim_key : '';
 
-  $: catalogHit = findShowroomCatalogMatch(answers, showroomRows);
+  $: catalogHit = findShowroomCatalogMatch(answers, showroomRows, comsccVehicleCatalog);
   $: hasNumericAssessment =
     catalogHit !== null &&
     typeof catalogHit.showroomAssessment === 'number' &&
     Number.isFinite(catalogHit.showroomAssessment);
   $: selectionComplete =
     Boolean(makeSlug && modelKey) &&
-    (!modelHasStyles || Boolean(trimKey)) &&
     typeof answers.vehicles_year === 'string' &&
-    answers.vehicles_year.length === 4;
+    answers.vehicles_year.length === 4 &&
+    (!showTrimStep || (typeof answers.vehicles_trim_key === 'string' && answers.vehicles_trim_key !== ''));
   $: showManualShowroom =
     (selectionComplete && !hasNumericAssessment) ||
     (catalogHit !== null && !hasNumericAssessment);
@@ -160,11 +159,16 @@
 
 <section class="vehicles-picker" aria-label="Vehicle selection">
   <h3 class="picker-title">Vehicle selection</h3>
-  <p class="picker-flow">Make → Model → Year; <strong>Trim</strong> appears only when the database lists styles for that model.</p>
+  <p class="picker-flow">
+    Make → Model → Year. <strong>Trim / style</strong> appears only when the COMSCC seed catalog lists named trims for that
+    year; otherwise showroom values use the base row for that make, model, and year.
+  </p>
   <p class="picker-source">
     Make / model / year data from
     <a href="https://github.com/plowman/open-vehicle-db" rel="noreferrer" target="_blank">open-vehicle-db</a>
-    (makes_and_models.json). Showroom Assessment points match the COMSCC workbook catalog when available.
+    (makes_and_models.json). Named trims in <code>rules-source/vehicles-comscc-catalog.json</code> drive optional trim
+    choices and generated <code>open-vehicle/styles/</code> overlays. Showroom Assessment matches the composed catalog when
+    available.
   </p>
 
   <div class="picker-grid">
@@ -188,24 +192,12 @@
       </select>
     </label>
 
-    {#if modelHasStyles}
-      <label class="field">
-        <span>Trim</span>
-        <select value={trimKey} on:change={handleTrimChange} disabled={!selectedModel}>
-          <option value="">Select trim</option>
-          {#each trimOptions as t (t.id)}
-            <option value={t.id}>{t.label}</option>
-          {/each}
-        </select>
-      </label>
-    {/if}
-
     <label class="field">
       <span>Year</span>
       <select
-        value={typeof answers.vehicles_year === 'string' ? answers.vehicles_year : ''}
+        value={yearStr}
         on:change={handleYearChange}
-        disabled={!selectedModel || (modelHasStyles && !trimKey) || yearOptions.length === 0}
+        disabled={!selectedModel || yearOptions.length === 0}
       >
         <option value="">Select year</option>
         {#each yearOptions as y (y)}
@@ -213,6 +205,22 @@
         {/each}
       </select>
     </label>
+
+    {#if showTrimStep}
+      <label class="field">
+        <span>Trim / style</span>
+        <select
+          value={trimSelectValue}
+          on:change={handleTrimChange}
+          disabled={!selectedModel || yearStr.length !== 4}
+        >
+          <option value="">Select trim</option>
+          {#each comsccTrimChoices as t (t.id)}
+            <option value={t.id}>{t.label}</option>
+          {/each}
+        </select>
+      </label>
+    {/if}
   </div>
 
   {#if catalogHit}
@@ -237,7 +245,7 @@
         </p>
       {/if}
     </div>
-  {:else if makeSlug && modelKey && (!modelHasStyles || trimKey) && answers.vehicles_year}
+  {:else if makeSlug && modelKey && yearStr.length === 4 && (!showTrimStep || trimSelectValue !== '')}
     <p class="catalog-miss">No COMSCC showroom row for this make, model, and year — use manual Showroom Assessment below.</p>
   {/if}
 
