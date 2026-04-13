@@ -1006,7 +1006,26 @@
       "A4": {
         "model_id": 3146,
         "model_name": "A4",
-        "model_styles": {},
+        "model_styles": {
+          "1.8T Quattro": {
+            "years": [
+              1996,
+              1997,
+              1998,
+              1999,
+              2000,
+              2001
+            ]
+          },
+          "2.0T Quattro": {
+            "years": [
+              2005,
+              2006,
+              2007,
+              2008
+            ]
+          }
+        },
         "vehicle_type": "mpv",
         "years": [
           1996,

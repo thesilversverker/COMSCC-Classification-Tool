@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "comsccTemplate": {
-    "showroomBaseWeightLbs": 8000,
+    "showroomBaseWeightLbs": 1500,
     "factoryRatedHp": 500,
     "factoryRatedTorqueLbFt": 500,
     "suspIndex": 100

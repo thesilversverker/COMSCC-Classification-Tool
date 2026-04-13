@@ -552,7 +552,7 @@
         "pointValue": null,
         "needsManualPoints": false,
         "subcategory": "Calculation",
-        "helpText": "Computed from showroom weight, factory rated HP/torque (catalog), and scaled dyno power. Minimum −2."
+        "helpText": "Excel: ((Car_Base_Weight ÷ dyno scaled power) × (−4.25) + 112) − Car_Scaled_Power, where Car_Scaled_Power = 112 − 4.25×(weight ÷ factory power blend). Minimum −2."
       }
     ]
   }

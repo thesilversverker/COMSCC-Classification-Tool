@@ -1,7 +1,9 @@
 <script lang="ts">
   import {
+    DYNO_POINTS_ABOVE_BASE_SYMBOLIC,
     dynoLossFraction,
-    dynoPointsAboveBaseFromSession,
+    explainDynoPointsAboveBaseFromSession,
+    formatDynoPointsAboveBaseExplanation,
     scaledPowerFromDynoAnswers
   } from '$lib/dyno-reclass-math';
   import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
@@ -79,19 +81,18 @@
               : `${scaled.toFixed(2)}`;
           })()
         : question.id === 'dyno_points_above_base_assessment'
-          ? (() => {
-              const pts = dynoPointsAboveBaseFromSession({
-                answers,
-                showroomBaseWeightLbs: vehicleCatalogMatch?.showroomBaseWeightLbs ?? null,
-                factoryRatedHp: vehicleCatalogMatch?.factoryRatedHp ?? null,
-                factoryRatedTorqueLbFt: vehicleCatalogMatch?.factoryRatedTorqueLbFt ?? null
-              });
-              if (pts === null) {
-                return 'Complete vehicle match (catalog weight + factory HP/torque) and dyno fields to compute points.';
-              }
-              return `${pts.toFixed(2)} (minimum −2)`;
-            })()
+          ? ''
           : question.prompt;
+
+  $: dynoPointsExplanation =
+    question.id === 'dyno_points_above_base_assessment'
+      ? explainDynoPointsAboveBaseFromSession({
+          answers,
+          showroomBaseWeightLbs: vehicleCatalogMatch?.showroomBaseWeightLbs ?? null,
+          factoryRatedHp: vehicleCatalogMatch?.factoryRatedHp ?? null,
+          factoryRatedTorqueLbFt: vehicleCatalogMatch?.factoryRatedTorqueLbFt ?? null
+        })
+      : null;
 
   $: hideFormulaBodyForHeadingOnly = question.id === 'dyno_reclass_documentation_required';
 </script>
@@ -156,7 +157,26 @@
       </select>
     {:else if question.answerType === 'formula'}
       {#if !hideFormulaBodyForHeadingOnly}
-        <p class="manual-assessment-tag formula-readonly">{formulaDisplay}</p>
+        {#if question.id === 'dyno_points_above_base_assessment'}
+          <div class="dyno-points-formula">
+            {#if dynoPointsExplanation}
+              <p class="manual-assessment-tag formula-readonly formula-result">
+                <strong>Result:</strong>
+                {dynoPointsExplanation.result.toFixed(2)} pts
+                {#if dynoPointsExplanation.clampedToMinusTwo}
+                  <span class="floor-note"> (workbook floor: raw below −2)</span>
+                {/if}
+              </p>
+              <pre class="dyno-eq-pre">{formatDynoPointsAboveBaseExplanation(dynoPointsExplanation)}</pre>
+            {:else}
+              <pre class="dyno-eq-pre dyno-eq-pending">{DYNO_POINTS_ABOVE_BASE_SYMBOLIC}
+
+Complete vehicle match (catalog weight + factory HP/torque) and dyno peak HP/torque + drivetrain to substitute numbers.</pre>
+            {/if}
+          </div>
+        {:else}
+          <p class="manual-assessment-tag formula-readonly">{formulaDisplay}</p>
+        {/if}
       {/if}
     {:else}
       <input
@@ -253,6 +273,31 @@
     border: 1px dashed #c7cae0;
     border-radius: 6px;
     background: #f8f9ff;
+  }
+  .dyno-points-formula {
+    display: grid;
+    gap: 0.5rem;
+    min-width: 0;
+  }
+  .formula-result .floor-note {
+    font-weight: 500;
+    color: #6a5080;
+  }
+  .dyno-eq-pre {
+    margin: 0;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid #d8dcf0;
+    border-radius: 6px;
+    background: #fafbff;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  }
+  .dyno-eq-pending {
+    color: #444;
   }
   .block-item input,
   .block-item select {

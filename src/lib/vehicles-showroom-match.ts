@@ -32,6 +32,21 @@ export function normVehicleToken(s: string): string {
     .replace(/\s+/g, ' ');
 }
 
+/** Same canonical form as compose `pickComsccRow` / vehicle `trimKey` ids (dots → underscores, etc.). */
+function slugifyTrimKey(s: string): string {
+  return String(s)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
+}
+
+function trimKeysMatch(sessionTrim: string | null, rowTrim: string | null): boolean {
+  if (sessionTrim === null && rowTrim === null) return true;
+  if (sessionTrim === null || rowTrim === null) return false;
+  if (sessionTrim === rowTrim) return true;
+  return slugifyTrimKey(sessionTrim) === slugifyTrimKey(rowTrim);
+}
+
 function trimFromAnswers(answers: RuleAnswersByQuestionId): string | null {
   const t = answers.vehicles_trim_key;
   if (t === COMSCC_TRIM_BASE_SENTINEL) return null;
@@ -40,7 +55,7 @@ function trimFromAnswers(answers: RuleAnswersByQuestionId): string | null {
 }
 
 /**
- * Exact match on make, model, year, and trim (both sides null or same string).
+ * Match on normalized make/model, year, and trim (null vs null, exact string, or slug-equivalent trim like `2.0T Quattro` vs `2.0t quattro`).
  * @param comsccVehicleCatalog optional `vehicles-comscc-catalog.json` `vehicleCatalog` — when set, suppresses a match until a trim choice is made for years that require one.
  */
 export function findShowroomCatalogMatch(
@@ -73,11 +88,20 @@ export function findShowroomCatalogMatch(
   const candidates = rows.filter((r) => {
     if (r.makeNorm !== mMake || r.modelNorm !== mModel) return false;
     if (r.year !== year) return false;
-    const rowTrim = r.trimKey;
-    if (sessionTrim === null && rowTrim === null) return true;
-    if (sessionTrim !== null && rowTrim !== null && sessionTrim === rowTrim) return true;
-    return false;
+    return trimKeysMatch(sessionTrim, r.trimKey);
   });
 
-  return candidates.length > 0 ? candidates[0] : null;
+  if (candidates.length === 0) return null;
+  // Logical component: same (make, model, year, trim) can appear non-adjacently in the lookup array; prefer COMSCC-enriched row, then heavier curb (real catalog over template).
+  if (candidates.length > 1) {
+    candidates.sort((a, b) => {
+      const ae = a.comsccEnriched === true ? 1 : 0;
+      const be = b.comsccEnriched === true ? 1 : 0;
+      if (be !== ae) return be - ae;
+      const aw = a.showroomBaseWeightLbs ?? 0;
+      const bw = b.showroomBaseWeightLbs ?? 0;
+      return bw - aw;
+    });
+  }
+  return candidates[0];
 }

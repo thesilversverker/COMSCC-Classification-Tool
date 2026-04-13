@@ -61,6 +61,94 @@ describe('findShowroomCatalogMatch', () => {
     expect(hit?.catalogId).toBe('ov_acura_integra_1993_gs_r');
   });
 
+  it('matches trim by slug-equivalent string (session vs catalog row)', () => {
+    const audiRows: ShowroomLookupRow[] = [
+      {
+        makeNorm: 'audi',
+        modelNorm: 'a4',
+        year: 2007,
+        trimKey: null,
+        showroomAssessment: 0,
+        scaledWeightPerPower: 0,
+        performanceAdjustment: 0,
+        showroomBaseWeightLbs: 1500,
+        factoryRatedHp: 500,
+        factoryRatedTorqueLbFt: 500,
+        baseClassification: null,
+        catalogId: 'ov_audi_a4_2007',
+        comsccEnriched: false
+      },
+      {
+        makeNorm: 'audi',
+        modelNorm: 'a4',
+        year: 2007,
+        trimKey: '2.0T Quattro',
+        showroomAssessment: 24,
+        scaledWeightPerPower: 25,
+        performanceAdjustment: 0,
+        showroomBaseWeightLbs: 3549,
+        factoryRatedHp: 200,
+        factoryRatedTorqueLbFt: 207,
+        baseClassification: 'T5',
+        catalogId: 'ov_audi_a4_2007_2_0t_quattro',
+        comsccEnriched: true
+      }
+    ];
+    const answers: RuleAnswersByQuestionId = {
+      vehicles_make_label: 'Audi',
+      vehicles_model_label: 'A4',
+      vehicles_year: '2007',
+      // Logical component: UI or saved session may differ slightly from composed `trimKey` while slugifying the same.
+      vehicles_trim_key: '2.0t  quattro'
+    };
+    const hit = findShowroomCatalogMatch(answers, audiRows, []);
+    expect(hit?.catalogId).toBe('ov_audi_a4_2007_2_0t_quattro');
+    expect(hit?.showroomBaseWeightLbs).toBe(3549);
+  });
+
+  it('when multiple rows slug-match trim, prefers COMSCC-enriched then heavier weight', () => {
+    const dupSlugRows: ShowroomLookupRow[] = [
+      {
+        makeNorm: 'audi',
+        modelNorm: 'a4',
+        year: 2007,
+        trimKey: '2.0T-Quattro',
+        showroomAssessment: 0,
+        scaledWeightPerPower: 0,
+        performanceAdjustment: 0,
+        showroomBaseWeightLbs: 1500,
+        factoryRatedHp: 500,
+        factoryRatedTorqueLbFt: 500,
+        baseClassification: null,
+        catalogId: 'stale',
+        comsccEnriched: false
+      },
+      {
+        makeNorm: 'audi',
+        modelNorm: 'a4',
+        year: 2007,
+        trimKey: '2.0T Quattro',
+        showroomAssessment: 24,
+        scaledWeightPerPower: 25,
+        performanceAdjustment: 0,
+        showroomBaseWeightLbs: 3549,
+        factoryRatedHp: 200,
+        factoryRatedTorqueLbFt: 207,
+        baseClassification: 'T5',
+        catalogId: 'good',
+        comsccEnriched: true
+      }
+    ];
+    const answers: RuleAnswersByQuestionId = {
+      vehicles_make_label: 'Audi',
+      vehicles_model_label: 'A4',
+      vehicles_year: '2007',
+      vehicles_trim_key: '2.0T Quattro'
+    };
+    const hit = findShowroomCatalogMatch(answers, dupSlugRows, []);
+    expect(hit?.catalogId).toBe('good');
+  });
+
   it('maps Base sentinel to null-trim lookup row', () => {
     const answers: RuleAnswersByQuestionId = {
       vehicles_make_label: 'Acura',
