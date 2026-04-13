@@ -1,4 +1,5 @@
 // Logical component: rules-source/tires.json (tireCategories + tires[]) → RuleCategory for rules bundle.
+// Each tire: { tireName, score, utqg, category } where `category` is tireCategories[].id (e.g. budget_unclassed).
 
 /** @param {string} value */
 function slugify(value) {

@@ -44,7 +44,7 @@
       "id": "tires",
       "label": "Tires",
       "file": "rules-source/tires.json",
-      "questionCount": 4,
+      "questionCount": 3,
       "tireCatalogCount": 76
     },
     {

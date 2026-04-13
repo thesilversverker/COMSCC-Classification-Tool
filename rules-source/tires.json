@@ -2,52 +2,28 @@
   "schemaVersion": "1.1.0",
   "tireCategories": [
     {
-      "id": "non_dot_slick",
-      "label": "Non-DOT slick"
+      "id": "budget_unclassed",
+      "label": "Budget & Unclassed"
     },
     {
-      "id": "race_11",
-      "label": "Open competition (+11)"
+      "id": "r_comps",
+      "label": "R-comps"
     },
     {
-      "id": "race_10",
-      "label": "Sprint / wet / challenge (+10)"
+      "id": "street_legal_track",
+      "label": "Street-legal track"
     },
     {
-      "id": "race_7",
-      "label": "R-compound (+7)"
+      "id": "endurance_track",
+      "label": "Endurance/Track"
     },
     {
-      "id": "race_6",
-      "label": "R-compound & DOT-R (+6)"
+      "id": "super_200s",
+      "label": "Super 200s"
     },
     {
-      "id": "race_2_5",
-      "label": "Track day (+2.5)"
-    },
-    {
-      "id": "race_0",
-      "label": "Street-legal max / trofeo (0)"
-    },
-    {
-      "id": "street_15",
-      "label": "200TW street (−1.5)"
-    },
-    {
-      "id": "street_25",
-      "label": "200TW street (−2.5)"
-    },
-    {
-      "id": "street_35",
-      "label": "200TW street (−3.5)"
-    },
-    {
-      "id": "street_5",
-      "label": "200TW street (−5)"
-    },
-    {
-      "id": "street_7",
-      "label": "200TW street (−7)"
+      "id": "endurance_200s",
+      "label": "Endurance 200s"
     }
   ],
   "tires": [
@@ -55,474 +31,438 @@
       "tireName": "Non-DOT Slicks",
       "score": 15,
       "utqg": null,
-      "category": "non_dot_slick"
+      "category": "r_comps"
     },
     {
       "tireName": "Hoosier A8",
       "score": 11,
       "utqg": null,
-      "category": "race_11"
+      "category": "r_comps"
     },
     {
       "tireName": "BFGoodrich R1-S",
       "score": 10,
       "utqg": null,
-      "category": "race_10"
+      "category": "r_comps"
     },
     {
       "tireName": "Continental Challenge Wets",
       "score": 10,
       "utqg": null,
-      "category": "race_10"
+      "category": "r_comps"
     },
     {
       "tireName": "Goodyear RS AC",
       "score": 10,
       "utqg": null,
-      "category": "race_10"
+      "category": "r_comps"
     },
     {
-      "tireName": "Hankook C90",
+      "tireName": "Hankook C90/C91/C9/Wets",
       "score": 10,
       "utqg": null,
-      "category": "race_10"
-    },
-    {
-      "tireName": "Hankook C91",
-      "score": 10,
-      "utqg": null,
-      "category": "race_10"
-    },
-    {
-      "tireName": "Hankook C9",
-      "score": 10,
-      "utqg": null,
-      "category": "race_10"
+      "category": "r_comps"
     },
     {
       "tireName": "Hoosier Radial Wet",
       "score": 10,
       "utqg": null,
-      "category": "race_10"
+      "category": "r_comps"
     },
     {
-      "tireName": "Hoosier A Compound",
+      "tireName": "Hoosier A Compound (All)",
       "score": 10,
       "utqg": null,
-      "category": "race_10"
+      "category": "r_comps"
     },
     {
-      "tireName": "Pirelli P-Zero Slick DH",
+      "tireName": "Pirelli P-Zero Slick DH (DH Compound Only)",
       "score": 10,
       "utqg": null,
-      "category": "race_10"
+      "category": "r_comps"
     },
     {
       "tireName": "Hoosier R8",
       "score": 7,
       "utqg": null,
-      "category": "race_7"
+      "category": "r_comps"
     },
     {
       "tireName": "Hoosier SMX",
       "score": 7,
       "utqg": null,
-      "category": "race_7"
+      "category": "r_comps"
     },
     {
-      "tireName": "Hankook C70",
+      "tireName": "Hankook C70/C71/C7",
       "score": 6,
       "utqg": null,
-      "category": "race_6"
-    },
-    {
-      "tireName": "Hankook C71",
-      "score": 6,
-      "utqg": null,
-      "category": "race_6"
-    },
-    {
-      "tireName": "Hankook C7",
-      "score": 6,
-      "utqg": null,
-      "category": "race_6"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Yokohama A055",
       "score": 6,
       "utqg": null,
-      "category": "race_6"
+      "category": "r_comps"
     },
     {
       "tireName": "Goodyear Eagle RS",
       "score": 6,
       "utqg": null,
-      "category": "race_6"
+      "category": "r_comps"
     },
     {
       "tireName": "Hoosier R7",
       "score": 6,
       "utqg": null,
-      "category": "race_6"
+      "category": "r_comps"
     },
     {
-      "tireName": "Hoosier SM7",
+      "tireName": "Hoosier SM7/SM7.5",
       "score": 6,
       "utqg": null,
-      "category": "race_6"
-    },
-    {
-      "tireName": "Hoosier SM7.5",
-      "score": 6,
-      "utqg": null,
-      "category": "race_6"
+      "category": "r_comps"
     },
     {
       "tireName": "Kumho Ecsta V700",
       "score": 6,
       "utqg": 50,
-      "category": "race_6"
+      "category": "street_legal_track"
     },
     {
       "tireName": "BFGoodrich R1",
       "score": 6,
       "utqg": null,
-      "category": "race_6"
+      "category": "r_comps"
     },
     {
       "tireName": "Hankook Z214",
       "score": 6,
       "utqg": null,
-      "category": "race_6"
+      "category": "r_comps"
     },
     {
       "tireName": "Continental Challenge Dry",
       "score": 2.5,
       "utqg": null,
-      "category": "race_2_5"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Hankook Z221 TD Soft",
       "score": 2.5,
       "utqg": null,
-      "category": "race_2_5"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Goodyear Supercar 3R",
       "score": 0,
       "utqg": 100,
-      "category": "race_0"
+      "category": "street_legal_track"
     },
     {
       "tireName": "Federal FZ-201 Soft",
       "score": 0,
       "utqg": null,
-      "category": "race_0"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Hankook Z221 TD Hard",
       "score": 0,
       "utqg": null,
-      "category": "race_0"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Maxxis RC-1",
       "score": 0,
       "utqg": 100,
-      "category": "race_0"
+      "category": "endurance_track"
     },
     {
       "tireName": "Pirelli Trofeo R",
       "score": 0,
       "utqg": 60,
-      "category": "race_0"
+      "category": "street_legal_track"
     },
     {
       "tireName": "Vitour Tempesta Sonic",
       "score": 0,
       "utqg": 200,
-      "category": "race_0"
+      "category": "street_legal_track"
     },
     {
       "tireName": "Vitour Tempesta P1",
       "score": -1.5,
       "utqg": 200,
-      "category": "street_15"
+      "category": "super_200s"
     },
     {
       "tireName": "Toyo R",
       "score": -1.5,
       "utqg": null,
-      "category": "street_15"
+      "category": "endurance_track"
     },
     {
       "tireName": "Hoosier Track Attack",
       "score": -1.5,
       "utqg": null,
-      "category": "street_15"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Falken RT660+",
       "score": -1.5,
       "utqg": 200,
-      "category": "street_15"
+      "category": "super_200s"
     },
     {
       "tireName": "Bridgestone RE71RS",
       "score": -1.5,
       "utqg": 200,
-      "category": "street_15"
+      "category": "super_200s"
     },
     {
       "tireName": "Bridgestone RE71RZ",
       "score": -1.5,
       "utqg": 200,
-      "category": "street_15"
+      "category": "super_200s"
     },
     {
       "tireName": "Yokohama A052",
       "score": -1.5,
       "utqg": 200,
-      "category": "street_15"
+      "category": "super_200s"
     },
     {
       "tireName": "Nankang CRS",
       "score": -1.5,
       "utqg": 200,
-      "category": "street_15"
+      "category": "super_200s"
     },
     {
       "tireName": "Falken RT660",
       "score": -2.5,
       "utqg": 200,
-      "category": "street_25"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Federal FZ-201 Medium",
       "score": -2.5,
       "utqg": null,
-      "category": "street_25"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Yokohama Advan Apex",
       "score": -2.5,
       "utqg": 300,
-      "category": "street_25"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Kumho V720",
       "score": -2.5,
       "utqg": 200,
-      "category": "street_25"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Kumho V730",
       "score": -2.5,
       "utqg": 200,
-      "category": "street_25"
+      "category": "super_200s"
     },
     {
       "tireName": "Michelin Pilot Sport Cup 2",
       "score": -2.5,
       "utqg": 180,
-      "category": "street_25"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Michelin Pilot Sport Cup 2R",
       "score": -2.5,
       "utqg": 180,
-      "category": "street_25"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Nankang AR-1",
       "score": -2.5,
       "utqg": 80,
-      "category": "street_25"
+      "category": "endurance_track"
     },
     {
       "tireName": "BFGoodrich Rival S 1.5",
       "score": -2.5,
       "utqg": 200,
-      "category": "street_25"
+      "category": "super_200s"
     },
     {
       "tireName": "Toyo R888",
       "score": -2.5,
       "utqg": 100,
-      "category": "street_25"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Toyo RA1",
       "score": -2.5,
       "utqg": 100,
-      "category": "street_25"
+      "category": "endurance_track"
     },
     {
       "tireName": "Toyo RR",
       "score": -2.5,
       "utqg": null,
-      "category": "street_25"
+      "category": "endurance_track"
     },
     {
       "tireName": "Maxxis VR2",
       "score": -2.5,
       "utqg": 200,
-      "category": "street_25"
+      "category": "super_200s"
     },
     {
       "tireName": "Yokohama A048",
       "score": -2.5,
       "utqg": 60,
-      "category": "street_25"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Vitour Tempesta Enzo V01R",
       "score": -2.5,
       "utqg": 200,
-      "category": "street_25"
+      "category": "endurance_200s"
     },
     {
       "tireName": "Nexen Nfera Sport R",
       "score": -2.5,
       "utqg": 200,
-      "category": "street_25"
+      "category": "super_200s"
     },
     {
       "tireName": "Toyo R888R",
       "score": -3.5,
       "utqg": 100,
-      "category": "street_35"
+      "category": "endurance_track"
     },
     {
       "tireName": "Dunlop Direzza ZIII",
       "score": -3.5,
       "utqg": 200,
-      "category": "street_35"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Nitto NT01",
       "score": -3.5,
       "utqg": 100,
-      "category": "street_35"
+      "category": "endurance_track"
     },
     {
       "tireName": "Federal 595RS-RR",
       "score": -3.5,
       "utqg": 200,
-      "category": "street_35"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Goodyear Supercar 3",
       "score": -3.5,
       "utqg": 220,
-      "category": "street_35"
+      "category": "super_200s"
     },
     {
       "tireName": "Goodyear Supercar G2",
       "score": -3.5,
       "utqg": 220,
-      "category": "street_35"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Continental ECS 02",
       "score": -3.5,
       "utqg": 340,
-      "category": "street_35"
+      "category": "endurance_200s"
     },
     {
       "tireName": "Toyo R1R",
       "score": -3.5,
       "utqg": 200,
-      "category": "street_35"
+      "category": "super_200s"
     },
     {
       "tireName": "BFGoodrich Rival Plus",
       "score": -3.5,
       "utqg": 340,
-      "category": "street_35"
+      "category": "endurance_200s"
     },
     {
       "tireName": "Bridgestone Potenza Race",
       "score": -3.5,
       "utqg": 200,
-      "category": "street_35"
+      "category": "super_200s"
     },
     {
       "tireName": "Michelin Pilot Sport 4S",
       "score": -5,
       "utqg": 300,
-      "category": "street_5"
+      "category": "endurance_200s"
     },
     {
       "tireName": "BFGoodrich Rival",
       "score": -5,
       "utqg": 340,
-      "category": "street_5"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Continental ExtremeContact Force",
       "score": -5,
       "utqg": 200,
-      "category": "street_5"
+      "category": "endurance_200s"
     },
     {
       "tireName": "Falken RT615K+",
       "score": -5,
       "utqg": 200,
-      "category": "street_5"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Hankook RS4",
       "score": -5,
       "utqg": 200,
-      "category": "street_5"
+      "category": "endurance_200s"
     },
     {
       "tireName": "Maxxis VR1",
       "score": -5,
       "utqg": 200,
-      "category": "street_5"
+      "category": "endurance_200s"
     },
     {
       "tireName": "Cooper RS3-R",
       "score": -7,
       "utqg": 200,
-      "category": "street_7"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Cooper RS3-RS",
       "score": -7,
       "utqg": 200,
-      "category": "street_7"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Federal 595RS-R",
       "score": -7,
       "utqg": 240,
-      "category": "street_7"
+      "category": "budget_unclassed"
     },
     {
       "tireName": "Michelin Pilot Super Sport",
       "score": -7,
       "utqg": 300,
-      "category": "street_7"
+      "category": "budget_unclassed"
     }
   ],
   "category": {
     "id": "tires",
     "label": "Tires",
-    "description": "Tire class and model from COMSCC catalog (tireCategories + tires in rules-source/tires.json).",
+    "description": "Tire class and model from COMSCC catalog (tireCategories + tires in rules-source/tires.json). Each tire lists score, UTQG, and class.",
     "questions": [
       {
         "id": "tires_width_mm",
         "prompt": "Primary tire width (mm)",
         "subcategory": "Sizing",
-        "answerType": "number"
-      },
-      {
-        "id": "tires_points",
-        "prompt": "Manual tire points (if assessment unclear)",
-        "subcategory": "Manual points",
         "answerType": "number"
       }
     ]

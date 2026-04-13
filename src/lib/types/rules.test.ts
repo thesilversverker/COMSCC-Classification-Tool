@@ -37,11 +37,12 @@ describe('rules schema', () => {
     const tires = doc.categories.find((c) => c.id === 'tires');
     expect(tires).toBeDefined();
     const model = tires?.questions.find((q) => q.id === 'tires_model');
-    expect(model?.optionsByParent?.race_10?.length).toBeGreaterThan(0);
-    const hoosier = model?.optionsByParent?.race_10?.find((o) => o.label === 'Hoosier A Compound');
+    expect(model?.optionsByParent?.budget_unclassed?.length).toBeGreaterThan(0);
+    const hoosier = model?.optionsByParent?.budget_unclassed?.find((o) => o.label === 'Hoosier A Compound');
     expect(hoosier?.points).toBe(10);
     expect(hoosier?.utqg).toBeNull();
-    expect(model?.optionsByParent?.race_6?.find((o) => o.label === 'Kumho Ecsta V700')?.utqg).toBe(50);
+    expect(model?.optionsByParent?.budget_unclassed?.find((o) => o.label === 'Kumho Ecsta V700')?.utqg).toBe(50);
+    expect(model?.optionsByParent?.r_comps?.find((o) => o.label === 'Hoosier R7')?.points).toBe(6);
   });
 
   // Logical component: vehicles.json is composed (open-vehicle + styles + COMSCC template/overrides).
