@@ -35,4 +35,9 @@ describe('computeWeightSheetPoints', () => {
     expect(lighter).toBeGreaterThan(0);
     expect(heavier).toBeLessThan(0);
   });
+
+  // Logical component: 2623 showroom curb − 2584 competition = 39 lb lighter → workbook-style INT rounding.
+  it('matches sheet at ~39 lb under showroom (Integra-like catalog)', () => {
+    expect(computeWeightSheetPoints(2584, integraLikeCatalog)).toBe(1.22);
+  });
 });

@@ -17,10 +17,9 @@ function powerBlendFromCatalog(catalog: WeightCatalogInput): number | null {
 }
 
 /**
- * Sheet formula (left-associative): Competition / ((scaledW/P + perfAdj − showroom) × 100) / 100.
- * `scaledWeightPerPower` is recomputed from **competition** weight and catalog power blend so it moves when
- * competition weight ≠ showroom curb weight (catalog showroom row has SA = swp_showroom + pa, which would
- * otherwise zero the denominator).
+ * Workbook: INT(((Competition/(2/3*HP+1/3*Tq))*-4.25+112+PerfAdj−ShowroomPoints)*100)/100
+ * — i.e. `scaledWeightPerPower` from **competition** weight, plus performance adjustment, minus showroom
+ * assessment, truncated to hundredths (Excel INT toward −∞ on the ×100 product).
  */
 export function computeWeightSheetPoints(
   competitionWeightLbs: number,
@@ -40,9 +39,9 @@ export function computeWeightSheetPoints(
   const scaledWeightPerPowerComp = 112 - 4.25 * weightPerPowerComp;
   if (!Number.isFinite(scaledWeightPerPowerComp)) return 0;
 
+  // Logical component: bracket = scaled W/P + performance column − showroom assessment (same units as sheet).
   const bracket = scaledWeightPerPowerComp + pa - sa;
-  const scaledDenom = bracket * 100;
-  if (!Number.isFinite(scaledDenom) || Math.abs(scaledDenom) < 1e-12) return 0;
-  const raw = competitionWeightLbs / scaledDenom / 100;
-  return Number.isFinite(raw) ? raw : 0;
+  if (!Number.isFinite(bracket)) return 0;
+  // Logical component: match Excel INT(x) === ⌊x⌋ for the scaled product before ÷100.
+  return Math.floor(bracket * 100) / 100;
 }

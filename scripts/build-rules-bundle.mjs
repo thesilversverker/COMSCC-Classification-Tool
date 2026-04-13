@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { assignSubcategory } from './assign-subcategory.mjs';
 import { buildShowroomLookupRowsFromVehicleCatalog } from './build-showroom-lookup-rows.mjs';
+import { mergeStylesDirectoryIntoMakes } from './open-vehicle-merge.mjs';
 
 // Logical component: rules-source (vehicles.json with composed catalog) + preset + categories → src/lib/data (never writes rules-source except via compose script).
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -13,6 +14,9 @@ const SOURCE_DIR = path.join(repoRoot, 'rules-source');
 const COMSCC_CATALOG_PATH = path.join(SOURCE_DIR, 'vehicles-comscc-catalog.json');
 const OUTPUT_RULES = path.join(repoRoot, 'src', 'lib', 'data', 'rules.v1.json');
 const OUTPUT_SHOWROOM_LOOKUP = path.join(repoRoot, 'src', 'lib', 'data', 'vehicle-showroom-lookup.json');
+const MAKES_MODELS_PATH = path.join(SOURCE_DIR, 'open-vehicle', 'makes_and_models.json');
+const OPEN_VEHICLE_STYLES_DIR = path.join(SOURCE_DIR, 'open-vehicle', 'styles');
+const OUTPUT_OPEN_VEHICLE_UI = path.join(repoRoot, 'src', 'lib', 'data', 'open-vehicle-makes-models.json');
 
 const CHECKBOX_CATEGORY_FILES = ['engine', 'drivetrain', 'suspension', 'brakes', 'exterior'];
 const PRESET_CATEGORY_ORDER = ['weight', 'tires'];
@@ -64,6 +68,14 @@ function writeVehicleShowroomLookup(vehicleCatalog) {
 function buildBundle() {
   const preset = readJson(PRESET_PATH);
   const presetMap = Object.fromEntries(preset.categories.map((c) => [c.id, c]));
+
+  if (!fs.existsSync(MAKES_MODELS_PATH)) {
+    throw new Error(`Missing open-vehicle-db makes: ${MAKES_MODELS_PATH}`);
+  }
+  const openDbRaw = readJson(MAKES_MODELS_PATH);
+  const openVehicleForUi = mergeStylesDirectoryIntoMakes(openDbRaw, OPEN_VEHICLE_STYLES_DIR);
+  writeJson(OUTPUT_OPEN_VEHICLE_UI, openVehicleForUi);
+  console.log(`Wrote ${OUTPUT_OPEN_VEHICLE_UI} (styles overlay from ${OPEN_VEHICLE_STYLES_DIR})`);
 
   const vehiclesPath = path.join(SOURCE_DIR, 'vehicles.json');
   if (!fs.existsSync(vehiclesPath)) {

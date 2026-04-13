@@ -66,7 +66,13 @@ function mergeScalarsForTemplate(template, override) {
 
 /** @param {Record<string, unknown>} flatRow */
 function buildCatalogRow(flatRow, comsccTemplate, overrideRows) {
-  const override = pickComsccRow(flatRow.makeName, flatRow.modelName, flatRow.year, overrideRows);
+  const override = pickComsccRow(
+    flatRow.makeName,
+    flatRow.modelName,
+    flatRow.year,
+    overrideRows,
+    flatRow.trimKey
+  );
 
   const trimPart = flatRow.trimKey ? `_${slugify(flatRow.trimKey)}` : '';
   const id = `ov_${slugify(flatRow.makeSlug)}_${slugify(flatRow.modelKey)}_${flatRow.year}${trimPart}`;

@@ -30,18 +30,50 @@ function catalogEndYear(c) {
   return typeof v === 'number' ? v : null;
 }
 
+/** @param {unknown} c */
+function catalogTrim(c) {
+  if (c == null || typeof c !== 'object') return null;
+  const row = /** @type {Record<string, unknown>} */ (c);
+  const v = row.vehicleTrim ?? row.trim;
+  if (v === undefined || v === null) return null;
+  const s = String(v).trim();
+  return s.length ? s : null;
+}
+
+/** Canonical trim token for matching catalog `vehicleTrim` to open-db style keys (slugify). */
+function trimMatchSlug(trimKey) {
+  if (trimKey == null) return null;
+  const s = String(trimKey).trim();
+  return s.length ? slugify(s) : null;
+}
+
+function catalogTrimSlug(c) {
+  const t = catalogTrim(c);
+  return t == null ? null : slugify(t);
+}
+
 function yearSpanWidth(c) {
   const sy = catalogStartYear(c) ?? 1900;
   const ey = catalogEndYear(c) ?? 2100;
   return Math.max(0, ey - sy);
 }
 
-/** Best COMSCC row for open-db make/model/year (narrowest year range wins). */
-export function pickComsccRow(makeName, modelName, year, comsccRows) {
+/**
+ * Best COMSCC row for open-db make/model/year/trim (narrowest year range wins).
+ * Catalog rows with no `vehicleTrim` apply only to base rows (`trimKey` null); trim-specific rows match that trim only.
+ */
+export function pickComsccRow(makeName, modelName, year, comsccRows, trimKeyFromOpenDb = null) {
   const mMake = normToken(makeName);
   const mModel = normToken(modelName);
+  const rowTrimSlug = trimMatchSlug(trimKeyFromOpenDb);
   const candidates = comsccRows.filter((c) => {
     if (normToken(catalogMake(c)) !== mMake || normToken(catalogModel(c)) !== mModel) return false;
+    const cTrimSlug = catalogTrimSlug(c);
+    if (cTrimSlug === null) {
+      if (rowTrimSlug !== null) return false;
+    } else if (rowTrimSlug !== cTrimSlug) {
+      return false;
+    }
     const sy = catalogStartYear(c);
     const ey = catalogEndYear(c);
     if (sy !== null && year < sy) return false;
@@ -77,12 +109,15 @@ export function flattenOpenDb(openDb) {
           });
         }
       } else {
+        // Logical component: years covered by at least one style — also emit base (`trimKey` null) rows for other model years so trims do not erase the rest of the year list.
+        const yearsFromStyles = new Set();
         for (const sk of styleKeys) {
           const st = styles[sk];
           const ys =
             Array.isArray(st?.years) && st.years.length > 0 ? st.years : model.years ?? [];
           for (const year of ys) {
             if (typeof year !== 'number') continue;
+            yearsFromStyles.add(year);
             out.push({
               makeSlug,
               makeName,
@@ -93,6 +128,19 @@ export function flattenOpenDb(openDb) {
               trimLabel: sk
             });
           }
+        }
+        for (const year of model.years ?? []) {
+          if (typeof year !== 'number') continue;
+          if (yearsFromStyles.has(year)) continue;
+          out.push({
+            makeSlug,
+            makeName,
+            modelKey,
+            modelName,
+            year,
+            trimKey: null,
+            trimLabel: null
+          });
         }
       }
     }

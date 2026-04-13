@@ -46,7 +46,7 @@ export function computeCategoryPoints(category: RuleCategory, answers: RuleAnswe
   if (category.id === 'vehicles') {
     return computeVehiclesCategoryPoints(answers);
   }
-  // Logical component: Weight = worksheet formula (competition lbs vs catalog swp/perf/showroom) + any checkbox/select points.
+  // Logical component: Weight = worksheet INT((scaledW/P+perf−showroom)×100)/100 from competition lbs + any checkbox/select points.
   if (category.id === 'weight') {
     const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS);
     let total = computeWeightSheetPoints(toNumeric(answers.weight_competition), match);

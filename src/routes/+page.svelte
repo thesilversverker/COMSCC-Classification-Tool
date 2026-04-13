@@ -1,6 +1,6 @@
 <script lang="ts">
   import rulesJson from '$data/rules.v1.json';
-  import openVehicleMakesModels from '../../rules-source/open-vehicle/makes_and_models.json';
+  import openVehicleMakesModels from '$data/open-vehicle-makes-models.json';
   import showroomLookup from '$data/vehicle-showroom-lookup.json';
   import CategoryNav from '$components/CategoryNav.svelte';
   import ClassificationBanner from '$components/ClassificationBanner.svelte';
