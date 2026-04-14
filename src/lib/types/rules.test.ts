@@ -32,19 +32,19 @@ describe('rules schema', () => {
     }
   });
 
-  it('builds tires from rules-source catalog (class → model options)', () => {
+  it('builds tires as a flat catalog with sort control metadata', () => {
     const doc = rules as RulesDocument;
     const tires = doc.categories.find((c) => c.id === 'tires');
     expect(tires).toBeDefined();
     const model = tires?.questions.find((q) => q.id === 'tires_model');
-    expect(model?.optionsByParent?.budget_unclassed?.length).toBeGreaterThan(0);
-    const hoosierA = model?.optionsByParent?.r_comps?.find((o) => o.label === 'Hoosier A Compound (All)');
+    expect(model?.selectSortControl).toBe('alpha_points');
+    expect((model?.options ?? []).length).toBeGreaterThan(0);
+    const opts = model?.options ?? [];
+    const hoosierA = opts.find((o) => o.label === 'Hoosier A Compound (All)');
     expect(hoosierA?.points).toBe(10);
     expect(hoosierA?.utqg).toBeNull();
-    expect(
-      model?.optionsByParent?.street_legal_track?.find((o) => o.label === 'Kumho Ecsta V700')?.utqg
-    ).toBe(50);
-    expect(model?.optionsByParent?.r_comps?.find((o) => o.label === 'Hoosier R7')?.points).toBe(6);
+    expect(opts.find((o) => o.label === 'Kumho Ecsta V700')?.utqg).toBe(50);
+    expect(opts.find((o) => o.label === 'Hoosier R7')?.points).toBe(6);
   });
 
   // Logical component: vehicles.json is composed (open-vehicle + styles + COMSCC template/overrides).

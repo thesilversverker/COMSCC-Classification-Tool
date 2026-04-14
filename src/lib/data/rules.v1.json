@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-04-13T22:43:11.986Z",
+  "generatedAt": "2026-04-14T00:52:34.324Z",
   "sourceWorkbook": "unknown.xlsx",
   "categories": [
     {
@@ -1316,492 +1316,456 @@
     {
       "id": "tires",
       "label": "Tires",
-      "description": "Tire class and model from COMSCC catalog (tireCategories + tires in rules-source/tires.json). Each tire lists score, UTQG, and class.",
+      "description": "Tire catalog from rules-source/tires.json (tireCategories group scoring; picker is one flat list). Each tire lists score, UTQG, and internal class.",
       "questions": [
         {
-          "id": "tires_class",
-          "prompt": "Tire class",
-          "subcategory": "Class & model",
+          "id": "tires_model",
+          "prompt": "Tire",
+          "subcategory": "Tire catalog",
           "answerType": "select",
+          "selectSortControl": "alpha_points",
           "options": [
             {
-              "id": "budget_unclassed",
-              "label": "Budget & Unclassed"
+              "id": "budget_unclassed__bfgoodrich_rival",
+              "label": "BFGoodrich Rival",
+              "points": -5,
+              "utqg": 340
             },
             {
-              "id": "r_comps",
-              "label": "R-comps"
+              "id": "budget_unclassed__continental_challenge_dry",
+              "label": "Continental Challenge Dry",
+              "points": 2.5,
+              "utqg": null
             },
             {
-              "id": "street_legal_track",
-              "label": "Street-legal track"
+              "id": "budget_unclassed__cooper_rs3_r",
+              "label": "Cooper RS3-R",
+              "points": -7,
+              "utqg": 200
             },
             {
-              "id": "endurance_track",
-              "label": "Endurance/Track"
+              "id": "budget_unclassed__cooper_rs3_rs",
+              "label": "Cooper RS3-RS",
+              "points": -7,
+              "utqg": 200
             },
             {
-              "id": "super_200s",
-              "label": "Super 200s"
+              "id": "budget_unclassed__dunlop_direzza_ziii",
+              "label": "Dunlop Direzza ZIII",
+              "points": -3.5,
+              "utqg": 200
             },
             {
-              "id": "endurance_200s",
-              "label": "Endurance 200s"
+              "id": "budget_unclassed__falken_rt615k",
+              "label": "Falken RT615K+",
+              "points": -5,
+              "utqg": 200
+            },
+            {
+              "id": "budget_unclassed__falken_rt660",
+              "label": "Falken RT660",
+              "points": -2.5,
+              "utqg": 200
+            },
+            {
+              "id": "budget_unclassed__federal_595rs_r",
+              "label": "Federal 595RS-R",
+              "points": -7,
+              "utqg": 240
+            },
+            {
+              "id": "budget_unclassed__federal_595rs_rr",
+              "label": "Federal 595RS-RR",
+              "points": -3.5,
+              "utqg": 200
+            },
+            {
+              "id": "budget_unclassed__federal_fz_201_medium",
+              "label": "Federal FZ-201 Medium",
+              "points": -2.5,
+              "utqg": null
+            },
+            {
+              "id": "budget_unclassed__federal_fz_201_soft",
+              "label": "Federal FZ-201 Soft",
+              "points": 0,
+              "utqg": null
+            },
+            {
+              "id": "budget_unclassed__goodyear_supercar_g2",
+              "label": "Goodyear Supercar G2",
+              "points": -3.5,
+              "utqg": 220
+            },
+            {
+              "id": "budget_unclassed__hankook_z221_td_hard",
+              "label": "Hankook Z221 TD Hard",
+              "points": 0,
+              "utqg": null
+            },
+            {
+              "id": "budget_unclassed__hankook_z221_td_soft",
+              "label": "Hankook Z221 TD Soft",
+              "points": 2.5,
+              "utqg": null
+            },
+            {
+              "id": "budget_unclassed__hoosier_track_attack",
+              "label": "Hoosier Track Attack",
+              "points": -1.5,
+              "utqg": null
+            },
+            {
+              "id": "budget_unclassed__kumho_v720",
+              "label": "Kumho V720",
+              "points": -2.5,
+              "utqg": 200
+            },
+            {
+              "id": "budget_unclassed__michelin_pilot_sport_cup_2",
+              "label": "Michelin Pilot Sport Cup 2",
+              "points": -2.5,
+              "utqg": 180
+            },
+            {
+              "id": "budget_unclassed__michelin_pilot_sport_cup_2r",
+              "label": "Michelin Pilot Sport Cup 2R",
+              "points": -2.5,
+              "utqg": 180
+            },
+            {
+              "id": "budget_unclassed__michelin_pilot_super_sport",
+              "label": "Michelin Pilot Super Sport",
+              "points": -7,
+              "utqg": 300
+            },
+            {
+              "id": "budget_unclassed__toyo_r888",
+              "label": "Toyo R888",
+              "points": -2.5,
+              "utqg": 100
+            },
+            {
+              "id": "budget_unclassed__yokohama_a048",
+              "label": "Yokohama A048",
+              "points": -2.5,
+              "utqg": 60
+            },
+            {
+              "id": "budget_unclassed__yokohama_advan_apex",
+              "label": "Yokohama Advan Apex",
+              "points": -2.5,
+              "utqg": 300
+            },
+            {
+              "id": "r_comps__bfgoodrich_r1",
+              "label": "BFGoodrich R1",
+              "points": 6,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__bfgoodrich_r1_s",
+              "label": "BFGoodrich R1-S",
+              "points": 10,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__continental_challenge_wets",
+              "label": "Continental Challenge Wets",
+              "points": 10,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__goodyear_eagle_rs",
+              "label": "Goodyear Eagle RS",
+              "points": 6,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__goodyear_rs_ac",
+              "label": "Goodyear RS AC",
+              "points": 10,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__hankook_c70_c71_c7",
+              "label": "Hankook C70/C71/C7",
+              "points": 6,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__hankook_c90_c91_c9_wets",
+              "label": "Hankook C90/C91/C9/Wets",
+              "points": 10,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__hankook_z214",
+              "label": "Hankook Z214",
+              "points": 6,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__hoosier_a_compound_all",
+              "label": "Hoosier A Compound (All)",
+              "points": 10,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__hoosier_a8",
+              "label": "Hoosier A8",
+              "points": 11,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__hoosier_r7",
+              "label": "Hoosier R7",
+              "points": 6,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__hoosier_r8",
+              "label": "Hoosier R8",
+              "points": 7,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__hoosier_radial_wet",
+              "label": "Hoosier Radial Wet",
+              "points": 10,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__hoosier_sm7_sm7_5",
+              "label": "Hoosier SM7/SM7.5",
+              "points": 6,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__hoosier_smx",
+              "label": "Hoosier SMX",
+              "points": 7,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__non_dot_slicks",
+              "label": "Non-DOT Slicks",
+              "points": 15,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__pirelli_p_zero_slick_dh_dh_compound_only",
+              "label": "Pirelli P-Zero Slick DH (DH Compound Only)",
+              "points": 10,
+              "utqg": null
+            },
+            {
+              "id": "r_comps__yokohama_a055",
+              "label": "Yokohama A055",
+              "points": 6,
+              "utqg": null
+            },
+            {
+              "id": "street_legal_track__goodyear_supercar_3r",
+              "label": "Goodyear Supercar 3R",
+              "points": 0,
+              "utqg": 100
+            },
+            {
+              "id": "street_legal_track__kumho_ecsta_v700",
+              "label": "Kumho Ecsta V700",
+              "points": 6,
+              "utqg": 50
+            },
+            {
+              "id": "street_legal_track__pirelli_trofeo_r",
+              "label": "Pirelli Trofeo R",
+              "points": 0,
+              "utqg": 60
+            },
+            {
+              "id": "street_legal_track__vitour_tempesta_sonic",
+              "label": "Vitour Tempesta Sonic",
+              "points": 0,
+              "utqg": 200
+            },
+            {
+              "id": "endurance_track__maxxis_rc_1",
+              "label": "Maxxis RC-1",
+              "points": 0,
+              "utqg": 100
+            },
+            {
+              "id": "endurance_track__nankang_ar_1",
+              "label": "Nankang AR-1",
+              "points": -2.5,
+              "utqg": 80
+            },
+            {
+              "id": "endurance_track__nitto_nt01",
+              "label": "Nitto NT01",
+              "points": -3.5,
+              "utqg": 100
+            },
+            {
+              "id": "endurance_track__toyo_r",
+              "label": "Toyo R",
+              "points": -1.5,
+              "utqg": null
+            },
+            {
+              "id": "endurance_track__toyo_r888r",
+              "label": "Toyo R888R",
+              "points": -3.5,
+              "utqg": 100
+            },
+            {
+              "id": "endurance_track__toyo_ra1",
+              "label": "Toyo RA1",
+              "points": -2.5,
+              "utqg": 100
+            },
+            {
+              "id": "endurance_track__toyo_rr",
+              "label": "Toyo RR",
+              "points": -2.5,
+              "utqg": null
+            },
+            {
+              "id": "super_200s__bfgoodrich_rival_s_1_5",
+              "label": "BFGoodrich Rival S 1.5",
+              "points": -2.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__bridgestone_potenza_race",
+              "label": "Bridgestone Potenza Race",
+              "points": -3.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__bridgestone_re71rs",
+              "label": "Bridgestone RE71RS",
+              "points": -1.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__bridgestone_re71rz",
+              "label": "Bridgestone RE71RZ",
+              "points": -1.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__falken_rt660",
+              "label": "Falken RT660+",
+              "points": -1.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__goodyear_supercar_3",
+              "label": "Goodyear Supercar 3",
+              "points": -3.5,
+              "utqg": 220
+            },
+            {
+              "id": "super_200s__kumho_v730",
+              "label": "Kumho V730",
+              "points": -2.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__maxxis_vr2",
+              "label": "Maxxis VR2",
+              "points": -2.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__nankang_crs",
+              "label": "Nankang CRS",
+              "points": -1.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__nexen_nfera_sport_r",
+              "label": "Nexen Nfera Sport R",
+              "points": -2.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__toyo_r1r",
+              "label": "Toyo R1R",
+              "points": -3.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__vitour_tempesta_p1",
+              "label": "Vitour Tempesta P1",
+              "points": -1.5,
+              "utqg": 200
+            },
+            {
+              "id": "super_200s__yokohama_a052",
+              "label": "Yokohama A052",
+              "points": -1.5,
+              "utqg": 200
+            },
+            {
+              "id": "endurance_200s__bfgoodrich_rival_plus",
+              "label": "BFGoodrich Rival Plus",
+              "points": -3.5,
+              "utqg": 340
+            },
+            {
+              "id": "endurance_200s__continental_ecs_02",
+              "label": "Continental ECS 02",
+              "points": -3.5,
+              "utqg": 340
+            },
+            {
+              "id": "endurance_200s__continental_extremecontact_force",
+              "label": "Continental ExtremeContact Force",
+              "points": -5,
+              "utqg": 200
+            },
+            {
+              "id": "endurance_200s__hankook_rs4",
+              "label": "Hankook RS4",
+              "points": -5,
+              "utqg": 200
+            },
+            {
+              "id": "endurance_200s__maxxis_vr1",
+              "label": "Maxxis VR1",
+              "points": -5,
+              "utqg": 200
+            },
+            {
+              "id": "endurance_200s__michelin_pilot_sport_4s",
+              "label": "Michelin Pilot Sport 4S",
+              "points": -5,
+              "utqg": 300
+            },
+            {
+              "id": "endurance_200s__vitour_tempesta_enzo_v01r",
+              "label": "Vitour Tempesta Enzo V01R",
+              "points": -2.5,
+              "utqg": 200
             }
           ]
-        },
-        {
-          "id": "tires_model",
-          "prompt": "Specific tire",
-          "subcategory": "Class & model",
-          "answerType": "select",
-          "dependsOn": "tires_class",
-          "optionsByParent": {
-            "budget_unclassed": [
-              {
-                "id": "budget_unclassed__bfgoodrich_rival",
-                "label": "BFGoodrich Rival",
-                "points": -5,
-                "utqg": 340
-              },
-              {
-                "id": "budget_unclassed__continental_challenge_dry",
-                "label": "Continental Challenge Dry",
-                "points": 2.5,
-                "utqg": null
-              },
-              {
-                "id": "budget_unclassed__cooper_rs3_r",
-                "label": "Cooper RS3-R",
-                "points": -7,
-                "utqg": 200
-              },
-              {
-                "id": "budget_unclassed__cooper_rs3_rs",
-                "label": "Cooper RS3-RS",
-                "points": -7,
-                "utqg": 200
-              },
-              {
-                "id": "budget_unclassed__dunlop_direzza_ziii",
-                "label": "Dunlop Direzza ZIII",
-                "points": -3.5,
-                "utqg": 200
-              },
-              {
-                "id": "budget_unclassed__falken_rt615k",
-                "label": "Falken RT615K+",
-                "points": -5,
-                "utqg": 200
-              },
-              {
-                "id": "budget_unclassed__falken_rt660",
-                "label": "Falken RT660",
-                "points": -2.5,
-                "utqg": 200
-              },
-              {
-                "id": "budget_unclassed__federal_595rs_r",
-                "label": "Federal 595RS-R",
-                "points": -7,
-                "utqg": 240
-              },
-              {
-                "id": "budget_unclassed__federal_595rs_rr",
-                "label": "Federal 595RS-RR",
-                "points": -3.5,
-                "utqg": 200
-              },
-              {
-                "id": "budget_unclassed__federal_fz_201_medium",
-                "label": "Federal FZ-201 Medium",
-                "points": -2.5,
-                "utqg": null
-              },
-              {
-                "id": "budget_unclassed__federal_fz_201_soft",
-                "label": "Federal FZ-201 Soft",
-                "points": 0,
-                "utqg": null
-              },
-              {
-                "id": "budget_unclassed__goodyear_supercar_g2",
-                "label": "Goodyear Supercar G2",
-                "points": -3.5,
-                "utqg": 220
-              },
-              {
-                "id": "budget_unclassed__hankook_c70_c71_c7",
-                "label": "Hankook C70/C71/C7",
-                "points": 6,
-                "utqg": null
-              },
-              {
-                "id": "budget_unclassed__hankook_z221_td_hard",
-                "label": "Hankook Z221 TD Hard",
-                "points": 0,
-                "utqg": null
-              },
-              {
-                "id": "budget_unclassed__hankook_z221_td_soft",
-                "label": "Hankook Z221 TD Soft",
-                "points": 2.5,
-                "utqg": null
-              },
-              {
-                "id": "budget_unclassed__hoosier_track_attack",
-                "label": "Hoosier Track Attack",
-                "points": -1.5,
-                "utqg": null
-              },
-              {
-                "id": "budget_unclassed__kumho_v720",
-                "label": "Kumho V720",
-                "points": -2.5,
-                "utqg": 200
-              },
-              {
-                "id": "budget_unclassed__michelin_pilot_sport_cup_2",
-                "label": "Michelin Pilot Sport Cup 2",
-                "points": -2.5,
-                "utqg": 180
-              },
-              {
-                "id": "budget_unclassed__michelin_pilot_sport_cup_2r",
-                "label": "Michelin Pilot Sport Cup 2R",
-                "points": -2.5,
-                "utqg": 180
-              },
-              {
-                "id": "budget_unclassed__michelin_pilot_super_sport",
-                "label": "Michelin Pilot Super Sport",
-                "points": -7,
-                "utqg": 300
-              },
-              {
-                "id": "budget_unclassed__toyo_r888",
-                "label": "Toyo R888",
-                "points": -2.5,
-                "utqg": 100
-              },
-              {
-                "id": "budget_unclassed__yokohama_a048",
-                "label": "Yokohama A048",
-                "points": -2.5,
-                "utqg": 60
-              },
-              {
-                "id": "budget_unclassed__yokohama_advan_apex",
-                "label": "Yokohama Advan Apex",
-                "points": -2.5,
-                "utqg": 300
-              }
-            ],
-            "r_comps": [
-              {
-                "id": "r_comps__bfgoodrich_r1",
-                "label": "BFGoodrich R1",
-                "points": 6,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__bfgoodrich_r1_s",
-                "label": "BFGoodrich R1-S",
-                "points": 10,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__continental_challenge_wets",
-                "label": "Continental Challenge Wets",
-                "points": 10,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__goodyear_eagle_rs",
-                "label": "Goodyear Eagle RS",
-                "points": 6,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__goodyear_rs_ac",
-                "label": "Goodyear RS AC",
-                "points": 10,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__hankook_c90_c91_c9_wets",
-                "label": "Hankook C90/C91/C9/Wets",
-                "points": 10,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__hankook_z214",
-                "label": "Hankook Z214",
-                "points": 6,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__hoosier_a_compound_all",
-                "label": "Hoosier A Compound (All)",
-                "points": 10,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__hoosier_a8",
-                "label": "Hoosier A8",
-                "points": 11,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__hoosier_r7",
-                "label": "Hoosier R7",
-                "points": 6,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__hoosier_r8",
-                "label": "Hoosier R8",
-                "points": 7,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__hoosier_radial_wet",
-                "label": "Hoosier Radial Wet",
-                "points": 10,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__hoosier_sm7_sm7_5",
-                "label": "Hoosier SM7/SM7.5",
-                "points": 6,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__hoosier_smx",
-                "label": "Hoosier SMX",
-                "points": 7,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__non_dot_slicks",
-                "label": "Non-DOT Slicks",
-                "points": 15,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__pirelli_p_zero_slick_dh_dh_compound_only",
-                "label": "Pirelli P-Zero Slick DH (DH Compound Only)",
-                "points": 10,
-                "utqg": null
-              },
-              {
-                "id": "r_comps__yokohama_a055",
-                "label": "Yokohama A055",
-                "points": 6,
-                "utqg": null
-              }
-            ],
-            "street_legal_track": [
-              {
-                "id": "street_legal_track__goodyear_supercar_3r",
-                "label": "Goodyear Supercar 3R",
-                "points": 0,
-                "utqg": 100
-              },
-              {
-                "id": "street_legal_track__kumho_ecsta_v700",
-                "label": "Kumho Ecsta V700",
-                "points": 6,
-                "utqg": 50
-              },
-              {
-                "id": "street_legal_track__pirelli_trofeo_r",
-                "label": "Pirelli Trofeo R",
-                "points": 0,
-                "utqg": 60
-              },
-              {
-                "id": "street_legal_track__vitour_tempesta_sonic",
-                "label": "Vitour Tempesta Sonic",
-                "points": 0,
-                "utqg": 200
-              }
-            ],
-            "endurance_track": [
-              {
-                "id": "endurance_track__maxxis_rc_1",
-                "label": "Maxxis RC-1",
-                "points": 0,
-                "utqg": 100
-              },
-              {
-                "id": "endurance_track__nankang_ar_1",
-                "label": "Nankang AR-1",
-                "points": -2.5,
-                "utqg": 80
-              },
-              {
-                "id": "endurance_track__nitto_nt01",
-                "label": "Nitto NT01",
-                "points": -3.5,
-                "utqg": 100
-              },
-              {
-                "id": "endurance_track__toyo_r",
-                "label": "Toyo R",
-                "points": -1.5,
-                "utqg": null
-              },
-              {
-                "id": "endurance_track__toyo_r888r",
-                "label": "Toyo R888R",
-                "points": -3.5,
-                "utqg": 100
-              },
-              {
-                "id": "endurance_track__toyo_ra1",
-                "label": "Toyo RA1",
-                "points": -2.5,
-                "utqg": 100
-              },
-              {
-                "id": "endurance_track__toyo_rr",
-                "label": "Toyo RR",
-                "points": -2.5,
-                "utqg": null
-              }
-            ],
-            "super_200s": [
-              {
-                "id": "super_200s__bfgoodrich_rival_s_1_5",
-                "label": "BFGoodrich Rival S 1.5",
-                "points": -2.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__bridgestone_potenza_race",
-                "label": "Bridgestone Potenza Race",
-                "points": -3.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__bridgestone_re71rs",
-                "label": "Bridgestone RE71RS",
-                "points": -1.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__bridgestone_re71rz",
-                "label": "Bridgestone RE71RZ",
-                "points": -1.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__falken_rt660",
-                "label": "Falken RT660+",
-                "points": -1.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__goodyear_supercar_3",
-                "label": "Goodyear Supercar 3",
-                "points": -3.5,
-                "utqg": 220
-              },
-              {
-                "id": "super_200s__kumho_v730",
-                "label": "Kumho V730",
-                "points": -2.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__maxxis_vr2",
-                "label": "Maxxis VR2",
-                "points": -2.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__nankang_crs",
-                "label": "Nankang CRS",
-                "points": -1.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__nexen_nfera_sport_r",
-                "label": "Nexen Nfera Sport R",
-                "points": -2.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__toyo_r1r",
-                "label": "Toyo R1R",
-                "points": -3.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__vitour_tempesta_p1",
-                "label": "Vitour Tempesta P1",
-                "points": -1.5,
-                "utqg": 200
-              },
-              {
-                "id": "super_200s__yokohama_a052",
-                "label": "Yokohama A052",
-                "points": -1.5,
-                "utqg": 200
-              }
-            ],
-            "endurance_200s": [
-              {
-                "id": "endurance_200s__bfgoodrich_rival_plus",
-                "label": "BFGoodrich Rival Plus",
-                "points": -3.5,
-                "utqg": 340
-              },
-              {
-                "id": "endurance_200s__continental_ecs_02",
-                "label": "Continental ECS 02",
-                "points": -3.5,
-                "utqg": 340
-              },
-              {
-                "id": "endurance_200s__continental_extremecontact_force",
-                "label": "Continental ExtremeContact Force",
-                "points": -5,
-                "utqg": 200
-              },
-              {
-                "id": "endurance_200s__hankook_rs4",
-                "label": "Hankook RS4",
-                "points": -5,
-                "utqg": 200
-              },
-              {
-                "id": "endurance_200s__maxxis_vr1",
-                "label": "Maxxis VR1",
-                "points": -5,
-                "utqg": 200
-              },
-              {
-                "id": "endurance_200s__michelin_pilot_sport_4s",
-                "label": "Michelin Pilot Sport 4S",
-                "points": -5,
-                "utqg": 300
-              },
-              {
-                "id": "endurance_200s__vitour_tempesta_enzo_v01r",
-                "label": "Vitour Tempesta Enzo V01R",
-                "points": -2.5,
-                "utqg": 200
-              }
-            ]
-          }
         },
         {
           "id": "tires_width_mm",
           "prompt": "Primary tire width (mm)",
           "subcategory": "Sizing",
-          "answerType": "number"
+          "answerType": "number",
+          "helpText": "Square setup: enter primary only. Staggered: also enter stagger width; the tool uses the average of the two widths. Tires category adds ((average − spec width for your class) × 0.05) points; spec width follows the tier chart in the summary banner."
+        },
+        {
+          "id": "tires_width_stagger_mm",
+          "prompt": "Staggered tire width (mm, optional)",
+          "subcategory": "Sizing",
+          "answerType": "number",
+          "helpText": "Leave blank for square setup. With both widths set, the average is used for the width-vs-spec points line."
         }
       ]
     }

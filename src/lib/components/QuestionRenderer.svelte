@@ -7,7 +7,24 @@
     scaledPowerFromDynoAnswers
   } from '$lib/dyno-reclass-math';
   import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
-  import type { RuleAnswer, RuleQuestion } from '$types/rules';
+  import type { RuleAnswer, RuleOption, RuleQuestion } from '$types/rules';
+
+  // Logical component: tire catalog (and similar) — reorder flat select options without mutating rules.
+  function sortSelectOptionsForMode(options: RuleOption[], mode: 'alpha' | 'points'): RuleOption[] {
+    const collator = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
+    const copy = [...options];
+    if (mode === 'alpha') {
+      copy.sort((a, b) => collator.compare(a.label, b.label));
+      return copy;
+    }
+    copy.sort((a, b) => {
+      const pa = typeof a.points === 'number' ? a.points : 0;
+      const pb = typeof b.points === 'number' ? b.points : 0;
+      if (pb !== pa) return pb - pa;
+      return collator.compare(a.label, b.label);
+    });
+    return copy;
+  }
 
   export let question: RuleQuestion;
   export let value: RuleAnswer;
@@ -19,12 +36,19 @@
   export let onChange: (value: RuleAnswer) => void;
   export let onManualChange: ((value: RuleAnswer) => void) | undefined = undefined;
 
-  // Logical component: dependent option resolution for cascading dropdowns.
+  // Logical component: dependent option resolution for cascading dropdowns; flat `options` otherwise.
+  let tireSortMode: 'alpha' | 'points' = 'alpha';
   $: parentValue = question.dependsOn ? answers[question.dependsOn] : null;
-  $: resolvedOptions =
-    question.dependsOn && question.optionsByParent && typeof parentValue === 'string'
-      ? question.optionsByParent[parentValue] ?? []
-      : (question.options ?? []);
+  $: selectOptionsBase =
+    question.answerType === 'select'
+      ? question.dependsOn && question.optionsByParent && typeof parentValue === 'string'
+        ? question.optionsByParent[parentValue] ?? []
+        : question.options ?? []
+      : [];
+  $: selectOptionsForSelect =
+    question.answerType === 'select' && question.selectSortControl === 'alpha_points'
+      ? sortSelectOptionsForMode(selectOptionsBase, tireSortMode)
+      : selectOptionsBase;
 
   function handleBooleanChange(event: Event) {
     const checked = (event.currentTarget as HTMLInputElement).checked;
@@ -185,15 +209,31 @@
         readonly={question.readOnly}
       />
     {:else if question.answerType === 'select'}
+      {#if question.selectSortControl === 'alpha_points'}
+        <div class="select-sort-bar" role="group" aria-label="Sort options">
+          <span class="select-sort-label">Sort</span>
+          <label class="select-sort-choice">
+            <input type="radio" bind:group={tireSortMode} name={`tire-sort-${question.id}`} value="alpha" />
+            A–Z
+          </label>
+          <label class="select-sort-choice">
+            <input type="radio" bind:group={tireSortMode} name={`tire-sort-${question.id}`} value="points" />
+            By points
+          </label>
+        </div>
+      {/if}
       <select
         value={typeof value === 'string' ? value : ''}
         on:change={handleSelectChange}
-        disabled={Boolean(question.dependsOn) && resolvedOptions.length === 0}
+        disabled={Boolean(question.dependsOn) && selectOptionsBase.length === 0}
       >
         <option value="">Select an option</option>
-        {#each resolvedOptions as option}
+        {#each selectOptionsForSelect as option}
           <option value={option.id}>
-            {option.label}{typeof option.utqg === 'number' ? ` — UTQG ${option.utqg}` : ''}
+            {option.label}{typeof option.utqg === 'number' ? ` — UTQG ${option.utqg}` : ''}{typeof option.points ===
+            'number' && question.selectSortControl === 'alpha_points'
+              ? ` — ${option.points >= 0 ? '+' : ''}${option.points} pts`
+              : ''}
           </option>
         {/each}
       </select>
@@ -343,6 +383,24 @@ Complete vehicle match (catalog weight + factory HP/torque) and dyno peak HP/tor
   }
   .dyno-eq-pending {
     color: #444;
+  }
+  .select-sort-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.88rem;
+  }
+  .select-sort-label {
+    font-weight: 600;
+    color: #444;
+  }
+  .select-sort-choice {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
   }
   .block-item input,
   .block-item select {

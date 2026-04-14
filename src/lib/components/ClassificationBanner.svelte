@@ -11,8 +11,10 @@
   // Logical component: top summary — tier strip (T5–T1), grand modification total, per-category points, spec tire width.
   export let categories: RuleCategory[] = [];
   export let categoryPoints: Record<string, number> = {};
-  /** Primary tire width (mm) from the Tires worksheet when entered. */
+  /** Effective tire width (mm): primary, or average of primary + stagger when both set. */
   export let declaredTireWidthMm: number | null = null;
+  /** Short explanation (primary only, average, or stagger-only hint). */
+  export let declaredTireWidthCaption: string | null = null;
 
   $: grandModificationTotal = sumCategoryPoints(categoryPoints);
   $: currentTier = touringTierFromModificationPoints(grandModificationTotal);
@@ -38,9 +40,12 @@
       </p>
       {#if declaredTireWidthMm !== null}
         <p class="head-line">
-          <strong>Declared primary width:</strong>
-          {declaredTireWidthMm} mm
+          <strong>Declared effective width:</strong>
+          {Number.isInteger(declaredTireWidthMm) ? declaredTireWidthMm : declaredTireWidthMm.toFixed(1)} mm
         </p>
+        {#if declaredTireWidthCaption}
+          <p class="head-line muted caption-line">{declaredTireWidthCaption}</p>
+        {/if}
       {:else}
         <p class="head-line muted">Enter primary tire width in Tires to compare against spec.</p>
       {/if}
@@ -115,6 +120,11 @@
   .muted {
     color: #666;
     font-size: 0.9rem;
+  }
+  .caption-line {
+    margin-top: -0.15rem;
+    font-size: 0.82rem;
+    line-height: 1.35;
   }
   .tier-strip {
     display: flex;

@@ -97,7 +97,7 @@
       "tireName": "Hankook C70/C71/C7",
       "score": 6,
       "utqg": null,
-      "category": "budget_unclassed"
+      "category": "r_comps"
     },
     {
       "tireName": "Yokohama A055",
@@ -457,13 +457,21 @@
   "category": {
     "id": "tires",
     "label": "Tires",
-    "description": "Tire class and model from COMSCC catalog (tireCategories + tires in rules-source/tires.json). Each tire lists score, UTQG, and class.",
+    "description": "Tire catalog from rules-source/tires.json (tireCategories group scoring; picker is one flat list). Each tire lists score, UTQG, and internal class.",
     "questions": [
       {
         "id": "tires_width_mm",
         "prompt": "Primary tire width (mm)",
         "subcategory": "Sizing",
-        "answerType": "number"
+        "answerType": "number",
+        "helpText": "Square setup: enter primary only. Staggered: also enter stagger width; the tool uses the average of the two widths. Tires category adds ((average − spec width for your class) × 0.05) points; spec width follows the tier chart in the summary banner."
+      },
+      {
+        "id": "tires_width_stagger_mm",
+        "prompt": "Staggered tire width (mm, optional)",
+        "subcategory": "Sizing",
+        "answerType": "number",
+        "helpText": "Leave blank for square setup. With both widths set, the average is used for the width-vs-spec points line."
       }
     ]
   }

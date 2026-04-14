@@ -23,6 +23,8 @@ export interface RuleQuestion {
   options?: RuleOption[];
   optionsByParent?: Record<string, RuleOption[]>;
   dependsOn?: string;
+  /** Single-select: show A–Z vs by-points sort controls (flat `options` only). */
+  selectSortControl?: 'alpha_points';
   placeholder?: string;
   numericOnly?: boolean;
   digits?: number;

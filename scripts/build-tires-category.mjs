@@ -58,10 +58,20 @@ export function buildTiresCategoryFromDoc(doc) {
     optionsByParent[category].push(opt);
   }
 
-  // Logical component: stable A–Z order for the specific-tire dropdown per class.
+  // Logical component: stable A–Z order within each internal class bucket (flatten order follows tireCategories).
   const collator = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
   for (const arr of Object.values(optionsByParent)) {
     arr.sort((a, b) => collator.compare(a.label, b.label));
+  }
+
+  // Logical component: one flat catalog (class not shown); UI sorts by label or points.
+  const flatOptions = tireCategories.flatMap((c) => optionsByParent[c.id] ?? []);
+  const seenIds = new Set();
+  for (const o of flatOptions) {
+    if (seenIds.has(o.id)) {
+      throw new Error(`Duplicate tire option id "${o.id}" — fix tires.json (same name in same class?)`);
+    }
+    seenIds.add(o.id);
   }
 
   const tail = Array.isArray(catBlock.questions) ? catBlock.questions : [];
@@ -72,19 +82,12 @@ export function buildTiresCategoryFromDoc(doc) {
     description: typeof catBlock.description === 'string' ? catBlock.description : '',
     questions: [
       {
-        id: 'tires_class',
-        prompt: 'Tire class',
-        subcategory: 'Class & model',
-        answerType: 'select',
-        options: tireCategories.map((c) => ({ id: c.id, label: c.label }))
-      },
-      {
         id: 'tires_model',
-        prompt: 'Specific tire',
-        subcategory: 'Class & model',
+        prompt: 'Tire',
+        subcategory: 'Tire catalog',
         answerType: 'select',
-        dependsOn: 'tires_class',
-        optionsByParent
+        selectSortControl: 'alpha_points',
+        options: flatOptions
       },
       ...tail
     ]

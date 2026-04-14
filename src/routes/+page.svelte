@@ -9,6 +9,7 @@
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
   import SessionSummary from '$components/SessionSummary.svelte';
   import VehiclesPicker from '$components/VehiclesPicker.svelte';
+  import { averageTireWidthMmFromAnswers, parseOptionalTireWidthMm } from '$lib/tire-width-points';
   import { computeAllCategoryPoints } from '$lib/scoring';
   import { findShowroomCatalogMatch } from '$lib/vehicles-showroom-match';
   import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
@@ -200,16 +201,18 @@
     }
   }
 
-  // Logical component: optional primary tire width (mm) for spec comparison in the classification banner.
-  function parseOptionalTireWidthMm(answer: RuleAnswer): number | null {
-    if (typeof answer === 'number' && Number.isFinite(answer)) return answer;
-    if (typeof answer === 'string' && answer.trim() !== '') {
-      const n = Number(answer);
-      if (Number.isFinite(n)) return n;
-    }
-    return null;
-  }
-  $: declaredTireWidthMm = parseOptionalTireWidthMm($sessionStore.answers.tires_width_mm);
+  // Logical component: tire widths (mm) — stagger optional; banner + scoring use shared average helper.
+  $: primaryTireWidthMm = parseOptionalTireWidthMm($sessionStore.answers.tires_width_mm);
+  $: staggerTireWidthMm = parseOptionalTireWidthMm($sessionStore.answers.tires_width_stagger_mm);
+  $: declaredTireWidthMm = averageTireWidthMmFromAnswers($sessionStore.answers);
+  $: declaredTireWidthCaption =
+    primaryTireWidthMm !== null && staggerTireWidthMm !== null
+      ? `Average of primary ${primaryTireWidthMm} mm and stagger ${staggerTireWidthMm} mm`
+      : primaryTireWidthMm !== null
+        ? `Primary ${primaryTireWidthMm} mm`
+        : staggerTireWidthMm !== null
+          ? `Stagger ${staggerTireWidthMm} mm — add primary width to use the stagger average.`
+          : null;
 
   // Logical component: compute display value per question, including derived values.
   function getRenderedValue(questionId: string): RuleAnswer {
@@ -258,6 +261,7 @@
     categories={rules.categories}
     categoryPoints={categoryPointsById}
     declaredTireWidthMm={declaredTireWidthMm}
+    declaredTireWidthCaption={declaredTireWidthCaption}
   />
 
   <div class="layout">

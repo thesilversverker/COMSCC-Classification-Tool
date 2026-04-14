@@ -4,6 +4,7 @@ import comsccCatalogJson from '../../rules-source/vehicles-comscc-catalog.json';
 import type { ComsccCatalogSeedRow } from '$lib/comscc-catalog-trims';
 import { dynoPointsAboveBaseFromSession } from '$lib/dyno-reclass-math';
 import { computeWeightSheetPoints } from '$lib/weight-worksheet-points';
+import { tireWidthLinePointsForGrandTotal } from '$lib/tire-width-points';
 import { findShowroomCatalogMatch, type ShowroomLookupRow } from '$lib/vehicles-showroom-match';
 import type { RuleAnswer, RuleAnswersByQuestionId, RuleCategory, RuleQuestion } from '$types/rules';
 
@@ -136,7 +137,11 @@ function computeVehiclesCategoryPoints(answers: RuleAnswersByQuestionId): number
   return toNumeric(answers.vehicles_showroom_manual_points);
 }
 
-export function computeCategoryPoints(category: RuleCategory, answers: RuleAnswersByQuestionId): number {
+export function computeCategoryPoints(
+  category: RuleCategory,
+  answers: RuleAnswersByQuestionId,
+  allCategories?: RuleCategory[]
+): number {
   if (category.id === 'vehicles') {
     return computeVehiclesCategoryPoints(answers);
   }
@@ -161,6 +166,27 @@ export function computeCategoryPoints(category: RuleCategory, answers: RuleAnswe
     }
     return sumPointsFromQuestions(category.questions, answers, new Set([ENGINE_DYNO_TOGGLE_ID]));
   }
+  // Logical component: Tires = catalog model points + (avgWidth − specWidth) × 0.05; spec tier iterates with grand total.
+  if (category.id === 'tires') {
+    const cats = allCategories;
+    const modelPoints = sumPointsFromQuestions(category.questions, answers);
+    if (!cats || cats.length === 0) {
+      return modelPoints;
+    }
+    const otherCategoriesTotal = cats
+      .filter((c) => c.id !== 'tires')
+      .reduce((sum, c) => sum + computeCategoryPoints(c, answers, cats), 0);
+    let grand = otherCategoriesTotal + modelPoints;
+    for (let i = 0; i < 20; i++) {
+      const widthPts = tireWidthLinePointsForGrandTotal(answers, grand);
+      const nextGrand = otherCategoriesTotal + modelPoints + widthPts;
+      if (Math.abs(nextGrand - grand) < 1e-9) {
+        return modelPoints + widthPts;
+      }
+      grand = nextGrand;
+    }
+    return modelPoints + tireWidthLinePointsForGrandTotal(answers, grand);
+  }
 
   return sumPointsFromQuestions(category.questions, answers);
 }
@@ -169,7 +195,9 @@ export function computeAllCategoryPoints(
   categories: RuleCategory[],
   answers: RuleAnswersByQuestionId
 ): Record<string, number> {
-  return Object.fromEntries(categories.map((c) => [c.id, computeCategoryPoints(c, answers)]));
+  return Object.fromEntries(
+    categories.map((c) => [c.id, computeCategoryPoints(c, answers, categories)])
+  );
 }
 
 // Logical component: grand total of all category modification points shown in the classifier.

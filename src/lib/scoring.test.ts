@@ -9,6 +9,50 @@ describe('scoring', () => {
   });
 });
 
+// Logical component: tires category adds (avgWidth − specWidth) × 0.05 to model points (tier from converged grand).
+const tiresModelFixture: RuleQuestion = {
+  id: 'tires_model',
+  prompt: 'Tire',
+  subcategory: 'Tire catalog',
+  answerType: 'select',
+  options: [{ id: 'test_tire', label: 'Test tire', points: 2 }]
+};
+const tiresWidthFixture: RuleQuestion = {
+  id: 'tires_width_mm',
+  prompt: 'Primary width',
+  subcategory: 'Sizing',
+  answerType: 'number'
+};
+const tiresCategoryFixture: RuleCategory = {
+  id: 'tires',
+  label: 'Tires',
+  questions: [tiresModelFixture, tiresWidthFixture]
+};
+const emptyExteriorCategoryFixture: RuleCategory = {
+  id: 'exterior',
+  label: 'Exterior',
+  questions: []
+};
+
+describe('computeCategoryPoints tires width line', () => {
+  const cats = [emptyExteriorCategoryFixture, tiresCategoryFixture];
+
+  it('adds width delta to model points using spec tier (T5 at low grand total)', () => {
+    const answers = {
+      tires_model: 'test_tire',
+      tires_width_mm: 285
+    };
+    // Model 2 + (285 − 205) × 0.05 = 6
+    expect(computeCategoryPoints(tiresCategoryFixture, answers, cats)).toBeCloseTo(6, 10);
+  });
+
+  it('returns model points only when no tire width entered', () => {
+    expect(
+      computeCategoryPoints(tiresCategoryFixture, { tires_model: 'test_tire' }, cats)
+    ).toBe(2);
+  });
+});
+
 // Logical component: engine category uses dyno vs showroom as sole total when dyno path is active.
 const dynoToggleQuestion: RuleQuestion = {
   id: 'dyno_reclass_selected',
