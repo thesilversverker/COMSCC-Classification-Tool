@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-04-14T00:52:34.324Z",
+  "generatedAt": "2026-04-14T01:06:15.180Z",
   "sourceWorkbook": "unknown.xlsx",
   "categories": [
     {
@@ -1093,8 +1093,8 @@
           "subcategory": "Rotors/Pads/Shoes"
         },
         {
-          "id": "brakes_modified_re_located_or_non_factory_trim_brake_brakets_15",
-          "prompt": "Modified, re-located, or non-Factory Trim brake brakets",
+          "id": "brakes_modified_re_located_or_non_factory_trim_brake_brackets_15",
+          "prompt": "Modified, re-located, or non-Factory Trim brake brackets",
           "answerType": "boolean",
           "pointValue": 0,
           "needsManualPoints": false,
