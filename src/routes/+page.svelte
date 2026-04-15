@@ -4,12 +4,12 @@
   import showroomLookup from '$data/vehicle-showroom-lookup.json';
   import comsccCatalogJson from '../../rules-source/vehicles-comscc-catalog.json';
   import type { ComsccCatalogSeedRow } from '$lib/comscc-catalog-trims';
-  import CategoryNav from '$components/CategoryNav.svelte';
   import ClassificationBanner from '$components/ClassificationBanner.svelte';
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
   import SessionSummary from '$components/SessionSummary.svelte';
   import VehiclesPicker from '$components/VehiclesPicker.svelte';
   import { averageTireWidthMmFromAnswers, parseOptionalTireWidthMm } from '$lib/tire-width-points';
+  import { buildSessionSummaryPayload, sessionSummaryToCsv } from '$lib/session-summary-rows';
   import { computeAllCategoryPoints } from '$lib/scoring';
   import { findShowroomCatalogMatch } from '$lib/vehicles-showroom-match';
   import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
@@ -149,6 +149,7 @@
 
   $: category = rules.categories[$navigationStore.categoryIndex];
   $: categoryPointsById = computeAllCategoryPoints(rules.categories, $sessionStore.answers);
+  $: summaryPayload = buildSessionSummaryPayload(rules.categories, $sessionStore.answers);
   $: currentCategoryTotal = category ? (categoryPointsById[category.id] ?? 0) : 0;
   $: subcategoryBlocks = category ? buildSubcategoryBlocks(category, $sessionStore.answers) : [];
   $: vehicleCatalogMatch = findShowroomCatalogMatch(
@@ -230,15 +231,19 @@
     handleFixedPointToggle(question, (event.currentTarget as HTMLInputElement).checked);
   }
 
-  // Logical component: category-only navigation for footer controls.
-  function goToNextCategory() {
-    const nextIndex = Math.min($navigationStore.categoryIndex + 1, rules.categories.length - 1);
-    navigationStore.goToCategory(nextIndex);
-  }
-
-  function goToPreviousCategory() {
-    const prevIndex = Math.max($navigationStore.categoryIndex - 1, 0);
-    navigationStore.goToCategory(prevIndex);
+  // Logical component: browser download for session summary CSV.
+  function downloadSummaryCsv() {
+    const csv = sessionSummaryToCsv(summaryPayload);
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'comscc-classification-summary.csv';
+    a.rel = 'noopener';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
   }
 
   // Logical component: defensive hydration for SSR/browser transitions.
@@ -262,16 +267,11 @@
     categoryPoints={categoryPointsById}
     declaredTireWidthMm={declaredTireWidthMm}
     declaredTireWidthCaption={declaredTireWidthCaption}
+    activeCategoryId={category?.id ?? ''}
+    onSelectCategory={(index) => navigationStore.goToCategory(index)}
   />
 
   <div class="layout">
-    <CategoryNav
-      categories={rules.categories}
-      categoryPoints={categoryPointsById}
-      activeCategoryId={category?.id ?? ''}
-      onSelect={(index) => navigationStore.goToCategory(index)}
-    />
-
     {#if showQuestionStack}
       <section class="question-stack">
         <p class="running-total">
@@ -392,12 +392,11 @@
       <section><p>No question available in this category yet.</p></section>
     {/if}
 
-    <SessionSummary rules={rules} answers={$sessionStore.answers} />
+    <SessionSummary payload={summaryPayload} />
   </div>
 
   <footer class="actions">
-    <button type="button" on:click={goToPreviousCategory} disabled={$navigationStore.categoryIndex === 0}>Previous Category</button>
-    <button type="button" on:click={goToNextCategory} disabled={$navigationStore.categoryIndex === rules.categories.length - 1}>Next Category</button>
+    <button type="button" on:click={downloadSummaryCsv}>Download summary as CSV</button>
     <button type="button" on:click={() => sessionStore.reset()}>Reset session</button>
   </footer>
 </main>
@@ -406,7 +405,7 @@
   main { max-width: 1080px; margin: 0 auto; padding: 1rem; font-family: system-ui, sans-serif; min-width: 0; }
   header h1 { line-height: 1.25; overflow-wrap: anywhere; word-break: break-word; }
   header p { overflow-wrap: anywhere; }
-  .layout { display: grid; gap: 1rem; grid-template-columns: minmax(14rem, 1fr) minmax(0, 2fr) minmax(14rem, 1fr); align-items: start; }
+  .layout { display: grid; gap: 1rem; grid-template-columns: minmax(0, 1.55fr) minmax(11rem, 1fr); align-items: start; }
   .actions { margin-top: 1rem; display: flex; gap: 0.5rem; }
   .question-stack { display: grid; gap: 0.75rem; min-width: 0; }
   .running-total { margin: 0; padding: 0.5rem 0.75rem; border: 1px solid #ddd; border-radius: 8px; background: #f8f8f8; }

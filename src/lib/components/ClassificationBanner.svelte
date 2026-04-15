@@ -15,6 +15,9 @@
   export let declaredTireWidthMm: number | null = null;
   /** Short explanation (primary only, average, or stagger-only hint). */
   export let declaredTireWidthCaption: string | null = null;
+  /** When set with `onSelectCategory`, category chips navigate the worksheet. */
+  export let activeCategoryId = '';
+  export let onSelectCategory: ((index: number) => void) | undefined = undefined;
 
   $: grandModificationTotal = sumCategoryPoints(categoryPoints);
   $: currentTier = touringTierFromModificationPoints(grandModificationTotal);
@@ -62,13 +65,30 @@
     {/each}
   </div>
 
-  <ul class="category-breakdown">
-    {#each categories as cat (cat.id)}
+  <ul class="category-breakdown" aria-label="Category totals and navigation">
+    {#each categories as cat, index (cat.id)}
       <li>
-        <span class="cat-label">{cat.label}</span>
-        <span class="cat-points">
-          {(categoryPoints[cat.id] ?? 0).toFixed(cat.id === 'weight' ? 2 : 1)} pts
-        </span>
+        {#if onSelectCategory}
+          <button
+            type="button"
+            class="cat-chip"
+            class:cat-chip-active={cat.id === activeCategoryId}
+            aria-current={cat.id === activeCategoryId ? 'page' : undefined}
+            on:click={() => onSelectCategory?.(index)}
+          >
+            <span class="cat-label">{cat.label}</span>
+            <span class="cat-points">
+              {(categoryPoints[cat.id] ?? 0).toFixed(cat.id === 'weight' ? 2 : 1)} pts
+            </span>
+          </button>
+        {:else}
+          <span class="cat-chip cat-chip-static" role="group">
+            <span class="cat-label">{cat.label}</span>
+            <span class="cat-points">
+              {(categoryPoints[cat.id] ?? 0).toFixed(cat.id === 'weight' ? 2 : 1)} pts
+            </span>
+          </span>
+        {/if}
       </li>
     {/each}
   </ul>
@@ -168,6 +188,10 @@
     min-width: 0;
   }
   .category-breakdown li {
+    min-width: 0;
+  }
+  .cat-chip {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -178,10 +202,24 @@
     background: #fff;
     font-size: 0.88rem;
     min-width: 0;
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+    box-sizing: border-box;
+  }
+  .cat-chip-static {
+    cursor: default;
+  }
+  .cat-chip-active {
+    border-color: #4a6ee0;
+    background: #eef2ff;
+    box-shadow: 0 0 0 1px rgba(74, 110, 224, 0.25);
   }
   .cat-label {
     overflow-wrap: anywhere;
     word-break: break-word;
+    min-width: 0;
   }
   .cat-points {
     font-variant-numeric: tabular-nums;

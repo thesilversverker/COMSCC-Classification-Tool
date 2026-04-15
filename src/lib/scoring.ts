@@ -57,7 +57,7 @@ function questionHasSubstantiveAnswer(q: RuleQuestion, answers: RuleAnswersByQue
 }
 
 /** Dyno/custom power path: engine category total is dyno vs showroom only; sheet checkboxes are not summed. */
-function engineDynoSupersedesModificationPoints(
+export function engineDynoSupersedesModificationPoints(
   questions: RuleQuestion[],
   answers: RuleAnswersByQuestionId
 ): boolean {
@@ -66,7 +66,15 @@ function engineDynoSupersedesModificationPoints(
   return engineManualSheetTrigger(questions, answers);
 }
 
-function resolveSelectedOption(question: RuleQuestion, answers: RuleAnswersByQuestionId) {
+/** Standard per-question worksheet contribution (boolean / select / `*_points`); not used for vehicles aggregate or weight worksheet base. */
+export function questionStandardPointContribution(
+  q: RuleQuestion,
+  answers: RuleAnswersByQuestionId
+): number {
+  return addPointsFromQuestion(0, q, answers);
+}
+
+export function resolveSelectedOption(question: RuleQuestion, answers: RuleAnswersByQuestionId) {
   const selectedValue = answers[question.id];
   if (typeof selectedValue !== 'string' || selectedValue === '') {
     return undefined;
@@ -115,7 +123,7 @@ function addPointsFromQuestion(
   return t;
 }
 
-function sumPointsFromQuestions(
+export function sumPointsFromQuestions(
   questions: RuleQuestion[],
   answers: RuleAnswersByQuestionId,
   skipQuestionIds?: ReadonlySet<string>
