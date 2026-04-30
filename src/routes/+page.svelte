@@ -7,11 +7,12 @@
   import ClassificationBanner from '$components/ClassificationBanner.svelte';
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
   import SessionSummary from '$components/SessionSummary.svelte';
+  import UnevaluatedVehicleBanner from '$components/UnevaluatedVehicleBanner.svelte';
   import VehiclesPicker from '$components/VehiclesPicker.svelte';
   import { averageTireWidthMmFromAnswers, parseOptionalTireWidthMm } from '$lib/tire-width-points';
   import { buildSessionSummaryPayload, sessionSummaryToCsv } from '$lib/session-summary-rows';
   import { computeAllCategoryPoints } from '$lib/scoring';
-  import { findShowroomCatalogMatch } from '$lib/vehicles-showroom-match';
+  import { findShowroomCatalogMatch, isVehicleSelectionComplete } from '$lib/vehicles-showroom-match';
   import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
   import { sessionStore } from '$stores/session';
   import { navigationStore } from '$stores/navigation';
@@ -157,6 +158,10 @@
     SHOWROOM_ROWS,
     COMSCC_VEHICLE_CATALOG
   );
+  $: vehicleSelectionComplete = isVehicleSelectionComplete($sessionStore.answers, COMSCC_VEHICLE_CATALOG);
+  $: showUnevaluatedVehicleBanner =
+    vehicleSelectionComplete &&
+    (vehicleCatalogMatch === null || vehicleCatalogMatch.comsccEnriched !== true);
   $: showroomWeightValue =
     vehicleCatalogMatch?.showroomBaseWeightLbs != null
       ? String(vehicleCatalogMatch.showroomBaseWeightLbs)
@@ -261,6 +266,8 @@
     <h1>COMSCC Classification Tool</h1>
     <p>Static MVP scaffold with browser-only session storage.</p>
   </header>
+
+  <UnevaluatedVehicleBanner visible={showUnevaluatedVehicleBanner} />
 
   <ClassificationBanner
     categories={rules.categories}

@@ -55,6 +55,34 @@ function trimFromAnswers(answers: RuleAnswersByQuestionId): string | null {
 }
 
 /**
+ * True when make, model, year, and (if required) trim are set — same gate as showroom matching / Vehicles picker flow.
+ */
+export function isVehicleSelectionComplete(
+  answers: RuleAnswersByQuestionId,
+  comsccVehicleCatalog?: readonly ComsccCatalogSeedRow[] | null
+): boolean {
+  const makeSlug = typeof answers.vehicles_make_slug === 'string' ? answers.vehicles_make_slug : '';
+  const modelKey = typeof answers.vehicles_model_key === 'string' ? answers.vehicles_model_key : '';
+  const yearRaw = answers.vehicles_year;
+  const yearStr = typeof yearRaw === 'string' ? yearRaw.trim() : '';
+  if (!makeSlug || !modelKey || yearStr.length !== 4) return false;
+
+  const makeLabel = typeof answers.vehicles_make_label === 'string' ? answers.vehicles_make_label : '';
+  const modelLabel = typeof answers.vehicles_model_label === 'string' ? answers.vehicles_model_label : '';
+  const year = Number(yearStr);
+  if (!makeLabel || !modelLabel || !Number.isInteger(year)) return false;
+
+  const trimChoices =
+    comsccVehicleCatalog != null
+      ? comsccTrimChoicesForYear(comsccVehicleCatalog, makeLabel, modelLabel, year)
+      : [];
+  if (trimChoices.length === 0) return true;
+
+  const raw = answers.vehicles_trim_key;
+  return typeof raw === 'string' && raw !== '';
+}
+
+/**
  * Match on normalized make/model, year, and trim (null vs null, exact string, or slug-equivalent trim like `2.0T Quattro` vs `2.0t quattro`).
  * @param comsccVehicleCatalog optional `vehicles-comscc-catalog.json` `vehicleCatalog` — when set, suppresses a match until a trim choice is made for years that require one.
  */

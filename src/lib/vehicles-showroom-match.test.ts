@@ -1,6 +1,10 @@
 import type { RuleAnswersByQuestionId } from '$types/rules';
 import { COMSCC_TRIM_BASE_SENTINEL } from './comscc-catalog-trims';
-import { findShowroomCatalogMatch, type ShowroomLookupRow } from './vehicles-showroom-match';
+import {
+  findShowroomCatalogMatch,
+  isVehicleSelectionComplete,
+  type ShowroomLookupRow
+} from './vehicles-showroom-match';
 
 const sampleRows: ShowroomLookupRow[] = [
   {
@@ -192,5 +196,76 @@ describe('findShowroomCatalogMatch', () => {
       }
     ];
     expect(findShowroomCatalogMatch(answers, sampleRows, catalog)).toBeNull();
+  });
+});
+
+describe('isVehicleSelectionComplete', () => {
+  it('returns false without make slug, model key, or four-digit year', () => {
+    expect(isVehicleSelectionComplete({} as RuleAnswersByQuestionId, [])).toBe(false);
+    expect(
+      isVehicleSelectionComplete(
+        {
+          vehicles_make_slug: 'acura',
+          vehicles_make_label: 'Acura',
+          vehicles_model_key: 'integra',
+          vehicles_model_label: 'Integra',
+          vehicles_year: '199'
+        } as RuleAnswersByQuestionId,
+        []
+      )
+    ).toBe(false);
+  });
+
+  it('returns true when trim step not required', () => {
+    expect(
+      isVehicleSelectionComplete(
+        {
+          vehicles_make_slug: 'acura',
+          vehicles_make_label: 'Acura',
+          vehicles_model_key: 'integra',
+          vehicles_model_label: 'Integra',
+          vehicles_year: '1993'
+        } as RuleAnswersByQuestionId,
+        []
+      )
+    ).toBe(true);
+  });
+
+  it('returns false until trim is chosen when catalog lists trims for that year', () => {
+    const catalog = [
+      {
+        vehicleMake: 'Acura',
+        vehicleModel: 'Integra',
+        vehicleTrim: 'Type-R',
+        vehicleYearBegin: 1995,
+        vehicleYearEnd: 2001
+      }
+    ];
+    expect(
+      isVehicleSelectionComplete(
+        {
+          vehicles_make_slug: 'acura',
+          vehicles_make_label: 'Acura',
+          vehicles_model_key: 'integra',
+          vehicles_model_label: 'Integra',
+          vehicles_year: '1999',
+          vehicles_trim_key: ''
+        } as RuleAnswersByQuestionId,
+        catalog
+      )
+    ).toBe(false);
+    expect(
+      isVehicleSelectionComplete(
+        {
+          vehicles_make_slug: 'acura',
+          vehicles_make_label: 'Acura',
+          vehicles_model_key: 'integra',
+          vehicles_model_label: 'Integra',
+          vehicles_year: '1999',
+          vehicles_trim_key: 'Type-R'
+        } as RuleAnswersByQuestionId,
+        catalog
+      )
+    ).toBe(true);
   });
 });

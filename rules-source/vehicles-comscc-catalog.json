@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
   "comsccTemplate": {
-    "showroomBaseWeightLbs": 1500,
-    "factoryRatedHp": 500,
-    "factoryRatedTorqueLbFt": 500,
-    "suspIndex": 100
+    "showroomBaseWeightLbs": 1,
+    "factoryRatedHp": 1,
+    "factoryRatedTorqueLbFt": 1,
+    "suspIndex": 1
   },
   "vehicleCatalog": [
     {

@@ -1,7 +1,7 @@
 <script lang="ts">
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
   import { comsccTrimChoicesForYear, type ComsccCatalogSeedRow } from '$lib/comscc-catalog-trims';
-  import { findShowroomCatalogMatch } from '$lib/vehicles-showroom-match';
+  import { findShowroomCatalogMatch, isVehicleSelectionComplete } from '$lib/vehicles-showroom-match';
   import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
   import type { RuleAnswer, RuleQuestion } from '$types/rules';
 
@@ -147,11 +147,7 @@
     catalogHit !== null &&
     typeof catalogHit.showroomAssessment === 'number' &&
     Number.isFinite(catalogHit.showroomAssessment);
-  $: selectionComplete =
-    Boolean(makeSlug && modelKey) &&
-    typeof answers.vehicles_year === 'string' &&
-    answers.vehicles_year.length === 4 &&
-    (!showTrimStep || (typeof answers.vehicles_trim_key === 'string' && answers.vehicles_trim_key !== ''));
+  $: selectionComplete = isVehicleSelectionComplete(answers, comsccVehicleCatalog);
   $: showManualShowroom =
     (selectionComplete && !hasNumericAssessment) ||
     (catalogHit !== null && !hasNumericAssessment);
