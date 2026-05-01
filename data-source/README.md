@@ -29,6 +29,19 @@ This directory hosts the operator-side Python tooling for refreshing NHTSA VPIC
 data into the committed source under `rules-source/open-vehicle/`. CI never
 runs any of this — it is invoked manually when curators need new baseline data.
 
+### npm shortcuts (repo root)
+
+Requires `data-source/.venv` as in [One-time setup](#one-time-setup). Pass flags after `--`:
+
+| npm script | Python equivalent |
+|------------|---------------------|
+| `npm run data:nhtsa:plan` | `refresh_nhtsa_vehicle_source.py plan` |
+| `npm run data:nhtsa:bootstrap -- …` | full VPIC refresh → Layer 2 under `nhtsa-source/` |
+| `npm run data:nhtsa:update -- …` | delta refresh |
+| `npm run data:nhtsa:project` | `project_open_vehicle.py` → `_proposed/` |
+| `npm run data:nhtsa:project:verify` | same with `--verify` (no writes) |
+| `npm run data:nhtsa:seed-baseline` | `seed_baseline_counts.py` |
+
 ### One-time setup
 
 ```bash
