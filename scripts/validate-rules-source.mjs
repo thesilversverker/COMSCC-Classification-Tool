@@ -22,7 +22,17 @@ const SCHEMA_FILES = {
   makesAndModels: 'makes-and-models.schema.json',
   styles: 'styles.schema.json',
   vehiclesComsccCatalog: 'vehicles-comscc-catalog.schema.json',
-  vehicles: 'vehicles.schema.json'
+  vehicles: 'vehicles.schema.json',
+  // Layer 2 schemas — files start arriving in step 5b+ refreshes; we validate
+  // whenever they exist so curators editing them by hand fail fast.
+  nhtsaMakesModelsSource: 'nhtsa-makes-models-source.schema.json',
+  nhtsaCatalogStyleDetailsSource: 'nhtsa-catalog-style-details-source.schema.json',
+  sourceManifest: 'source-manifest.schema.json',
+  validationReport: 'validation-report.schema.json',
+  baselineCounts: 'baseline-counts.schema.json',
+  aliases: 'aliases.schema.json',
+  visibilityOverrides: 'visibility-overrides.schema.json',
+  curatedOverride: 'curated-override.schema.json'
 };
 
 // Logical component: lazy ajv singleton with all schemas pre-compiled. Strict mode off because
@@ -120,6 +130,35 @@ export function validateAllRulesSourceFiles() {
       .filter((f) => f.endsWith('.json'))
       .sort();
     for (const f of stylesFiles) tryValidate('styles', path.join(STYLES_DIR, f));
+  }
+
+  // Logical component: Layer 2 files — only validate the ones that exist, so
+  // step 5a (no Layer 2 files yet) and step 5b+ (files committed) both pass.
+  tryValidateOptional('baselineCounts', path.join(OPEN_VEHICLE_DIR, 'baseline-counts.json'));
+  tryValidateOptional('aliases', path.join(OPEN_VEHICLE_DIR, 'aliases.json'));
+  tryValidateOptional('visibilityOverrides', path.join(OPEN_VEHICLE_DIR, 'visibility-overrides.json'));
+
+  const NHTSA_SOURCE_DIR = path.join(OPEN_VEHICLE_DIR, 'nhtsa-source');
+  tryValidateOptional('nhtsaMakesModelsSource', path.join(NHTSA_SOURCE_DIR, 'nhtsa-makes-models-source.json'));
+  tryValidateOptional(
+    'nhtsaCatalogStyleDetailsSource',
+    path.join(NHTSA_SOURCE_DIR, 'nhtsa-catalog-style-details-source.json')
+  );
+  tryValidateOptional('sourceManifest', path.join(NHTSA_SOURCE_DIR, 'source-manifest.json'));
+  tryValidateOptional('validationReport', path.join(NHTSA_SOURCE_DIR, 'validation-report.json'));
+
+  // Logical component: per-make curated overrides (one file per make).
+  const CURATED_DIR = path.join(OPEN_VEHICLE_DIR, 'curated-overrides');
+  if (fs.existsSync(CURATED_DIR)) {
+    const overrideFiles = fs
+      .readdirSync(CURATED_DIR)
+      .filter((f) => f.endsWith('.json'))
+      .sort();
+    for (const f of overrideFiles) tryValidate('curatedOverride', path.join(CURATED_DIR, f));
+  }
+
+  function tryValidateOptional(schemaName, filePath) {
+    if (fs.existsSync(filePath)) tryValidate(schemaName, filePath);
   }
 
   return failures;

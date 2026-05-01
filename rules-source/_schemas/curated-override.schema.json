@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/curated-override.schema.json",
+  "title": "Per-make curated override",
+  "description": "rules-source/open-vehicle/curated-overrides/<make_slug>.json: curator-controlled additions and corrections that always win over the NHTSA baseline. Unknown keys are rejected to catch typos like `model_remove` vs `models_remove`.",
+  "type": "object",
+  "required": ["schemaVersion", "make_slug", "make_name", "models"],
+  "properties": {
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "make_slug": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+    "make_name": { "type": "string", "minLength": 1 },
+    "models": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/modelOverride" }
+    },
+    "models_remove": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "models_remove_reason": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "modelOverride": {
+      "type": "object",
+      "properties": {
+        "model_name": { "type": "string", "minLength": 1 },
+        "vehicle_type": { "type": "string", "minLength": 1 },
+        "include": { "type": "boolean" },
+        "years_add": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+        },
+        "years_remove": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+        },
+        "styles_add": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/styleEntry" }
+        },
+        "styles_replace": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/styleEntry" }
+        },
+        "styles_remove": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "reason": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "styleEntry": {
+      "type": "object",
+      "required": ["years"],
+      "properties": {
+        "years": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

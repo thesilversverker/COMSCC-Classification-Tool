@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/baseline-counts.schema.json",
+  "title": "Operator-approved per-make baseline counts",
+  "description": "rules-source/open-vehicle/baseline-counts.json: human-curated per-make minimum counts. The projection step compares its output against this file (not git history) to detect unexpected regressions. Updated intentionally when shrinks are accepted.",
+  "type": "object",
+  "required": ["schemaVersion", "counts"],
+  "properties": {
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string" },
+    "note": { "type": "string" },
+    "counts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["models", "styles"],
+        "properties": {
+          "models": { "type": "integer", "minimum": 0 },
+          "styles": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/source-manifest.schema.json",
+  "title": "NHTSA refresh source manifest",
+  "description": "rules-source/open-vehicle/nhtsa-source/source-manifest.json: provenance for the most recent refresh run \u2014 what was fetched, what input files were hashed, what the refresh mode was. The full per-response cache hashes live in the gitignored cache manifest; this file rolls them up to a single fingerprint.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "generatedAt",
+    "refreshMode",
+    "yearFrom",
+    "yearTo",
+    "currentYear",
+    "inputHashes",
+    "vpic"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "refreshMode": { "type": "string", "enum": ["bootstrap", "update", "styles-only", "models-only"] },
+    "yearFrom": { "type": "integer", "minimum": 1900 },
+    "yearTo": { "type": "integer", "minimum": 1900 },
+    "currentYear": { "type": "integer", "minimum": 1900 },
+    "inputHashes": {
+      "type": "object",
+      "description": "sha256 of every committed input file the refresh consumed.",
+      "additionalProperties": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }
+    },
+    "vpic": {
+      "type": "object",
+      "required": ["totalRequests", "failures", "failRate", "responseSetHash"],
+      "properties": {
+        "totalRequests": { "type": "integer", "minimum": 0 },
+        "failures": { "type": "integer", "minimum": 0 },
+        "failRate": { "type": "number", "minimum": 0, "maximum": 1 },
+        "responseSetHash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

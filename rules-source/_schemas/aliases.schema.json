@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/aliases.schema.json",
+  "title": "Curator-managed make/model/trim aliases",
+  "description": "rules-source/open-vehicle/aliases.json: maps inconsistent COMSCC/CSV strings to canonical NHTSA / open-vehicle-db keys. Each entry must include a `reason` so future reviewers see why a curator added it.",
+  "type": "object",
+  "required": ["schemaVersion", "makes", "models", "trims"],
+  "properties": {
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "makes": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/makeAlias" }
+    },
+    "models": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/modelAlias" }
+    },
+    "trims": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/trimAlias" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "makeAlias": {
+      "type": "object",
+      "required": ["canonical", "reason"],
+      "properties": {
+        "canonical": { "type": "string", "minLength": 1 },
+        "reason": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "modelAlias": {
+      "type": "object",
+      "required": ["make", "model", "reason"],
+      "properties": {
+        "make": { "type": "string", "minLength": 1 },
+        "model": { "type": "string", "minLength": 1 },
+        "trim": { "type": ["string", "null"] },
+        "reason": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "trimAlias": {
+      "type": "object",
+      "required": ["canonical", "reason"],
+      "properties": {
+        "canonical": { "type": "string", "minLength": 1 },
+        "make": { "type": "string" },
+        "model": { "type": "string" },
+        "reason": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

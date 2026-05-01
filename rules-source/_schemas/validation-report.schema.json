@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/validation-report.schema.json",
+  "title": "NHTSA refresh + projection validation report",
+  "description": "rules-source/open-vehicle/nhtsa-source/validation-report.json: structured findings from the most recent refresh and/or projection run. Severity levels mirror plan.md > 'Validation gates and severity'.",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAt", "issues", "counts"],
+  "properties": {
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "issues": {
+      "type": "object",
+      "properties": {
+        "unmatchedCatalogMakes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/issue" }
+        },
+        "unmatchedCatalogModels": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/issue" }
+        },
+        "emptyDetailTuples": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/issue" }
+        },
+        "ambiguousMatches": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/issue" }
+        },
+        "staleAliases": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/issue" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "counts": {
+      "type": "object",
+      "description": "Per-make rollups (model count, style/year count) used by baseline-counts.json regression check.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "models": { "type": "integer", "minimum": 0 },
+          "styles": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "issue": {
+      "type": "object",
+      "required": ["severity"],
+      "properties": {
+        "severity": { "type": "string", "enum": ["fatal", "warning", "info"] },
+        "message": { "type": "string" },
+        "make": { "type": "string" },
+        "model": { "type": "string" },
+        "year": { "type": "integer" },
+        "trim": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    }
+  }
+}

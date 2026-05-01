@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/visibility-overrides.schema.json",
+  "title": "Curator-managed visibility overrides",
+  "description": "rules-source/open-vehicle/visibility-overrides.json: only records non-default decisions. Every projected entry defaults to visible:true; this file exists so a curator can hide noise without it sneaking back in on the next refresh.",
+  "type": "object",
+  "required": ["schemaVersion", "makes"],
+  "properties": {
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "makes": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/makeVisibility" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "makeVisibility": {
+      "type": "object",
+      "properties": {
+        "visible": { "type": "boolean" },
+        "reason": { "type": "string" },
+        "models": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/modelVisibility" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "modelVisibility": {
+      "type": "object",
+      "properties": {
+        "visible": { "type": "boolean" },
+        "reason": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

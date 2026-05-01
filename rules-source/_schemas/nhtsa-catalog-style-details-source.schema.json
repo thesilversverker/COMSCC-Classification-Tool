@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/nhtsa-catalog-style-details-source.schema.json",
+  "title": "NHTSA catalog-scoped style detail source",
+  "description": "rules-source/open-vehicle/nhtsa-source/nhtsa-catalog-style-details-source.json: Canadian-specs detail rows for every (year, make, model) tuple referenced by the COMSCC catalog (after alias resolution).",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAt", "rows"],
+  "properties": {
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "rows": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/detailRow" }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "detailRow": {
+      "type": "object",
+      "required": ["year", "make", "model", "specs"],
+      "properties": {
+        "year": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+        "make": { "type": "string", "minLength": 1 },
+        "model": { "type": "string", "minLength": 1 },
+        "specs": {
+          "type": "object",
+          "description": "Flat name->value map captured from the VPIC Specs array. Values are strings as VPIC returns them.",
+          "additionalProperties": { "type": ["string", "null"] }
+        },
+        "vpicResultIndex": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": true
+    }
+  }
+}

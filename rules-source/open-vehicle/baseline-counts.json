@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "1.0.0",
+  "note": "Per-make floor for the projection regression check. Update intentionally when a projection diff is accepted.",
+  "counts": {
+    "acura": {
+      "models": 16,
+      "styles": 91
+    },
+    "alfa_romeo": {
+      "models": 9,
+      "styles": 19
+    },
+    "am_general": {
+      "models": 1,
+      "styles": 0
+    },
+    "aston_martin": {
+      "models": 17,
+      "styles": 41
+    },
+    "audi": {
+      "models": 54,
+      "styles": 340
+    },
+    "bentley": {
+      "models": 12,
+      "styles": 74
+    },
+    "bmw": {
+      "models": 145,
+      "styles": 417
+    },
+    "bugatti": {
+      "models": 5,
+      "styles": 0
+    },
+    "buick": {
+      "models": 27,
+      "styles": 229
+    },
+    "cadillac": {
+      "models": 33,
+      "styles": 159
+    },
+    "chevrolet": {
+      "models": 99,
+      "styles": 807
+    },
+    "chrysler": {
+      "models": 38,
+      "styles": 201
+    },
+    "daewoo": {
+      "models": 6,
+      "styles": 12
+    },
+    "daihatsu": {
+      "models": 2,
+      "styles": 0
+    },
+    "daimler": {
+      "models": 2,
+      "styles": 0
+    },
+    "datsun": {
+      "models": 4,
+      "styles": 22
+    },
+    "delorean": {
+      "models": 1,
+      "styles": 0
+    },
+    "dodge": {
+      "models": 50,
+      "styles": 550
+    },
+    "ferrari": {
+      "models": 83,
+      "styles": 61
+    },
+    "fiat": {
+      "models": 11,
+      "styles": 24
+    },
+    "fisker": {
+      "models": 3,
+      "styles": 3
+    },
+    "ford": {
+      "models": 147,
+      "styles": 847
+    },
+    "geo": {
+      "models": 6,
+      "styles": 0
+    },
+    "gmc": {
+      "models": 43,
+      "styles": 572
+    },
+    "honda": {
+      "models": 23,
+      "styles": 281
+    },
+    "hummer": {
+      "models": 4,
+      "styles": 12
+    },
+    "hyundai": {
+      "models": 37,
+      "styles": 266
+    },
+    "infiniti": {
+      "models": 33,
+      "styles": 103
+    },
+    "isuzu": {
+      "models": 33,
+      "styles": 25
+    },
+    "jaguar": {
+      "models": 17,
+      "styles": 138
+    },
+    "jeep": {
+      "models": 23,
+      "styles": 216
+    },
+    "karma": {
+      "models": 7,
+      "styles": 0
+    },
+    "kia": {
+      "models": 26,
+      "styles": 182
+    },
+    "lamborghini": {
+      "models": 9,
+      "styles": 30
+    },
+    "land_rover": {
+      "models": 12,
+      "styles": 94
+    },
+    "lexus": {
+      "models": 17,
+      "styles": 105
+    },
+    "lincoln": {
+      "models": 17,
+      "styles": 88
+    },
+    "lotus": {
+      "models": 19,
+      "styles": 20
+    },
+    "lucid": {
+      "models": 2,
+      "styles": 3
+    },
+    "maserati": {
+      "models": 14,
+      "styles": 36
+    },
+    "maybach": {
+      "models": 2,
+      "styles": 4
+    },
+    "mazda": {
+      "models": 28,
+      "styles": 271
+    },
+    "mclaren": {
+      "models": 19,
+      "styles": 26
+    },
+    "mercedes_benz": {
+      "models": 59,
+      "styles": 504
+    },
+    "mercury": {
+      "models": 17,
+      "styles": 97
+    },
+    "mini": {
+      "models": 8,
+      "styles": 65
+    },
+    "mitsubishi": {
+      "models": 30,
+      "styles": 94
+    },
+    "nissan": {
+      "models": 43,
+      "styles": 404
+    },
+    "oldsmobile": {
+      "models": 21,
+      "styles": 172
+    },
+    "peterbilt": {
+      "models": 46,
+      "styles": 0
+    },
+    "peugeot": {
+      "models": 4,
+      "styles": 21
+    },
+    "plymouth": {
+      "models": 20,
+      "styles": 98
+    },
+    "pontiac": {
+      "models": 37,
+      "styles": 319
+    },
+    "porsche": {
+      "models": 15,
+      "styles": 239
+    },
+    "ram": {
+      "models": 11,
+      "styles": 106
+    },
+    "rivian": {
+      "models": 4,
+      "styles": 2
+    },
+    "rolls_royce": {
+      "models": 15,
+      "styles": 36
+    },
+    "saab": {
+      "models": 7,
+      "styles": 100
+    },
+    "saturn": {
+      "models": 24,
+      "styles": 59
+    },
+    "shelby": {
+      "models": 2,
+      "styles": 0
+    },
+    "smart": {
+      "models": 4,
+      "styles": 9
+    },
+    "spyker": {
+      "models": 3,
+      "styles": 0
+    },
+    "subaru": {
+      "models": 24,
+      "styles": 247
+    },
+    "suzuki": {
+      "models": 18,
+      "styles": 108
+    },
+    "tesla": {
+      "models": 7,
+      "styles": 25
+    },
+    "toyota": {
+      "models": 57,
+      "styles": 519
+    },
+    "triumph": {
+      "models": 2,
+      "styles": 2
+    },
+    "volvo": {
+      "models": 40,
+      "styles": 135
+    },
+    "yugo": {
+      "models": 4,
+      "styles": 0
+    }
+  }
+}

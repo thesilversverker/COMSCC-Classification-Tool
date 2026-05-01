@@ -39,11 +39,16 @@ data-source/.venv/bin/pip install -r data-source/requirements.txt
 The venv directory is gitignored. Re-run the second command after pulling new
 commits that touch `data-source/requirements.txt`.
 
-### `plan` (offline, dry-run)
+### Subcommand layout
 
-The first subcommand to land. `plan` walks the existing raw cache + the
-catalog and prints what an `update` run *would* fetch, classified per the
-per-class TTL policy. No network, no writes.
+Flags always belong on the subcommand (`plan --json`, not `--json plan`).
+`styles-only` and `models-only` are reserved for later refinement; `plan`,
+`bootstrap`, and `update` are the live operator surface.
+
+#### `plan` — offline dry-run
+
+Walks the cache + catalog and prints what an `update` run *would* fetch,
+classified per the TTL policy. No network, no writes.
 
 ```bash
 data-source/.venv/bin/python data-source/refresh_nhtsa_vehicle_source.py plan
@@ -51,9 +56,58 @@ data-source/.venv/bin/python data-source/refresh_nhtsa_vehicle_source.py plan --
 data-source/.venv/bin/python data-source/refresh_nhtsa_vehicle_source.py plan --ignore-ttl
 ```
 
-Flags belong on the subcommand (`plan --json`, not `--json plan`). `bootstrap`,
-`update`, `styles-only`, and `models-only` will land in later steps; `plan`
-output stays the operator's go-to "what's stale?" report.
+#### `bootstrap` — full refresh, writes Layer 2
+
+Fetches the makes endpoint plus models for every catalog make across the full
+year window, plus Canadian specs for every catalog `(year, make, model)`.
+Writes the four Layer 2 files into `rules-source/open-vehicle/nhtsa-source/`
+**only** if the run's fail rate stays under `--max-fail-rate` (default 2%).
+
+```bash
+data-source/.venv/bin/python data-source/refresh_nhtsa_vehicle_source.py bootstrap \
+  --year-from 1985 --year-to 2026 \
+  --max-rps 5 --max-workers 6 \
+  --lock-mode fail
+```
+
+The cache directory lock is held for the entire run; a second concurrent
+operator either waits (`--lock-mode wait`) or aborts (`--lock-mode fail`).
+
+Output files (committed):
+
+- `nhtsa-source/nhtsa-makes-models-source.json` — VPIC baseline.
+- `nhtsa-source/nhtsa-catalog-style-details-source.json` — Canadian specs
+  rows, one per catalog tuple.
+- `nhtsa-source/source-manifest.json` — refresh provenance (mode, year span,
+  catalog hash, response-set rollup hash, fail rate).
+- `nhtsa-source/validation-report.json` — issues found during refresh
+  (`emptyDetailTuples`, malformed bodies as `staleAliases` until step 6
+  fills in the alias resolution side).
+
+#### `update` — delta refresh
+
+Same shape as `bootstrap` but only re-fetches models for
+`[currentYear - --recent-years + 1 .. currentYear]`. Historical model lists
+remain immutable per the TTL policy; the cache file lock keeps the run
+exclusive.
+
+```bash
+data-source/.venv/bin/python data-source/refresh_nhtsa_vehicle_source.py update \
+  --recent-years 3
+```
+
+### Baseline counts (regression floor)
+
+`rules-source/open-vehicle/baseline-counts.json` holds the per-make floor that
+the projection step (step 6+) compares against. It is committed and
+human-curated; do not let projection silently rewrite it. Reseed it with:
+
+```bash
+data-source/.venv/bin/python data-source/seed_baseline_counts.py
+```
+
+Re-run only when an intentional shrink has been reviewed and the new floor
+is what the curator wants future runs to enforce.
 
 ### Cache layout
 

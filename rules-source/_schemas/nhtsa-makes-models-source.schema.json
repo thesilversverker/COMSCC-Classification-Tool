@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/nhtsa-makes-models-source.schema.json",
+  "title": "NHTSA baseline makes/models source",
+  "description": "rules-source/open-vehicle/nhtsa-source/nhtsa-makes-models-source.json: Layer 2 baseline produced by the refresh script. Same shape as makes_and_models.json so projection is a pure overlay of curated overrides on top.",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAt", "makes"],
+  "properties": {
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "makes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/make" }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "make": {
+      "type": "object",
+      "required": ["make_id", "make_name", "make_slug", "first_year", "last_year", "models"],
+      "properties": {
+        "make_id": { "type": "integer", "minimum": 0 },
+        "make_name": { "type": "string", "minLength": 1 },
+        "make_slug": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "first_year": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+        "last_year": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+        "models": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/model" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "model": {
+      "type": "object",
+      "required": ["model_id", "model_name", "vehicle_type", "years"],
+      "properties": {
+        "model_id": { "type": "integer", "minimum": 0 },
+        "model_name": { "type": "string", "minLength": 1 },
+        "vehicle_type": { "type": "string", "minLength": 1 },
+        "years": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}
