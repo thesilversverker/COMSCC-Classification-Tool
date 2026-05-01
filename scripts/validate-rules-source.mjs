@@ -157,6 +157,23 @@ export function validateAllRulesSourceFiles() {
     for (const f of overrideFiles) tryValidate('curatedOverride', path.join(CURATED_DIR, f));
   }
 
+  // Logical component: proposed Layer 3 preview (`npm run data:nhtsa:project`) — same
+  // schemas as production paths; validate whenever the directory exists.
+  const PROPOSED_DIR = path.join(OPEN_VEHICLE_DIR, '_proposed');
+  if (fs.existsSync(PROPOSED_DIR)) {
+    tryValidateOptional('makesAndModels', path.join(PROPOSED_DIR, 'makes_and_models.json'));
+    const proposedStyles = path.join(PROPOSED_DIR, 'styles');
+    if (fs.existsSync(proposedStyles)) {
+      const proposedStyleFiles = fs
+        .readdirSync(proposedStyles)
+        .filter((f) => f.endsWith('.json'))
+        .sort();
+      for (const f of proposedStyleFiles) {
+        tryValidate('styles', path.join(proposedStyles, f));
+      }
+    }
+  }
+
   function tryValidateOptional(schemaName, filePath) {
     if (fs.existsSync(filePath)) tryValidate(schemaName, filePath);
   }

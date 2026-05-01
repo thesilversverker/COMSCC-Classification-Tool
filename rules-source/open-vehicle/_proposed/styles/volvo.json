@@ -1,0 +1,84 @@
+{
+  "V60": {
+    "V60 4DR WAGON T5 AWD": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    "V60 4DR WAGON T5 DRIVE-E FWD": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    "V60 4DR WAGON T6 AWD": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    "V60 CROSS COUNTRY 4DR WAGON T5 AWD": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    "V60 4DR WAGON": {
+      "years": [
+        2019,
+        2020
+      ]
+    },
+    "V60 CROSS COUNTRY 4DR WAGON": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    "V60 POLESTAR 4DR WAGON": {
+      "years": [
+        2021,
+        2022
+      ]
+    },
+    "V60 RECHARGE 4DR WAGON": {
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    "V60 T5 4DR WAGON": {
+      "years": [
+        2021,
+        2022
+      ]
+    },
+    "V60 T6 AWD 4DR WAGON": {
+      "years": [
+        2021,
+        2022
+      ]
+    },
+    "V60 AWD 4DR WAGON": {
+      "years": [
+        2023,
+        2024
+      ]
+    }
+  }
+}

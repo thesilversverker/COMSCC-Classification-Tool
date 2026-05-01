@@ -1,0 +1,339 @@
+{
+  "schemaVersion": "1.0.0",
+  "makes": {
+    "Volkswagon": {
+      "canonical": "Volkswagen",
+      "reason": "CSV / workbook typo (plan: Volkswagon → Volkswagen)"
+    },
+    "Volkswagon ": {
+      "canonical": "Volkswagen",
+      "reason": "Trailing-space typo variant in rejects CSV"
+    },
+    "Austin Healy": {
+      "canonical": "Austin Healey",
+      "reason": "Historical spelling (plan bucket)"
+    },
+    "Mercedes-Benz Benz": {
+      "canonical": "Mercedes-Benz",
+      "reason": "Duplicate token in workbook export"
+    },
+    "Mercedes-Benz-Benz": {
+      "canonical": "Mercedes-Benz",
+      "reason": "Duplicate hyphen segment in workbook export"
+    }
+  },
+  "models": {
+    "BMW|E30 M3": {
+      "make": "BMW",
+      "model": "M3",
+      "trim": "E30 M3",
+      "reason": "Trim-as-model → M3 + trim context (rejects bucket)"
+    },
+    "BMW|E36 M3  (3.0)": {
+      "make": "BMW",
+      "model": "M3",
+      "trim": "E36 M3 (3.0)",
+      "reason": "Normalize chassis-specific CSV label"
+    },
+    "BMW|E36 M3 (3.2)": {
+      "make": "BMW",
+      "model": "M3",
+      "trim": "E36 M3 (3.2)",
+      "reason": "Normalize chassis-specific CSV label"
+    },
+    "BMW|E46 M3": {
+      "make": "BMW",
+      "model": "M3",
+      "trim": "E46 M3",
+      "reason": "Trim-as-model"
+    },
+    "BMW|E90 M3": {
+      "make": "BMW",
+      "model": "M3",
+      "trim": "E90 M3",
+      "reason": "Trim-as-model"
+    },
+    "BMW|F80 M3": {
+      "make": "BMW",
+      "model": "M3",
+      "trim": "F80 M3",
+      "reason": "Trim-as-model"
+    },
+    "BMW|F82/83 M4 ": {
+      "make": "BMW",
+      "model": "M4",
+      "trim": "F82/83 M4",
+      "reason": "CSV trailing space + chassis prefix"
+    },
+    "BMW|F82/83 M4 Competition": {
+      "make": "BMW",
+      "model": "M4",
+      "trim": "F82/83 M4 COMPETITION",
+      "reason": "Trim-as-model / Competition variant"
+    },
+    "BMW|G82/83 M4 ": {
+      "make": "BMW",
+      "model": "M4",
+      "trim": "G82/83 M4",
+      "reason": "CSV trailing space"
+    },
+    "BMW|G82/83 M4 Competition": {
+      "make": "BMW",
+      "model": "M4",
+      "trim": "G82/83 M4 COMPETITION",
+      "reason": "Competition variant"
+    },
+    "BMW|135is": {
+      "make": "BMW",
+      "model": "1 SERIES",
+      "trim": "135is",
+      "reason": "Variant code baked into model → 1 Series"
+    },
+    "BMW|323ci": {
+      "make": "BMW",
+      "model": "3 SERIES",
+      "trim": "323ci",
+      "reason": "Variant code → 3 Series"
+    },
+    "BMW|328iX": {
+      "make": "BMW",
+      "model": "3 SERIES",
+      "trim": "328iX",
+      "reason": "xDrive suffix variant"
+    },
+    "BMW|340XI": {
+      "make": "BMW",
+      "model": "3 SERIES",
+      "trim": "340XI",
+      "reason": "xDrive suffix variant"
+    },
+    "BMW|2002": {
+      "make": "BMW",
+      "model": "2002",
+      "reason": "Classic model key alignment"
+    },
+    "BMW|M Coupe": {
+      "make": "BMW",
+      "model": "M COUPE",
+      "reason": "CSV label → baseline model key"
+    },
+    "BMW|M Roadster": {
+      "make": "BMW",
+      "model": "M ROADSTER",
+      "reason": "CSV label → baseline model key"
+    },
+    "BMW|X3M Competition": {
+      "make": "BMW",
+      "model": "X3",
+      "trim": "X3M COMPETITION",
+      "reason": "Competition trim spelling"
+    },
+    "Chevrolet|Corvet": {
+      "make": "Chevrolet",
+      "model": "CORVETTE",
+      "reason": "CSV typo Corvet → Corvette"
+    },
+    "Datsun|240Z": {
+      "make": "Datsun",
+      "model": "240Z",
+      "reason": "Reject matcher alignment"
+    },
+    "Datsun|280Z": {
+      "make": "Datsun",
+      "model": "280Z",
+      "reason": "Reject matcher alignment"
+    },
+    "Ford|Shelby GT": {
+      "make": "Ford",
+      "model": "MUSTANG",
+      "trim": "SHELBY GT",
+      "reason": "Trim-as-model → Mustang"
+    },
+    "Ford|Shelby GT350 Base (non-Track Pack)": {
+      "make": "Ford",
+      "model": "MUSTANG",
+      "trim": "SHELBY GT350 BASE (NON-TRACK PACK)",
+      "reason": "Shelby variant collapsed under Mustang"
+    },
+    "Ford|Shelby GT350 Base (with Track Pack)": {
+      "make": "Ford",
+      "model": "MUSTANG",
+      "trim": "SHELBY GT350 BASE (WITH TRACK PACK)",
+      "reason": "Shelby variant collapsed under Mustang"
+    },
+    "Ford|Shelby GT350 R": {
+      "make": "Ford",
+      "model": "MUSTANG",
+      "trim": "SHELBY GT350 R",
+      "reason": "Shelby variant collapsed under Mustang"
+    },
+    "Ford|Shelby GT500": {
+      "make": "Ford",
+      "model": "MUSTANG",
+      "trim": "SHELBY GT500",
+      "reason": "Shelby GT500 → Mustang Shelby GT500 trim"
+    },
+    "Ford|Shelby Mustang GT350 Convertible": {
+      "make": "Ford",
+      "model": "MUSTANG",
+      "trim": "SHELBY MUSTANG GT350 CONVERTIBLE",
+      "reason": "Historical Shelby naming"
+    },
+    "Ford|Shelby Mustang GT500": {
+      "make": "Ford",
+      "model": "MUSTANG",
+      "trim": "SHELBY MUSTANG GT500",
+      "reason": "Historical Shelby naming"
+    },
+    "Honda|CRS Si": {
+      "make": "Honda",
+      "model": "CRX",
+      "trim": "CRS SI",
+      "reason": "CSV typo CRS → CRX"
+    },
+    "Honda|CRX Si": {
+      "make": "Honda",
+      "model": "CRX",
+      "trim": "CRX SI",
+      "reason": "Normalize Si trim label"
+    },
+    "Jaguar|F Type S Coupe": {
+      "make": "Jaguar",
+      "model": "F-TYPE",
+      "trim": "F TYPE S COUPE",
+      "reason": "Spacing / hyphen normalization"
+    },
+    "Jaguar|X Type sportwagon": {
+      "make": "Jaguar",
+      "model": "X-TYPE",
+      "trim": "X TYPE SPORTWAGON",
+      "reason": "Spacing normalization"
+    },
+    "Jaguar|XKR-S": {
+      "make": "Jaguar",
+      "model": "XKR",
+      "trim": "XKR-S",
+      "reason": "Variant tied to XKR"
+    },
+    "Lexus|IS300": {
+      "make": "Lexus",
+      "model": "IS 300",
+      "reason": "IS300 → IS 300 key alignment"
+    },
+    "Mazda|3": {
+      "make": "Mazda",
+      "model": "MAZDA3",
+      "reason": "Mazda 3 → Mazda3"
+    },
+    "Mazda|RX7": {
+      "make": "Mazda",
+      "model": "RX-7",
+      "reason": "RX7 → RX-7"
+    },
+    "Mazda|RX8": {
+      "make": "Mazda",
+      "model": "RX-8",
+      "reason": "RX8 → RX-8"
+    },
+    "Mazda|Mazdaspeed3": {
+      "make": "Mazda",
+      "model": "MAZDA3",
+      "trim": "MAZDASPEED3",
+      "reason": "Trim-as-model → Mazda3 Mazdaspeed3"
+    },
+    "Mazda|Mazdaspeed6": {
+      "make": "Mazda",
+      "model": "MAZDA6",
+      "trim": "MAZDASPEED6",
+      "reason": "Trim-as-model"
+    },
+    "Mazda|MazdaSpeed MX5": {
+      "make": "Mazda",
+      "model": "MX-5 MIATA",
+      "trim": "MAZDASPEED MX5",
+      "reason": "Mazdaspeed MX-5"
+    },
+    "Mercedes-Benz|CLA45S AMG": {
+      "make": "Mercedes-Benz",
+      "model": "CLA",
+      "trim": "CLA45S AMG",
+      "reason": "CSV packs trim detail"
+    },
+    "Mercedes-Benz|GTR Pro": {
+      "make": "Mercedes-Benz",
+      "model": "AMG GT",
+      "trim": "GTR PRO",
+      "reason": "Variant label alignment"
+    },
+    "Mitsubishi|Lander Evo X": {
+      "make": "Mitsubishi",
+      "model": "LANCER",
+      "trim": "LANDER EVO X",
+      "reason": "CSV typo Lander → Lancer"
+    },
+    "Mini|JCW GP": {
+      "make": "Mini",
+      "model": "COOPER",
+      "trim": "JCW GP",
+      "reason": "JCW GP trim under Cooper"
+    },
+    "Nissan|400Z": {
+      "make": "Nissan",
+      "model": "Z",
+      "reason": "400Z → Z"
+    },
+    "Nissan|Skyline GT-R (R32)": {
+      "make": "Nissan",
+      "model": "GT-R",
+      "trim": "SKYLINE GT-R (R32)",
+      "reason": "Skyline lineage → GT-R"
+    },
+    "Nissan|Skyline GT-R (R33)": {
+      "make": "Nissan",
+      "model": "GT-R",
+      "trim": "SKYLINE GT-R (R33)",
+      "reason": "Skyline lineage → GT-R"
+    },
+    "Nissan|Skyline GT-R (R34)": {
+      "make": "Nissan",
+      "model": "GT-R",
+      "trim": "SKYLINE GT-R (R34)",
+      "reason": "Skyline lineage → GT-R"
+    },
+    "Porsche|718 GT4 RS": {
+      "make": "Porsche",
+      "model": "718",
+      "trim": "GT4 RS",
+      "reason": "Model family alignment"
+    },
+    "Porsche|Carrera GT": {
+      "make": "Porsche",
+      "model": "CARRERA GT",
+      "reason": "Dedicated model key"
+    },
+    "Toyota|Matrix": {
+      "make": "Toyota",
+      "model": "MATRIX",
+      "reason": "Matrix model key alignment"
+    },
+    "Toyota|Matrix S": {
+      "make": "Toyota",
+      "model": "MATRIX",
+      "trim": "MATRIX S",
+      "reason": "Trim variant"
+    },
+    "Toyota|Matrix XRS": {
+      "make": "Toyota",
+      "model": "MATRIX",
+      "trim": "MATRIX XRS",
+      "reason": "Trim variant"
+    },
+    "Volvo|V70R": {
+      "make": "Volvo",
+      "model": "V70",
+      "trim": "V70R",
+      "reason": "V70R → V70 + R trim"
+    }
+  },
+  "trims": {}
+}

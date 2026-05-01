@@ -11,6 +11,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run --environment jsdom --globals",
     "data:validate": "node scripts/validate-rules-source.mjs",
+    "data:nhtsa:project": "data-source/.venv/bin/python data-source/project_open_vehicle.py",
     "data:compose-vehicles": "node scripts/compose-vehicles-json.mjs",
     "data:build": "npm run data:compose-vehicles && node scripts/build-rules-bundle.mjs"
   },

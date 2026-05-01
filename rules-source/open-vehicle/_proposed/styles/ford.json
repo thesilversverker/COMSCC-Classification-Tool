@@ -1,0 +1,985 @@
+{
+  "Escort": {
+    "ESCORT LIFTGATE": {
+      "years": [
+        1981
+      ]
+    },
+    "ESCORT SD": {
+      "years": [
+        1981
+      ]
+    },
+    "ESCORT WAGON": {
+      "years": [
+        1981,
+        1982,
+        1983,
+        1984
+      ]
+    },
+    "ESCORT 2 DR HB": {
+      "years": [
+        1982
+      ]
+    },
+    "ESCORT 4 DR HB": {
+      "years": [
+        1982
+      ]
+    },
+    "ESCORT GT & GT TURBO": {
+      "years": [
+        1983,
+        1984
+      ]
+    },
+    "ESCORT L HB 4 DR": {
+      "years": [
+        1983,
+        1984
+      ]
+    },
+    "ESCORT L-FS & L HB": {
+      "years": [
+        1983,
+        1984
+      ]
+    },
+    "ESCORT GL 2 DR": {
+      "years": [
+        1985
+      ]
+    },
+    "ESCORT GL 4 DR": {
+      "years": [
+        1985,
+        1986
+      ]
+    },
+    "ESCORT GL WAGON": {
+      "years": [
+        1985,
+        1986,
+        1987,
+        1988
+      ]
+    },
+    "ESCORT GT 2 DR": {
+      "years": [
+        1985,
+        1986
+      ]
+    },
+    "ESCORT L 2 DR": {
+      "years": [
+        1985,
+        1986
+      ]
+    },
+    "ESCORT L 4 DR": {
+      "years": [
+        1985,
+        1986
+      ]
+    },
+    "ESCORT L WAGON": {
+      "years": [
+        1985,
+        1986
+      ]
+    },
+    "ESCORT LX 4 DR": {
+      "years": [
+        1985,
+        1986
+      ]
+    },
+    "ESCORT LX WAGON": {
+      "years": [
+        1985,
+        1986,
+        1989,
+        1990,
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "ESCORT TURBO GT 2 DR": {
+      "years": [
+        1985
+      ]
+    },
+    "ESCORT LX 2 DR": {
+      "years": [
+        1986
+      ]
+    },
+    "ESCORT PONY 2 DR": {
+      "years": [
+        1986
+      ]
+    },
+    "ESCORT EXP LUXURY COUPE 2 DR HATCHBACK": {
+      "years": [
+        1987
+      ]
+    },
+    "ESCORT EXP SPORT COUPE 2 DR HATCHBACK": {
+      "years": [
+        1987
+      ]
+    },
+    "ESCORT FS 2 DR HATCHBACK": {
+      "years": [
+        1987
+      ]
+    },
+    "ESCORT GL 2 DR HATCHBACK": {
+      "years": [
+        1987
+      ]
+    },
+    "ESCORT GL 4 DR HATCHBACK": {
+      "years": [
+        1987,
+        1988
+      ]
+    },
+    "ESCORT GT 2 DR HATCHBACK": {
+      "years": [
+        1987,
+        1988,
+        1989
+      ]
+    },
+    "ESCORT EXP COUPE 2 DR HATCHBACK": {
+      "years": [
+        1988
+      ]
+    },
+    "ESCORT L/GL 2 DR HATCHBACK": {
+      "years": [
+        1988
+      ]
+    },
+    "ESCORT L/LX 2DR HATCHBACK": {
+      "years": [
+        1989,
+        1990
+      ]
+    },
+    "ESCORT LX 4 DR HATCHBACK": {
+      "years": [
+        1989
+      ]
+    },
+    "ESCORT GT 2DR HATCHBACK": {
+      "years": [
+        1990,
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "ESCORT LX 4DR HATCHBACK": {
+      "years": [
+        1990,
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "ESCORT LX 2DR HATCHBACK": {
+      "years": [
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "ESCORT LX/LX-E NOTCHBACK": {
+      "years": [
+        1992,
+        1993
+      ]
+    },
+    "ESCORT 2DR HATCHBACK GT": {
+      "years": [
+        1994,
+        1995,
+        1996
+      ]
+    },
+    "ESCORT 2DR HATCHBACK LX": {
+      "years": [
+        1994,
+        1995,
+        1996
+      ]
+    },
+    "ESCORT 4DR HATCHBACK LX": {
+      "years": [
+        1994,
+        1995,
+        1996
+      ]
+    },
+    "ESCORT 4DR SEDAN LX": {
+      "years": [
+        1994,
+        1995,
+        1996,
+        1997
+      ]
+    },
+    "ESCORT 4DR WAGON LX": {
+      "years": [
+        1994,
+        1995,
+        1996,
+        1997
+      ]
+    },
+    "ESCORT 4DR SEDAN GL": {
+      "years": [
+        1997
+      ]
+    },
+    "ESCORT 4DR SEDAN LX/SE": {
+      "years": [
+        1998,
+        1999
+      ]
+    },
+    "ESCORT 4DR WAGON LX/SE": {
+      "years": [
+        1998
+      ]
+    },
+    "ESCORT ZX2 2DR COUPE": {
+      "years": [
+        1998,
+        1999,
+        2000
+      ]
+    },
+    "ESCORT 4DR WAGON SE": {
+      "years": [
+        1999
+      ]
+    }
+  },
+  "Fiesta": {
+    "FIESTA 4DR HATCH SE/SES": {
+      "years": [
+        2011,
+        2012,
+        2013
+      ]
+    },
+    "FIESTA 4DR SEDAN S/SE/SEL": {
+      "years": [
+        2011,
+        2012,
+        2013
+      ]
+    },
+    "FIESTA 4DR HATCH S/SE/TITANIUM": {
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    "FIESTA 4DR SEDAN S/SE/TITANIUM": {
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    "FIESTA ST 4DR HATCHBACK": {
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "FIESTA 4DR HATCH": {
+      "years": [
+        2019
+      ]
+    },
+    "FIESTA 4DR SEDAN": {
+      "years": [
+        2019
+      ]
+    }
+  },
+  "Focus": {
+    "FOCUS 2DR HATCHBACK ZX3": {
+      "years": [
+        2000,
+        2001,
+        2002
+      ]
+    },
+    "FOCUS 4DR SEDAN LX/SE/ZTS": {
+      "years": [
+        2000,
+        2001,
+        2002
+      ]
+    },
+    "FOCUS 4DR WAGON SE": {
+      "years": [
+        2000,
+        2001,
+        2002
+      ]
+    },
+    "FOCUS ZX5 4DR HATCH FWD": {
+      "years": [
+        2002,
+        2003,
+        2004,
+        2005,
+        2006
+      ]
+    },
+    "FOCUS 4DR SEDAN LX/SE/SE SPORT/ZTS": {
+      "years": [
+        2003,
+        2004,
+        2005
+      ]
+    },
+    "FOCUS 4DR WAGON SE/SE SPORT/ZTW": {
+      "years": [
+        2003,
+        2004,
+        2005
+      ]
+    },
+    "FOCUS ZX3 2DR HATCH FWD": {
+      "years": [
+        2003,
+        2004,
+        2005,
+        2006
+      ]
+    },
+    "FOCUS ZX3 SVT 3DR HATCH FWD": {
+      "years": [
+        2003,
+        2004
+      ]
+    },
+    "FOCUS ZX5 SVT 5DR HATCH FWD": {
+      "years": [
+        2003,
+        2004
+      ]
+    },
+    "FOCUS ZX4 4DR SEDAN FWD": {
+      "years": [
+        2006
+      ]
+    },
+    "FOCUS ZXW 4DR WAGON FWD": {
+      "years": [
+        2006
+      ]
+    },
+    "FOCUS 2DR HATCH FWD S/SE": {
+      "years": [
+        2007
+      ]
+    },
+    "FOCUS 4DR HATCH FWD": {
+      "years": [
+        2007
+      ]
+    },
+    "FOCUS 4DR SEDAN FWD S/SE/SES/ST": {
+      "years": [
+        2007
+      ]
+    },
+    "FOCUS 4DR WAGON FWD SE/SES": {
+      "years": [
+        2007
+      ]
+    },
+    "FOCUS 2DR COUPE FWD S/SE/SES": {
+      "years": [
+        2008,
+        2009
+      ]
+    },
+    "FOCUS 4DR SEDAN FWD S/SE/SES": {
+      "years": [
+        2008,
+        2009,
+        2010,
+        2011
+      ]
+    },
+    "FOCUS 2DR COUPE FWD  SE/SES": {
+      "years": [
+        2010,
+        2011
+      ]
+    },
+    "FOCUS 4DR HATCHBACK SE/SEL/TITANIUM": {
+      "years": [
+        2012
+      ]
+    },
+    "FOCUS 4DR SEDAN S/SE/SEL/TITANIUM": {
+      "years": [
+        2012
+      ]
+    },
+    "FOCUS 4DR HATCHBACK SE/TITANIUM": {
+      "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    "FOCUS 4DR SEDAN S/SE/TITANIUM": {
+      "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    "FOCUS ELECTRIC 4D HATCHBACK": {
+      "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    "FOCUS ST 4DR HATCHBACK": {
+      "years": [
+        2013,
+        2014,
+        2015
+      ]
+    },
+    "FOCUS ST/RS 4DR HATCHBACK": {
+      "years": [
+        2016,
+        2017,
+        2018
+      ]
+    }
+  },
+  "GT": {
+    "GT 2DR COUPE RWD": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009
+      ]
+    },
+    "SHELBY GT500 4DR CONVERTIBLE RWD": {
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ]
+    },
+    "SHELBY GT500 4DR COUPE RWD": {
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ]
+    },
+    "GT 2DR COUPE": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020
+      ]
+    }
+  },
+  "Mustang": {
+    "MUSTANG 2 DR HB": {
+      "years": [
+        1981,
+        1982
+      ]
+    },
+    "MUSTANG 2 DR SD": {
+      "years": [
+        1981,
+        1982
+      ]
+    },
+    "MUSTANG GT & TURBO GT": {
+      "years": [
+        1983,
+        1984
+      ]
+    },
+    "MUSTANG L CP": {
+      "years": [
+        1983,
+        1984
+      ]
+    },
+    "MUSTANG L HB": {
+      "years": [
+        1983,
+        1984
+      ]
+    },
+    "MUSTANG LX & GT CONV. & GT TURBO CONV.": {
+      "years": [
+        1983,
+        1984
+      ]
+    },
+    "MUSTANG SVO": {
+      "years": [
+        1984,
+        1985,
+        1986,
+        1987
+      ]
+    },
+    "MUSTANG COBRA GT CONVERTIBLE": {
+      "years": [
+        1985,
+        1987,
+        1988,
+        1989
+      ]
+    },
+    "MUSTANG COBRA GT HATCHBACK": {
+      "years": [
+        1985
+      ]
+    },
+    "MUSTANG LX 2 DR": {
+      "years": [
+        1985,
+        1986
+      ]
+    },
+    "MUSTANG LX CONVERTIBLE": {
+      "years": [
+        1985,
+        1986,
+        1987,
+        1988
+      ]
+    },
+    "MUSTANG LX HATCHBACK": {
+      "years": [
+        1985,
+        1986
+      ]
+    },
+    "MUSTANG GT CONVERTIBLE": {
+      "years": [
+        1986
+      ]
+    },
+    "MUSTANG GT HATCHBACK": {
+      "years": [
+        1986
+      ]
+    },
+    "MUSTANG COBRA GT 2 DR HATCHBACK": {
+      "years": [
+        1987,
+        1988,
+        1989
+      ]
+    },
+    "MUSTANG LX 2 DR COUPE": {
+      "years": [
+        1987,
+        1988,
+        1989
+      ]
+    },
+    "MUSTANG LX 2 DR HATCHBACK": {
+      "years": [
+        1987,
+        1988
+      ]
+    },
+    "MUSTANG LX 2 DR HATCHBACK/LX 5.0L": {
+      "years": [
+        1989
+      ]
+    },
+    "MUSTANG LX CONVERTIBLE/LX 5.0L": {
+      "years": [
+        1989
+      ]
+    },
+    "MUSTANG LX/LX 5.0L/COBRA GT CONVERTIBLE": {
+      "years": [
+        1990,
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "MUSTANG LX/LX 5.0L 2DR COUPE": {
+      "years": [
+        1990,
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "MUSTANG LX/LX 5.0L/COBRA GT 2DR HTCHBACK": {
+      "years": [
+        1990
+      ]
+    },
+    "MUSTANG LX/LX 5.0L/GT 2DR HTCHBACK": {
+      "years": [
+        1991,
+        1992
+      ]
+    },
+    "MUSTANG LX/LX 5.0L/COBRA GT 2DR HATCHBAC": {
+      "years": [
+        1993
+      ]
+    },
+    "MUSTANG 2DR CONVERTIBLE BASE/GT": {
+      "years": [
+        1994
+      ]
+    },
+    "MUSTANG 2DR COUPE BASE/GT": {
+      "years": [
+        1994
+      ]
+    },
+    "MUSTANG 2DR CONVERTIBLE BASE": {
+      "years": [
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004
+      ]
+    },
+    "MUSTANG 2DR CONVERTIBLE GT": {
+      "years": [
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004
+      ]
+    },
+    "MUSTANG 2DR COUPE BASE": {
+      "years": [
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003
+      ]
+    },
+    "MUSTANG 2DR COUPE GT": {
+      "years": [
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002
+      ]
+    },
+    "MUSTANG COBRA": {
+      "years": [
+        1996
+      ]
+    },
+    "MUSTANG 2DR COUPE COBRA": {
+      "years": [
+        1997,
+        1998,
+        1999,
+        2000,
+        2001
+      ]
+    },
+    "MUSTANG 2DR CONVERTIBLE COBRA": {
+      "years": [
+        1998,
+        1999,
+        2000,
+        2001
+      ]
+    },
+    "MUSTANG 2DR COUPE GT/MACH 1": {
+      "years": [
+        2003
+      ]
+    },
+    "MUSTANG COBRA 2DR CONV RWD": {
+      "years": [
+        2003
+      ]
+    },
+    "MUSTANG COBRA 2DR COUPE RWD": {
+      "years": [
+        2003
+      ]
+    },
+    "MUSTANG 2DR COUPE RWD": {
+      "years": [
+        2004,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011
+      ]
+    },
+    "MUSTANG 2DR COUPE RWD /GT": {
+      "years": [
+        2004
+      ]
+    },
+    "MUSTANG 2DR COUPE RWD /MACH 1": {
+      "years": [
+        2004
+      ]
+    },
+    "MUSTANG SVT COBRA 2DR CONV RWD": {
+      "years": [
+        2004
+      ]
+    },
+    "MUSTANG SVT COBRA 2DR COUPE RWD": {
+      "years": [
+        2004
+      ]
+    },
+    "MUSTANG 2DR CONVERTIBLE": {
+      "years": [
+        2005
+      ]
+    },
+    "MUSTANG 2DR COUPE": {
+      "years": [
+        2005
+      ]
+    },
+    "MUSTANG GT 2DR COUPE": {
+      "years": [
+        2005,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    "MUSTANG 2DR CONVERTIBLE RWD": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011
+      ]
+    },
+    "MUSTANG GT 2DR CONVERTIBLE RWD": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ]
+    },
+    "MUSTANG GT 2DR COUPE RWD": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2014,
+        2015,
+        2016,
+        2017
+      ]
+    },
+    "MUSTANG 2DR CONVERTIBLE RWD/V6 PREMIUM": {
+      "years": [
+        2012,
+        2013,
+        2014
+      ]
+    },
+    "MUSTANG 2DR COUPE RWD/V6 PREMIUM": {
+      "years": [
+        2012,
+        2013,
+        2014
+      ]
+    },
+    "MUSTANG GT 2DR COUPE RWD/BOSS 302": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "MUSTANG V6/ECOBOOST 2DR CONVERTIBLE RWD": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ]
+    },
+    "MUSTANG V6/ECOBOOST 2DR COUPE RWD": {
+      "years": [
+        2015,
+        2016,
+        2017
+      ]
+    },
+    "MUSTANG GT350 2DR COUPE RWD": {
+      "years": [
+        2017
+      ]
+    },
+    "MUSTANG ECOBOOST 2DR CONVERTIBLE": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    "MUSTANG ECOBOOST 2DR COUPE": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    "MUSTANG GT 2DR CONVERTIBLE": {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    "MUSTANG GT350/350R 2DR COUPE": {
+      "years": [
+        2018,
+        2019,
+        2020
+      ]
+    },
+    "MUSTANG SHELBY GT500 2DR COUPE": {
+      "years": [
+        2021,
+        2022,
+        2022
+      ]
+    },
+    "MUSTANG MACH 1 2DR COUPE": {
+      "years": [
+        2022,
+        2023
+      ]
+    },
+    "MUSTANG 2DR COUPE DARKHORSE": {
+      "years": [
+        2024,
+        2025
+      ]
+    }
+  }
+}

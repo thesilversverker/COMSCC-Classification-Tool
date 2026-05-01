@@ -1,0 +1,604 @@
+{
+  "A4": {
+    "A4 4DR SEDAN": {
+      "years": [
+        1996,
+        2017,
+        2019
+      ]
+    },
+    "A4 4DR SEDAN QUATTRO": {
+      "years": [
+        1996,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    "A4 4DR SEDAN 1.8T": {
+      "years": [
+        1997
+      ]
+    },
+    "A4 4DR SEDAN 1.8T QUATTRO": {
+      "years": [
+        1997,
+        1998,
+        1999
+      ]
+    },
+    "A4 4DR SEDAN 2.8": {
+      "years": [
+        1997
+      ]
+    },
+    "A4 4DR SEDAN 2.8 QUATTRO": {
+      "years": [
+        1997,
+        1998,
+        1999
+      ]
+    },
+    "A4 4DR SEDAN 1.8T FWD": {
+      "years": [
+        1998,
+        1999
+      ]
+    },
+    "A4 4DR SEDAN 2.8 FWD": {
+      "years": [
+        1998,
+        1999
+      ]
+    },
+    "A4 4DR SEDAN FWD 1.8T": {
+      "years": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005
+      ]
+    },
+    "A4 4DR SEDAN FWD 2.8": {
+      "years": [
+        2000,
+        2001
+      ]
+    },
+    "A4 4DR SEDAN QUATTRO 1.8T": {
+      "years": [
+        2000,
+        2001
+      ]
+    },
+    "A4 4DR SEDAN QUATTRO 2.8": {
+      "years": [
+        2000,
+        2001
+      ]
+    },
+    "A4 4DR AVANT WAGON 3.0": {
+      "years": [
+        2002
+      ]
+    },
+    "A4 4DR SEDAN FWD 3.0": {
+      "years": [
+        2002,
+        2003,
+        2004,
+        2005
+      ]
+    },
+    "A4 1.8T CABRIOLET": {
+      "years": [
+        2003
+      ]
+    },
+    "A4 3.0T CABRIOLET": {
+      "years": [
+        2003
+      ]
+    },
+    "A4 4DR AVANT WAGON 1.8 AWD": {
+      "years": [
+        2003
+      ]
+    },
+    "A4 4DR AVANT WAGON 3.0 AWD": {
+      "years": [
+        2003
+      ]
+    },
+    "A4 1.8T CABRIOLET FWD": {
+      "years": [
+        2004
+      ]
+    },
+    "A4 3.0T CABRIOLET FWD": {
+      "years": [
+        2004
+      ]
+    },
+    "A4 4DR AVANT AWD WAGON 1.8T QUATTRO": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "A4 4DR AVANT AWD WAGON 3.0 QUATTRO": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "A4 4DR AVANT FWD WAGON 1.8T": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "A4 CABRIOLET 2DR CONV AWD /3.0": {
+      "years": [
+        2005,
+        2006
+      ]
+    },
+    "A4 CABRIOLET 2DR FWD /1.8T": {
+      "years": [
+        2005,
+        2006
+      ]
+    },
+    "A4 4DR AVANT AWD WAGON 2.0 T": {
+      "years": [
+        2006,
+        2007
+      ]
+    },
+    "A4 4DR AVANT AWD WAGON 3.2": {
+      "years": [
+        2006,
+        2007
+      ]
+    },
+    "A4 4DR SEDAN AWD 2.0T": {
+      "years": [
+        2006,
+        2007,
+        2008
+      ]
+    },
+    "A4 4DR SEDAN AWD 3.2": {
+      "years": [
+        2006,
+        2007,
+        2008
+      ]
+    },
+    "A4 4DR SEDAN FWD 2.0T": {
+      "years": [
+        2006,
+        2007,
+        2008
+      ]
+    },
+    "A4 CABRIOLET 2DR CONV AWD /3.2": {
+      "years": [
+        2007
+      ]
+    },
+    "A4 CABRIOLET 2DR FWD /2.0T": {
+      "years": [
+        2007
+      ]
+    },
+    "A4 4DR AVANT AWD WAGON 2.0T": {
+      "years": [
+        2008
+      ]
+    },
+    "A4 4DR AVANT AWD WAGON 3.2/S4": {
+      "years": [
+        2008
+      ]
+    },
+    "A4 CABRIOLET 2DR CONV AWD 3.2": {
+      "years": [
+        2008,
+        2009
+      ]
+    },
+    "A4 CABRIOLET 2DR CONV AWD S4": {
+      "years": [
+        2008,
+        2009
+      ]
+    },
+    "A4 CABRIOLET 2DR CONV FWD 2.0T": {
+      "years": [
+        2008,
+        2009
+      ]
+    },
+    "A4 4DR SEDAN 2.0 TFSI AWD": {
+      "years": [
+        2009
+      ]
+    },
+    "A4 4DR SEDAN 3.2 FSI AWD": {
+      "years": [
+        2009
+      ]
+    },
+    "A4 AVANT 2.0 TFSI 4DR AWD WAGON": {
+      "years": [
+        2009,
+        2010,
+        2011
+      ]
+    },
+    "A4 4DR SEDAN 2.0T FWD": {
+      "years": [
+        2010,
+        2011
+      ]
+    },
+    "A4 4DR SEDAN 2.0T QUATTRO": {
+      "years": [
+        2010,
+        2011
+      ]
+    },
+    "A4 4DR SEDAN 2.0 TFSI FWD": {
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ]
+    },
+    "A4 4DR SEDAN 2.0 TFSI QUATTRO/PREMIUM/PREMIUM": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "A4 AVANT 4DR WAGON 2.0 TFSI QUATTRO": {
+      "years": [
+        2012
+      ]
+    },
+    "A4 4DR SEDAN 2.0 TFSI QUATTRO": {
+      "years": [
+        2014,
+        2015,
+        2016
+      ]
+    },
+    "A4 4DR SEDAN 2.0": {
+      "years": [
+        2018
+      ]
+    },
+    "A4 4DR SEDAN 2.0 QUATTRO": {
+      "years": [
+        2018
+      ]
+    }
+  },
+  "Coupe": {
+    "COUPE GT": {
+      "years": [
+        1985,
+        1986
+      ]
+    },
+    "QUATTRO COUPE": {
+      "years": [
+        1986
+      ]
+    },
+    "COUPE GT 2 DR COUPE": {
+      "years": [
+        1987
+      ]
+    },
+    "TTS 2DR COUPE": {
+      "years": [
+        2010,
+        2011,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    "TTS 2DR COUPE 2.0 TFSI QUATTRO": {
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ]
+    }
+  },
+  "R8": {
+    "R8 2DR COUPE AWD": {
+      "years": [
+        2007,
+        2008,
+        2009
+      ]
+    },
+    "R8 2DR 4.2 COUPE AWD": {
+      "years": [
+        2010,
+        2011
+      ]
+    },
+    "R8 2DR 5.2 COUPE AWD": {
+      "years": [
+        2010,
+        2011
+      ]
+    },
+    "R8 2DR CONV": {
+      "years": [
+        2011
+      ]
+    },
+    "R8 2DR 4.2 FSI CONV": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "R8 2DR 4.2 FSI COUPE AWD": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "R8 2DR 5.2 FSI CONV": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "R8 2DR 5.2 FSI COUPE AWD/GT": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "R8 2DR GT CONV": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "R8 2DR GT COUPE AWD": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "R8 2DR V10 SPYDER FSI QUATTRO CONV": {
+      "years": [
+        2014,
+        2015,
+        2016
+      ]
+    },
+    "R8 2DR V8 SPYDER FSI QUATTRO CONV": {
+      "years": [
+        2014,
+        2015,
+        2016
+      ]
+    },
+    "R8 2DR V10 COUPE FSI QUATTRO": {
+      "years": [
+        2014,
+        2015,
+        2016
+      ]
+    },
+    "R8 2DR V8 COUPE FSI QUATTRO": {
+      "years": [
+        2014,
+        2015,
+        2016
+      ]
+    },
+    "R8 2DR V10 PLUS COUPE FSI QUATTRO": {
+      "years": [
+        2014,
+        2015,
+        2016
+      ]
+    },
+    "R8 2DR COUPE": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    "R8 2DR SPYDER": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    }
+  },
+  "S4": {
+    "S4 4DR SEDAN": {
+      "years": [
+        1993,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    "S4 4DR SEDAN QUATTRO 2.7T": {
+      "years": [
+        2000,
+        2001,
+        2002
+      ]
+    },
+    "S4 AVANT 4DR WAGON AWD": {
+      "years": [
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009
+      ]
+    },
+    "S4 SEDAN 4DR SEDAN AWD": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "S4 CABRIOLET 4DR CONV AWD": {
+      "years": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009
+      ]
+    },
+    "S4 4DR SEDAN AWD": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011
+      ]
+    },
+    "S4 4DR SEDAN 3.0 TFSI QUTTRO/PREMIUM": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "S4 4DR SEDAN 3.0 TFSI QUATTRO/PREMIUM": {
+      "years": [
+        2014,
+        2015,
+        2016
+      ]
+    }
+  },
+  "S6": {
+    "S6 4DR SEDAN QUATTRO": {
+      "years": [
+        1995,
+        1996,
+        1997
+      ]
+    },
+    "S6 AVANT": {
+      "years": [
+        2003
+      ]
+    },
+    "S6 4DR SEDAN AWD": {
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010,
+        2011
+      ]
+    },
+    "S6 4DR SEDAN": {
+      "years": [
+        2012,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    "S6 4DR SEDAN 4.0 TFSI QUATTRO": {
+      "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ]
+    }
+  },
+  "TT RS": {
+    "TT RS 2DR COUPE 2.5 TFSI QUATTRO": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "TT RS 2DR COUPE": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    }
+  },
+  "TTS": {
+    "TTS ROADSTER 2DR CONVERTIBLE": {
+      "years": [
+        2010,
+        2011
+      ]
+    },
+    "TTS ROADSTER 2DR CONVERTIBLE 2.0 TFSI QUATTRO": {
+      "years": [
+        2012,
+        2013,
+        2014,
+        2015
+      ]
+    }
+  }
+}
