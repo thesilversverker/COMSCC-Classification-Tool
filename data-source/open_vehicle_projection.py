@@ -259,6 +259,93 @@ def list_catalog_resolution_failures(
     return failures
 
 
+def catalog_failures_to_issue_rows(failures: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Split resolution failures into schema buckets (unmatched make vs unmatched model)."""
+    unmatched_makes: list[dict[str, Any]] = []
+    unmatched_models: list[dict[str, Any]] = []
+    for f in failures:
+        reason = str(f.get("reason", ""))
+        base = {
+            "severity": "warning",
+            "message": reason,
+            "make": f.get("vehicleMake"),
+            "model": f.get("vehicleModel"),
+        }
+        if "unknown make" in reason:
+            unmatched_makes.append(base)
+        else:
+            sev = "fatal" if "baseline corrupt" in reason else "warning"
+            row = {**base, "severity": sev}
+            unmatched_models.append(row)
+    return unmatched_makes, unmatched_models
+
+
+def list_stale_alias_issues(aliases: dict[str, Any], baseline_by_slug: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    """Flag aliases.makes / aliases.models entries whose canonical target is missing from baseline."""
+    out: list[dict[str, Any]] = []
+    makes_map = aliases.get("makes") or {}
+    models_map = aliases.get("models") or {}
+
+    for typo_key, entry in makes_map.items():
+        if not isinstance(entry, dict):
+            continue
+        canon = entry.get("canonical")
+        if not isinstance(canon, str) or not canon.strip():
+            continue
+        if slug_for_resolved_make_name(baseline_by_slug, canon) is None:
+            out.append(
+                {
+                    "severity": "warning",
+                    "message": f"aliases.makes[{typo_key!r}] canonical {canon!r} does not match any baseline make_name",
+                    "make": canon,
+                }
+            )
+
+    for composite_key, entry in models_map.items():
+        if not isinstance(entry, dict):
+            continue
+        mk = entry.get("make")
+        md = entry.get("model")
+        if not isinstance(mk, str) or not isinstance(md, str):
+            continue
+        slug = slug_for_resolved_make_name(baseline_by_slug, mk)
+        if slug is None:
+            out.append(
+                {
+                    "severity": "warning",
+                    "message": f"aliases.models[{composite_key!r}] target make {mk!r} not found in baseline",
+                    "make": mk,
+                    "model": md,
+                }
+            )
+            continue
+        models_dict = baseline_by_slug[slug].get("models") or {}
+        if not isinstance(models_dict, dict):
+            continue
+        if find_model_key(models_dict, md) is None:
+            out.append(
+                {
+                    "severity": "warning",
+                    "message": f"aliases.models[{composite_key!r}] target model {md!r} not found under make_slug={slug!r}",
+                    "make": mk,
+                    "model": md,
+                }
+            )
+
+    return out
+
+
+def projected_counts_from_styles(styles_by_slug: dict[str, dict[str, dict[str, Any]]]) -> dict[str, dict[str, int]]:
+    """Per-make {models, styles} matching seed_baseline_counts aggregation."""
+    counts: dict[str, dict[str, int]] = {}
+    for slug in sorted(styles_by_slug.keys()):
+        by_model = styles_by_slug[slug]
+        model_count = len(by_model)
+        style_count = sum(len(st) for st in by_model.values() if isinstance(st, dict))
+        counts[slug] = {"models": model_count, "styles": style_count}
+    return counts
+
+
 def collect_include_scope(curated_dir: Path) -> set[tuple[str, str]]:
     """Union models explicitly marked `include: true` across curated-overrides/*.json."""
     scope: set[tuple[str, str]] = set()

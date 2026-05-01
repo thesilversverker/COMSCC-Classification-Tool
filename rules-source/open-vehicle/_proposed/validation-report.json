@@ -1,0 +1,275 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-05-01T21:01:34+00:00",
+  "issues": {
+    "unmatchedCatalogMakes": [],
+    "unmatchedCatalogModels": [],
+    "emptyDetailTuples": [],
+    "ambiguousMatches": [],
+    "staleAliases": [
+      {
+        "severity": "warning",
+        "message": "aliases.makes['Volkswagon'] canonical 'Volkswagen' does not match any baseline make_name",
+        "make": "Volkswagen"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.makes['Volkswagon '] canonical 'Volkswagen' does not match any baseline make_name",
+        "make": "Volkswagen"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.makes['Austin Healy'] canonical 'Austin Healey' does not match any baseline make_name",
+        "make": "Austin Healey"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['BMW|135is'] target model '1 SERIES' not found under make_slug='bmw'",
+        "make": "BMW",
+        "model": "1 SERIES"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['BMW|323ci'] target model '3 SERIES' not found under make_slug='bmw'",
+        "make": "BMW",
+        "model": "3 SERIES"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['BMW|328iX'] target model '3 SERIES' not found under make_slug='bmw'",
+        "make": "BMW",
+        "model": "3 SERIES"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['BMW|340XI'] target model '3 SERIES' not found under make_slug='bmw'",
+        "make": "BMW",
+        "model": "3 SERIES"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['BMW|2002'] target model '2002' not found under make_slug='bmw'",
+        "make": "BMW",
+        "model": "2002"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['BMW|M Coupe'] target model 'M COUPE' not found under make_slug='bmw'",
+        "make": "BMW",
+        "model": "M COUPE"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['BMW|M Roadster'] target model 'M ROADSTER' not found under make_slug='bmw'",
+        "make": "BMW",
+        "model": "M ROADSTER"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Datsun|240Z'] target model '240Z' not found under make_slug='datsun'",
+        "make": "Datsun",
+        "model": "240Z"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Datsun|280Z'] target model '280Z' not found under make_slug='datsun'",
+        "make": "Datsun",
+        "model": "280Z"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Honda|CRS Si'] target model 'CRX' not found under make_slug='honda'",
+        "make": "Honda",
+        "model": "CRX"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Honda|CRX Si'] target model 'CRX' not found under make_slug='honda'",
+        "make": "Honda",
+        "model": "CRX"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Jaguar|XKR-S'] target model 'XKR' not found under make_slug='jaguar'",
+        "make": "Jaguar",
+        "model": "XKR"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Lexus|IS300'] target model 'IS 300' not found under make_slug='lexus'",
+        "make": "Lexus",
+        "model": "IS 300"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Mazda|MazdaSpeed MX5'] target model 'MX-5 MIATA' not found under make_slug='mazda'",
+        "make": "Mazda",
+        "model": "MX-5 MIATA"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Mercedes-Benz|CLA45S AMG'] target model 'CLA' not found under make_slug='mercedes_benz'",
+        "make": "Mercedes-Benz",
+        "model": "CLA"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Nissan|400Z'] target model 'Z' not found under make_slug='nissan'",
+        "make": "Nissan",
+        "model": "Z"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Porsche|718 GT4 RS'] target model '718' not found under make_slug='porsche'",
+        "make": "Porsche",
+        "model": "718"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Porsche|Carrera GT'] target model 'CARRERA GT' not found under make_slug='porsche'",
+        "make": "Porsche",
+        "model": "CARRERA GT"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Toyota|Matrix'] target model 'MATRIX' not found under make_slug='toyota'",
+        "make": "Toyota",
+        "model": "MATRIX"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Toyota|Matrix S'] target model 'MATRIX' not found under make_slug='toyota'",
+        "make": "Toyota",
+        "model": "MATRIX"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Toyota|Matrix XRS'] target model 'MATRIX' not found under make_slug='toyota'",
+        "make": "Toyota",
+        "model": "MATRIX"
+      }
+    ]
+  },
+  "counts": {
+    "acura": {
+      "models": 3,
+      "styles": 27
+    },
+    "alfa_romeo": {
+      "models": 1,
+      "styles": 0
+    },
+    "aston_martin": {
+      "models": 2,
+      "styles": 14
+    },
+    "audi": {
+      "models": 7,
+      "styles": 87
+    },
+    "bmw": {
+      "models": 30,
+      "styles": 154
+    },
+    "bugatti": {
+      "models": 1,
+      "styles": 0
+    },
+    "chevrolet": {
+      "models": 3,
+      "styles": 94
+    },
+    "dodge": {
+      "models": 4,
+      "styles": 33
+    },
+    "ferrari": {
+      "models": 5,
+      "styles": 11
+    },
+    "fiat": {
+      "models": 1,
+      "styles": 9
+    },
+    "ford": {
+      "models": 5,
+      "styles": 140
+    },
+    "honda": {
+      "models": 5,
+      "styles": 185
+    },
+    "hyundai": {
+      "models": 2,
+      "styles": 1
+    },
+    "infiniti": {
+      "models": 1,
+      "styles": 5
+    },
+    "lamborghini": {
+      "models": 3,
+      "styles": 16
+    },
+    "lexus": {
+      "models": 1,
+      "styles": 1
+    },
+    "lotus": {
+      "models": 2,
+      "styles": 7
+    },
+    "mazda": {
+      "models": 3,
+      "styles": 30
+    },
+    "mini": {
+      "models": 1,
+      "styles": 37
+    },
+    "mitsubishi": {
+      "models": 3,
+      "styles": 45
+    },
+    "nissan": {
+      "models": 7,
+      "styles": 87
+    },
+    "pontiac": {
+      "models": 4,
+      "styles": 40
+    },
+    "porsche": {
+      "models": 9,
+      "styles": 223
+    },
+    "saab": {
+      "models": 4,
+      "styles": 94
+    },
+    "smart": {
+      "models": 1,
+      "styles": 9
+    },
+    "subaru": {
+      "models": 4,
+      "styles": 134
+    },
+    "tesla": {
+      "models": 2,
+      "styles": 6
+    },
+    "toyota": {
+      "models": 5,
+      "styles": 107
+    },
+    "triumph": {
+      "models": 1,
+      "styles": 1
+    },
+    "volvo": {
+      "models": 1,
+      "styles": 11
+    }
+  }
+}

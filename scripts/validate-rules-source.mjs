@@ -162,6 +162,7 @@ export function validateAllRulesSourceFiles() {
   const PROPOSED_DIR = path.join(OPEN_VEHICLE_DIR, '_proposed');
   if (fs.existsSync(PROPOSED_DIR)) {
     tryValidateOptional('makesAndModels', path.join(PROPOSED_DIR, 'makes_and_models.json'));
+    tryValidateOptional('validationReport', path.join(PROPOSED_DIR, 'validation-report.json'));
     const proposedStyles = path.join(PROPOSED_DIR, 'styles');
     if (fs.existsSync(proposedStyles)) {
       const proposedStyleFiles = fs

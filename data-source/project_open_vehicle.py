@@ -11,7 +11,8 @@ Exit 0 on success; `--verify` validates inputs + would-write shapes without crea
 cannot be resolved to baseline (after aliases). Without `--strict`, unresolved rows
 only emit a stderr warning (plan §Validation gates).
 Every `curated-overrides/*.json` is validated against `curated-override.schema.json`
-before projection runs.
+before projection runs. Writes `validation-report.json` (schema: validation-report) next to
+projected makes/styles — catalog resolution buckets, stale-alias hints, projected per-make counts.
 """
 
 from __future__ import annotations
@@ -25,12 +26,16 @@ if str(_THIS_DIR) not in sys.path:
     sys.path.insert(0, str(_THIS_DIR))
 
 from json_io import read_json, write_json  # noqa: E402
+from nhtsa_source import build_validation_report  # noqa: E402
 from open_vehicle_projection import (  # noqa: E402
+    catalog_failures_to_issue_rows,
     index_baseline_by_slug,
     list_catalog_resolution_failures,
+    list_stale_alias_issues,
     load_aliases,
     load_baseline_makes,
     load_visibility,
+    projected_counts_from_styles,
     project_open_vehicle,
     sort_makes_array,
 )
@@ -98,8 +103,26 @@ def cmd_project(args: argparse.Namespace) -> int:
 
     validate_or_raise("makes_and_models", makes_out, context="<projected makes_and_models>")
 
+    um_make, um_model = catalog_failures_to_issue_rows(failures)
+    stale_rows = list_stale_alias_issues(aliases, baseline_by_slug)
+    counts = projected_counts_from_styles(styles_by_slug)
+    validation_report = build_validation_report(
+        issues={
+            "unmatchedCatalogMakes": um_make,
+            "unmatchedCatalogModels": um_model,
+            "emptyDetailTuples": [],
+            "ambiguousMatches": [],
+            "staleAliases": stale_rows,
+        },
+        counts=counts,
+    )
+    validate_or_raise("validation_report", validation_report, context="<projection validation_report>")
+
     if args.verify:
-        print(f"verify OK: {len(makes_out)} makes, {len(styles_by_slug)} style files")
+        print(
+            f"verify OK: {len(makes_out)} makes, {len(styles_by_slug)} style files; "
+            f"validation-report ({len(failures)} catalog misses, {len(stale_rows)} stale alias hints)"
+        )
         return 0
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
@@ -107,10 +130,14 @@ def cmd_project(args: argparse.Namespace) -> int:
     styles_dir.mkdir(parents=True, exist_ok=True)
 
     write_json(args.out_dir / "makes_and_models.json", makes_out)
+    write_json(args.out_dir / "validation-report.json", validation_report)
     for slug in sorted(styles_by_slug.keys()):
         write_json(styles_dir / f"{slug}.json", styles_by_slug[slug])
 
-    print(f"Wrote {args.out_dir} ({len(makes_out)} makes; {len(styles_by_slug)} style shards)")
+    print(
+        f"Wrote {args.out_dir} ({len(makes_out)} makes; {len(styles_by_slug)} style shards; "
+        f"validation-report.json)"
+    )
     return 0
 
 

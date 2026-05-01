@@ -136,6 +136,65 @@ class TestIncludeScope:
         assert "ACCORD" in honda["models"]
 
 
+class TestStaleAliasesAndBuckets:
+    def test_catalog_failures_split_buckets(self):
+        fails = [
+            {
+                "index": 0,
+                "vehicleMake": "X",
+                "vehicleModel": "Y",
+                "reason": "unknown make after aliases (resolved='Z')",
+            },
+            {
+                "index": 1,
+                "vehicleMake": "Honda",
+                "vehicleModel": "ZZTop",
+                "reason": "unknown model for make_slug='honda' (resolved model='ZZTop')",
+            },
+        ]
+        um, umodel = ovp.catalog_failures_to_issue_rows(fails)
+        assert len(um) == 1
+        assert len(umodel) == 1
+
+    def test_stale_make_alias_when_canonical_missing(self, tiny_baseline):
+        by = ovp.index_baseline_by_slug(tiny_baseline)
+        aliases = {
+            "schemaVersion": "1.0.0",
+            "makes": {"TypoCo": {"canonical": "NotInBaseline", "reason": "x"}},
+            "models": {},
+            "trims": {},
+        }
+        stale = ovp.list_stale_alias_issues(aliases, by)
+        assert any("NotInBaseline" in (s.get("message") or "") for s in stale)
+
+    def test_stale_model_alias_target_model_missing(self, tiny_baseline):
+        by = ovp.index_baseline_by_slug(tiny_baseline)
+        aliases = {
+            "schemaVersion": "1.0.0",
+            "makes": {},
+            "models": {
+                "Honda|SpaceCar": {
+                    "make": "Honda",
+                    "model": "Nope",
+                    "reason": "t",
+                }
+            },
+            "trims": {},
+        }
+        stale = ovp.list_stale_alias_issues(aliases, by)
+        assert any("not found under make_slug" in (s.get("message") or "") for s in stale)
+
+    def test_projected_counts_from_styles(self):
+        styles = {
+            "honda": {
+                "CIVIC": {"EX": {"years": [2020]}, "LX": {"years": [2020]}},
+            }
+        }
+        c = ovp.projected_counts_from_styles(styles)
+        assert c["honda"]["models"] == 1
+        assert c["honda"]["styles"] == 2
+
+
 class TestCatalogResolutionFailures:
     def test_unknown_make_reported(self, tiny_baseline, tiny_aliases):
         by = ovp.index_baseline_by_slug(tiny_baseline)
