@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/styles.schema.json",
+  "title": "open-vehicle styles per make",
+  "description": "rules-source/open-vehicle/styles/<make_slug>.json: { modelKey: { styleKey: { years: [year, ...] } } }.",
+  "type": "object",
+  "additionalProperties": { "$ref": "#/$defs/modelStyles" },
+  "$defs": {
+    "modelStyles": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/style" }
+    },
+    "style": {
+      "type": "object",
+      "required": ["years"],
+      "properties": {
+        "years": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

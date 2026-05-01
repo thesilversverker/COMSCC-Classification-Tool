@@ -6,6 +6,7 @@ import { buildShowroomLookupRowsFromVehicleCatalog } from './build-showroom-look
 import { mergeStylesDirectoryIntoMakes } from './open-vehicle-merge.mjs';
 import { buildTiresCategoryFromDoc } from './build-tires-category.mjs';
 import { readJson, writeJson } from './json-io.mjs';
+import { validateOrThrow, validateStylesDirectoryOrThrow } from './validate-rules-source.mjs';
 
 // Logical component: rules-source (vehicles.json with composed catalog) + preset + categories → src/lib/data (never writes rules-source except via compose script).
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -36,6 +37,9 @@ function withSubcategories(category) {
 
 function writeVehicleShowroomLookup(vehicleCatalog) {
   const comsccDoc = fs.existsSync(COMSCC_CATALOG_PATH) ? readJson(COMSCC_CATALOG_PATH) : {};
+  if (fs.existsSync(COMSCC_CATALOG_PATH)) {
+    validateOrThrow('vehiclesComsccCatalog', comsccDoc, 'rules-source/vehicles-comscc-catalog.json');
+  }
   const overrideRowCount = Array.isArray(comsccDoc.vehicleCatalog) ? comsccDoc.vehicleCatalog.length : 0;
 
   const { rows, mergedCount, flatCount, comsccSeedCount } = buildShowroomLookupRowsFromVehicleCatalog(
@@ -66,6 +70,8 @@ function buildBundle() {
     throw new Error(`Missing open-vehicle-db makes: ${MAKES_MODELS_PATH}`);
   }
   const openDbRaw = readJson(MAKES_MODELS_PATH);
+  validateOrThrow('makesAndModels', openDbRaw, 'rules-source/open-vehicle/makes_and_models.json');
+  validateStylesDirectoryOrThrow(OPEN_VEHICLE_STYLES_DIR);
   const openVehicleForUi = mergeStylesDirectoryIntoMakes(openDbRaw, OPEN_VEHICLE_STYLES_DIR);
   writeJson(OUTPUT_OPEN_VEHICLE_UI, openVehicleForUi);
   console.log(`Wrote ${OUTPUT_OPEN_VEHICLE_UI} (styles overlay from ${OPEN_VEHICLE_STYLES_DIR})`);
@@ -75,6 +81,7 @@ function buildBundle() {
     throw new Error(`Missing rules-source file: ${vehiclesPath}`);
   }
   const vehiclesDoc = readJson(vehiclesPath);
+  validateOrThrow('vehicles', vehiclesDoc, 'rules-source/vehicles.json');
   const vc = vehiclesDoc.category;
   if (!vc || vc.id !== 'vehicles') {
     throw new Error('rules-source/vehicles.json must contain category.id "vehicles"');

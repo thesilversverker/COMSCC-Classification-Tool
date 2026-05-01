@@ -6,6 +6,7 @@ import { mergeStylesDirectoryIntoMakes } from './open-vehicle-merge.mjs';
 import { flattenOpenDb, pickComsccRow, slugify } from './build-showroom-lookup-rows.mjs';
 import { baseClassificationFromShowroomAssessment } from './touring-tier-from-points.mjs';
 import { readJson, writeJson } from './json-io.mjs';
+import { validateOrThrow, validateStylesDirectoryOrThrow } from './validate-rules-source.mjs';
 
 // Logical component: rules-source/open-vehicle/makes_and_models.json + styles/{make_slug}.json + vehicles-comscc-catalog.json → rules-source/vehicles.json (committed).
 
@@ -135,16 +136,20 @@ function compose() {
   }
 
   const vehiclesShell = readJson(VEHICLES_JSON_PATH);
+  validateOrThrow('vehicles', vehiclesShell, 'rules-source/vehicles.json');
   const cat = vehiclesShell.category;
   if (!cat || cat.id !== 'vehicles') {
     throw new Error('rules-source/vehicles.json must contain category.id "vehicles"');
   }
 
   const openDb = readJson(MAKES_PATH);
+  validateOrThrow('makesAndModels', openDb, 'rules-source/open-vehicle/makes_and_models.json');
+  validateStylesDirectoryOrThrow(STYLES_DIR);
   const merged = mergeStylesDirectoryIntoMakes(openDb, STYLES_DIR);
   const flat = flattenOpenDb(merged);
 
   const comsccDoc = readJson(COMSCC_CATALOG_PATH);
+  validateOrThrow('vehiclesComsccCatalog', comsccDoc, 'rules-source/vehicles-comscc-catalog.json');
   const comsccTemplate = comsccDoc.comsccTemplate;
   if (typeof comsccTemplate !== 'object' || comsccTemplate === null) {
     throw new Error('vehicles-comscc-catalog.json must contain object comsccTemplate');

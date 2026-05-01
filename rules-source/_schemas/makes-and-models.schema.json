@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/makes-and-models.schema.json",
+  "title": "open-vehicle makes and models",
+  "description": "rules-source/open-vehicle/makes_and_models.json: array of make rows, each with a models map keyed by model key.",
+  "type": "array",
+  "items": { "$ref": "#/$defs/make" },
+  "$defs": {
+    "make": {
+      "type": "object",
+      "required": ["first_year", "last_year", "make_id", "make_name", "make_slug", "models"],
+      "properties": {
+        "first_year": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+        "last_year": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+        "make_id": { "type": "integer", "minimum": 0 },
+        "make_name": { "type": "string", "minLength": 1 },
+        "make_slug": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "models": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/model" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "model": {
+      "type": "object",
+      "required": ["model_id", "model_name", "model_styles", "vehicle_type", "years"],
+      "properties": {
+        "model_id": { "type": "integer", "minimum": 0 },
+        "model_name": { "type": "string", "minLength": 1 },
+        "model_styles": {
+          "type": "object",
+          "additionalProperties": { "type": "object" }
+        },
+        "vehicle_type": { "type": "string", "minLength": 1 },
+        "years": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

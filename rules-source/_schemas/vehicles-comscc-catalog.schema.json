@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://comscc.local/schemas/vehicles-comscc-catalog.schema.json",
+  "title": "COMSCC workbook catalog overrides",
+  "description": "rules-source/vehicles-comscc-catalog.json: curator-managed overrides keyed by (make, model, year span, optional trim).",
+  "type": "object",
+  "required": ["schemaVersion", "comsccTemplate", "vehicleCatalog"],
+  "properties": {
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "comsccTemplate": { "$ref": "#/$defs/comsccTemplate" },
+    "vehicleCatalog": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/catalogRow" }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "comsccTemplate": {
+      "type": "object",
+      "required": ["showroomBaseWeightLbs", "factoryRatedHp", "factoryRatedTorqueLbFt", "suspIndex"],
+      "properties": {
+        "showroomBaseWeightLbs": { "type": "number" },
+        "factoryRatedHp": { "type": "number" },
+        "factoryRatedTorqueLbFt": { "type": "number" },
+        "suspIndex": { "type": "number" }
+      },
+      "additionalProperties": true
+    },
+    "catalogRow": {
+      "type": "object",
+      "required": ["vehicleMake", "vehicleModel", "vehicleYearBegin", "vehicleYearEnd"],
+      "properties": {
+        "vehicleMake": { "type": "string", "minLength": 1 },
+        "vehicleModel": { "type": "string", "minLength": 1 },
+        "vehicleTrim": { "type": ["string", "null"] },
+        "vehicleYearBegin": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+        "vehicleYearEnd": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+        "showroomBaseWeightLbs": { "type": ["number", "null"] },
+        "factoryRatedHp": { "type": ["number", "null"] },
+        "factoryRatedTorqueLbFt": { "type": ["number", "null"] },
+        "suspIndex": { "type": ["number", "null"] },
+        "showroomAssessment": { "type": ["number", "null"] },
+        "performanceAdjustment": { "type": ["number", "null"] }
+      },
+      "additionalProperties": true
+    }
+  }
+}
