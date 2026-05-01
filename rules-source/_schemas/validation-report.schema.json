@@ -30,6 +30,11 @@
         "staleAliases": {
           "type": "array",
           "items": { "$ref": "#/$defs/issue" }
+        },
+        "baselineShrinkViolations": {
+          "type": "array",
+          "description": "Projection-only: per-make model/style count drops vs baseline-counts.json.",
+          "items": { "$ref": "#/$defs/issue" }
         }
       },
       "additionalProperties": true

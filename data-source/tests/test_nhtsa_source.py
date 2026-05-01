@@ -194,7 +194,7 @@ class TestBuildValidationReport:
     def test_default_buckets_present(self):
         doc = build_validation_report()
         assert "unmatchedCatalogMakes" in doc["issues"]
-        assert "emptyDetailTuples" in doc["issues"]
+        assert "baselineShrinkViolations" in doc["issues"]
         assert doc["counts"] == {}
 
     def test_issues_pass_through(self):

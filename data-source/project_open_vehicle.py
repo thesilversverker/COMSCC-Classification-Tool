@@ -11,10 +11,12 @@ Exit 0 on success; `--verify` validates inputs + would-write shapes without crea
 cannot be resolved to baseline (after aliases). Without `--strict`, unresolved rows
 only emit a stderr warning (plan §Validation gates).
 Every `curated-overrides/*.json` is validated against `curated-override.schema.json`
-before projection runs. Writes `validation-report.json` (schema: validation-report) next to
-projected makes/styles — catalog resolution buckets, stale-alias hints, projected per-make counts.
-Optional `--compare-baseline` enforces per-make count floors vs `baseline-counts.json` when
-`aggregationSource` is `projected` (reseed with `seed_baseline_counts.py --from-proposed`).
+before projection runs. Writes `validation-report.json`: catalog resolution buckets,
+stale-alias hints, projected per-make counts, and **`issues.baselineShrinkViolations`**
+when `--compare-baseline` is used (plus an info row when the numeric shrink check is
+skipped because `baseline-counts.json` lacks `aggregationSource: projected`).
+Optional `--compare-baseline` compares projected counts to `baseline-counts.json` when
+aggregation is **`projected`** (reseed with `seed_baseline_counts.py --from-proposed`).
 """
 
 from __future__ import annotations
@@ -110,23 +112,24 @@ def cmd_project(args: argparse.Namespace) -> int:
     um_make, um_model = catalog_failures_to_issue_rows(failures)
     stale_rows = list_stale_alias_issues(aliases, baseline_by_slug)
     counts = projected_counts_from_styles(styles_by_slug)
-    validation_report = build_validation_report(
-        issues={
-            "unmatchedCatalogMakes": um_make,
-            "unmatchedCatalogModels": um_model,
-            "emptyDetailTuples": [],
-            "ambiguousMatches": [],
-            "staleAliases": stale_rows,
-        },
-        counts=counts,
-    )
-    validate_or_raise("validation_report", validation_report, context="<projection validation_report>")
+
+    baseline_shrink_rows: list[dict] = []
+    shrink_numeric_violations: list[str] = []
 
     if args.compare_baseline:
         baseline_doc = read_json(args.baseline_counts)
         validate_or_raise("baseline_counts", baseline_doc, context=str(args.baseline_counts))
         agg = baseline_doc.get("aggregationSource")
         if agg != "projected" and not args.compare_baseline_unsafe:
+            baseline_shrink_rows.append(
+                {
+                    "severity": "info",
+                    "message": (
+                        "compare-baseline numeric check skipped: aggregationSource is not 'projected'. "
+                        "Reseed with seed_baseline_counts.py --from-proposed, or use --compare-baseline-unsafe."
+                    ),
+                }
+            )
             print(
                 "note: --compare-baseline skipped: baseline-counts.json aggregationSource is not "
                 "'projected'. Reseed with `python data-source/seed_baseline_counts.py --from-proposed` "
@@ -135,17 +138,37 @@ def cmd_project(args: argparse.Namespace) -> int:
                 file=sys.stderr,
             )
         else:
-            viol = shrink_violations_vs_baseline(
+            shrink_numeric_violations = shrink_violations_vs_baseline(
                 counts,
                 baseline_doc,
                 max_shrink_pct=args.max_shrink_pct,
             )
-            if viol:
-                detail = "\n".join(viol)
-                if args.compare_baseline_fatal:
-                    print(detail, file=sys.stderr)
-                    return 1
-                print(f"warning: baseline shrink check ({args.max_shrink_pct}% rule):\n{detail}\n", file=sys.stderr)
+            for line in shrink_numeric_violations:
+                baseline_shrink_rows.append({"severity": "warning", "message": line})
+            if shrink_numeric_violations and not args.compare_baseline_fatal:
+                print(
+                    f"warning: baseline shrink check ({args.max_shrink_pct}% rule):\n"
+                    + "\n".join(shrink_numeric_violations)
+                    + "\n",
+                    file=sys.stderr,
+                )
+
+    validation_report = build_validation_report(
+        issues={
+            "unmatchedCatalogMakes": um_make,
+            "unmatchedCatalogModels": um_model,
+            "emptyDetailTuples": [],
+            "ambiguousMatches": [],
+            "staleAliases": stale_rows,
+            "baselineShrinkViolations": baseline_shrink_rows,
+        },
+        counts=counts,
+    )
+    validate_or_raise("validation_report", validation_report, context="<projection validation_report>")
+
+    if args.compare_baseline and args.compare_baseline_fatal and shrink_numeric_violations:
+        print("\n".join(shrink_numeric_violations), file=sys.stderr)
+        return 1
 
     if args.verify:
         print(

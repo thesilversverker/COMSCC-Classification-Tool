@@ -40,6 +40,8 @@ Requires `data-source/.venv` as in [One-time setup](#one-time-setup). Pass flags
 | `npm run data:nhtsa:update -- …` | delta refresh |
 | `npm run data:nhtsa:project` | `project_open_vehicle.py` → `_proposed/` |
 | `npm run data:nhtsa:project:verify` | same with `--verify` (no writes) |
+| `npm run data:nhtsa:project:compare` | `--compare-baseline` (shrink vs `baseline-counts.json`) |
+| `npm run data:nhtsa:project:compare:fatal` | same + `--compare-baseline-fatal` (exit 1 on shrink) |
 | `npm run data:nhtsa:apply-proposed` | dry-run: lists `_proposed` → `open-vehicle` file moves |
 | `npm run data:nhtsa:apply-proposed -- --apply` | **cutover:** writes `makes_and_models.json` + `styles/` (review diff first) |
 

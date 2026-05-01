@@ -230,6 +230,7 @@ def build_validation_report(
         "emptyDetailTuples": [],
         "ambiguousMatches": [],
         "staleAliases": [],
+        "baselineShrinkViolations": [],
     }
     if issues:
         for k, v in issues.items():

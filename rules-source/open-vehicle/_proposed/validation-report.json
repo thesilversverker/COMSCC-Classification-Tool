@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-05-01T21:01:34+00:00",
+  "generatedAt": "2026-05-01T22:57:56+00:00",
   "issues": {
     "unmatchedCatalogMakes": [],
     "unmatchedCatalogModels": [],
@@ -148,7 +148,8 @@
         "make": "Toyota",
         "model": "MATRIX"
       }
-    ]
+    ],
+    "baselineShrinkViolations": []
   },
   "counts": {
     "acura": {
