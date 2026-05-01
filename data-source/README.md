@@ -40,7 +40,20 @@ Requires `data-source/.venv` as in [One-time setup](#one-time-setup). Pass flags
 | `npm run data:nhtsa:update -- …` | delta refresh |
 | `npm run data:nhtsa:project` | `project_open_vehicle.py` → `_proposed/` |
 | `npm run data:nhtsa:project:verify` | same with `--verify` (no writes) |
-| `npm run data:nhtsa:seed-baseline` | `seed_baseline_counts.py` |
+| `npm run data:nhtsa:apply-proposed` | dry-run: lists `_proposed` → `open-vehicle` file moves |
+| `npm run data:nhtsa:apply-proposed -- --apply` | **cutover:** writes `makes_and_models.json` + `styles/` (review diff first) |
+
+### Layer 3 cutover (`_proposed` → committed open-vehicle)
+
+After `npm run data:nhtsa:project`, review `rules-source/open-vehicle/_proposed/` (and
+`validation-report.json`). When ready to replace the live picker inputs:
+
+1. `npm run data:nhtsa:apply-proposed` — lists planned copies (dry-run).
+2. `npm run data:nhtsa:apply-proposed -- --apply` — promotes `_proposed/makes_and_models.json`
+   and `_proposed/styles/*.json` into `rules-source/open-vehicle/` (same deterministic
+   `json_io` round-trip). Does **not** touch `aliases.json`, `visibility-overrides.json`,
+   `curated-overrides/`, or `nhtsa-source/`.
+3. `npm run data:validate && npm run data:build` — confirm schemas and regenerate bundles.
 
 ### One-time setup
 

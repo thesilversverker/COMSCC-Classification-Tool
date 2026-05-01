@@ -17,6 +17,7 @@
     "data:nhtsa:project": "data-source/.venv/bin/python data-source/project_open_vehicle.py",
     "data:nhtsa:project:verify": "data-source/.venv/bin/python data-source/project_open_vehicle.py --verify",
     "data:nhtsa:seed-baseline": "data-source/.venv/bin/python data-source/seed_baseline_counts.py",
+    "data:nhtsa:apply-proposed": "data-source/.venv/bin/python data-source/apply_proposed_open_vehicle.py",
     "data:compose-vehicles": "node scripts/compose-vehicles-json.mjs",
     "data:build": "npm run data:compose-vehicles && node scripts/build-rules-bundle.mjs"
   },
