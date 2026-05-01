@@ -13,6 +13,8 @@ only emit a stderr warning (plan §Validation gates).
 Every `curated-overrides/*.json` is validated against `curated-override.schema.json`
 before projection runs. Writes `validation-report.json` (schema: validation-report) next to
 projected makes/styles — catalog resolution buckets, stale-alias hints, projected per-make counts.
+Optional `--compare-baseline` enforces per-make count floors vs `baseline-counts.json` when
+`aggregationSource` is `projected` (reseed with `seed_baseline_counts.py --from-proposed`).
 """
 
 from __future__ import annotations
@@ -37,6 +39,7 @@ from open_vehicle_projection import (  # noqa: E402
     load_visibility,
     projected_counts_from_styles,
     project_open_vehicle,
+    shrink_violations_vs_baseline,
     sort_makes_array,
 )
 from schemas import validate_or_raise  # noqa: E402
@@ -52,6 +55,7 @@ _DEFAULT_VISIBILITY = _REPO_ROOT / "rules-source" / "open-vehicle" / "visibility
 _DEFAULT_CURATED = _REPO_ROOT / "rules-source" / "open-vehicle" / "curated-overrides"
 _DEFAULT_SEED_STYLES = _REPO_ROOT / "rules-source" / "open-vehicle" / "styles"
 _DEFAULT_OUT = _REPO_ROOT / "rules-source" / "open-vehicle" / "_proposed"
+_DEFAULT_BASELINE_COUNTS = _REPO_ROOT / "rules-source" / "open-vehicle" / "baseline-counts.json"
 
 
 def cmd_project(args: argparse.Namespace) -> int:
@@ -118,6 +122,31 @@ def cmd_project(args: argparse.Namespace) -> int:
     )
     validate_or_raise("validation_report", validation_report, context="<projection validation_report>")
 
+    if args.compare_baseline:
+        baseline_doc = read_json(args.baseline_counts)
+        validate_or_raise("baseline_counts", baseline_doc, context=str(args.baseline_counts))
+        agg = baseline_doc.get("aggregationSource")
+        if agg != "projected" and not args.compare_baseline_unsafe:
+            print(
+                "note: --compare-baseline skipped: baseline-counts.json aggregationSource is not "
+                "'projected'. Reseed with `python data-source/seed_baseline_counts.py --from-proposed` "
+                "after a reviewed _proposed/ run, or pass --compare-baseline-unsafe to compare against "
+                "full-styles baselines (expected noisy for catalog-scoped output).",
+                file=sys.stderr,
+            )
+        else:
+            viol = shrink_violations_vs_baseline(
+                counts,
+                baseline_doc,
+                max_shrink_pct=args.max_shrink_pct,
+            )
+            if viol:
+                detail = "\n".join(viol)
+                if args.compare_baseline_fatal:
+                    print(detail, file=sys.stderr)
+                    return 1
+                print(f"warning: baseline shrink check ({args.max_shrink_pct}% rule):\n{detail}\n", file=sys.stderr)
+
     if args.verify:
         print(
             f"verify OK: {len(makes_out)} makes, {len(styles_by_slug)} style files; "
@@ -177,6 +206,28 @@ def build_parser() -> argparse.ArgumentParser:
         "--strict",
         action="store_true",
         help="Exit non-zero when any catalog row with make+model fails to resolve to baseline (after aliases).",
+    )
+    p.add_argument(
+        "--compare-baseline",
+        action="store_true",
+        help="Compare projected per-make counts to baseline-counts.json (needs aggregationSource=projected).",
+    )
+    p.add_argument("--baseline-counts", type=Path, default=_DEFAULT_BASELINE_COUNTS)
+    p.add_argument(
+        "--max-shrink-pct",
+        type=float,
+        default=5.0,
+        help="Allowed drop vs baseline counts per make (default 5).",
+    )
+    p.add_argument(
+        "--compare-baseline-fatal",
+        action="store_true",
+        help="Exit non-zero when shrink violations occur (after catalog/validation passes).",
+    )
+    p.add_argument(
+        "--compare-baseline-unsafe",
+        action="store_true",
+        help="Run shrink check even when aggregationSource is not 'projected'.",
     )
     p.add_argument("--verify", action="store_true", help="Validate only; do not write files.")
     return p

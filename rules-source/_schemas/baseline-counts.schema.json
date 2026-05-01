@@ -9,6 +9,11 @@
     "schemaVersion": { "type": "string", "minLength": 1 },
     "generatedAt": { "type": "string" },
     "note": { "type": "string" },
+    "aggregationSource": {
+      "type": "string",
+      "enum": ["full-styles", "projected"],
+      "description": "full-styles = counts from open-vehicle/styles (complete curator tree). projected = counts from _proposed/styles (catalog-scoped Layer 3). Shrink checks compare only when set to projected."
+    },
     "counts": {
       "type": "object",
       "additionalProperties": {

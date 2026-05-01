@@ -33,6 +33,30 @@ def styles_tree(tmp_path):
     return d
 
 
+class TestBuildBaselineCounts:
+    def test_build_with_aggregation_projected_validates(self, styles_tree):
+        doc = build_baseline_counts(
+            compute_counts(styles_tree),
+            aggregation_source="projected",
+            note="test",
+        )
+        assert doc.get("aggregationSource") == "projected"
+        validate_or_raise("baseline_counts", doc, context="<test>")
+
+    def test_validates_against_schema(self, styles_tree):
+        doc = build_baseline_counts(compute_counts(styles_tree))
+        validate_or_raise("baseline_counts", doc, context="<test>")
+
+    def test_keys_alphabetized_for_deterministic_diff(self, styles_tree):
+        doc = build_baseline_counts(compute_counts(styles_tree))
+        assert list(doc["counts"].keys()) == sorted(doc["counts"].keys())
+
+    def test_idempotent(self, styles_tree):
+        a = build_baseline_counts(compute_counts(styles_tree))
+        b = build_baseline_counts(compute_counts(styles_tree))
+        assert json.dumps(a, sort_keys=True) == json.dumps(b, sort_keys=True)
+
+
 class TestComputeCounts:
     def test_counts_models_and_styles(self, styles_tree):
         counts = compute_counts(styles_tree)
@@ -51,18 +75,3 @@ class TestComputeCounts:
         # baseline-counts.json schema (which requires {models, styles} per slug)
         # cannot be tripped by garbage on disk.
         assert compute_counts(d) == {}
-
-
-class TestBuildBaselineCounts:
-    def test_validates_against_schema(self, styles_tree):
-        doc = build_baseline_counts(compute_counts(styles_tree))
-        validate_or_raise("baseline_counts", doc, context="<test>")
-
-    def test_keys_alphabetized_for_deterministic_diff(self, styles_tree):
-        doc = build_baseline_counts(compute_counts(styles_tree))
-        assert list(doc["counts"].keys()) == sorted(doc["counts"].keys())
-
-    def test_idempotent(self, styles_tree):
-        a = build_baseline_counts(compute_counts(styles_tree))
-        b = build_baseline_counts(compute_counts(styles_tree))
-        assert json.dumps(a, sort_keys=True) == json.dumps(b, sort_keys=True)

@@ -136,6 +136,22 @@ class TestIncludeScope:
         assert "ACCORD" in honda["models"]
 
 
+class TestShrinkVsBaseline:
+    def test_violation_when_models_drop_beyond_threshold(self):
+        baseline = {
+            "schemaVersion": "1.0.0",
+            "counts": {"bmw": {"models": 100, "styles": 200}},
+        }
+        projected = {"bmw": {"models": 90, "styles": 200}}
+        v = ovp.shrink_violations_vs_baseline(projected, baseline, max_shrink_pct=5.0)
+        assert any("models projected=90" in line for line in v)
+
+    def test_no_violation_within_threshold(self):
+        baseline = {"counts": {"bmw": {"models": 100, "styles": 200}}}
+        projected = {"bmw": {"models": 96, "styles": 200}}
+        assert ovp.shrink_violations_vs_baseline(projected, baseline, max_shrink_pct=5.0) == []
+
+
 class TestStaleAliasesAndBuckets:
     def test_catalog_failures_split_buckets(self):
         fails = [

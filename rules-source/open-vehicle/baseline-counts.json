@@ -1,6 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "note": "Per-make floor for the projection regression check. Update intentionally when a projection diff is accepted.",
+  "aggregationSource": "full-styles",
   "counts": {
     "acura": {
       "models": 16,

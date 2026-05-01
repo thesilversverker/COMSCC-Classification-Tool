@@ -346,6 +346,39 @@ def projected_counts_from_styles(styles_by_slug: dict[str, dict[str, dict[str, A
     return counts
 
 
+def shrink_violations_vs_baseline(
+    projected_counts: dict[str, dict[str, int]],
+    baseline_doc: dict[str, Any],
+    *,
+    max_shrink_pct: float,
+) -> list[str]:
+    """Return messages when projected model/style counts drop more than max_shrink_pct below baseline floors."""
+    baseline_block = baseline_doc.get("counts") or {}
+    if not isinstance(baseline_block, dict):
+        return []
+    floor_ratio = (100.0 - max_shrink_pct) / 100.0
+    lines: list[str] = []
+    for slug, pc in sorted(projected_counts.items()):
+        bc = baseline_block.get(slug)
+        if not isinstance(bc, dict):
+            continue
+        bm = int(bc.get("models", 0))
+        bs = int(bc.get("styles", 0))
+        pm = int(pc.get("models", 0))
+        ps = int(pc.get("styles", 0))
+        if bm > 0 and pm < bm * floor_ratio:
+            lines.append(
+                f"{slug}: models projected={pm} < floor {bm * floor_ratio:.2f} "
+                f"({max_shrink_pct}% rule vs baseline models={bm})"
+            )
+        if bs > 0 and ps < bs * floor_ratio:
+            lines.append(
+                f"{slug}: styles projected={ps} < floor {bs * floor_ratio:.2f} "
+                f"({max_shrink_pct}% rule vs baseline styles={bs})"
+            )
+    return lines
+
+
 def collect_include_scope(curated_dir: Path) -> set[tuple[str, str]]:
     """Union models explicitly marked `include: true` across curated-overrides/*.json."""
     scope: set[tuple[str, str]] = set()

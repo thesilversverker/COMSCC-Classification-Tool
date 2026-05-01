@@ -124,16 +124,20 @@ data-source/.venv/bin/python data-source/refresh_nhtsa_vehicle_source.py update 
 
 ### Baseline counts (regression floor)
 
-`rules-source/open-vehicle/baseline-counts.json` holds the per-make floor that
-the projection step (step 6+) compares against. It is committed and
-human-curated; do not let projection silently rewrite it. Reseed it with:
+`rules-source/open-vehicle/baseline-counts.json` holds the per-make floor for optional
+**shrink** detection during projection (`--compare-baseline`). The file includes
+**`aggregationSource`**: `full-styles` when seeded from the complete `open-vehicle/styles/`
+tree, or `projected` when seeded from catalog-scoped `_proposed/styles/`.
 
-```bash
-data-source/.venv/bin/python data-source/seed_baseline_counts.py
-```
-
-Re-run only when an intentional shrink has been reviewed and the new floor
-is what the curator wants future runs to enforce.
+- **Full tree (default):** `data-source/.venv/bin/python data-source/seed_baseline_counts.py`  
+  or `npm run data:nhtsa:seed-baseline` — sets `aggregationSource: full-styles`.
+- **After reviewing `_proposed/`:** `python data-source/seed_baseline_counts.py --from-proposed`  
+  — sets `aggregationSource: projected` so `npm run data:nhtsa:project -- --compare-baseline`
+  compares apples-to-apples (catalog-scoped counts vs catalog-scoped floor).
+- **Projection check:** `python data-source/project_open_vehicle.py --compare-baseline` (warns) or
+  `--compare-baseline --compare-baseline-fatal` (fails the run on >`--max-shrink-pct` drop, default 5%).
+  If the committed baseline is still `full-styles`, the tool skips the numeric check unless you pass
+  `--compare-baseline-unsafe` (noisy for scoped output).
 
 ### Cache layout
 

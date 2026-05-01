@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """
-Logical component: operator helper that recomputes baseline-counts.json from the
-current curated `rules-source/open-vehicle/styles/<make>.json` set.
+Logical component: operator helper that recomputes baseline-counts.json from a
+styles tree (`open-vehicle/styles/` or `open-vehicle/_proposed/styles`).
 
 Usage (from repo root):
 
     data-source/.venv/bin/python data-source/seed_baseline_counts.py
 
-The script is idempotent: same curated input → same JSON output (deterministic
-ordering, no timestamp). Writes via json_io.write_json so the output stays in
-lockstep with the rest of the pipeline's deterministic-write contract.
+Use `--from-proposed` after reviewing projection output so per-make floors match
+catalog-scoped Layer 3 counts (see `project_open_vehicle.py --compare-baseline`).
 
-Run it once after the pipeline lands, and re-run intentionally any time a
-projection diff is accepted that should set a new "this is fine" floor.
+The script is idempotent: same input → same JSON (deterministic ordering, no timestamp).
+Writes via json_io.write_json. Re-run whenever a projection diff is accepted and the
+new floor should gate future `--compare-baseline` runs.
 """
 
 from __future__ import annotations
@@ -31,7 +31,16 @@ from schemas import validate_or_raise  # noqa: E402
 
 _REPO_ROOT = _THIS_DIR.parent
 DEFAULT_STYLES_DIR = _REPO_ROOT / "rules-source" / "open-vehicle" / "styles"
+PROPOSED_STYLES_DIR = _REPO_ROOT / "rules-source" / "open-vehicle" / "_proposed" / "styles"
 DEFAULT_OUTPUT = _REPO_ROOT / "rules-source" / "open-vehicle" / "baseline-counts.json"
+_NOTE_PROJECTED = (
+    "Seeded from open-vehicle/_proposed/styles (catalog-scoped Layer 3). "
+    "Use with npm run data:nhtsa:project --compare-baseline."
+)
+_NOTE_FULL = (
+    "Per-make floor from full open-vehicle/styles (all curator models). "
+    "For scoped shrink checks, reseed with --from-proposed after reviewing _proposed/."
+)
 
 
 def compute_counts(styles_dir: Path) -> dict[str, dict[str, int]]:
@@ -55,13 +64,21 @@ def compute_counts(styles_dir: Path) -> dict[str, dict[str, int]]:
     return counts
 
 
-def build_baseline_counts(counts: dict[str, dict[str, int]]) -> dict:
+def build_baseline_counts(
+    counts: dict[str, dict[str, int]],
+    *,
+    aggregation_source: str | None = None,
+    note: str | None = None,
+) -> dict:
     """Wrap raw counts into the schema-shaped doc and validate."""
-    doc = {
+    doc: dict = {
         "schemaVersion": "1.0.0",
-        "note": "Per-make floor for the projection regression check. Update intentionally when a projection diff is accepted.",
+        "note": note
+        or "Per-make floor for the projection regression check. Update intentionally when a projection diff is accepted.",
         "counts": {slug: counts[slug] for slug in sorted(counts)},
     }
+    if aggregation_source:
+        doc["aggregationSource"] = aggregation_source
     validate_or_raise("baseline_counts", doc, context="<baseline_counts>")
     return doc
 
@@ -73,20 +90,34 @@ def _ordered_keys(keys: list[str]) -> list[str]:
     promote known top-level keys, then preserve everything else in input order.
     Nested dicts (per-make `{models, styles}`) fall through unchanged.
     """
-    desired = [k for k in ("schemaVersion", "note", "counts") if k in keys]
+    desired = [k for k in ("schemaVersion", "note", "aggregationSource", "counts") if k in keys]
     rest = [k for k in keys if k not in desired]
     return desired + rest
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Recompute rules-source/open-vehicle/baseline-counts.json.")
-    parser.add_argument("--styles-dir", type=Path, default=DEFAULT_STYLES_DIR)
+    parser.add_argument("--styles-dir", type=Path, default=None, help="Defaults to open-vehicle/styles unless --from-proposed.")
+    parser.add_argument(
+        "--from-proposed",
+        action="store_true",
+        help="Use rules-source/open-vehicle/_proposed/styles and set aggregationSource=projected.",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--print-only", action="store_true", help="Compute and print to stdout; do not write.")
     args = parser.parse_args(argv)
 
-    counts = compute_counts(args.styles_dir)
-    doc = build_baseline_counts(counts)
+    if args.from_proposed:
+        styles_dir = PROPOSED_STYLES_DIR
+        agg = "projected"
+        note = _NOTE_PROJECTED
+    else:
+        styles_dir = args.styles_dir if args.styles_dir is not None else DEFAULT_STYLES_DIR
+        agg = "full-styles"
+        note = _NOTE_FULL
+
+    counts = compute_counts(styles_dir)
+    doc = build_baseline_counts(counts, aggregation_source=agg, note=note)
 
     if args.print_only:
         import json
