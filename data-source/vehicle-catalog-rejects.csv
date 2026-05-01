@@ -1,0 +1,144 @@
+Make,Model,Trim,Start Year,End Year,Showroom Base Weight (lbs),Factory Rated HP,Factory Rated Torque,Power (2/3HP + 1/3Torque),Weight/ Power,Scaled Weight/ Power,SUSP Index,Performance Adjustment,Showroom Assessment,Base Classification,p,q,Selected,Assessment,,,source_csv_row,reject_reason
+Alfa Romeo,2000 Spider Veloce,,1974,1976,2320,110,110,110,21.1,22.4,45,-7.5,14.9,T5 ,FALSE,,FALSE,,FALSE,FALSE,10,row 10: Model '2000 Spider Veloce' does not match any model key/name for make 'alfa_romeo'
+Ariel,Atom,,2006,2006,1431,245,150,213.3,6.7,83.5,100,20,103.5,T1 ,FALSE,,FALSE,,FALSE,FALSE,13,row 13: unknown Make 'Ariel' (not in makes_and_models.json)
+Ariel,Atom 500,,2008,2008,1213,500,284,428,2.8,100,100,20,120,T1 ,FALSE,,FALSE,,FALSE,FALSE,14,row 14: unknown Make 'Ariel' (not in makes_and_models.json)
+Aston Martin,DB5,,1963,1965,3310,282,288,284,11.7,62.5,40,-10,52.5,T4 ,FALSE,,FALSE,,FALSE,FALSE,15,row 15: Model 'DB5' does not match any model key/name for make 'aston_martin'
+Austin Healy,3000 MK III,,1959,1967,2550,150,165,155,16.5,42.1,20,-20,22.1,T5 ,FALSE,,FALSE,,FALSE,FALSE,38,row 38: unknown Make 'Austin Healy' (not in makes_and_models.json)
+BMW,2002,,1974,,2317,100,106,102,22.7,15.5,30,-15,0.5,T5 ,FALSE,,FALSE,,FALSE,FALSE,39,row 39: Model '2002' does not match any model key/name for make 'bmw'
+BMW,135is,,2013,,3373,320,317,319,10.6,67.1,75,7.5,74.6,T3,FALSE,,FALSE,,FALSE,FALSE,42,row 42: Model '135is' does not match any model key/name for make 'bmw'
+BMW,323ci,,2000,,3153,170,181,173.7,18.2,34.8,60,0,34.8,T5 ,FALSE,,FALSE,,FALSE,FALSE,48,row 48: Model '323ci' does not match any model key/name for make 'bmw'
+BMW,328iX,,2012,2019,3498,240,255,245,14.3,51.3,70,5,56.3,T4 ,FALSE,,FALSE,,FALSE,FALSE,54,row 54: Model '328iX' does not match any model key/name for make 'bmw'
+BMW,340XI,,2017,,3802,320,332,324,11.7,62.1,70,5,67.1,T3,FALSE,,FALSE,,FALSE,FALSE,64,row 64: Model '340XI' does not match any model key/name for make 'bmw'
+BMW,E30 M3,,1987,1991,2866,192,170,184.7,15.5,46,70,5,51,T4 ,FALSE,,FALSE,,FALSE,FALSE,69,row 69: Model 'E30 M3' does not match any model key/name for make 'bmw'
+BMW,E36 M3  (3.0),,1995,1995,3175,240,225,235,13.5,54.6,81,10.5,65.1,T3,FALSE,,FALSE,,FALSE,FALSE,70,row 70: Model 'E36 M3  (3.0)' does not match any model key/name for make 'bmw'
+BMW,E36 M3 (3.2),,1997,1999,3175,240,236,238.7,13.3,55.5,81,10.5,66,T3,FALSE,,FALSE,,FALSE,FALSE,71,row 71: Model 'E36 M3 (3.2)' does not match any model key/name for make 'bmw'
+BMW,E46 M3,,2001,2006,3415,333,269,311.7,11,65.4,80,10,75.4,T2,FALSE,,FALSE,,FALSE,FALSE,72,row 72: Model 'E46 M3' does not match any model key/name for make 'bmw'
+BMW,E90 M3,,2007,2008,3704,414,295,374.3,9.9,69.9,80,10,79.9,T2,FALSE,,FALSE,,FALSE,FALSE,73,row 73: Model 'E90 M3' does not match any model key/name for make 'bmw'
+BMW,F80 M3,,2015,2018,3540,425,406,418.7,8.5,76.1,90,15,91.1,T2,FALSE,,FALSE,,FALSE,FALSE,74,row 74: Model 'F80 M3' does not match any model key/name for make 'bmw'
+BMW,F82 M4 GTS coupe,,2016,2020,3494,493,443,476.3,7.3,80.8,90,15,95.8,T1 ,FALSE,,FALSE,,FALSE,FALSE,75,row 75: Model 'F82 M4 GTS coupe' does not match any model key/name for make 'bmw'
+BMW,F82/83 M4 ,,2015,2020,3530,425,406,418.7,8.4,76.2,90,15,91.2,T2,FALSE,,FALSE,,FALSE,FALSE,76,row 76: Model 'F82/83 M4 ' does not match any model key/name for make 'bmw'
+BMW,F82/83 M4 Competition,,2015,2020,3530,444,450,446,7.9,78.4,100,20,98.4,T1 ,FALSE,,FALSE,,FALSE,FALSE,77,row 77: Model 'F82/83 M4 Competition' does not match any model key/name for make 'bmw'
+BMW,G82/83 M4 ,,2021,,3690,473,406,450.7,8.2,77.2,90,15,92.2,T2,FALSE,,FALSE,,FALSE,FALSE,78,row 78: Model 'G82/83 M4 ' does not match any model key/name for make 'bmw'
+BMW,G82/83 M4 Competition,,2021,,3746,503,479,495,7.6,79.8,100,20,99.8,T1 ,FALSE,,FALSE,,FALSE,FALSE,79,row 79: Model 'G82/83 M4 Competition' does not match any model key/name for make 'bmw'
+BMW,M Coupe,,1998,2000,3131,240,236,238.7,13.1,56.2,70,5,61.2,T3,FALSE,,FALSE,,FALSE,FALSE,80,row 80: Model 'M Coupe' does not match any model key/name for make 'bmw'
+BMW,M Coupe,,2001,2002,3131,315,261,297,10.5,67.2,70,5,72.2,T3,FALSE,,FALSE,,FALSE,FALSE,81,row 81: Model 'M Coupe' does not match any model key/name for make 'bmw'
+BMW,M Roadster,,1998,2000,3084,240,236,238.7,12.9,57.1,65,2.5,59.6,T4 ,FALSE,,FALSE,,FALSE,FALSE,82,row 82: Model 'M Roadster' does not match any model key/name for make 'bmw'
+BMW,M Roadster,,2001,2002,3084,315,261,297,10.4,67.9,65,2.5,70.4,T3,FALSE,,FALSE,,FALSE,FALSE,83,row 83: Model 'M Roadster' does not match any model key/name for make 'bmw'
+BMW,X3M Competition,,2020,2020,4620,502,442,482,9.6,71.3,75,7.5,78.8,T2,,,,,,,101,row 101: Model 'X3M Competition' does not match any model key/name for make 'bmw'
+Cadillac,ATS-V Coupe,,2016,2017,3760,464,445,457.7,8.2,77.1,90,15,92.1,T2,FALSE,,FALSE,,FALSE,FALSE,111,row 111: Model 'ATS-V Coupe' does not match any model key/name for make 'cadillac'
+Cadillac,ATS-V Sedan V6,,2016,2019,3803,335,285,318.3,11.9,61.2,90,15,76.2,T2,FALSE,,FALSE,,FALSE,FALSE,112,row 112: Model 'ATS-V Sedan V6' does not match any model key/name for make 'cadillac'
+Cadillac,CTS-V,,2004,2007,3850,400,395,398.3,9.7,70.9,55,-2.5,68.4,T3,FALSE,,FALSE,,FALSE,FALSE,113,row 113: Model 'CTS-V' does not match any model key/name for make 'cadillac'
+Cadillac,CTS-V,,2009,,4250,556,551,554.3,7.7,79.4,60,0,79.4,T2,FALSE,,FALSE,,FALSE,FALSE,114,row 114: Model 'CTS-V' does not match any model key/name for make 'cadillac'
+Chevrolet,Corvet,,1994,1994,3512,300,340,313.3,11.2,64.4,76,8,72.4,T3,,,,,,,128,row 128: Model 'Corvet' does not match any model key/name for make 'chevrolet'
+Datsun,240Z,,1973,1973,2355,150,146,148.7,15.8,44.7,55,-2.5,42.2,T5 ,FALSE,,FALSE,,FALSE,FALSE,151,row 151: Model '240Z' does not match any model key/name for make 'datsun'
+Datsun,280Z,,1975,1978,2692,170,177,172.3,15.6,45.6,55,-2.5,43.1,T5 ,FALSE,,FALSE,,FALSE,FALSE,152,row 152: Model '280Z' does not match any model key/name for make 'datsun'
+Ferrari,250 GTO,,1962,1964,2425,302,246,283.3,8.6,75.6,50,-5,70.6,T3,FALSE,,FALSE,,FALSE,FALSE,166,row 166: Model '250 GTO' does not match any model key/name for make 'ferrari'
+Ferrari,308 GTB/GTS,,1977,1985,2778,240,209,229.7,12.1,60.6,65,2.5,63.1,T3,FALSE,,FALSE,,FALSE,FALSE,167,row 167: Model '308 GTB/GTS' does not match any model key/name for make 'ferrari'
+Ferrari,F360 Modena,,1999,2005,3197,400,275,358.3,8.9,74.1,90,15,89.1,T2,FALSE,,FALSE,,FALSE,FALSE,171,row 171: Model 'F360 Modena' does not match any model key/name for make 'ferrari'
+Ferrari,F458 Italia,,2010,,3274,562,398,507.3,6.5,84.6,95,17.5,102.1,T1 ,FALSE,,FALSE,,FALSE,FALSE,174,row 174: Model 'F458 Italia' does not match any model key/name for make 'ferrari'
+Ford,Shelby GT,,2007,2008,3475,325,330,326.7,10.6,66.8,60,0,66.8,T3,FALSE,,FALSE,,FALSE,FALSE,216,row 216: Model 'Shelby GT' does not match any model key/name for make 'ford'
+Ford,Shelby GT350 Base (non-Track Pack),,2016,2020,3796,526,429,493.7,7.7,79.3,80,10,89.3,T2,FALSE,,FALSE,,FALSE,FALSE,217,row 217: Model 'Shelby GT350 Base (non-Track Pack)' does not match any model key/name for make 'ford'
+Ford,Shelby GT350 Base (with Track Pack),,2016,2020,3796,526,429,493.7,7.7,79.3,85,12.5,91.8,T2,FALSE,,FALSE,,FALSE,FALSE,218,row 218: Model 'Shelby GT350 Base (with Track Pack)' does not match any model key/name for make 'ford'
+Ford,Shelby GT350 R,,2016,,3718,526,429,493.7,7.5,80,90,15,95,T1 ,FALSE,,FALSE,,FALSE,FALSE,219,row 219: Model 'Shelby GT350 R' does not match any model key/name for make 'ford'
+Ford,Shelby GT500,,2005,2009,3920,500,480,493.3,7.9,78.2,70,5,83.2,T2,FALSE,,FALSE,,FALSE,FALSE,220,row 220: Model 'Shelby GT500' does not match any model key/name for make 'ford'
+Ford,Shelby GT500,,2010,2010,3940,540,510,530,7.4,80.4,65,2.5,82.9,T2,FALSE,,FALSE,,FALSE,FALSE,221,row 221: Model 'Shelby GT500' does not match any model key/name for make 'ford'
+Ford,Shelby GT500,,2011,2012,3871,550,510,536.7,7.2,81.3,70,5,86.3,T2,FALSE,,FALSE,,FALSE,FALSE,222,row 222: Model 'Shelby GT500' does not match any model key/name for make 'ford'
+Ford,Shelby GT500,,2013,2014,3871,662,630,651.3,5.9,86.7,70,5,91.7,T2,FALSE,,FALSE,,FALSE,FALSE,223,row 223: Model 'Shelby GT500' does not match any model key/name for make 'ford'
+Ford,Shelby GT500,,2020,,4059,760,625,715,5.7,87.9,75,7.5,95.4,T1 ,FALSE,,FALSE,,FALSE,FALSE,224,row 224: Model 'Shelby GT500' does not match any model key/name for make 'ford'
+Ford,Shelby Mustang GT350 Convertible,,1969,1970,3600,290,385,321.7,11.2,64.4,15,-22.5,41.9,T5 ,FALSE,,FALSE,,FALSE,FALSE,225,row 225: Model 'Shelby Mustang GT350 Convertible' does not match any model key/name for make 'ford'
+Ford,Shelby Mustang GT500,,1967,1967,3370,355,420,376.7,8.9,74,15,-22.5,51.5,T4 ,FALSE,,FALSE,,FALSE,FALSE,226,row 226: Model 'Shelby Mustang GT500' does not match any model key/name for make 'ford'
+Honda,CRS Si,,1987,1987,1953,91,93,91.7,21.3,21.5,55,-2.5,19,T5 ,FALSE,,FALSE,,FALSE,FALSE,243,row 243: Model 'CRS Si' does not match any model key/name for make 'honda'
+Honda,CRX Si,,1985,1986,1883,108,100,105.3,17.9,36,55,-2.5,33.5,T5 ,FALSE,,FALSE,,FALSE,FALSE,244,row 244: Model 'CRX Si' does not match any model key/name for make 'honda'
+Honda,CRX Si,,1988,1988,2011,108,100,105.3,19.1,30.9,55,-2.5,28.4,T5 ,FALSE,,FALSE,,FALSE,FALSE,245,row 245: Model 'CRX Si' does not match any model key/name for make 'honda'
+Jaguar,F Type S Coupe,,2015,2016,3514,380,339,366.3,9.6,71.2,75,7.5,78.7,T2,FALSE,,FALSE,,FALSE,FALSE,257,row 257: Model 'F Type S Coupe' does not match any model key/name for make 'jaguar'
+Jaguar,X Type sportwagon,,2005,2005,3747,227,206,220,17,39.6,60,0,39.6,T5 ,FALSE,,FALSE,,FALSE,FALSE,258,row 258: Model 'X Type sportwagon' does not match any model key/name for make 'jaguar'
+Jaguar,XKR,,2003,2006,3785,390,399,393,9.6,71.1,65,2.5,73.6,T3,FALSE,,FALSE,,FALSE,FALSE,259,row 259: Model 'XKR' does not match any model key/name for make 'jaguar'
+Jaguar,XKR-S,,2006,,3968,550,502,534,7.4,80.4,70,5,85.4,T2,FALSE,,FALSE,,FALSE,FALSE,260,row 260: Model 'XKR-S' does not match any model key/name for make 'jaguar'
+Lexus,IS300,,2001,2005,3255,215,218,216,15.1,48,60,0,48,T4 ,FALSE,,FALSE,,FALSE,FALSE,264,row 264: Model 'IS300' does not match any model key/name for make 'lexus'
+Maserati,Gran Turismo S,,2008,2012,4100,434,360,409.3,10,69.4,80,10,79.4,T2,FALSE,,FALSE,,FALSE,FALSE,268,row 268: Model 'Gran Turismo S' does not match any model key/name for make 'maserati'
+Mazda,3,,2012,,2866,148,135,143.7,19.9,27.2,55,-2.5,24.7,T5 ,FALSE,,FALSE,,FALSE,FALSE,269,row 269: Model '3' does not match any model key/name for make 'mazda'
+Mazda,MazdaSpeed MX5,,2004,2005,2529,178,166,174,14.5,50.2,70,5,55.2,T4 ,FALSE,,FALSE,,FALSE,FALSE,270,row 270: Model 'MazdaSpeed MX5' does not match any model key/name for make 'mazda'
+Mazda,Mazdaspeed Protege,,2003,2003,2843,170,160,166.7,17.1,39.5,60,0,39.5,T5 ,FALSE,,FALSE,,FALSE,FALSE,271,row 271: Model 'Mazdaspeed Protege' does not match any model key/name for make 'mazda'
+Mazda,Mazdaspeed3,,2007,2007,3153,263,280,268.7,11.7,62.1,60,0,62.1,T3,FALSE,,FALSE,,FALSE,FALSE,272,row 272: Model 'Mazdaspeed3' does not match any model key/name for make 'mazda'
+Mazda,Mazdaspeed6,,2006,2007,3589,274,280,276,13,56.7,60,0,56.7,T4 ,FALSE,,FALSE,,FALSE,FALSE,273,row 273: Model 'Mazdaspeed6' does not match any model key/name for make 'mazda'
+Mazda,Miata NA 1.6,,1989,1993,2222,116,100,110.7,20.1,26.7,65,2.5,29.2,T5 ,FALSE,,FALSE,,FALSE,FALSE,274,row 274: Model 'Miata NA 1.6' does not match any model key/name for make 'mazda'
+Mazda,Miata NA 1.8,,1994,1997,2293,128,114,123.3,18.6,33,65,2.5,35.5,T5 ,FALSE,,FALSE,,FALSE,FALSE,275,row 275: Model 'Miata NA 1.8' does not match any model key/name for make 'mazda'
+Mazda,Miata NB,,1999,2005,2447,140,125,135,18.1,35,65,2.5,37.5,T5 ,FALSE,,FALSE,,FALSE,FALSE,276,row 276: Model 'Miata NB' does not match any model key/name for make 'mazda'
+Mazda,RX7,,1981,1983,2350,101,107,103,22.8,15,50,-5,10,T5 ,FALSE,,FALSE,,FALSE,FALSE,281,row 281: Model 'RX7' does not match any model key/name for make 'mazda'
+Mazda,RX8,,2008,2011,3084,232,159,207.7,14.9,48.9,70,5,53.9,T4 ,,,,,,,286,row 286: Model 'RX8' does not match any model key/name for make 'mazda'
+Mercedes-Benz,190E,,1990,1993,2987,130,146,135.3,22.1,18.2,60,0,18.2,T5 ,FALSE,,FALSE,,FALSE,FALSE,290,row 290: Model '190E' does not match any model key/name for make 'mercedes_benz'
+Mercedes-Benz,CLA45S AMG,,2024,2024,3660,416,369,400.3,9.1,73.1,85,12.5,85.6,T2,FALSE,,FALSE,,FALSE,FALSE,291,row 291: Model 'CLA45S AMG' does not match any model key/name for make 'mercedes_benz'
+Mercedes-Benz,GTR Pro,,2020,,3650,577,516,556.7,6.6,84.1,115,27.5,111.6,T1 ,FALSE,,FALSE,,FALSE,FALSE,292,row 292: Model 'GTR Pro' does not match any model key/name for make 'mercedes_benz'
+Mercedes-Benz Benz,e500 Wagon,,2006,2006,4231,302,339,314.3,13.5,54.8,60,0,54.8,T4 ,FALSE,,FALSE,,FALSE,FALSE,293,row 293: unknown Make 'Mercedes-Benz Benz' (not in makes_and_models.json)
+Mercedes-Benz-Benz,CLK 55 AMG,,2002,2002,3500,345,376,355.3,9.8,70.1,70,5,75.1,T2,FALSE,,FALSE,,FALSE,FALSE,294,row 294: unknown Make 'Mercedes-Benz-Benz' (not in makes_and_models.json)
+Mercedes-Benz-Benz,SLS AMG,,2011,,3600,363,480,402,9,73.9,85,12.5,86.4,T2,FALSE,,FALSE,,FALSE,FALSE,295,row 295: unknown Make 'Mercedes-Benz-Benz' (not in makes_and_models.json)
+MG,Midget,,1971,1971,1701,54,67,58.3,29.2,-11.9,45,-7.5,-19.4,T5 ,FALSE,,FALSE,,FALSE,FALSE,296,row 296: unknown Make 'MG' (not in makes_and_models.json)
+Mini,JCW GP,,2013,2013,2624,211,207,209.7,12.5,58.8,80,10,68.8,T3,FALSE,,FALSE,,FALSE,FALSE,302,row 302: Model 'JCW GP' does not match any model key/name for make 'mini'
+Mitsubishi,Lander Evo X,,2008,,3527,295,311,300.3,11.7,62.1,85,12.5,74.6,T3,FALSE,,FALSE,,FALSE,FALSE,314,row 314: Model 'Lander Evo X' does not match any model key/name for make 'mitsubishi'
+Nissan,400Z,,2023,,3400,400,350,383.3,8.9,74.3,80,10,84.3,T2,FALSE,,FALSE,,FALSE,FALSE,328,row 328: Model '400Z' does not match any model key/name for make 'nissan'
+Nissan,Skyline GT-R (R32),,1989,1991,3152,276,266,272.7,11.6,62.9,70,5,67.9,T3,FALSE,,FALSE,,FALSE,FALSE,339,row 339: Model 'Skyline GT-R (R32)' does not match any model key/name for make 'nissan'
+Nissan,Skyline GT-R (R33),,1993,1998,3373,276,266,272.7,12.4,59.4,75,7.5,66.9,T3,FALSE,,FALSE,,FALSE,FALSE,340,row 340: Model 'Skyline GT-R (R33)' does not match any model key/name for make 'nissan'
+Nissan,Skyline GT-R (R34),,1999,2002,3386,276,266,272.7,12.4,59.2,85,12.5,71.7,T3,FALSE,,FALSE,,FALSE,FALSE,341,row 341: Model 'Skyline GT-R (R34)' does not match any model key/name for make 'nissan'
+Porsche,912,,1967,1967,2315,86,98,90,25.7,2.7,40,-10,-7.3,T5 ,FALSE,,FALSE,,FALSE,FALSE,350,row 350: Model '912' does not match any model key/name for make 'porsche'
+Porsche,930,,1983,1983,2668,300,304,301.3,8.9,74.4,70,5,79.4,T2,,,,,,,351,row 351: Model '930' does not match any model key/name for make 'porsche'
+Porsche,718 GT4 RS,,2025,2025,3227,493,331,439,7.4,80.8,95,17.5,98.3,T1 ,,,,,,,355,row 355: Model '718 GT4 RS' does not match any model key/name for make 'porsche'
+Porsche,914-6 GT,,1973,1973,2200,130,131,130.3,16.9,40.3,70,5,45.3,T4 ,FALSE,,FALSE,,FALSE,FALSE,379,row 379: Model '914-6 GT' does not match any model key/name for make 'porsche'
+Porsche,Carrera (997),,2005,2008,3075,325,273,307.7,10,69.5,80,10,79.5,T2,FALSE,,FALSE,,FALSE,FALSE,397,row 397: Model 'Carrera (997)' does not match any model key/name for make 'porsche'
+Porsche,Carrera GT,,2004,2007,3000,612,435,553,5.4,88.9,90,15,103.9,T1 ,FALSE,,FALSE,,FALSE,FALSE,398,row 398: Model 'Carrera GT' does not match any model key/name for make 'porsche'
+Saleen,S7,,2000,2004,2750,500,525,508.3,5.4,89,95,17.5,106.5,T1 ,FALSE,,FALSE,,FALSE,FALSE,416,row 416: unknown Make 'Saleen' (not in makes_and_models.json)
+Saleen,S7 Twin Turbo,,2005,2009,2950,750,700,733.3,4,94.9,95,17.5,112.4,T1 ,FALSE,,FALSE,,FALSE,FALSE,417,row 417: unknown Make 'Saleen' (not in makes_and_models.json)
+Scion,FR-S,,2013,2016,2758,200,151,183.7,15,48.2,70,5,55.1,T4 ,FALSE,,FALSE,,FALSE,FALSE,418,row 418: unknown Make 'Scion' (not in makes_and_models.json)
+Scion,tC,,2005,2010,2970,160,163,161,18.4,33.6,60,0,33.6,T5 ,FALSE,,FALSE,,FALSE,FALSE,419,row 419: unknown Make 'Scion' (not in makes_and_models.json)
+Toyota,Matrix,,2010,,2865,132,128,130.7,21.9,18.8,50,-5,13.8,T5 ,FALSE,,FALSE,,FALSE,FALSE,451,row 451: Model 'Matrix' does not match any model key/name for make 'toyota'
+Toyota,Matrix S,,2010,,3360,158,162,159.3,21.1,22.4,50,-5,17.4,T5 ,FALSE,,FALSE,,FALSE,FALSE,452,row 452: Model 'Matrix S' does not match any model key/name for make 'toyota'
+Toyota,Matrix XRS,,2010,,3220,158,162,159.3,20.2,26.1,50,-5,21.1,T5 ,FALSE,,FALSE,,FALSE,FALSE,453,row 453: Model 'Matrix XRS' does not match any model key/name for make 'toyota'
+Triumph,TR4,,1961,1965,2130,100,127,109,19.5,28.9,30,-15,13.9,T5 ,FALSE,,FALSE,,FALSE,FALSE,462,row 462: Model 'TR4' does not match any model key/name for make 'triumph'
+Triumph,TR6,,1969,1976,2491,106,133,115,21.7,19.9,25,-17.5,2.4,T5 ,FALSE,,FALSE,,FALSE,FALSE,463,row 463: Model 'TR6' does not match any model key/name for make 'triumph'
+Triumph,TR7/8 Convertible,,1979,1980,2654,137,165,146.3,18.1,34.9,45,-7.5,27.4,T5 ,FALSE,,FALSE,,FALSE,FALSE,465,row 465: Model 'TR7/8 Convertible' does not match any model key/name for make 'triumph'
+Ultima,GTR,,2006,,2183,534,528,532,4.1,94.6,115,27.5,122.1,#REF!,FALSE,,FALSE,,FALSE,FALSE,466,row 466: unknown Make 'Ultima' (not in makes_and_models.json)
+Ultima,GTR720,,2006,,2183,720,580,673.3,3.2,98.2,115,27.5,125.7,#REF!,FALSE,,FALSE,,FALSE,FALSE,467,row 467: unknown Make 'Ultima' (not in makes_and_models.json)
+Volkswagon,Golf GTI,,1998,1998,2565,115,122,117.3,21.9,19.1,50,-5,14.1,T5 ,FALSE,,FALSE,,FALSE,FALSE,468,row 468: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Golf GTI 1.8T,,2000,2000,2906,150,155,151.7,19.2,30.6,55,-2.5,28.1,T5 ,FALSE,,FALSE,,FALSE,FALSE,469,row 469: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Golf GTI 1.8T,,2002,2002,2935,180,174,178,16.5,41.9,55,-2.5,39.4,T5 ,FALSE,,FALSE,,FALSE,FALSE,470,row 470: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Golf R,,2015,,3340,292,280,288,11.6,62.7,75,7.5,70.2,T3,FALSE,,FALSE,,FALSE,FALSE,471,row 471: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Golf R32,,2004,2004,3256,241,236,239.3,13.6,54.2,70,5,59.2,T4 ,FALSE,,FALSE,,FALSE,FALSE,472,row 472: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Golf R32,,2008,2008,3547,250,236,245.3,14.5,50.6,75,7.5,58.1,T4 ,FALSE,,FALSE,,FALSE,FALSE,473,row 473: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,GTI Coupe,,2007,2009,3161,200,207,202.3,15.6,45.6,60,0,45.6,T4 ,FALSE,,FALSE,,FALSE,FALSE,474,row 474: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Jetta 2.0T,,2006,2006,3259,200,207,202.3,16.1,43.5,55,-2.5,41,T5 ,FALSE,,FALSE,,FALSE,FALSE,475,row 475: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Jetta 2.5L,,2005,2005,3230,150,170,156.7,20.6,24.4,55,-2.5,21.9,T5 ,FALSE,,FALSE,,FALSE,FALSE,476,row 476: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Jetta SE,,2011,,3018,170,177,172.3,17.5,37.6,55,-2.5,35.1,T5 ,FALSE,,FALSE,,FALSE,FALSE,477,row 477: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Jetta VR6 GLS,,2002,2002,3113,174,181,176.3,17.7,37,50,-5,32,T5 ,FALSE,,FALSE,,FALSE,FALSE,478,row 478: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,New Beetle GLS 1.8T,,2000,2000,2875,150,162,154,18.7,32.7,55,-2.5,30.2,T5 ,FALSE,,FALSE,,FALSE,FALSE,479,row 479: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Rabbit 2.5L Coupe,,2007,2007,3072,150,170,156.7,19.6,28.7,55,-2.5,26.2,T5 ,FALSE,,FALSE,,FALSE,FALSE,480,row 480: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Rabbit GTI,,1984,1984,1990,90,100,93.3,21.3,21.4,40,-10,11.4,T5 ,FALSE,,FALSE,,FALSE,FALSE,481,row 481: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Scirocco 16V,,1984,1984,2530,123,120,122,20.7,23.9,40,-10,13.9,T5 ,FALSE,,FALSE,,FALSE,FALSE,482,row 482: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon ,Mk7 GTI,,2015,2021,3116,220,258,232.7,13.4,55.1,70,5,60.1,T3,FALSE,,FALSE,,FALSE,FALSE,483,row 483: unknown Make 'Volkswagon ' (not in makes_and_models.json)
+Volkswagon,Golf TDI,,1991,1999,2450,108,173,129.7,18.9,31.7,50,-5,26.7,T5 ,FALSE,,FALSE,,FALSE,FALSE,484,row 484: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Jetta GLI-S,,2019,,3217,228,258,238,13.5,54.6,70,5,59.6,T4 ,FALSE,,FALSE,,FALSE,FALSE,485,row 485: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Mk6 Golf GTI,,2010,2014,3100,200,207,202.3,15.3,46.9,65,2.5,49.4,T4 ,FALSE,,FALSE,,FALSE,FALSE,486,row 486: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Mk7 GTI-S,,2015,,3116,220,258,232.7,13.4,55.1,70,5,60.1,T3,FALSE,,FALSE,,FALSE,FALSE,487,row 487: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volkswagon,Mk8 Golf R,,2022,2024,3360,315,310,313.3,10.7,66.4,80,10,76.4,T2,FALSE,,FALSE,,FALSE,FALSE,488,row 488: unknown Make 'Volkswagon' (not in makes_and_models.json)
+Volvo,V70R,,2007,2007,3689,300,295,298.3,12.4,59.4,50,-5,54.4,T4 ,,,,,,,490,row 490: Model 'V70R' does not match any model key/name for make 'volvo'
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,491,row 491: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,492,row 492: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,493,row 493: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,494,row 494: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,495,row 495: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,496,row 496: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,497,row 497: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,498,row 498: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,499,row 499: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,500,row 500: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,501,row 501: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,502,row 502: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,503,row 503: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,504,row 504: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,505,row 505: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,506,row 506: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,507,row 507: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,508,row 508: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,509,row 509: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,510,row 510: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,511,row 511: skipped (empty make and model)
+,,,,,,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,512,row 512: skipped (empty make and model)
+,,,,,`,,,,,,,,,,FALSE,,FALSE,,FALSE,FALSE,513,row 513: skipped (empty make and model)
