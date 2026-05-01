@@ -1,0 +1,16 @@
+{
+  "Count": 1,
+  "Message": "Response returned successfully",
+  "SearchCriteria": "Year:2020 | Make:Honda | Model:Civic | Units:Metric",
+  "Results": [
+    {
+      "Specs": [
+        { "Name": "Make", "Value": "HONDA" },
+        { "Name": "Model", "Value": "Civic" },
+        { "Name": "Model Year", "Value": "2020" },
+        { "Name": "Body Style", "Value": "Sedan" },
+        { "Name": "Curb Weight (kg)", "Value": "1247" }
+      ]
+    }
+  ]
+}

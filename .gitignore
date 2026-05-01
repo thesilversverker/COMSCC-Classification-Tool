@@ -10,3 +10,12 @@ npm-debug.log*
 
 # Logical component: Office lock files (LibreOffice, etc.) for open spreadsheets.
 .~lock.*#
+
+# Logical component: Python operator artifacts (venv + bytecode + tooling caches).
+data-source/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Logical component: VPIC raw response cache (operator-only, regeneratable).
+data-source/.cache/

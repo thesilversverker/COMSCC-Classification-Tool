@@ -1,0 +1,10 @@
+# NHTSA refresh / projection runtime. CI does not install these — they are
+# operator-only. Pin minor versions for reproducibility across operator machines.
+httpx>=0.27,<0.28
+tenacity>=8.2,<9
+pydantic>=2.6,<3
+jsonschema>=4.21,<5
+
+# Test tooling. Operators running the refresh script do not need pytest, but it
+# stays in this single requirements file so contributors get a one-shot install.
+pytest>=8,<9
