@@ -2144,7 +2144,7 @@
     {
       "vehicleMake": "Honda",
       "vehicleModel": "S2000",
-      "vehicleTrim": "2.2L",
+      "vehicleTrim": null,
       "vehicleYearBegin": 2004,
       "vehicleYearEnd": 2009,
       "showroomBaseWeightLbs": 2870,

@@ -1,6 +1,7 @@
 /**
  * Logical component: frozen regression inputs for `findShowroomCatalogMatch` tied to the
- * vehicle-catalog-rejects.csv alias buckets (trim slug normalization, duplicate-row tie-break).
+ * vehicle-catalog-rejects.csv alias buckets (trim slug normalization, duplicate-row tie-break),
+ * and COMSCC catalog rows with null `vehicleTrim` (base showroom row).
  *
  * Rows mirror what `npm run data:compose-vehicles` emits (makeNorm/modelNorm/year/trimKey/catalogId).
  * If projection or compose changes matching semantics, this test fails first.
@@ -42,6 +43,21 @@ const frozenRows: ShowroomLookupRow[] = [
     factoryRatedTorqueLbFt: 135,
     baseClassification: 'T5',
     catalogId: 'ov_mazda_mazda3_2012_base',
+    comsccEnriched: true
+  },
+  {
+    makeNorm: 'honda',
+    modelNorm: 's2000',
+    year: 2004,
+    trimKey: null,
+    showroomAssessment: 64.46462264150944,
+    scaledWeightPerPower: 54.46462264150943,
+    performanceAdjustment: 10,
+    showroomBaseWeightLbs: 2870,
+    factoryRatedHp: 237,
+    factoryRatedTorqueLbFt: 162,
+    baseClassification: 'T3',
+    catalogId: 'ov_honda_s2000_2004',
     comsccEnriched: true
   }
 ];
@@ -111,5 +127,17 @@ describe('findShowroomCatalogMatch catalog snapshot (rejects buckets)', () => {
     };
     const hit = findShowroomCatalogMatch(answers, frozenRows, []);
     expect(hit?.catalogId).toBe('ov_mazda_mazda3_2012_base');
+  });
+
+  it('matches Honda S2000 base when COMSCC catalog trim is null (frozen showroom row)', () => {
+    const answers: RuleAnswersByQuestionId = {
+      vehicles_make_label: 'Honda',
+      vehicles_model_label: 'S2000',
+      vehicles_year: '2004',
+      vehicles_trim_key: null
+    };
+    const hit = findShowroomCatalogMatch(answers, frozenRows, []);
+    expect(hit?.catalogId).toBe('ov_honda_s2000_2004');
+    expect(hit?.trimKey).toBeNull();
   });
 });
