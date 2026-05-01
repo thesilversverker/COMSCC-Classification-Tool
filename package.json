@@ -10,13 +10,8 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run --environment jsdom --globals",
-    "data:convert": "node scripts/convert-workbook.mjs",
-    "data:extract-source": "node scripts/extract-workbook-to-source.mjs",
-    "data:compose-vehicles": "node scripts/generate-open-vehicle-styles-from-comscc-catalog.mjs && node scripts/compose-vehicles-json.mjs",
-    "data:build": "npm run data:compose-vehicles && node scripts/build-rules-bundle.mjs",
-    "data:strip-rules-metadata": "node scripts/strip-rules-source-metadata.mjs",
-    "data:backfill-subcats": "node scripts/backfill-rules-source-subcategories.mjs",
-    "data:sync": "npm run data:extract-source && npm run data:build"
+    "data:compose-vehicles": "node scripts/compose-vehicles-json.mjs",
+    "data:build": "npm run data:compose-vehicles && node scripts/build-rules-bundle.mjs"
   },
   "repository": {
     "type": "git",

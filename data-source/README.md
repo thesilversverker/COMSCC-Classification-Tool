@@ -6,9 +6,9 @@
   - Checkbox-style categories from `rules-source/` (Engine, Drivetrain, Suspension, Brakes, Exterior) with numeric `pointValue` from the **Assessment** column
   - Preset categories from [`src/lib/data/presets/vehicles-tires-weight.json`](../src/lib/data/presets/vehicles-tires-weight.json) (Vehicles, Weight, Tires)
 
-### One-shot refresh (when the workbook changes locally)
+### Rebuild after editing rules-source
 
-- Run `npm run data:sync` (extract + build)
+- Run `npm run data:build`
 
 ## Output paths
 
@@ -19,5 +19,6 @@
 
 - Modification worksheets use **column B = Assessment**, **column C = Description**; each row becomes a checkbox question with `pointValue` when the assessment is numeric, or `needsManualPoints` when it is non-numeric (for example **Dyno**).
 - Vehicles, Weight, and Tires use different table layouts; their UI is maintained in the preset JSON file above.
-- **Vehicle trims / styles:** `npm run data:compose-vehicles` runs `scripts/generate-open-vehicle-styles-from-comscc-catalog.mjs`, which builds `rules-source/open-vehicle/styles/{make_slug}.json` from **named** `vehicleTrim` rows in `rules-source/vehicles-comscc-catalog.json` (year ranges merged per trim). The app picker uses Make → Model → Year first; a trim control appears only when that catalog lists named trims for the selected year (or Base + named when a null-trim row also applies).
+- **Vehicle trims / styles:** `rules-source/open-vehicle/styles/{make_slug}.json` is curator-managed; `npm run data:compose-vehicles` overlays those style maps onto `rules-source/open-vehicle/makes_and_models.json` and joins them with COMSCC `vehicleTrim` rows from `rules-source/vehicles-comscc-catalog.json`. The app picker uses Make → Model → Year first; a trim control appears only when that catalog lists named trims for the selected year (or Base + named when a null-trim row also applies).
+- All `rules-source/**/*.json` files are committed and edited directly. The CSV files in this directory (`COMSCC-unprotected.csv`, `vehicle-catalog-from-csv.json`, `vehicle-catalog-rejects.csv`) are archival inputs from the initial bootstrap; nothing in the build pipeline reads them.
 - GitHub Actions runs `npm run data:build` only; commit updated `rules-source/` and/or the preset when rule data changes.

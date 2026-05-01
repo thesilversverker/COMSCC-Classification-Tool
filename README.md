@@ -11,17 +11,18 @@ Static Svelte app scaffold for COMSCC touring classification workflow.
 ## Local development
 
 - Install dependencies: `npm install`
-- Generate workbook-derived JSON: `npm run data:convert`
+- Build the runtime rules bundle: `npm run data:build`
 - Start dev server: `npm run dev`
 - Run type checks: `npm run check`
 - Run tests: `npm run test`
 
 ## Data pipeline
 
-- Workbook conversion script: `scripts/convert-workbook.mjs`
-- Output rules JSON: `src/lib/data/rules.v1.json`
-- Default workbook path:
-  - `/home/sysadmin/Downloads/COMSCC-2027-Touring-Classification-Tool_V2.01_TEST-SHEET.xlsx`
+- Source of truth: hand-curated JSON under `rules-source/`.
+- Build command: `npm run data:build` composes `rules-source/vehicles.json`
+  from the COMSCC catalog and open-vehicle data, then `build-rules-bundle.mjs`
+  produces the runtime bundle at `src/lib/data/rules.v1.json`.
+- Detail: see [`data-source/README.md`](data-source/README.md).
 
 ## GitHub Pages deployment modes
 
@@ -39,7 +40,7 @@ Static Svelte app scaffold for COMSCC touring classification workflow.
 
 ## Release smoke checklist
 
-- `npm run data:convert`
+- `npm run data:build`
 - `npm run check`
 - `npm run test`
 - `npm run build`
