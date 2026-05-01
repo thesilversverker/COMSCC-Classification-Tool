@@ -5,6 +5,7 @@ import { computeComsccDerivedFields } from './comscc-derived-fields.mjs';
 import { mergeStylesDirectoryIntoMakes } from './open-vehicle-merge.mjs';
 import { flattenOpenDb, pickComsccRow, slugify } from './build-showroom-lookup-rows.mjs';
 import { baseClassificationFromShowroomAssessment } from './touring-tier-from-points.mjs';
+import { readJson, writeJson } from './json-io.mjs';
 
 // Logical component: rules-source/open-vehicle/makes_and_models.json + styles/{make_slug}.json + vehicles-comscc-catalog.json → rules-source/vehicles.json (committed).
 
@@ -15,14 +16,6 @@ const MAKES_PATH = path.join(repoRoot, 'rules-source', 'open-vehicle', 'makes_an
 const STYLES_DIR = path.join(repoRoot, 'rules-source', 'open-vehicle', 'styles');
 const COMSCC_CATALOG_PATH = path.join(repoRoot, 'rules-source', 'vehicles-comscc-catalog.json');
 const VEHICLES_JSON_PATH = path.join(repoRoot, 'rules-source', 'vehicles.json');
-
-function readJson(filePath) {
-  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
-}
-
-function writeJson(filePath, value) {
-  fs.writeFileSync(filePath, `${JSON.stringify(value, null, 2)}\n`);
-}
 
 function numOrNull(v) {
   if (typeof v === 'number' && Number.isFinite(v)) return v;

@@ -5,6 +5,7 @@ import { assignSubcategory } from './assign-subcategory.mjs';
 import { buildShowroomLookupRowsFromVehicleCatalog } from './build-showroom-lookup-rows.mjs';
 import { mergeStylesDirectoryIntoMakes } from './open-vehicle-merge.mjs';
 import { buildTiresCategoryFromDoc } from './build-tires-category.mjs';
+import { readJson, writeJson } from './json-io.mjs';
 
 // Logical component: rules-source (vehicles.json with composed catalog) + preset + categories → src/lib/data (never writes rules-source except via compose script).
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -21,14 +22,6 @@ const OUTPUT_OPEN_VEHICLE_UI = path.join(repoRoot, 'src', 'lib', 'data', 'open-v
 
 const CHECKBOX_CATEGORY_FILES = ['engine', 'drivetrain', 'suspension', 'brakes', 'exterior'];
 const PRESET_CATEGORY_ORDER = ['weight'];
-
-function readJson(filePath) {
-  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
-}
-
-function writeJson(filePath, value) {
-  fs.writeFileSync(filePath, `${JSON.stringify(value, null, 2)}\n`);
-}
 
 // Logical component: guarantee subcategory on every question (source files may predate the field).
 function withSubcategories(category) {
@@ -52,7 +45,6 @@ function writeVehicleShowroomLookup(vehicleCatalog) {
 
   writeJson(OUTPUT_SHOWROOM_LOOKUP, {
     schemaVersion: '1.2.0',
-    generatedAt: new Date().toISOString(),
     vehiclesSourcePath: 'rules-source/vehicles.json',
     comsccCatalogPath: 'rules-source/vehicles-comscc-catalog.json',
     sourceWorkbook: comsccDoc.sourceWorkbook ?? 'unknown.xlsx',
@@ -135,7 +127,6 @@ function buildBundle() {
 
   writeJson(OUTPUT_RULES, {
     schemaVersion: '1.0.0',
-    generatedAt: new Date().toISOString(),
     sourceWorkbook,
     categories
   });

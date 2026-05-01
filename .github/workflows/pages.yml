@@ -35,6 +35,13 @@ jobs:
       - name: Build rules bundle from rules-source
         run: npm run data:build
 
+      - name: Verify rules bundle is committed (idempotency check)
+        run: |
+          if ! git diff --exit-code -- src/lib/data/ rules-source/vehicles.json; then
+            echo "::error::Committed rules bundle differs from data:build output. Run 'npm run data:build' locally and commit the regenerated files."
+            exit 1
+          fi
+
       - name: Build site
         run: npm run build
 
