@@ -7,6 +7,11 @@ Reads Layer 2 baseline + COMSCC catalog + aliases + visibility + curated-overrid
 never touches the network. Uses `json_io.write_json` for deterministic bytes.
 
 Exit 0 on success; `--verify` validates inputs + would-write shapes without creating files.
+`--strict` fails the run when any `vehicleCatalog` row with a non-empty make+model
+cannot be resolved to baseline (after aliases). Without `--strict`, unresolved rows
+only emit a stderr warning (plan §Validation gates).
+Every `curated-overrides/*.json` is validated against `curated-override.schema.json`
+before projection runs.
 """
 
 from __future__ import annotations
@@ -21,6 +26,8 @@ if str(_THIS_DIR) not in sys.path:
 
 from json_io import read_json, write_json  # noqa: E402
 from open_vehicle_projection import (  # noqa: E402
+    index_baseline_by_slug,
+    list_catalog_resolution_failures,
     load_aliases,
     load_baseline_makes,
     load_visibility,
@@ -54,6 +61,30 @@ def cmd_project(args: argparse.Namespace) -> int:
 
     validate_or_raise("aliases", aliases, context=str(args.aliases))
     validate_or_raise("visibility_overrides", visibility, context=str(args.visibility))
+
+    # Logical component: every committed curated-overrides/<slug>.json must match schema.
+    if args.curated_dir.exists():
+        for path in sorted(args.curated_dir.glob("*.json")):
+            doc = read_json(path)
+            validate_or_raise("curated_override", doc, context=str(path))
+
+    baseline_by_slug = index_baseline_by_slug(baseline)
+    failures = list_catalog_resolution_failures(catalog_rows, baseline_by_slug, aliases)
+    if failures:
+        detail = "\n".join(
+            f"  [{x['index']}] {x['vehicleMake']!r} / {x['vehicleModel']!r} — {x['reason']}"
+            for x in failures[:40]
+        )
+        tail = "" if len(failures) <= 40 else f"\n  … and {len(failures) - 40} more"
+        msg = (
+            f"{len(failures)} catalog row(s) did not resolve to baseline make/model "
+            f"(after aliases); see plan §Validation gates — strict catalog resolution.\n"
+            f"{detail}{tail}"
+        )
+        if args.strict:
+            print(msg, file=sys.stderr)
+            return 1
+        print(f"warning: {msg}", file=sys.stderr)
 
     makes_out, styles_by_slug = project_open_vehicle(
         baseline_makes=baseline,
@@ -115,6 +146,11 @@ def build_parser() -> argparse.ArgumentParser:
     )
     p.set_defaults(carry_styles=True)
     p.add_argument("--out-dir", type=Path, default=_DEFAULT_OUT)
+    p.add_argument(
+        "--strict",
+        action="store_true",
+        help="Exit non-zero when any catalog row with make+model fails to resolve to baseline (after aliases).",
+    )
     p.add_argument("--verify", action="store_true", help="Validate only; do not write files.")
     return p
 

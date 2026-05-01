@@ -136,6 +136,37 @@ class TestIncludeScope:
         assert "ACCORD" in honda["models"]
 
 
+class TestCatalogResolutionFailures:
+    def test_unknown_make_reported(self, tiny_baseline, tiny_aliases):
+        by = ovp.index_baseline_by_slug(tiny_baseline)
+        fails = ovp.list_catalog_resolution_failures(
+            [{"vehicleMake": "NotAMake", "vehicleModel": "X"}],
+            by,
+            tiny_aliases,
+        )
+        assert len(fails) == 1
+        assert "unknown make" in fails[0]["reason"]
+
+    def test_unknown_model_reported(self, tiny_baseline, tiny_aliases):
+        by = ovp.index_baseline_by_slug(tiny_baseline)
+        fails = ovp.list_catalog_resolution_failures(
+            [{"vehicleMake": "Honda", "vehicleModel": "Odyssey"}],
+            by,
+            tiny_aliases,
+        )
+        assert len(fails) == 1
+        assert "unknown model" in fails[0]["reason"]
+
+    def test_resolved_row_has_no_failure(self, tiny_baseline, tiny_aliases):
+        by = ovp.index_baseline_by_slug(tiny_baseline)
+        fails = ovp.list_catalog_resolution_failures(
+            [{"vehicleMake": "Honda", "vehicleModel": "Civic"}],
+            by,
+            tiny_aliases,
+        )
+        assert fails == []
+
+
 class TestDeterminism:
     def test_sort_makes_array_order(self, tiny_baseline):
         out = ovp.sort_makes_array(list(reversed(tiny_baseline)))

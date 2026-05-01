@@ -193,6 +193,72 @@ def collect_catalog_scope(
     return scope
 
 
+def list_catalog_resolution_failures(
+    catalog_rows: Iterable[dict[str, Any]],
+    baseline_by_slug: dict[str, dict[str, Any]],
+    aliases: dict[str, Any],
+) -> list[dict[str, Any]]:
+    """Catalog rows with vehicleMake + vehicleModel that do not map to a baseline (slug, model_key).
+
+    Empty make/model rows are ignored (same as scope collection).
+    """
+    makes_map = aliases.get("makes") or {}
+    models_map = aliases.get("models") or {}
+    failures: list[dict[str, Any]] = []
+
+    for idx, row in enumerate(catalog_rows):
+        vm = row.get("vehicleMake") or row.get("make")
+        vmodel = row.get("vehicleModel") or row.get("model")
+        if not isinstance(vm, str) or not isinstance(vmodel, str):
+            continue
+        csv_make = vm.strip()
+        csv_model = vmodel.strip()
+        if not csv_make or not csv_model:
+            continue
+
+        mk_typo = canonical_make_name(csv_make, makes_map)
+        mk_final, md_final, _trim = resolve_model_alias(
+            csv_make, csv_model, models_map, canonical_make_after_typo=mk_typo
+        )
+
+        slug = slug_for_resolved_make_name(baseline_by_slug, mk_final)
+        if slug is None:
+            failures.append(
+                {
+                    "index": idx,
+                    "vehicleMake": csv_make,
+                    "vehicleModel": csv_model,
+                    "reason": f"unknown make after aliases (resolved={mk_final!r})",
+                }
+            )
+            continue
+
+        models_dict = baseline_by_slug[slug].get("models") or {}
+        if not isinstance(models_dict, dict):
+            failures.append(
+                {
+                    "index": idx,
+                    "vehicleMake": csv_make,
+                    "vehicleModel": csv_model,
+                    "reason": f"baseline corrupt: make_slug={slug!r} has no models object",
+                }
+            )
+            continue
+
+        mkey = find_model_key(models_dict, md_final)
+        if mkey is None:
+            failures.append(
+                {
+                    "index": idx,
+                    "vehicleMake": csv_make,
+                    "vehicleModel": csv_model,
+                    "reason": f"unknown model for make_slug={slug!r} (resolved model={md_final!r})",
+                }
+            )
+
+    return failures
+
+
 def collect_include_scope(curated_dir: Path) -> set[tuple[str, str]]:
     """Union models explicitly marked `include: true` across curated-overrides/*.json."""
     scope: set[tuple[str, str]] = set()
