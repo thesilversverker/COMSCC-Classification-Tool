@@ -20,6 +20,7 @@
     "data:nhtsa:project:compare:fatal": "node scripts/run-data-python.mjs data-source/project_open_vehicle.py --compare-baseline --compare-baseline-fatal",
     "data:nhtsa:seed-baseline": "node scripts/run-data-python.mjs data-source/seed_baseline_counts.py",
     "data:nhtsa:apply-proposed": "node scripts/run-data-python.mjs data-source/apply_proposed_open_vehicle.py",
+    "data:open-vehicle:styles-from-nhtsa": "node scripts/run-data-python.mjs data-source/styles_from_nhtsa_details.py",
     "data:compose-vehicles": "node scripts/compose-vehicles-json.mjs",
     "data:build": "npm run data:compose-vehicles && node scripts/build-rules-bundle.mjs"
   },

@@ -1,4 +1,15 @@
 {
-  "MODEL 3": {},
+  "MODEL 3": {
+    "MODEL 3 4DR SEDAN LONG RANGE": {
+      "years": [
+        2018
+      ]
+    },
+    "MODEL 3 4DR SEDAN STANDARD": {
+      "years": [
+        2018
+      ]
+    }
+  },
   "ROADSTER": {}
 }

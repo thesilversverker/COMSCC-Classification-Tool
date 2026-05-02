@@ -1,49 +1,368 @@
 {
-  "CAMARO": {},
-  "CORVETTE": {},
+  "CAMARO": {
+    "CAMARO 2.0L 2DR CONVERTIBLE": {
+      "years": [
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "CAMARO 2.0L 2DR COUPE": {
+      "years": [
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "CAMARO 2DR CONVERTIBLE": {
+      "years": [
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000
+      ]
+    },
+    "CAMARO 2DR CONVERTIBLE Z28": {
+      "years": [
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001
+      ]
+    },
+    "CAMARO 2DR COUPE RWD LS/LT": {
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ]
+    },
+    "CAMARO 2DR COUPE RWD SS": {
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ]
+    },
+    "CAMARO 2DR COUPE RWD Z28": {
+      "years": [
+        2015
+      ]
+    },
+    "CAMARO 2DR COUPE RWD ZL1": {
+      "years": [
+        2013,
+        2015
+      ]
+    },
+    "CAMARO 2DR COUPE RWD ZL1/Z28": {
+      "years": [
+        2014
+      ]
+    },
+    "CAMARO 2DR HATCHBACK": {
+      "years": [
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001
+      ]
+    },
+    "CAMARO 2DR HATCHBACK Z28": {
+      "years": [
+        1994,
+        1995,
+        1996,
+        1998,
+        1999,
+        2000,
+        2001
+      ]
+    },
+    "CAMARO 3.6L 2DR CONVERTIBLE": {
+      "years": [
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "CAMARO 3.6L 2DR COUPE": {
+      "years": [
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "CAMARO 6.2L 2DR CONVERTIBLE": {
+      "years": [
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "CAMARO 6.2L 2DR COUPE": {
+      "years": [
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "CAMARO CONVERTIBLE RWD LS/LT": {
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ]
+    },
+    "CAMARO CONVERTIBLE RWD SS": {
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ]
+    },
+    "CAMARO CONVERTIBLE RWD ZL1": {
+      "years": [
+        2013,
+        2014,
+        2015
+      ]
+    }
+  },
+  "CORVETTE": {
+    "CORVETTE 2DR CONVERTIBLE": {
+      "years": [
+        1998,
+        1999,
+        2000,
+        2001,
+        2002
+      ]
+    },
+    "CORVETTE 2DR CONVERTIBLE RWD": {
+      "years": [
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ]
+    },
+    "CORVETTE 2DR COUPE": {
+      "years": [
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002
+      ]
+    },
+    "CORVETTE 2DR HARDTOP": {
+      "years": [
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004
+      ]
+    },
+    "CORVETTE 427 CONVERTIBLE CONV 2DR RWD": {
+      "years": [
+        2013
+      ]
+    },
+    "CORVETTE CONVERTIBLE STINGRAY/Z51": {
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "CORVETTE CONVERTIBLE Z06": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "CORVETTE COUPE": {
+      "years": [
+        1986
+      ]
+    },
+    "CORVETTE COUPE / Z06  2DR RWD": {
+      "years": [
+        2003,
+        2004
+      ]
+    },
+    "CORVETTE COUPE 2DR RWD": {
+      "years": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ]
+    },
+    "CORVETTE COUPE STINGRAY/Z51": {
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "CORVETTE COUPE Z06": {
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ]
+    },
+    "CORVETTE GRANDSPORT CONV 2DR RWD": {
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ]
+    },
+    "CORVETTE GRANDSPORT COUPE 2DR RWD": {
+      "years": [
+        2011,
+        2012,
+        2013
+      ]
+    },
+    "CORVETTE ROADSTER": {
+      "years": [
+        1986
+      ]
+    },
+    "CORVETTE STINGRAY CONVERTIBLE": {
+      "years": [
+        2020,
+        2023
+      ]
+    },
+    "CORVETTE STINGRAY COUPE": {
+      "years": [
+        2020,
+        2023
+      ]
+    },
+    "CORVETTE Z06 / GRANDSPORT COUPE 2DR RWD": {
+      "years": [
+        2010
+      ]
+    },
+    "CORVETTE Z06 CONVERTIBLE": {
+      "years": [
+        2023
+      ]
+    },
+    "CORVETTE Z06 COUPE": {
+      "years": [
+        2023
+      ]
+    },
+    "CORVETTE Z06 COUPE 2DR RWD": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2011,
+        2012,
+        2013
+      ]
+    },
+    "CORVETTE ZR1 COUPE 2DR RWD": {
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ]
+    }
+  },
   "SS": {
-    "CAB & CHASSIS C2500 OR C20": {
+    "2500 EXPRESS CARGO VAN LWB": {
       "years": [
-        1981
+        2016
       ]
     },
-    "CAB & CHASSIS C3500 or C30": {
+    "2500 EXPRESS CARGO VAN SWB": {
       "years": [
-        1981
+        2016
       ]
     },
-    "CAB & CHASSIS C3500 OR C30": {
+    "2500 EXPRESS PASSENGER VAN SWB": {
       "years": [
-        1981,
-        1981,
-        1981
+        2016
       ]
     },
-    "CAB CHASSIS K3500 OR K30": {
+    "3500 EXPRESS CARGO VAN LWB": {
       "years": [
-        1981,
-        1981,
-        1981
+        2016
       ]
     },
-    "CAB & CHASSIS-C2500 OR C20": {
+    "3500 EXPRESS CARGO VAN SWB": {
       "years": [
-        1982
+        2016
       ]
     },
-    "CAB & CHASSIS-C3500 OR C30": {
+    "3500 EXPRESS PASSENGER VAN LWB": {
       "years": [
-        1982,
-        1982,
-        1982,
-        1982
+        2016
       ]
     },
-    "CAB CHASSIS-K3500 OR K30": {
+    "3500 EXPRESS PASSENGER VAN SWB": {
       "years": [
-        1982,
-        1982,
-        1982
+        2016
       ]
     },
     "ASTRO AWD PASSENGER VAN": {
@@ -70,11 +389,62 @@
         1992
       ]
     },
-    "S-10 P/U REG CAB S/BOX SS": {
+    "C1500 P/U EXT CAB S/BOX S/SIDE": {
       "years": [
         1994,
         1995,
-        1996
+        1996,
+        1997,
+        1998
+      ]
+    },
+    "C1500 P/U REG CAB S/BOX S/SIDE": {
+      "years": [
+        1994,
+        1995,
+        1996,
+        1997,
+        1998
+      ]
+    },
+    "CAB & CHASSIS C2500 OR C20": {
+      "years": [
+        1981
+      ]
+    },
+    "CAB & CHASSIS C3500 or C30": {
+      "years": [
+        1981
+      ]
+    },
+    "CAB & CHASSIS C3500 OR C30": {
+      "years": [
+        1981
+      ]
+    },
+    "CAB & CHASSIS-C2500 OR C20": {
+      "years": [
+        1982
+      ]
+    },
+    "CAB & CHASSIS-C3500 OR C30": {
+      "years": [
+        1982
+      ]
+    },
+    "CAB CHASSIS K3500 OR K30": {
+      "years": [
+        1981
+      ]
+    },
+    "CAB CHASSIS-K3500 OR K30": {
+      "years": [
+        1982
+      ]
+    },
+    "CITY EXPRESS VAN": {
+      "years": [
+        2016
       ]
     },
     "K1500 P/U EXT CAB S/BOX S/SIDE 4X4": {
@@ -95,21 +465,8 @@
         1998
       ]
     },
-    "C1500 P/U EXT CAB S/BOX S/SIDE": {
+    "S-10 P/U EXT CAB S/BOX F/SIDE SS": {
       "years": [
-        1994,
-        1995,
-        1996,
-        1997,
-        1998
-      ]
-    },
-    "C1500 P/U REG CAB S/BOX S/SIDE": {
-      "years": [
-        1994,
-        1995,
-        1996,
-        1997,
         1998
       ]
     },
@@ -127,6 +484,19 @@
       "years": [
         1997,
         1998,
+        1999,
+        2000,
+        2001,
+        2002
+      ]
+    },
+    "S-10 P/U EXT CAB S/BOX S/SIDE SS": {
+      "years": [
+        1998
+      ]
+    },
+    "S-10 P/U EXT CAB S/BOX S/SIDE XTREME": {
+      "years": [
         1999,
         2000,
         2001,
@@ -157,27 +527,9 @@
         2000
       ]
     },
-    "S-10 P/U EXT CAB S/BOX F/SIDE SS": {
-      "years": [
-        1998
-      ]
-    },
-    "S-10 P/U EXT CAB S/BOX S/SIDE SS": {
-      "years": [
-        1998
-      ]
-    },
     "S-10 P/U REG CAB S/BOX S/SIDE SS": {
       "years": [
         1998
-      ]
-    },
-    "S-10 P/U EXT CAB S/BOX S/SIDE XTREME": {
-      "years": [
-        1999,
-        2000,
-        2001,
-        2002
       ]
     },
     "S-10 P/U REG CAB S/BOX S/SIDE XTREME": {
@@ -186,6 +538,13 @@
         2000,
         2001,
         2002
+      ]
+    },
+    "S-10 P/U REG CAB S/BOX SS": {
+      "years": [
+        1994,
+        1995,
+        1996
       ]
     }
   }

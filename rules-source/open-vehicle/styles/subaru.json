@@ -1,12 +1,5 @@
 {
   "BRZ": {
-    "BRZ 2DR COUPE /SPORT-TECH": {
-      "years": [
-        2013,
-        2014,
-        2015
-      ]
-    },
     "BRZ 2DR COUPE": {
       "years": [
         2016,
@@ -19,9 +12,400 @@
         2023,
         2024
       ]
+    },
+    "BRZ 2DR COUPE /SPORT-TECH": {
+      "years": [
+        2013,
+        2014,
+        2015
+      ]
     }
   },
-  "FORESTER": {},
-  "IMPREZA": {},
-  "LEGACY": {}
+  "FORESTER": {
+    "FORESTER 4DR SUV AWD /2.5 X/2.5 SX/2.5 SX PRE": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "FORESTER 4DR SUV AWD /2.5 XT": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "FORESTER 4DR SUV AWD L/S": {
+      "years": [
+        1998
+      ]
+    }
+  },
+  "IMPREZA": {
+    "IMPREZA 2.5i/SPORT 4DR SEDAN AWD": {
+      "years": [
+        2008,
+        2009
+      ]
+    },
+    "IMPREZA 2.5i/SPORT/LIMITED 4DR SEDAN AWD": {
+      "years": [
+        2010,
+        2011
+      ]
+    },
+    "IMPREZA 2DR COUPE AWD 2.5 RS": {
+      "years": [
+        1998,
+        2000,
+        2001
+      ]
+    },
+    "IMPREZA 4DR SEDAN": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    },
+    "IMPREZA 4DR SEDAN 2.0i": {
+      "years": [
+        2014,
+        2015,
+        2016
+      ]
+    },
+    "IMPREZA 4DR SEDAN 2.0i/2.0i TOURING/2.0i SPOR": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "IMPREZA 4DR SEDAN AWD": {
+      "years": [
+        1998
+      ]
+    },
+    "IMPREZA 4DR SEDAN AWD /2.5 RS/SPORT PACKAGE": {
+      "years": [
+        2005
+      ]
+    },
+    "IMPREZA 4DR SEDAN AWD 2.5 RS": {
+      "years": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004
+      ]
+    },
+    "IMPREZA 4DR SEDAN AWD 2.5I": {
+      "years": [
+        2006
+      ]
+    },
+    "IMPREZA 4DR SEDAN AWD TS": {
+      "years": [
+        2000,
+        2001
+      ]
+    },
+    "IMPREZA 4DR WAGON AWD /2.5 TS SPORT": {
+      "years": [
+        2004
+      ]
+    },
+    "IMPREZA 4DR WAGON AWD /OUTBACK SPORT": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "IMPREZA 4DR WAGON AWD 2.5I/OUTBACK SPORT": {
+      "years": [
+        2006
+      ]
+    },
+    "IMPREZA 4DR WAGON AWD BRIGHTON SPORT": {
+      "years": [
+        1998,
+        2000,
+        2001
+      ]
+    },
+    "IMPREZA 4DR WAGON AWD OUTBACK SPORT": {
+      "years": [
+        2000,
+        2001
+      ]
+    },
+    "IMPREZA 4DR WAGON AWD TS": {
+      "years": [
+        2002,
+        2003
+      ]
+    },
+    "IMPREZA 5-DOOR 2.5i/SPORT WAGON AWD": {
+      "years": [
+        2008,
+        2009
+      ]
+    },
+    "IMPREZA 5-DOOR 2.5i/SPORT/LIMITED HATCH AWD": {
+      "years": [
+        2010,
+        2011
+      ]
+    },
+    "IMPREZA 5-DOOR WRX WAGON AWD": {
+      "years": [
+        2008,
+        2009
+      ]
+    },
+    "IMPREZA 5-DOOR WRX/WRX LIMITED HATCH AWD": {
+      "years": [
+        2010,
+        2011
+      ]
+    },
+    "IMPREZA 5DR HATCH": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    },
+    "IMPREZA 5DR HATCH 2.0i": {
+      "years": [
+        2014,
+        2015,
+        2016
+      ]
+    },
+    "IMPREZA 5DR HATCH 2.0i/2.0i TOURING/2.0i SPOR": {
+      "years": [
+        2012,
+        2013
+      ]
+    },
+    "IMPREZA OUTBACK SPORT 4DR WAGON AWD": {
+      "years": [
+        2002
+      ]
+    },
+    "IMPREZA TS SPORT/OUTBACK SPORT 4DR WAGON AWD": {
+      "years": [
+        2003
+      ]
+    },
+    "IMPREZA WRX 4DR SEDAN AWD": {
+      "years": [
+        2008,
+        2009
+      ]
+    },
+    "IMPREZA WRX SEDAN 4DR AWD": {
+      "years": [
+        2002,
+        2003,
+        2004,
+        2005,
+        2006
+      ]
+    },
+    "IMPREZA WRX SPORT WAGON": {
+      "years": [
+        2002,
+        2003
+      ]
+    },
+    "IMPREZA WRX SPORT WAGON AWD": {
+      "years": [
+        2004,
+        2005,
+        2006
+      ]
+    },
+    "IMPREZA WRX STi 4DR SEDAN AWD": {
+      "years": [
+        2004,
+        2005,
+        2006
+      ]
+    },
+    "IMPREZA WRX STI 5DR HATCH AWD": {
+      "years": [
+        2008,
+        2009
+      ]
+    },
+    "IMPREZA WRX STI/SPORT-TECH 4DR SEDAN AWD": {
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ]
+    },
+    "IMPREZA WRX STI/SPORT-TECH 5DR HATCH AWD": {
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ]
+    },
+    "IMPREZA WRX/WRX LIMITED 4DR SEDAN AWD": {
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ]
+    },
+    "IMPREZA WRX/WRX LIMITED 5DR HATCH AWD": {
+      "years": [
+        2012,
+        2013,
+        2014
+      ]
+    },
+    "OUTBACK SPORT 4DR WAGON AWD (IMPREZA)": {
+      "years": [
+        1998
+      ]
+    }
+  },
+  "LEGACY": {
+    "LEGACY 4DR SEDAN 2.5 GT": {
+      "years": [
+        2006
+      ]
+    },
+    "LEGACY 4DR SEDAN 2.5i": {
+      "years": [
+        2006
+      ]
+    },
+    "LEGACY 4DR SEDAN AWD 2.2 L": {
+      "years": [
+        1999
+      ]
+    },
+    "LEGACY 4DR SEDAN AWD 2.5 GT": {
+      "years": [
+        1998
+      ]
+    },
+    "LEGACY 4DR SEDAN AWD 2.5 GT/GT LTD": {
+      "years": [
+        1999
+      ]
+    },
+    "LEGACY 4DR SEDAN AWD L+/LS": {
+      "years": [
+        1997
+      ]
+    },
+    "LEGACY 4DR SEDAN AWD L/LS/LSi": {
+      "years": [
+        1995,
+        1996
+      ]
+    },
+    "LEGACY 4DR SEDAN AWD L/LTD": {
+      "years": [
+        1998
+      ]
+    },
+    "LEGACY 4DR SEDAN AWD LS": {
+      "years": [
+        1994
+      ]
+    },
+    "LEGACY 4DR SEDAN AWD TURBO": {
+      "years": [
+        1994
+      ]
+    },
+    "LEGACY 4DR SEDAN FWD L": {
+      "years": [
+        1994,
+        1995,
+        1996
+      ]
+    },
+    "LEGACY 4DR SEDAN GT/LSi": {
+      "years": [
+        1997
+      ]
+    },
+    "LEGACY 4DR WAGON 2.5 GT": {
+      "years": [
+        2006
+      ]
+    },
+    "LEGACY 4DR WAGON 2.5i": {
+      "years": [
+        2006
+      ]
+    },
+    "LEGACY 4DR WAGON AWD 2.5 GT": {
+      "years": [
+        1998,
+        1999
+      ]
+    },
+    "LEGACY 4DR WAGON AWD L/BRIGHTON": {
+      "years": [
+        1998,
+        1999
+      ]
+    },
+    "LEGACY 4DR WAGON AWD LS/TOURING": {
+      "years": [
+        1994
+      ]
+    },
+    "LEGACY 4DR WAGON FWD L": {
+      "years": [
+        1994
+      ]
+    },
+    "LEGACY 4DR WAGON L+/BRIGHTON": {
+      "years": [
+        1997
+      ]
+    },
+    "LEGACY BRIGHTON 4DR WAGON AWD L/LS/LSi": {
+      "years": [
+        1995,
+        1996
+      ]
+    },
+    "LEGACY BRIGHTON 4DR WAGON AWD LS/GT/LSi": {
+      "years": [
+        1997
+      ]
+    },
+    "LEGACY BRIGHTON 4DR WAGON FWD L": {
+      "years": [
+        1995
+      ]
+    },
+    "OUTBACK 4DR SEDAN AWD (LEGACY)": {
+      "years": [
+        1999
+      ]
+    }
+  }
 }

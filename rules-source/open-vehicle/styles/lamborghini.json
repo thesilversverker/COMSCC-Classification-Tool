@@ -1,5 +1,47 @@
 {
   "AVENTADOR": {},
-  "GALLARDO": {},
-  "MURCIELAGO": {}
+  "GALLARDO": {
+    "GALLARDO 2DR COUPE AWD": {
+      "years": [
+        2012
+      ]
+    },
+    "GALLARDO SPYDER 2DR CONV AWD": {
+      "years": [
+        2012
+      ]
+    },
+    "GALLARDO SUPERLEGGERA 2DR COUPE AWD": {
+      "years": [
+        2012
+      ]
+    }
+  },
+  "MURCIELAGO": {
+    "MURCIELAGO LP640 2DR COUPE AWD": {
+      "years": [
+        2009
+      ]
+    },
+    "MURCIELAGO LP640 ROADSTER 2DR CONVERTIBLE AWD": {
+      "years": [
+        2009
+      ]
+    },
+    "MURCIELAGO LP650 2DR COUPE AWD": {
+      "years": [
+        2010
+      ]
+    },
+    "MURCIELAGO LP650 ROADSTER 2DR CONVERTIBLE AWD": {
+      "years": [
+        2010
+      ]
+    },
+    "MURCIELAGO LP670 SUPERVELOCE 2DR COUPE AWD": {
+      "years": [
+        2010
+      ]
+    }
+  }
 }

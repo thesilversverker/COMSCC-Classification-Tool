@@ -1,24 +1,5 @@
 {
   "9-3": {
-    "9-3 2DR CONVERTIBLE SE": {
-      "years": [
-        1999,
-        2003
-      ]
-    },
-    "9-3 2DR HATCHBACK": {
-      "years": [
-        1999
-      ]
-    },
-    "9-3 4DR HATCHBACK BASE/SE": {
-      "years": [
-        1999,
-        2000,
-        2001,
-        2002
-      ]
-    },
     "9-3 2DR CONVERTIBLE BASE/SE": {
       "years": [
         2000,
@@ -26,11 +7,51 @@
         2002
       ]
     },
+    "9-3 2DR CONVERTIBLE FWD": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010
+      ]
+    },
+    "9-3 2DR CONVERTIBLE FWD 2.0T/AERO": {
+      "years": [
+        2011
+      ]
+    },
+    "9-3 2DR CONVERTIBLE FWD AERO": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010
+      ]
+    },
+    "9-3 2DR CONVERTIBLE FWD ARC/AERO": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "9-3 2DR CONVERTIBLE SE": {
+      "years": [
+        1999,
+        2003
+      ]
+    },
     "9-3 2DR CONVERTIBLE VIGGEN": {
       "years": [
         2000,
         2001,
         2002
+      ]
+    },
+    "9-3 2DR HATCHBACK": {
+      "years": [
+        1999
       ]
     },
     "9-3 2DR HATCHBACK BASE/SE": {
@@ -47,6 +68,14 @@
         2002
       ]
     },
+    "9-3 4DR HATCHBACK BASE/SE": {
+      "years": [
+        1999,
+        2000,
+        2001,
+        2002
+      ]
+    },
     "9-3 4DR HATCHBACK VIGGEN": {
       "years": [
         2000,
@@ -54,20 +83,14 @@
         2002
       ]
     },
-    "9-3 LINEAR/ARC 4DR SEDAN FWD": {
+    "9-3 4DR SEDAN FWD": {
       "years": [
-        2003
-      ]
-    },
-    "9-3 VECTOR 4DR SEDAN FWD": {
-      "years": [
-        2003
-      ]
-    },
-    "9-3 2DR CONVERTIBLE FWD ARC/AERO": {
-      "years": [
-        2004,
-        2005
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011
       ]
     },
     "9-3 4DR SEDAN FWD /AERO": {
@@ -82,34 +105,6 @@
         2005
       ]
     },
-    "9-3 2DR CONVERTIBLE FWD": {
-      "years": [
-        2006,
-        2007,
-        2008,
-        2009,
-        2010
-      ]
-    },
-    "9-3 2DR CONVERTIBLE FWD AERO": {
-      "years": [
-        2006,
-        2007,
-        2008,
-        2009,
-        2010
-      ]
-    },
-    "9-3 4DR SEDAN FWD": {
-      "years": [
-        2006,
-        2007,
-        2008,
-        2009,
-        2010,
-        2011
-      ]
-    },
     "9-3 4DR SEDAN FWD AERO": {
       "years": [
         2006,
@@ -117,6 +112,16 @@
         2008,
         2009,
         2010
+      ]
+    },
+    "9-3 4DR SEDAN XWD AERO": {
+      "years": [
+        2011
+      ]
+    },
+    "9-3 LINEAR/ARC 4DR SEDAN FWD": {
+      "years": [
+        2003
       ]
     },
     "9-3 SPORTCOMBI 4DR WAGON FWD": {
@@ -128,6 +133,11 @@
         2010
       ]
     },
+    "9-3 SPORTCOMBI 4DR WAGON FWD 2.0T/AERO": {
+      "years": [
+        2011
+      ]
+    },
     "9-3 SPORTCOMBI 4DR WAGON FWD AERO": {
       "years": [
         2006,
@@ -137,19 +147,9 @@
         2010
       ]
     },
-    "9-3 2DR CONVERTIBLE FWD 2.0T/AERO": {
+    "9-3 VECTOR 4DR SEDAN FWD": {
       "years": [
-        2011
-      ]
-    },
-    "9-3 4DR SEDAN XWD AERO": {
-      "years": [
-        2011
-      ]
-    },
-    "9-3 SPORTCOMBI 4DR WAGON FWD 2.0T/AERO": {
-      "years": [
-        2011
+        2003
       ]
     },
     "9-3X 4DR WAGON XWD": {
@@ -159,29 +159,44 @@
     }
   },
   "9-5": {
-    "9-5 4DR SEDAN SE": {
-      "years": [
-        1998,
-        1999
-      ]
-    },
-    "9-5 4DR SEDAN SE V6": {
-      "years": [
-        1998,
-        1999
-      ]
-    },
-    "9-5 4DR WAGON": {
-      "years": [
-        1999
-      ]
-    },
     "9-5 4DR SEDAN AERO 2.3 TURBO HIGH PRESSURE": {
       "years": [
         2000,
         2001,
         2002,
         2003
+      ]
+    },
+    "9-5 4DR SEDAN ARC 3.0 V6 TURBO": {
+      "years": [
+        2002
+      ]
+    },
+    "9-5 4DR SEDAN FWD": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010
+      ]
+    },
+    "9-5 4DR SEDAN FWD /ARC/AERO": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "9-5 4DR SEDAN LINEAR 2.3 TURBO LIGHT PRESSURE": {
+      "years": [
+        2002,
+        2003
+      ]
+    },
+    "9-5 4DR SEDAN SE": {
+      "years": [
+        1998,
+        1999
       ]
     },
     "9-5 4DR SEDAN SE 2.3 TURBO LIGHT PRESSURE": {
@@ -194,6 +209,17 @@
       "years": [
         2000,
         2001
+      ]
+    },
+    "9-5 4DR SEDAN SE V6": {
+      "years": [
+        1998,
+        1999
+      ]
+    },
+    "9-5 4DR WAGON": {
+      "years": [
+        1999
       ]
     },
     "9-5 4DR WAGON 2.3 TURBO LIGHT PRESSURE": {
@@ -214,32 +240,9 @@
         2003
       ]
     },
-    "9-5 4DR SEDAN ARC 3.0 V6 TURBO": {
-      "years": [
-        2002
-      ]
-    },
-    "9-5 4DR SEDAN LINEAR 2.3 TURBO LIGHT PRESSURE": {
-      "years": [
-        2002,
-        2003
-      ]
-    },
     "9-5 4DR WAGON ARC 3.0 V6 TURBO": {
       "years": [
         2002
-      ]
-    },
-    "9-5 4DR WAGON LINEAR 2.3 TURBO LIGHT PRESSURE": {
-      "years": [
-        2002,
-        2003
-      ]
-    },
-    "9-5 4DR SEDAN FWD /ARC/AERO": {
-      "years": [
-        2004,
-        2005
       ]
     },
     "9-5 4DR WAGON FWD /ARC/AERO": {
@@ -248,13 +251,15 @@
         2005
       ]
     },
-    "9-5 4DR SEDAN FWD": {
+    "9-5 4DR WAGON LINEAR 2.3 TURBO LIGHT PRESSURE": {
       "years": [
-        2006,
-        2007,
-        2008,
-        2009,
-        2010
+        2002,
+        2003
+      ]
+    },
+    "9-5 AERO 4 DR SEDAN XWD": {
+      "years": [
+        2011
       ]
     },
     "9-5 SPORTCOMBI 4DR WAGON FWD": {
@@ -266,17 +271,140 @@
         2010
       ]
     },
-    "9-5 AERO 4 DR SEDAN XWD": {
-      "years": [
-        2011
-      ]
-    },
     "9-5 TURBO4 4 DR SEDAN FWD": {
       "years": [
         2011
       ]
     }
   },
-  "900": {},
-  "9000": {}
+  "900": {
+    "900 2DR HATCHBACK": {
+      "years": [
+        1990,
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "900 4DR SEDAN": {
+      "years": [
+        1990,
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "900 SPG 2DR HATCHBACK": {
+      "years": [
+        1990,
+        1991
+      ]
+    },
+    "900 TURBO 2DR HATCHBACK": {
+      "years": [
+        1990,
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "900 TURBO CONVERTIBLE": {
+      "years": [
+        1990,
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "9000 CS/CSE TURBO 4DR HATCHBACK": {
+      "years": [
+        1993
+      ]
+    },
+    "9000 SPG 4DR HATCHBACK": {
+      "years": [
+        1990,
+        1991
+      ]
+    },
+    "9000 TURBO 4DR HATCHBACK": {
+      "years": [
+        1992
+      ]
+    },
+    "9000CD/9000CD TURBO 4DR SEDAN": {
+      "years": [
+        1992,
+        1993
+      ]
+    },
+    "9000S/9000 TURBO 4DR HATCHBACK": {
+      "years": [
+        1990,
+        1991
+      ]
+    },
+    "9000S/9000CD 4DR SEDAN": {
+      "years": [
+        1990,
+        1991
+      ]
+    },
+    "900S 2DR HATCHBACK": {
+      "years": [
+        1990,
+        1991
+      ]
+    },
+    "900S 4DR SEDAN": {
+      "years": [
+        1990,
+        1991
+      ]
+    }
+  },
+  "9000": {
+    "9000 4DR HATCHBACK AREO": {
+      "years": [
+        1994
+      ]
+    },
+    "9000 4DR HATCHBACK AREO TURBO": {
+      "years": [
+        1995,
+        1996,
+        1997
+      ]
+    },
+    "9000 4DR HATCHBACK CS/CSE TURBO": {
+      "years": [
+        1994,
+        1995,
+        1996,
+        1997
+      ]
+    },
+    "9000 4DR SEDAN CD/CDE TURBO": {
+      "years": [
+        1994
+      ]
+    },
+    "9000 4DR SEDAN CDE": {
+      "years": [
+        1995,
+        1996,
+        1997
+      ]
+    },
+    "9000 CS/CSE TURBO 4DR HATCHBACK": {
+      "years": [
+        1993
+      ]
+    },
+    "9000CD/9000CD TURBO 4DR SEDAN": {
+      "years": [
+        1993
+      ]
+    }
+  }
 }

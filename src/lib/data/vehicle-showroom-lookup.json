@@ -4,8 +4,8 @@
   "comsccCatalogPath": "rules-source/vehicles-comscc-catalog.json",
   "sourceWorkbook": "unknown.xlsx",
   "comsccOverrideRowCount": 369,
-  "openDbRowCount": 2791,
-  "comsccWorkbookMatchRowCount": 266,
+  "openDbRowCount": 2793,
+  "comsccWorkbookMatchRowCount": 268,
   "rows": [
     {
       "makeNorm": "acura",
@@ -20646,6 +20646,36 @@
       "baseClassification": "T5",
       "catalogId": "ov_honda_civic_type_r_2026",
       "comsccEnriched": false
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "s2000",
+      "year": 2008,
+      "trimKey": "CR",
+      "showroomAssessment": 69.06957547169812,
+      "scaledWeightPerPower": 56.569575471698116,
+      "performanceAdjustment": 12.5,
+      "showroomBaseWeightLbs": 2765,
+      "factoryRatedHp": 237,
+      "factoryRatedTorqueLbFt": 162,
+      "baseClassification": "T3",
+      "catalogId": "ov_honda_s2000_2008_cr",
+      "comsccEnriched": true
+    },
+    {
+      "makeNorm": "honda",
+      "modelNorm": "s2000",
+      "year": 2009,
+      "trimKey": "CR",
+      "showroomAssessment": 69.06957547169812,
+      "scaledWeightPerPower": 56.569575471698116,
+      "performanceAdjustment": 12.5,
+      "showroomBaseWeightLbs": 2765,
+      "factoryRatedHp": 237,
+      "factoryRatedTorqueLbFt": 162,
+      "baseClassification": "T3",
+      "catalogId": "ov_honda_s2000_2009_cr",
+      "comsccEnriched": true
     },
     {
       "makeNorm": "honda",

@@ -1,4 +1,18 @@
 {
-  "ELISE": {},
-  "ESPRIT": {}
+  "ELISE": {
+    "ELISE 2DR COUPE": {
+      "years": [
+        2006,
+        2007
+      ]
+    }
+  },
+  "ESPRIT": {
+    "ESPRIT V8": {
+      "years": [
+        1997,
+        1998
+      ]
+    }
+  }
 }

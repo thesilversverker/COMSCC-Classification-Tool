@@ -1,7 +1,191 @@
 {
-  "86": {},
-  "CELICA": {},
-  "COROLLA": {},
-  "MR2": {},
-  "SUPRA": {}
+  "86": {
+    "86 2DR COUPE": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020
+      ]
+    },
+    "GR86 3DR COUPE": {
+      "years": [
+        2022
+      ]
+    }
+  },
+  "CELICA": {
+    "CELICA GT 2 DR COUPE": {
+      "years": [
+        1987
+      ]
+    },
+    "CELICA GT 2 DR HATCHBACK": {
+      "years": [
+        1987
+      ]
+    },
+    "CELICA GT COUPE": {
+      "years": [
+        1985,
+        1986,
+        1988
+      ]
+    },
+    "CELICA GT COUPE/ST COUPE": {
+      "years": [
+        1989
+      ]
+    },
+    "CELICA GT LIFTBACK": {
+      "years": [
+        1988,
+        1989
+      ]
+    },
+    "CELICA GTS 2 DR COUPE": {
+      "years": [
+        1987,
+        1988,
+        1989
+      ]
+    },
+    "CELICA GTS 2 DR HATCHBACK": {
+      "years": [
+        1987
+      ]
+    },
+    "CELICA GTS COUPE": {
+      "years": [
+        1986
+      ]
+    },
+    "CELICA GTS LFTBCK/4WD TURBO LFTBCK": {
+      "years": [
+        1988
+      ]
+    },
+    "CELICA GTS TURBO LIFTBACK": {
+      "years": [
+        1989
+      ]
+    },
+    "CELICA LIFTBACK GT": {
+      "years": [
+        1985,
+        1986
+      ]
+    },
+    "CELICA LIFTBACK GTS": {
+      "years": [
+        1985,
+        1986
+      ]
+    }
+  },
+  "COROLLA": {
+    "COROLLA 4DR SEDAN HYBRID": {
+      "years": [
+        2023
+      ]
+    },
+    "COROLLA 4DR SEDAN L/LE": {
+      "years": [
+        2023
+      ]
+    },
+    "COROLLA 4DR SEDAN SE/XLE/XSE": {
+      "years": [
+        2023
+      ]
+    },
+    "COROLLA 5DR HATCH": {
+      "years": [
+        2023
+      ]
+    },
+    "COROLLA CROSS 4DR SUV AWD": {
+      "years": [
+        2023
+      ]
+    },
+    "COROLLA CROSS 4DR SUV FWD": {
+      "years": [
+        2023
+      ]
+    },
+    "COROLLA DELUXE 4 DR HATCHBACK": {
+      "years": [
+        1987
+      ]
+    },
+    "COROLLA DELUXE 4 DR SEDAN": {
+      "years": [
+        1987
+      ]
+    },
+    "COROLLA GTS 2 DR COUPE": {
+      "years": [
+        1987
+      ]
+    },
+    "COROLLA GTS 2 DR HATCHBACK": {
+      "years": [
+        1987
+      ]
+    },
+    "COROLLA LE 4 DR HATCHBACK": {
+      "years": [
+        1987
+      ]
+    },
+    "COROLLA LE 4 DR SEDAN": {
+      "years": [
+        1987
+      ]
+    },
+    "COROLLA SR5 2 DR COUPE": {
+      "years": [
+        1987
+      ]
+    },
+    "COROLLA SR5 2 DR HATCHBACK": {
+      "years": [
+        1987
+      ]
+    },
+    "GR COROLLA 5DR HATCH": {
+      "years": [
+        2023
+      ]
+    }
+  },
+  "MR2": {
+    "MR2 (2 DR COUPE)": {
+      "years": [
+        1987
+      ]
+    },
+    "MR2 BASE/SUPERCHARGED 2 DR COUPE": {
+      "years": [
+        1988,
+        1989
+      ]
+    },
+    "MR2/MR2 TURBO COUPE": {
+      "years": [
+        1991,
+        1992,
+        1993
+      ]
+    }
+  },
+  "SUPRA": {
+    "GR SUPRA 2DR COUPE": {
+      "years": [
+        2020,
+        2021
+      ]
+    }
+  }
 }

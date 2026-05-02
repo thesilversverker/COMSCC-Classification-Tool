@@ -1,5 +1,145 @@
 {
-  "ECLIPSE": {},
-  "GALANT": {},
-  "LANCER": {}
+  "ECLIPSE": {
+    "ECLIPSE COUPE 2DR COUPE GS": {
+      "years": [
+        2006
+      ]
+    },
+    "ECLIPSE COUPE 2DR COUPE GT": {
+      "years": [
+        2006
+      ]
+    },
+    "ECLIPSE COUPE 2DR COUPE GT/GT PREMIUM": {
+      "years": [
+        2003,
+        2004,
+        2005
+      ]
+    },
+    "ECLIPSE COUPE 2DR COUPE RS/GS": {
+      "years": [
+        2003,
+        2004,
+        2005
+      ]
+    },
+    "ECLIPSE RS MT/GS MT/GT MT": {
+      "years": [
+        2002
+      ]
+    },
+    "ECLIPSE SPYDER 2DR CONV FWD /GS": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "ECLIPSE SPYDER 2DR CONV FWD /GT PREMIUM": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "ECLIPSE SPYDER 2DR CONV GS": {
+      "years": [
+        2003
+      ]
+    },
+    "ECLIPSE SPYDER 2DR CONV GT PREMIUM": {
+      "years": [
+        2003
+      ]
+    },
+    "ECLIPSE SPYDER GS MT/GT MT": {
+      "years": [
+        2002
+      ]
+    }
+  },
+  "GALANT": {
+    "GALANT 4DR SEDAN FWD /DE/ES": {
+      "years": [
+        2003
+      ]
+    },
+    "GALANT 4DR SEDAN FWD /ES V6/ LS V6/ GTZ": {
+      "years": [
+        2003
+      ]
+    }
+  },
+  "LANCER": {
+    "LANCER 4DR SEDAN FWD /ES": {
+      "years": [
+        2005
+      ]
+    },
+    "LANCER 4DR SEDAN FWD /ES/LS": {
+      "years": [
+        2004
+      ]
+    },
+    "LANCER 4DR SEDAN FWD /OZ RALLY/RALLIART": {
+      "years": [
+        2004,
+        2005
+      ]
+    },
+    "LANCER 4DR SEDAN FWD DE": {
+      "years": [
+        2007
+      ]
+    },
+    "LANCER 4DR SEDAN FWD ES": {
+      "years": [
+        2006
+      ]
+    },
+    "LANCER 4DR SEDAN FWD EZ": {
+      "years": [
+        2007
+      ]
+    },
+    "LANCER 4DR SEDAN FWD GTS": {
+      "years": [
+        2007
+      ]
+    },
+    "LANCER 4DR SEDAN FWD OZ RALLY": {
+      "years": [
+        2006
+      ]
+    },
+    "LANCER 4DR SEDAN FWD RALLIART": {
+      "years": [
+        2006
+      ]
+    },
+    "LANCER ES 4DR SEDAN FWD": {
+      "years": [
+        2003
+      ]
+    },
+    "LANCER ES MT/ ES AT": {
+      "years": [
+        2002
+      ]
+    },
+    "LANCER LS AT/ OZ MT/ OZ RALLY": {
+      "years": [
+        2002
+      ]
+    },
+    "LANCER LS/OZ RALLY 4DR SEDAN FWD": {
+      "years": [
+        2003
+      ]
+    },
+    "LANCER SPORTBACK 4DR WAGON FWD LS/RALLIART": {
+      "years": [
+        2004
+      ]
+    }
+  }
 }

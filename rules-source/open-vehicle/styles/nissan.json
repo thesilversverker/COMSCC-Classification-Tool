@@ -1,9 +1,111 @@
 {
-  "200SX": {},
-  "240SX": {},
-  "350Z": {},
-  "370Z": {},
+  "200SX": {
+    "200SX 2DR COUPE SE": {
+      "years": [
+        1998
+      ]
+    },
+    "200SX 2DR COUPE SE-R": {
+      "years": [
+        1998
+      ]
+    },
+    "200SX 2DR COUPE SE/SE-R": {
+      "years": [
+        1995,
+        1996,
+        1997
+      ]
+    }
+  },
+  "240SX": {
+    "240SX 2DR COUPE SE/LE": {
+      "years": [
+        1997,
+        1998
+      ]
+    }
+  },
+  "350Z": {
+    "350Z": {
+      "years": [
+        2003
+      ]
+    },
+    "350Z 2DR COUPE RWD /GT": {
+      "years": [
+        2007
+      ]
+    },
+    "350Z 2DR COUPE RWD /PERFORMANCE/TOURING/TRACK": {
+      "years": [
+        2004,
+        2005,
+        2006
+      ]
+    },
+    "350Z COUPE 2DR RWD": {
+      "years": [
+        2008
+      ]
+    },
+    "350Z ROADSTER 2 DR CONV RWD": {
+      "years": [
+        2004,
+        2005,
+        2006,
+        2008
+      ]
+    },
+    "350Z ROADSTER 2 DR CONV RWD /GT": {
+      "years": [
+        2007
+      ]
+    }
+  },
+  "370Z": {
+    "370Z COUPE 2DR RWD": {
+      "years": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ]
+    },
+    "370Z NISMO 2 DR COUPE": {
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ]
+    },
+    "370Z ROADSTER 2DR RWD": {
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ]
+    }
+  },
   "GT-R": {
+    "GT-R 2DR COUPE": {
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
     "GT-R 2DR COUPE AWD": {
       "years": [
         2008,
@@ -19,21 +121,83 @@
         2014,
         2015
       ]
-    },
-    "GT-R 2DR COUPE": {
+    }
+  },
+  "JUKE": {
+    "JUKE 4 DR SUV SV AWD/SL AWD": {
       "years": [
-        2016,
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024
+        2011
+      ]
+    },
+    "JUKE 4 DR SUV SV FWD/SL FWD": {
+      "years": [
+        2011
       ]
     }
   },
-  "JUKE": {},
-  "SENTRA": {}
+  "SENTRA": {
+    "SENTRA 2DR COUPE DLX/XE": {
+      "years": [
+        1994
+      ]
+    },
+    "SENTRA 4DR SEDAN DLX/XE/GXE": {
+      "years": [
+        1994
+      ]
+    },
+    "SENTRA 4DR SEDAN FWD /1.8 /1.8S": {
+      "years": [
+        2004
+      ]
+    },
+    "SENTRA 4DR SEDAN FWD /1.8 /1.8S/SPEICAL EDITI": {
+      "years": [
+        2005,
+        2006
+      ]
+    },
+    "SENTRA 4DR SEDAN FWD /SE-R/SE-R SPEC V": {
+      "years": [
+        2004,
+        2005,
+        2006
+      ]
+    },
+    "SENTRA 4DR SEDAN SE-R/SE-R Spec V": {
+      "years": [
+        2002
+      ]
+    },
+    "SENTRA 4DR SEDAN SE-R/SE-R SPEC V": {
+      "years": [
+        2003
+      ]
+    },
+    "SENTRA 4DR SEDAN XE/GXE/SE": {
+      "years": [
+        2001
+      ]
+    },
+    "SENTRA CLASSIC 4 DR SEDAN": {
+      "years": [
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "SENTRA DLX/XE/GXE 4 DR SEDAN": {
+      "years": [
+        1991,
+        1992,
+        1993
+      ]
+    },
+    "SENTRA XE/GX": {
+      "years": [
+        2002,
+        2003
+      ]
+    }
+  }
 }
