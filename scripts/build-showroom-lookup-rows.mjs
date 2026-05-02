@@ -61,6 +61,7 @@ function yearSpanWidth(c) {
 /**
  * Best COMSCC row for open-db make/model/year/trim (narrowest year range wins).
  * Catalog rows with no `vehicleTrim` apply only to base rows (`trimKey` null); trim-specific rows match that trim only.
+ * @param {string | null | undefined} trimKeyFromOpenDb — session trim or open-db style key; null/undefined = base row.
  */
 export function pickComsccRow(makeName, modelName, year, comsccRows, trimKeyFromOpenDb = null) {
   const mMake = normToken(makeName);

@@ -1,7 +1,7 @@
 <script lang="ts">
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
   import { comsccTrimChoicesForYear, type ComsccCatalogSeedRow } from '$lib/comscc-catalog-trims';
-  import { findShowroomCatalogMatch, isVehicleSelectionComplete } from '$lib/vehicles-showroom-match';
+  import { isVehicleSelectionComplete } from '$lib/vehicles-showroom-match';
   import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
   import type { RuleAnswer, RuleQuestion } from '$types/rules';
 
@@ -24,7 +24,8 @@
 
   export let openMakesModels: OpenDbMake[] = [];
   export let comsccVehicleCatalog: ComsccCatalogSeedRow[] = [];
-  export let showroomRows: ShowroomLookupRow[] = [];
+  /** Resolved via compose lookup + COMSCC seed fallback (see comscc-seed-showroom.ts). */
+  export let catalogHit: ShowroomLookupRow | null = null;
   export let answers: Record<string, RuleAnswer> = {};
   export let onAnswer: (questionId: string, value: RuleAnswer) => void;
 
@@ -142,14 +143,18 @@
   $: trimSelectValue =
     typeof answers.vehicles_trim_key === 'string' ? answers.vehicles_trim_key : '';
 
-  $: catalogHit = findShowroomCatalogMatch(answers, showroomRows, comsccVehicleCatalog);
   $: hasNumericAssessment =
     catalogHit !== null &&
     typeof catalogHit.showroomAssessment === 'number' &&
     Number.isFinite(catalogHit.showroomAssessment);
-  // Logical component: green “catalog match” only when COMSCC seed row enriched the showroom lookup (not template-only).
-  $: isComsccEvaluatedMatch = catalogHit?.comsccEnriched === true && hasNumericAssessment;
-  $: isUnevaluatedNumericMatch = hasNumericAssessment && catalogHit?.comsccEnriched !== true;
+  // Logical component: green “catalog match” — composed lookup enrichment or COMSCC seed fallback.
+  $: isComsccEvaluatedMatch =
+    hasNumericAssessment &&
+    (catalogHit?.comsccEnriched === true || catalogHit?.showroomSource === 'comscc_seed');
+  $: isUnevaluatedNumericMatch =
+    hasNumericAssessment &&
+    catalogHit?.comsccEnriched !== true &&
+    catalogHit?.showroomSource !== 'comscc_seed';
   $: selectionComplete = isVehicleSelectionComplete(answers, comsccVehicleCatalog);
   $: showManualShowroom =
     (selectionComplete && !hasNumericAssessment) ||
@@ -232,6 +237,9 @@
         <p>
           <strong>COMSCC catalog match:</strong>
           {catalogHit.showroomAssessment?.toFixed(3)} showroom assessment pts (row {catalogHit.catalogId}).
+          {#if catalogHit.showroomSource === 'comscc_seed'}
+            <span class="catalog-seed-hint">(seed catalog — open-vehicle trim keys did not match)</span>
+          {/if}
           {#if catalogHit.baseClassification}
             <span class="base-class">Base class {catalogHit.baseClassification}</span>
           {/if}
@@ -351,6 +359,13 @@
     display: inline-block;
     margin-left: 0.35rem;
     font-weight: 600;
+  }
+  .catalog-seed-hint {
+    display: inline-block;
+    margin-left: 0.35rem;
+    font-weight: 400;
+    font-size: 0.85em;
+    color: #555;
   }
   .catalog-miss {
     margin: 0;

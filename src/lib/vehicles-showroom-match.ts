@@ -23,6 +23,8 @@ export type ShowroomLookupRow = {
   catalogId: string;
   /** True when a COMSCC seed row matched this open-db make/model/year (narrowest year span). */
   comsccEnriched?: boolean;
+  /** When set to `comscc_seed`, match came from seed-catalog fallback (lookup trim/style mismatch). */
+  showroomSource?: 'lookup' | 'comscc_seed';
 };
 
 export function normVehicleToken(s: string): string {

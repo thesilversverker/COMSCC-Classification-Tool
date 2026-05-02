@@ -7,7 +7,8 @@ import { dynoPointsAboveBaseFromSession } from '$lib/dyno-reclass-math';
 import { averageTireWidthMmFromAnswers } from '$lib/tire-width-points';
 import { touringTierFromModificationPoints } from '$lib/touring-tiers';
 import { computeWeightSheetPoints } from '$lib/weight-worksheet-points';
-import { findShowroomCatalogMatch, type ShowroomLookupRow } from '$lib/vehicles-showroom-match';
+import { resolveShowroomForSession, type ComsccCatalogDocument } from '$lib/comscc-seed-showroom';
+import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
 import type { RuleAnswersByQuestionId, RuleCategory, RuleQuestion } from '$types/rules';
 import {
   computeAllCategoryPoints,
@@ -20,6 +21,8 @@ import {
 } from '$lib/scoring';
 
 const SHOWROOM_LOOKUP_ROWS = (showroomLookup as { rows: ShowroomLookupRow[] }).rows;
+
+const COMSCC_CATALOG_DOC = comsccCatalogJson as ComsccCatalogDocument;
 
 const COMSCC_VEHICLE_CATALOG: ComsccCatalogSeedRow[] = Array.isArray(
   (comsccCatalogJson as { vehicleCatalog?: unknown }).vehicleCatalog
@@ -133,7 +136,7 @@ export function buildSessionSummaryPayload(
   const categoryPoints = computeAllCategoryPoints(categories, answers);
   const grand = sumCategoryPoints(categoryPoints);
   const finalClass = touringTierFromModificationPoints(grand);
-  const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_VEHICLE_CATALOG);
+  const match = resolveShowroomForSession(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_CATALOG_DOC, COMSCC_VEHICLE_CATALOG);
 
   const rows: SessionSummaryRow[] = [];
 

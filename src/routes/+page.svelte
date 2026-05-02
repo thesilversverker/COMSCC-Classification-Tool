@@ -4,6 +4,7 @@
   import showroomLookup from '$data/vehicle-showroom-lookup.json';
   import comsccCatalogJson from '../../rules-source/vehicles-comscc-catalog.json';
   import type { ComsccCatalogSeedRow } from '$lib/comscc-catalog-trims';
+  import { resolveShowroomForSession, type ComsccCatalogDocument } from '$lib/comscc-seed-showroom';
   import ClassificationBanner from '$components/ClassificationBanner.svelte';
   import QuestionRenderer from '$components/QuestionRenderer.svelte';
   import SessionSummary from '$components/SessionSummary.svelte';
@@ -12,7 +13,7 @@
   import { averageTireWidthMmFromAnswers, parseOptionalTireWidthMm } from '$lib/tire-width-points';
   import { buildSessionSummaryPayload, sessionSummaryToCsv } from '$lib/session-summary-rows';
   import { computeAllCategoryPoints } from '$lib/scoring';
-  import { findShowroomCatalogMatch, isVehicleSelectionComplete } from '$lib/vehicles-showroom-match';
+  import { isVehicleSelectionComplete } from '$lib/vehicles-showroom-match';
   import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
   import { sessionStore } from '$stores/session';
   import { navigationStore } from '$stores/navigation';
@@ -20,6 +21,7 @@
 
   // Logical component: COMSCC showroom rows + open-vehicle-db make/model tree for the Vehicles picker.
   const SHOWROOM_ROWS = (showroomLookup as { rows: ShowroomLookupRow[] }).rows;
+  const COMSCC_CATALOG_DOC = comsccCatalogJson as ComsccCatalogDocument;
   const COMSCC_VEHICLE_CATALOG: ComsccCatalogSeedRow[] = Array.isArray(
     (comsccCatalogJson as { vehicleCatalog?: unknown }).vehicleCatalog
   )
@@ -153,9 +155,10 @@
   $: summaryPayload = buildSessionSummaryPayload(rules.categories, $sessionStore.answers);
   $: currentCategoryTotal = category ? (categoryPointsById[category.id] ?? 0) : 0;
   $: subcategoryBlocks = category ? buildSubcategoryBlocks(category, $sessionStore.answers) : [];
-  $: vehicleCatalogMatch = findShowroomCatalogMatch(
+  $: vehicleCatalogMatch = resolveShowroomForSession(
     $sessionStore.answers,
     SHOWROOM_ROWS,
+    COMSCC_CATALOG_DOC,
     COMSCC_VEHICLE_CATALOG
   );
   $: vehicleSelectionComplete = isVehicleSelectionComplete($sessionStore.answers, COMSCC_VEHICLE_CATALOG);
@@ -306,7 +309,7 @@
           <VehiclesPicker
             openMakesModels={openVehicleData}
             comsccVehicleCatalog={COMSCC_VEHICLE_CATALOG}
-            showroomRows={SHOWROOM_ROWS}
+            catalogHit={vehicleCatalogMatch}
             answers={$sessionStore.answers}
             onAnswer={handleQuestionChange}
           />

@@ -5,10 +5,13 @@ import type { ComsccCatalogSeedRow } from '$lib/comscc-catalog-trims';
 import { dynoPointsAboveBaseFromSession } from '$lib/dyno-reclass-math';
 import { computeWeightSheetPoints } from '$lib/weight-worksheet-points';
 import { tireWidthLinePointsForGrandTotal } from '$lib/tire-width-points';
-import { findShowroomCatalogMatch, type ShowroomLookupRow } from '$lib/vehicles-showroom-match';
+import { resolveShowroomForSession, type ComsccCatalogDocument } from '$lib/comscc-seed-showroom';
+import type { ShowroomLookupRow } from '$lib/vehicles-showroom-match';
 import type { RuleAnswer, RuleAnswersByQuestionId, RuleCategory, RuleQuestion } from '$types/rules';
 
 const SHOWROOM_LOOKUP_ROWS = (showroomLookup as { rows: ShowroomLookupRow[] }).rows;
+
+const COMSCC_CATALOG_DOC = comsccCatalogJson as ComsccCatalogDocument;
 
 const COMSCC_VEHICLE_CATALOG: ComsccCatalogSeedRow[] = Array.isArray(
   (comsccCatalogJson as { vehicleCatalog?: unknown }).vehicleCatalog
@@ -138,7 +141,7 @@ export function sumPointsFromQuestions(
 
 // Logical component: Vehicles category points = COMSCC catalog Showroom Assessment when matched, else manual entry.
 function computeVehiclesCategoryPoints(answers: RuleAnswersByQuestionId): number {
-  const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_VEHICLE_CATALOG);
+  const match = resolveShowroomForSession(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_CATALOG_DOC, COMSCC_VEHICLE_CATALOG);
   if (match && typeof match.showroomAssessment === 'number' && Number.isFinite(match.showroomAssessment)) {
     return match.showroomAssessment;
   }
@@ -155,13 +158,13 @@ export function computeCategoryPoints(
   }
   // Logical component: Weight = worksheet INT((scaledW/P+perf−showroom)×100)/100 from competition lbs + any checkbox/select points.
   if (category.id === 'weight') {
-    const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_VEHICLE_CATALOG);
+    const match = resolveShowroomForSession(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_CATALOG_DOC, COMSCC_VEHICLE_CATALOG);
     const base = computeWeightSheetPoints(toNumeric(answers.weight_competition), match);
     return base + sumPointsFromQuestions(category.questions, answers);
   }
   if (category.id === 'engine') {
     if (engineDynoSupersedesModificationPoints(category.questions, answers)) {
-      const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_VEHICLE_CATALOG);
+      const match = resolveShowroomForSession(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_CATALOG_DOC, COMSCC_VEHICLE_CATALOG);
       const computed = dynoPointsAboveBaseFromSession({
         answers,
         showroomBaseWeightLbs: match?.showroomBaseWeightLbs ?? null,
