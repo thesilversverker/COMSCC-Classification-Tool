@@ -105,10 +105,11 @@ const engineCategoryFixture: RuleCategory = {
 };
 
 describe('computeCategoryPoints engine', () => {
+  // Logical component: pick a year still present after catalog-scoped open-vehicle compose (see vehicle-showroom-lookup.json).
   const vehicleForShowroomRow = {
     vehicles_make_label: 'ACURA',
-    vehicles_model_label: 'CL',
-    vehicles_year: '1987'
+    vehicles_model_label: 'INTEGRA',
+    vehicles_year: '2024'
   };
 
   it('uses only dyno assessment when Dyno Reclass is yes (checkbox mods excluded)', () => {

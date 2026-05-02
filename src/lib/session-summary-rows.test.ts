@@ -22,8 +22,8 @@ describe('session-summary-rows', () => {
   it('keeps vehicles showroom row points aligned with scoring', () => {
     const answers = {
       vehicles_make_label: 'ACURA',
-      vehicles_model_label: 'CL',
-      vehicles_year: '1987',
+      vehicles_model_label: 'INTEGRA',
+      vehicles_year: '2024',
       vehicles_trim_key: null,
       vehicles_trim_label: null
     };
@@ -48,8 +48,8 @@ describe('session-summary-rows', () => {
   it('matches grand total from computeAllCategoryPoints', () => {
     const answers = {
       vehicles_make_label: 'ACURA',
-      vehicles_model_label: 'CL',
-      vehicles_year: '1987'
+      vehicles_model_label: 'INTEGRA',
+      vehicles_year: '2024'
     };
     const pts = computeAllCategoryPoints(rules.categories, answers);
     const grand = Object.values(pts).reduce((a, b) => a + b, 0);

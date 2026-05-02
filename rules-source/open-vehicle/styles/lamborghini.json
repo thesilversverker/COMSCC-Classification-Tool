@@ -1,5 +1,4 @@
 {
-  "147": {},
   "Aventador": {
     "AVENTADOR LP700-4": {
       "years": [
@@ -44,53 +43,6 @@
       ]
     }
   },
-  "Diablo": {
-    "DIABLO COUPE": {
-      "years": [
-        1991,
-        1992,
-        1993,
-        1994,
-        1995
-      ]
-    },
-    "DIABLO COUPE SE": {
-      "years": [
-        1996
-      ]
-    },
-    "DIABLO COUPE VT AWD": {
-      "years": [
-        1996
-      ]
-    },
-    "DIABLO VT 2DR COUPE AWD": {
-      "years": [
-        1997,
-        1998
-      ]
-    },
-    "DIABLO VT 2DR ROADSTER AWD": {
-      "years": [
-        1997,
-        1998
-      ]
-    },
-    "DIABLO VT 2DR COUPE SV/VT AWD": {
-      "years": [
-        1999,
-        2000,
-        2001
-      ]
-    },
-    "DIABLO VT 2DR ROADSTER SV/VT AWD": {
-      "years": [
-        1999,
-        2000,
-        2001
-      ]
-    }
-  },
   "Gallardo": {
     "GALLARDO 2DR COUPE AWD": {
       "years": [
@@ -127,62 +79,6 @@
         2010,
         2011,
         2012
-      ]
-    }
-  },
-  "Huracan": {
-    "HURACAN LP 610-4 2DR COUPE AWD": {
-      "years": [
-        2015,
-        2016
-      ]
-    },
-    "HURACAN 2DR COUPE AWD": {
-      "years": [
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024
-      ]
-    },
-    "HURACAN 2DR COUPE RWD": {
-      "years": [
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024
-      ]
-    },
-    "HURACAN 2DR SPYDER AWD": {
-      "years": [
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024
-      ]
-    },
-    "HURACAN 2DR SPYDER RWD": {
-      "years": [
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024
       ]
     }
   },
@@ -236,28 +132,6 @@
       "years": [
         2010,
         2011
-      ]
-    }
-  },
-  "Revuelto": {
-    "REVUELTO COUPE": {
-      "years": [
-        2024,
-        2025
-      ]
-    }
-  },
-  "Roadster": {},
-  "URUS": {
-    "URUS 4DR SUV": {
-      "years": [
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024
       ]
     }
   }

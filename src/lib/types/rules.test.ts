@@ -52,7 +52,8 @@ describe('rules schema', () => {
     const cat = (vehiclesSource as { category: { id: string; vehicleCatalog?: unknown[] } }).category;
     expect(cat.id).toBe('vehicles');
     expect(Array.isArray(cat.vehicleCatalog)).toBe(true);
-    expect((cat.vehicleCatalog ?? []).length).toBeGreaterThan(5000);
+    // Row count follows catalog-scoped Layer 3 (flattened make/model/year/trim), not full-VPIC breadth.
+    expect((cat.vehicleCatalog ?? []).length).toBeGreaterThan(1000);
   });
 
   it('COMSCC catalog defines comsccTemplate with scalars (derived fields computed in JS)', () => {
