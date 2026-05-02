@@ -1,6 +1,21 @@
+import showroomLookup from '$data/vehicle-showroom-lookup.json';
+import comsccCatalogJson from '../../rules-source/vehicles-comscc-catalog.json';
+import type { ComsccCatalogSeedRow } from '$lib/comscc-catalog-trims';
 import { dynoPointsAboveBaseFromSession } from './dyno-reclass-math';
 import { computeCategoryPoints, sumCategoryPoints } from './scoring';
+import {
+  findShowroomCatalogMatch,
+  type ShowroomLookupRow
+} from './vehicles-showroom-match';
 import type { RuleCategory, RuleQuestion } from '$types/rules';
+
+// Logical component: mirror scoring.ts showroom lookup wiring so expectations track composed data.
+const SHOWROOM_LOOKUP_ROWS = (showroomLookup as { rows: ShowroomLookupRow[] }).rows;
+const COMSCC_VEHICLE_CATALOG: ComsccCatalogSeedRow[] = Array.isArray(
+  (comsccCatalogJson as { vehicleCatalog?: unknown }).vehicleCatalog
+)
+  ? (comsccCatalogJson as { vehicleCatalog: ComsccCatalogSeedRow[] }).vehicleCatalog
+  : [];
 
 describe('scoring', () => {
   it('sums category point map values', () => {
@@ -105,14 +120,16 @@ describe('computeCategoryPoints engine', () => {
       dyno_drivetrain_type: '2wd',
       fake_ecu: true
     };
-    // Logical component: same showroom row fields as ACURA CL 1987 in vehicle-showroom-lookup.json.
+    // Logical component: expected dyno total uses the same catalog row as computeCategoryPoints (scoring.ts).
+    const match = findShowroomCatalogMatch(answers, SHOWROOM_LOOKUP_ROWS, COMSCC_VEHICLE_CATALOG);
+    expect(match).not.toBeNull();
     const expected = dynoPointsAboveBaseFromSession({
       answers,
-      showroomBaseWeightLbs: 1500,
-      factoryRatedHp: 500,
-      factoryRatedTorqueLbFt: 500,
-      performanceAdjustment: 20,
-      showroomAssessment: 119.25
+      showroomBaseWeightLbs: match!.showroomBaseWeightLbs ?? null,
+      factoryRatedHp: match!.factoryRatedHp ?? null,
+      factoryRatedTorqueLbFt: match!.factoryRatedTorqueLbFt ?? null,
+      performanceAdjustment: match!.performanceAdjustment ?? null,
+      showroomAssessment: match!.showroomAssessment ?? null
     });
     expect(expected).not.toBeNull();
     expect(computeCategoryPoints(engineCategoryFixture, answers)).toBe(expected);

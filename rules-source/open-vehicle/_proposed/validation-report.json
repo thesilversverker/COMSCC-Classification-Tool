@@ -1,9 +1,953 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-05-01T22:57:56+00:00",
+  "generatedAt": "2026-05-02T00:37:25+00:00",
   "issues": {
-    "unmatchedCatalogMakes": [],
-    "unmatchedCatalogModels": [],
+    "unmatchedCatalogMakes": [
+      {
+        "severity": "warning",
+        "message": "unknown make after aliases (resolved='Pontiac')",
+        "make": "Pontiac",
+        "model": "Fiero"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown make after aliases (resolved='Pontiac')",
+        "make": "Pontiac",
+        "model": "Firebird"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown make after aliases (resolved='Pontiac')",
+        "make": "Pontiac",
+        "model": "Firebird"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown make after aliases (resolved='Pontiac')",
+        "make": "Pontiac",
+        "model": "Firebird"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown make after aliases (resolved='Pontiac')",
+        "make": "Pontiac",
+        "model": "GTO"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown make after aliases (resolved='Pontiac')",
+        "make": "Pontiac",
+        "model": "GTO"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown make after aliases (resolved='Pontiac')",
+        "make": "Pontiac",
+        "model": "Solstice"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown make after aliases (resolved='Pontiac')",
+        "make": "Pontiac",
+        "model": "Solstice"
+      }
+    ],
+    "unmatchedCatalogModels": [
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='acura' (resolved model='NSX')",
+        "make": "Acura",
+        "model": "NSX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='acura' (resolved model='NSX')",
+        "make": "Acura",
+        "model": "NSX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='acura' (resolved model='NSX')",
+        "make": "Acura",
+        "model": "NSX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='acura' (resolved model='NSX')",
+        "make": "Acura",
+        "model": "NSX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='acura' (resolved model='NSX')",
+        "make": "Acura",
+        "model": "NSX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='acura' (resolved model='RSX')",
+        "make": "Acura",
+        "model": "RSX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='audi' (resolved model='Coupe')",
+        "make": "Audi",
+        "model": "Coupe"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='audi' (resolved model='R8')",
+        "make": "Audi",
+        "model": "R8"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='audi' (resolved model='R8')",
+        "make": "Audi",
+        "model": "R8"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='audi' (resolved model='TT RS')",
+        "make": "Audi",
+        "model": "TT RS"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='audi' (resolved model='TTS')",
+        "make": "Audi",
+        "model": "TTS"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='128i')",
+        "make": "BMW",
+        "model": "128i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='135i')",
+        "make": "BMW",
+        "model": "135i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='318i')",
+        "make": "BMW",
+        "model": "318i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='318iS')",
+        "make": "BMW",
+        "model": "318iS"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='318ti')",
+        "make": "BMW",
+        "model": "318ti"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='318ti')",
+        "make": "BMW",
+        "model": "318ti"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='320i')",
+        "make": "BMW",
+        "model": "320i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='325i')",
+        "make": "BMW",
+        "model": "325i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='325i')",
+        "make": "BMW",
+        "model": "325i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='325i')",
+        "make": "BMW",
+        "model": "325i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='325iS')",
+        "make": "BMW",
+        "model": "325iS"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='328iS')",
+        "make": "BMW",
+        "model": "328iS"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='328xi')",
+        "make": "BMW",
+        "model": "328xi"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='330Ci')",
+        "make": "BMW",
+        "model": "330Ci"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='330Ci')",
+        "make": "BMW",
+        "model": "330Ci"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='335d')",
+        "make": "BMW",
+        "model": "335d"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='335i')",
+        "make": "BMW",
+        "model": "335i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='335i')",
+        "make": "BMW",
+        "model": "335i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='335xi')",
+        "make": "BMW",
+        "model": "335xi"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='528i')",
+        "make": "BMW",
+        "model": "528i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='535i')",
+        "make": "BMW",
+        "model": "535i"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='M6')",
+        "make": "BMW",
+        "model": "M6"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='M6')",
+        "make": "BMW",
+        "model": "M6"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='M6')",
+        "make": "BMW",
+        "model": "M6"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='Z3')",
+        "make": "BMW",
+        "model": "Z3"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='Z3')",
+        "make": "BMW",
+        "model": "Z3"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='Z3')",
+        "make": "BMW",
+        "model": "Z3"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bmw' (resolved model='Z8')",
+        "make": "BMW",
+        "model": "Z8"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='bugatti' (resolved model='Veyron')",
+        "make": "Bugatti",
+        "model": "Veyron"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='dodge' (resolved model='Neon')",
+        "make": "Dodge",
+        "model": "Neon"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='dodge' (resolved model='Neon')",
+        "make": "Dodge",
+        "model": "Neon"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='dodge' (resolved model='Neon')",
+        "make": "Dodge",
+        "model": "Neon"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='dodge' (resolved model='Neon')",
+        "make": "Dodge",
+        "model": "Neon"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='dodge' (resolved model='Shelby Charger')",
+        "make": "Dodge",
+        "model": "Shelby Charger"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='dodge' (resolved model='Viper')",
+        "make": "Dodge",
+        "model": "Viper"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='dodge' (resolved model='Viper')",
+        "make": "Dodge",
+        "model": "Viper"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='dodge' (resolved model='Viper')",
+        "make": "Dodge",
+        "model": "Viper"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='dodge' (resolved model='Viper')",
+        "make": "Dodge",
+        "model": "Viper"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='dodge' (resolved model='Viper')",
+        "make": "Dodge",
+        "model": "Viper"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='ferrari' (resolved model='328')",
+        "make": "Ferrari",
+        "model": "328"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='ferrari' (resolved model='Enzo')",
+        "make": "Ferrari",
+        "model": "Enzo"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='ferrari' (resolved model='F355')",
+        "make": "Ferrari",
+        "model": "F355"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='ferrari' (resolved model='F40')",
+        "make": "Ferrari",
+        "model": "F40"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='ferrari' (resolved model='F430')",
+        "make": "Ferrari",
+        "model": "F430"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='fiat' (resolved model='500')",
+        "make": "Fiat",
+        "model": "500"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='ford' (resolved model='Escort')",
+        "make": "Ford",
+        "model": "Escort"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='ford' (resolved model='GT')",
+        "make": "Ford",
+        "model": "GT"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='honda' (resolved model='S2000')",
+        "make": "Honda",
+        "model": "S2000"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='honda' (resolved model='S2000')",
+        "make": "Honda",
+        "model": "S2000"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='honda' (resolved model='S2000')",
+        "make": "Honda",
+        "model": "S2000"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='hyundai' (resolved model='Genesis Coupe')",
+        "make": "Hyundai",
+        "model": "Genesis Coupe"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='hyundai' (resolved model='Genesis Coupe')",
+        "make": "Hyundai",
+        "model": "Genesis Coupe"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='hyundai' (resolved model='Genesis Coupe')",
+        "make": "Hyundai",
+        "model": "Genesis Coupe"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='hyundai' (resolved model='Genesis Coupe')",
+        "make": "Hyundai",
+        "model": "Genesis Coupe"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='hyundai' (resolved model='Genesis Coupe')",
+        "make": "Hyundai",
+        "model": "Genesis Coupe"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='hyundai' (resolved model='Veloster N')",
+        "make": "Hyundai",
+        "model": "Veloster N"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='hyundai' (resolved model='Veloster N')",
+        "make": "Hyundai",
+        "model": "Veloster N"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='infiniti' (resolved model='G35')",
+        "make": "Infiniti",
+        "model": "G35"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='lamborghini' (resolved model='Aventador')",
+        "make": "Lamborghini",
+        "model": "Aventador"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='lamborghini' (resolved model='Gallardo')",
+        "make": "Lamborghini",
+        "model": "Gallardo"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='lamborghini' (resolved model='Murcielago')",
+        "make": "Lamborghini",
+        "model": "Murcielago"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='lexus' (resolved model='LFA')",
+        "make": "Lexus",
+        "model": "LFA"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='lotus' (resolved model='Elise')",
+        "make": "Lotus",
+        "model": "Elise"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='lotus' (resolved model='Esprit')",
+        "make": "Lotus",
+        "model": "Esprit"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mazda' (resolved model='RX-7')",
+        "make": "Mazda",
+        "model": "RX-7"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mazda' (resolved model='RX-7')",
+        "make": "Mazda",
+        "model": "RX-7"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mazda' (resolved model='RX-7')",
+        "make": "Mazda",
+        "model": "RX-7"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mazda' (resolved model='RX-7')",
+        "make": "Mazda",
+        "model": "RX-7"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mazda' (resolved model='RX-8')",
+        "make": "Mazda",
+        "model": "RX-8"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mazda' (resolved model='RX-8')",
+        "make": "Mazda",
+        "model": "RX-8"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mini' (resolved model='Cooper')",
+        "make": "MINI",
+        "model": "Cooper"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mini' (resolved model='Cooper')",
+        "make": "MINI",
+        "model": "Cooper"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mini' (resolved model='Cooper')",
+        "make": "MINI",
+        "model": "Cooper"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mini' (resolved model='Cooper')",
+        "make": "MINI",
+        "model": "Cooper"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mini' (resolved model='Cooper')",
+        "make": "Mini",
+        "model": "Cooper"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Eclipse')",
+        "make": "Mitsubishi",
+        "model": "Eclipse"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Eclipse')",
+        "make": "Mitsubishi",
+        "model": "Eclipse"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Eclipse')",
+        "make": "Mitsubishi",
+        "model": "Eclipse"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Eclipse')",
+        "make": "Mitsubishi",
+        "model": "Eclipse"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Galant')",
+        "make": "Mitsubishi",
+        "model": "Galant"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Galant')",
+        "make": "Mitsubishi",
+        "model": "Galant"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Lancer')",
+        "make": "Mitsubishi",
+        "model": "Lancer"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Lancer')",
+        "make": "Mitsubishi",
+        "model": "Lancer"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Lancer')",
+        "make": "Mitsubishi",
+        "model": "Lancer"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Lancer')",
+        "make": "Mitsubishi",
+        "model": "Lancer"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='mitsubishi' (resolved model='Lancer')",
+        "make": "Mitsubishi",
+        "model": "Lancer"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='200SX')",
+        "make": "Nissan",
+        "model": "200SX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='200SX')",
+        "make": "Nissan",
+        "model": "200SX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='200SX')",
+        "make": "Nissan",
+        "model": "200SX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='200SX')",
+        "make": "Nissan",
+        "model": "200SX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='200SX')",
+        "make": "Nissan",
+        "model": "200SX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='200SX')",
+        "make": "Nissan",
+        "model": "200SX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='240SX')",
+        "make": "Nissan",
+        "model": "240SX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='240SX')",
+        "make": "Nissan",
+        "model": "240SX"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='350Z')",
+        "make": "Nissan",
+        "model": "350Z"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='350Z')",
+        "make": "Nissan",
+        "model": "350Z"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='350Z')",
+        "make": "Nissan",
+        "model": "350Z"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='370Z')",
+        "make": "Nissan",
+        "model": "370Z"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='370Z')",
+        "make": "Nissan",
+        "model": "370Z"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='nissan' (resolved model='Juke')",
+        "make": "Nissan",
+        "model": "Juke"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='944')",
+        "make": "Porsche",
+        "model": "944"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='924')",
+        "make": "Porsche",
+        "model": "924"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='928')",
+        "make": "Porsche",
+        "model": "928"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='928')",
+        "make": "Porsche",
+        "model": "928"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='944')",
+        "make": "Porsche",
+        "model": "944"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='944')",
+        "make": "Porsche",
+        "model": "944"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='944')",
+        "make": "Porsche",
+        "model": "944"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Boxster')",
+        "make": "Porsche",
+        "model": "Boxster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Cayman')",
+        "make": "Porsche",
+        "model": "Cayman"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Cayman')",
+        "make": "Porsche",
+        "model": "Cayman"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Cayman')",
+        "make": "Porsche",
+        "model": "Cayman"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Cayman')",
+        "make": "Porsche",
+        "model": "Cayman"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Cayman')",
+        "make": "Porsche",
+        "model": "Cayman"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Cayman')",
+        "make": "Porsche",
+        "model": "Cayman"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Cayman')",
+        "make": "Porsche",
+        "model": "Cayman"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='porsche' (resolved model='Cayman')",
+        "make": "Porsche",
+        "model": "Cayman"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='saab' (resolved model='900')",
+        "make": "Saab",
+        "model": "900"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='saab' (resolved model='9000')",
+        "make": "Saab",
+        "model": "9000"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='tesla' (resolved model='Roadster')",
+        "make": "Tesla",
+        "model": "Roadster"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='toyota' (resolved model='86')",
+        "make": "Toyota",
+        "model": "86"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='toyota' (resolved model='86')",
+        "make": "Toyota",
+        "model": "86"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='toyota' (resolved model='86')",
+        "make": "Toyota",
+        "model": "86"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='toyota' (resolved model='MR2')",
+        "make": "Toyota",
+        "model": "MR2"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='toyota' (resolved model='MR2')",
+        "make": "Toyota",
+        "model": "MR2"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='toyota' (resolved model='MR2')",
+        "make": "Toyota",
+        "model": "MR2"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='toyota' (resolved model='MR2')",
+        "make": "Toyota",
+        "model": "MR2"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='toyota' (resolved model='MR2')",
+        "make": "Toyota",
+        "model": "MR2"
+      },
+      {
+        "severity": "warning",
+        "message": "unknown model for make_slug='triumph' (resolved model='TR7')",
+        "make": "Triumph",
+        "model": "TR7"
+      }
+    ],
     "emptyDetailTuples": [],
     "ambiguousMatches": [],
     "staleAliases": [
@@ -21,6 +965,16 @@
         "severity": "warning",
         "message": "aliases.makes['Austin Healy'] canonical 'Austin Healey' does not match any baseline make_name",
         "make": "Austin Healey"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.makes['Mercedes-Benz Benz'] canonical 'Mercedes-Benz' does not match any baseline make_name",
+        "make": "Mercedes-Benz"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.makes['Mercedes-Benz-Benz'] canonical 'Mercedes-Benz' does not match any baseline make_name",
+        "make": "Mercedes-Benz"
       },
       {
         "severity": "warning",
@@ -66,13 +1020,13 @@
       },
       {
         "severity": "warning",
-        "message": "aliases.models['Datsun|240Z'] target model '240Z' not found under make_slug='datsun'",
+        "message": "aliases.models['Datsun|240Z'] target make 'Datsun' not found in baseline",
         "make": "Datsun",
         "model": "240Z"
       },
       {
         "severity": "warning",
-        "message": "aliases.models['Datsun|280Z'] target model '280Z' not found under make_slug='datsun'",
+        "message": "aliases.models['Datsun|280Z'] target make 'Datsun' not found in baseline",
         "make": "Datsun",
         "model": "280Z"
       },
@@ -90,7 +1044,19 @@
       },
       {
         "severity": "warning",
-        "message": "aliases.models['Jaguar|XKR-S'] target model 'XKR' not found under make_slug='jaguar'",
+        "message": "aliases.models['Jaguar|F Type S Coupe'] target make 'Jaguar' not found in baseline",
+        "make": "Jaguar",
+        "model": "F-TYPE"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Jaguar|X Type sportwagon'] target make 'Jaguar' not found in baseline",
+        "make": "Jaguar",
+        "model": "X-TYPE"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Jaguar|XKR-S'] target make 'Jaguar' not found in baseline",
         "make": "Jaguar",
         "model": "XKR"
       },
@@ -102,15 +1068,51 @@
       },
       {
         "severity": "warning",
+        "message": "aliases.models['Mazda|RX7'] target model 'RX-7' not found under make_slug='mazda'",
+        "make": "Mazda",
+        "model": "RX-7"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Mazda|RX8'] target model 'RX-8' not found under make_slug='mazda'",
+        "make": "Mazda",
+        "model": "RX-8"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Mazda|Mazdaspeed6'] target model 'MAZDA6' not found under make_slug='mazda'",
+        "make": "Mazda",
+        "model": "MAZDA6"
+      },
+      {
+        "severity": "warning",
         "message": "aliases.models['Mazda|MazdaSpeed MX5'] target model 'MX-5 MIATA' not found under make_slug='mazda'",
         "make": "Mazda",
         "model": "MX-5 MIATA"
       },
       {
         "severity": "warning",
-        "message": "aliases.models['Mercedes-Benz|CLA45S AMG'] target model 'CLA' not found under make_slug='mercedes_benz'",
+        "message": "aliases.models['Mercedes-Benz|CLA45S AMG'] target make 'Mercedes-Benz' not found in baseline",
         "make": "Mercedes-Benz",
         "model": "CLA"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Mercedes-Benz|GTR Pro'] target make 'Mercedes-Benz' not found in baseline",
+        "make": "Mercedes-Benz",
+        "model": "AMG GT"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Mitsubishi|Lander Evo X'] target model 'LANCER' not found under make_slug='mitsubishi'",
+        "make": "Mitsubishi",
+        "model": "LANCER"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Mini|JCW GP'] target model 'COOPER' not found under make_slug='mini'",
+        "make": "Mini",
+        "model": "COOPER"
       },
       {
         "severity": "warning",
@@ -147,14 +1149,25 @@
         "message": "aliases.models['Toyota|Matrix XRS'] target model 'MATRIX' not found under make_slug='toyota'",
         "make": "Toyota",
         "model": "MATRIX"
+      },
+      {
+        "severity": "warning",
+        "message": "aliases.models['Volvo|V70R'] target model 'V70' not found under make_slug='volvo'",
+        "make": "Volvo",
+        "model": "V70"
       }
     ],
-    "baselineShrinkViolations": []
+    "baselineShrinkViolations": [
+      {
+        "severity": "info",
+        "message": "compare-baseline numeric check skipped: aggregationSource is not 'projected'. Reseed with seed_baseline_counts.py --from-proposed, or use --compare-baseline-unsafe."
+      }
+    ]
   },
   "counts": {
     "acura": {
-      "models": 3,
-      "styles": 27
+      "models": 1,
+      "styles": 0
     },
     "alfa_romeo": {
       "models": 1,
@@ -162,111 +1175,63 @@
     },
     "aston_martin": {
       "models": 2,
-      "styles": 14
+      "styles": 6
     },
     "audi": {
-      "models": 7,
-      "styles": 87
+      "models": 3,
+      "styles": 61
     },
     "bmw": {
-      "models": 30,
-      "styles": 154
-    },
-    "bugatti": {
-      "models": 1,
-      "styles": 0
+      "models": 11,
+      "styles": 36
     },
     "chevrolet": {
       "models": 3,
-      "styles": 94
+      "styles": 26
     },
     "dodge": {
-      "models": 4,
-      "styles": 33
-    },
-    "ferrari": {
-      "models": 5,
-      "styles": 11
-    },
-    "fiat": {
       "models": 1,
-      "styles": 9
+      "styles": 0
     },
     "ford": {
-      "models": 5,
-      "styles": 140
+      "models": 3,
+      "styles": 0
     },
     "honda": {
-      "models": 5,
-      "styles": 185
-    },
-    "hyundai": {
-      "models": 2,
-      "styles": 1
-    },
-    "infiniti": {
-      "models": 1,
-      "styles": 5
-    },
-    "lamborghini": {
-      "models": 3,
-      "styles": 16
-    },
-    "lexus": {
-      "models": 1,
-      "styles": 1
-    },
-    "lotus": {
-      "models": 2,
-      "styles": 7
+      "models": 4,
+      "styles": 0
     },
     "mazda": {
-      "models": 3,
-      "styles": 30
-    },
-    "mini": {
       "models": 1,
-      "styles": 37
-    },
-    "mitsubishi": {
-      "models": 3,
-      "styles": 45
+      "styles": 10
     },
     "nissan": {
-      "models": 7,
-      "styles": 87
-    },
-    "pontiac": {
-      "models": 4,
-      "styles": 40
+      "models": 2,
+      "styles": 3
     },
     "porsche": {
-      "models": 9,
-      "styles": 223
+      "models": 4,
+      "styles": 109
     },
     "saab": {
-      "models": 4,
-      "styles": 94
+      "models": 2,
+      "styles": 42
     },
     "smart": {
       "models": 1,
-      "styles": 9
+      "styles": 0
     },
     "subaru": {
       "models": 4,
-      "styles": 134
+      "styles": 2
     },
     "tesla": {
-      "models": 2,
-      "styles": 6
+      "models": 1,
+      "styles": 0
     },
     "toyota": {
-      "models": 5,
-      "styles": 107
-    },
-    "triumph": {
-      "models": 1,
-      "styles": 1
+      "models": 3,
+      "styles": 0
     },
     "volvo": {
       "models": 1,
