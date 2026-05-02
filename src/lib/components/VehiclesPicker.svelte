@@ -147,6 +147,9 @@
     catalogHit !== null &&
     typeof catalogHit.showroomAssessment === 'number' &&
     Number.isFinite(catalogHit.showroomAssessment);
+  // Logical component: green “catalog match” only when COMSCC seed row enriched the showroom lookup (not template-only).
+  $: isComsccEvaluatedMatch = catalogHit?.comsccEnriched === true && hasNumericAssessment;
+  $: isUnevaluatedNumericMatch = hasNumericAssessment && catalogHit?.comsccEnriched !== true;
   $: selectionComplete = isVehicleSelectionComplete(answers, comsccVehicleCatalog);
   $: showManualShowroom =
     (selectionComplete && !hasNumericAssessment) ||
@@ -220,14 +223,24 @@
   </div>
 
   {#if catalogHit}
-    <div class="catalog-status" class:has-points={hasNumericAssessment}>
-      {#if hasNumericAssessment}
+    <div
+      class="catalog-status"
+      class:has-points={isComsccEvaluatedMatch}
+      class:unevaluated-numeric={isUnevaluatedNumericMatch}
+    >
+      {#if isComsccEvaluatedMatch}
         <p>
           <strong>COMSCC catalog match:</strong>
           {catalogHit.showroomAssessment?.toFixed(3)} showroom assessment pts (row {catalogHit.catalogId}).
           {#if catalogHit.baseClassification}
             <span class="base-class">Base class {catalogHit.baseClassification}</span>
           {/if}
+        </p>
+      {:else if isUnevaluatedNumericMatch}
+        <p>
+          <strong>Unevaluated vehicle.</strong>
+          This selection is not in the COMSCC workbook seed — showroom numbers may be template defaults (row
+          {catalogHit.catalogId}). Use manual Showroom Assessment below if needed.
         </p>
       {:else}
         <p>
@@ -325,6 +338,11 @@
   .catalog-status.has-points {
     background: #eef6ee;
     border-color: #c5dcc5;
+  }
+  .catalog-status.unevaluated-numeric {
+    background: #fdeaea;
+    border-color: #e0a8a8;
+    color: #5c2020;
   }
   .catalog-status p {
     margin: 0;

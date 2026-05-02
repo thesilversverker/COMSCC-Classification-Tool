@@ -32,7 +32,20 @@ describe('session-summary-rows', () => {
     const expected = computeCategoryPoints(vehiclesCat, answers, rules.categories);
     const vehiclesRow = payload.rows.find((r) => r.categoryId === 'vehicles');
     expect(vehiclesRow?.points).toBeCloseTo(expected, 5);
-    expect(vehiclesRow?.label).toContain('catalog');
+    expect(vehiclesRow?.label).toContain('unevaluated vehicle');
+  });
+
+  it('labels COMSCC-enriched showroom row as catalog match', () => {
+    const answers = {
+      vehicles_make_label: 'ACURA',
+      vehicles_model_label: 'INTEGRA',
+      vehicles_year: '1993',
+      vehicles_trim_key: null,
+      vehicles_trim_label: null
+    };
+    const payload = buildSessionSummaryPayload(rules.categories, answers);
+    const vehiclesRow = payload.rows.find((r) => r.categoryId === 'vehicles');
+    expect(vehiclesRow?.label).toContain('catalog match');
   });
 
   it('includes CSV header fields and final class', () => {

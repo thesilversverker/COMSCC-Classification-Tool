@@ -140,11 +140,23 @@ export function buildSessionSummaryPayload(
   // Logical component: Vehicles — single showroom assessment line (same total as scoring).
   const vehiclesCat = categories.find((c) => c.id === 'vehicles');
   const vehiclesPts = categoryPoints.vehicles ?? 0;
-  if (match && typeof match.showroomAssessment === 'number' && Number.isFinite(match.showroomAssessment)) {
+  const hasNumericShowroom =
+    match &&
+    typeof match.showroomAssessment === 'number' &&
+    Number.isFinite(match.showroomAssessment);
+  if (hasNumericShowroom && match.comsccEnriched === true) {
     rows.push({
       categoryId: 'vehicles',
       categoryLabel: vehiclesCat?.label ?? 'Vehicles',
       label: 'Showroom assessment (catalog match)',
+      detail: match.catalogId ? `Catalog id: ${match.catalogId}` : undefined,
+      points: vehiclesPts
+    });
+  } else if (hasNumericShowroom) {
+    rows.push({
+      categoryId: 'vehicles',
+      categoryLabel: vehiclesCat?.label ?? 'Vehicles',
+      label: 'Showroom assessment (unevaluated vehicle)',
       detail: match.catalogId ? `Catalog id: ${match.catalogId}` : undefined,
       points: vehiclesPts
     });
