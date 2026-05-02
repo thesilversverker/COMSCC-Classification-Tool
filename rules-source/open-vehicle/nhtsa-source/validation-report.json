@@ -1,0 +1,1647 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-05-02T00:09:01+00:00",
+  "issues": {
+    "unmatchedCatalogMakes": [],
+    "unmatchedCatalogModels": [],
+    "emptyDetailTuples": [],
+    "ambiguousMatches": [],
+    "staleAliases": [
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Honda",
+        "model": "Civic Si",
+        "units": "Metric",
+        "year": 2010
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "Enzo",
+        "units": "Metric",
+        "year": 2002
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S4",
+        "units": "Metric",
+        "year": 1991
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "F40",
+        "units": "Metric",
+        "year": 1992
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M6",
+        "units": "Metric",
+        "year": 1985
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S6",
+        "units": "Metric",
+        "year": 2002
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 1999
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M3",
+        "units": "Metric",
+        "year": 1995
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "F40",
+        "units": "Metric",
+        "year": 1991
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "335d",
+        "units": "Metric",
+        "year": 2009
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M6",
+        "units": "Metric",
+        "year": 1986
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 1992
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "Enzo",
+        "units": "Metric",
+        "year": 2004
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "530i",
+        "units": "Metric",
+        "year": 2000
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Honda",
+        "model": "Civic Si",
+        "units": "Metric",
+        "year": 2012
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Lancer",
+        "units": "Metric",
+        "year": 1993
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "240SX",
+        "units": "Metric",
+        "year": 1999
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "325iS",
+        "units": "Metric",
+        "year": 1992
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Lancer",
+        "units": "Metric",
+        "year": 1992
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "F40",
+        "units": "Metric",
+        "year": 1987
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 1995
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Tesla",
+        "model": "Roadster",
+        "units": "Metric",
+        "year": 2012
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "240SX",
+        "units": "Metric",
+        "year": 1991
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 2004
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Tesla",
+        "model": "Roadster",
+        "units": "Metric",
+        "year": 2010
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "135i",
+        "units": "Metric",
+        "year": 2005
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M5",
+        "units": "Metric",
+        "year": 1987
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "F430",
+        "units": "Metric",
+        "year": 2004
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M5",
+        "units": "Metric",
+        "year": 1989
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Aston Martin",
+        "model": "DBS",
+        "units": "Metric",
+        "year": 2007
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 2002
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Hyundai",
+        "model": "Genesis Coupe",
+        "units": "Metric",
+        "year": 2015
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "335d",
+        "units": "Metric",
+        "year": 2008
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Eclipse",
+        "units": "Metric",
+        "year": 1997
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 1994
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Bugatti",
+        "model": "Veyron",
+        "units": "Metric",
+        "year": 2008
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Eclipse",
+        "units": "Metric",
+        "year": 1998
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M6",
+        "units": "Metric",
+        "year": 2005
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Dodge",
+        "model": "Neon",
+        "units": "Metric",
+        "year": 2002
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "Z8",
+        "units": "Metric",
+        "year": 1999
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 2007
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "135i",
+        "units": "Metric",
+        "year": 2007
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S6",
+        "units": "Metric",
+        "year": 2000
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 1996
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "318ti",
+        "units": "Metric",
+        "year": 1991
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "F40",
+        "units": "Metric",
+        "year": 1989
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Honda",
+        "model": "Civic Si",
+        "units": "Metric",
+        "year": 2011
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 2002
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 1998
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 2001
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "528i",
+        "units": "Metric",
+        "year": 1995
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Dodge",
+        "model": "Neon",
+        "units": "Metric",
+        "year": 2004
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S4",
+        "units": "Metric",
+        "year": 1992
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 1996
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "240SX",
+        "units": "Metric",
+        "year": 1994
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Bugatti",
+        "model": "Veyron",
+        "units": "Metric",
+        "year": 2006
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S6",
+        "units": "Metric",
+        "year": 2006
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "MINI",
+        "model": "Cooper",
+        "units": "Metric",
+        "year": 2001
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Dodge",
+        "model": "Shelby Charger",
+        "units": "Metric",
+        "year": 1987
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Hyundai",
+        "model": "Genesis Coupe",
+        "units": "Metric",
+        "year": 2012
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Tesla",
+        "model": "Roadster",
+        "units": "Metric",
+        "year": 2009
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "328",
+        "units": "Metric",
+        "year": 1988
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M5",
+        "units": "Metric",
+        "year": 2011
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 1994
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 2005
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Hyundai",
+        "model": "Genesis Coupe",
+        "units": "Metric",
+        "year": 2013
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Bugatti",
+        "model": "Veyron",
+        "units": "Metric",
+        "year": 2009
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "335xi",
+        "units": "Metric",
+        "year": 2008
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 2006
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Hyundai",
+        "model": "Genesis Coupe",
+        "units": "Metric",
+        "year": 2014
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Eclipse",
+        "units": "Metric",
+        "year": 2001
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Bugatti",
+        "model": "Veyron",
+        "units": "Metric",
+        "year": 2005
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Alfa Romeo",
+        "model": "Giulia (952)",
+        "units": "Metric",
+        "year": 2018
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Eclipse",
+        "units": "Metric",
+        "year": 1999
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Honda",
+        "model": "Civic Si",
+        "units": "Metric",
+        "year": 2006
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M5",
+        "units": "Metric",
+        "year": 1985
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Lotus",
+        "model": "Elise",
+        "units": "Metric",
+        "year": 2005
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Alfa Romeo",
+        "model": "Giulia (952)",
+        "units": "Metric",
+        "year": 2017
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "135i",
+        "units": "Metric",
+        "year": 2004
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S6",
+        "units": "Metric",
+        "year": 1999
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "328xi",
+        "units": "Metric",
+        "year": 2010
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Lancer",
+        "units": "Metric",
+        "year": 2001
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Pontiac",
+        "model": "GTO",
+        "units": "Metric",
+        "year": 2004
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "328",
+        "units": "Metric",
+        "year": 1986
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 1995
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "R8",
+        "units": "Metric",
+        "year": 2006
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Acura",
+        "model": "NSX",
+        "units": "Metric",
+        "year": 2002
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Eclipse",
+        "units": "Metric",
+        "year": 2000
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "328",
+        "units": "Metric",
+        "year": 1985
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S4",
+        "units": "Metric",
+        "year": 1999
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S4",
+        "units": "Metric",
+        "year": 1998
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mazda",
+        "model": "RX-8",
+        "units": "Metric",
+        "year": 2003
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 1997
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Bugatti",
+        "model": "Veyron",
+        "units": "Metric",
+        "year": 2007
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "328",
+        "units": "Metric",
+        "year": 1989
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "240SX",
+        "units": "Metric",
+        "year": 1996
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Eclipse",
+        "units": "Metric",
+        "year": 1996
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "325iS",
+        "units": "Metric",
+        "year": 1994
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Honda",
+        "model": "Civic Si",
+        "units": "Metric",
+        "year": 2008
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Dodge",
+        "model": "Neon",
+        "units": "Metric",
+        "year": 2000
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Fiat",
+        "model": "500",
+        "units": "Metric",
+        "year": 2008
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "F40",
+        "units": "Metric",
+        "year": 1988
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Dodge",
+        "model": "Neon",
+        "units": "Metric",
+        "year": 2005
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 2000
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "Z8",
+        "units": "Metric",
+        "year": 2000
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 1999
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "Sentra",
+        "units": "Metric",
+        "year": 2000
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M6",
+        "units": "Metric",
+        "year": 2012
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "535i",
+        "units": "Metric",
+        "year": 1985
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "325iS",
+        "units": "Metric",
+        "year": 1995
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 2003
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "325i",
+        "units": "Metric",
+        "year": 1987
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Lancer",
+        "units": "Metric",
+        "year": 1994
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "318ti",
+        "units": "Metric",
+        "year": 1993
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Hyundai",
+        "model": "Genesis Coupe",
+        "units": "Metric",
+        "year": 2016
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "535i",
+        "units": "Metric",
+        "year": 1988
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M5",
+        "units": "Metric",
+        "year": 1994
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "535i",
+        "units": "Metric",
+        "year": 1986
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "F430",
+        "units": "Metric",
+        "year": 2005
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Eclipse",
+        "units": "Metric",
+        "year": 1995
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Pontiac",
+        "model": "GTO",
+        "units": "Metric",
+        "year": 2006
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Honda",
+        "model": "Civic Si",
+        "units": "Metric",
+        "year": 2007
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Dodge",
+        "model": "Neon",
+        "units": "Metric",
+        "year": 2003
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "535i",
+        "units": "Metric",
+        "year": 1987
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "240SX",
+        "units": "Metric",
+        "year": 1989
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Pontiac",
+        "model": "GTO",
+        "units": "Metric",
+        "year": 2005
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "325iS",
+        "units": "Metric",
+        "year": 1993
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Lotus",
+        "model": "Esprit",
+        "units": "Metric",
+        "year": 1996
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "GT-R",
+        "units": "Metric",
+        "year": 2007
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Honda",
+        "model": "S2000",
+        "units": "Metric",
+        "year": 1999
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Dodge",
+        "model": "Viper",
+        "units": "Metric",
+        "year": 1992
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Hyundai",
+        "model": "Genesis Coupe",
+        "units": "Metric",
+        "year": 2011
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "318ti",
+        "units": "Metric",
+        "year": 1994
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Dodge",
+        "model": "Viper",
+        "units": "Metric",
+        "year": 2013
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "318ti",
+        "units": "Metric",
+        "year": 2000
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Tesla",
+        "model": "Roadster",
+        "units": "Metric",
+        "year": 2011
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "F40",
+        "units": "Metric",
+        "year": 1990
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "F355",
+        "units": "Metric",
+        "year": 1994
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 1990
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Pontiac",
+        "model": "Solstice",
+        "units": "Metric",
+        "year": 2010
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "135i",
+        "units": "Metric",
+        "year": 2006
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 1993
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "240SX",
+        "units": "Metric",
+        "year": 1995
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "335i",
+        "units": "Metric",
+        "year": 2006
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S6",
+        "units": "Metric",
+        "year": 2001
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Bugatti",
+        "model": "Veyron",
+        "units": "Metric",
+        "year": 2011
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S4",
+        "units": "Metric",
+        "year": 2003
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Dodge",
+        "model": "Neon",
+        "units": "Metric",
+        "year": 2001
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Honda",
+        "model": "Civic Si",
+        "units": "Metric",
+        "year": 2009
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "240SX",
+        "units": "Metric",
+        "year": 1990
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "240SX",
+        "units": "Metric",
+        "year": 1993
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "328",
+        "units": "Metric",
+        "year": 1987
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M5",
+        "units": "Metric",
+        "year": 1998
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Bugatti",
+        "model": "Veyron",
+        "units": "Metric",
+        "year": 2010
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Nissan",
+        "model": "240SX",
+        "units": "Metric",
+        "year": 1992
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 1998
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Toyota",
+        "model": "MR2",
+        "units": "Metric",
+        "year": 2000
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 2001
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Tesla",
+        "model": "Roadster",
+        "units": "Metric",
+        "year": 2008
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Hyundai",
+        "model": "Genesis Coupe",
+        "units": "Metric",
+        "year": 2010
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Lamborghini",
+        "model": "Aventador",
+        "units": "Metric",
+        "year": 2011
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Honda",
+        "model": "Civic Type R",
+        "units": "Metric",
+        "year": 2017
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Ferrari",
+        "model": "328",
+        "units": "Metric",
+        "year": 1990
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "M5",
+        "units": "Metric",
+        "year": 1986
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "BMW",
+        "model": "335d",
+        "units": "Metric",
+        "year": 2007
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Lancer",
+        "units": "Metric",
+        "year": 1995
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "units": "Metric",
+        "year": 1997
+      },
+      {
+        "severity": "fatal",
+        "message": "VPIC response failed pydantic validation: 1 errors",
+        "endpoint": "GetCanadianVehicleSpecifications",
+        "make": "Audi",
+        "model": "S6",
+        "units": "Metric",
+        "year": 1994
+      }
+    ],
+    "baselineShrinkViolations": []
+  },
+  "counts": {
+    "acura": {
+      "models": 8,
+      "styles": 0
+    },
+    "alfa_romeo": {
+      "models": 3,
+      "styles": 0
+    },
+    "aston_martin": {
+      "models": 9,
+      "styles": 0
+    },
+    "audi": {
+      "models": 33,
+      "styles": 0
+    },
+    "bmw": {
+      "models": 78,
+      "styles": 0
+    },
+    "bugatti": {
+      "models": 5,
+      "styles": 0
+    },
+    "chevrolet": {
+      "models": 46,
+      "styles": 0
+    },
+    "dodge": {
+      "models": 4,
+      "styles": 0
+    },
+    "ferrari": {
+      "models": 7,
+      "styles": 0
+    },
+    "fiat": {
+      "models": 3,
+      "styles": 0
+    },
+    "ford": {
+      "models": 32,
+      "styles": 0
+    },
+    "honda": {
+      "models": 129,
+      "styles": 0
+    },
+    "hyundai": {
+      "models": 19,
+      "styles": 0
+    },
+    "infiniti": {
+      "models": 5,
+      "styles": 0
+    },
+    "lamborghini": {
+      "models": 4,
+      "styles": 0
+    },
+    "lexus": {
+      "models": 14,
+      "styles": 0
+    },
+    "lotus": {
+      "models": 3,
+      "styles": 0
+    },
+    "mazda": {
+      "models": 9,
+      "styles": 0
+    },
+    "mini": {
+      "models": 4,
+      "styles": 0
+    },
+    "mitsubishi": {
+      "models": 7,
+      "styles": 0
+    },
+    "nissan": {
+      "models": 19,
+      "styles": 0
+    },
+    "porsche": {
+      "models": 8,
+      "styles": 0
+    },
+    "saab": {
+      "models": 2,
+      "styles": 0
+    },
+    "smart": {
+      "models": 2,
+      "styles": 0
+    },
+    "stanford_customs": {
+      "models": 3,
+      "styles": 0
+    },
+    "subaru": {
+      "models": 11,
+      "styles": 0
+    },
+    "tesla": {
+      "models": 6,
+      "styles": 0
+    },
+    "toyota": {
+      "models": 30,
+      "styles": 0
+    },
+    "triumph": {
+      "models": 19,
+      "styles": 0
+    },
+    "volvo": {
+      "models": 43,
+      "styles": 0
+    }
+  }
+}

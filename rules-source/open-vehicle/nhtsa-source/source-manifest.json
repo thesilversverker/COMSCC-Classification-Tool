@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-05-02T00:09:01+00:00",
+  "refreshMode": "update",
+  "yearFrom": 1985,
+  "yearTo": 2026,
+  "currentYear": 2026,
+  "inputHashes": {
+    "vehiclesComsccCatalog": "sha256:f773d44a18692f62fb4d373fef1786dfbd798b9cca4d09a1033b3f5421018875"
+  },
+  "vpic": {
+    "totalRequests": 1173,
+    "failures": 0,
+    "failRate": 0.0,
+    "responseSetHash": "sha256:2a2d3b16eb767ae1737c0f683362b542a30089ab7e70b32fa77beeab1ac44312"
+  }
+}

@@ -1,0 +1,5689 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-05-02T00:09:00+00:00",
+  "makes": [
+    {
+      "make_id": 475,
+      "make_name": "ACURA",
+      "make_slug": "acura",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "ADX": {
+          "model_id": 35664,
+          "model_name": "ADX",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "ILX": {
+          "model_id": 2150,
+          "model_name": "ILX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "INTEGRA": {
+          "model_id": 5063,
+          "model_name": "Integra",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MDX": {
+          "model_id": 2147,
+          "model_name": "MDX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RDX": {
+          "model_id": 1871,
+          "model_name": "RDX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RLX": {
+          "model_id": 2149,
+          "model_name": "RLX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TLX": {
+          "model_id": 5354,
+          "model_name": "TLX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ZDX": {
+          "model_id": 1867,
+          "model_name": "ZDX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 493,
+      "make_name": "ALFA ROMEO",
+      "make_slug": "alfa_romeo",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "GIULIA (952)": {
+          "model_id": 10326,
+          "model_name": "Giulia (952)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "STELVIO": {
+          "model_id": 18005,
+          "model_name": "Stelvio",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TONALE": {
+          "model_id": 31666,
+          "model_name": "Tonale",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 440,
+      "make_name": "ASTON MARTIN",
+      "make_slug": "aston_martin",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "DB11": {
+          "model_id": 13751,
+          "model_name": "DB11",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "DB12": {
+          "model_id": 32082,
+          "model_name": "DB12",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "DBS": {
+          "model_id": 1686,
+          "model_name": "DBS",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "DBX": {
+          "model_id": 27591,
+          "model_name": "DBX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VALHALLA": {
+          "model_id": 36621,
+          "model_name": "Valhalla",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "VALIANT": {
+          "model_id": 35216,
+          "model_name": "Valiant",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VALOUR": {
+          "model_id": 33264,
+          "model_name": "Valour",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VANQUISH": {
+          "model_id": 1701,
+          "model_name": "Vanquish",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "VANTAGE": {
+          "model_id": 14162,
+          "model_name": "Vantage",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 582,
+      "make_name": "AUDI",
+      "make_slug": "audi",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "A3": {
+          "model_id": 3676,
+          "model_name": "A3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "A4": {
+          "model_id": 3146,
+          "model_name": "A4",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "A4 ALLROAD": {
+          "model_id": 13759,
+          "model_name": "A4 allroad",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "A5": {
+          "model_id": 3787,
+          "model_name": "A5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "A6": {
+          "model_id": 3148,
+          "model_name": "A6",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "A6 ALLROAD": {
+          "model_id": 27028,
+          "model_name": "A6 allroad",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "A7": {
+          "model_id": 4015,
+          "model_name": "A7",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "A8 L": {
+          "model_id": 29708,
+          "model_name": "A8 L",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "E-TRON GT": {
+          "model_id": 29994,
+          "model_name": "e-tron GT",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "Q3": {
+          "model_id": 4051,
+          "model_name": "Q3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "Q4": {
+          "model_id": 29351,
+          "model_name": "Q4",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "Q5": {
+          "model_id": 3862,
+          "model_name": "Q5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "Q5 E": {
+          "model_id": 27029,
+          "model_name": "Q5 e",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "Q6": {
+          "model_id": 34850,
+          "model_name": "Q6",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "Q7": {
+          "model_id": 3679,
+          "model_name": "Q7",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "Q8": {
+          "model_id": 25317,
+          "model_name": "Q8",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RS 3": {
+          "model_id": 16783,
+          "model_name": "RS 3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RS 5": {
+          "model_id": 4014,
+          "model_name": "RS 5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "RS 6 AVANT": {
+          "model_id": 35165,
+          "model_name": "RS 6 Avant",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RS 7": {
+          "model_id": 8685,
+          "model_name": "RS 7",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RS E-TRON GT": {
+          "model_id": 28998,
+          "model_name": "RS e-tron GT",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RS Q8": {
+          "model_id": 27403,
+          "model_name": "RS Q8",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "S E-TRON GT": {
+          "model_id": 35659,
+          "model_name": "S e-tron GT",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "S3": {
+          "model_id": 8173,
+          "model_name": "S3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "S4": {
+          "model_id": 3147,
+          "model_name": "S4",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "S5": {
+          "model_id": 3788,
+          "model_name": "S5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "S6": {
+          "model_id": 3677,
+          "model_name": "S6",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "S7": {
+          "model_id": 8258,
+          "model_name": "S7",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "S8": {
+          "model_id": 3678,
+          "model_name": "S8",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SQ5": {
+          "model_id": 4052,
+          "model_name": "SQ5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SQ6": {
+          "model_id": 34851,
+          "model_name": "SQ6",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "SQ7": {
+          "model_id": 27401,
+          "model_name": "SQ7",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SQ8": {
+          "model_id": 27402,
+          "model_name": "SQ8",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 452,
+      "make_name": "BMW",
+      "make_slug": "bmw",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "228": {
+          "model_id": 35528,
+          "model_name": "228",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "228I": {
+          "model_id": 2170,
+          "model_name": "228i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "230I": {
+          "model_id": 13825,
+          "model_name": "230i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "330E": {
+          "model_id": 9569,
+          "model_name": "330e",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "330I": {
+          "model_id": 2777,
+          "model_name": "330i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "340I": {
+          "model_id": 9568,
+          "model_name": "340i",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "430I": {
+          "model_id": 13827,
+          "model_name": "430i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "440I": {
+          "model_id": 13828,
+          "model_name": "440i",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "530I": {
+          "model_id": 2585,
+          "model_name": "530i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "540I": {
+          "model_id": 5195,
+          "model_name": "540i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "550E": {
+          "model_id": 34628,
+          "model_name": "550e",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "740I": {
+          "model_id": 1720,
+          "model_name": "740i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "750E": {
+          "model_id": 32327,
+          "model_name": "750e",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "760I": {
+          "model_id": 2804,
+          "model_name": "760i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "840I": {
+          "model_id": 26483,
+          "model_name": "840i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ALPINA B8": {
+          "model_id": 31653,
+          "model_name": "Alpina B8",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "C 400 GT": {
+          "model_id": 26613,
+          "model_name": "C 400 GT",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "C 400 X": {
+          "model_id": 26614,
+          "model_name": "C 400 X",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CE 02": {
+          "model_id": 33564,
+          "model_name": "CE 02",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CE 04": {
+          "model_id": 29435,
+          "model_name": "CE 04",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F 800 GS": {
+          "model_id": 1739,
+          "model_name": "F 800 GS",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F 900 GS": {
+          "model_id": 33568,
+          "model_name": "F 900 GS",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F 900 GS ADVENTURE": {
+          "model_id": 33569,
+          "model_name": "F 900 GS Adventure",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F 900 GS-P": {
+          "model_id": 35419,
+          "model_name": "F 900 GS-P",
+          "vehicle_type": "car",
+          "years": [
+            2025
+          ]
+        },
+        "F 900 R": {
+          "model_id": 33570,
+          "model_name": "F 900 R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F 900 XR": {
+          "model_id": 33571,
+          "model_name": "F 900 XR",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "G 310 GS": {
+          "model_id": 26612,
+          "model_name": "G 310 GS",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "G 310 R": {
+          "model_id": 26611,
+          "model_name": "G 310 R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "I4": {
+          "model_id": 29579,
+          "model_name": "i4",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "I5": {
+          "model_id": 32328,
+          "model_name": "i5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "I7": {
+          "model_id": 30512,
+          "model_name": "i7",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "IX": {
+          "model_id": 29578,
+          "model_name": "iX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "K 1600 B": {
+          "model_id": 26636,
+          "model_name": "K 1600 B",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "K 1600 GT": {
+          "model_id": 1752,
+          "model_name": "K 1600 GT",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "K 1600 GTL": {
+          "model_id": 1753,
+          "model_name": "K 1600 GTL",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "M 1000 R": {
+          "model_id": 33573,
+          "model_name": "M 1000 R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "M 1000 RR": {
+          "model_id": 33574,
+          "model_name": "M 1000 RR",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2026
+          ]
+        },
+        "M 1000 XR": {
+          "model_id": 33572,
+          "model_name": "M 1000 XR",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "M2": {
+          "model_id": 9567,
+          "model_name": "M2",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "M235": {
+          "model_id": 36379,
+          "model_name": "M235",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "M235I": {
+          "model_id": 2171,
+          "model_name": "M235i",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "M240I": {
+          "model_id": 13826,
+          "model_name": "M240i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "M3": {
+          "model_id": 1710,
+          "model_name": "M3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "M340I": {
+          "model_id": 26481,
+          "model_name": "M340i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "M4": {
+          "model_id": 9570,
+          "model_name": "M4",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "M440I": {
+          "model_id": 28100,
+          "model_name": "M440i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "M5": {
+          "model_id": 2024,
+          "model_name": "M5",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "M8": {
+          "model_id": 26485,
+          "model_name": "M8",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "M850I": {
+          "model_id": 26484,
+          "model_name": "M850i",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "R 12": {
+          "model_id": 33577,
+          "model_name": "R 12",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "R 12 G/S": {
+          "model_id": 36594,
+          "model_name": "R 12 G/S",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "R 12 NINET": {
+          "model_id": 33578,
+          "model_name": "R 12 nineT",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "R 1250 GS ADVENTURE": {
+          "model_id": 33575,
+          "model_name": "R 1250 GS Adventure",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "R 1250 R": {
+          "model_id": 26628,
+          "model_name": "R 1250 R",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "R 1250 RS": {
+          "model_id": 26629,
+          "model_name": "R 1250 RS",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "R 1250 RT": {
+          "model_id": 26626,
+          "model_name": "R 1250 RT",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "R 1300 GS": {
+          "model_id": 33576,
+          "model_name": "R 1300 GS",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "R 1300 GS ADVENTURE": {
+          "model_id": 35420,
+          "model_name": "R 1300 GS Adventure",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "R 1300 R": {
+          "model_id": 36592,
+          "model_name": "R 1300 R",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "R 1300 RS": {
+          "model_id": 36593,
+          "model_name": "R 1300 RS",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "R 1300 RT": {
+          "model_id": 36591,
+          "model_name": "R 1300 RT",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "R 18": {
+          "model_id": 28093,
+          "model_name": "R 18",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "R 18 B": {
+          "model_id": 33566,
+          "model_name": "R 18 B",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "R 18 CLASSIC": {
+          "model_id": 28092,
+          "model_name": "R 18 Classic",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "R 18 ROCTANE": {
+          "model_id": 33565,
+          "model_name": "R 18 Roctane",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "R 18 TRANSCONTINENTAL": {
+          "model_id": 33567,
+          "model_name": "R 18 Transcontinental",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "S 1000 R": {
+          "model_id": 1759,
+          "model_name": "S 1000 R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "S 1000 RR": {
+          "model_id": 1742,
+          "model_name": "S 1000 RR",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "S 1000 XR": {
+          "model_id": 10045,
+          "model_name": "S 1000 XR",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "X1": {
+          "model_id": 2300,
+          "model_name": "X1",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "X2": {
+          "model_id": 24940,
+          "model_name": "X2",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "X3": {
+          "model_id": 1719,
+          "model_name": "X3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "X4": {
+          "model_id": 5992,
+          "model_name": "X4",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "X5": {
+          "model_id": 1717,
+          "model_name": "X5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "X6": {
+          "model_id": 1714,
+          "model_name": "X6",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "X7": {
+          "model_id": 25884,
+          "model_name": "X7",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "XM": {
+          "model_id": 30516,
+          "model_name": "XM",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "Z4": {
+          "model_id": 1725,
+          "model_name": "Z4",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 454,
+      "make_name": "BUGATTI",
+      "make_slug": "bugatti",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "CHIRON": {
+          "model_id": 19517,
+          "model_name": "Chiron",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CHIRON PUR SPORT": {
+          "model_id": 32270,
+          "model_name": "Chiron Pur Sport",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CHIRON SUPERSPORT": {
+          "model_id": 32271,
+          "model_name": "Chiron Supersport",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "EB110": {
+          "model_id": 23703,
+          "model_name": "EB110",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MISTRAL": {
+          "model_id": 35729,
+          "model_name": "Mistral",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 467,
+      "make_name": "CHEVROLET",
+      "make_slug": "chevrolet",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "3500/4500": {
+          "model_id": 13739,
+          "model_name": "3500/4500",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "3500HG": {
+          "model_id": 31672,
+          "model_name": "3500HG",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "4500HD": {
+          "model_id": 13740,
+          "model_name": "4500HD",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "4500HG": {
+          "model_id": 31673,
+          "model_name": "4500HG",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "4500XD": {
+          "model_id": 13741,
+          "model_name": "4500XD",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "5500HD": {
+          "model_id": 13738,
+          "model_name": "5500HD",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "5500HG": {
+          "model_id": 31674,
+          "model_name": "5500HG",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "5500XD": {
+          "model_id": 13742,
+          "model_name": "5500XD",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "5500XG": {
+          "model_id": 31675,
+          "model_name": "5500XG",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "6500XD": {
+          "model_id": 24868,
+          "model_name": "6500XD",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "7500XD": {
+          "model_id": 25609,
+          "model_name": "7500XD",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "AVEO": {
+          "model_id": 1828,
+          "model_name": "Aveo",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BLAZER": {
+          "model_id": 11502,
+          "model_name": "Blazer",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BOLT INCOMPLETE": {
+          "model_id": 24257,
+          "model_name": "Bolt Incomplete",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BRIGHTDROP": {
+          "model_id": 34740,
+          "model_name": "BrightDrop",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "CAMARO": {
+          "model_id": 1829,
+          "model_name": "Camaro",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CAPRICE POLICE VEHICLE": {
+          "model_id": 1830,
+          "model_name": "Caprice Police Vehicle",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CAPTIVA SPORT": {
+          "model_id": 1846,
+          "model_name": "Captiva Sport",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "COLORADO": {
+          "model_id": 4086,
+          "model_name": "Colorado",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CORVETTE": {
+          "model_id": 1831,
+          "model_name": "Corvette",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CRUZE": {
+          "model_id": 1832,
+          "model_name": "Cruze",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "EQUINOX": {
+          "model_id": 1847,
+          "model_name": "Equinox",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "EXPRESS": {
+          "model_id": 1848,
+          "model_name": "Express",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "GEO PRIZM": {
+          "model_id": 3531,
+          "model_name": "Geo Prizm",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "IMPALA": {
+          "model_id": 1833,
+          "model_name": "Impala",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MALIBU": {
+          "model_id": 1834,
+          "model_name": "Malibu",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ONIX": {
+          "model_id": 27445,
+          "model_name": "Onix",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ORLANDO": {
+          "model_id": 1849,
+          "model_name": "Orlando",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SILVERADO": {
+          "model_id": 1850,
+          "model_name": "Silverado",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SILVERADO HD": {
+          "model_id": 24906,
+          "model_name": "Silverado HD",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SILVERADO LD": {
+          "model_id": 25279,
+          "model_name": "Silverado LD",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SILVERADO LTD": {
+          "model_id": 29076,
+          "model_name": "Silverado LTD",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SONIC": {
+          "model_id": 1835,
+          "model_name": "Sonic",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SPARK": {
+          "model_id": 1836,
+          "model_name": "Spark",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SS": {
+          "model_id": 1837,
+          "model_name": "SS",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SUBURBAN": {
+          "model_id": 1851,
+          "model_name": "Suburban",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SUBURBAN HD": {
+          "model_id": 35053,
+          "model_name": "Suburban HD",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TAHOE": {
+          "model_id": 1852,
+          "model_name": "Tahoe",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TRAILBLAZER": {
+          "model_id": 4548,
+          "model_name": "Trailblazer",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TRAVERSE": {
+          "model_id": 1853,
+          "model_name": "Traverse",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TRAVERSE LIMITED": {
+          "model_id": 33684,
+          "model_name": "Traverse Limited",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TRAX": {
+          "model_id": 10988,
+          "model_name": "Trax",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VOLT": {
+          "model_id": 1838,
+          "model_name": "Volt",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "W4": {
+          "model_id": 4687,
+          "model_name": "W4",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "W5": {
+          "model_id": 4688,
+          "model_name": "W5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "W7": {
+          "model_id": 14040,
+          "model_name": "W7",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 476,
+      "make_name": "DODGE",
+      "make_slug": "dodge",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "CHALLENGER": {
+          "model_id": 1893,
+          "model_name": "Challenger",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CHARGER": {
+          "model_id": 1895,
+          "model_name": "Charger",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "DURANGO": {
+          "model_id": 3508,
+          "model_name": "Durango",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "HORNET": {
+          "model_id": 30576,
+          "model_name": "Hornet",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 603,
+      "make_name": "FERRARI",
+      "make_slug": "ferrari",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "12CILINDRI": {
+          "model_id": 34095,
+          "model_name": "12Cilindri",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "296": {
+          "model_id": 31868,
+          "model_name": "296",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "812": {
+          "model_id": 27823,
+          "model_name": "812",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "DAYTONA SP3": {
+          "model_id": 31866,
+          "model_name": "Daytona SP3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "PUROSANGUE": {
+          "model_id": 31864,
+          "model_name": "Purosangue",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ROMA": {
+          "model_id": 27827,
+          "model_name": "Roma",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SF90": {
+          "model_id": 31831,
+          "model_name": "SF90",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 492,
+      "make_name": "FIAT",
+      "make_slug": "fiat",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "124 SPIDER": {
+          "model_id": 11448,
+          "model_name": "124 Spider",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "500E": {
+          "model_id": 33815,
+          "model_name": "500e",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "500X": {
+          "model_id": 10396,
+          "model_name": "500X",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 460,
+      "make_name": "FORD",
+      "make_slug": "ford",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "'34": {
+          "model_id": 14930,
+          "model_name": "'34",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BRONCO": {
+          "model_id": 6825,
+          "model_name": "Bronco",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BRONCO SPORT": {
+          "model_id": 27411,
+          "model_name": "Bronco Sport",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "COMMERCIAL CHASSIS": {
+          "model_id": 3410,
+          "model_name": "Commercial Chassis",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "E-350": {
+          "model_id": 1818,
+          "model_name": "E-350",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "E-450": {
+          "model_id": 1819,
+          "model_name": "E-450",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ECOSPORT": {
+          "model_id": 17774,
+          "model_name": "Ecosport",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "EDGE": {
+          "model_id": 1797,
+          "model_name": "Edge",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ESCAPE": {
+          "model_id": 1798,
+          "model_name": "Escape",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "EXPEDITION": {
+          "model_id": 1799,
+          "model_name": "Expedition",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "EXPEDITION MAX": {
+          "model_id": 1820,
+          "model_name": "Expedition MAX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "EXPLORER": {
+          "model_id": 1800,
+          "model_name": "Explorer",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F-150": {
+          "model_id": 1801,
+          "model_name": "F-150",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F-250": {
+          "model_id": 1805,
+          "model_name": "F-250",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F-350": {
+          "model_id": 1806,
+          "model_name": "F-350",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F-450": {
+          "model_id": 1807,
+          "model_name": "F-450",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F-550": {
+          "model_id": 1808,
+          "model_name": "F-550",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F-600": {
+          "model_id": 13979,
+          "model_name": "F-600",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F-650": {
+          "model_id": 1809,
+          "model_name": "F-650",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F-750": {
+          "model_id": 1810,
+          "model_name": "F-750",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "FIESTA": {
+          "model_id": 3267,
+          "model_name": "Fiesta",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "FLEX": {
+          "model_id": 1802,
+          "model_name": "Flex",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "FOCUS": {
+          "model_id": 1779,
+          "model_name": "Focus",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "GT MKII": {
+          "model_id": 31551,
+          "model_name": "GT MKII",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MAVERICK": {
+          "model_id": 28967,
+          "model_name": "Maverick",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MOTORHOME CHASSIS": {
+          "model_id": 2737,
+          "model_name": "Motorhome Chassis",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MUSTANG": {
+          "model_id": 1781,
+          "model_name": "Mustang",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MUSTANG GTD": {
+          "model_id": 35300,
+          "model_name": "Mustang GTD",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "MUSTANG MACH-E": {
+          "model_id": 27440,
+          "model_name": "Mustang Mach-E",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RANGER": {
+          "model_id": 1803,
+          "model_name": "Ranger",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TRANSIT": {
+          "model_id": 3608,
+          "model_name": "Transit",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TRANSIT CONNECT": {
+          "model_id": 1811,
+          "model_name": "Transit Connect",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 474,
+      "make_name": "HONDA",
+      "make_slug": "honda",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "ACCORD": {
+          "model_id": 1861,
+          "model_name": "Accord",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ADV160": {
+          "model_id": 32124,
+          "model_name": "ADV160",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "AFRICA TWIN": {
+          "model_id": 35229,
+          "model_name": "Africa Twin",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "AFRICA TWIN ADVENTURE SPORTS": {
+          "model_id": 37132,
+          "model_name": "Africa Twin Adventure Sports",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CB-1": {
+          "model_id": 3695,
+          "model_name": "CB-1",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CB1000": {
+          "model_id": 27928,
+          "model_name": "CB1000",
+          "vehicle_type": "car",
+          "years": [
+            2025
+          ]
+        },
+        "CB125": {
+          "model_id": 14865,
+          "model_name": "CB125",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CB300F": {
+          "model_id": 33526,
+          "model_name": "CB300F",
+          "vehicle_type": "car",
+          "years": [
+            2025
+          ]
+        },
+        "CB300R": {
+          "model_id": 33535,
+          "model_name": "CB300R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CB500": {
+          "model_id": 10253,
+          "model_name": "CB500",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CB500 HORNET": {
+          "model_id": 37270,
+          "model_name": "CB500 Hornet",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "CB500F": {
+          "model_id": 33508,
+          "model_name": "CB500F",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "CB500X": {
+          "model_id": 33510,
+          "model_name": "CB500X",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CB650R": {
+          "model_id": 33537,
+          "model_name": "CB650R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CB750 (NIGHTHAWK 750)": {
+          "model_id": 12554,
+          "model_name": "CB750 (Nighthawk 750)",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "CBR1000F": {
+          "model_id": 11975,
+          "model_name": "CBR1000F",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CBR1000RR": {
+          "model_id": 33515,
+          "model_name": "CBR1000RR",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CBR300": {
+          "model_id": 11827,
+          "model_name": "CBR300",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CBR500": {
+          "model_id": 11803,
+          "model_name": "CBR500",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CBR500R": {
+          "model_id": 33505,
+          "model_name": "CBR500R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CBR600F": {
+          "model_id": 37149,
+          "model_name": "CBR600F",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CBR600RR": {
+          "model_id": 33503,
+          "model_name": "CBR600RR",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CBR650": {
+          "model_id": 10007,
+          "model_name": "CBR650",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CBR650R": {
+          "model_id": 33536,
+          "model_name": "CBR650R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CIVIC": {
+          "model_id": 1863,
+          "model_name": "Civic",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CIVIC SI": {
+          "model_id": 29417,
+          "model_name": "Civic Si",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CIVIC TYPE R": {
+          "model_id": 31535,
+          "model_name": "Civic Type R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "COTA": {
+          "model_id": 13450,
+          "model_name": "Cota",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "COTA 310RR": {
+          "model_id": 37640,
+          "model_name": "Cota 310RR",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "COTA 4RT 260R": {
+          "model_id": 37639,
+          "model_name": "Cota 4RT 260R",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "CR-V": {
+          "model_id": 1865,
+          "model_name": "CR-V",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CR125R": {
+          "model_id": 11408,
+          "model_name": "CR125R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CR250R": {
+          "model_id": 10960,
+          "model_name": "CR250R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CR500R": {
+          "model_id": 12651,
+          "model_name": "CR500R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CR80R": {
+          "model_id": 12573,
+          "model_name": "CR80R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CRF110F": {
+          "model_id": 33289,
+          "model_name": "CRF110F",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CRF125F": {
+          "model_id": 33279,
+          "model_name": "CRF125F",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CRF125FB": {
+          "model_id": 33280,
+          "model_name": "CRF125FB",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CRF150F": {
+          "model_id": 33281,
+          "model_name": "CRF150F",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CRF150R": {
+          "model_id": 33282,
+          "model_name": "CRF150R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CRF150RB": {
+          "model_id": 33284,
+          "model_name": "CRF150RB",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CRF230F": {
+          "model_id": 33259,
+          "model_name": "CRF230F",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CRF250F": {
+          "model_id": 33293,
+          "model_name": "CRF250F",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "CRF250L": {
+          "model_id": 33285,
+          "model_name": "CRF250L",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CRF250R": {
+          "model_id": 33286,
+          "model_name": "CRF250R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CRF250RX": {
+          "model_id": 33292,
+          "model_name": "CRF250RX",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CRF300F": {
+          "model_id": 37641,
+          "model_name": "CRF300F",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "CRF300L": {
+          "model_id": 28626,
+          "model_name": "CRF300L",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CRF450R": {
+          "model_id": 33290,
+          "model_name": "CRF450R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CRF450RL": {
+          "model_id": 33310,
+          "model_name": "CRF450RL",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "CRF450X": {
+          "model_id": 33291,
+          "model_name": "CRF450X",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2026
+          ]
+        },
+        "CRF50F": {
+          "model_id": 33288,
+          "model_name": "CRF50F",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "DAX125": {
+          "model_id": 35111,
+          "model_name": "DAX125",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "ELITE": {
+          "model_id": 3776,
+          "model_name": "Elite",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "FIREBLADE": {
+          "model_id": 27409,
+          "model_name": "Fireblade",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "FOREMAN": {
+          "model_id": 36707,
+          "model_name": "Foreman",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "FOREMAN RUBICON": {
+          "model_id": 36711,
+          "model_name": "Foreman Rubicon",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "FOURTRAX FOREMAN": {
+          "model_id": 11728,
+          "model_name": "FourTrax Foreman",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "FOURTRAX FOREMAN RUBICON": {
+          "model_id": 27839,
+          "model_name": "FourTrax Foreman Rubicon",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "FOURTRAX RANCHER": {
+          "model_id": 11689,
+          "model_name": "FourTrax Rancher",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "FOURTRAX RECON": {
+          "model_id": 11837,
+          "model_name": "FourTrax Recon",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "FOURTRAX RUBICON": {
+          "model_id": 37642,
+          "model_name": "FourTrax Rubicon",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "FURY": {
+          "model_id": 35230,
+          "model_name": "Fury",
+          "vehicle_type": "car",
+          "years": [
+            2025
+          ]
+        },
+        "GOLD WING": {
+          "model_id": 3249,
+          "model_name": "Gold Wing",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "GOLD WING TOUR": {
+          "model_id": 37126,
+          "model_name": "Gold Wing Tour",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "GROM": {
+          "model_id": 37127,
+          "model_name": "Grom",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "HAWK GT": {
+          "model_id": 3684,
+          "model_name": "Hawk GT",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "HR-V": {
+          "model_id": 9212,
+          "model_name": "HR-V",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MONKEY": {
+          "model_id": 28850,
+          "model_name": "Monkey",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MONTESA COTA": {
+          "model_id": 34886,
+          "model_name": "Montesa Cota",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "NAVI": {
+          "model_id": 29509,
+          "model_name": "Navi",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NC700X": {
+          "model_id": 3251,
+          "model_name": "NC700X",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "NC750X": {
+          "model_id": 11819,
+          "model_name": "NC750X",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NCH50 (GIORNO)": {
+          "model_id": 11759,
+          "model_name": "NCH50 (Giorno)",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "NCH50 (METROPOLITAN)": {
+          "model_id": 11760,
+          "model_name": "NCH50 (Metropolitan)",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "NCW50 (GIORNO)": {
+          "model_id": 33193,
+          "model_name": "NCW50 (Giorno)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "NCW50 (METROPOLITAN)": {
+          "model_id": 23307,
+          "model_name": "NCW50 (Metropolitan)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NPS50 (RUCKUS)": {
+          "model_id": 3253,
+          "model_name": "NPS50 (Ruckus)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "NS50F": {
+          "model_id": 3698,
+          "model_name": "NS50F",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NSS300 (FORZA)": {
+          "model_id": 11762,
+          "model_name": "NSS300 (Forza)",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "NT1100": {
+          "model_id": 35732,
+          "model_name": "NT1100",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "NX125": {
+          "model_id": 3700,
+          "model_name": "NX125",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NX250": {
+          "model_id": 3699,
+          "model_name": "NX250",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NX500": {
+          "model_id": 34007,
+          "model_name": "NX500",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ODYSSEY": {
+          "model_id": 1869,
+          "model_name": "Odyssey",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "PACIFIC COAST": {
+          "model_id": 3618,
+          "model_name": "Pacific Coast",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "PASSPORT": {
+          "model_id": 5959,
+          "model_name": "Passport",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "PCX": {
+          "model_id": 29619,
+          "model_name": "PCX",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "PCX150": {
+          "model_id": 3234,
+          "model_name": "PCX150",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "PILOT": {
+          "model_id": 1864,
+          "model_name": "Pilot",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "PRELUDE": {
+          "model_id": 5107,
+          "model_name": "Prelude",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "PROLOGUE": {
+          "model_id": 33174,
+          "model_name": "Prologue",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RANCHER": {
+          "model_id": 36712,
+          "model_name": "Rancher",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RC30": {
+          "model_id": 3703,
+          "model_name": "RC30",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "REBEL": {
+          "model_id": 11653,
+          "model_name": "Rebel",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "REBEL 1100": {
+          "model_id": 36952,
+          "model_name": "Rebel 1100",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "REBEL 300": {
+          "model_id": 36953,
+          "model_name": "Rebel 300",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "REBEL 500": {
+          "model_id": 36954,
+          "model_name": "Rebel 500",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "RECON": {
+          "model_id": 36713,
+          "model_name": "Recon",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "RIDGELINE": {
+          "model_id": 1866,
+          "model_name": "Ridgeline",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RINCON": {
+          "model_id": 36714,
+          "model_name": "Rincon",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "RUBICON": {
+          "model_id": 36708,
+          "model_name": "Rubicon",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SCL500": {
+          "model_id": 32079,
+          "model_name": "SCL500",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ST1300PA": {
+          "model_id": 3255,
+          "model_name": "ST1300PA",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "SUPER CUB": {
+          "model_id": 37131,
+          "model_name": "Super Cub",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "SXS1000M (PIONEER 1000)": {
+          "model_id": 27897,
+          "model_name": "SXS1000M (Pioneer 1000)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SXS1000S (TALON 1000)": {
+          "model_id": 37133,
+          "model_name": "SXS1000S (Talon 1000)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2026
+          ]
+        },
+        "SXS500M (PIONEER 500)": {
+          "model_id": 27899,
+          "model_name": "SXS500M (Pioneer 500)",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "SXS520M (PIONEER 520)": {
+          "model_id": 30374,
+          "model_name": "SXS520M (Pioneer 520)",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "SXS5M2 (PIONEER 520)": {
+          "model_id": 37893,
+          "model_name": "SXS5M2 (Pioneer 520)",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "SXS700M (PIONEER 700)": {
+          "model_id": 27898,
+          "model_name": "SXS700M (Pioneer 700)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TOURIST TROPHY": {
+          "model_id": 3697,
+          "model_name": "Tourist Trophy",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TRAIL125": {
+          "model_id": 27942,
+          "model_name": "Trail125",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TRANSALP": {
+          "model_id": 3777,
+          "model_name": "Transalp",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TRX250": {
+          "model_id": 11592,
+          "model_name": "TRX250",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "TRX250X": {
+          "model_id": 11835,
+          "model_name": "TRX250X",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "TRX90X": {
+          "model_id": 11588,
+          "model_name": "TRX90X",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VFR750F": {
+          "model_id": 3654,
+          "model_name": "VFR750F",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VT1300 (FURY)": {
+          "model_id": 12123,
+          "model_name": "VT1300 (Fury)",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "VT750 (SHADOW AERO 750)": {
+          "model_id": 12058,
+          "model_name": "VT750 (Shadow Aero 750)",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "VT750 (SHADOW PHANTOM 750)": {
+          "model_id": 12132,
+          "model_name": "VT750 (Shadow Phantom 750)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "VTR250 (INTERCEPTOR 250)": {
+          "model_id": 37544,
+          "model_name": "VTR250 (Interceptor 250)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "XL600V": {
+          "model_id": 3705,
+          "model_name": "XL600V",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "XR150L": {
+          "model_id": 31564,
+          "model_name": "XR150L",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "XR250R": {
+          "model_id": 11409,
+          "model_name": "XR250R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "XR600R": {
+          "model_id": 11589,
+          "model_name": "XR600R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "XR650L": {
+          "model_id": 33499,
+          "model_name": "XR650L",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "XR80R": {
+          "model_id": 12575,
+          "model_name": "XR80R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "Z50R": {
+          "model_id": 12663,
+          "model_name": "Z50R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 498,
+      "make_name": "HYUNDAI",
+      "make_slug": "hyundai",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "ACCENT": {
+          "model_id": 2773,
+          "model_name": "Accent",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ELANTRA": {
+          "model_id": 2735,
+          "model_name": "Elantra",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ELANTRA N": {
+          "model_id": 29258,
+          "model_name": "Elantra N",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "IONIQ 5": {
+          "model_id": 28983,
+          "model_name": "Ioniq 5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "IONIQ 5 N": {
+          "model_id": 33664,
+          "model_name": "Ioniq 5 N",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "IONIQ 6": {
+          "model_id": 31360,
+          "model_name": "Ioniq 6",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "IONIQ 6 N": {
+          "model_id": 36896,
+          "model_name": "Ioniq 6 N",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "IONIQ 9": {
+          "model_id": 35749,
+          "model_name": "Ioniq 9",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "KONA": {
+          "model_id": 22249,
+          "model_name": "Kona",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "KONA N": {
+          "model_id": 32348,
+          "model_name": "Kona N",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NEXO": {
+          "model_id": 25183,
+          "model_name": "Nexo",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "PALISADE": {
+          "model_id": 25847,
+          "model_name": "Palisade",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SANTA CRUZ": {
+          "model_id": 28816,
+          "model_name": "Santa Cruz",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SANTA FE": {
+          "model_id": 2057,
+          "model_name": "Santa Fe",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SANTA FE XL": {
+          "model_id": 24770,
+          "model_name": "Santa Fe XL",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SONATA": {
+          "model_id": 2459,
+          "model_name": "Sonata",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TUCSON": {
+          "model_id": 2058,
+          "model_name": "Tucson",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VENUE": {
+          "model_id": 26441,
+          "model_name": "Venue",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "XCIENT": {
+          "model_id": 30756,
+          "model_name": "Xcient",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 480,
+      "make_name": "INFINITI",
+      "make_slug": "infiniti",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "Q50": {
+          "model_id": 1901,
+          "model_name": "Q50",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "QX50": {
+          "model_id": 1899,
+          "model_name": "QX50",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "QX55": {
+          "model_id": 28424,
+          "model_name": "QX55",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "QX60": {
+          "model_id": 1910,
+          "model_name": "QX60",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "QX80": {
+          "model_id": 1909,
+          "model_name": "QX80",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 502,
+      "make_name": "LAMBORGHINI",
+      "make_slug": "lamborghini",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "HURACAN": {
+          "model_id": 9928,
+          "model_name": "Huracan",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "REVUELTO": {
+          "model_id": 32362,
+          "model_name": "Revuelto",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TEMERARIO": {
+          "model_id": 37318,
+          "model_name": "Temerario",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "URUS": {
+          "model_id": 25121,
+          "model_name": "URUS",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 515,
+      "make_name": "LEXUS",
+      "make_slug": "lexus",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "ES": {
+          "model_id": 2475,
+          "model_name": "ES",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "GS": {
+          "model_id": 2180,
+          "model_name": "GS",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "GX": {
+          "model_id": 2215,
+          "model_name": "GX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "IS": {
+          "model_id": 2184,
+          "model_name": "IS",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "LC": {
+          "model_id": 24941,
+          "model_name": "LC",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "LS": {
+          "model_id": 2182,
+          "model_name": "LS",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "LX": {
+          "model_id": 2212,
+          "model_name": "LX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NX": {
+          "model_id": 3653,
+          "model_name": "NX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RC": {
+          "model_id": 3406,
+          "model_name": "RC",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RX": {
+          "model_id": 2214,
+          "model_name": "RX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RZ": {
+          "model_id": 31443,
+          "model_name": "RZ",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SC": {
+          "model_id": 2183,
+          "model_name": "SC",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TX": {
+          "model_id": 32636,
+          "model_name": "TX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "UX": {
+          "model_id": 24984,
+          "model_name": "UX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 466,
+      "make_name": "LOTUS",
+      "make_slug": "lotus",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "ELETRE": {
+          "model_id": 33994,
+          "model_name": "ELETRE",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "EMIRA": {
+          "model_id": 33271,
+          "model_name": "Emira",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "EVORA": {
+          "model_id": 1795,
+          "model_name": "Evora",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 473,
+      "make_name": "MAZDA",
+      "make_slug": "mazda",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "CX-30": {
+          "model_id": 26914,
+          "model_name": "CX-30",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CX-5": {
+          "model_id": 2369,
+          "model_name": "CX-5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CX-50": {
+          "model_id": 30046,
+          "model_name": "CX-50",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CX-70": {
+          "model_id": 33867,
+          "model_name": "CX-70",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "CX-9": {
+          "model_id": 2077,
+          "model_name": "CX-9",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CX-90": {
+          "model_id": 31832,
+          "model_name": "CX-90",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MAZDA3": {
+          "model_id": 2074,
+          "model_name": "Mazda3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MX-30": {
+          "model_id": 29125,
+          "model_name": "MX-30",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MX-5": {
+          "model_id": 2072,
+          "model_name": "MX-5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 456,
+      "make_name": "MINI",
+      "make_slug": "mini",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "CLUBMAN": {
+          "model_id": 1765,
+          "model_name": "Clubman",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "COOPER CONVERTIBLE": {
+          "model_id": 1767,
+          "model_name": "Cooper Convertible",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "COUNTRYMAN": {
+          "model_id": 1880,
+          "model_name": "Countryman",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "HARDTOP": {
+          "model_id": 1862,
+          "model_name": "Hardtop",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 481,
+      "make_name": "MITSUBISHI",
+      "make_slug": "mitsubishi",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "DIAMANTE": {
+          "model_id": 5425,
+          "model_name": "Diamante",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ECLIPSE CROSS": {
+          "model_id": 17617,
+          "model_name": "Eclipse Cross",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "LOW SPEED VEHICLE": {
+          "model_id": 27241,
+          "model_name": "Low Speed Vehicle",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MIRAGE": {
+          "model_id": 2342,
+          "model_name": "Mirage",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MIRAGE G4": {
+          "model_id": 13842,
+          "model_name": "Mirage G4",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "OUTLANDER": {
+          "model_id": 2163,
+          "model_name": "Outlander",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "OUTLANDER SPORT": {
+          "model_id": 13867,
+          "model_name": "Outlander Sport",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 478,
+      "make_name": "NISSAN",
+      "make_slug": "nissan",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "ALTIMA": {
+          "model_id": 1904,
+          "model_name": "Altima",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ARIYA HATCHBACK": {
+          "model_id": 30884,
+          "model_name": "Ariya Hatchback",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "ARIYA MPV": {
+          "model_id": 36667,
+          "model_name": "Ariya MPV",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "ARMADA": {
+          "model_id": 1915,
+          "model_name": "Armada",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "FRONTIER": {
+          "model_id": 1919,
+          "model_name": "Frontier",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "GT-R": {
+          "model_id": 1890,
+          "model_name": "GT-R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "KICKS": {
+          "model_id": 22791,
+          "model_name": "Kicks",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "KICKS MPV": {
+          "model_id": 35389,
+          "model_name": "Kicks MPV",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "KICKS PLAY": {
+          "model_id": 35324,
+          "model_name": "Kicks Play",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "LEAF": {
+          "model_id": 1905,
+          "model_name": "Leaf",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MURANO": {
+          "model_id": 1914,
+          "model_name": "Murano",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NISSAN Z": {
+          "model_id": 30039,
+          "model_name": "Nissan Z",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NV": {
+          "model_id": 1922,
+          "model_name": "NV",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "NV200": {
+          "model_id": 1918,
+          "model_name": "NV200",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "PATHFINDER": {
+          "model_id": 1911,
+          "model_name": "Pathfinder",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ROGUE": {
+          "model_id": 1913,
+          "model_name": "Rogue",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SENTRA": {
+          "model_id": 1907,
+          "model_name": "Sentra",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TITAN": {
+          "model_id": 1920,
+          "model_name": "Titan",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VERSA": {
+          "model_id": 1894,
+          "model_name": "Versa",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 584,
+      "make_name": "PORSCHE",
+      "make_slug": "porsche",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "718 BOXSTER": {
+          "model_id": 31222,
+          "model_name": "718 Boxster",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "718 CAYMAN": {
+          "model_id": 31224,
+          "model_name": "718 Cayman",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "718 SPYDER": {
+          "model_id": 31223,
+          "model_name": "718 Spyder",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "911": {
+          "model_id": 7832,
+          "model_name": "911",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CAYENNE": {
+          "model_id": 7895,
+          "model_name": "Cayenne",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MACAN": {
+          "model_id": 8031,
+          "model_name": "Macan",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "PANAMERA": {
+          "model_id": 7994,
+          "model_name": "Panamera",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TAYCAN": {
+          "model_id": 28090,
+          "model_name": "Taycan",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 572,
+      "make_name": "SAAB",
+      "make_slug": "saab",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "9-3": {
+          "model_id": 2992,
+          "model_name": "9-3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "9-5": {
+          "model_id": 2993,
+          "model_name": "9-5",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 504,
+      "make_name": "SMART",
+      "make_slug": "smart",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "EQ FORTWO": {
+          "model_id": 24758,
+          "model_name": "EQ Fortwo",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "FORTWO": {
+          "model_id": 10424,
+          "model_name": "Fortwo",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 6792,
+      "make_name": "STANFORD CUSTOMS",
+      "make_slug": "stanford_customs",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "CLASSIC SEDAN": {
+          "model_id": 18237,
+          "model_name": "Classic Sedan",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CORDOVA SEDAN": {
+          "model_id": 18236,
+          "model_name": "Cordova Sedan",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MALIBU SEDAN": {
+          "model_id": 18235,
+          "model_name": "Malibu Sedan",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 523,
+      "make_name": "SUBARU",
+      "make_slug": "subaru",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "ASCENT": {
+          "model_id": 24836,
+          "model_name": "Ascent",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BRZ": {
+          "model_id": 2238,
+          "model_name": "BRZ",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CROSSTREK": {
+          "model_id": 13580,
+          "model_name": "Crosstrek",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "FORESTER": {
+          "model_id": 2234,
+          "model_name": "Forester",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "IMPREZA": {
+          "model_id": 2235,
+          "model_name": "Impreza",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "LEGACY": {
+          "model_id": 2232,
+          "model_name": "Legacy",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "OUTBACK": {
+          "model_id": 2233,
+          "model_name": "Outback",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SOLTERRA": {
+          "model_id": 30191,
+          "model_name": "Solterra",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TRAILSEEKER": {
+          "model_id": 37354,
+          "model_name": "Trailseeker",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "UNCHARTED": {
+          "model_id": 37418,
+          "model_name": "Uncharted",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "WRX": {
+          "model_id": 2237,
+          "model_name": "WRX",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 441,
+      "make_name": "TESLA",
+      "make_slug": "tesla",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "CYBERTRUCK": {
+          "model_id": 33135,
+          "model_name": "Cybertruck",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MODEL 3": {
+          "model_id": 17834,
+          "model_name": "Model 3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MODEL S": {
+          "model_id": 1685,
+          "model_name": "Model S",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MODEL X": {
+          "model_id": 10199,
+          "model_name": "Model X",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MODEL Y": {
+          "model_id": 27027,
+          "model_name": "Model Y",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SEMI": {
+          "model_id": 30834,
+          "model_name": "Semi",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 448,
+      "make_name": "TOYOTA",
+      "make_slug": "toyota",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "4RUNNER": {
+          "model_id": 2216,
+          "model_name": "4Runner",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BZ": {
+          "model_id": 37150,
+          "model_name": "bZ",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "BZ WOODLAND": {
+          "model_id": 37355,
+          "model_name": "bZ Woodland",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "BZ4X": {
+          "model_id": 30041,
+          "model_name": "bZ4X",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025
+          ]
+        },
+        "C-HR": {
+          "model_id": 17213,
+          "model_name": "C-HR",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CAMRY": {
+          "model_id": 2469,
+          "model_name": "Camry",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CELICA": {
+          "model_id": 3645,
+          "model_name": "Celica",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "COROLLA": {
+          "model_id": 2208,
+          "model_name": "Corolla",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "COROLLA CROSS": {
+          "model_id": 29274,
+          "model_name": "Corolla Cross",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CROWN": {
+          "model_id": 31077,
+          "model_name": "Crown",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CROWN SIGNIA": {
+          "model_id": 34866,
+          "model_name": "Crown Signia",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "FCHV-ADV": {
+          "model_id": 3155,
+          "model_name": "FCHV-adv",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "GR COROLLA": {
+          "model_id": 31079,
+          "model_name": "GR Corolla",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "GR86": {
+          "model_id": 29364,
+          "model_name": "GR86",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "GRAND HIGHLANDER": {
+          "model_id": 32304,
+          "model_name": "Grand Highlander",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "HIGHLANDER": {
+          "model_id": 2213,
+          "model_name": "Highlander",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "LAND CRUISER": {
+          "model_id": 2211,
+          "model_name": "Land Cruiser",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "MIRAI": {
+          "model_id": 10198,
+          "model_name": "Mirai",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "PASEO": {
+          "model_id": 3649,
+          "model_name": "Paseo",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "PRIUS": {
+          "model_id": 2209,
+          "model_name": "Prius",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "PRIUS PRIME (PHEV)": {
+          "model_id": 21950,
+          "model_name": "Prius Prime (PHEV)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RAV4": {
+          "model_id": 2217,
+          "model_name": "RAV4",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "RAV4 PRIME (PHEV)": {
+          "model_id": 28070,
+          "model_name": "RAV4 Prime (PHEV)",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SEQUOIA": {
+          "model_id": 2827,
+          "model_name": "Sequoia",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SIENNA": {
+          "model_id": 2468,
+          "model_name": "Sienna",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SUPRA": {
+          "model_id": 3647,
+          "model_name": "Supra",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TACOMA": {
+          "model_id": 2223,
+          "model_name": "Tacoma",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TUNDRA": {
+          "model_id": 2467,
+          "model_name": "Tundra",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VENZA": {
+          "model_id": 3005,
+          "model_name": "Venza",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "YARIS": {
+          "model_id": 2464,
+          "model_name": "Yaris",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 565,
+      "make_name": "TRIUMPH",
+      "make_slug": "triumph",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "BOBBER TFC": {
+          "model_id": 35288,
+          "model_name": "Bobber TFC",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "BONNEVILLE": {
+          "model_id": 2905,
+          "model_name": "Bonneville",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "DAYTONA": {
+          "model_id": 28649,
+          "model_name": "Daytona",
+          "vehicle_type": "car",
+          "years": [
+            2025
+          ]
+        },
+        "DAYTONA 660": {
+          "model_id": 34792,
+          "model_name": "Daytona 660",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "ROCKET 3": {
+          "model_id": 26995,
+          "model_name": "Rocket 3",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "ROCKET 3 STORM": {
+          "model_id": 34793,
+          "model_name": "Rocket 3 Storm",
+          "vehicle_type": "car",
+          "years": [
+            2025
+          ]
+        },
+        "SCRAMBLER": {
+          "model_id": 2907,
+          "model_name": "Scrambler",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SPEED": {
+          "model_id": 34788,
+          "model_name": "Speed",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SPEED TRIPLE": {
+          "model_id": 26993,
+          "model_name": "Speed Triple",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "SPEED TWIN": {
+          "model_id": 25654,
+          "model_name": "Speed Twin",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "STREET TRIPLE": {
+          "model_id": 2910,
+          "model_name": "Street Triple",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "STREET TWIN": {
+          "model_id": 10196,
+          "model_name": "Street Twin",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "TF250": {
+          "model_id": 36401,
+          "model_name": "TF250",
+          "vehicle_type": "car",
+          "years": [
+            2025
+          ]
+        },
+        "TF450": {
+          "model_id": 36402,
+          "model_name": "TF450",
+          "vehicle_type": "car",
+          "years": [
+            2025
+          ]
+        },
+        "THRUXTON": {
+          "model_id": 2908,
+          "model_name": "Thruxton",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TIGER": {
+          "model_id": 2898,
+          "model_name": "Tiger",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "TIGER SPORT": {
+          "model_id": 35215,
+          "model_name": "Tiger Sport",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "TRACKER": {
+          "model_id": 37427,
+          "model_name": "Tracker",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "TRIDENT": {
+          "model_id": 2896,
+          "model_name": "Trident",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    },
+    {
+      "make_id": 485,
+      "make_name": "VOLVO",
+      "make_slug": "volvo",
+      "first_year": 2024,
+      "last_year": 2026,
+      "models": {
+        "B10M": {
+          "model_id": 14122,
+          "model_name": "B10M",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B12B": {
+          "model_id": 31453,
+          "model_name": "B12B",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B12M": {
+          "model_id": 31454,
+          "model_name": "B12M",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B12R": {
+          "model_id": 31451,
+          "model_name": "B12R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B13R": {
+          "model_id": 31470,
+          "model_name": "B13R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B5R": {
+          "model_id": 31460,
+          "model_name": "B5R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B5TL": {
+          "model_id": 31467,
+          "model_name": "B5TL",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B7R": {
+          "model_id": 31452,
+          "model_name": "B7R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B8L": {
+          "model_id": 31469,
+          "model_name": "B8L",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B8R": {
+          "model_id": 31465,
+          "model_name": "B8R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B9L": {
+          "model_id": 31458,
+          "model_name": "B9L",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B9R": {
+          "model_id": 31456,
+          "model_name": "B9R",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B9S": {
+          "model_id": 31457,
+          "model_name": "B9S",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "B9TL": {
+          "model_id": 31455,
+          "model_name": "B9TL",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BE": {
+          "model_id": 31468,
+          "model_name": "BE",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BFE": {
+          "model_id": 31463,
+          "model_name": "BFE",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BRH": {
+          "model_id": 31466,
+          "model_name": "BRH",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BRLH": {
+          "model_id": 31461,
+          "model_name": "BRLH",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BXR": {
+          "model_id": 31459,
+          "model_name": "BXR",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BXRB": {
+          "model_id": 31464,
+          "model_name": "BXRB",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "BXXR": {
+          "model_id": 31462,
+          "model_name": "BXXR",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "C40": {
+          "model_id": 28818,
+          "model_name": "C40",
+          "vehicle_type": "car",
+          "years": [
+            2024
+          ]
+        },
+        "CAB BEHIND ENGINE": {
+          "model_id": 14135,
+          "model_name": "Cab Behind Engine",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CAB OVER ENGINE HT": {
+          "model_id": 14126,
+          "model_name": "Cab Over Engine HT",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "CAB OVER ENGINE LT": {
+          "model_id": 14127,
+          "model_name": "Cab Over Engine LT",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "EC40": {
+          "model_id": 34313,
+          "model_name": "EC40",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "EX30": {
+          "model_id": 34308,
+          "model_name": "EX30",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "EX30 CC": {
+          "model_id": 36146,
+          "model_name": "EX30 CC",
+          "vehicle_type": "car",
+          "years": [
+            2026
+          ]
+        },
+        "EX40": {
+          "model_id": 34314,
+          "model_name": "EX40",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "EX90": {
+          "model_id": 34309,
+          "model_name": "EX90",
+          "vehicle_type": "car",
+          "years": [
+            2025,
+            2026
+          ]
+        },
+        "F12 W/F7 CAB": {
+          "model_id": 14130,
+          "model_name": "F12 w/F7 Cab",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "F6 W/F7 CAB": {
+          "model_id": 14131,
+          "model_name": "F6 w/F7 Cab",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "S60": {
+          "model_id": 1959,
+          "model_name": "S60",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "S90": {
+          "model_id": 13798,
+          "model_name": "S90",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "V60": {
+          "model_id": 1961,
+          "model_name": "V60",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "V60CC": {
+          "model_id": 10206,
+          "model_name": "V60CC",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "V90CC": {
+          "model_id": 13800,
+          "model_name": "V90CC",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VOLVO TRAILERS": {
+          "model_id": 14140,
+          "model_name": "Volvo Trailers",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VS": {
+          "model_id": 27152,
+          "model_name": "VS",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "VT": {
+          "model_id": 27151,
+          "model_name": "VT",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "XC40": {
+          "model_id": 23714,
+          "model_name": "XC40",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "XC60": {
+          "model_id": 1962,
+          "model_name": "XC60",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "XC90": {
+          "model_id": 3132,
+          "model_name": "XC90",
+          "vehicle_type": "car",
+          "years": [
+            2024,
+            2025,
+            2026
+          ]
+        }
+      }
+    }
+  ]
+}
