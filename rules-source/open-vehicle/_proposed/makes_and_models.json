@@ -3,7 +3,7 @@
     "make_id": 475,
     "make_name": "ACURA",
     "make_slug": "acura",
-    "first_year": 2024,
+    "first_year": 1985,
     "last_year": 2026,
     "models": {
       "INTEGRA": {
@@ -11,9 +11,74 @@
         "model_name": "Integra",
         "vehicle_type": "car",
         "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2023,
           2024,
           2025,
           2026
+        ],
+        "model_styles": {}
+      },
+      "NSX": {
+        "model_id": 5168,
+        "model_name": "NSX",
+        "vehicle_type": "car",
+        "years": [
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "model_styles": {}
+      },
+      "RSX": {
+        "model_id": 3183,
+        "model_name": "RSX",
+        "vehicle_type": "car",
+        "years": [
+          2002,
+          2003,
+          2004,
+          2005,
+          2006
         ],
         "model_styles": {}
       }
@@ -23,7 +88,7 @@
     "make_id": 493,
     "make_name": "ALFA ROMEO",
     "make_slug": "alfa_romeo",
-    "first_year": 2024,
+    "first_year": 2016,
     "last_year": 2026,
     "models": {
       "GIULIA (952)": {
@@ -31,6 +96,14 @@
         "model_name": "Giulia (952)",
         "vehicle_type": "car",
         "years": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -43,7 +116,7 @@
     "make_id": 440,
     "make_name": "ASTON MARTIN",
     "make_slug": "aston_martin",
-    "first_year": 2008,
+    "first_year": 2006,
     "last_year": 2026,
     "models": {
       "DBS": {
@@ -110,6 +183,14 @@
         "model_name": "Vantage",
         "vehicle_type": "car",
         "years": [
+          2006,
+          2007,
+          2008,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -122,7 +203,7 @@
     "make_id": 582,
     "make_name": "AUDI",
     "make_slug": "audi",
-    "first_year": 1993,
+    "first_year": 1990,
     "last_year": 2026,
     "models": {
       "A4": {
@@ -457,12 +538,46 @@
           }
         }
       },
+      "COUPE": {
+        "model_id": 14348,
+        "model_name": "Coupe",
+        "vehicle_type": "car",
+        "years": [
+          1990,
+          1991
+        ],
+        "model_styles": {}
+      },
+      "R8": {
+        "model_id": 3789,
+        "model_name": "R8",
+        "vehicle_type": "car",
+        "years": [
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "model_styles": {}
+      },
       "S4": {
         "model_id": 3147,
         "model_name": "S4",
         "vehicle_type": "car",
         "years": [
+          1992,
           1993,
+          1994,
           2000,
           2001,
           2002,
@@ -567,6 +682,7 @@
           1995,
           1996,
           1997,
+          2002,
           2003,
           2007,
           2008,
@@ -632,6 +748,44 @@
             ]
           }
         }
+      },
+      "TT RS": {
+        "model_id": 4016,
+        "model_name": "TT RS",
+        "vehicle_type": "car",
+        "years": [
+          2013,
+          2014,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "model_styles": {}
+      },
+      "TTS": {
+        "model_id": 3861,
+        "model_name": "TTS",
+        "vehicle_type": "car",
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "model_styles": {}
       }
     }
   },
@@ -639,17 +793,266 @@
     "make_id": 452,
     "make_name": "BMW",
     "make_slug": "bmw",
-    "first_year": 1988,
+    "first_year": 1985,
     "last_year": 2026,
     "models": {
+      "128I": {
+        "model_id": 1707,
+        "model_name": "128i",
+        "vehicle_type": "car",
+        "years": [
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014
+        ],
+        "model_styles": {}
+      },
+      "135I": {
+        "model_id": 1708,
+        "model_name": "135i",
+        "vehicle_type": "car",
+        "years": [
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014
+        ],
+        "model_styles": {}
+      },
+      "318I": {
+        "model_id": 5178,
+        "model_name": "318i",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998
+        ],
+        "model_styles": {}
+      },
+      "318IS": {
+        "model_id": 5185,
+        "model_name": "318iS",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996
+        ],
+        "model_styles": {}
+      },
+      "318TI": {
+        "model_id": 5217,
+        "model_name": "318ti",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1999,
+          2000
+        ],
+        "model_styles": {}
+      },
+      "320I": {
+        "model_id": 2172,
+        "model_name": "320i",
+        "vehicle_type": "car",
+        "years": [
+          1987,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "model_styles": {}
+      },
+      "325I": {
+        "model_id": 2764,
+        "model_name": "325i",
+        "vehicle_type": "car",
+        "years": [
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006
+        ],
+        "model_styles": {}
+      },
+      "325IS": {
+        "model_id": 5187,
+        "model_name": "325iS",
+        "vehicle_type": "car",
+        "years": [
+          1987,
+          1988,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995
+        ],
+        "model_styles": {}
+      },
+      "328IS": {
+        "model_id": 5238,
+        "model_name": "328iS",
+        "vehicle_type": "car",
+        "years": [
+          1996,
+          1997,
+          1998,
+          1999,
+          2000
+        ],
+        "model_styles": {}
+      },
+      "328XI": {
+        "model_id": 2377,
+        "model_name": "328xi",
+        "vehicle_type": "car",
+        "years": [
+          2007,
+          2008
+        ],
+        "model_styles": {}
+      },
+      "330CI": {
+        "model_id": 2763,
+        "model_name": "330Ci",
+        "vehicle_type": "car",
+        "years": [
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006
+        ],
+        "model_styles": {}
+      },
       "330I": {
         "model_id": 2777,
         "model_name": "330i",
         "vehicle_type": "car",
         "years": [
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
+        ],
+        "model_styles": {}
+      },
+      "335D": {
+        "model_id": 1713,
+        "model_name": "335d",
+        "vehicle_type": "car",
+        "years": [
+          2009,
+          2010,
+          2011
+        ],
+        "model_styles": {}
+      },
+      "335I": {
+        "model_id": 1711,
+        "model_name": "335i",
+        "vehicle_type": "car",
+        "years": [
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "model_styles": {}
+      },
+      "335XI": {
+        "model_id": 2378,
+        "model_name": "335xi",
+        "vehicle_type": "car",
+        "years": [
+          2007,
+          2008
+        ],
+        "model_styles": {}
+      },
+      "528I": {
+        "model_id": 1715,
+        "model_name": "528i",
+        "vehicle_type": "car",
+        "years": [
+          1997,
+          1998,
+          1999,
+          2000,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016
         ],
         "model_styles": {}
       },
@@ -658,9 +1061,51 @@
         "model_name": "530i",
         "vehicle_type": "car",
         "years": [
+          1994,
+          1995,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
+        ],
+        "model_styles": {}
+      },
+      "535I": {
+        "model_id": 1716,
+        "model_name": "535i",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
         ],
         "model_styles": {}
       },
@@ -669,6 +1114,22 @@
         "model_name": "540i",
         "vehicle_type": "car",
         "years": [
+          1994,
+          1995,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -681,6 +1142,7 @@
         "vehicle_type": "car",
         "years": [
           1999,
+          2016,
           2017,
           2018,
           2019,
@@ -721,6 +1183,13 @@
         "model_name": "M235i",
         "vehicle_type": "car",
         "years": [
+          2014,
+          2015,
+          2016,
+          2020,
+          2021,
+          2022,
+          2023,
           2024
         ],
         "model_styles": {}
@@ -730,6 +1199,13 @@
         "model_name": "M240i",
         "vehicle_type": "car",
         "years": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -746,6 +1222,8 @@
           1990,
           1991,
           1994,
+          1995,
+          1996,
           1997,
           1998,
           1999,
@@ -880,6 +1358,7 @@
           2014,
           2015,
           2016,
+          2017,
           2018,
           2019,
           2020,
@@ -941,6 +1420,31 @@
             ]
           }
         }
+      },
+      "M6": {
+        "model_id": 1729,
+        "model_name": "M6",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "model_styles": {}
       },
       "M8": {
         "model_id": 26485,
@@ -1039,6 +1543,21 @@
             ]
           }
         }
+      },
+      "Z3": {
+        "model_id": 5239,
+        "model_name": "Z3",
+        "vehicle_type": "car",
+        "years": [
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002
+        ],
+        "model_styles": {}
       },
       "Z4": {
         "model_id": 1725,
@@ -1164,6 +1683,47 @@
             ]
           }
         }
+      },
+      "Z8": {
+        "model_id": 5324,
+        "model_name": "Z8",
+        "vehicle_type": "car",
+        "years": [
+          2001,
+          2002,
+          2003
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 454,
+    "make_name": "BUGATTI",
+    "make_slug": "bugatti",
+    "first_year": 2005,
+    "last_year": 2017,
+    "models": {
+      "VEYRON": {
+        "model_id": 1734,
+        "model_name": "Veyron",
+        "vehicle_type": "car",
+        "years": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "model_styles": {}
       }
     }
   },
@@ -1179,6 +1739,38 @@
         "model_name": "Camaro",
         "vehicle_type": "car",
         "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -1190,6 +1782,45 @@
         "model_name": "Corvette",
         "vehicle_type": "car",
         "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -1214,6 +1845,16 @@
           2000,
           2001,
           2002,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -1413,7 +2054,7 @@
     "make_id": 476,
     "make_name": "DODGE",
     "make_slug": "dodge",
-    "first_year": 2024,
+    "first_year": 1985,
     "last_year": 2026,
     "models": {
       "CHALLENGER": {
@@ -1421,9 +2062,176 @@
         "model_name": "Challenger",
         "vehicle_type": "car",
         "years": [
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
+        ],
+        "model_styles": {}
+      },
+      "NEON": {
+        "model_id": 5880,
+        "model_name": "Neon",
+        "vehicle_type": "car",
+        "years": [
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005
+        ],
+        "model_styles": {}
+      },
+      "SHELBY CHARGER": {
+        "model_id": 14414,
+        "model_name": "Shelby Charger",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988
+        ],
+        "model_styles": {}
+      },
+      "VIPER": {
+        "model_id": 1897,
+        "model_name": "Viper",
+        "vehicle_type": "car",
+        "years": [
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2008,
+          2009,
+          2010,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 603,
+    "make_name": "FERRARI",
+    "make_slug": "ferrari",
+    "first_year": 1986,
+    "last_year": 2009,
+    "models": {
+      "328": {
+        "model_id": 14050,
+        "model_name": "328",
+        "vehicle_type": "car",
+        "years": [
+          1986,
+          1987,
+          1988,
+          1989
+        ],
+        "model_styles": {}
+      },
+      "ENZO": {
+        "model_id": 9944,
+        "model_name": "Enzo",
+        "vehicle_type": "car",
+        "years": [
+          2003
+        ],
+        "model_styles": {}
+      },
+      "F355": {
+        "model_id": 9954,
+        "model_name": "F355",
+        "vehicle_type": "car",
+        "years": [
+          1996,
+          1998,
+          1999
+        ],
+        "model_styles": {}
+      },
+      "F40": {
+        "model_id": 14039,
+        "model_name": "F40",
+        "vehicle_type": "car",
+        "years": [
+          1991,
+          1992
+        ],
+        "model_styles": {}
+      },
+      "F430": {
+        "model_id": 3607,
+        "model_name": "F430",
+        "vehicle_type": "car",
+        "years": [
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 492,
+    "make_name": "FIAT",
+    "make_slug": "fiat",
+    "first_year": 2012,
+    "last_year": 2019,
+    "models": {
+      "500": {
+        "model_id": 2055,
+        "model_name": "500",
+        "vehicle_type": "car",
+        "years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
         ],
         "model_styles": {}
       }
@@ -1433,14 +2241,53 @@
     "make_id": 460,
     "make_name": "FORD",
     "make_slug": "ford",
-    "first_year": 2024,
+    "first_year": 1985,
     "last_year": 2026,
     "models": {
+      "ESCORT": {
+        "model_id": 5181,
+        "model_name": "Escort",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002
+        ],
+        "model_styles": {}
+      },
       "FIESTA": {
         "model_id": 3267,
         "model_name": "Fiesta",
         "vehicle_type": "car",
         "years": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -1452,9 +2299,50 @@
         "model_name": "Focus",
         "vehicle_type": "car",
         "years": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
+        ],
+        "model_styles": {}
+      },
+      "GT": {
+        "model_id": 2346,
+        "model_name": "GT",
+        "vehicle_type": "car",
+        "years": [
+          2004,
+          2005,
+          2006,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
         ],
         "model_styles": {}
       },
@@ -1463,6 +2351,45 @@
         "model_name": "Mustang",
         "vehicle_type": "car",
         "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -1475,7 +2402,7 @@
     "make_id": 474,
     "make_name": "HONDA",
     "make_slug": "honda",
-    "first_year": 2024,
+    "first_year": 1985,
     "last_year": 2026,
     "models": {
       "ACCORD": {
@@ -1483,6 +2410,45 @@
         "model_name": "Accord",
         "vehicle_type": "car",
         "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -1494,6 +2460,45 @@
         "model_name": "Civic",
         "vehicle_type": "car",
         "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -1505,6 +2510,9 @@
         "model_name": "Civic Si",
         "vehicle_type": "car",
         "years": [
+          1990,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -1516,9 +2524,227 @@
         "model_name": "Civic Type R",
         "vehicle_type": "car",
         "years": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2023,
           2024,
           2025,
           2026
+        ],
+        "model_styles": {}
+      },
+      "S2000": {
+        "model_id": 3153,
+        "model_name": "S2000",
+        "vehicle_type": "car",
+        "years": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 498,
+    "make_name": "HYUNDAI",
+    "make_slug": "hyundai",
+    "first_year": 2010,
+    "last_year": 2022,
+    "models": {
+      "GENESIS COUPE": {
+        "model_id": 2458,
+        "model_name": "Genesis Coupe",
+        "vehicle_type": "car",
+        "years": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016
+        ],
+        "model_styles": {}
+      },
+      "VELOSTER N": {
+        "model_id": 28077,
+        "model_name": "Veloster N",
+        "vehicle_type": "car",
+        "years": [
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 480,
+    "make_name": "INFINITI",
+    "make_slug": "infiniti",
+    "first_year": 2003,
+    "last_year": 2009,
+    "models": {
+      "G35": {
+        "model_id": 2305,
+        "model_name": "G35",
+        "vehicle_type": "car",
+        "years": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 502,
+    "make_name": "LAMBORGHINI",
+    "make_slug": "lamborghini",
+    "first_year": 2004,
+    "last_year": 2022,
+    "models": {
+      "AVENTADOR": {
+        "model_id": 9927,
+        "model_name": "Aventador",
+        "vehicle_type": "car",
+        "years": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "model_styles": {}
+      },
+      "GALLARDO": {
+        "model_id": 2067,
+        "model_name": "Gallardo",
+        "vehicle_type": "car",
+        "years": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014
+        ],
+        "model_styles": {}
+      },
+      "MURCIELAGO": {
+        "model_id": 2066,
+        "model_name": "Murcielago",
+        "vehicle_type": "car",
+        "years": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 515,
+    "make_name": "LEXUS",
+    "make_slug": "lexus",
+    "first_year": 2012,
+    "last_year": 2013,
+    "models": {
+      "LFA": {
+        "model_id": 3652,
+        "model_name": "LFA",
+        "vehicle_type": "car",
+        "years": [
+          2012,
+          2013
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 466,
+    "make_name": "LOTUS",
+    "make_slug": "lotus",
+    "first_year": 1985,
+    "last_year": 2012,
+    "models": {
+      "ELISE": {
+        "model_id": 3106,
+        "model_name": "Elise",
+        "vehicle_type": "car",
+        "years": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012
+        ],
+        "model_styles": {}
+      },
+      "ESPRIT": {
+        "model_id": 3112,
+        "model_name": "Esprit",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          2001,
+          2002,
+          2003,
+          2004,
+          2007,
+          2008,
+          2009
         ],
         "model_styles": {}
       }
@@ -1528,7 +2754,7 @@
     "make_id": 473,
     "make_name": "MAZDA",
     "make_slug": "mazda",
-    "first_year": 1990,
+    "first_year": 1985,
     "last_year": 2026,
     "models": {
       "MX-5": {
@@ -1662,6 +2888,168 @@
             ]
           }
         }
+      },
+      "RX-7": {
+        "model_id": 5497,
+        "model_name": "RX-7",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1993,
+          1994,
+          1995,
+          1996
+        ],
+        "model_styles": {}
+      },
+      "RX-8": {
+        "model_id": 2073,
+        "model_name": "RX-8",
+        "vehicle_type": "car",
+        "years": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 456,
+    "make_name": "MINI",
+    "make_slug": "mini",
+    "first_year": 2002,
+    "last_year": 2010,
+    "models": {
+      "COOPER": {
+        "model_id": 1761,
+        "model_name": "Cooper",
+        "vehicle_type": "car",
+        "years": [
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 481,
+    "make_name": "MITSUBISHI",
+    "make_slug": "mitsubishi",
+    "first_year": 1985,
+    "last_year": 2017,
+    "models": {
+      "ECLIPSE": {
+        "model_id": 2166,
+        "model_name": "Eclipse",
+        "vehicle_type": "car",
+        "years": [
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012
+        ],
+        "model_styles": {}
+      },
+      "GALANT": {
+        "model_id": 2165,
+        "model_name": "Galant",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012
+        ],
+        "model_styles": {}
+      },
+      "LANCER": {
+        "model_id": 2164,
+        "model_name": "Lancer",
+        "vehicle_type": "car",
+        "years": [
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "model_styles": {}
       }
     }
   },
@@ -1669,9 +3057,83 @@
     "make_id": 478,
     "make_name": "NISSAN",
     "make_slug": "nissan",
-    "first_year": 2008,
+    "first_year": 1985,
     "last_year": 2026,
     "models": {
+      "200SX": {
+        "model_id": 14385,
+        "model_name": "200SX",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1995,
+          1996,
+          1997,
+          1998
+        ],
+        "model_styles": {}
+      },
+      "240SX": {
+        "model_id": 5565,
+        "model_name": "240SX",
+        "vehicle_type": "car",
+        "years": [
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001
+        ],
+        "model_styles": {}
+      },
+      "350Z": {
+        "model_id": 2303,
+        "model_name": "350Z",
+        "vehicle_type": "car",
+        "years": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "model_styles": {}
+      },
+      "370Z": {
+        "model_id": 1906,
+        "model_name": "370Z",
+        "vehicle_type": "car",
+        "years": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "model_styles": {}
+      },
       "GT-R": {
         "model_id": 1890,
         "model_name": "GT-R",
@@ -1729,14 +3191,140 @@
           }
         }
       },
+      "JUKE": {
+        "model_id": 1912,
+        "model_name": "Juke",
+        "vehicle_type": "car",
+        "years": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "model_styles": {}
+      },
       "SENTRA": {
         "model_id": 1907,
         "model_name": "Sentra",
         "vehicle_type": "car",
         "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 536,
+    "make_name": "PONTIAC",
+    "make_slug": "pontiac",
+    "first_year": 1985,
+    "last_year": 2010,
+    "models": {
+      "FIERO": {
+        "model_id": 14471,
+        "model_name": "Fiero",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988
+        ],
+        "model_styles": {}
+      },
+      "FIREBIRD": {
+        "model_id": 8986,
+        "model_name": "Firebird",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002
+        ],
+        "model_styles": {}
+      },
+      "GTO": {
+        "model_id": 4993,
+        "model_name": "GTO",
+        "vehicle_type": "car",
+        "years": [
+          2004,
+          2005,
+          2006
+        ],
+        "model_styles": {}
+      },
+      "SOLSTICE": {
+        "model_id": 4260,
+        "model_name": "Solstice",
+        "vehicle_type": "car",
+        "years": [
+          2006,
+          2007,
+          2008,
+          2009,
+          2010
         ],
         "model_styles": {}
       }
@@ -1754,6 +3342,13 @@
         "model_name": "718 Cayman",
         "vehicle_type": "car",
         "years": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -2547,14 +4142,123 @@
           }
         }
       },
+      "924": {
+        "model_id": 13848,
+        "model_name": "924",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988
+        ],
+        "model_styles": {}
+      },
+      "928": {
+        "model_id": 13847,
+        "model_name": "928",
+        "vehicle_type": "car",
+        "years": [
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994
+        ],
+        "model_styles": {}
+      },
+      "944": {
+        "model_id": 13846,
+        "model_name": "944",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991
+        ],
+        "model_styles": {}
+      },
+      "BOXSTER": {
+        "model_id": 7847,
+        "model_name": "Boxster",
+        "vehicle_type": "car",
+        "years": [
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016
+        ],
+        "model_styles": {}
+      },
       "CAYENNE": {
         "model_id": 7895,
         "model_name": "Cayenne",
         "vehicle_type": "car",
         "years": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
+        ],
+        "model_styles": {}
+      },
+      "CAYMAN": {
+        "model_id": 7900,
+        "model_name": "Cayman",
+        "vehicle_type": "car",
+        "years": [
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016
         ],
         "model_styles": {}
       },
@@ -2563,6 +4267,20 @@
         "model_name": "Panamera",
         "vehicle_type": "car",
         "years": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -2575,7 +4293,7 @@
     "make_id": 572,
     "make_name": "SAAB",
     "make_slug": "saab",
-    "first_year": 1998,
+    "first_year": 1985,
     "last_year": 2026,
     "models": {
       "9-3": {
@@ -2596,6 +4314,18 @@
           2009,
           2010,
           2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -2779,6 +4509,18 @@
           2009,
           2010,
           2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -2902,6 +4644,91 @@
             ]
           }
         }
+      },
+      "900": {
+        "model_id": 10049,
+        "model_name": "900",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998
+        ],
+        "model_styles": {}
+      },
+      "9000": {
+        "model_id": 10050,
+        "model_name": "9000",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998
+        ],
+        "model_styles": {}
+      }
+    }
+  },
+  {
+    "make_id": 4355,
+    "make_name": "SALEEN",
+    "make_slug": "saleen",
+    "first_year": 2002,
+    "last_year": 2026,
+    "models": {
+      "S7": {
+        "model_id": 9157,
+        "model_name": "S7",
+        "vehicle_type": "car",
+        "years": [
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "model_styles": {}
       }
     }
   },
@@ -2909,7 +4736,7 @@
     "make_id": 504,
     "make_name": "SMART",
     "make_slug": "smart",
-    "first_year": 2024,
+    "first_year": 2008,
     "last_year": 2026,
     "models": {
       "FORTWO": {
@@ -2917,6 +4744,22 @@
         "model_name": "Fortwo",
         "vehicle_type": "car",
         "years": [
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -2929,7 +4772,7 @@
     "make_id": 523,
     "make_name": "SUBARU",
     "make_slug": "subaru",
-    "first_year": 2013,
+    "first_year": 1990,
     "last_year": 2026,
     "models": {
       "BRZ": {
@@ -2980,6 +4823,32 @@
         "model_name": "Forester",
         "vehicle_type": "car",
         "years": [
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -2991,6 +4860,37 @@
         "model_name": "Impreza",
         "vehicle_type": "car",
         "years": [
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -3002,6 +4902,40 @@
         "model_name": "Legacy",
         "vehicle_type": "car",
         "years": [
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -3014,7 +4948,7 @@
     "make_id": 441,
     "make_name": "TESLA",
     "make_slug": "tesla",
-    "first_year": 2024,
+    "first_year": 2008,
     "last_year": 2026,
     "models": {
       "MODEL 3": {
@@ -3022,9 +4956,29 @@
         "model_name": "Model 3",
         "vehicle_type": "car",
         "years": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
+        ],
+        "model_styles": {}
+      },
+      "ROADSTER": {
+        "model_id": 2071,
+        "model_name": "Roadster",
+        "vehicle_type": "car",
+        "years": [
+          2008,
+          2009,
+          2010,
+          2011,
+          2012
         ],
         "model_styles": {}
       }
@@ -3034,14 +4988,65 @@
     "make_id": 448,
     "make_name": "TOYOTA",
     "make_slug": "toyota",
-    "first_year": 2024,
+    "first_year": 1985,
     "last_year": 2026,
     "models": {
+      "86": {
+        "model_id": 13602,
+        "model_name": "86",
+        "vehicle_type": "car",
+        "years": [
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "model_styles": {}
+      },
       "CELICA": {
         "model_id": 3645,
         "model_name": "Celica",
         "vehicle_type": "car",
         "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
@@ -3053,9 +5058,74 @@
         "model_name": "Corolla",
         "vehicle_type": "car",
         "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026
+        ],
+        "model_styles": {}
+      },
+      "MR2": {
+        "model_id": 3648,
+        "model_name": "MR2",
+        "vehicle_type": "car",
+        "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007
         ],
         "model_styles": {}
       },
@@ -3064,6 +5134,24 @@
         "model_name": "Supra",
         "vehicle_type": "car",
         "years": [
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          2020,
+          2021,
+          2022,
+          2023,
           2024,
           2025,
           2026

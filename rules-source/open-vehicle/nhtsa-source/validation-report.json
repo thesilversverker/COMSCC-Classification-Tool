@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-05-02T00:09:01+00:00",
+  "generatedAt": "2026-05-02T12:02:58+00:00",
   "issues": {
     "unmatchedCatalogMakes": [],
     "unmatchedCatalogModels": [],
@@ -1523,124 +1523,752 @@
     "baselineShrinkViolations": []
   },
   "counts": {
+    "1955_custom_belair": {
+      "models": 1,
+      "styles": 0
+    },
+    "aas": {
+      "models": 6,
+      "styles": 0
+    },
+    "ac_propulsion": {
+      "models": 2,
+      "styles": 0
+    },
     "acura": {
-      "models": 8,
+      "models": 17,
       "styles": 0
     },
     "alfa_romeo": {
-      "models": 3,
-      "styles": 0
-    },
-    "aston_martin": {
       "models": 9,
       "styles": 0
     },
+    "allard_motor_works": {
+      "models": 1,
+      "styles": 0
+    },
+    "am_general": {
+      "models": 1,
+      "styles": 0
+    },
+    "american_motors": {
+      "models": 2,
+      "styles": 0
+    },
+    "ameritech_corporation": {
+      "models": 1,
+      "styles": 0
+    },
+    "armbruster_stageway": {
+      "models": 16,
+      "styles": 0
+    },
+    "aston_martin": {
+      "models": 18,
+      "styles": 0
+    },
+    "asuna": {
+      "models": 1,
+      "styles": 0
+    },
     "audi": {
-      "models": 33,
+      "models": 55,
       "styles": 0
     },
-    "bmw": {
-      "models": 78,
+    "autocar_ltd": {
+      "models": 1,
       "styles": 0
     },
-    "bugatti": {
-      "models": 5,
+    "autodelta_usa_inc": {
+      "models": 1,
       "styles": 0
     },
-    "chevrolet": {
-      "models": 46,
+    "automobili_pininfarina": {
+      "models": 1,
       "styles": 0
     },
-    "dodge": {
+    "avanti": {
+      "models": 1,
+      "styles": 0
+    },
+    "avera_motors": {
       "models": 4,
       "styles": 0
     },
-    "ferrari": {
+    "backdraft": {
+      "models": 1,
+      "styles": 0
+    },
+    "bakkura_mobility": {
+      "models": 1,
+      "styles": 0
+    },
+    "ballistic": {
+      "models": 2,
+      "styles": 0
+    },
+    "bbc": {
+      "models": 2,
+      "styles": 0
+    },
+    "bentley": {
+      "models": 12,
+      "styles": 0
+    },
+    "bertone": {
+      "models": 1,
+      "styles": 0
+    },
+    "blackwater": {
+      "models": 3,
+      "styles": 0
+    },
+    "bluecar": {
+      "models": 1,
+      "styles": 0
+    },
+    "bmw": {
+      "models": 253,
+      "styles": 0
+    },
+    "bug_motors": {
+      "models": 1,
+      "styles": 0
+    },
+    "bugatti": {
+      "models": 6,
+      "styles": 0
+    },
+    "buick": {
+      "models": 27,
+      "styles": 0
+    },
+    "bxr": {
+      "models": 1,
+      "styles": 0
+    },
+    "byd": {
+      "models": 32,
+      "styles": 0
+    },
+    "c_r_cheetah_race_cars": {
+      "models": 2,
+      "styles": 0
+    },
+    "cadillac": {
+      "models": 37,
+      "styles": 0
+    },
+    "calmotors": {
+      "models": 1,
+      "styles": 0
+    },
+    "camelot": {
+      "models": 1,
+      "styles": 0
+    },
+    "carbodies": {
+      "models": 1,
+      "styles": 0
+    },
+    "chevrolet": {
+      "models": 122,
+      "styles": 0
+    },
+    "chrysler": {
+      "models": 35,
+      "styles": 0
+    },
+    "classic_roadsters": {
       "models": 7,
       "styles": 0
     },
+    "classic_sports_cars": {
+      "models": 3,
+      "styles": 0
+    },
+    "clenet": {
+      "models": 3,
+      "styles": 0
+    },
+    "clenet_coachworks": {
+      "models": 1,
+      "styles": 0
+    },
+    "cobra_cars": {
+      "models": 2,
+      "styles": 0
+    },
+    "coda": {
+      "models": 1,
+      "styles": 0
+    },
+    "consulier_gtp": {
+      "models": 1,
+      "styles": 0
+    },
+    "contemporary_classic_cars_ccc": {
+      "models": 1,
+      "styles": 0
+    },
+    "costin_sports_car": {
+      "models": 2,
+      "styles": 0
+    },
+    "creative_coachworks": {
+      "models": 1,
+      "styles": 0
+    },
+    "creative_coachworks_inc": {
+      "models": 1,
+      "styles": 0
+    },
+    "cruise": {
+      "models": 1,
+      "styles": 0
+    },
+    "cx_automotive": {
+      "models": 1,
+      "styles": 0
+    },
+    "czinger": {
+      "models": 1,
+      "styles": 0
+    },
+    "daewoo": {
+      "models": 6,
+      "styles": 0
+    },
+    "daihatsu": {
+      "models": 3,
+      "styles": 0
+    },
+    "daytona_coach_builders": {
+      "models": 1,
+      "styles": 0
+    },
+    "delorean": {
+      "models": 1,
+      "styles": 0
+    },
+    "dodge": {
+      "models": 46,
+      "styles": 0
+    },
+    "dongfeng": {
+      "models": 3,
+      "styles": 0
+    },
+    "eagle": {
+      "models": 7,
+      "styles": 0
+    },
+    "ecocar": {
+      "models": 2,
+      "styles": 0
+    },
+    "electric_car_company": {
+      "models": 1,
+      "styles": 0
+    },
+    "electric_mobile_cars": {
+      "models": 1,
+      "styles": 0
+    },
+    "elkington": {
+      "models": 1,
+      "styles": 0
+    },
+    "ema": {
+      "models": 2,
+      "styles": 0
+    },
+    "engine_connection": {
+      "models": 6,
+      "styles": 0
+    },
+    "equus_automotive": {
+      "models": 1,
+      "styles": 0
+    },
+    "ev_innovations": {
+      "models": 9,
+      "styles": 0
+    },
+    "excalibur_automobile_corporation": {
+      "models": 5,
+      "styles": 0
+    },
+    "falcon": {
+      "models": 1,
+      "styles": 0
+    },
+    "falcon_motors": {
+      "models": 4,
+      "styles": 0
+    },
+    "faw_jiaxing_happy_messenger": {
+      "models": 1,
+      "styles": 0
+    },
+    "ferrari": {
+      "models": 56,
+      "styles": 0
+    },
     "fiat": {
+      "models": 7,
+      "styles": 0
+    },
+    "fisker": {
       "models": 3,
       "styles": 0
     },
     "ford": {
-      "models": 32,
+      "models": 140,
       "styles": 0
     },
-    "honda": {
-      "models": 129,
+    "formula_1_street_com": {
+      "models": 2,
       "styles": 0
     },
-    "hyundai": {
-      "models": 19,
-      "styles": 0
-    },
-    "infiniti": {
+    "fortunesport_ves": {
       "models": 5,
       "styles": 0
     },
-    "lamborghini": {
+    "genesis": {
+      "models": 6,
+      "styles": 0
+    },
+    "geo": {
+      "models": 6,
+      "styles": 0
+    },
+    "glickenhaus": {
+      "models": 6,
+      "styles": 0
+    },
+    "gmc": {
+      "models": 61,
+      "styles": 0
+    },
+    "gruppe_b": {
+      "models": 1,
+      "styles": 0
+    },
+    "hedley_studios": {
+      "models": 1,
+      "styles": 0
+    },
+    "heritage": {
       "models": 4,
       "styles": 0
     },
-    "lexus": {
-      "models": 14,
-      "styles": 0
-    },
-    "lotus": {
+    "holden": {
       "models": 3,
       "styles": 0
     },
-    "mazda": {
-      "models": 9,
+    "honda": {
+      "models": 325,
       "styles": 0
     },
-    "mini": {
-      "models": 4,
+    "hunter_design_group_llc": {
+      "models": 1,
       "styles": 0
     },
-    "mitsubishi": {
+    "hyundai": {
+      "models": 38,
+      "styles": 0
+    },
+    "infiniti": {
+      "models": 33,
+      "styles": 0
+    },
+    "isuzu": {
+      "models": 46,
+      "styles": 0
+    },
+    "ives_motors_corporation_imc": {
+      "models": 5,
+      "styles": 0
+    },
+    "jac_427": {
+      "models": 1,
+      "styles": 0
+    },
+    "jaguar": {
+      "models": 17,
+      "styles": 0
+    },
+    "kandi": {
+      "models": 17,
+      "styles": 0
+    },
+    "karma": {
       "models": 7,
       "styles": 0
     },
-    "nissan": {
+    "kepler_motors": {
+      "models": 1,
+      "styles": 0
+    },
+    "kia": {
+      "models": 24,
+      "styles": 0
+    },
+    "kindig": {
+      "models": 1,
+      "styles": 0
+    },
+    "koenigsegg": {
+      "models": 6,
+      "styles": 0
+    },
+    "la_exotics": {
+      "models": 1,
+      "styles": 0
+    },
+    "lamborghini": {
+      "models": 10,
+      "styles": 0
+    },
+    "lancia": {
+      "models": 3,
+      "styles": 0
+    },
+    "lexus": {
+      "models": 17,
+      "styles": 0
+    },
+    "lincoln": {
+      "models": 17,
+      "styles": 0
+    },
+    "lite_car": {
+      "models": 1,
+      "styles": 0
+    },
+    "londoncoach_inc": {
+      "models": 1,
+      "styles": 0
+    },
+    "lotus": {
       "models": 19,
       "styles": 0
     },
-    "porsche": {
+    "lucid": {
+      "models": 2,
+      "styles": 0
+    },
+    "lumen": {
+      "models": 1,
+      "styles": 0
+    },
+    "making_you_mobile": {
+      "models": 1,
+      "styles": 0
+    },
+    "maserati": {
+      "models": 14,
+      "styles": 0
+    },
+    "matrix_motor_company": {
+      "models": 1,
+      "styles": 0
+    },
+    "maybach": {
+      "models": 2,
+      "styles": 0
+    },
+    "mayhem_autoworkz": {
+      "models": 13,
+      "styles": 0
+    },
+    "mazda": {
+      "models": 28,
+      "styles": 0
+    },
+    "mclaren": {
+      "models": 19,
+      "styles": 0
+    },
+    "mercedes_benz": {
+      "models": 57,
+      "styles": 0
+    },
+    "mercury": {
+      "models": 16,
+      "styles": 0
+    },
+    "merkur": {
+      "models": 2,
+      "styles": 0
+    },
+    "meyers_manx": {
+      "models": 3,
+      "styles": 0
+    },
+    "mgs_grand_sport_mardikian": {
+      "models": 1,
+      "styles": 0
+    },
+    "mini": {
       "models": 8,
       "styles": 0
     },
+    "mitsubishi": {
+      "models": 31,
+      "styles": 0
+    },
+    "mk_sportscars": {
+      "models": 2,
+      "styles": 0
+    },
+    "moke": {
+      "models": 2,
+      "styles": 0
+    },
+    "mosler": {
+      "models": 2,
+      "styles": 0
+    },
+    "mycar": {
+      "models": 1,
+      "styles": 0
+    },
+    "nissan": {
+      "models": 44,
+      "styles": 0
+    },
+    "njd_automotive_llc": {
+      "models": 1,
+      "styles": 0
+    },
+    "oldsmobile": {
+      "models": 19,
+      "styles": 0
+    },
+    "opel": {
+      "models": 6,
+      "styles": 0
+    },
+    "pagani": {
+      "models": 2,
+      "styles": 0
+    },
+    "panoz": {
+      "models": 1,
+      "styles": 0
+    },
+    "panther": {
+      "models": 1,
+      "styles": 0
+    },
+    "pas": {
+      "models": 5,
+      "styles": 0
+    },
+    "peugeot": {
+      "models": 2,
+      "styles": 0
+    },
+    "phoenix_motorcars": {
+      "models": 1,
+      "styles": 0
+    },
+    "pininfarina": {
+      "models": 1,
+      "styles": 0
+    },
+    "plymouth": {
+      "models": 15,
+      "styles": 0
+    },
+    "polestar": {
+      "models": 4,
+      "styles": 0
+    },
+    "pontiac": {
+      "models": 31,
+      "styles": 0
+    },
+    "porsche": {
+      "models": 15,
+      "styles": 0
+    },
+    "rally_sport": {
+      "models": 2,
+      "styles": 0
+    },
+    "renaissance": {
+      "models": 1,
+      "styles": 0
+    },
+    "renault": {
+      "models": 4,
+      "styles": 0
+    },
+    "revology": {
+      "models": 1,
+      "styles": 0
+    },
+    "rimac": {
+      "models": 2,
+      "styles": 0
+    },
+    "rocket_sled_motors": {
+      "models": 2,
+      "styles": 0
+    },
+    "rolls_royce": {
+      "models": 15,
+      "styles": 0
+    },
+    "rs_spider": {
+      "models": 2,
+      "styles": 0
+    },
+    "ruf": {
+      "models": 4,
+      "styles": 0
+    },
     "saab": {
+      "models": 7,
+      "styles": 0
+    },
+    "saleen": {
+      "models": 1,
+      "styles": 0
+    },
+    "saturn": {
+      "models": 24,
+      "styles": 0
+    },
+    "scuderia_cameron_glickenhaus_scg": {
+      "models": 16,
+      "styles": 0
+    },
+    "shay_reproduction": {
+      "models": 2,
+      "styles": 0
+    },
+    "shelby": {
       "models": 2,
       "styles": 0
     },
     "smart": {
-      "models": 2,
+      "models": 4,
+      "styles": 0
+    },
+    "solectria": {
+      "models": 4,
+      "styles": 0
+    },
+    "spyker": {
+      "models": 3,
+      "styles": 0
+    },
+    "ssc_north_america": {
+      "models": 3,
       "styles": 0
     },
     "stanford_customs": {
       "models": 3,
       "styles": 0
     },
+    "sterling_motor_car": {
+      "models": 2,
+      "styles": 0
+    },
     "subaru": {
-      "models": 11,
+      "models": 25,
+      "styles": 0
+    },
+    "supercar_system": {
+      "models": 1,
+      "styles": 0
+    },
+    "suzuki": {
+      "models": 384,
       "styles": 0
     },
     "tesla": {
-      "models": 6,
+      "models": 7,
+      "styles": 0
+    },
+    "th_nk": {
+      "models": 2,
+      "styles": 0
+    },
+    "total_electric_vehicles": {
+      "models": 2,
       "styles": 0
     },
     "toyota": {
-      "models": 30,
+      "models": 56,
       "styles": 0
     },
     "triumph": {
-      "models": 19,
+      "models": 33,
+      "styles": 0
+    },
+    "ucc": {
+      "models": 3,
+      "styles": 0
+    },
+    "ukeycheyma": {
+      "models": 17,
+      "styles": 0
+    },
+    "vector_aeromotive_corporation": {
+      "models": 1,
+      "styles": 0
+    },
+    "vintage_auto": {
+      "models": 2,
+      "styles": 0
+    },
+    "vintage_cruiser": {
+      "models": 6,
+      "styles": 0
+    },
+    "vintage_microbus": {
+      "models": 2,
+      "styles": 0
+    },
+    "vintage_rover": {
+      "models": 2,
+      "styles": 0
+    },
+    "vision_industries": {
+      "models": 1,
+      "styles": 0
+    },
+    "volkswagen": {
+      "models": 38,
       "styles": 0
     },
     "volvo": {
-      "models": 43,
+      "models": 62,
+      "styles": 0
+    },
+    "warhawk_performance": {
+      "models": 2,
+      "styles": 0
+    },
+    "yester_year_auto": {
+      "models": 8,
+      "styles": 0
+    },
+    "yugo": {
+      "models": 4,
+      "styles": 0
+    },
+    "zeekr": {
+      "models": 1,
+      "styles": 0
+    },
+    "zoox": {
+      "models": 1,
       "styles": 0
     }
   }

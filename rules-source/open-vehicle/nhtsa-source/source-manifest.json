@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-05-02T00:09:01+00:00",
+  "generatedAt": "2026-05-02T12:02:58+00:00",
   "refreshMode": "update",
   "yearFrom": 1985,
   "yearTo": 2026,
@@ -9,9 +9,9 @@
     "vehiclesComsccCatalog": "sha256:f773d44a18692f62fb4d373fef1786dfbd798b9cca4d09a1033b3f5421018875"
   },
   "vpic": {
-    "totalRequests": 1173,
-    "failures": 0,
-    "failRate": 0.0,
-    "responseSetHash": "sha256:2a2d3b16eb767ae1737c0f683362b542a30089ab7e70b32fa77beeab1ac44312"
+    "totalRequests": 1659,
+    "failures": 15,
+    "failRate": 0.009041591320072333,
+    "responseSetHash": "sha256:5aa0b4cf5446b9e4fbe08d8da34dd385eace6431394efbe7ea063a6702aaa3fb"
   }
 }

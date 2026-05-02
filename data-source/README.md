@@ -31,7 +31,7 @@ runs any of this — it is invoked manually when curators need new baseline data
 
 ### npm shortcuts (repo root)
 
-Requires `data-source/.venv` as in [One-time setup](#one-time-setup). Pass flags after `--`:
+Scripts use `scripts/run-data-python.mjs`: **`data-source/.venv/bin/python`** when present, otherwise **`python3`** (override with env **`COMSCC_PYTHON`**). Creating the venv per [One-time setup](#one-time-setup) is still recommended so deps match `requirements.txt`. Pass flags after `--`:
 
 | npm script | Python equivalent |
 |------------|---------------------|
