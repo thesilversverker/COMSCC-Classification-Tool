@@ -248,7 +248,7 @@
         <p>
           <strong>Unevaluated vehicle.</strong>
           This selection is not in the COMSCC workbook seed — showroom numbers may be template defaults (row
-          {catalogHit.catalogId}). Use manual Showroom Assessment below if needed.
+          {catalogHit.catalogId}).
         </p>
       {:else}
         <p>
@@ -263,7 +263,7 @@
       {/if}
     </div>
   {:else if makeSlug && modelKey && yearStr.length === 4 && (!showTrimStep || trimSelectValue !== '')}
-    <p class="catalog-miss">No COMSCC showroom row for this make, model, and year — use manual Showroom Assessment below.</p>
+    <p class="catalog-miss">No COMSCC showroom row for this make, model, and year.</p>
   {/if}
 
   {#if showManualShowroom}
