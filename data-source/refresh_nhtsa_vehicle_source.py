@@ -2,12 +2,10 @@
 """
 Logical component: operator entry point for the NHTSA refresh pipeline.
 
-Step 4 surface (this file): only the `plan` subcommand is exposed. `plan` is
-network-free and write-free — it walks the cache manifest and the COMSCC
-catalog and prints what `update` *would* do, classified per the per-class
-TTL table. `bootstrap` / `update` / `styles-only` / `models-only` land in
-later steps; the argparse skeleton has space for them so the runbook never
-changes shape under operators.
+`bootstrap` / `update` fetch `GetMakesForVehicleType(car)` first, then fan out
+`GetModelsForMakeYear` for **every VPIC passenger-car make** (default) or for
+**catalog makes only** (`--model-makes catalog`). `plan` is offline: it
+classifies the same request set (using a cached makes body when available).
 
 Top-level guarantees:
 - `SKIP_OPEN_VEHICLE_SYNC=1` exits 0 immediately, regardless of subcommand
@@ -26,7 +24,7 @@ import os
 import sys
 from collections import Counter
 from pathlib import Path
-from typing import Any, Callable, Iterable, Mapping
+from typing import Any, Callable, Iterable, Literal, Mapping
 
 # Logical component: when invoked as a script the package isn't on sys.path.
 _THIS_DIR = Path(__file__).resolve().parent
@@ -53,8 +51,10 @@ from vpic_cache import (  # noqa: E402
 )
 from vpic_client import (  # noqa: E402
     FailRateExceeded,
+    FetchOutcome,
     VpicClient,
     httpx_transport,
+    parse_outcome_body,
 )
 from vpic_models import (  # noqa: E402
     CanadianSpecsEnvelope,
@@ -77,6 +77,8 @@ _REPO_ROOT = _THIS_DIR.parent
 _DEFAULT_CATALOG = _REPO_ROOT / "rules-source" / "vehicles-comscc-catalog.json"
 _DEFAULT_OUT_DIR = _REPO_ROOT / "rules-source" / "open-vehicle" / "nhtsa-source"
 
+ModelMakesMode = Literal["all", "catalog"]
+
 
 def load_catalog_rows(catalog_path: Path) -> list[dict[str, Any]]:
     if not catalog_path.exists():
@@ -87,6 +89,79 @@ def load_catalog_rows(catalog_path: Path) -> list[dict[str, Any]]:
     return [r for r in rows if isinstance(r, dict)]
 
 
+def _catalog_derived_make_names(rows: Iterable[Mapping[str, Any]]) -> list[str]:
+    return sorted({_get_str(r, "vehicleMake", "make") for r in rows} - {None})
+
+
+def load_cached_makes_envelope(cache: VpicCache) -> MakesEnvelope | None:
+    """Best-effort parse of the newest cached GetMakesForVehicleType(car) body."""
+    manifest = cache.load_manifest()
+    for entry in manifest.values():
+        if entry.endpoint != ENDPOINT_MAKES:
+            continue
+        if entry.status != 200:
+            continue
+        try:
+            body = json.loads(cache.read_body(entry).decode("utf-8"))
+        except (OSError, json.JSONDecodeError, UnicodeDecodeError):
+            continue
+        try:
+            return MakesEnvelope.model_validate(body)
+        except Exception:
+            continue
+    return None
+
+
+def merge_fetch_outcome_into_manifest(cache: VpicCache, outcome: FetchOutcome) -> None:
+    """Persist a single fetch into the manifest so later phases see it like fetch_many."""
+    if outcome.entry is None:
+        return
+    manifest = cache.load_manifest()
+    manifest[outcome.cache_key] = outcome.entry
+    cache.save_manifest(manifest)
+
+
+def makes_envelope_from_outcome(cache: VpicCache, outcome: FetchOutcome) -> MakesEnvelope | None:
+    body = parse_outcome_body(outcome, cache)
+    if body is None:
+        return None
+    try:
+        return MakesEnvelope.model_validate(body)
+    except Exception:
+        return None
+
+
+def resolve_model_make_names_for_refresh(
+    *,
+    mode: ModelMakesMode,
+    catalog_rows: list[dict[str, Any]],
+    makes_env: MakesEnvelope,
+) -> list[str]:
+    """Layer 2 model fan-out: all VPIC passenger-car makes, or catalog makes only."""
+    if mode == "catalog":
+        return _catalog_derived_make_names(catalog_rows)
+    return sorted({r.make_name.strip() for r in makes_env.results if r.make_name.strip()})
+
+
+def resolve_model_make_names_for_plan(
+    *,
+    mode: ModelMakesMode,
+    catalog_rows: list[dict[str, Any]],
+    cache: VpicCache,
+) -> list[str]:
+    """Offline plan: use cached makes envelope when mode is all, else catalog-only fallback + warning."""
+    if mode == "catalog":
+        return _catalog_derived_make_names(catalog_rows)
+    env = load_cached_makes_envelope(cache)
+    if env is not None:
+        return sorted({r.make_name.strip() for r in env.results if r.make_name.strip()})
+    sys.stderr.write(
+        "warning: plan --model-makes all: no cached GetMakesForVehicleType(car) response; "
+        "model rows estimated using catalog makes only (populate cache via bootstrap for full counts).\n"
+    )
+    return _catalog_derived_make_names(catalog_rows)
+
+
 def planned_requests(
     *,
     catalog_rows: Iterable[Mapping[str, Any]],
@@ -94,13 +169,14 @@ def planned_requests(
     year_to: int,
     recent_years: int,
     current_year: int,
+    model_make_names: list[str],
 ) -> list[tuple[str, dict[str, Any]]]:
-    """Build the (endpoint, params) list `update` would issue.
+    """Build the (endpoint, params) list `plan` classifies (offline).
 
     update semantics:
-    - Always fetch makes (cheap and cache-respecting).
-    - Fetch models for `[currentYear - recent_years + 1 .. currentYear]` for every make
-      that appears in the catalog.
+    - Always includes makes (cheap and cache-respecting).
+    - Model requests: every name in `model_make_names` × recent-year window
+      (default source: all VPIC passenger-car makes when operator uses --model-makes all).
     - Fetch Canadian specs for every (year, make, model) span in the catalog,
       bounded by `year_from..year_to`.
     """
@@ -108,15 +184,9 @@ def planned_requests(
 
     requests.append((ENDPOINT_MAKES, {"vehicleType": "car"}))
 
-    catalog_makes: set[str] = set()
-    for row in catalog_rows:
-        make = row.get("vehicleMake") or row.get("make")
-        if isinstance(make, str) and make.strip():
-            catalog_makes.add(make.strip())
-
     recent_lo = max(year_from, current_year - recent_years + 1)
     recent_hi = min(year_to, current_year)
-    for make in sorted(catalog_makes):
+    for make in model_make_names:
         for year in range(recent_lo, recent_hi + 1):
             requests.append((ENDPOINT_MODELS, {"make": make, "year": year}))
 
@@ -173,9 +243,8 @@ def _format_text(summary: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
-# Logical component: bootstrap / update share request-set construction. The only
-# difference is the year window for the models endpoint; everything else (the
-# makes endpoint, catalog-derived specs) is identical.
+# Logical component: bootstrap / update — model + spec requests only (makes fetched
+# in a first phase so we can enumerate all passenger-car makes when mode is `all`).
 def refresh_request_set(
     *,
     refresh_mode: str,
@@ -184,10 +253,11 @@ def refresh_request_set(
     year_to: int,
     recent_years: int,
     current_year: int,
+    model_make_names: list[str],
 ) -> list[tuple[str, dict[str, Any]]]:
-    """Return the (endpoint, params) requests `refresh_mode` would issue.
+    """Return model + spec requests. Caller fetches GetMakesForVehicleType separately.
 
-    bootstrap → models for [year_from..year_to] for every catalog make.
+    bootstrap → models for [year_from..year_to] for every name in `model_make_names`.
     update    → models for [current_year - recent_years + 1 .. current_year] only.
     """
     rows = list(catalog_rows)
@@ -199,10 +269,9 @@ def refresh_request_set(
     else:
         raise ValueError(f"unknown refresh_mode: {refresh_mode}")
 
-    requests: list[tuple[str, dict[str, Any]]] = [(ENDPOINT_MAKES, {"vehicleType": "car"})]
+    requests: list[tuple[str, dict[str, Any]]] = []
 
-    catalog_makes = sorted({_get_str(r, "vehicleMake", "make") for r in rows} - {None})
-    for make in catalog_makes:
+    for make in model_make_names:
         for year in range(model_lo, model_hi + 1):
             requests.append((ENDPOINT_MODELS, {"make": make, "year": year}))
 
@@ -331,14 +400,6 @@ def _empty_detail_issues(specs_per_tuple, severity: str = "warning") -> list[dic
 # validation report. No Layer 3 writes.
 def _run_refresh(args: argparse.Namespace, refresh_mode: str, client_factory: ClientFactory) -> int:
     catalog_rows = load_catalog_rows(args.catalog)
-    requests = refresh_request_set(
-        refresh_mode=refresh_mode,
-        catalog_rows=catalog_rows,
-        year_from=args.year_from,
-        year_to=args.year_to,
-        recent_years=args.recent_years,
-        current_year=args.current_year,
-    )
 
     out_dir: Path = args.out_dir
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -347,6 +408,30 @@ def _run_refresh(args: argparse.Namespace, refresh_mode: str, client_factory: Cl
     with cache_dir_lock(args.cache_dir, mode=args.lock_mode):
         cache = VpicCache(args.cache_dir)
         client = client_factory(args, cache)
+
+        # Logical component: fetch makes first so `all` mode can enumerate every VPIC car make.
+        makes_outcome = client.fetch(ENDPOINT_MAKES, {"vehicleType": "car"})
+        merge_fetch_outcome_into_manifest(cache, makes_outcome)
+        makes_env = makes_envelope_from_outcome(cache, makes_outcome)
+        if makes_env is None:
+            sys.stderr.write("ERROR: GetMakesForVehicleType(car) did not yield a parseable envelope.\n")
+            return 3
+
+        model_make_names = resolve_model_make_names_for_refresh(
+            mode=args.model_makes,
+            catalog_rows=catalog_rows,
+            makes_env=makes_env,
+        )
+        requests = refresh_request_set(
+            refresh_mode=refresh_mode,
+            catalog_rows=catalog_rows,
+            year_from=args.year_from,
+            year_to=args.year_to,
+            recent_years=args.recent_years,
+            current_year=args.current_year,
+            model_make_names=model_make_names,
+        )
+
         client.fetch_many(requests)
 
         try:
@@ -447,12 +532,18 @@ def cmd_plan(args: argparse.Namespace) -> int:
     policy = TTLPolicy(current_year=args.current_year)
 
     catalog_rows = load_catalog_rows(args.catalog)
+    model_make_names = resolve_model_make_names_for_plan(
+        mode=args.model_makes,
+        catalog_rows=catalog_rows,
+        cache=cache,
+    )
     requests = planned_requests(
         catalog_rows=catalog_rows,
         year_from=args.year_from,
         year_to=args.year_to,
         recent_years=args.recent_years,
         current_year=args.current_year,
+        model_make_names=model_make_names,
     )
 
     buckets = classify_many(
@@ -520,6 +611,16 @@ def _add_plan_options(p: argparse.ArgumentParser) -> None:
         help="Treat every cached entry as fresh (bypass per-class TTL policy).",
     )
     p.add_argument("--json", action="store_true", help="Emit machine-readable JSON.")
+    p.add_argument(
+        "--model-makes",
+        choices=("all", "catalog"),
+        default="all",
+        help=(
+            "Which make names to multiply GetModelsForMakeYear by: "
+            "`all` = every VPIC passenger-car make from GetMakesForVehicleType (default); "
+            "`catalog` = only makes appearing in the COMSCC catalog (legacy, fewer requests)."
+        ),
+    )
 
 
 def _add_refresh_options(p: argparse.ArgumentParser) -> None:
@@ -561,14 +662,21 @@ def build_parser() -> argparse.ArgumentParser:
 
     bootstrap = sub.add_parser(
         "bootstrap",
-        help="Full refresh: fetch makes + models for every catalog year + every catalog spec tuple.",
+        help=(
+            "Full refresh: GetMakesForVehicleType(car), then models for each year window × "
+            "every VPIC car make (default) or catalog makes only (--model-makes catalog), "
+            "plus Canadian specs for each catalog tuple."
+        ),
     )
     _add_refresh_options(bootstrap)
     bootstrap.set_defaults(func=cmd_bootstrap)
 
     update = sub.add_parser(
         "update",
-        help="Delta refresh: makes + models for the recent-year window + every catalog spec tuple.",
+        help=(
+            "Delta refresh: makes + models for the recent-year window × each VPIC car make "
+            "(default) or catalog makes only, plus Canadian specs for catalog tuples."
+        ),
     )
     _add_refresh_options(update)
     update.set_defaults(func=cmd_update)

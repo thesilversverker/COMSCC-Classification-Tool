@@ -31,6 +31,7 @@ class TestPlannedRequests:
             year_to=2026,
             recent_years=3,
             current_year=2026,
+            model_make_names=[],
         )
         assert (ENDPOINT_MAKES, {"vehicleType": "car"}) in reqs
 
@@ -45,6 +46,7 @@ class TestPlannedRequests:
             year_to=2026,
             recent_years=3,
             current_year=2026,
+            model_make_names=["Honda", "Toyota"],
         )
         models = [(ep, p) for ep, p in reqs if ep == ENDPOINT_MODELS]
         # Logical component: each make × {2024, 2025, 2026} = 3 entries; 2 makes → 6.
@@ -61,6 +63,7 @@ class TestPlannedRequests:
             year_to=2026,
             recent_years=3,
             current_year=2026,
+            model_make_names=["Honda"],
         )
         specs = [(ep, p) for ep, p in reqs if ep == ENDPOINT_SPECS]
         # Logical component: years 2018, 2019, 2020 → 3 spec requests.
@@ -80,6 +83,7 @@ class TestPlannedRequests:
             year_to=2026,
             recent_years=3,
             current_year=2026,
+            model_make_names=["Honda"],
         )
         # Logical component: only the makes request and the recent-models for "Honda"
         # survive (1 valid catalog make remains). No specs request comes through.
@@ -219,6 +223,7 @@ class TestRefreshRequestSet:
             year_to=2020,
             recent_years=3,
             current_year=2026,
+            model_make_names=["Honda"],
         )
         models = [(ep, p) for ep, p in reqs if ep == ENDPOINT_MODELS]
         # Logical component: bootstrap fans out across the full window: 2018, 2019, 2020.
@@ -240,6 +245,7 @@ class TestRefreshRequestSet:
             year_to=2026,
             recent_years=3,
             current_year=2026,
+            model_make_names=["Honda"],
         )
         model_years = sorted(p["year"] for ep, p in reqs if ep == ENDPOINT_MODELS)
         # Logical component: update only refetches recent years.
@@ -254,6 +260,7 @@ class TestRefreshRequestSet:
                 year_to=2026,
                 recent_years=3,
                 current_year=2026,
+                model_make_names=[],
             )
 
 
@@ -328,6 +335,8 @@ class TestRefreshSubcommands:
             "--year-to", "2020",
             "--current-year", "2026",
             "--run-at", "1700000000",
+            "--model-makes",
+            "catalog",
         ]
         rc = cli.main(argv, client_factory=make_stub_factory(url_to_body))
         assert rc == 0
@@ -366,6 +375,8 @@ class TestRefreshSubcommands:
             "--current-year", "2026",
             "--recent-years", "3",
             "--run-at", "1700000000",
+            "--model-makes",
+            "catalog",
         ]
         # Logical component: include the recent-window URLs in the stub so
         # the assertion is about *whether* they got requested, not failure mode.
@@ -386,8 +397,18 @@ class TestRefreshSubcommands:
 
         out_dir = tmp_path / "nhtsa-source"
 
-        def all_500_factory(args, cache):
+        makes_ok = json.dumps(
+            {
+                "Count": 1,
+                "Message": "OK",
+                "Results": [{"MakeId": 1, "MakeName": "Honda"}],
+            }
+        ).encode()
+
+        def fail_after_makes_factory(args, cache):
             def t(url, params, headers, timeout):
+                if "GetMakesForVehicleType" in url:
+                    return TransportResult(url=url, status=200, body=makes_ok, headers={})
                 return TransportResult(url=url, status=500, body=b"", headers={})
 
             return VpicClient(
@@ -411,7 +432,7 @@ class TestRefreshSubcommands:
                 "--current-year", "2026",
                 "--run-at", "1700000000",
             ],
-            client_factory=all_500_factory,
+            client_factory=fail_after_makes_factory,
         )
         assert rc == 2
         # Logical component: no Layer 2 file written when fail-rate breached.

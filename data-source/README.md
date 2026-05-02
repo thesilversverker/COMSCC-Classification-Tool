@@ -86,8 +86,15 @@ data-source/.venv/bin/python data-source/refresh_nhtsa_vehicle_source.py plan --
 
 #### `bootstrap` — full refresh, writes Layer 2
 
-Fetches the makes endpoint plus models for every catalog make across the full
-year window, plus Canadian specs for every catalog `(year, make, model)`.
+Fetches `GetMakesForVehicleType(car)` first, then **by default** calls
+`GetModelsForMakeYear` for **every passenger-car make VPIC returns**, across the
+full `--year-from`..`--year-to` window — building Layer 2 with tens of makes,
+not only those listed in the COMSCC catalog. Pass **`--model-makes catalog`**
+to restore the legacy behavior (models fetched only for makes that appear in
+`vehicles-comscc-catalog.json`), which is cheaper but produces a smaller baseline.
+
+Canadian specs are still driven only by catalog `(year, make, model)` tuples.
+
 Writes the four Layer 2 files into `rules-source/open-vehicle/nhtsa-source/`
 **only** if the run's fail rate stays under `--max-fail-rate` (default 2%).
 

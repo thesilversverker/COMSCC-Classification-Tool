@@ -135,6 +135,32 @@ class TestIncludeScope:
         honda = next(m for m in makes if m["make_slug"] == "honda")
         assert "ACCORD" in honda["models"]
 
+    def test_include_all_baseline_models_without_listing_each_model(self, tiny_baseline, tiny_aliases, tmp_path):
+        curated_dir = tmp_path / "curated-overrides"
+        curated_dir.mkdir()
+        (curated_dir / "volkswagen.json").write_text(
+            json.dumps(
+                {
+                    "schemaVersion": "1.0.0",
+                    "make_slug": "volkswagen",
+                    "make_name": "VOLKSWAGEN",
+                    "include_all_baseline_models": True,
+                    "models": {},
+                }
+            )
+        )
+        makes, _styles = ovp.project_open_vehicle(
+            baseline_makes=tiny_baseline,
+            catalog_rows=[],
+            aliases=tiny_aliases,
+            visibility={"schemaVersion": "1.0.0", "makes": {}},
+            curated_dir=curated_dir,
+            seed_styles_from=None,
+        )
+        assert [m["make_slug"] for m in makes] == ["volkswagen"]
+        vw = makes[0]
+        assert list(vw["models"].keys()) == ["GOLF"]
+
 
 class TestShrinkVsBaseline:
     def test_violation_when_models_drop_beyond_threshold(self):

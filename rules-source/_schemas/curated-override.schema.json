@@ -2,13 +2,17 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://comscc.local/schemas/curated-override.schema.json",
   "title": "Per-make curated override",
-  "description": "rules-source/open-vehicle/curated-overrides/<make_slug>.json: curator-controlled additions and corrections that always win over the NHTSA baseline. Unknown keys are rejected to catch typos like `model_remove` vs `models_remove`.",
+  "description": "rules-source/open-vehicle/curated-overrides/<make_slug>.json: curator-controlled additions and corrections that always win over the NHTSA baseline. Unknown keys are rejected to catch typos like `model_remove` vs `models_remove`. When `include_all_baseline_models` is true, every model key from Layer 2 for this make_slug is included in projection scope (same union as per-model `include: true`, without listing each model).",
   "type": "object",
   "required": ["schemaVersion", "make_slug", "make_name", "models"],
   "properties": {
     "schemaVersion": { "type": "string", "minLength": 1 },
     "make_slug": { "type": "string", "pattern": "^[a-z0-9_]+$" },
     "make_name": { "type": "string", "minLength": 1 },
+    "include_all_baseline_models": {
+      "type": "boolean",
+      "description": "If true, add scope for every model present in the NHTSA baseline for this file's make slug (filename stem). Ignored if the make is absent from baseline."
+    },
     "models": {
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/modelOverride" }

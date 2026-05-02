@@ -87,6 +87,19 @@ class TestLayer2Acceptance:
             context="<test>",
         )
 
+    def test_curated_override_include_all_baseline_models(self):
+        validate_or_raise(
+            "curated_override",
+            {
+                "schemaVersion": "1.0.0",
+                "make_slug": "saleen",
+                "make_name": "SALEEN",
+                "include_all_baseline_models": True,
+                "models": {},
+            },
+            context="<test>",
+        )
+
     def test_source_manifest_minimal(self):
         validate_or_raise(
             "source_manifest",

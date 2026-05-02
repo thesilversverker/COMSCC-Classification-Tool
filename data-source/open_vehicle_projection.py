@@ -11,7 +11,8 @@ Design notes:
   allows CI/tests without Layer 2 files.
 - Scope filter: a (make_slug, model_key) ships only when referenced by the COMSCC
   catalog after alias resolution, **or** when `include: true` appears under that
-  model in `curated-overrides/<slug>.json`.
+  model in `curated-overrides/<slug>.json`, **or** when `include_all_baseline_models`
+  is true in that file (every baseline model for that slug).
 - Styles start from seeded `styles/<slug>.json` (carry-forward) when enabled,
   then curated `styles_*` ops apply, then trim aliases remap style keys.
 """
@@ -379,14 +380,21 @@ def shrink_violations_vs_baseline(
     return lines
 
 
-def collect_include_scope(curated_dir: Path) -> set[tuple[str, str]]:
-    """Union models explicitly marked `include: true` across curated-overrides/*.json."""
+def collect_include_scope(
+    curated_dir: Path, baseline_by_slug: dict[str, dict[str, Any]]
+) -> set[tuple[str, str]]:
+    """Union curated include scope: per-model `include: true` or whole-make baseline include."""
     scope: set[tuple[str, str]] = set()
     if not curated_dir.exists():
         return scope
     for path in sorted(curated_dir.glob("*.json")):
         slug = path.stem
         doc = load_json(path)
+        if doc.get("include_all_baseline_models") is True:
+            base_make = baseline_by_slug.get(slug)
+            if isinstance(base_make, dict):
+                for mk in (base_make.get("models") or {}).keys():
+                    scope.add((slug, str(mk).upper()))
         models = doc.get("models") or {}
         if not isinstance(models, dict):
             continue
@@ -529,7 +537,7 @@ def project_open_vehicle(
     """
     baseline_by_slug = index_baseline_by_slug(baseline_makes)
     catalog_scope = collect_catalog_scope(catalog_rows, baseline_by_slug, aliases)
-    include_scope = collect_include_scope(curated_dir)
+    include_scope = collect_include_scope(curated_dir, baseline_by_slug)
     allowed = catalog_scope | include_scope
 
     trims_map = aliases.get("trims") or {}
