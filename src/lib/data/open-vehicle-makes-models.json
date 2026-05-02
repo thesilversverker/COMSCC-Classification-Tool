@@ -33,7 +33,63 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "INTEGRA 2DR COUPE GS/GS-R": {
+            "years": [
+              1998,
+              1999,
+              2000,
+              2001
+            ]
+          },
+          "INTEGRA 2DR COUPE RS": {
+            "years": [
+              1998
+            ]
+          },
+          "INTEGRA 2DR COUPE RS/AE/LS/GS/GS-R": {
+            "years": [
+              1997
+            ]
+          },
+          "INTEGRA 2DR COUPE RS/LS/GS-R": {
+            "years": [
+              1995,
+              1996
+            ]
+          },
+          "INTEGRA 2DR COUPE SE": {
+            "years": [
+              1999,
+              2000,
+              2001
+            ]
+          },
+          "INTEGRA 2DR COUPE TYPE R": {
+            "years": [
+              1998,
+              1999,
+              2000,
+              2001
+            ]
+          },
+          "INTEGRA 4DR SEDAN RS/LS": {
+            "years": [
+              1995,
+              1996
+            ]
+          },
+          "INTEGRA RS/LS/GS 2DR HATCHBACK": {
+            "years": [
+              1993
+            ]
+          },
+          "INTEGRA RS/LS/GS 4DR SEDAN": {
+            "years": [
+              1993
+            ]
+          }
+        }
       },
       "NSX": {
         "model_id": 5168,
@@ -67,7 +123,40 @@
           2021,
           2022
         ],
-        "model_styles": {}
+        "model_styles": {
+          "NSX": {
+            "years": [
+              1991,
+              1992,
+              1993,
+              1994,
+              1995,
+              2003,
+              2004,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022
+            ]
+          },
+          "NSX 2DR TARGA RWD": {
+            "years": [
+              2005
+            ]
+          },
+          "NSX-T": {
+            "years": [
+              1996,
+              1997,
+              1998,
+              1999,
+              2000,
+              2001
+            ]
+          }
+        }
       },
       "RSX": {
         "model_id": 3183,
@@ -80,7 +169,23 @@
           2005,
           2006
         ],
-        "model_styles": {}
+        "model_styles": {
+          "RSX 2DR COUPE FWD": {
+            "years": [
+              2002
+            ]
+          },
+          "RSX 2DR COUPE FWD PREMIUM": {
+            "years": [
+              2002
+            ]
+          },
+          "RSX 2DR COUPE FWD TYPE S": {
+            "years": [
+              2002
+            ]
+          }
+        }
       }
     }
   },
@@ -143,14 +248,12 @@
               2009
             ]
           },
-          "DBS 2DR COUPE RWD": {
+          "DBS 2DR COUPE": {
             "years": [
-              2010,
-              2011,
-              2012
+              2024
             ]
           },
-          "DBS VOLANTE 2DR CONV RWD": {
+          "DBS 2DR COUPE RWD": {
             "years": [
               2010,
               2011,
@@ -166,9 +269,11 @@
               2023
             ]
           },
-          "DBS 2DR COUPE": {
+          "DBS VOLANTE 2DR CONV RWD": {
             "years": [
-              2024
+              2010,
+              2011,
+              2012
             ]
           },
           "DBS VOLANTE 2DR CONVERTIBLE": {
@@ -195,7 +300,18 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "VANTAGE 2DR COUPE RWD V8/V8 S/V12": {
+            "years": [
+              2012
+            ]
+          },
+          "VANTAGE ROADSTER 2DR CONV RWD V8/V8 S": {
+            "years": [
+              2012
+            ]
+          }
+        }
       }
     }
   },
@@ -244,117 +360,7 @@
           2026
         ],
         "model_styles": {
-          "A4 4DR SEDAN": {
-            "years": [
-              1996,
-              2017,
-              2019
-            ]
-          },
-          "A4 4DR SEDAN QUATTRO": {
-            "years": [
-              1996,
-              2019,
-              2020,
-              2021,
-              2022,
-              2023,
-              2024
-            ]
-          },
-          "A4 4DR SEDAN 1.8T": {
-            "years": [
-              1997
-            ]
-          },
-          "A4 4DR SEDAN 1.8T QUATTRO": {
-            "years": [
-              1997,
-              1998,
-              1999
-            ]
-          },
-          "A4 4DR SEDAN 2.8": {
-            "years": [
-              1997
-            ]
-          },
-          "A4 4DR SEDAN 2.8 QUATTRO": {
-            "years": [
-              1997,
-              1998,
-              1999
-            ]
-          },
-          "A4 4DR SEDAN 1.8T FWD": {
-            "years": [
-              1998,
-              1999
-            ]
-          },
-          "A4 4DR SEDAN 2.8 FWD": {
-            "years": [
-              1998,
-              1999
-            ]
-          },
-          "A4 4DR SEDAN FWD 1.8T": {
-            "years": [
-              2000,
-              2001,
-              2002,
-              2003,
-              2004,
-              2005
-            ]
-          },
-          "A4 4DR SEDAN FWD 2.8": {
-            "years": [
-              2000,
-              2001
-            ]
-          },
-          "A4 4DR SEDAN QUATTRO 1.8T": {
-            "years": [
-              2000,
-              2001
-            ]
-          },
-          "A4 4DR SEDAN QUATTRO 2.8": {
-            "years": [
-              2000,
-              2001
-            ]
-          },
-          "A4 4DR AVANT WAGON 3.0": {
-            "years": [
-              2002
-            ]
-          },
-          "A4 4DR SEDAN FWD 3.0": {
-            "years": [
-              2002,
-              2003,
-              2004,
-              2005
-            ]
-          },
           "A4 1.8T CABRIOLET": {
-            "years": [
-              2003
-            ]
-          },
-          "A4 3.0T CABRIOLET": {
-            "years": [
-              2003
-            ]
-          },
-          "A4 4DR AVANT WAGON 1.8 AWD": {
-            "years": [
-              2003
-            ]
-          },
-          "A4 4DR AVANT WAGON 3.0 AWD": {
             "years": [
               2003
             ]
@@ -362,6 +368,11 @@
           "A4 1.8T CABRIOLET FWD": {
             "years": [
               2004
+            ]
+          },
+          "A4 3.0T CABRIOLET": {
+            "years": [
+              2003
             ]
           },
           "A4 3.0T CABRIOLET FWD": {
@@ -375,10 +386,32 @@
               2005
             ]
           },
+          "A4 4DR AVANT AWD WAGON 2.0 T": {
+            "years": [
+              2006,
+              2007
+            ]
+          },
+          "A4 4DR AVANT AWD WAGON 2.0T": {
+            "years": [
+              2008
+            ]
+          },
           "A4 4DR AVANT AWD WAGON 3.0 QUATTRO": {
             "years": [
               2004,
               2005
+            ]
+          },
+          "A4 4DR AVANT AWD WAGON 3.2": {
+            "years": [
+              2006,
+              2007
+            ]
+          },
+          "A4 4DR AVANT AWD WAGON 3.2/S4": {
+            "years": [
+              2008
             ]
           },
           "A4 4DR AVANT FWD WAGON 1.8T": {
@@ -387,28 +420,116 @@
               2005
             ]
           },
-          "A4 CABRIOLET 2DR CONV AWD /3.0": {
+          "A4 4DR AVANT WAGON 1.8 AWD": {
             "years": [
-              2005,
-              2006
+              2003
             ]
           },
-          "A4 CABRIOLET 2DR FWD /1.8T": {
+          "A4 4DR AVANT WAGON 3.0": {
             "years": [
-              2005,
-              2006
+              2002
             ]
           },
-          "A4 4DR AVANT AWD WAGON 2.0 T": {
+          "A4 4DR AVANT WAGON 3.0 AWD": {
             "years": [
-              2006,
-              2007
+              2003
             ]
           },
-          "A4 4DR AVANT AWD WAGON 3.2": {
+          "A4 4DR SEDAN": {
             "years": [
-              2006,
-              2007
+              1996,
+              2017,
+              2019
+            ]
+          },
+          "A4 4DR SEDAN 1.8T": {
+            "years": [
+              1997
+            ]
+          },
+          "A4 4DR SEDAN 1.8T FWD": {
+            "years": [
+              1998,
+              1999
+            ]
+          },
+          "A4 4DR SEDAN 1.8T QUATTRO": {
+            "years": [
+              1997,
+              1998,
+              1999
+            ]
+          },
+          "A4 4DR SEDAN 2.0": {
+            "years": [
+              2018
+            ]
+          },
+          "A4 4DR SEDAN 2.0 QUATTRO": {
+            "years": [
+              2018
+            ]
+          },
+          "A4 4DR SEDAN 2.0 TFSI AWD": {
+            "years": [
+              2009
+            ]
+          },
+          "A4 4DR SEDAN 2.0 TFSI FWD": {
+            "years": [
+              2012,
+              2013,
+              2014,
+              2015,
+              2016
+            ]
+          },
+          "A4 4DR SEDAN 2.0 TFSI QUATTRO": {
+            "years": [
+              2014,
+              2015,
+              2016
+            ]
+          },
+          "A4 4DR SEDAN 2.0 TFSI QUATTRO/PREMIUM/PREMIUM": {
+            "years": [
+              2012,
+              2013
+            ]
+          },
+          "A4 4DR SEDAN 2.0T FWD": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "A4 4DR SEDAN 2.0T QUATTRO": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "A4 4DR SEDAN 2.8": {
+            "years": [
+              1997
+            ]
+          },
+          "A4 4DR SEDAN 2.8 FWD": {
+            "years": [
+              1998,
+              1999
+            ]
+          },
+          "A4 4DR SEDAN 2.8 QUATTRO": {
+            "years": [
+              1997,
+              1998,
+              1999
+            ]
+          },
+          "A4 4DR SEDAN 3.2 FSI AWD": {
+            "years": [
+              2009
             ]
           },
           "A4 4DR SEDAN AWD 2.0T": {
@@ -425,6 +546,16 @@
               2008
             ]
           },
+          "A4 4DR SEDAN FWD 1.8T": {
+            "years": [
+              2000,
+              2001,
+              2002,
+              2003,
+              2004,
+              2005
+            ]
+          },
           "A4 4DR SEDAN FWD 2.0T": {
             "years": [
               2006,
@@ -432,24 +563,64 @@
               2008
             ]
           },
+          "A4 4DR SEDAN FWD 2.8": {
+            "years": [
+              2000,
+              2001
+            ]
+          },
+          "A4 4DR SEDAN FWD 3.0": {
+            "years": [
+              2002,
+              2003,
+              2004,
+              2005
+            ]
+          },
+          "A4 4DR SEDAN QUATTRO": {
+            "years": [
+              1996,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023,
+              2024
+            ]
+          },
+          "A4 4DR SEDAN QUATTRO 1.8T": {
+            "years": [
+              2000,
+              2001
+            ]
+          },
+          "A4 4DR SEDAN QUATTRO 2.8": {
+            "years": [
+              2000,
+              2001
+            ]
+          },
+          "A4 AVANT 2.0 TFSI 4DR AWD WAGON": {
+            "years": [
+              2009,
+              2010,
+              2011
+            ]
+          },
+          "A4 AVANT 4DR WAGON 2.0 TFSI QUATTRO": {
+            "years": [
+              2012
+            ]
+          },
+          "A4 CABRIOLET 2DR CONV AWD /3.0": {
+            "years": [
+              2005,
+              2006
+            ]
+          },
           "A4 CABRIOLET 2DR CONV AWD /3.2": {
             "years": [
               2007
-            ]
-          },
-          "A4 CABRIOLET 2DR FWD /2.0T": {
-            "years": [
-              2007
-            ]
-          },
-          "A4 4DR AVANT AWD WAGON 2.0T": {
-            "years": [
-              2008
-            ]
-          },
-          "A4 4DR AVANT AWD WAGON 3.2/S4": {
-            "years": [
-              2008
             ]
           },
           "A4 CABRIOLET 2DR CONV AWD 3.2": {
@@ -470,70 +641,15 @@
               2009
             ]
           },
-          "A4 4DR SEDAN 2.0 TFSI AWD": {
+          "A4 CABRIOLET 2DR FWD /1.8T": {
             "years": [
-              2009
+              2005,
+              2006
             ]
           },
-          "A4 4DR SEDAN 3.2 FSI AWD": {
+          "A4 CABRIOLET 2DR FWD /2.0T": {
             "years": [
-              2009
-            ]
-          },
-          "A4 AVANT 2.0 TFSI 4DR AWD WAGON": {
-            "years": [
-              2009,
-              2010,
-              2011
-            ]
-          },
-          "A4 4DR SEDAN 2.0T FWD": {
-            "years": [
-              2010,
-              2011
-            ]
-          },
-          "A4 4DR SEDAN 2.0T QUATTRO": {
-            "years": [
-              2010,
-              2011
-            ]
-          },
-          "A4 4DR SEDAN 2.0 TFSI FWD": {
-            "years": [
-              2012,
-              2013,
-              2014,
-              2015,
-              2016
-            ]
-          },
-          "A4 4DR SEDAN 2.0 TFSI QUATTRO/PREMIUM/PREMIUM": {
-            "years": [
-              2012,
-              2013
-            ]
-          },
-          "A4 AVANT 4DR WAGON 2.0 TFSI QUATTRO": {
-            "years": [
-              2012
-            ]
-          },
-          "A4 4DR SEDAN 2.0 TFSI QUATTRO": {
-            "years": [
-              2014,
-              2015,
-              2016
-            ]
-          },
-          "A4 4DR SEDAN 2.0": {
-            "years": [
-              2018
-            ]
-          },
-          "A4 4DR SEDAN 2.0 QUATTRO": {
-            "years": [
-              2018
+              2007
             ]
           }
         }
@@ -546,7 +662,13 @@
           1990,
           1991
         ],
-        "model_styles": {}
+        "model_styles": {
+          "COUPE GT 2 DR COUPE": {
+            "years": [
+              1987
+            ]
+          }
+        }
       },
       "R8": {
         "model_id": 3789,
@@ -605,6 +727,22 @@
           2026
         ],
         "model_styles": {
+          "100 4DR SEDAN QUATTRO S4": {
+            "years": [
+              1994
+            ]
+          },
+          "A4 4DR AVANT AWD WAGON 3.2/S4": {
+            "years": [
+              2008
+            ]
+          },
+          "A4 CABRIOLET 2DR CONV AWD S4": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
           "S4 4DR SEDAN": {
             "years": [
               1993,
@@ -615,6 +753,29 @@
               2022,
               2023,
               2024
+            ]
+          },
+          "S4 4DR SEDAN 3.0 TFSI QUATTRO/PREMIUM": {
+            "years": [
+              2014,
+              2015,
+              2016
+            ]
+          },
+          "S4 4DR SEDAN 3.0 TFSI QUTTRO/PREMIUM": {
+            "years": [
+              2012,
+              2013
+            ]
+          },
+          "S4 4DR SEDAN AWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009,
+              2010,
+              2011
             ]
           },
           "S4 4DR SEDAN QUATTRO 2.7T": {
@@ -634,12 +795,6 @@
               2009
             ]
           },
-          "S4 SEDAN 4DR SEDAN AWD": {
-            "years": [
-              2004,
-              2005
-            ]
-          },
           "S4 CABRIOLET 4DR CONV AWD": {
             "years": [
               2005,
@@ -649,27 +804,10 @@
               2009
             ]
           },
-          "S4 4DR SEDAN AWD": {
+          "S4 SEDAN 4DR SEDAN AWD": {
             "years": [
-              2006,
-              2007,
-              2008,
-              2009,
-              2010,
-              2011
-            ]
-          },
-          "S4 4DR SEDAN 3.0 TFSI QUTTRO/PREMIUM": {
-            "years": [
-              2012,
-              2013
-            ]
-          },
-          "S4 4DR SEDAN 3.0 TFSI QUATTRO/PREMIUM": {
-            "years": [
-              2014,
-              2015,
-              2016
+              2004,
+              2005
             ]
           }
         }
@@ -705,25 +843,10 @@
           2025
         ],
         "model_styles": {
-          "S6 4DR SEDAN QUATTRO": {
+          "A6 S6 4DR SEDAN AWD": {
             "years": [
-              1995,
-              1996,
-              1997
-            ]
-          },
-          "S6 AVANT": {
-            "years": [
-              2003
-            ]
-          },
-          "S6 4DR SEDAN AWD": {
-            "years": [
-              2007,
               2008,
-              2009,
-              2010,
-              2011
+              2009
             ]
           },
           "S6 4DR SEDAN": {
@@ -746,6 +869,27 @@
               2018,
               2019
             ]
+          },
+          "S6 4DR SEDAN AWD": {
+            "years": [
+              2007,
+              2008,
+              2009,
+              2010,
+              2011
+            ]
+          },
+          "S6 4DR SEDAN QUATTRO": {
+            "years": [
+              1995,
+              1996,
+              1997
+            ]
+          },
+          "S6 AVANT": {
+            "years": [
+              2003
+            ]
           }
         }
       },
@@ -762,7 +906,14 @@
           2021,
           2022
         ],
-        "model_styles": {}
+        "model_styles": {
+          "TT RS 2DR COUPE 2.5 TFSI QUATTRO": {
+            "years": [
+              2012,
+              2013
+            ]
+          }
+        }
       },
       "TTS": {
         "model_id": 3861,
@@ -785,7 +936,46 @@
           2022,
           2023
         ],
-        "model_styles": {}
+        "model_styles": {
+          "TT 2DR COUPE 3.2 /TTS": {
+            "years": [
+              2009
+            ]
+          },
+          "TT ROADSTER 2DR CONVERTIBLE 3.2 /TTS": {
+            "years": [
+              2009
+            ]
+          },
+          "TTS 2DR COUPE": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "TTS 2DR COUPE 2.0 TFSI QUATTRO": {
+            "years": [
+              2012,
+              2013,
+              2014,
+              2015
+            ]
+          },
+          "TTS ROADSTER 2DR CONVERTIBLE": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "TTS ROADSTER 2DR CONVERTIBLE 2.0 TFSI QUATTRO": {
+            "years": [
+              2012,
+              2013,
+              2014,
+              2015
+            ]
+          }
+        }
       }
     }
   },
@@ -809,7 +999,28 @@
           2013,
           2014
         ],
-        "model_styles": {}
+        "model_styles": {
+          "1 SERIES 128i 2DR COUPE RWD": {
+            "years": [
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013
+            ]
+          },
+          "1 SERIES CABRIOLET 128i 2DR CONV RWD": {
+            "years": [
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013
+            ]
+          }
+        }
       },
       "135I": {
         "model_id": 1708,
@@ -824,7 +1035,28 @@
           2013,
           2014
         ],
-        "model_styles": {}
+        "model_styles": {
+          "1 SERIES 135i 2DR COUPE RWD": {
+            "years": [
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013
+            ]
+          },
+          "1 SERIES CABRIOLET 135i 2DR CONV RWD": {
+            "years": [
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013
+            ]
+          }
+        }
       },
       "318I": {
         "model_id": 5178,
@@ -842,7 +1074,20 @@
           1997,
           1998
         ],
-        "model_styles": {}
+        "model_styles": {
+          "318i/325i 4DR SEDAN": {
+            "years": [
+              1990,
+              1991
+            ]
+          },
+          "318is/325i 2DR SEDAN": {
+            "years": [
+              1990,
+              1991
+            ]
+          }
+        }
       },
       "318IS": {
         "model_id": 5185,
@@ -858,7 +1103,14 @@
           1995,
           1996
         ],
-        "model_styles": {}
+        "model_styles": {
+          "318is/325i 2DR SEDAN": {
+            "years": [
+              1990,
+              1991
+            ]
+          }
+        }
       },
       "318TI": {
         "model_id": 5217,
@@ -878,7 +1130,17 @@
           1999,
           2000
         ],
-        "model_styles": {}
+        "model_styles": {
+          "318ti 2DR HATCHBACK": {
+            "years": [
+              1995,
+              1996,
+              1997,
+              1998,
+              1999
+            ]
+          }
+        }
       },
       "320I": {
         "model_id": 2172,
@@ -893,7 +1155,13 @@
           2017,
           2018
         ],
-        "model_styles": {}
+        "model_styles": {
+          "3 SERIES 320i 4DR SEDAN RWD": {
+            "years": [
+              2013
+            ]
+          }
+        }
       },
       "325I": {
         "model_id": 2764,
@@ -916,7 +1184,94 @@
           2005,
           2006
         ],
-        "model_styles": {}
+        "model_styles": {
+          "318i/320i/325i 2DR COUPE": {
+            "years": [
+              1993
+            ]
+          },
+          "318i/320i/325i 4DR SEDAN": {
+            "years": [
+              1993
+            ]
+          },
+          "318i/325i 2DR COUPE": {
+            "years": [
+              1992
+            ]
+          },
+          "318i/325i 4DR SEDAN": {
+            "years": [
+              1990,
+              1991,
+              1992
+            ]
+          },
+          "318i/325i CABRIOLET": {
+            "years": [
+              1992,
+              1993,
+              1994,
+              1995
+            ]
+          },
+          "318is/325i 2DR SEDAN": {
+            "years": [
+              1990,
+              1991
+            ]
+          },
+          "320i/325i 4DR SEDAN": {
+            "years": [
+              1994,
+              1995
+            ]
+          },
+          "325i 2 DR COUPE": {
+            "years": [
+              1989
+            ]
+          },
+          "325i 4DR SEDAN": {
+            "years": [
+              2001,
+              2002,
+              2003
+            ]
+          },
+          "325i 4DR SEDAN RWD": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "325i CABRIOLET": {
+            "years": [
+              1990,
+              1991
+            ]
+          },
+          "325iT 4DR WAGON RWD": {
+            "years": [
+              2002,
+              2003,
+              2004,
+              2005
+            ]
+          },
+          "325IX 4WD 4DR": {
+            "years": [
+              1988,
+              1989
+            ]
+          },
+          "325iX 4WD 4DR SEDAN": {
+            "years": [
+              1990,
+              1991
+            ]
+          }
+        }
       },
       "325IS": {
         "model_id": 5187,
@@ -945,7 +1300,16 @@
           1999,
           2000
         ],
-        "model_styles": {}
+        "model_styles": {
+          "328is 2DR COUPE": {
+            "years": [
+              1996,
+              1997,
+              1998,
+              1999
+            ]
+          }
+        }
       },
       "328XI": {
         "model_id": 2377,
@@ -969,7 +1333,30 @@
           2005,
           2006
         ],
-        "model_styles": {}
+        "model_styles": {
+          "330Ci 2DR CABRIOLET": {
+            "years": [
+              2003
+            ]
+          },
+          "330Ci 2DR CABRIOLET RWD": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "330Ci 2DR COUPE": {
+            "years": [
+              2003
+            ]
+          },
+          "330Ci 2DR COUPE RWD": {
+            "years": [
+              2004,
+              2005
+            ]
+          }
+        }
       },
       "330I": {
         "model_id": 2777,
@@ -993,7 +1380,22 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "330i 4DR SEDAN": {
+            "years": [
+              2001
+            ]
+          },
+          "330i 4DR SEDAN RWD": {
+            "years": [
+              2002,
+              2003,
+              2004,
+              2005,
+              2006
+            ]
+          }
+        }
       },
       "335D": {
         "model_id": 1713,
@@ -1004,7 +1406,14 @@
           2010,
           2011
         ],
-        "model_styles": {}
+        "model_styles": {
+          "3 SERIES 335D 4DR SEDAN RWD": {
+            "years": [
+              2010,
+              2011
+            ]
+          }
+        }
       },
       "335I": {
         "model_id": 1711,
@@ -1023,7 +1432,41 @@
           2016,
           2017
         ],
-        "model_styles": {}
+        "model_styles": {
+          "3 SERIES 335i 4DR SEDAN RWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "3 SERIES CABRIOLET 335i RWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "3 SERIES COUPE 335i RWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "335i 2DR COUPE RWD": {
+            "years": [
+              2007
+            ]
+          },
+          "335i 4DR SEDAN RWD": {
+            "years": [
+              2007
+            ]
+          },
+          "335i CABRIOLET 2DR CONVERTIBLE RWD": {
+            "years": [
+              2007
+            ]
+          }
+        }
       },
       "335XI": {
         "model_id": 2378,
@@ -1054,7 +1497,23 @@
           2015,
           2016
         ],
-        "model_styles": {}
+        "model_styles": {
+          "528i 4DR SEDAN": {
+            "years": [
+              1996,
+              1997,
+              1998,
+              1999,
+              2000
+            ]
+          },
+          "528iT 4DR WAGON": {
+            "years": [
+              1999,
+              2000
+            ]
+          }
+        }
       },
       "530I": {
         "model_id": 2585,
@@ -1081,7 +1540,15 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "530i 4DR SEDAN": {
+            "years": [
+              2001,
+              2002,
+              2003
+            ]
+          }
+        }
       },
       "535I": {
         "model_id": 1716,
@@ -1134,7 +1601,37 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "540i 4DR SEDAN": {
+            "years": [
+              1996,
+              1997,
+              1998,
+              1999,
+              2000,
+              2001,
+              2002,
+              2003
+            ]
+          },
+          "540i TOURING 4DR WAGON": {
+            "years": [
+              2003
+            ]
+          },
+          "540iAT4DR WAGON": {
+            "years": [
+              1999
+            ]
+          },
+          "540iT 4DR WAGON": {
+            "years": [
+              2000,
+              2001,
+              2002
+            ]
+          }
+        }
       },
       "M2": {
         "model_id": 9567,
@@ -1155,14 +1652,53 @@
           2026
         ],
         "model_styles": {
+          "2 SERIES M235i 2DR CABRIOLET  RWD": {
+            "years": [
+              2016
+            ]
+          },
+          "2 SERIES M235i 2DR COUPE RWD": {
+            "years": [
+              2016
+            ]
+          },
+          "2 SERIES M235i xDRIVE 2DR COUPE AWD": {
+            "years": [
+              2016
+            ]
+          },
+          "2 SERIES M235i xDRIVE GRAN COUPE": {
+            "years": [
+              2020
+            ]
+          },
+          "2 SERIES M240i 2DR CABRIOLET  RWD": {
+            "years": [
+              2019,
+              2020
+            ]
+          },
+          "2 SERIES M240i 2DR COUPE RWD": {
+            "years": [
+              2019,
+              2020
+            ]
+          },
+          "2 SERIES M240i xDRIVE 2DR CABRIOLET": {
+            "years": [
+              2019,
+              2020
+            ]
+          },
+          "2 SERIES M240i xDRIVE 2DR COUPE": {
+            "years": [
+              2019,
+              2020
+            ]
+          },
           "M 2DR COUPE 3.2L": {
             "years": [
               1999
-            ]
-          },
-          "M2 2DR COUPE RWD": {
-            "years": [
-              2017
             ]
           },
           "M2 2DR COUPE": {
@@ -1174,6 +1710,11 @@
               2022,
               2023,
               2024
+            ]
+          },
+          "M2 2DR COUPE RWD": {
+            "years": [
+              2017
             ]
           }
         }
@@ -1192,7 +1733,23 @@
           2023,
           2024
         ],
-        "model_styles": {}
+        "model_styles": {
+          "2 SERIES M235i 2DR CABRIOLET  RWD": {
+            "years": [
+              2016
+            ]
+          },
+          "2 SERIES M235i 2DR COUPE RWD": {
+            "years": [
+              2016
+            ]
+          },
+          "2 SERIES M235i xDRIVE 2DR COUPE AWD": {
+            "years": [
+              2016
+            ]
+          }
+        }
       },
       "M240I": {
         "model_id": 13826,
@@ -1210,7 +1767,14 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "2 SERIES M240i xDRIVE 2DR COUPE": {
+            "years": [
+              2022,
+              2023
+            ]
+          }
+        }
       },
       "M3": {
         "model_id": 1710,
@@ -1258,18 +1822,8 @@
               1989
             ]
           },
-          "M3 2DR SEDAN": {
+          "M3 2DR CABRIOLET": {
             "years": [
-              1990,
-              1991
-            ]
-          },
-          "M3 2DR COUPE": {
-            "years": [
-              1994,
-              1997,
-              1998,
-              1999,
               2001,
               2002,
               2003,
@@ -1278,20 +1832,20 @@
               2006
             ]
           },
-          "M3 4DR SEDAN": {
+          "M3 2DR CONV RWD": {
             "years": [
-              1997,
-              1998,
-              2018,
-              2019,
-              2021,
-              2022,
-              2023,
-              2024
+              2010,
+              2011,
+              2012,
+              2013
             ]
           },
-          "M3 2DR CABRIOLET": {
+          "M3 2DR COUPE": {
             "years": [
+              1994,
+              1997,
+              1998,
+              1999,
               2001,
               2002,
               2003,
@@ -1310,6 +1864,24 @@
               2013
             ]
           },
+          "M3 2DR SEDAN": {
+            "years": [
+              1990,
+              1991
+            ]
+          },
+          "M3 4DR SEDAN": {
+            "years": [
+              1997,
+              1998,
+              2018,
+              2019,
+              2021,
+              2022,
+              2023,
+              2024
+            ]
+          },
           "M3 4DR SEDAN RWD": {
             "years": [
               2008,
@@ -1319,14 +1891,6 @@
               2015,
               2016,
               2017
-            ]
-          },
-          "M3 2DR CONV RWD": {
-            "years": [
-              2010,
-              2011,
-              2012,
-              2013
             ]
           }
         }
@@ -1375,6 +1939,13 @@
               1988
             ]
           },
+          "M5 4 DR SEDAN RWD": {
+            "years": [
+              2012,
+              2013,
+              2014
+            ]
+          },
           "M5 4DR SEDAN": {
             "years": [
               1990,
@@ -1395,11 +1966,6 @@
               2024
             ]
           },
-          "M540i 4DR SEDAN": {
-            "years": [
-              1995
-            ]
-          },
           "M5 4DR SEDAN RWD": {
             "years": [
               2005,
@@ -1412,11 +1978,9 @@
               2016
             ]
           },
-          "M5 4 DR SEDAN RWD": {
+          "M540i 4DR SEDAN": {
             "years": [
-              2012,
-              2013,
-              2014
+              1995
             ]
           }
         }
@@ -1444,7 +2008,40 @@
           2018,
           2019
         ],
-        "model_styles": {}
+        "model_styles": {
+          "635 M6 2 DR COUPE": {
+            "years": [
+              1987
+            ]
+          },
+          "M6 2 DR COUPE": {
+            "years": [
+              1988,
+              1989
+            ]
+          },
+          "M6 2DR COUPE RWD": {
+            "years": [
+              2006,
+              2007
+            ]
+          },
+          "M6 CABRIOLET 2DR CONVERTIBLE RWD": {
+            "years": [
+              2007,
+              2008,
+              2009,
+              2010
+            ]
+          },
+          "M6 COUPE 2DR RWD": {
+            "years": [
+              2008,
+              2009,
+              2010
+            ]
+          }
+        }
       },
       "M8": {
         "model_id": 26485,
@@ -1510,6 +2107,13 @@
           2026
         ],
         "model_styles": {
+          "X1 4DR SUV": {
+            "years": [
+              2023,
+              2024,
+              2025
+            ]
+          },
           "X1 xDrive28i 4DR SUV": {
             "years": [
               2012
@@ -1535,12 +2139,6 @@
               2014,
               2015
             ]
-          },
-          "X1 4DR SUV": {
-            "years": [
-              2023,
-              2024
-            ]
           }
         }
       },
@@ -1557,7 +2155,23 @@
           2001,
           2002
         ],
-        "model_styles": {}
+        "model_styles": {
+          "Z3 2DR ROADSTER": {
+            "years": [
+              1996
+            ]
+          },
+          "Z3 ROADSTER 2.3": {
+            "years": [
+              2000
+            ]
+          },
+          "Z3 ROADSTER 2.8": {
+            "years": [
+              2000
+            ]
+          }
+        }
       },
       "Z4": {
         "model_id": 1725,
@@ -1598,12 +2212,9 @@
               2007
             ]
           },
-          "Z4 3.0i 2DR CONV RWD": {
+          "Z4 2DR CONVERTIBLE": {
             "years": [
-              2003,
-              2004,
-              2005,
-              2006
+              2019
             ]
           },
           "Z4 3.0i / 3.0si 2DR CONV RWD": {
@@ -1612,56 +2223,17 @@
               2008
             ]
           },
+          "Z4 3.0i 2DR CONV RWD": {
+            "years": [
+              2003,
+              2004,
+              2005,
+              2006
+            ]
+          },
           "Z4 M 2DR CONV RWD": {
             "years": [
               2008
-            ]
-          },
-          "Z4 sDRIVE 2DR CONV RWD 23i/30i": {
-            "years": [
-              2009
-            ]
-          },
-          "Z4 sDRIVE 2DR CONV RWD 35i": {
-            "years": [
-              2009,
-              2010
-            ]
-          },
-          "Z4 sDRIVE 2DR CONV RWD 30i": {
-            "years": [
-              2010
-            ]
-          },
-          "Z4 sDRIVE30i 2DR CONV RWD": {
-            "years": [
-              2011,
-              2012,
-              2013
-            ]
-          },
-          "Z4 sDRIVE35i/35is 2DR CONV RWD": {
-            "years": [
-              2011,
-              2012,
-              2013,
-              2014,
-              2015,
-              2016,
-              2017
-            ]
-          },
-          "Z4 sDRIVE28i 2DR CONV RWD": {
-            "years": [
-              2014,
-              2015,
-              2016,
-              2017
-            ]
-          },
-          "Z4 2DR CONVERTIBLE": {
-            "years": [
-              2019
             ]
           },
           "Z4 M40i 2DR CONVERTIBLE": {
@@ -1673,6 +2245,37 @@
               2024
             ]
           },
+          "Z4 sDRIVE 2DR CONV RWD 23i/30i": {
+            "years": [
+              2009
+            ]
+          },
+          "Z4 sDRIVE 2DR CONV RWD 30i": {
+            "years": [
+              2010
+            ]
+          },
+          "Z4 sDRIVE 2DR CONV RWD 35i": {
+            "years": [
+              2009,
+              2010
+            ]
+          },
+          "Z4 sDRIVE28i 2DR CONV RWD": {
+            "years": [
+              2014,
+              2015,
+              2016,
+              2017
+            ]
+          },
+          "Z4 sDRIVE30i 2DR CONV RWD": {
+            "years": [
+              2011,
+              2012,
+              2013
+            ]
+          },
           "Z4 sDRIVE30i 2DR CONVERTIBLE": {
             "years": [
               2020,
@@ -1680,6 +2283,17 @@
               2022,
               2023,
               2024
+            ]
+          },
+          "Z4 sDRIVE35i/35is 2DR CONV RWD": {
+            "years": [
+              2011,
+              2012,
+              2013,
+              2014,
+              2015,
+              2016,
+              2017
             ]
           }
         }
@@ -1693,7 +2307,15 @@
           2002,
           2003
         ],
-        "model_styles": {}
+        "model_styles": {
+          "Z8 ROADSTER 5.0": {
+            "years": [
+              2001,
+              2002,
+              2003
+            ]
+          }
+        }
       }
     }
   },
@@ -1775,7 +2397,157 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "CAMARO 2.0L 2DR CONVERTIBLE": {
+            "years": [
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "CAMARO 2.0L 2DR COUPE": {
+            "years": [
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "CAMARO 2DR CONVERTIBLE": {
+            "years": [
+              1994,
+              1995,
+              1996,
+              1997,
+              1998,
+              1999,
+              2000
+            ]
+          },
+          "CAMARO 2DR CONVERTIBLE Z28": {
+            "years": [
+              1994,
+              1995,
+              1996,
+              1997,
+              1998,
+              1999,
+              2000,
+              2001
+            ]
+          },
+          "CAMARO 2DR COUPE RWD LS/LT": {
+            "years": [
+              2010,
+              2011,
+              2012,
+              2013,
+              2014,
+              2015
+            ]
+          },
+          "CAMARO 2DR COUPE RWD SS": {
+            "years": [
+              2010,
+              2011,
+              2012,
+              2013,
+              2014,
+              2015
+            ]
+          },
+          "CAMARO 2DR COUPE RWD Z28": {
+            "years": [
+              2015
+            ]
+          },
+          "CAMARO 2DR COUPE RWD ZL1": {
+            "years": [
+              2013,
+              2015
+            ]
+          },
+          "CAMARO 2DR COUPE RWD ZL1/Z28": {
+            "years": [
+              2014
+            ]
+          },
+          "CAMARO 2DR HATCHBACK": {
+            "years": [
+              1994,
+              1995,
+              1996,
+              1997,
+              1998,
+              1999,
+              2000,
+              2001
+            ]
+          },
+          "CAMARO 2DR HATCHBACK Z28": {
+            "years": [
+              1994,
+              1995,
+              1996,
+              1998,
+              1999,
+              2000,
+              2001
+            ]
+          },
+          "CAMARO 3.6L 2DR CONVERTIBLE": {
+            "years": [
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "CAMARO 3.6L 2DR COUPE": {
+            "years": [
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "CAMARO 6.2L 2DR CONVERTIBLE": {
+            "years": [
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "CAMARO 6.2L 2DR COUPE": {
+            "years": [
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "CAMARO CONVERTIBLE RWD LS/LT": {
+            "years": [
+              2011,
+              2012,
+              2013,
+              2014,
+              2015
+            ]
+          },
+          "CAMARO CONVERTIBLE RWD SS": {
+            "years": [
+              2011,
+              2012,
+              2013,
+              2014,
+              2015
+            ]
+          },
+          "CAMARO CONVERTIBLE RWD ZL1": {
+            "years": [
+              2013,
+              2014,
+              2015
+            ]
+          }
+        }
       },
       "CORVETTE": {
         "model_id": 1831,
@@ -1825,7 +2597,185 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "CORVETTE 2DR CONVERTIBLE": {
+            "years": [
+              1998,
+              1999,
+              2000,
+              2001,
+              2002
+            ]
+          },
+          "CORVETTE 2DR CONVERTIBLE RWD": {
+            "years": [
+              2003,
+              2004,
+              2005,
+              2006,
+              2007,
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013
+            ]
+          },
+          "CORVETTE 2DR COUPE": {
+            "years": [
+              1997,
+              1998,
+              1999,
+              2000,
+              2001,
+              2002
+            ]
+          },
+          "CORVETTE 2DR HARDTOP": {
+            "years": [
+              1999,
+              2000,
+              2001,
+              2002,
+              2003,
+              2004
+            ]
+          },
+          "CORVETTE 427 CONVERTIBLE CONV 2DR RWD": {
+            "years": [
+              2013
+            ]
+          },
+          "CORVETTE CONVERTIBLE STINGRAY/Z51": {
+            "years": [
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "CORVETTE CONVERTIBLE Z06": {
+            "years": [
+              2015,
+              2016,
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "CORVETTE COUPE": {
+            "years": [
+              1986
+            ]
+          },
+          "CORVETTE COUPE / Z06  2DR RWD": {
+            "years": [
+              2003,
+              2004
+            ]
+          },
+          "CORVETTE COUPE 2DR RWD": {
+            "years": [
+              2005,
+              2006,
+              2007,
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013
+            ]
+          },
+          "CORVETTE COUPE STINGRAY/Z51": {
+            "years": [
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "CORVETTE COUPE Z06": {
+            "years": [
+              2015,
+              2016,
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "CORVETTE GRANDSPORT CONV 2DR RWD": {
+            "years": [
+              2010,
+              2011,
+              2012,
+              2013
+            ]
+          },
+          "CORVETTE GRANDSPORT COUPE 2DR RWD": {
+            "years": [
+              2011,
+              2012,
+              2013
+            ]
+          },
+          "CORVETTE ROADSTER": {
+            "years": [
+              1986
+            ]
+          },
+          "CORVETTE STINGRAY CONVERTIBLE": {
+            "years": [
+              2020,
+              2023
+            ]
+          },
+          "CORVETTE STINGRAY COUPE": {
+            "years": [
+              2020,
+              2023
+            ]
+          },
+          "CORVETTE Z06 / GRANDSPORT COUPE 2DR RWD": {
+            "years": [
+              2010
+            ]
+          },
+          "CORVETTE Z06 CONVERTIBLE": {
+            "years": [
+              2023
+            ]
+          },
+          "CORVETTE Z06 COUPE": {
+            "years": [
+              2023
+            ]
+          },
+          "CORVETTE Z06 COUPE 2DR RWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009,
+              2011,
+              2012,
+              2013
+            ]
+          },
+          "CORVETTE ZR1 COUPE 2DR RWD": {
+            "years": [
+              2010,
+              2011,
+              2012,
+              2013
+            ]
+          }
+        }
       },
       "SS": {
         "model_id": 1837,
@@ -1860,48 +2810,39 @@
           2026
         ],
         "model_styles": {
-          "CAB & CHASSIS C2500 OR C20": {
+          "2500 EXPRESS CARGO VAN LWB": {
             "years": [
-              1981
+              2016
             ]
           },
-          "CAB & CHASSIS C3500 or C30": {
+          "2500 EXPRESS CARGO VAN SWB": {
             "years": [
-              1981
+              2016
             ]
           },
-          "CAB & CHASSIS C3500 OR C30": {
+          "2500 EXPRESS PASSENGER VAN SWB": {
             "years": [
-              1981,
-              1981,
-              1981
+              2016
             ]
           },
-          "CAB CHASSIS K3500 OR K30": {
+          "3500 EXPRESS CARGO VAN LWB": {
             "years": [
-              1981,
-              1981,
-              1981
+              2016
             ]
           },
-          "CAB & CHASSIS-C2500 OR C20": {
+          "3500 EXPRESS CARGO VAN SWB": {
             "years": [
-              1982
+              2016
             ]
           },
-          "CAB & CHASSIS-C3500 OR C30": {
+          "3500 EXPRESS PASSENGER VAN LWB": {
             "years": [
-              1982,
-              1982,
-              1982,
-              1982
+              2016
             ]
           },
-          "CAB CHASSIS-K3500 OR K30": {
+          "3500 EXPRESS PASSENGER VAN SWB": {
             "years": [
-              1982,
-              1982,
-              1982
+              2016
             ]
           },
           "ASTRO AWD PASSENGER VAN": {
@@ -1928,11 +2869,62 @@
               1992
             ]
           },
-          "S-10 P/U REG CAB S/BOX SS": {
+          "C1500 P/U EXT CAB S/BOX S/SIDE": {
             "years": [
               1994,
               1995,
-              1996
+              1996,
+              1997,
+              1998
+            ]
+          },
+          "C1500 P/U REG CAB S/BOX S/SIDE": {
+            "years": [
+              1994,
+              1995,
+              1996,
+              1997,
+              1998
+            ]
+          },
+          "CAB & CHASSIS C2500 OR C20": {
+            "years": [
+              1981
+            ]
+          },
+          "CAB & CHASSIS C3500 or C30": {
+            "years": [
+              1981
+            ]
+          },
+          "CAB & CHASSIS C3500 OR C30": {
+            "years": [
+              1981
+            ]
+          },
+          "CAB & CHASSIS-C2500 OR C20": {
+            "years": [
+              1982
+            ]
+          },
+          "CAB & CHASSIS-C3500 OR C30": {
+            "years": [
+              1982
+            ]
+          },
+          "CAB CHASSIS K3500 OR K30": {
+            "years": [
+              1981
+            ]
+          },
+          "CAB CHASSIS-K3500 OR K30": {
+            "years": [
+              1982
+            ]
+          },
+          "CITY EXPRESS VAN": {
+            "years": [
+              2016
             ]
           },
           "K1500 P/U EXT CAB S/BOX S/SIDE 4X4": {
@@ -1953,21 +2945,8 @@
               1998
             ]
           },
-          "C1500 P/U EXT CAB S/BOX S/SIDE": {
+          "S-10 P/U EXT CAB S/BOX F/SIDE SS": {
             "years": [
-              1994,
-              1995,
-              1996,
-              1997,
-              1998
-            ]
-          },
-          "C1500 P/U REG CAB S/BOX S/SIDE": {
-            "years": [
-              1994,
-              1995,
-              1996,
-              1997,
               1998
             ]
           },
@@ -1985,6 +2964,19 @@
             "years": [
               1997,
               1998,
+              1999,
+              2000,
+              2001,
+              2002
+            ]
+          },
+          "S-10 P/U EXT CAB S/BOX S/SIDE SS": {
+            "years": [
+              1998
+            ]
+          },
+          "S-10 P/U EXT CAB S/BOX S/SIDE XTREME": {
+            "years": [
               1999,
               2000,
               2001,
@@ -2015,27 +3007,9 @@
               2000
             ]
           },
-          "S-10 P/U EXT CAB S/BOX F/SIDE SS": {
-            "years": [
-              1998
-            ]
-          },
-          "S-10 P/U EXT CAB S/BOX S/SIDE SS": {
-            "years": [
-              1998
-            ]
-          },
           "S-10 P/U REG CAB S/BOX S/SIDE SS": {
             "years": [
               1998
-            ]
-          },
-          "S-10 P/U EXT CAB S/BOX S/SIDE XTREME": {
-            "years": [
-              1999,
-              2000,
-              2001,
-              2002
             ]
           },
           "S-10 P/U REG CAB S/BOX S/SIDE XTREME": {
@@ -2044,6 +3018,13 @@
               2000,
               2001,
               2002
+            ]
+          },
+          "S-10 P/U REG CAB S/BOX SS": {
+            "years": [
+              1994,
+              1995,
+              1996
             ]
           }
         }
@@ -2082,7 +3063,58 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "CHALLENGER 2DR COUPE AWD V6": {
+            "years": [
+              2019
+            ]
+          },
+          "CHALLENGER 2DR COUPE RWD R/T / R/T CLASSIC": {
+            "years": [
+              2015
+            ]
+          },
+          "CHALLENGER 2DR COUPE RWD R/T/R/T CLASSIC": {
+            "years": [
+              2011
+            ]
+          },
+          "CHALLENGER 2DR COUPE RWD SRT / HELLCAT": {
+            "years": [
+              2015
+            ]
+          },
+          "CHALLENGER 2DR COUPE RWD SRT 392 / HELLCAT": {
+            "years": [
+              2019
+            ]
+          },
+          "CHALLENGER 2DR COUPE RWD SRT8 392": {
+            "years": [
+              2011
+            ]
+          },
+          "CHALLENGER 2DR COUPE RWD SXT/SXT PLUS": {
+            "years": [
+              2011
+            ]
+          },
+          "CHALLENGER 2DR COUPE RWD SXT/SXT PLUS/RALLY REDLINE": {
+            "years": [
+              2015
+            ]
+          },
+          "CHALLENGER 2DR COUPE RWD V6": {
+            "years": [
+              2019
+            ]
+          },
+          "CHALLENGER 2DR COUPE RWD V8": {
+            "years": [
+              2019
+            ]
+          }
+        }
       },
       "NEON": {
         "model_id": 5880,
@@ -2102,7 +3134,34 @@
           2004,
           2005
         ],
-        "model_styles": {}
+        "model_styles": {
+          "NEON 2DR COUPE": {
+            "years": [
+              1995,
+              1996,
+              1997,
+              1998
+            ]
+          },
+          "NEON 2DR COUPE BASE/EX/SPORT/R/T": {
+            "years": [
+              1999
+            ]
+          },
+          "NEON 4DR SEDAN": {
+            "years": [
+              1995,
+              1996,
+              1997,
+              1998
+            ]
+          },
+          "NEON 4DR SEDAN BASE/EX/SPORT/R/T": {
+            "years": [
+              1999
+            ]
+          }
+        }
       },
       "SHELBY CHARGER": {
         "model_id": 14414,
@@ -2145,7 +3204,67 @@
           2016,
           2017
         ],
-        "model_styles": {}
+        "model_styles": {
+          "VIPER 2DR CONVERTIBLE RT-10": {
+            "years": [
+              1998,
+              1999,
+              2000,
+              2001,
+              2002
+            ]
+          },
+          "VIPER 2DR HATCHBACK GTS": {
+            "years": [
+              1997,
+              1998,
+              1999
+            ]
+          },
+          "VIPER 2DR HATCHBACK GTS/ACR": {
+            "years": [
+              2000,
+              2001,
+              2002
+            ]
+          },
+          "VIPER RT-10 2DR CONVERTIBLE": {
+            "years": [
+              1993,
+              1994,
+              1995,
+              1996,
+              1997
+            ]
+          },
+          "VIPER SRT/10 2DR CONV RWD": {
+            "years": [
+              2003,
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "VIPER SRT/10 2DR COUPE RWD": {
+            "years": [
+              2006
+            ]
+          },
+          "VIPER SRT10 COUPE/ACR RWD": {
+            "years": [
+              2008,
+              2009,
+              2010
+            ]
+          },
+          "VIPER SRT10 ROADSTER 2DR CONV RWD": {
+            "years": [
+              2008,
+              2009,
+              2010
+            ]
+          }
+        }
       }
     }
   },
@@ -2175,7 +3294,13 @@
         "years": [
           2003
         ],
-        "model_styles": {}
+        "model_styles": {
+          "ENZO 2DR COUPE RWD": {
+            "years": [
+              2003
+            ]
+          }
+        }
       },
       "F355": {
         "model_id": 9954,
@@ -2186,7 +3311,36 @@
           1998,
           1999
         ],
-        "model_styles": {}
+        "model_styles": {
+          "F355 2DR COUPE": {
+            "years": [
+              1995
+            ]
+          },
+          "F355 B/TS 2DR COUPE": {
+            "years": [
+              1998
+            ]
+          },
+          "F355 SPYDER 2DR COUPE": {
+            "years": [
+              1996,
+              1997,
+              1998
+            ]
+          },
+          "F355 SPYDER 2DR COUPE BASE/F1": {
+            "years": [
+              1999
+            ]
+          },
+          "F355 TB/TS 2DR COUPE": {
+            "years": [
+              1996,
+              1997
+            ]
+          }
+        }
       },
       "F40": {
         "model_id": 14039,
@@ -2208,7 +3362,36 @@
           2008,
           2009
         ],
-        "model_styles": {}
+        "model_styles": {
+          "F430 2DR COUPE RWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009
+            ]
+          },
+          "F430 CHALLENGE 2DR COUPE RWD": {
+            "years": [
+              2006,
+              2007
+            ]
+          },
+          "F430 SCUDERIA 2DR COUPE RWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "F430 SPIDER 2DR CONV RWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009
+            ]
+          }
+        }
       }
     }
   },
@@ -2268,7 +3451,23 @@
           2001,
           2002
         ],
-        "model_styles": {}
+        "model_styles": {
+          "ESCORT 4DR SEDAN LX/SE": {
+            "years": [
+              1998
+            ]
+          },
+          "ESCORT 4DR WAGON LX/SE": {
+            "years": [
+              1998
+            ]
+          },
+          "ESCORT ZX2 2DR COUPE": {
+            "years": [
+              1998
+            ]
+          }
+        }
       },
       "FIESTA": {
         "model_id": 3267,
@@ -2292,7 +3491,23 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "FIESTA 4DR HATCH S/SE/TITANIUM": {
+            "years": [
+              2015
+            ]
+          },
+          "FIESTA 4DR SEDAN S/SE/TITANIUM": {
+            "years": [
+              2015
+            ]
+          },
+          "FIESTA ST 4DR HATCHBACK": {
+            "years": [
+              2015
+            ]
+          }
+        }
       },
       "FOCUS": {
         "model_id": 1779,
@@ -2327,7 +3542,152 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "FOCUS 2DR COUPE FWD  SE/SES": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "FOCUS 2DR COUPE FWD S/SE/SES": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "FOCUS 2DR HATCH FWD S/SE": {
+            "years": [
+              2007
+            ]
+          },
+          "FOCUS 2DR HATCHBACK ZX3": {
+            "years": [
+              2000,
+              2001,
+              2002
+            ]
+          },
+          "FOCUS 4DR HATCH FWD": {
+            "years": [
+              2007
+            ]
+          },
+          "FOCUS 4DR HATCHBACK SE/SEL/TITANIUM": {
+            "years": [
+              2012
+            ]
+          },
+          "FOCUS 4DR HATCHBACK SE/TITANIUM": {
+            "years": [
+              2016
+            ]
+          },
+          "FOCUS 4DR SEDAN FWD S/SE/SES": {
+            "years": [
+              2008,
+              2009,
+              2010,
+              2011
+            ]
+          },
+          "FOCUS 4DR SEDAN FWD S/SE/SES/ST": {
+            "years": [
+              2007
+            ]
+          },
+          "FOCUS 4DR SEDAN LX/SE/SE SPORT/ZTS": {
+            "years": [
+              2003,
+              2004,
+              2005
+            ]
+          },
+          "FOCUS 4DR SEDAN LX/SE/ZTS": {
+            "years": [
+              2000,
+              2001,
+              2002
+            ]
+          },
+          "FOCUS 4DR SEDAN S/SE/SEL/TITANIUM": {
+            "years": [
+              2012
+            ]
+          },
+          "FOCUS 4DR SEDAN S/SE/TITANIUM": {
+            "years": [
+              2016
+            ]
+          },
+          "FOCUS 4DR WAGON FWD SE/SES": {
+            "years": [
+              2007
+            ]
+          },
+          "FOCUS 4DR WAGON SE": {
+            "years": [
+              2000,
+              2001,
+              2002
+            ]
+          },
+          "FOCUS 4DR WAGON SE/SE SPORT/ZTW": {
+            "years": [
+              2003,
+              2004,
+              2005
+            ]
+          },
+          "FOCUS ELECTRIC 4D HATCHBACK": {
+            "years": [
+              2016
+            ]
+          },
+          "FOCUS ST/RS 4DR HATCHBACK": {
+            "years": [
+              2016
+            ]
+          },
+          "FOCUS ZX3 2DR HATCH FWD": {
+            "years": [
+              2003,
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "FOCUS ZX3 SVT 3DR HATCH FWD": {
+            "years": [
+              2003,
+              2004
+            ]
+          },
+          "FOCUS ZX4 4DR SEDAN FWD": {
+            "years": [
+              2006
+            ]
+          },
+          "FOCUS ZX5 4DR HATCH FWD": {
+            "years": [
+              2002,
+              2003,
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "FOCUS ZX5 SVT 5DR HATCH FWD": {
+            "years": [
+              2003,
+              2004
+            ]
+          },
+          "FOCUS ZXW 4DR WAGON FWD": {
+            "years": [
+              2006
+            ]
+          }
+        }
       },
       "GT": {
         "model_id": 2346,
@@ -2344,7 +3704,28 @@
           2021,
           2022
         ],
-        "model_styles": {}
+        "model_styles": {
+          "GT 2DR COUPE RWD": {
+            "years": [
+              2006
+            ]
+          },
+          "MUSTANG GT 2DR CONVERTIBLE RWD": {
+            "years": [
+              2006
+            ]
+          },
+          "MUSTANG GT 2DR COUPE": {
+            "years": [
+              2005
+            ]
+          },
+          "MUSTANG GT 2DR COUPE RWD": {
+            "years": [
+              2006
+            ]
+          }
+        }
       },
       "MUSTANG": {
         "model_id": 1781,
@@ -2394,7 +3775,390 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "MUSTANG 2DR CONVERTIBLE": {
+            "years": [
+              2005
+            ]
+          },
+          "MUSTANG 2DR CONVERTIBLE BASE": {
+            "years": [
+              1995,
+              1996,
+              1997,
+              1998,
+              1999,
+              2000,
+              2001,
+              2002,
+              2003,
+              2004
+            ]
+          },
+          "MUSTANG 2DR CONVERTIBLE BASE/GT": {
+            "years": [
+              1994
+            ]
+          },
+          "MUSTANG 2DR CONVERTIBLE COBRA": {
+            "years": [
+              1998,
+              1999,
+              2000,
+              2001
+            ]
+          },
+          "MUSTANG 2DR CONVERTIBLE GT": {
+            "years": [
+              1995,
+              1996,
+              1997,
+              1998,
+              1999,
+              2000,
+              2001,
+              2002,
+              2003,
+              2004
+            ]
+          },
+          "MUSTANG 2DR CONVERTIBLE RWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009,
+              2010,
+              2011
+            ]
+          },
+          "MUSTANG 2DR CONVERTIBLE RWD/V6 PREMIUM": {
+            "years": [
+              2012,
+              2013,
+              2014
+            ]
+          },
+          "MUSTANG 2DR COUPE": {
+            "years": [
+              2005
+            ]
+          },
+          "MUSTANG 2DR COUPE BASE": {
+            "years": [
+              1995,
+              1996,
+              1997,
+              1998,
+              1999,
+              2000,
+              2001,
+              2002,
+              2003
+            ]
+          },
+          "MUSTANG 2DR COUPE BASE/GT": {
+            "years": [
+              1994
+            ]
+          },
+          "MUSTANG 2DR COUPE COBRA": {
+            "years": [
+              1997,
+              1998,
+              1999,
+              2000,
+              2001
+            ]
+          },
+          "MUSTANG 2DR COUPE GT": {
+            "years": [
+              1995,
+              1996,
+              1997,
+              1998,
+              1999,
+              2000,
+              2001,
+              2002
+            ]
+          },
+          "MUSTANG 2DR COUPE GT/MACH 1": {
+            "years": [
+              2003
+            ]
+          },
+          "MUSTANG 2DR COUPE RWD": {
+            "years": [
+              2004,
+              2006,
+              2007,
+              2008,
+              2009,
+              2010,
+              2011
+            ]
+          },
+          "MUSTANG 2DR COUPE RWD /GT": {
+            "years": [
+              2004
+            ]
+          },
+          "MUSTANG 2DR COUPE RWD /MACH 1": {
+            "years": [
+              2004
+            ]
+          },
+          "MUSTANG 2DR COUPE RWD/V6 PREMIUM": {
+            "years": [
+              2012,
+              2013,
+              2014
+            ]
+          },
+          "MUSTANG COBRA": {
+            "years": [
+              1996
+            ]
+          },
+          "MUSTANG COBRA 2DR CONV RWD": {
+            "years": [
+              2003
+            ]
+          },
+          "MUSTANG COBRA 2DR COUPE RWD": {
+            "years": [
+              2003
+            ]
+          },
+          "MUSTANG COBRA GT 2 DR HATCHBACK": {
+            "years": [
+              1987,
+              1988,
+              1989
+            ]
+          },
+          "MUSTANG COBRA GT CONVERTIBLE": {
+            "years": [
+              1985,
+              1987,
+              1988,
+              1989
+            ]
+          },
+          "MUSTANG COBRA GT HATCHBACK": {
+            "years": [
+              1985
+            ]
+          },
+          "MUSTANG ECOBOOST 2DR CONVERTIBLE": {
+            "years": [
+              2018,
+              2019,
+              2021
+            ]
+          },
+          "MUSTANG ECOBOOST 2DR COUPE": {
+            "years": [
+              2018,
+              2019,
+              2021
+            ]
+          },
+          "MUSTANG GT 2DR CONVERTIBLE": {
+            "years": [
+              2018,
+              2019,
+              2021
+            ]
+          },
+          "MUSTANG GT 2DR CONVERTIBLE RWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013,
+              2014,
+              2015,
+              2016,
+              2017
+            ]
+          },
+          "MUSTANG GT 2DR COUPE": {
+            "years": [
+              2005,
+              2018,
+              2019,
+              2021
+            ]
+          },
+          "MUSTANG GT 2DR COUPE RWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009,
+              2010,
+              2011,
+              2014,
+              2015,
+              2016,
+              2017
+            ]
+          },
+          "MUSTANG GT 2DR COUPE RWD/BOSS 302": {
+            "years": [
+              2012,
+              2013
+            ]
+          },
+          "MUSTANG GT CONVERTIBLE": {
+            "years": [
+              1986
+            ]
+          },
+          "MUSTANG GT HATCHBACK": {
+            "years": [
+              1986
+            ]
+          },
+          "MUSTANG GT350 2DR COUPE RWD": {
+            "years": [
+              2017
+            ]
+          },
+          "MUSTANG GT350/350R 2DR COUPE": {
+            "years": [
+              2018,
+              2019
+            ]
+          },
+          "MUSTANG LX 2 DR": {
+            "years": [
+              1985,
+              1986
+            ]
+          },
+          "MUSTANG LX 2 DR COUPE": {
+            "years": [
+              1987,
+              1988,
+              1989
+            ]
+          },
+          "MUSTANG LX 2 DR HATCHBACK": {
+            "years": [
+              1987,
+              1988
+            ]
+          },
+          "MUSTANG LX 2 DR HATCHBACK/LX 5.0L": {
+            "years": [
+              1989
+            ]
+          },
+          "MUSTANG LX CONVERTIBLE": {
+            "years": [
+              1985,
+              1986,
+              1987,
+              1988
+            ]
+          },
+          "MUSTANG LX CONVERTIBLE/LX 5.0L": {
+            "years": [
+              1989
+            ]
+          },
+          "MUSTANG LX HATCHBACK": {
+            "years": [
+              1985,
+              1986
+            ]
+          },
+          "MUSTANG LX/LX 5.0L 2DR COUPE": {
+            "years": [
+              1990,
+              1991,
+              1992,
+              1993
+            ]
+          },
+          "MUSTANG LX/LX 5.0L/COBRA GT 2DR HATCHBAC": {
+            "years": [
+              1993
+            ]
+          },
+          "MUSTANG LX/LX 5.0L/COBRA GT 2DR HTCHBACK": {
+            "years": [
+              1990
+            ]
+          },
+          "MUSTANG LX/LX 5.0L/COBRA GT CONVERTIBLE": {
+            "years": [
+              1990,
+              1991,
+              1992,
+              1993
+            ]
+          },
+          "MUSTANG LX/LX 5.0L/GT 2DR HTCHBACK": {
+            "years": [
+              1991,
+              1992
+            ]
+          },
+          "MUSTANG MACH E 4DR SUV AWD": {
+            "years": [
+              2021
+            ]
+          },
+          "MUSTANG MACH E 4DR SUV RWD": {
+            "years": [
+              2021
+            ]
+          },
+          "MUSTANG SHELBY GT500 2DR COUPE": {
+            "years": [
+              2021
+            ]
+          },
+          "MUSTANG SVO": {
+            "years": [
+              1985,
+              1986,
+              1987
+            ]
+          },
+          "MUSTANG SVT COBRA 2DR CONV RWD": {
+            "years": [
+              2004
+            ]
+          },
+          "MUSTANG SVT COBRA 2DR COUPE RWD": {
+            "years": [
+              2004
+            ]
+          },
+          "MUSTANG V6/ECOBOOST 2DR CONVERTIBLE RWD": {
+            "years": [
+              2015,
+              2016,
+              2017
+            ]
+          },
+          "MUSTANG V6/ECOBOOST 2DR COUPE RWD": {
+            "years": [
+              2015,
+              2016,
+              2017
+            ]
+          }
+        }
       }
     }
   },
@@ -2453,7 +4217,38 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "ACCORD 2DR COUPE EX-R": {
+            "years": [
+              1994
+            ]
+          },
+          "ACCORD 2DR COUPE LX": {
+            "years": [
+              1994
+            ]
+          },
+          "ACCORD 4DR SEDAN EX": {
+            "years": [
+              1994
+            ]
+          },
+          "ACCORD 4DR SEDAN EX-R": {
+            "years": [
+              1994
+            ]
+          },
+          "ACCORD 4DR SEDAN LX": {
+            "years": [
+              1994
+            ]
+          },
+          "ACCORD 4DR WAGON EX": {
+            "years": [
+              1994
+            ]
+          }
+        }
       },
       "CIVIC": {
         "model_id": 1863,
@@ -2503,7 +4298,172 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "CIVIC 2DR COUPE DX/LX/Si": {
+            "years": [
+              2003
+            ]
+          },
+          "CIVIC 2DR COUPE DX/Si": {
+            "years": [
+              1994,
+              1995,
+              1996,
+              1998
+            ]
+          },
+          "CIVIC 2DR COUPE FWD DX/DG-G/LX/EX": {
+            "years": [
+              2006
+            ]
+          },
+          "CIVIC 2DR COUPE FWD Si": {
+            "years": [
+              2006
+            ]
+          },
+          "CIVIC 2DR HATCHBACK CX": {
+            "years": [
+              1995,
+              1996,
+              1998
+            ]
+          },
+          "CIVIC 2DR HATCHBACK CX/DX": {
+            "years": [
+              1994
+            ]
+          },
+          "CIVIC 4DR SEDAN DX": {
+            "years": [
+              2003
+            ]
+          },
+          "CIVIC 4DR SEDAN FWD DX/DX-G/LX/EX": {
+            "years": [
+              2006
+            ]
+          },
+          "CIVIC 4DR SEDAN LX": {
+            "years": [
+              2003
+            ]
+          },
+          "CIVIC 4DR SEDAN LX SPORT": {
+            "years": [
+              2003
+            ]
+          },
+          "CIVIC 4DR SEDAN LX/EX": {
+            "years": [
+              1994,
+              1995,
+              1996,
+              1998
+            ]
+          },
+          "CIVIC BASE/4WD WAGON": {
+            "years": [
+              1989,
+              1990
+            ]
+          },
+          "CIVIC COUPE DX/Si 2DR": {
+            "years": [
+              1993
+            ]
+          },
+          "CIVIC CRX BASE/SI 2 DR COUPE": {
+            "years": [
+              1988,
+              1989,
+              1990,
+              1991
+            ]
+          },
+          "CIVIC CX/DX/VX 2 DR HATCHBACK": {
+            "years": [
+              1992,
+              1993
+            ]
+          },
+          "CIVIC DEL SOL 2DR COUPE S/Si/VTEC": {
+            "years": [
+              1994
+            ]
+          },
+          "CIVIC DEL SOL 2DR COUPE Si/VTEC": {
+            "years": [
+              1995,
+              1996
+            ]
+          },
+          "CIVIC DEL SOL S/Si 2DR COUPE": {
+            "years": [
+              1993
+            ]
+          },
+          "CIVIC DX WAGON": {
+            "years": [
+              1991
+            ]
+          },
+          "CIVIC DX/LX 4 DR SEDAN": {
+            "years": [
+              1988,
+              1989,
+              1990,
+              1991
+            ]
+          },
+          "CIVIC EX/LX/EX-V 4 DR SEDAN": {
+            "years": [
+              1992,
+              1993
+            ]
+          },
+          "CIVIC FWD/4WD WAGON": {
+            "years": [
+              1988
+            ]
+          },
+          "CIVIC HYBRID 4DR SEDAN FWD": {
+            "years": [
+              2003,
+              2006
+            ]
+          },
+          "CIVIC SI HATCHBACK": {
+            "years": [
+              1989,
+              1990,
+              1991
+            ]
+          },
+          "CIVIC Si HATCHBACK": {
+            "years": [
+              1992,
+              1993
+            ]
+          },
+          "CIVIC SIR HATCHBACK 3DR HATCH FWD": {
+            "years": [
+              2003
+            ]
+          },
+          "CIVIC STANDARD/CX/DX/2 DR HATCHBACK": {
+            "years": [
+              1989,
+              1990,
+              1991
+            ]
+          },
+          "CIVIC STANDARD/DELUXE 2 DR KAMBACK": {
+            "years": [
+              1988
+            ]
+          }
+        }
       },
       "CIVIC SI": {
         "model_id": 29417,
@@ -2517,7 +4477,18 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "CIVIC Si HATCHBACK": {
+            "years": [
+              1992
+            ]
+          },
+          "CIVIC SIR 3DR HATCH FWD": {
+            "years": [
+              2004
+            ]
+          }
+        }
       },
       "CIVIC TYPE R": {
         "model_id": 31535,
@@ -2558,6 +4529,20 @@
               2008,
               2009
             ]
+          },
+          "S2000 CONVERTIBLE": {
+            "years": [
+              2000,
+              2001,
+              2002,
+              2003,
+              2004,
+              2005,
+              2006,
+              2007,
+              2008,
+              2009
+            ]
           }
         }
       }
@@ -2595,7 +4580,13 @@
           2021,
           2022
         ],
-        "model_styles": {}
+        "model_styles": {
+          "VELOSTER N 3DR COUPE": {
+            "years": [
+              2019
+            ]
+          }
+        }
       }
     }
   },
@@ -2619,7 +4610,35 @@
           2008,
           2009
         ],
-        "model_styles": {}
+        "model_styles": {
+          "G35 2DR COUPE RWD": {
+            "years": [
+              2003,
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "G35 4DR SEDAN RWD": {
+            "years": [
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "G35 LUXURY SEDAN": {
+            "years": [
+              2003
+            ]
+          },
+          "G35X 4DR SEDAN AWD": {
+            "years": [
+              2004,
+              2005,
+              2006
+            ]
+          }
+        }
       }
     }
   },
@@ -2667,7 +4686,23 @@
           2013,
           2014
         ],
-        "model_styles": {}
+        "model_styles": {
+          "GALLARDO 2DR COUPE AWD": {
+            "years": [
+              2012
+            ]
+          },
+          "GALLARDO SPYDER 2DR CONV AWD": {
+            "years": [
+              2012
+            ]
+          },
+          "GALLARDO SUPERLEGGERA 2DR COUPE AWD": {
+            "years": [
+              2012
+            ]
+          }
+        }
       },
       "MURCIELAGO": {
         "model_id": 2066,
@@ -2682,7 +4717,33 @@
           2009,
           2010
         ],
-        "model_styles": {}
+        "model_styles": {
+          "MURCIELAGO LP640 2DR COUPE AWD": {
+            "years": [
+              2009
+            ]
+          },
+          "MURCIELAGO LP640 ROADSTER 2DR CONVERTIBLE AWD": {
+            "years": [
+              2009
+            ]
+          },
+          "MURCIELAGO LP650 2DR COUPE AWD": {
+            "years": [
+              2010
+            ]
+          },
+          "MURCIELAGO LP650 ROADSTER 2DR CONVERTIBLE AWD": {
+            "years": [
+              2010
+            ]
+          },
+          "MURCIELAGO LP670 SUPERVELOCE 2DR COUPE AWD": {
+            "years": [
+              2010
+            ]
+          }
+        }
       }
     }
   },
@@ -2701,7 +4762,14 @@
           2012,
           2013
         ],
-        "model_styles": {}
+        "model_styles": {
+          "LFA 2DR COUPE RWD": {
+            "years": [
+              2011,
+              2012
+            ]
+          }
+        }
       }
     }
   },
@@ -2726,7 +4794,14 @@
           2011,
           2012
         ],
-        "model_styles": {}
+        "model_styles": {
+          "ELISE 2DR COUPE": {
+            "years": [
+              2006,
+              2007
+            ]
+          }
+        }
       },
       "ESPRIT": {
         "model_id": 3112,
@@ -2753,7 +4828,14 @@
           2008,
           2009
         ],
-        "model_styles": {}
+        "model_styles": {
+          "ESPRIT V8": {
+            "years": [
+              1997,
+              1998
+            ]
+          }
+        }
       }
     }
   },
@@ -2808,18 +4890,49 @@
           2026
         ],
         "model_styles": {
-          "MX-5 MIATA CONVERTIBLE": {
+          "MX-5 2DR CONVERTIBLE": {
             "years": [
-              1990,
-              1991,
-              1992,
-              1993,
-              1994,
-              1995,
-              1996,
-              1997,
-              1998,
-              1999
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023,
+              2024
+            ]
+          },
+          "MX-5 2DR CONVERTIBLE RWD /GX/GS/GT": {
+            "years": [
+              2007,
+              2008,
+              2009
+            ]
+          },
+          "MX-5 2DR CONVERTIBLE RWD GX/GS/GT": {
+            "years": [
+              2010,
+              2011,
+              2012
+            ]
+          },
+          "MX-5 2DR CONVERTIBLE RWD GX/GS/GT (hard top)": {
+            "years": [
+              2014,
+              2015
+            ]
+          },
+          "MX-5 2DR CONVERTIBLE RWD GX/GS/GT (retractabl": {
+            "years": [
+              2013
+            ]
+          },
+          "MX-5 2DR CONVERTIBLE RWD GX/GS/GT (soft top)": {
+            "years": [
+              2013,
+              2014,
+              2015
             ]
           },
           "MX-5 MIATA 2DR CONVERTIBLE": {
@@ -2837,49 +4950,18 @@
               2006
             ]
           },
-          "MX-5 2DR CONVERTIBLE RWD /GX/GS/GT": {
+          "MX-5 MIATA CONVERTIBLE": {
             "years": [
-              2007,
-              2008,
-              2009
-            ]
-          },
-          "MX-5 2DR CONVERTIBLE RWD GX/GS/GT": {
-            "years": [
-              2010,
-              2011,
-              2012
-            ]
-          },
-          "MX-5 2DR CONVERTIBLE RWD GX/GS/GT (retractabl": {
-            "years": [
-              2013
-            ]
-          },
-          "MX-5 2DR CONVERTIBLE RWD GX/GS/GT (soft top)": {
-            "years": [
-              2013,
-              2014,
-              2015
-            ]
-          },
-          "MX-5 2DR CONVERTIBLE RWD GX/GS/GT (hard top)": {
-            "years": [
-              2014,
-              2015
-            ]
-          },
-          "MX-5 2DR CONVERTIBLE": {
-            "years": [
-              2016,
-              2017,
-              2018,
-              2019,
-              2020,
-              2021,
-              2022,
-              2023,
-              2024
+              1990,
+              1991,
+              1992,
+              1993,
+              1994,
+              1995,
+              1996,
+              1997,
+              1998,
+              1999
             ]
           },
           "MX-5 RF 2DR COUPE": {
@@ -2913,7 +4995,76 @@
           1995,
           1996
         ],
-        "model_styles": {}
+        "model_styles": {
+          "RX-7 2+2 GX/GXL": {
+            "years": [
+              1986
+            ]
+          },
+          "RX-7 2+2 GX/GXL 2 DR HATCHBACK": {
+            "years": [
+              1987,
+              1988,
+              1989
+            ]
+          },
+          "RX-7 2+2 GXL 2DR COUPE": {
+            "years": [
+              1990
+            ]
+          },
+          "RX-7 2DR COUPE": {
+            "years": [
+              1993,
+              1994,
+              1995
+            ]
+          },
+          "RX-7 BASE/GX/GXL": {
+            "years": [
+              1986
+            ]
+          },
+          "RX-7 BASE/GX/GXL 2 DR HATCHBACK": {
+            "years": [
+              1987
+            ]
+          },
+          "RX-7 BASE/GX/GXL/TURBO 2 DR HATCHBACK": {
+            "years": [
+              1988,
+              1989
+            ]
+          },
+          "RX-7 BASE/GX/GXL/TURBO 2DR COUPE": {
+            "years": [
+              1990
+            ]
+          },
+          "RX-7 CONVERTIBLE": {
+            "years": [
+              1988,
+              1989,
+              1990,
+              1991
+            ]
+          },
+          "RX-7 COUPE/TURBO 2DR COUPE": {
+            "years": [
+              1991
+            ]
+          },
+          "RX-7 GSL SE": {
+            "years": [
+              1986
+            ]
+          },
+          "RX-7 TURBO 2 DR HATCHBACK": {
+            "years": [
+              1987
+            ]
+          }
+        }
       },
       "RX-8": {
         "model_id": 2073,
@@ -2930,7 +5081,32 @@
           2011,
           2012
         ],
-        "model_styles": {}
+        "model_styles": {
+          "RX-8 2DR COUPE RWD /GS/GT": {
+            "years": [
+              2005,
+              2006,
+              2007,
+              2008
+            ]
+          },
+          "RX-8 2DR COUPE RWD GS/GT": {
+            "years": [
+              2004
+            ]
+          },
+          "RX-8 2DR COUPE RWD GS/R3/GT": {
+            "years": [
+              2009
+            ]
+          },
+          "RX-8 2DR COUPE RWD R3/GT": {
+            "years": [
+              2010,
+              2011
+            ]
+          }
+        }
       }
     }
   },
@@ -2956,7 +5132,38 @@
           2009,
           2010
         ],
-        "model_styles": {}
+        "model_styles": {
+          "COOPER 2DR CONVERTIBLE FWD": {
+            "years": [
+              2005,
+              2006
+            ]
+          },
+          "COOPER CLASSIC/COOPER 2DR HATCH FWD": {
+            "years": [
+              2002,
+              2003,
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "COOPER S 2DR CONVERTIBLE FWD": {
+            "years": [
+              2005,
+              2006
+            ]
+          },
+          "COOPER S 2DR HATCH FWD": {
+            "years": [
+              2002,
+              2003,
+              2004,
+              2005,
+              2006
+            ]
+          }
+        }
       }
     }
   },
@@ -2996,7 +5203,64 @@
           2011,
           2012
         ],
-        "model_styles": {}
+        "model_styles": {
+          "ECLIPSE COUPE 2DR COUPE GS": {
+            "years": [
+              2006
+            ]
+          },
+          "ECLIPSE COUPE 2DR COUPE GT": {
+            "years": [
+              2006
+            ]
+          },
+          "ECLIPSE COUPE 2DR COUPE GT/GT PREMIUM": {
+            "years": [
+              2003,
+              2004,
+              2005
+            ]
+          },
+          "ECLIPSE COUPE 2DR COUPE RS/GS": {
+            "years": [
+              2003,
+              2004,
+              2005
+            ]
+          },
+          "ECLIPSE RS MT/GS MT/GT MT": {
+            "years": [
+              2002
+            ]
+          },
+          "ECLIPSE SPYDER 2DR CONV FWD /GS": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "ECLIPSE SPYDER 2DR CONV FWD /GT PREMIUM": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "ECLIPSE SPYDER 2DR CONV GS": {
+            "years": [
+              2003
+            ]
+          },
+          "ECLIPSE SPYDER 2DR CONV GT PREMIUM": {
+            "years": [
+              2003
+            ]
+          },
+          "ECLIPSE SPYDER GS MT/GT MT": {
+            "years": [
+              2002
+            ]
+          }
+        }
       },
       "GALANT": {
         "model_id": 2165,
@@ -3032,7 +5296,18 @@
           2011,
           2012
         ],
-        "model_styles": {}
+        "model_styles": {
+          "GALANT 4DR SEDAN FWD /DE/ES": {
+            "years": [
+              2003
+            ]
+          },
+          "GALANT 4DR SEDAN FWD /ES V6/ LS V6/ GTZ": {
+            "years": [
+              2003
+            ]
+          }
+        }
       },
       "LANCER": {
         "model_id": 2164,
@@ -3056,7 +5331,79 @@
           2016,
           2017
         ],
-        "model_styles": {}
+        "model_styles": {
+          "LANCER 4DR SEDAN FWD /ES": {
+            "years": [
+              2005
+            ]
+          },
+          "LANCER 4DR SEDAN FWD /ES/LS": {
+            "years": [
+              2004
+            ]
+          },
+          "LANCER 4DR SEDAN FWD /OZ RALLY/RALLIART": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "LANCER 4DR SEDAN FWD DE": {
+            "years": [
+              2007
+            ]
+          },
+          "LANCER 4DR SEDAN FWD ES": {
+            "years": [
+              2006
+            ]
+          },
+          "LANCER 4DR SEDAN FWD EZ": {
+            "years": [
+              2007
+            ]
+          },
+          "LANCER 4DR SEDAN FWD GTS": {
+            "years": [
+              2007
+            ]
+          },
+          "LANCER 4DR SEDAN FWD OZ RALLY": {
+            "years": [
+              2006
+            ]
+          },
+          "LANCER 4DR SEDAN FWD RALLIART": {
+            "years": [
+              2006
+            ]
+          },
+          "LANCER ES 4DR SEDAN FWD": {
+            "years": [
+              2003
+            ]
+          },
+          "LANCER ES MT/ ES AT": {
+            "years": [
+              2002
+            ]
+          },
+          "LANCER LS AT/ OZ MT/ OZ RALLY": {
+            "years": [
+              2002
+            ]
+          },
+          "LANCER LS/OZ RALLY 4DR SEDAN FWD": {
+            "years": [
+              2003
+            ]
+          },
+          "LANCER SPORTBACK 4DR WAGON FWD LS/RALLIART": {
+            "years": [
+              2004
+            ]
+          }
+        }
       }
     }
   },
@@ -3081,7 +5428,25 @@
           1997,
           1998
         ],
-        "model_styles": {}
+        "model_styles": {
+          "200SX 2DR COUPE SE": {
+            "years": [
+              1998
+            ]
+          },
+          "200SX 2DR COUPE SE-R": {
+            "years": [
+              1998
+            ]
+          },
+          "200SX 2DR COUPE SE/SE-R": {
+            "years": [
+              1995,
+              1996,
+              1997
+            ]
+          }
+        }
       },
       "240SX": {
         "model_id": 5565,
@@ -3102,7 +5467,14 @@
           2000,
           2001
         ],
-        "model_styles": {}
+        "model_styles": {
+          "240SX 2DR COUPE SE/LE": {
+            "years": [
+              1997,
+              1998
+            ]
+          }
+        }
       },
       "350Z": {
         "model_id": 2303,
@@ -3117,7 +5489,43 @@
           2008,
           2009
         ],
-        "model_styles": {}
+        "model_styles": {
+          "350Z": {
+            "years": [
+              2003
+            ]
+          },
+          "350Z 2DR COUPE RWD /GT": {
+            "years": [
+              2007
+            ]
+          },
+          "350Z 2DR COUPE RWD /PERFORMANCE/TOURING/TRACK": {
+            "years": [
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "350Z COUPE 2DR RWD": {
+            "years": [
+              2008
+            ]
+          },
+          "350Z ROADSTER 2 DR CONV RWD": {
+            "years": [
+              2004,
+              2005,
+              2006,
+              2008
+            ]
+          },
+          "350Z ROADSTER 2 DR CONV RWD /GT": {
+            "years": [
+              2007
+            ]
+          }
+        }
       },
       "370Z": {
         "model_id": 1906,
@@ -3139,7 +5547,35 @@
           2021,
           2022
         ],
-        "model_styles": {}
+        "model_styles": {
+          "370Z COUPE 2DR RWD": {
+            "years": [
+              2009,
+              2010,
+              2011,
+              2012,
+              2013,
+              2014
+            ]
+          },
+          "370Z NISMO 2 DR COUPE": {
+            "years": [
+              2011,
+              2012,
+              2013,
+              2014
+            ]
+          },
+          "370Z ROADSTER 2DR RWD": {
+            "years": [
+              2010,
+              2011,
+              2012,
+              2013,
+              2014
+            ]
+          }
+        }
       },
       "GT-R": {
         "model_id": 1890,
@@ -3167,6 +5603,19 @@
           2026
         ],
         "model_styles": {
+          "GT-R 2DR COUPE": {
+            "years": [
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023,
+              2024
+            ]
+          },
           "GT-R 2DR COUPE AWD": {
             "years": [
               2008,
@@ -3181,19 +5630,6 @@
               2013,
               2014,
               2015
-            ]
-          },
-          "GT-R 2DR COUPE": {
-            "years": [
-              2016,
-              2017,
-              2018,
-              2019,
-              2020,
-              2021,
-              2022,
-              2023,
-              2024
             ]
           }
         }
@@ -3212,7 +5648,18 @@
           2017,
           2018
         ],
-        "model_styles": {}
+        "model_styles": {
+          "JUKE 4 DR SUV SV AWD/SL AWD": {
+            "years": [
+              2011
+            ]
+          },
+          "JUKE 4 DR SUV SV FWD/SL FWD": {
+            "years": [
+              2011
+            ]
+          }
+        }
       },
       "SENTRA": {
         "model_id": 1907,
@@ -3262,7 +5709,71 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "SENTRA 2DR COUPE DLX/XE": {
+            "years": [
+              1994
+            ]
+          },
+          "SENTRA 4DR SEDAN DLX/XE/GXE": {
+            "years": [
+              1994
+            ]
+          },
+          "SENTRA 4DR SEDAN FWD /1.8 /1.8S": {
+            "years": [
+              2004
+            ]
+          },
+          "SENTRA 4DR SEDAN FWD /1.8 /1.8S/SPEICAL EDITI": {
+            "years": [
+              2005,
+              2006
+            ]
+          },
+          "SENTRA 4DR SEDAN FWD /SE-R/SE-R SPEC V": {
+            "years": [
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "SENTRA 4DR SEDAN SE-R/SE-R Spec V": {
+            "years": [
+              2002
+            ]
+          },
+          "SENTRA 4DR SEDAN SE-R/SE-R SPEC V": {
+            "years": [
+              2003
+            ]
+          },
+          "SENTRA 4DR SEDAN XE/GXE/SE": {
+            "years": [
+              2001
+            ]
+          },
+          "SENTRA CLASSIC 4 DR SEDAN": {
+            "years": [
+              1991,
+              1992,
+              1993
+            ]
+          },
+          "SENTRA DLX/XE/GXE 4 DR SEDAN": {
+            "years": [
+              1991,
+              1992,
+              1993
+            ]
+          },
+          "SENTRA XE/GX": {
+            "years": [
+              2002,
+              2003
+            ]
+          }
+        }
       }
     }
   },
@@ -3283,7 +5794,23 @@
           1987,
           1988
         ],
-        "model_styles": {}
+        "model_styles": {
+          "FIERO 2 DR COUPE": {
+            "years": [
+              1988
+            ]
+          },
+          "FIERO FORMULA 2 DR COUPE": {
+            "years": [
+              1988
+            ]
+          },
+          "FIERO GT 2 DR COUPE": {
+            "years": [
+              1988
+            ]
+          }
+        }
       },
       "FIREBIRD": {
         "model_id": 8986,
@@ -3309,7 +5836,64 @@
           2001,
           2002
         ],
-        "model_styles": {}
+        "model_styles": {
+          "FIREBIRD 2 DR HATCHBACK": {
+            "years": [
+              1989
+            ]
+          },
+          "FIREBIRD 2DR CONVERTIBLE": {
+            "years": [
+              1996
+            ]
+          },
+          "FIREBIRD 2DR CONVERTIBLE FORMULA": {
+            "years": [
+              1996
+            ]
+          },
+          "FIREBIRD 2DR CONVERTIBLE TRANS AM": {
+            "years": [
+              1996,
+              2002
+            ]
+          },
+          "FIREBIRD 2DR HATCHBACK BASE/FORMULA": {
+            "years": [
+              2002
+            ]
+          },
+          "FIREBIRD 2DR HATCHBACK COUPE": {
+            "years": [
+              1996
+            ]
+          },
+          "FIREBIRD 2DR HATCHBACK FORMULA": {
+            "years": [
+              1996
+            ]
+          },
+          "FIREBIRD 2DR HATCHBACK TRANS AM": {
+            "years": [
+              2002
+            ]
+          },
+          "FIREBIRD 2DR HATCHBACK TRANS AM GT": {
+            "years": [
+              1996
+            ]
+          },
+          "FIREBIRD FORMULA 2 DR HATCHBACK": {
+            "years": [
+              1989
+            ]
+          },
+          "FIREBIRD TRANS AM/GTA 2 DR NOTCHBACK": {
+            "years": [
+              1989
+            ]
+          }
+        }
       },
       "GTO": {
         "model_id": 4993,
@@ -3333,7 +5917,21 @@
           2009,
           2010
         ],
-        "model_styles": {}
+        "model_styles": {
+          "SOLSTICE 2DR CONV RWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009
+            ]
+          },
+          "SOLSTICE 2DR COUPE RWD": {
+            "years": [
+              2009
+            ]
+          }
+        }
       }
     }
   },
@@ -3397,16 +5995,6 @@
           2026
         ],
         "model_styles": {
-          "911SC": {
-            "years": [
-              1981
-            ]
-          },
-          "911 SC": {
-            "years": [
-              1982
-            ]
-          },
           "911 CABRIOLET": {
             "years": [
               1983,
@@ -3414,63 +6002,32 @@
               1985
             ]
           },
-          "911 CP & TARGA": {
+          "911 CABRIOLET CARRERA": {
             "years": [
-              1983,
-              1984
+              1996,
+              1997,
+              1998
             ]
           },
-          "911 SC TURBO": {
+          "911 CABRIOLET CARRERA 2/CARRERA 4 4WD": {
             "years": [
-              1983,
-              1984,
-              1985
+              1994
             ]
           },
-          "911 COUPE": {
+          "911 CABRIOLET CARRERA 4 AWD": {
             "years": [
-              1985
+              1996,
+              1997
             ]
           },
-          "911 CARRERA CABRIOLET": {
+          "911 CABRIOLET CARRERA C4 AWD": {
             "years": [
-              1986,
-              1999,
-              2000,
-              2001,
-              2002,
-              2003
+              1998
             ]
           },
-          "911 CARRERA COUPE/TARGA": {
+          "911 CABRIOLET CARRERA/CARRERA 4 4WD": {
             "years": [
-              1986,
-              1988
-            ]
-          },
-          "911 TURBO": {
-            "years": [
-              1986
-            ]
-          },
-          "911 CARRERA CABRIOLET (CONVERTIBLE)": {
-            "years": [
-              1987
-            ]
-          },
-          "911 CARRERA COUPE 2 DR": {
-            "years": [
-              1987
-            ]
-          },
-          "911 TARGA 2 DR COUPE": {
-            "years": [
-              1987
-            ]
-          },
-          "911 TURBO 2 DR COUPE": {
-            "years": [
-              1987
+              1995
             ]
           },
           "911 CARRERA": {
@@ -3478,26 +6035,10 @@
               1988
             ]
           },
-          "911 TURBO CABRIOLET": {
+          "911 CARRERA  4 CABRIOLET": {
             "years": [
-              1988,
-              1989
-            ]
-          },
-          "911 TURBO COUPE/TARGA": {
-            "years": [
-              1988,
-              1989
-            ]
-          },
-          "911 CARRERA 4 4WD COUPE": {
-            "years": [
-              1989
-            ]
-          },
-          "911 CARRERA COUPE/TARGA/CABRIOLET/SPEED": {
-            "years": [
-              1989
+              2002,
+              2003
             ]
           },
           "911 CARRERA 2/CARRERA 4 4WD 2DR COUPE": {
@@ -3524,158 +6065,13 @@
               1993
             ]
           },
-          "911 TURBO COUPE": {
+          "911 CARRERA 2DR CABRIOLET": {
             "years": [
-              1991,
-              1992,
-              1993,
-              2000,
-              2001,
-              2002,
-              2003
-            ]
-          },
-          "911 CABRIOLET CARRERA 2/CARRERA 4 4WD": {
-            "years": [
-              1994
-            ]
-          },
-          "911 COUPE CARRERA 2/CARRERA 4 4WD": {
-            "years": [
-              1994
-            ]
-          },
-          "911 COUPE TURBO 3.6L": {
-            "years": [
-              1994
-            ]
-          },
-          "911 SPEEDSTER 2DR CONVERTIBLE": {
-            "years": [
-              1994
-            ]
-          },
-          "911 TARGA CARRERA 2/CARRERA 4 4WD": {
-            "years": [
-              1994
-            ]
-          },
-          "911 CABRIOLET CARRERA/CARRERA 4 4WD": {
-            "years": [
-              1995
-            ]
-          },
-          "911 COUPE CARRERA/CARRERA 4 4WD": {
-            "years": [
-              1995
-            ]
-          },
-          "911 COUPE TWIN TURBO 3.6L": {
-            "years": [
-              1995
-            ]
-          },
-          "911 CABRIOLET CARRERA": {
-            "years": [
-              1996,
-              1997,
-              1998
-            ]
-          },
-          "911 CABRIOLET CARRERA 4 AWD": {
-            "years": [
-              1996,
-              1997
-            ]
-          },
-          "911 COUPE CARRERA": {
-            "years": [
-              1996,
-              1997
-            ]
-          },
-          "911 COUPE CARRERA 4 AWD/4S AWD": {
-            "years": [
-              1996
-            ]
-          },
-          "911 COUPE TWIN TURBO 3.6L AWD": {
-            "years": [
-              1996,
-              1997
-            ]
-          },
-          "911 TARGA CARRERA": {
-            "years": [
-              1996,
-              1997,
-              1998
-            ]
-          },
-          "911 COUPE CARRERA 4S AWD": {
-            "years": [
-              1997,
-              1998
-            ]
-          },
-          "911 CABRIOLET CARRERA C4 AWD": {
-            "years": [
-              1998
-            ]
-          },
-          "911 COUPE CARRERA S": {
-            "years": [
-              1998
-            ]
-          },
-          "911 CARRERA COUPE": {
-            "years": [
-              1999,
-              2000,
-              2001,
-              2002,
-              2003
-            ]
-          },
-          "911 CARRERA 4 CABRIOLET": {
-            "years": [
-              2000,
-              2001
-            ]
-          },
-          "911 CARRERA 4 COUPE": {
-            "years": [
-              2000,
-              2001
-            ]
-          },
-          "911 CARRERA  4 CABRIOLET": {
-            "years": [
-              2002,
-              2003
-            ]
-          },
-          "911 CARRERA CARRERA 4S": {
-            "years": [
-              2002,
-              2003
-            ]
-          },
-          "911 CARRERA TARGA": {
-            "years": [
-              2002,
-              2003
-            ]
-          },
-          "911 GT2 2DR COUPE RWD": {
-            "years": [
-              2002,
-              2003,
-              2004,
-              2008,
-              2009,
-              2010,
-              2011
+              2020,
+              2021,
+              2022,
+              2023,
+              2024
             ]
           },
           "911 CARRERA 2DR CONV AWD 4 CABRIOLET": {
@@ -3693,6 +6089,15 @@
               2004
             ]
           },
+          "911 CARRERA 2DR COUPE": {
+            "years": [
+              2020,
+              2021,
+              2022,
+              2023,
+              2024
+            ]
+          },
           "911 CARRERA 2DR COUPE AWD 4S": {
             "years": [
               2004
@@ -3703,333 +6108,11 @@
               2004
             ]
           },
-          "911 GT3 2DR COUPE RWD": {
-            "years": [
-              2004,
-              2014,
-              2015,
-              2016,
-              2017,
-              2018,
-              2019,
-              2020,
-              2021,
-              2022,
-              2023,
-              2024
-            ]
-          },
-          "911 TARGA 2DR COUPE RWD": {
-            "years": [
-              2004
-            ]
-          },
-          "911 TURBO 2DR COUPE AWD": {
-            "years": [
-              2004,
-              2007
-            ]
-          },
-          "911 TURBO CABRIOLET 2DR CONV AWD": {
-            "years": [
-              2004
-            ]
-          },
           "911 CARRERA 2DR COUPE RWD /S": {
             "years": [
               2005,
               2006,
               2007
-            ]
-          },
-          "911 CARRERA CABRIOLET 2DR RWD /S": {
-            "years": [
-              2005,
-              2006,
-              2007
-            ]
-          },
-          "911 TURBO S 2DR COUPE AWD": {
-            "years": [
-              2005
-            ]
-          },
-          "911 TURBO S CABRIOLET 2DR CONV AWD": {
-            "years": [
-              2005
-            ]
-          },
-          "911 CARRERA 4 2DR COUPE AWD /S": {
-            "years": [
-              2006,
-              2007
-            ]
-          },
-          "911 CARRERA 4 CABRIOLET 2DR AWD /S": {
-            "years": [
-              2006,
-              2007
-            ]
-          },
-          "911 GT3 2DR COUPE AWD /RS": {
-            "years": [
-              2007
-            ]
-          },
-          "911 TARGA 2DR COUPE 4/4S": {
-            "years": [
-              2007,
-              2008,
-              2009,
-              2010,
-              2011,
-              2012
-            ]
-          },
-          "911 CARRERA 4/S/4S 2DR COUPE AWD": {
-            "years": [
-              2008,
-              2009
-            ]
-          },
-          "911 CARRERA BASE 2DR COUPE RWD": {
-            "years": [
-              2008,
-              2009
-            ]
-          },
-          "911 CARRERA CABRIOLET /4/S 2DR AWD": {
-            "years": [
-              2008,
-              2009
-            ]
-          },
-          "911 CARRERA CABRIOLET 4S 2DR RWD": {
-            "years": [
-              2008,
-              2009
-            ]
-          },
-          "911 GT3/RS 2DR COUPE AWD": {
-            "years": [
-              2008,
-              2009,
-              2010,
-              2011
-            ]
-          },
-          "911 TURBO COUPE/CABRIOLET 2DR AWD": {
-            "years": [
-              2008,
-              2009
-            ]
-          },
-          "911 CARRERA 4/4S 2DR COUPE AWD": {
-            "years": [
-              2010,
-              2011,
-              2012
-            ]
-          },
-          "911 CARRERA BASE/S 2DR COUPE RWD": {
-            "years": [
-              2010,
-              2011,
-              2013,
-              2014,
-              2015,
-              2016,
-              2017,
-              2018,
-              2019
-            ]
-          },
-          "911 CARRERA CABRIOLET 4/4S 2DR AWD": {
-            "years": [
-              2010,
-              2011
-            ]
-          },
-          "911 CARRERA CABRIOLET BASE/S 2DR RWD": {
-            "years": [
-              2010,
-              2011
-            ]
-          },
-          "911 TURBO CABRIOLET 2DR AWD": {
-            "years": [
-              2010,
-              2011
-            ]
-          },
-          "911 TURBO COUPE 2DR AWD": {
-            "years": [
-              2010,
-              2011
-            ]
-          },
-          "911 CARRERA 4 GTS 2DR COUPE AWD": {
-            "years": [
-              2012,
-              2020
-            ]
-          },
-          "911 CARRERA BASE/S 2DR COUP RWD": {
-            "years": [
-              2012
-            ]
-          },
-          "911 CARRERA CABRIOLET 4 GTS 2DR CONVERTIBLE A": {
-            "years": [
-              2012
-            ]
-          },
-          "911 CARRERA CABRIOLET 4/4S 2DR CONVERTIBLE AW": {
-            "years": [
-              2012
-            ]
-          },
-          "911 CARRERA CABRIOLET BASE/S 2DR CONVERTIBLE": {
-            "years": [
-              2012,
-              2013,
-              2014
-            ]
-          },
-          "911 CARRERA GTS 2DR COUPE RWD": {
-            "years": [
-              2012,
-              2015,
-              2016,
-              2017,
-              2018,
-              2019,
-              2020
-            ]
-          },
-          "911 CARRERA GTS CABRIOLET 2DR CONVERTIBLE RWD": {
-            "years": [
-              2012
-            ]
-          },
-          "911 GT2 RS 2DR COUPE RWD": {
-            "years": [
-              2012
-            ]
-          },
-          "911 GT3 RS 4.0 2DR COUPE AWD": {
-            "years": [
-              2012
-            ]
-          },
-          "911 TURBO CABRIOLET /TURBO S CABRIOLET 2DR CO": {
-            "years": [
-              2012,
-              2013
-            ]
-          },
-          "911 TURBO/TURBO S COUPE 2DR AWD": {
-            "years": [
-              2012,
-              2013,
-              2014,
-              2015,
-              2016,
-              2017,
-              2018,
-              2019
-            ]
-          },
-          "911 CARRERA 4 CABRIOLET /CARRERA 4S CABRIOLET": {
-            "years": [
-              2013,
-              2014
-            ]
-          },
-          "911 CARRERA 4/CARRERA 4S 2DR COUPE AWD": {
-            "years": [
-              2013,
-              2014
-            ]
-          },
-          "911 TARGA 4/TARGA 4S 2DR COUPE AWD": {
-            "years": [
-              2014
-            ]
-          },
-          "911 TURBO CABRIOLET /TURBO S CABRIOLET": {
-            "years": [
-              2014,
-              2015,
-              2016,
-              2017,
-              2018,
-              2019
-            ]
-          },
-          "911 CARRERA 4/4S/4GTS 2DR COUPE AWD": {
-            "years": [
-              2015,
-              2016,
-              2017,
-              2018,
-              2019
-            ]
-          },
-          "911 CARRERA 4/4S/4GTS CABRIOLET AWD": {
-            "years": [
-              2015,
-              2016,
-              2017,
-              2018,
-              2019
-            ]
-          },
-          "911 CARRERA BASE/S CABRIOLET 2DR CONVERTIBLE": {
-            "years": [
-              2015,
-              2016,
-              2017,
-              2018,
-              2019
-            ]
-          },
-          "911 CARRERA GTS CABRIOLET 2DR CONVERTIBLE": {
-            "years": [
-              2015,
-              2016,
-              2017,
-              2018,
-              2019,
-              2020
-            ]
-          },
-          "911 TARGA 4/4S/4GTS 2DR COUPE AWD": {
-            "years": [
-              2015,
-              2016,
-              2017,
-              2018,
-              2019,
-              2020
-            ]
-          },
-          "911 CARRERA 2DR CABRIOLET": {
-            "years": [
-              2020,
-              2021,
-              2022,
-              2023,
-              2024
-            ]
-          },
-          "911 CARRERA 2DR COUPE": {
-            "years": [
-              2020,
-              2021,
-              2022,
-              2023,
-              2024
             ]
           },
           "911 CARRERA 4 2DR CABRIOLET": {
@@ -4050,9 +6133,87 @@
               2024
             ]
           },
+          "911 CARRERA 4 2DR COUPE AWD /S": {
+            "years": [
+              2006,
+              2007
+            ]
+          },
+          "911 CARRERA 4 4WD COUPE": {
+            "years": [
+              1989
+            ]
+          },
+          "911 CARRERA 4 CABRIOLET": {
+            "years": [
+              2000,
+              2001
+            ]
+          },
+          "911 CARRERA 4 CABRIOLET /CARRERA 4S CABRIOLET": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "911 CARRERA 4 CABRIOLET 2DR AWD /S": {
+            "years": [
+              2006,
+              2007
+            ]
+          },
+          "911 CARRERA 4 COUPE": {
+            "years": [
+              2000,
+              2001
+            ]
+          },
+          "911 CARRERA 4 GTS 2DR COUPE AWD": {
+            "years": [
+              2012,
+              2020
+            ]
+          },
           "911 CARRERA 4 GTS CABRIOLET AWD": {
             "years": [
               2020
+            ]
+          },
+          "911 CARRERA 4/4S 2DR COUPE AWD": {
+            "years": [
+              2010,
+              2011,
+              2012
+            ]
+          },
+          "911 CARRERA 4/4S/4GTS 2DR COUPE AWD": {
+            "years": [
+              2015,
+              2016,
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "911 CARRERA 4/4S/4GTS CABRIOLET AWD": {
+            "years": [
+              2015,
+              2016,
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "911 CARRERA 4/CARRERA 4S 2DR COUPE AWD": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "911 CARRERA 4/S/4S 2DR COUPE AWD": {
+            "years": [
+              2008,
+              2009
             ]
           },
           "911 CARRERA 4S 2DR CABRIOLET": {
@@ -4073,6 +6234,159 @@
               2024
             ]
           },
+          "911 CARRERA BASE 2DR COUPE RWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "911 CARRERA BASE/S 2DR COUP RWD": {
+            "years": [
+              2012
+            ]
+          },
+          "911 CARRERA BASE/S 2DR COUPE RWD": {
+            "years": [
+              2010,
+              2011,
+              2013,
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "911 CARRERA BASE/S CABRIOLET 2DR CONVERTIBLE": {
+            "years": [
+              2015,
+              2016,
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "911 CARRERA CABRIOLET": {
+            "years": [
+              1986,
+              1999,
+              2000,
+              2001,
+              2002,
+              2003
+            ]
+          },
+          "911 CARRERA CABRIOLET (CONVERTIBLE)": {
+            "years": [
+              1987
+            ]
+          },
+          "911 CARRERA CABRIOLET /4/S 2DR AWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "911 CARRERA CABRIOLET 2DR RWD /S": {
+            "years": [
+              2005,
+              2006,
+              2007
+            ]
+          },
+          "911 CARRERA CABRIOLET 4 GTS 2DR CONVERTIBLE A": {
+            "years": [
+              2012
+            ]
+          },
+          "911 CARRERA CABRIOLET 4/4S 2DR AWD": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "911 CARRERA CABRIOLET 4/4S 2DR CONVERTIBLE AW": {
+            "years": [
+              2012
+            ]
+          },
+          "911 CARRERA CABRIOLET 4S 2DR RWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "911 CARRERA CABRIOLET BASE/S 2DR CONVERTIBLE": {
+            "years": [
+              2012,
+              2013,
+              2014
+            ]
+          },
+          "911 CARRERA CABRIOLET BASE/S 2DR RWD": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "911 CARRERA CARRERA 4S": {
+            "years": [
+              2002,
+              2003
+            ]
+          },
+          "911 CARRERA COUPE": {
+            "years": [
+              1999,
+              2000,
+              2001,
+              2002,
+              2003
+            ]
+          },
+          "911 CARRERA COUPE 2 DR": {
+            "years": [
+              1987
+            ]
+          },
+          "911 CARRERA COUPE/TARGA": {
+            "years": [
+              1986,
+              1988
+            ]
+          },
+          "911 CARRERA COUPE/TARGA/CABRIOLET/SPEED": {
+            "years": [
+              1989
+            ]
+          },
+          "911 CARRERA GTS 2DR COUPE RWD": {
+            "years": [
+              2012,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020
+            ]
+          },
+          "911 CARRERA GTS CABRIOLET 2DR CONVERTIBLE": {
+            "years": [
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020
+            ]
+          },
+          "911 CARRERA GTS CABRIOLET 2DR CONVERTIBLE RWD": {
+            "years": [
+              2012
+            ]
+          },
           "911 CARRERA S 2DR CABRIOLET": {
             "years": [
               2020,
@@ -4089,6 +6403,283 @@
               2022,
               2023,
               2024
+            ]
+          },
+          "911 CARRERA TARGA": {
+            "years": [
+              2002,
+              2003
+            ]
+          },
+          "911 COUPE": {
+            "years": [
+              1985
+            ]
+          },
+          "911 COUPE CARRERA": {
+            "years": [
+              1996,
+              1997
+            ]
+          },
+          "911 COUPE CARRERA 2/CARRERA 4 4WD": {
+            "years": [
+              1994
+            ]
+          },
+          "911 COUPE CARRERA 4 AWD/4S AWD": {
+            "years": [
+              1996
+            ]
+          },
+          "911 COUPE CARRERA 4S AWD": {
+            "years": [
+              1997,
+              1998
+            ]
+          },
+          "911 COUPE CARRERA S": {
+            "years": [
+              1998
+            ]
+          },
+          "911 COUPE CARRERA/CARRERA 4 4WD": {
+            "years": [
+              1995
+            ]
+          },
+          "911 COUPE TURBO 3.6L": {
+            "years": [
+              1994
+            ]
+          },
+          "911 COUPE TWIN TURBO 3.6L": {
+            "years": [
+              1995
+            ]
+          },
+          "911 COUPE TWIN TURBO 3.6L AWD": {
+            "years": [
+              1996,
+              1997
+            ]
+          },
+          "911 CP & TARGA": {
+            "years": [
+              1983,
+              1984
+            ]
+          },
+          "911 DAKAR 2DR COUPE": {
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          "911 GT2 2DR COUPE RWD": {
+            "years": [
+              2002,
+              2003,
+              2004,
+              2008,
+              2009,
+              2010,
+              2011
+            ]
+          },
+          "911 GT2 RS 2DR COUPE RWD": {
+            "years": [
+              2012
+            ]
+          },
+          "911 GT3 2DR COUPE AWD /RS": {
+            "years": [
+              2007
+            ]
+          },
+          "911 GT3 2DR COUPE RWD": {
+            "years": [
+              2004,
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023,
+              2024
+            ]
+          },
+          "911 GT3 RS 4.0 2DR COUPE AWD": {
+            "years": [
+              2012
+            ]
+          },
+          "911 GT3/RS 2DR COUPE AWD": {
+            "years": [
+              2008,
+              2009,
+              2010,
+              2011
+            ]
+          },
+          "911 S/T 2DR COUPE RWD": {
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          "911 SC": {
+            "years": [
+              1982
+            ]
+          },
+          "911 SC TURBO": {
+            "years": [
+              1983,
+              1984,
+              1985
+            ]
+          },
+          "911 SPEEDSTER 2DR CONVERTIBLE": {
+            "years": [
+              1994
+            ]
+          },
+          "911 TARGA 2 DR COUPE": {
+            "years": [
+              1987
+            ]
+          },
+          "911 TARGA 2DR COUPE 4/4S": {
+            "years": [
+              2007,
+              2008,
+              2009,
+              2010,
+              2011,
+              2012
+            ]
+          },
+          "911 TARGA 2DR COUPE RWD": {
+            "years": [
+              2004
+            ]
+          },
+          "911 TARGA 4/4S 2DR COUPE": {
+            "years": [
+              2021,
+              2022,
+              2023,
+              2024
+            ]
+          },
+          "911 TARGA 4/4S/4GTS 2DR COUPE AWD": {
+            "years": [
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020
+            ]
+          },
+          "911 TARGA 4/TARGA 4S 2DR COUPE AWD": {
+            "years": [
+              2014
+            ]
+          },
+          "911 TARGA CARRERA": {
+            "years": [
+              1996,
+              1997,
+              1998
+            ]
+          },
+          "911 TARGA CARRERA 2/CARRERA 4 4WD": {
+            "years": [
+              1994
+            ]
+          },
+          "911 TURBO": {
+            "years": [
+              1986
+            ]
+          },
+          "911 TURBO 2 DR COUPE": {
+            "years": [
+              1987
+            ]
+          },
+          "911 TURBO 2DR COUPE AWD": {
+            "years": [
+              2004,
+              2007
+            ]
+          },
+          "911 TURBO CABRIOLET": {
+            "years": [
+              1988,
+              1989
+            ]
+          },
+          "911 TURBO CABRIOLET /TURBO S CABRIOLET": {
+            "years": [
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "911 TURBO CABRIOLET /TURBO S CABRIOLET 2DR CO": {
+            "years": [
+              2012,
+              2013
+            ]
+          },
+          "911 TURBO CABRIOLET 2DR AWD": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "911 TURBO CABRIOLET 2DR CONV AWD": {
+            "years": [
+              2004
+            ]
+          },
+          "911 TURBO COUPE": {
+            "years": [
+              1991,
+              1992,
+              1993,
+              2000,
+              2001,
+              2002,
+              2003
+            ]
+          },
+          "911 TURBO COUPE 2DR AWD": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "911 TURBO COUPE/CABRIOLET 2DR AWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "911 TURBO COUPE/TARGA": {
+            "years": [
+              1988,
+              1989
             ]
           },
           "911 TURBO S 2DR CABRIOLET": {
@@ -4109,24 +6700,31 @@
               2024
             ]
           },
-          "911 TARGA 4/4S 2DR COUPE": {
+          "911 TURBO S 2DR COUPE AWD": {
             "years": [
-              2021,
-              2022,
-              2023,
-              2024
+              2005
             ]
           },
-          "911 DAKAR 2DR COUPE": {
+          "911 TURBO S CABRIOLET 2DR CONV AWD": {
             "years": [
-              2024,
-              2025
+              2005
             ]
           },
-          "911 S/T 2DR COUPE RWD": {
+          "911 TURBO/TURBO S COUPE 2DR AWD": {
             "years": [
-              2024,
-              2025
+              2012,
+              2013,
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019
+            ]
+          },
+          "911SC": {
+            "years": [
+              1981
             ]
           }
         }
@@ -4141,7 +6739,13 @@
           1987,
           1988
         ],
-        "model_styles": {}
+        "model_styles": {
+          "924S 2 DR HATCHBACK": {
+            "years": [
+              1988
+            ]
+          }
+        }
       },
       "928": {
         "model_id": 13847,
@@ -4155,7 +6759,25 @@
           1993,
           1994
         ],
-        "model_styles": {}
+        "model_styles": {
+          "928 COUPE GTS": {
+            "years": [
+              1994,
+              1995
+            ]
+          },
+          "928 GTS 2DR COUPE": {
+            "years": [
+              1993
+            ]
+          },
+          "928 S4/GT 2DR COUPE": {
+            "years": [
+              1990,
+              1991
+            ]
+          }
+        }
       },
       "944": {
         "model_id": 13846,
@@ -4170,7 +6792,67 @@
           1990,
           1991
         ],
-        "model_styles": {}
+        "model_styles": {
+          "944": {
+            "years": [
+              1985,
+              1986
+            ]
+          },
+          "944 2 DR HATCHBACK": {
+            "years": [
+              1987
+            ]
+          },
+          "944 COUPE": {
+            "years": [
+              1989
+            ]
+          },
+          "944 S2 2DR COUPE/CABRIOLET": {
+            "years": [
+              1990,
+              1991
+            ]
+          },
+          "944 S2 COUPE": {
+            "years": [
+              1989
+            ]
+          },
+          "944 TURBO": {
+            "years": [
+              1986
+            ]
+          },
+          "944 TURBO 2 DR HATCHBACK": {
+            "years": [
+              1987,
+              1988
+            ]
+          },
+          "944 TURBO 2DR COUPE": {
+            "years": [
+              1990
+            ]
+          },
+          "944 TURBO COUPE": {
+            "years": [
+              1989
+            ]
+          },
+          "944S 2 DR HATCHBACK": {
+            "years": [
+              1987,
+              1988
+            ]
+          },
+          "944S2 CABRIOLET": {
+            "years": [
+              1989
+            ]
+          }
+        }
       },
       "718 CAYMAN": {
         "model_id": 31224,
@@ -4188,7 +6870,13 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "718 CAYMAN BASE/S 2DR COUPE RWD": {
+            "years": [
+              2017
+            ]
+          }
+        }
       },
       "BOXSTER": {
         "model_id": 7847,
@@ -4216,7 +6904,71 @@
           2015,
           2016
         ],
-        "model_styles": {}
+        "model_styles": {
+          "BOXSTER 2DR CONVERTIBLE RWD": {
+            "years": [
+              2005,
+              2006,
+              2007,
+              2008,
+              2009
+            ]
+          },
+          "BOXSTER BASE/S 2DR CONVERTIBLE RWD": {
+            "years": [
+              2010
+            ]
+          },
+          "BOXSTER BASE/S/BLACK EDITION 2DR CONVERTIBLE": {
+            "years": [
+              2011
+            ]
+          },
+          "BOXSTER CABRIOLET 2.5L": {
+            "years": [
+              1997,
+              1998,
+              1999
+            ]
+          },
+          "BOXSTER CABRIOLET 2.5L TIPTRONIC": {
+            "years": [
+              1999
+            ]
+          },
+          "BOXSTER CABRIOLET 2.7L": {
+            "years": [
+              2000,
+              2001,
+              2002,
+              2003,
+              2004
+            ]
+          },
+          "BOXSTER S 2DR CONVERTIBLE RWD": {
+            "years": [
+              2005,
+              2006,
+              2007,
+              2008,
+              2009
+            ]
+          },
+          "BOXSTER S CABRIOLET 3.2L": {
+            "years": [
+              2000,
+              2001,
+              2002,
+              2003,
+              2004
+            ]
+          },
+          "BOXSTER SPYDER 2DR CONVERTIBLE RWD": {
+            "years": [
+              2011
+            ]
+          }
+        }
       },
       "CAYENNE": {
         "model_id": 7895,
@@ -4248,7 +7000,67 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "CAYENNE 4 DR SUV": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "CAYENNE 4DR SUV 4WD": {
+            "years": [
+              2006
+            ]
+          },
+          "CAYENNE 4DR SUV 4WD /S": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "CAYENNE 4DR SUV 4WD /TURBO": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "CAYENNE DIESEL 4 DR SUV": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "CAYENNE S 4DR SUV 4WD": {
+            "years": [
+              2003,
+              2006
+            ]
+          },
+          "CAYENNE S HYBRID 4 DR SUV": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "CAYENNE S/GTS 4 DR SUV": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "CAYENNE TURBO 4DR SUV 4WD": {
+            "years": [
+              2003,
+              2006
+            ]
+          },
+          "CAYENNE TURBO/TURBO S 4 DR SUV": {
+            "years": [
+              2013,
+              2014
+            ]
+          }
+        }
       },
       "CAYMAN": {
         "model_id": 7900,
@@ -4267,7 +7079,50 @@
           2015,
           2016
         ],
-        "model_styles": {}
+        "model_styles": {
+          "718 CAYMAN BASE/S 2DR COUPE RWD": {
+            "years": [
+              2018
+            ]
+          },
+          "CAYMAN BASE/S 2DR COUPE RWD": {
+            "years": [
+              2010,
+              2014,
+              2015,
+              2016
+            ]
+          },
+          "CAYMAN BASE/S/R 2DR COUPE RWD": {
+            "years": [
+              2011
+            ]
+          },
+          "CAYMAN BASE/S/R/BLACK EDITION 2DR COUPE RWD": {
+            "years": [
+              2012
+            ]
+          },
+          "CAYMAN GT4 2DR COUPE RWD": {
+            "years": [
+              2016
+            ]
+          },
+          "CAYMAN GTS 2DR COUPE RWD": {
+            "years": [
+              2015,
+              2016
+            ]
+          },
+          "CAYMAN S 2DR COUPE RWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009
+            ]
+          }
+        }
       },
       "PANAMERA": {
         "model_id": 7994,
@@ -4292,7 +7147,128 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "PANAMERA /PLATINUM/S  4 DR HATCHBACK RWD": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "PANAMERA /S  4DR HATCHBACK RWD": {
+            "years": [
+              2015,
+              2016
+            ]
+          },
+          "PANAMERA 4/4 PLATINUM/4S 4 DR HATCHBACK AWD": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "PANAMERA 4/4S": {
+            "years": [
+              2012
+            ]
+          },
+          "PANAMERA 4/4S 4DR HATCHBACK AWD": {
+            "years": [
+              2015,
+              2016
+            ]
+          },
+          "PANAMERA 4S": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "PANAMERA 4S EXECUTIVE 4DR HATCHBACK AWD": {
+            "years": [
+              2015,
+              2016
+            ]
+          },
+          "PANAMERA BASE/S": {
+            "years": [
+              2012
+            ]
+          },
+          "PANAMERA BASE/S/4": {
+            "years": [
+              2011
+            ]
+          },
+          "PANAMERA GTS": {
+            "years": [
+              2012
+            ]
+          },
+          "PANAMERA GTS 4 DR HATCHBACK AWD": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "PANAMERA GTS 4DR HATCHBACK AWD": {
+            "years": [
+              2015,
+              2016
+            ]
+          },
+          "PANAMERA S": {
+            "years": [
+              2010
+            ]
+          },
+          "PANAMERA S E-HYBRID  4DR HATCHBACK RWD": {
+            "years": [
+              2015,
+              2016
+            ]
+          },
+          "PANAMERA S HYBRID": {
+            "years": [
+              2011,
+              2012
+            ]
+          },
+          "PANAMERA S HYBRID  4 DR HATCHBACK RWD": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "PANAMERA TURBO": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "PANAMERA TURBO/TURBO S": {
+            "years": [
+              2012
+            ]
+          },
+          "PANAMERA TURBO/TURBO S  4 DR HATCHBACK AWD": {
+            "years": [
+              2013,
+              2014
+            ]
+          },
+          "PANAMERA TURBO/TURBO S  4DR HATCHBACK AWD": {
+            "years": [
+              2015,
+              2016
+            ]
+          },
+          "PANAMERA TURBO/TURBO S EXECUTIVE 4DR HATCHBACK AWD": {
+            "years": [
+              2015,
+              2016
+            ]
+          }
+        }
       }
     }
   },
@@ -4323,7 +7299,92 @@
           1997,
           1998
         ],
-        "model_styles": {}
+        "model_styles": {
+          "900 2DR HATCHBACK": {
+            "years": [
+              1990,
+              1991,
+              1992,
+              1993
+            ]
+          },
+          "900 4DR SEDAN": {
+            "years": [
+              1990,
+              1991,
+              1992,
+              1993
+            ]
+          },
+          "900 SPG 2DR HATCHBACK": {
+            "years": [
+              1990,
+              1991
+            ]
+          },
+          "900 TURBO 2DR HATCHBACK": {
+            "years": [
+              1990,
+              1991,
+              1992,
+              1993
+            ]
+          },
+          "900 TURBO CONVERTIBLE": {
+            "years": [
+              1990,
+              1991,
+              1992,
+              1993
+            ]
+          },
+          "9000 CS/CSE TURBO 4DR HATCHBACK": {
+            "years": [
+              1993
+            ]
+          },
+          "9000 SPG 4DR HATCHBACK": {
+            "years": [
+              1990,
+              1991
+            ]
+          },
+          "9000 TURBO 4DR HATCHBACK": {
+            "years": [
+              1992
+            ]
+          },
+          "9000CD/9000CD TURBO 4DR SEDAN": {
+            "years": [
+              1992,
+              1993
+            ]
+          },
+          "9000S/9000 TURBO 4DR HATCHBACK": {
+            "years": [
+              1990,
+              1991
+            ]
+          },
+          "9000S/9000CD 4DR SEDAN": {
+            "years": [
+              1990,
+              1991
+            ]
+          },
+          "900S 2DR HATCHBACK": {
+            "years": [
+              1990,
+              1991
+            ]
+          },
+          "900S 4DR SEDAN": {
+            "years": [
+              1990,
+              1991
+            ]
+          }
+        }
       },
       "9000": {
         "model_id": 10050,
@@ -4344,7 +7405,50 @@
           1997,
           1998
         ],
-        "model_styles": {}
+        "model_styles": {
+          "9000 4DR HATCHBACK AREO": {
+            "years": [
+              1994
+            ]
+          },
+          "9000 4DR HATCHBACK AREO TURBO": {
+            "years": [
+              1995,
+              1996,
+              1997
+            ]
+          },
+          "9000 4DR HATCHBACK CS/CSE TURBO": {
+            "years": [
+              1994,
+              1995,
+              1996,
+              1997
+            ]
+          },
+          "9000 4DR SEDAN CD/CDE TURBO": {
+            "years": [
+              1994
+            ]
+          },
+          "9000 4DR SEDAN CDE": {
+            "years": [
+              1995,
+              1996,
+              1997
+            ]
+          },
+          "9000 CS/CSE TURBO 4DR HATCHBACK": {
+            "years": [
+              1993
+            ]
+          },
+          "9000CD/9000CD TURBO 4DR SEDAN": {
+            "years": [
+              1993
+            ]
+          }
+        }
       },
       "9-3": {
         "model_id": 2992,
@@ -4381,25 +7485,6 @@
           2026
         ],
         "model_styles": {
-          "9-3 2DR CONVERTIBLE SE": {
-            "years": [
-              1999,
-              2003
-            ]
-          },
-          "9-3 2DR HATCHBACK": {
-            "years": [
-              1999
-            ]
-          },
-          "9-3 4DR HATCHBACK BASE/SE": {
-            "years": [
-              1999,
-              2000,
-              2001,
-              2002
-            ]
-          },
           "9-3 2DR CONVERTIBLE BASE/SE": {
             "years": [
               2000,
@@ -4407,11 +7492,51 @@
               2002
             ]
           },
+          "9-3 2DR CONVERTIBLE FWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009,
+              2010
+            ]
+          },
+          "9-3 2DR CONVERTIBLE FWD 2.0T/AERO": {
+            "years": [
+              2011
+            ]
+          },
+          "9-3 2DR CONVERTIBLE FWD AERO": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009,
+              2010
+            ]
+          },
+          "9-3 2DR CONVERTIBLE FWD ARC/AERO": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "9-3 2DR CONVERTIBLE SE": {
+            "years": [
+              1999,
+              2003
+            ]
+          },
           "9-3 2DR CONVERTIBLE VIGGEN": {
             "years": [
               2000,
               2001,
               2002
+            ]
+          },
+          "9-3 2DR HATCHBACK": {
+            "years": [
+              1999
             ]
           },
           "9-3 2DR HATCHBACK BASE/SE": {
@@ -4428,6 +7553,14 @@
               2002
             ]
           },
+          "9-3 4DR HATCHBACK BASE/SE": {
+            "years": [
+              1999,
+              2000,
+              2001,
+              2002
+            ]
+          },
           "9-3 4DR HATCHBACK VIGGEN": {
             "years": [
               2000,
@@ -4435,20 +7568,14 @@
               2002
             ]
           },
-          "9-3 LINEAR/ARC 4DR SEDAN FWD": {
+          "9-3 4DR SEDAN FWD": {
             "years": [
-              2003
-            ]
-          },
-          "9-3 VECTOR 4DR SEDAN FWD": {
-            "years": [
-              2003
-            ]
-          },
-          "9-3 2DR CONVERTIBLE FWD ARC/AERO": {
-            "years": [
-              2004,
-              2005
+              2006,
+              2007,
+              2008,
+              2009,
+              2010,
+              2011
             ]
           },
           "9-3 4DR SEDAN FWD /AERO": {
@@ -4463,34 +7590,6 @@
               2005
             ]
           },
-          "9-3 2DR CONVERTIBLE FWD": {
-            "years": [
-              2006,
-              2007,
-              2008,
-              2009,
-              2010
-            ]
-          },
-          "9-3 2DR CONVERTIBLE FWD AERO": {
-            "years": [
-              2006,
-              2007,
-              2008,
-              2009,
-              2010
-            ]
-          },
-          "9-3 4DR SEDAN FWD": {
-            "years": [
-              2006,
-              2007,
-              2008,
-              2009,
-              2010,
-              2011
-            ]
-          },
           "9-3 4DR SEDAN FWD AERO": {
             "years": [
               2006,
@@ -4498,6 +7597,16 @@
               2008,
               2009,
               2010
+            ]
+          },
+          "9-3 4DR SEDAN XWD AERO": {
+            "years": [
+              2011
+            ]
+          },
+          "9-3 LINEAR/ARC 4DR SEDAN FWD": {
+            "years": [
+              2003
             ]
           },
           "9-3 SPORTCOMBI 4DR WAGON FWD": {
@@ -4509,6 +7618,11 @@
               2010
             ]
           },
+          "9-3 SPORTCOMBI 4DR WAGON FWD 2.0T/AERO": {
+            "years": [
+              2011
+            ]
+          },
           "9-3 SPORTCOMBI 4DR WAGON FWD AERO": {
             "years": [
               2006,
@@ -4518,19 +7632,9 @@
               2010
             ]
           },
-          "9-3 2DR CONVERTIBLE FWD 2.0T/AERO": {
+          "9-3 VECTOR 4DR SEDAN FWD": {
             "years": [
-              2011
-            ]
-          },
-          "9-3 4DR SEDAN XWD AERO": {
-            "years": [
-              2011
-            ]
-          },
-          "9-3 SPORTCOMBI 4DR WAGON FWD 2.0T/AERO": {
-            "years": [
-              2011
+              2003
             ]
           },
           "9-3X 4DR WAGON XWD": {
@@ -4576,29 +7680,44 @@
           2026
         ],
         "model_styles": {
-          "9-5 4DR SEDAN SE": {
-            "years": [
-              1998,
-              1999
-            ]
-          },
-          "9-5 4DR SEDAN SE V6": {
-            "years": [
-              1998,
-              1999
-            ]
-          },
-          "9-5 4DR WAGON": {
-            "years": [
-              1999
-            ]
-          },
           "9-5 4DR SEDAN AERO 2.3 TURBO HIGH PRESSURE": {
             "years": [
               2000,
               2001,
               2002,
               2003
+            ]
+          },
+          "9-5 4DR SEDAN ARC 3.0 V6 TURBO": {
+            "years": [
+              2002
+            ]
+          },
+          "9-5 4DR SEDAN FWD": {
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009,
+              2010
+            ]
+          },
+          "9-5 4DR SEDAN FWD /ARC/AERO": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "9-5 4DR SEDAN LINEAR 2.3 TURBO LIGHT PRESSURE": {
+            "years": [
+              2002,
+              2003
+            ]
+          },
+          "9-5 4DR SEDAN SE": {
+            "years": [
+              1998,
+              1999
             ]
           },
           "9-5 4DR SEDAN SE 2.3 TURBO LIGHT PRESSURE": {
@@ -4611,6 +7730,17 @@
             "years": [
               2000,
               2001
+            ]
+          },
+          "9-5 4DR SEDAN SE V6": {
+            "years": [
+              1998,
+              1999
+            ]
+          },
+          "9-5 4DR WAGON": {
+            "years": [
+              1999
             ]
           },
           "9-5 4DR WAGON 2.3 TURBO LIGHT PRESSURE": {
@@ -4631,32 +7761,9 @@
               2003
             ]
           },
-          "9-5 4DR SEDAN ARC 3.0 V6 TURBO": {
-            "years": [
-              2002
-            ]
-          },
-          "9-5 4DR SEDAN LINEAR 2.3 TURBO LIGHT PRESSURE": {
-            "years": [
-              2002,
-              2003
-            ]
-          },
           "9-5 4DR WAGON ARC 3.0 V6 TURBO": {
             "years": [
               2002
-            ]
-          },
-          "9-5 4DR WAGON LINEAR 2.3 TURBO LIGHT PRESSURE": {
-            "years": [
-              2002,
-              2003
-            ]
-          },
-          "9-5 4DR SEDAN FWD /ARC/AERO": {
-            "years": [
-              2004,
-              2005
             ]
           },
           "9-5 4DR WAGON FWD /ARC/AERO": {
@@ -4665,13 +7772,15 @@
               2005
             ]
           },
-          "9-5 4DR SEDAN FWD": {
+          "9-5 4DR WAGON LINEAR 2.3 TURBO LIGHT PRESSURE": {
             "years": [
-              2006,
-              2007,
-              2008,
-              2009,
-              2010
+              2002,
+              2003
+            ]
+          },
+          "9-5 AERO 4 DR SEDAN XWD": {
+            "years": [
+              2011
             ]
           },
           "9-5 SPORTCOMBI 4DR WAGON FWD": {
@@ -4681,11 +7790,6 @@
               2008,
               2009,
               2010
-            ]
-          },
-          "9-5 AERO 4 DR SEDAN XWD": {
-            "years": [
-              2011
             ]
           },
           "9-5 TURBO4 4 DR SEDAN FWD": {
@@ -4771,7 +7875,18 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "FORTWO 2DR HATCH /PURE/PULSE/PASSION": {
+            "years": [
+              2007
+            ]
+          },
+          "FORTWO CABRIOLET 2DR CONV /PURE/PULSE/PASSION": {
+            "years": [
+              2007
+            ]
+          }
+        }
       }
     }
   },
@@ -4803,13 +7918,6 @@
           2026
         ],
         "model_styles": {
-          "BRZ 2DR COUPE /SPORT-TECH": {
-            "years": [
-              2013,
-              2014,
-              2015
-            ]
-          },
           "BRZ 2DR COUPE": {
             "years": [
               2016,
@@ -4821,6 +7929,13 @@
               2022,
               2023,
               2024
+            ]
+          },
+          "BRZ 2DR COUPE /SPORT-TECH": {
+            "years": [
+              2013,
+              2014,
+              2015
             ]
           }
         }
@@ -4860,7 +7975,25 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "FORESTER 4DR SUV AWD /2.5 X/2.5 SX/2.5 SX PRE": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "FORESTER 4DR SUV AWD /2.5 XT": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "FORESTER 4DR SUV AWD L/S": {
+            "years": [
+              1998
+            ]
+          }
+        }
       },
       "IMPREZA": {
         "model_id": 2235,
@@ -4902,7 +8035,251 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "IMPREZA 2.5i/SPORT 4DR SEDAN AWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "IMPREZA 2.5i/SPORT/LIMITED 4DR SEDAN AWD": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "IMPREZA 2DR COUPE AWD 2.5 RS": {
+            "years": [
+              1998,
+              2000,
+              2001
+            ]
+          },
+          "IMPREZA 4DR SEDAN": {
+            "years": [
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022
+            ]
+          },
+          "IMPREZA 4DR SEDAN 2.0i": {
+            "years": [
+              2014,
+              2015,
+              2016
+            ]
+          },
+          "IMPREZA 4DR SEDAN 2.0i/2.0i TOURING/2.0i SPOR": {
+            "years": [
+              2012,
+              2013
+            ]
+          },
+          "IMPREZA 4DR SEDAN AWD": {
+            "years": [
+              1998
+            ]
+          },
+          "IMPREZA 4DR SEDAN AWD /2.5 RS/SPORT PACKAGE": {
+            "years": [
+              2005
+            ]
+          },
+          "IMPREZA 4DR SEDAN AWD 2.5 RS": {
+            "years": [
+              2000,
+              2001,
+              2002,
+              2003,
+              2004
+            ]
+          },
+          "IMPREZA 4DR SEDAN AWD 2.5I": {
+            "years": [
+              2006
+            ]
+          },
+          "IMPREZA 4DR SEDAN AWD TS": {
+            "years": [
+              2000,
+              2001
+            ]
+          },
+          "IMPREZA 4DR WAGON AWD /2.5 TS SPORT": {
+            "years": [
+              2004
+            ]
+          },
+          "IMPREZA 4DR WAGON AWD /OUTBACK SPORT": {
+            "years": [
+              2004,
+              2005
+            ]
+          },
+          "IMPREZA 4DR WAGON AWD 2.5I/OUTBACK SPORT": {
+            "years": [
+              2006
+            ]
+          },
+          "IMPREZA 4DR WAGON AWD BRIGHTON SPORT": {
+            "years": [
+              1998,
+              2000,
+              2001
+            ]
+          },
+          "IMPREZA 4DR WAGON AWD OUTBACK SPORT": {
+            "years": [
+              2000,
+              2001
+            ]
+          },
+          "IMPREZA 4DR WAGON AWD TS": {
+            "years": [
+              2002,
+              2003
+            ]
+          },
+          "IMPREZA 5-DOOR 2.5i/SPORT WAGON AWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "IMPREZA 5-DOOR 2.5i/SPORT/LIMITED HATCH AWD": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "IMPREZA 5-DOOR WRX WAGON AWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "IMPREZA 5-DOOR WRX/WRX LIMITED HATCH AWD": {
+            "years": [
+              2010,
+              2011
+            ]
+          },
+          "IMPREZA 5DR HATCH": {
+            "years": [
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022
+            ]
+          },
+          "IMPREZA 5DR HATCH 2.0i": {
+            "years": [
+              2014,
+              2015,
+              2016
+            ]
+          },
+          "IMPREZA 5DR HATCH 2.0i/2.0i TOURING/2.0i SPOR": {
+            "years": [
+              2012,
+              2013
+            ]
+          },
+          "IMPREZA OUTBACK SPORT 4DR WAGON AWD": {
+            "years": [
+              2002
+            ]
+          },
+          "IMPREZA TS SPORT/OUTBACK SPORT 4DR WAGON AWD": {
+            "years": [
+              2003
+            ]
+          },
+          "IMPREZA WRX 4DR SEDAN AWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "IMPREZA WRX SEDAN 4DR AWD": {
+            "years": [
+              2002,
+              2003,
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "IMPREZA WRX SPORT WAGON": {
+            "years": [
+              2002,
+              2003
+            ]
+          },
+          "IMPREZA WRX SPORT WAGON AWD": {
+            "years": [
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "IMPREZA WRX STi 4DR SEDAN AWD": {
+            "years": [
+              2004,
+              2005,
+              2006
+            ]
+          },
+          "IMPREZA WRX STI 5DR HATCH AWD": {
+            "years": [
+              2008,
+              2009
+            ]
+          },
+          "IMPREZA WRX STI/SPORT-TECH 4DR SEDAN AWD": {
+            "years": [
+              2011,
+              2012,
+              2013,
+              2014
+            ]
+          },
+          "IMPREZA WRX STI/SPORT-TECH 5DR HATCH AWD": {
+            "years": [
+              2010,
+              2011,
+              2012,
+              2013,
+              2014
+            ]
+          },
+          "IMPREZA WRX/WRX LIMITED 4DR SEDAN AWD": {
+            "years": [
+              2010,
+              2011,
+              2012,
+              2013,
+              2014
+            ]
+          },
+          "IMPREZA WRX/WRX LIMITED 5DR HATCH AWD": {
+            "years": [
+              2012,
+              2013,
+              2014
+            ]
+          },
+          "OUTBACK SPORT 4DR WAGON AWD (IMPREZA)": {
+            "years": [
+              1998
+            ]
+          }
+        }
       },
       "LEGACY": {
         "model_id": 2232,
@@ -4947,7 +8324,129 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "LEGACY 4DR SEDAN 2.5 GT": {
+            "years": [
+              2006
+            ]
+          },
+          "LEGACY 4DR SEDAN 2.5i": {
+            "years": [
+              2006
+            ]
+          },
+          "LEGACY 4DR SEDAN AWD 2.2 L": {
+            "years": [
+              1999
+            ]
+          },
+          "LEGACY 4DR SEDAN AWD 2.5 GT": {
+            "years": [
+              1998
+            ]
+          },
+          "LEGACY 4DR SEDAN AWD 2.5 GT/GT LTD": {
+            "years": [
+              1999
+            ]
+          },
+          "LEGACY 4DR SEDAN AWD L+/LS": {
+            "years": [
+              1997
+            ]
+          },
+          "LEGACY 4DR SEDAN AWD L/LS/LSi": {
+            "years": [
+              1995,
+              1996
+            ]
+          },
+          "LEGACY 4DR SEDAN AWD L/LTD": {
+            "years": [
+              1998
+            ]
+          },
+          "LEGACY 4DR SEDAN AWD LS": {
+            "years": [
+              1994
+            ]
+          },
+          "LEGACY 4DR SEDAN AWD TURBO": {
+            "years": [
+              1994
+            ]
+          },
+          "LEGACY 4DR SEDAN FWD L": {
+            "years": [
+              1994,
+              1995,
+              1996
+            ]
+          },
+          "LEGACY 4DR SEDAN GT/LSi": {
+            "years": [
+              1997
+            ]
+          },
+          "LEGACY 4DR WAGON 2.5 GT": {
+            "years": [
+              2006
+            ]
+          },
+          "LEGACY 4DR WAGON 2.5i": {
+            "years": [
+              2006
+            ]
+          },
+          "LEGACY 4DR WAGON AWD 2.5 GT": {
+            "years": [
+              1998,
+              1999
+            ]
+          },
+          "LEGACY 4DR WAGON AWD L/BRIGHTON": {
+            "years": [
+              1998,
+              1999
+            ]
+          },
+          "LEGACY 4DR WAGON AWD LS/TOURING": {
+            "years": [
+              1994
+            ]
+          },
+          "LEGACY 4DR WAGON FWD L": {
+            "years": [
+              1994
+            ]
+          },
+          "LEGACY 4DR WAGON L+/BRIGHTON": {
+            "years": [
+              1997
+            ]
+          },
+          "LEGACY BRIGHTON 4DR WAGON AWD L/LS/LSi": {
+            "years": [
+              1995,
+              1996
+            ]
+          },
+          "LEGACY BRIGHTON 4DR WAGON AWD LS/GT/LSi": {
+            "years": [
+              1997
+            ]
+          },
+          "LEGACY BRIGHTON 4DR WAGON FWD L": {
+            "years": [
+              1995
+            ]
+          },
+          "OUTBACK 4DR SEDAN AWD (LEGACY)": {
+            "years": [
+              1999
+            ]
+          }
+        }
       }
     }
   },
@@ -4974,7 +8473,18 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "MODEL 3 4DR SEDAN LONG RANGE": {
+            "years": [
+              2018
+            ]
+          },
+          "MODEL 3 4DR SEDAN STANDARD": {
+            "years": [
+              2018
+            ]
+          }
+        }
       },
       "ROADSTER": {
         "model_id": 2071,
@@ -5008,7 +8518,21 @@
           2019,
           2020
         ],
-        "model_styles": {}
+        "model_styles": {
+          "86 2DR COUPE": {
+            "years": [
+              2017,
+              2018,
+              2019,
+              2020
+            ]
+          },
+          "GR86 3DR COUPE": {
+            "years": [
+              2022
+            ]
+          }
+        }
       },
       "CELICA": {
         "model_id": 3645,
@@ -5058,7 +8582,75 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "CELICA GT 2 DR COUPE": {
+            "years": [
+              1987
+            ]
+          },
+          "CELICA GT 2 DR HATCHBACK": {
+            "years": [
+              1987
+            ]
+          },
+          "CELICA GT COUPE": {
+            "years": [
+              1985,
+              1986,
+              1988
+            ]
+          },
+          "CELICA GT COUPE/ST COUPE": {
+            "years": [
+              1989
+            ]
+          },
+          "CELICA GT LIFTBACK": {
+            "years": [
+              1988,
+              1989
+            ]
+          },
+          "CELICA GTS 2 DR COUPE": {
+            "years": [
+              1987,
+              1988,
+              1989
+            ]
+          },
+          "CELICA GTS 2 DR HATCHBACK": {
+            "years": [
+              1987
+            ]
+          },
+          "CELICA GTS COUPE": {
+            "years": [
+              1986
+            ]
+          },
+          "CELICA GTS LFTBCK/4WD TURBO LFTBCK": {
+            "years": [
+              1988
+            ]
+          },
+          "CELICA GTS TURBO LIFTBACK": {
+            "years": [
+              1989
+            ]
+          },
+          "CELICA LIFTBACK GT": {
+            "years": [
+              1985,
+              1986
+            ]
+          },
+          "CELICA LIFTBACK GTS": {
+            "years": [
+              1985,
+              1986
+            ]
+          }
+        }
       },
       "COROLLA": {
         "model_id": 2208,
@@ -5108,7 +8700,83 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "COROLLA 4DR SEDAN HYBRID": {
+            "years": [
+              2023
+            ]
+          },
+          "COROLLA 4DR SEDAN L/LE": {
+            "years": [
+              2023
+            ]
+          },
+          "COROLLA 4DR SEDAN SE/XLE/XSE": {
+            "years": [
+              2023
+            ]
+          },
+          "COROLLA 5DR HATCH": {
+            "years": [
+              2023
+            ]
+          },
+          "COROLLA CROSS 4DR SUV AWD": {
+            "years": [
+              2023
+            ]
+          },
+          "COROLLA CROSS 4DR SUV FWD": {
+            "years": [
+              2023
+            ]
+          },
+          "COROLLA DELUXE 4 DR HATCHBACK": {
+            "years": [
+              1987
+            ]
+          },
+          "COROLLA DELUXE 4 DR SEDAN": {
+            "years": [
+              1987
+            ]
+          },
+          "COROLLA GTS 2 DR COUPE": {
+            "years": [
+              1987
+            ]
+          },
+          "COROLLA GTS 2 DR HATCHBACK": {
+            "years": [
+              1987
+            ]
+          },
+          "COROLLA LE 4 DR HATCHBACK": {
+            "years": [
+              1987
+            ]
+          },
+          "COROLLA LE 4 DR SEDAN": {
+            "years": [
+              1987
+            ]
+          },
+          "COROLLA SR5 2 DR COUPE": {
+            "years": [
+              1987
+            ]
+          },
+          "COROLLA SR5 2 DR HATCHBACK": {
+            "years": [
+              1987
+            ]
+          },
+          "GR COROLLA 5DR HATCH": {
+            "years": [
+              2023
+            ]
+          }
+        }
       },
       "MR2": {
         "model_id": 3648,
@@ -5134,7 +8802,26 @@
           2006,
           2007
         ],
-        "model_styles": {}
+        "model_styles": {
+          "MR2 (2 DR COUPE)": {
+            "years": [
+              1987
+            ]
+          },
+          "MR2 BASE/SUPERCHARGED 2 DR COUPE": {
+            "years": [
+              1988,
+              1989
+            ]
+          },
+          "MR2/MR2 TURBO COUPE": {
+            "years": [
+              1991,
+              1992,
+              1993
+            ]
+          }
+        }
       },
       "SUPRA": {
         "model_id": 3647,
@@ -5163,7 +8850,14 @@
           2025,
           2026
         ],
-        "model_styles": {}
+        "model_styles": {
+          "GR SUPRA 2DR COUPE": {
+            "years": [
+              2020,
+              2021
+            ]
+          }
+        }
       }
     }
   },
@@ -5193,6 +8887,12 @@
           2026
         ],
         "model_styles": {
+          "V60 4DR WAGON": {
+            "years": [
+              2019,
+              2020
+            ]
+          },
           "V60 4DR WAGON T5 AWD": {
             "years": [
               2015,
@@ -5217,18 +8917,10 @@
               2018
             ]
           },
-          "V60 CROSS COUNTRY 4DR WAGON T5 AWD": {
+          "V60 AWD 4DR WAGON": {
             "years": [
-              2015,
-              2016,
-              2017,
-              2018
-            ]
-          },
-          "V60 4DR WAGON": {
-            "years": [
-              2019,
-              2020
+              2023,
+              2024
             ]
           },
           "V60 CROSS COUNTRY 4DR WAGON": {
@@ -5239,6 +8931,14 @@
               2022,
               2023,
               2024
+            ]
+          },
+          "V60 CROSS COUNTRY 4DR WAGON T5 AWD": {
+            "years": [
+              2015,
+              2016,
+              2017,
+              2018
             ]
           },
           "V60 POLESTAR 4DR WAGON": {
@@ -5265,12 +8965,6 @@
             "years": [
               2021,
               2022
-            ]
-          },
-          "V60 AWD 4DR WAGON": {
-            "years": [
-              2023,
-              2024
             ]
           }
         }

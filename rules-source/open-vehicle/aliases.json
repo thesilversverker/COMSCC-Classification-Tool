@@ -268,7 +268,7 @@
     "Mitsubishi|Lander Evo X": {
       "make": "Mitsubishi",
       "model": "LANCER",
-      "trim": "LANDER EVO X",
+      "trim": "EVO X",
       "reason": "CSV typo Lander → Lancer"
     },
     "Mini|JCW GP": {
